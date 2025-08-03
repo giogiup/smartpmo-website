@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none">
-  <!-- Arrows -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24" viewBox="0 0 24 24" fill="none">
+
+  <!-- Arrowhead definition -->
   <defs>
-    <marker id="arrowhead" markerWidth="4" markerHeight="3" refX="4" refY="1.5" orient="auto">
-      <polygon points="0 0, 4 1.5, 0 3" fill="#008866"/>
+    <marker id="arrowhead" markerUnits="strokeWidth"
+            markerWidth="6" markerHeight="6"
+            refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 Z" fill="#008866"/>
     </marker>
   </defs>
-  <path d="M1 5 Q6 6 10 7" stroke="#00d4aa" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
-  <path d="M1 9 Q7 10 13 11" stroke="#00d4aa" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
-  <path d="M1 13 Q5 14 9 15" stroke="#00d4aa" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
 
-  <!-- Bars and Circles -->
-  <rect x="4" y="6" width="8" height="2" rx="1" fill="#008866"/>
-  <rect x="4" y="10" width="12" height="2" rx="1" fill="#00d4aa"/>
-  <rect x="4" y="14" width="6" height="2" rx="1" fill="#00ffcc"/>
-  <circle cx="3" cy="7" r="1.5" fill="#008866"/>
-  <circle cx="3" cy="11" r="1.5" fill="#00d4aa"/>
-  <circle cx="3" cy="15" r="1.5" fill="#00ffcc"/>
+  <!-- Diagonal arrow from (3,21) up to (21,3) -->
+  <path d="M3 21 L21 3"
+        stroke="#008866"
+        stroke-width="2.5"
+        fill="none"
+        marker-end="url(#arrowhead)" />
 
-  <!-- Stars -->
-  <g transform="translate(13,7) scale(0.7)">
-    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00ffcc"/>
-    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
-    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#008866"/>
+  <!-- Largest star (turquoise) -->
+  <g transform="translate(17,6) scale(1.3)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z"
+          fill="#00ffcc"/>
   </g>
-  <g transform="translate(17,11) scale(1.3)">
-    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00ffcc"/>
-    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
-    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#00d4aa"/>
+
+  <!-- Medium star (light-teal) -->
+  <g transform="translate(12,10) scale(1)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z"
+          fill="#00d4aa"/>
   </g>
-  <g transform="translate(11,15) scale(1.0)">
-    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#ffffff"/>
-    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#00ffcc" opacity="0.9"/>
-    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#008866"/>
+
+  <!-- Smallest star (deep-teal) -->
+  <g transform="translate(6,17) scale(0.6)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z"
+          fill="#008866"/>
   </g>
+
 </svg>
