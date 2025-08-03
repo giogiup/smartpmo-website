@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
   <circle cx="12" cy="12" r="6" fill="#008866" opacity="0.3"/>
   <rect x="8" y="8" width="3" height="2" rx="0.4" fill="#00d4aa" transform="rotate(15 9.5 9)"/>
   <rect x="11" y="7" width="3" height="2" rx="0.4" fill="#00ffcc" transform="rotate(-20 12.5 8)"/>
