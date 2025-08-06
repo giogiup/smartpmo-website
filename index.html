@@ -515,10 +515,11 @@
         }
 
         .benefit-highlight {
-            background: linear-gradient(45deg, var(--tertiary-teal), var(--secondary-teal));
+            background: none; /* REMOVED: No gradient background */
             background-clip: text;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: var(--color-white); /* UPDATED: Pure white text */
+            color: var(--color-white); /* UPDATED: Fallback white */
             font-weight: 600; /* UPDATED: Semi-bold for highlight text */
             font-size: 1rem;
             text-align: center;
@@ -554,8 +555,8 @@
 
         .score-badge {
             display: inline-block;
-            background: linear-gradient(45deg, var(--primary-teal), var(--secondary-teal));
-            color: var(--dark-primary);
+            background: rgba(255, 255, 255, 0.9); /* UPDATED: Off-white background */
+            color: var(--dark-primary); /* UPDATED: Black text */
             padding: 0.5rem 1rem;
             border-radius: 25px;
             font-weight: 500; /* UPDATED: Medium weight for badges */
@@ -579,14 +580,14 @@
         }
 
         .source-link {
-            color: var(--secondary-teal);
+            color: var(--color-white); /* UPDATED: Pure white instead of teal */
             text-decoration: none;
             font-weight: 500; /* UPDATED: Medium weight for links */
             font-size: var(--font-size-body);
         }
 
         .source-link:hover {
-            color: var(--primary-teal);
+            color: #e0e0e0; /* UPDATED: Light gray on hover */
         }
 
         /* Archive Search Section */
