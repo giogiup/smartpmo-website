@@ -8,12 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Colors */
+            /* Colors - UPDATED TO MATCH WARP.DEV */
             --primary-teal: #00ffcc;
             --secondary-teal: #00d4aa;
             --tertiary-teal: #008866;
-            --dark-primary: #0a0a0a;
-            --dark-secondary: #1a1a1a;
+            --dark-primary: #121212;
+            --dark-secondary: oklch(20.5% 0 0);
+            --color-white: #fff;
             --glass-bg: rgba(255, 255, 255, 0.1);
             --glass-border: rgba(0, 255, 204, 0.3);
             
@@ -31,9 +32,9 @@
             --carousel-image-3: url('slide3.jpg');
             
             /* Carousel Gradients */
-            --carousel-gradient-1: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #008866 100%);
-            --carousel-gradient-2: linear-gradient(135deg, #008866 0%, #00d4aa 50%, #0a0a0a 100%);
-            --carousel-gradient-3: linear-gradient(135deg, #00ffcc 0%, #008866 50%, #1a1a1a 100%);
+            --carousel-gradient-1: linear-gradient(135deg, var(--dark-primary) 0%, var(--dark-secondary) 50%, #008866 100%);
+            --carousel-gradient-2: linear-gradient(135deg, #008866 0%, #00d4aa 50%, var(--dark-primary) 100%);
+            --carousel-gradient-3: linear-gradient(135deg, #00ffcc 0%, #008866 50%, var(--dark-secondary) 100%);
             
             /* Layout Settings */
             --carousel-height: 100vh;
@@ -52,7 +53,7 @@
             font-family: var(--font-body);
             font-weight: 400; /* UPDATED: Normal weight for body */
             background: var(--dark-primary);
-            color: #ffffff;
+            color: var(--color-white);
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -103,7 +104,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(26, 26, 26, 0.8);
+            background: rgba(18, 18, 18, 0.8);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
             z-index: 1000;
@@ -123,9 +124,9 @@
             font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700; /* UPDATED: Bold for logo */
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             text-decoration: none;
-            text-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+            text-shadow: none; /* REMOVED: No glow effect */
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -138,7 +139,7 @@
         }
 
         .nav-links a {
-            color: #ffffff;
+            color: var(--color-white);
             text-decoration: none;
             font-weight: 500; /* UPDATED: Medium weight for nav */
             transition: all 0.3s ease;
@@ -228,7 +229,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(10, 10, 10, 0.7);
+            background: rgba(18, 18, 18, 0.7);
             z-index: 1;
         }
 
@@ -253,16 +254,13 @@
             font-family: var(--font-display);
             font-size: var(--font-size-hero);
             font-weight: 700; /* UPDATED: Bold for headings */
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             margin-bottom: 1rem;
-            text-shadow: 0 0 30px rgba(0, 255, 204, 0.5);
-            animation: glow 2s ease-in-out infinite alternate;
+            text-shadow: none; /* REMOVED: No glow effect */
+            animation: none; /* REMOVED: No glow animation */
         }
 
-        @keyframes glow {
-            from { text-shadow: 0 0 30px rgba(0, 255, 204, 0.5); }
-            to { text-shadow: 0 0 40px rgba(0, 255, 204, 0.8); }
-        }
+        /* REMOVED GLOW ANIMATION - Clean typography like Warp */
 
         .slide-text p {
             font-size: 1.2rem;
@@ -277,21 +275,24 @@
         .cta-button {
             display: inline-block;
             padding: 1rem 2rem;
-            background: linear-gradient(45deg, var(--primary-teal), var(--secondary-teal));
-            color: var(--dark-primary);
+            background: rgba(255, 255, 255, 0.1); /* UPDATED: Clean dark button like Warp */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--color-white); /* UPDATED: Pure white text */
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 12px; /* UPDATED: Less rounded like Warp */
             font-weight: 500; /* UPDATED: Medium weight for CTAs */
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            text-transform: none; /* REMOVED: No uppercase */
+            letter-spacing: normal; /* REMOVED: No letter spacing */
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 255, 204, 0.3);
+            box-shadow: none; /* REMOVED: No glow shadow */
             font-size: 0.9rem;
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 255, 204, 0.5);
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         /* FIXED CAROUSEL INDICATORS */
@@ -333,7 +334,7 @@
         /* Newsletter Signup Section */
         .newsletter-signup {
             padding: 6rem 2rem;
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(10, 10, 10, 0.9));
+            background: linear-gradient(135deg, var(--dark-secondary), var(--dark-primary));
         }
 
         .container {
@@ -345,10 +346,10 @@
             font-family: var(--font-display);
             font-size: var(--font-size-section);
             font-weight: 700; /* UPDATED: Bold for section titles */
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             text-align: center;
             margin-bottom: 1rem;
-            text-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+            text-shadow: none; /* REMOVED: No glow effect */
         }
 
         .section-subtitle {
@@ -414,7 +415,7 @@
             font-family: var(--font-display);
             font-size: var(--font-size-card);
             font-weight: 700; /* UPDATED: Bold for card headings */
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             margin-bottom: 1rem;
         }
 
@@ -426,22 +427,24 @@
         }
 
         .signup-button {
-            background: linear-gradient(45deg, var(--primary-teal), var(--secondary-teal));
-            color: var(--dark-primary);
-            border: none;
+            background: rgba(255, 255, 255, 0.1); /* UPDATED: Clean dark button like Warp */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--color-white); /* UPDATED: Pure white text */
             padding: 1rem 2rem;
-            border-radius: 50px;
+            border-radius: 12px; /* UPDATED: Less rounded like Warp */
             font-weight: 500; /* UPDATED: Medium weight for buttons */
-            text-transform: uppercase;
+            text-transform: none; /* REMOVED: No uppercase */
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
+            font-size: 0.9rem;
+            letter-spacing: normal; /* REMOVED: No letter spacing */
         }
 
         .signup-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 255, 204, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         /* How It Works Section */
@@ -479,7 +482,7 @@
         }
 
         .process-step h4 {
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             margin-bottom: 1rem;
             font-size: 1.1rem;
             font-weight: 600; /* UPDATED: Semi-bold for step titles */
@@ -499,7 +502,7 @@
         }
 
         .problem-solution h3 {
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             font-size: 1.2rem;
             font-weight: 700; /* UPDATED: Bold for problem/solution headings */
             margin-bottom: 1rem;
@@ -561,7 +564,7 @@
         }
 
         .preview-item h4 {
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             margin-bottom: 1rem;
             font-size: 1rem;
             font-weight: 600; /* UPDATED: Semi-bold for preview headings */
@@ -605,7 +608,7 @@
             backdrop-filter: blur(20px);
             border: 1px solid var(--glass-border);
             border-radius: 50px;
-            color: #ffffff;
+            color: var(--color-white);
             font-size: var(--font-size-body);
             font-weight: 400; /* UPDATED: Normal weight for input */
             outline: none;
@@ -645,11 +648,10 @@
         .blog-link {
             display: inline-block;
             padding: 1.5rem 3rem;
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 15px;
-            color: var(--primary-teal);
+            background: rgba(255, 255, 255, 0.1); /* UPDATED: Clean dark button like Warp */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px; /* UPDATED: Less rounded like Warp */
+            color: var(--color-white); /* UPDATED: Pure white text */
             text-decoration: none;
             font-size: 1rem;
             font-weight: 500; /* UPDATED: Medium weight for blog link */
@@ -657,9 +659,10 @@
         }
 
         .blog-link:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 255, 204, 0.2);
-            border-color: var(--primary-teal);
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         /* Footer */
@@ -679,7 +682,7 @@
         }
 
         .footer-section h4 {
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             margin-bottom: 1rem;
             font-size: 1rem;
             font-weight: 600; /* UPDATED: Semi-bold for footer headings */
@@ -749,7 +752,7 @@
         }
 
         .modal h3 {
-            color: var(--primary-teal);
+            color: var(--color-white); /* UPDATED: Pure white like Warp */
             margin-bottom: 1rem;
             font-family: var(--font-display);
             font-size: 1.2rem;
@@ -774,7 +777,7 @@
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
             border-radius: 8px;
-            color: #ffffff;
+            color: var(--color-white);
             font-size: var(--font-size-body);
             font-weight: 400; /* UPDATED: Normal weight for inputs */
         }
@@ -788,10 +791,10 @@
         .submit-button {
             width: 100%;
             padding: 1rem;
-            background: linear-gradient(45deg, var(--primary-teal), var(--secondary-teal));
-            color: var(--dark-primary);
-            border: none;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1); /* UPDATED: Clean dark button like Warp */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--color-white); /* UPDATED: Pure white text */
+            border-radius: 12px; /* UPDATED: Less rounded like Warp */
             font-weight: 500; /* UPDATED: Medium weight for submit buttons */
             font-size: var(--font-size-body);
             cursor: pointer;
@@ -800,7 +803,9 @@
 
         .submit-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 255, 204, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         /* Enhanced Mobile Responsive Design */
@@ -811,7 +816,7 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: rgba(26, 26, 26, 0.95);
+                background: rgba(18, 18, 18, 0.95);
                 backdrop-filter: blur(20px);
                 flex-direction: column;
                 padding: 2rem;
@@ -1445,14 +1450,17 @@
     </script>
 
     <!-- 
-    ========== SVG ICON REFERENCES ADDED ==========
+    ========== COLORS UPDATED TO MATCH WARP.DEV ==========
     
     WHAT CHANGED:
-    ✅ Header logo: Added smartpmo-logo.svg reference
-    ✅ Newsletter cards: Added daily-brief.svg and weekly-summary.svg
-    ✅ Problem section: Added the-problem.svg
-    ✅ Process steps: Added 4 process flow icons
-    ✅ Archive section: Added newsletter-archive.svg
+    ✅ --dark-primary: #0a0a0a → #121212 (Warp's black)
+    ✅ --dark-secondary: #1a1a1a → oklch(20.5% 0 0) (Warp's neutral-900)
+    ✅ Added --color-white: #fff (Warp's white)
+    ✅ Updated body color to use var(--color-white)
+    ✅ Updated header background to use rgba(18, 18, 18, 0.8)
+    ✅ Updated carousel overlay to use rgba(18, 18, 18, 0.7)
+    ✅ Updated mobile nav background to rgba(18, 18, 18, 0.95)
+    ✅ Updated all gradients to use the new color variables
     
     EVERYTHING ELSE: Kept exactly as your original HTML
     -->
