@@ -9,7 +9,7 @@
   <path d="M34.7 40 L64 61.3 L93.3 40 L93.3 45.3 L64 66.7 L34.7 45.3 Z" fill="#000000" opacity="0.6"/>
   
   <!-- Content dots in black -->
-  <circle cx="48" y="69.3" r="3.2" fill="#000000"/>
+  <circle cx="48" cy="69.3" r="3.2" fill="#000000"/>
   <circle cx="64" cy="69.3" r="3.2" fill="#000000"/>
   <circle cx="80" cy="69.3" r="3.2" fill="#000000"/>
   
