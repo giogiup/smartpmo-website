@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <!-- Original text lines -->
+  <rect x="21.3" y="32" width="42.7" height="10.7" rx="5.3" fill="#008866"/>
+  <rect x="21.3" y="53.3" width="64" height="10.7" rx="5.3" fill="#00d4aa"/>
+  <rect x="21.3" y="74.7" width="32" height="10.7" rx="5.3" fill="#00ffcc"/>
+  
+  <!-- Original bullet points -->
+  <circle cx="16" cy="37.3" r="8" fill="#008866"/>
+  <circle cx="16" cy="58.7" r="8" fill="#00d4aa"/>
+  <circle cx="16" cy="80" r="8" fill="#00ffcc"/>
+  
+  <!-- Large sci-fi rounded letter B overlay -->
+  <path d="M30 30 Q30 25 35 25 L50 25 Q65 25 65 40 Q65 50 58 52.5 Q67 55 67 67.5 Q67 80 50 80 L35 80 Q30 80 30 75 Z M38 35 Q38 32 41 32 L50 32 Q58 32 58 40 Q58 48 50 48 L41 48 Q38 48 38 45 Z M38 55 Q38 52 41 52 L52 52 Q60 52 60 67.5 Q60 73 52 73 L41 73 Q38 73 38 70 Z" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Original stars (positioned as in reference) -->
+  <g transform="translate(69.3,37.3) scale(3.7)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00ffcc"/>
+    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
+    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#008866"/>
+  </g>
+  
+  <g transform="translate(90.7,58.7) scale(6.9)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00ffcc"/>
+    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
+    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#00d4aa"/>
+  </g>
+  
+  <g transform="translate(58.7,80) scale(5.3)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#ffffff"/>
+    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#00ffcc" opacity="0.9"/>
+    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#008866"/>
+  </g>
+</svg>
