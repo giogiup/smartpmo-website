@@ -10,21 +10,72 @@
   <circle cx="16" cy="58.7" r="8" fill="#00d4aa"/>
   <circle cx="16" cy="80" r="8" fill="#00ffcc"/>
   
-  <!-- Quill feather overlay -->
-  <!-- Quill shaft -->
-  <rect x="67" y="20" width="3" height="45" rx="1.5" fill="#808080" transform="rotate(20 68.5 42.5)"/>
-  
-  <!-- Quill feather vanes -->
-  <ellipse cx="72" cy="25" rx="8" ry="20" fill="#ffffff" opacity="0.8" transform="rotate(20 72 25)"/>
-  <ellipse cx="70" cy="25" rx="6" ry="18" fill="#f0f0f0" transform="rotate(20 70 25)"/>
-  
-  <!-- Feather texture lines -->
-  <path d="M62 30 Q70 25 78 35" stroke="#d0d0d0" stroke-width="1" fill="none" transform="rotate(20 70 32.5)"/>
-  <path d="M64 35 Q70 30 76 38" stroke="#d0d0d0" stroke-width="1" fill="none" transform="rotate(20 70 36.5)"/>
-  <path d="M66 40 Q70 35 74 42" stroke="#d0d0d0" stroke-width="1" fill="none" transform="rotate(20 70 40.5)"/>
-  
-  <!-- Quill tip -->
-  <polygon points="65,60 67,60 66,68" fill="#333333" transform="rotate(20 66 64)"/>
+  <!-- Large sci-fi psychedelic letter B overlay with mini B's -->
+  <g>
+    <!-- Outermost B shape - Layer 1 -->
+    <path d="M30 30 Q30 25 35 25 L50 25 Q65 25 65 40 Q65 50 58 52.5 Q67 55 67 67.5 Q67 80 50 80 L35 80 Q30 80 30 75 Z M38 35 Q38 32 41 32 L50 32 Q58 32 58 40 Q58 48 50 48 L41 48 Q38 48 38 45 Z M38 55 Q38 52 41 52 L52 52 Q60 52 60 67.5 Q60 73 52 73 L41 73 Q38 73 38 70 Z" fill="#00ffcc"/>
+    
+    <!-- Layer 2 -->
+    <path d="M31 31 Q31 26 35.5 26 L49.5 26 Q64 26 64 40 Q64 49.5 57.5 52 Q66 54.5 66 67 Q66 79 49.5 79 L35.5 79 Q31 79 31 74.5 Z M38.5 35.5 Q38.5 33 41.2 33 L49.5 33 Q57.5 33 57.5 40 Q57.5 47 49.5 47 L41.2 47 Q38.5 47 38.5 44.5 Z M38.5 55.5 Q38.5 53 41.2 53 L51.5 53 Q59.5 53 59.5 67 Q59.5 72.5 51.5 72.5 L41.2 72.5 Q38.5 72.5 38.5 69.5 Z" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Layer 3 -->
+    <path d="M32 32 Q32 27 36 27 L49 27 Q63 27 63 40 Q63 49 57 51.5 Q65 54 65 66.5 Q65 78 49 78 L36 78 Q32 78 32 74 Z M39 36 Q39 34 41.5 34 L49 34 Q57 34 57 40 Q57 46 49 46 L41.5 46 Q39 46 39 44 Z M39 56 Q39 54 41.5 54 L51 54 Q59 54 59 66.5 Q59 72 51 72 L41.5 72 Q39 72 39 69 Z" fill="#00d4aa"/>
+    
+    <!-- Layer 4 -->
+    <path d="M33 33 Q33 28 36.5 28 L48.5 28 Q62 28 62 40 Q62 48.5 56.5 51 Q64 53.5 64 66 Q64 77 48.5 77 L36.5 77 Q33 77 33 73.5 Z M39.5 36.5 Q39.5 34.5 41.8 34.5 L48.5 34.5 Q56.5 34.5 56.5 40 Q56.5 45.5 48.5 45.5 L41.8 45.5 Q39.5 45.5 39.5 43.5 Z M39.5 56.5 Q39.5 54.5 41.8 54.5 L50.5 54.5 Q58.5 54.5 58.5 66 Q58.5 71.5 50.5 71.5 L41.8 71.5 Q39.5 71.5 39.5 68.5 Z" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Layer 5 -->
+    <path d="M34 34 Q34 29 37 29 L48 29 Q61 29 61 40 Q61 48 56 50.5 Q63 53 63 65.5 Q63 76 48 76 L37 76 Q34 76 34 73 Z M40 37 Q40 35 42 35 L48 35 Q56 35 56 40 Q56 45 48 45 L42 45 Q40 45 40 43 Z M40 57 Q40 55 42 55 L50 55 Q58 55 58 65.5 Q58 71 50 71 L42 71 Q40 71 40 68 Z" fill="#008866"/>
+    
+    <!-- Layer 6 -->
+    <path d="M35 35 Q35 30 37.5 30 L47.5 30 Q60 30 60 40 Q60 47.5 55.5 50 Q62 52.5 62 65 Q62 75 47.5 75 L37.5 75 Q35 75 35 72.5 Z M40.5 37.5 Q40.5 35.5 42.2 35.5 L47.5 35.5 Q55.5 35.5 55.5 40 Q55.5 44.5 47.5 44.5 L42.2 44.5 Q40.5 44.5 40.5 42.5 Z M40.5 57.5 Q40.5 55.5 42.2 55.5 L49.5 55.5 Q57.5 57.5 57.5 65 Q57.5 70.5 49.5 70.5 L42.2 70.5 Q40.5 70.5 40.5 67.5 Z" fill="#ffffff" opacity="0.7"/>
+    
+    <!-- Layer 7 -->
+    <path d="M36 36 Q36 31 38 31 L47 31 Q59 31 59 40 Q59 47 55 49.5 Q61 52 61 64.5 Q61 74 47 74 L38 74 Q36 74 36 72 Z M41 38 Q41 36 42.5 36 L47 36 Q55 36 55 40 Q55 44 47 44 L42.5 44 Q41 44 41 42 Z M41 58 Q41 56 42.5 56 L49 56 Q57 56 57 64.5 Q57 70 49 70 L42.5 70 Q41 70 41 67 Z" fill="#00ffcc"/>
+    
+    <!-- Layer 8 -->
+    <path d="M37 37 Q37 32 38.5 32 L46.5 32 Q58 32 58 40 Q58 46.5 54.5 49 Q60 51.5 60 64 Q60 73 46.5 73 L38.5 73 Q37 73 37 71.5 Z M41.5 38.5 Q41.5 36.5 42.8 36.5 L46.5 36.5 Q54.5 36.5 54.5 40 Q54.5 43.5 46.5 43.5 L42.8 43.5 Q41.5 43.5 41.5 41.5 Z M41.5 58.5 Q41.5 56.5 42.8 56.5 L48.5 56.5 Q56.5 56.5 56.5 64 Q56.5 69.5 48.5 69.5 L42.8 69.5 Q41.5 69.5 41.5 66.5 Z" fill="#ffffff" opacity="0.6"/>
+    
+    <!-- Mini B's scattered inside -->
+    <!-- Mini B 1 - top area -->
+    <g transform="translate(45,38) scale(0.3)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#00d4aa"/>
+    </g>
+    
+    <!-- Mini B 2 - middle area -->
+    <g transform="translate(50,52) scale(0.25)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#ffffff"/>
+    </g>
+    
+    <!-- Mini B 3 - bottom area -->
+    <g transform="translate(43,62) scale(0.35)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#008866"/>
+    </g>
+    
+    <!-- Mini B 4 - left side -->
+    <g transform="translate(40,48) scale(0.2)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#00ffcc"/>
+    </g>
+    
+    <!-- Mini B 5 - right side -->
+    <g transform="translate(52,45) scale(0.28)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#ffffff" opacity="0.8"/>
+    </g>
+    
+    <!-- Mini B 6 - bottom right -->
+    <g transform="translate(48,65) scale(0.22)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#00d4aa"/>
+    </g>
+    
+    <!-- Tiny micro B's for extra psychedelic effect -->
+    <g transform="translate(46,41) scale(0.15)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#ffffff"/>
+    </g>
+    
+    <g transform="translate(49,58) scale(0.12)">
+      <path d="M0 0 Q0 -2 2 -2 L6 -2 Q10 -2 10 2 Q10 5 7 6 Q11 7 11 11 Q11 15 6 15 L2 15 Q0 15 0 13 Z M3 1 Q3 0 4 0 L6 0 Q8 0 8 2 Q8 4 6 4 L4 4 Q3 4 3 3 Z M3 8 Q3 7 4 7 L7 7 Q9 7 9 11 Q9 13 7 13 L4 13 Q3 13 3 12 Z" fill="#00ffcc"/>
+    </g>
+  </g>
   
   <!-- Original stars (positioned as in reference) -->
   <g transform="translate(69.3,37.3) scale(3.7)">
