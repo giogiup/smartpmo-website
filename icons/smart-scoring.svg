@@ -1,28 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
-  <path d="M 7 13 A 5 5 0 0 1 17 13" fill="none" stroke="#008866" stroke-width="1.2" opacity="0.3"/>
-  <path d="M 7 13 A 5 5 0 0 1 14.5 9.5" fill="none" stroke="#ffc107" stroke-width="1.8" stroke-linecap="round"/>
-  <line x1="7" y1="13" x2="7.6" y2="12.6" stroke="#ffeb3b" stroke-width="0.8"/>
-  <line x1="9.5" y1="9.5" x2="10" y2="10" stroke="#ffeb3b" stroke-width="0.8"/>
-  <line x1="12" y1="8.5" x2="12" y2="9.2" stroke="#ffeb3b" stroke-width="0.8"/>
-  <line x1="14.5" y1="9.5" x2="14" y2="10" stroke="#ffeb3b" stroke-width="0.8"/>
-  <line x1="17" y1="13" x2="16.4" y2="12.6" stroke="#ffeb3b" stroke-width="0.8"/>
-  <line x1="12" y1="13" x2="14" y2="10" stroke="#ffc107" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="12" cy="13" r="0.6" fill="#ffc107"/>
-  <text x="12" y="17" fill="#ffc107" font-size="3.5" font-weight="bold" text-anchor="middle">8/10</text>
-  <g transform="translate(6,6) scale(0.4)">
-    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#ffc107"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <!-- Relevance gauge arc in grayscale -->
+  <path d="M 37.3 69.3 A 26.7 26.7 0 0 1 90.7 69.3" fill="none" stroke="#000000" stroke-width="6.4" opacity="0.3"/>
+  <path d="M 37.3 69.3 A 26.7 26.7 0 0 1 77.3 50.7" fill="none" stroke="#ffffff" stroke-width="9.6" stroke-linecap="round"/>
+  
+  <!-- Gauge tick marks in white -->
+  <line x1="37.3" y1="69.3" x2="40.5" y2="67.2" stroke="#ffffff" stroke-width="4.3"/>
+  <line x1="50.7" y1="50.7" x2="53.3" y2="53.3" stroke="#ffffff" stroke-width="4.3"/>
+  <line x1="64" y1="45.3" x2="64" y2="49.1" stroke="#ffffff" stroke-width="4.3"/>
+  <line x1="77.3" y1="50.7" x2="74.7" y2="53.3" stroke="#ffffff" stroke-width="4.3"/>
+  <line x1="90.7" y1="69.3" x2="87.5" y2="67.2" stroke="#ffffff" stroke-width="4.3"/>
+  
+  <!-- Gauge needle in white -->
+  <line x1="64" y1="69.3" x2="74.7" y2="53.3" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Center point -->
+  <circle cx="64" cy="69.3" r="3.2" fill="#ffffff"/>
+  
+  <!-- Score text in white -->
+  <text x="64" y="90.7" fill="#ffffff" font-size="18.7" font-weight="bold" text-anchor="middle">8/10</text>
+  
+  <!-- Star 1 - Small (top left, close to gauge) -->
+  <g transform="translate(20,20) scale(2.1)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00ffcc"/>
     <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
-    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#f57f17"/>
+    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#008866"/>
   </g>
-  <g transform="translate(18,6) scale(0.5)">
-    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#ffc107"/>
+  
+  <!-- Star 2 - Large (top right, close to gauge) -->
+  <g transform="translate(105,20) scale(3.9)">
+    <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00ffcc"/>
     <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
-    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#ffeb3b"/>
+    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#00d4aa"/>
   </g>
-  <g transform="translate(12,20) scale(0.45)">
+  
+  <!-- Star 3 - Medium (bottom center, close to gauge) -->
+  <g transform="translate(64,105) scale(3.0)">
     <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#ffffff"/>
-    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffc107" opacity="0.9"/>
-    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#f57f17"/>
+    <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#00ffcc" opacity="0.9"/>
+    <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#008866"/>
   </g>
 </svg>
