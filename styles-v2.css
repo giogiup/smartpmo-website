@@ -671,3 +671,38 @@ footer {
         top: 60px; /* Adjust for mobile nav height */
     }
 }
+/* --- Prevent Newsletter Overflow and Optimize for All Devices --- */
+
+/* Global safety — prevent any horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Ensure the EmailOctopus form and its children never exceed container width */
+.emailoctopus-form-wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.emailoctopus-form-wrapper * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile optimization: force embedded iframes to be fluid */
+@media (max-width: 768px) {
+  .emailoctopus-form-wrapper iframe {
+    width: 100% !important;
+  }
+}
+
+/* (Optional) Minor banner/mobile polish */
+@media (max-width: 768px) {
+  .demo-banner {
+    font-size: 12px;
+    padding: 6px 0;
+    top: 60px; /* below mobile header */
+  }
+}
+
