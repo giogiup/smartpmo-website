@@ -6,7 +6,7 @@
   <title>SmartPMO.ai — AI Insights for PMO Professionals</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-v2.css">
-<script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
@@ -48,14 +48,14 @@
         <span>SmartPMO.ai</span>
       </a>
       <nav class="nav">
-  <a href="#insights">Daily Insights</a>
-  <a href="#signup">Newsletter</a>
-</nav>
-<button class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+        <a href="#insights">Daily Insights</a>
+        <a href="#signup">Newsletter</a>
+      </nav>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -64,7 +64,7 @@
     <div class="hero-content">
       
       <!-- Left: Funnel Visual + Carousel -->
-<div class="hero-left">
+      <div class="hero-left">
         <div class="hero-image">
           <img src="hero-barista.png" alt="AI robot barista crafting PMO insights">
         </div>
@@ -81,13 +81,15 @@
       <!-- Right: Newsletter Signup -->
       <div class="hero-right">
         <div id="signup"></div>
-<div class="signup-card">
-  <h2>Get Your 10 Daily...</h2>
+        <div class="signup-card">
+          <h2>Get Your 10 Daily...</h2>
           <p>AI-powered PMO insights delivered free, every morning.</p>
-          <form class="signup-form">
-            <input type="email" placeholder="your@email.com" required>
-            <button type="submit" class="btn-primary">Subscribe Free</button>
-          </form>
+          
+          <!-- EmailOctopus Form -->
+          <div class="emailoctopus-form-wrapper">
+            <script async src="https://eocampaign1.com/form/73a90686-a1f9-11f0-9b87-6727ec6b3f72.js" data-form="73a90686-a1f9-11f0-9b87-6727ec6b3f72"></script>
+          </div>
+          
           <p class="signup-note">✓ 3-min daily read  ✓ Unsubscribe anytime</p>
         </div>
       </div>
@@ -149,63 +151,59 @@
   </svg>
 
   <script>
-
-function renderCards(cards) {
-    const grid = document.getElementById('insights-grid');
-    grid.innerHTML = cards.map(card => `
+    function renderCards(cards) {
+      const grid = document.getElementById('insights-grid');
+      grid.innerHTML = cards.map(card => `
         <div class="insight-card">
-            <div class="card-tagline">${card.tagline}</div>
-            <h3 class="card-title">
-    <a href="${card.url}" target="_blank">${card.title}</a>
-</h3>
-<span class="badge tldr-badge">
-    <i data-lucide="zap"></i> TLDR
-</span>
-<div class="card-tldr">
-    ${card.tldr.map(point => `<div class="tldr-bullet">${point}</div>`).join('')}
-</div>
-<div class="card-badges">
-    <span class="badge pmo-badge">
-        <i data-lucide="layout-dashboard"></i> ${card.badges.pmoArea || 'Strategy'}
-    </span>
-    <span class="badge implementation-badge">
-        <i data-lucide="rocket"></i> ${card.badges.implementation || 'Medium'}
-    </span>
-    <span class="badge skill-badge">
-        <i data-lucide="graduation-cap"></i> ${card.badges.skillLevel || 'Intermediate'}
-    </span>
-    <span class="badge time-badge">
-        <i data-lucide="book-open"></i> ${card.badges.time} min read
-    </span>
-    <span class="badge price-badge">
-        <i data-lucide="dollar-sign"></i> ${card.badges.price}
-    </span>
-</div>
-<div class="card-tags">
-    ${card.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-</div>
+          <div class="card-tagline">${card.tagline}</div>
+          <h3 class="card-title">
+            <a href="${card.url}" target="_blank">${card.title}</a>
+          </h3>
+          <span class="badge tldr-badge">
+            <i data-lucide="zap"></i> TLDR
+          </span>
+          <div class="card-tldr">
+            ${card.tldr.map(point => `<div class="tldr-bullet">${point}</div>`).join('')}
+          </div>
+          <div class="card-badges">
+            <span class="badge pmo-badge">
+              <i data-lucide="layout-dashboard"></i> ${card.badges.pmoArea || 'Strategy'}
+            </span>
+            <span class="badge implementation-badge">
+              <i data-lucide="rocket"></i> ${card.badges.implementation || 'Medium'}
+            </span>
+            <span class="badge skill-badge">
+              <i data-lucide="graduation-cap"></i> ${card.badges.skillLevel || 'Intermediate'}
+            </span>
+            <span class="badge time-badge">
+              <i data-lucide="book-open"></i> ${card.badges.time} min read
+            </span>
+            <span class="badge price-badge">
+              <i data-lucide="dollar-sign"></i> ${card.badges.price}
+            </span>
+          </div>
+          <div class="card-tags">
+            ${card.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+          </div>
         </div>
-    `).join('');
-    
-    lucide.createIcons();
-}
+      `).join('');
+      
+      lucide.createIcons();
+    }
 
-// Fetch real data from API
-async function loadDailyCards() {
-    try {
+    // Fetch real data from API
+    async function loadDailyCards() {
+      try {
         const response = await fetch('./api/daily-cards.json?t=' + Date.now());
         if (!response.ok) throw new Error('Failed to load cards');
         const data = await response.json();
         console.log(`Loaded ${data.count} cards from ${data.date}`);
-        console.log('First card badges:', data.cards[0].badges); // Debug line
         renderCards(data.cards);
-    } catch (error) {
+      } catch (error) {
         console.error('Error:', error);
         alert('Failed to load daily insights. Please refresh.');
+      }
     }
-}
-
-loadDailyCards();
 
     // Carousel rotation
     let carouselIndex = 0;
@@ -220,27 +218,22 @@ loadDailyCards();
     // Initial render
     loadDailyCards();
 
-    // Newsletter signup
-    document.querySelector('.signup-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Newsletter signup - integrate with ConvertKit');
+    // Mobile hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      hamburger.classList.toggle('active');
     });
-// Mobile hamburger menu
-const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('.nav');
 
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  hamburger.classList.toggle('active');
-});
-
-// Close menu when link clicked
-document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('active');
-    hamburger.classList.remove('active');
-  });
-});
+    // Close menu when link clicked
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
   </script>
 
 </body>
