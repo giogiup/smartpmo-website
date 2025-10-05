@@ -712,3 +712,26 @@ footer {
   max-width: 100%;
   box-sizing: border-box;
 }
+/* Fix EmailOctopus empty cyan block */
+.emailoctopus-form-wrapper {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.emailoctopus-form-wrapper > div:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  min-height: 0 !important;
+}
+
+/* Hide any empty blocks in the form */
+.emailoctopus-form-wrapper > div:empty,
+.emailoctopus-form-wrapper > div[style*="background"]:empty {
+  display: none !important;
+}
+
+/* Force form container to have no top spacing */
+div[data-form] {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
