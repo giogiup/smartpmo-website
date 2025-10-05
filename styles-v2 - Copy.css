@@ -32,12 +32,6 @@ html, body {
   line-height: 1.6;
 }
 
-/* prevent horizontal scroll & reserve banner space */
-body {
-  overflow-x: hidden;
-  padding-top: 120px;
-}
-
 /* Animated background (simplified - performance optimized) */
 body::before {
   content: "";
@@ -61,7 +55,7 @@ header {
   width: 100%;
   z-index: 1000;
   background: rgba(5, 5, 5, 0.85);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--glass-border);
 }
 
@@ -101,7 +95,6 @@ header {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
-  padding: 0.5rem 0;
 }
 
 .nav a:hover {
@@ -116,7 +109,7 @@ header {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 8px;
 }
 
 .hamburger span {
@@ -223,7 +216,7 @@ header {
   background: var(--panel);
   border: 1px solid var(--glass-border);
   border-radius: 16px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -496,52 +489,8 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Demo Banner */
-.demo-banner {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(90deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
-  color: #000;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 8px 0;
-  z-index: 9999;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
-}
-
-.demo-banner-content {
-  display: flex;
-  will-change: transform;
-  animation: scroll-left 20s linear infinite;
-  white-space: nowrap;
-}
-
-.demo-banner-text {
-  padding: 0 50px;
-  display: inline-flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.demo-banner-text::before {
-  content: "⚠️";
-  font-size: 16px;
-}
-
-@keyframes scroll-left {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  body {
-    padding-top: 100px;
-  }
-
   .hamburger {
     display: flex;
   }
@@ -590,7 +539,6 @@ footer {
 
   .hero-right {
     order: 2;
-    align-items: center;
   }
   
   .hero-headline {
@@ -607,10 +555,6 @@ footer {
   
   .signup-card {
     max-width: 100%;
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   }
   
   .signup-form {
@@ -631,26 +575,6 @@ footer {
   
   .insights-grid {
     grid-template-columns: 1fr;
-  }
-
-  /* banner speed tweak */
-  .demo-banner-content {
-    animation-duration: 12s;
-  }
-
-  /* lighter shadows on mobile */
-  .insight-card {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  }
-
-  /* newsletter centering */
-  .emailoctopus-form-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  .emailoctopus-form-wrapper iframe {
-    width: 100% !important;
-    max-width: 400px;
   }
 }
 
@@ -701,14 +625,107 @@ footer {
     font-weight: bold;
     font-size: 1.2em;
 }
+/* Demo Banner */
+.demo-banner {
+    position: fixed;
+    top: 70px; /* Below your nav bar */
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px 0;
+    z-index: 9999; /* Below nav but above content */
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+}
 
-/* EmailOctopus safety */
+.demo-banner-content {
+    display: flex;
+    animation: scroll-left 20s linear infinite;
+    white-space: nowrap;
+}
+
+.demo-banner-text {
+    padding: 0 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.demo-banner-text::before {
+    content: "⚠️";
+    font-size: 16px;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .demo-banner {
+        font-size: 12px;
+        padding: 6px 0;
+        top: 60px; /* Adjust for mobile nav height */
+    }
+}
+/* --- Prevent Newsletter Overflow and Optimize for All Devices --- */
+
+/* Global safety — prevent any horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Ensure the EmailOctopus form and its children never exceed container width */
 .emailoctopus-form-wrapper {
   max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 }
+
 .emailoctopus-form-wrapper * {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* Mobile optimization: force embedded iframes to be fluid */
+@media (max-width: 768px) {
+  .emailoctopus-form-wrapper iframe {
+    width: 100% !important;
+  }
+}
+
+/* (Optional) Minor banner/mobile polish */
+@media (max-width: 768px) {
+  .demo-banner {
+    font-size: 12px;
+    padding: 6px 0;
+    top: 60px; /* below mobile header */
+  }
+}
+/* --- Mobile Newsletter Alignment Polish --- */
+@media (max-width: 768px) {
+  .hero-right {
+    align-items: center;
+  }
+
+  .signup-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .emailoctopus-form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .emailoctopus-form-wrapper iframe {
+    width: 100% !important;
+    max-width: 400px;
+  }
+}
+
+
