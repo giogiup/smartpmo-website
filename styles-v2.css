@@ -736,3 +736,24 @@ footer {
   width: 100% !important;
 }
 
+/* Restore 'Powered by EmailOctopus' attribution styling */
+.emailoctopus-form-wrapper .emailoctopus-powered {
+  display: block !important;
+  margin-top: 0.75rem !important;
+  text-align: center !important;
+  font-size: 0.8rem !important;
+  color: rgba(200, 200, 200, 0.6) !important;
+  background: transparent !important;
+  padding: 0.25rem 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.emailoctopus-form-wrapper .emailoctopus-powered a {
+  color: rgba(200, 200, 200, 0.6) !important;
+  text-decoration: none !important;
+}
+
+.emailoctopus-form-wrapper .emailoctopus-powered a:hover {
+  color: var(--cyan) !important;
+}
