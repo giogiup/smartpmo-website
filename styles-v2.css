@@ -781,3 +781,42 @@ footer {
   text-decoration: underline !important;
 }
 
+/* --- FORCE FIX: EmailOctopus attribution white block override --- */
+.emailoctopus-form-wrapper .mastfoot,
+.emailoctopus-form-wrapper .mastfoot * {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.emailoctopus-form-wrapper .mastfoot {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0.75rem 0 !important;
+  margin-top: 0.75rem !important;
+}
+
+.emailoctopus-form-wrapper .mastfoot .inner p,
+.emailoctopus-form-wrapper .mastfoot .inner a {
+  color: rgba(200, 200, 200, 0.65) !important;
+  font-size: 0.8rem !important;
+  line-height: 1.4 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+}
+
+.emailoctopus-form-wrapper .mastfoot .inner a:hover {
+  color: var(--cyan) !important;
+  text-decoration: underline !important;
+}
+
+/* Extra catch-all to stop embedded divs from forcing white */
+.emailoctopus-form-wrapper div[style*="background"],
+.emailoctopus-form-wrapper div[style*="background-color"] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+
