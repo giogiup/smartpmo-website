@@ -736,12 +736,51 @@ div[data-form] {
   padding-top: 0 !important;
 }
 
-/* Hide EmailOctopus branding */
-.emailoctopus-form-wrapper a[href*="emailoctopus"],
-.emailoctopus-form-wrapper div:has(a[href*="emailoctopus"]) {
+/* EmailOctopus safety */
+.emailoctopus-form-wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.emailoctopus-form-wrapper * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+/* Fix EmailOctopus empty cyan block */
+.emailoctopus-form-wrapper {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.emailoctopus-form-wrapper > div:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  min-height: 0 !important;
+}
+/* Hide any empty blocks in the form */
+.emailoctopus-form-wrapper > div:empty,
+.emailoctopus-form-wrapper > div[style*="background"]:empty {
+  display: none !important;
+}
+/* Force form container to have no top spacing */
+div[data-form] {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* REPLACE ONLY THIS SECTION */
+/* Hide ONLY EmailOctopus branding text - keep the form */
+.emailoctopus-form-wrapper a[href*="emailoctopus.com"] {
   display: none !important;
 }
 
-.emailoctopus-form-wrapper *:has(a[href*="emailoctopus"]) {
+/* Hide the container of the branding link */
+.emailoctopus-form-wrapper div:has(> a[href*="emailoctopus.com"]) {
   display: none !important;
+}
+
+/* But keep the actual form visible */
+.emailoctopus-form-wrapper form,
+.emailoctopus-form-wrapper input,
+.emailoctopus-form-wrapper button {
+  display: block !important;
 }
