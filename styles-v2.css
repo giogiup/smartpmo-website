@@ -735,3 +735,13 @@ div[data-form] {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+/* Hide EmailOctopus branding */
+.emailoctopus-form-wrapper a[href*="emailoctopus"],
+.emailoctopus-form-wrapper div:has(a[href*="emailoctopus"]) {
+  display: none !important;
+}
+
+.emailoctopus-form-wrapper *:has(a[href*="emailoctopus"]) {
+  display: none !important;
+}
