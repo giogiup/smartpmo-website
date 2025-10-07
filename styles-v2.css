@@ -757,3 +757,27 @@ footer {
 .emailoctopus-form-wrapper .emailoctopus-powered a:hover {
   color: var(--cyan) !important;
 }
+
+/* --- Restore and restyle official EmailOctopus attribution --- */
+.emailoctopus-form-wrapper .mastfoot,
+.emailoctopus-form-wrapper .mastfoot.no-bg {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.5rem 0 !important;
+  margin-top: 0.5rem !important;
+  text-align: center !important;
+}
+
+.emailoctopus-form-wrapper .mastfoot .inner p,
+.emailoctopus-form-wrapper .mastfoot .inner a {
+  color: rgba(200, 200, 200, 0.6) !important;
+  font-size: 0.8rem !important;
+  text-decoration: none !important;
+}
+
+.emailoctopus-form-wrapper .mastfoot .inner a:hover {
+  color: var(--cyan) !important;
+  text-decoration: underline !important;
+}
+
