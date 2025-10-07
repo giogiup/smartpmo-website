@@ -702,32 +702,37 @@ footer {
     font-size: 1.2em;
 }
 
-/* EmailOctopus Mobile Fix */
-.emailoctopus-form-wrapper {
-  max-width: 100%;
-  overflow: hidden;
-}
-.emailoctopus-form-wrapper * {
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-}
-.emailoctopus-form-wrapper input[type="email"],
-.emailoctopus-form-wrapper input[type="text"],
-.emailoctopus-form-wrapper button,
-.emailoctopus-form-wrapper input[type="submit"] {
-  width: 100% !important;
-  max-width: 100% !important;
+/* EmailOctopus form cleanup */
+.emailoctopus-form-wrapper form {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
-/* Fix EmailOctopus success message readability */
-.emailoctopus-form-wrapper .success-message,
-.emailoctopus-form-wrapper [class*="success"],
-.emailoctopus-form-wrapper div[style*="color"] {
-  color: #00F5FF !important;
-  background: linear-gradient(135deg, rgba(76, 120, 255, 0.15), rgba(0, 245, 255, 0.1)) !important;
-  padding: 1.5rem !important;
-  border-radius: 12px !important;
-  border: 2px solid #00F5FF !important;
-  font-weight: 600 !important;
-  text-align: center !important;
+.emailoctopus-form-wrapper h2,
+.emailoctopus-form-wrapper p:first-child {
+  display: none !important; /* hide EmailOctopus default heading */
 }
+
+.emailoctopus-form-wrapper input[type="email"] {
+  border-radius: 10px !important;
+  border: 1px solid var(--glass-border) !important;
+  background: rgba(255,255,255,0.05) !important;
+  color: var(--text-primary) !important;
+  padding: 1rem 1.25rem !important;
+  font-size: 1rem !important;
+  width: 100% !important;
+}
+
+.emailoctopus-form-wrapper input[type="submit"] {
+  border-radius: 10px !important;
+  border: none !important;
+  background: linear-gradient(135deg, var(--cyan), var(--purple)) !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  padding: 1rem 2rem !important;
+  cursor: pointer !important;
+  width: 100% !important;
+}
+
