@@ -751,3 +751,19 @@ div[data-form] {
 .emailoctopus-form-wrapper a[href*="emailoctopus"]:parent {
   display: none !important;
 }
+/* 1. Remove the unwanted cyan spacer block */
+.emailoctopus-form-wrapper div[class*="flex"] > div:empty {
+  display: none !important;
+}
+
+/* 2. Change visible text from “Top 10” → “Top 20” */
+.emailoctopus-form-wrapper h2::before {
+  content: "Get your Weekly Top 20";
+  display: block;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+.emailoctopus-form-wrapper h2 {
+  font-size: 0;          /* hide original text */
+}
