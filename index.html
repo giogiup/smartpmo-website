@@ -239,14 +239,14 @@
               <i data-lucide="graduation-cap"></i> ${card.badges.skillLevel || 'Intermediate'}
             </span>
             <span class="badge time-badge">
-              <i data-lucide="book-open"></i> ${card.badges.time} min read
+              <i data-lucide="book-open"></i> ${card.badges.readTime || card.badges.time || 5} min read
             </span>
             <span class="badge price-badge">
               <i data-lucide="dollar-sign"></i> ${card.badges.price}
             </span>
           </div>
           <div class="card-tags">
-            ${card.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+            ${(card.keywords || card.tags || []).map(tag => `<span class="tag">${tag}</span>`).join('')}
           </div>
         </div>
       `).join('');
