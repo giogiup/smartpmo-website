@@ -1,199 +1,158 @@
 {
-  "generated_at": "2025-10-08T19:36:50.088Z",
-  "date": "2025-10-08",
-  "count": 8,
+  "generated": "2025-10-14T05:18:02.278Z",
+  "date": "2025-10-13",
+  "count": 5,
   "cards": [
     {
-      "id": 990,
-      "tagline": "Automate UI tasks with AI agents that click, scroll, and fill forms",
-      "title": "Google DeepMind Releases Gemini 2.5 Computer Use Model",
-      "url": "https://analyticsindiamag.com/ai-news-updates/google-deepmind-releases-gemini-2-5-computer-use-model/",
+      "id": 2876,
+      "title": "Google Launches Gemini Enterprise: A New Automation Engine for Workspaces",
+      "url": "https://ai-engineering-trend.medium.com/google-launches-gemini-enterprise-a-new-automation-engine-for-workspaces-4862bccd667a",
+      "date": "2025-10-13",
+      "score": 90,
+      "tagline": "Gemini Enterprise: Automate project workflows, bridge data silos, and boost PMO value.",
       "tldr": [
-        "Eliminates manual data entry by enabling AI to interact directly with web and mobile interfaces through automated clicks and form fills",
-        "Features screenshot-based workflow loops that execute UI actions with 70%+ accuracy and maintain context across multi-step processes",
-        "Includes built-in safety controls allowing developers to require human confirmation before high-stakes actions like payments or deletions",
-        "Real-world applications span CRM data transfers, sticky note organization, and behind-login automation for enterprise productivity gains"
-      ],
-      "tags": [
-        "Gemini 2.5",
-        "computer use automation",
-        "UI automation"
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Advanced",
-        "time": 2,
-        "price": "Paid"
-      }
-    },
-    {
-      "id": 1028,
-      "tagline": "Open-source Petri tool audits AI models for deception, power-seeking, and safety risks",
-      "title": "Anthropic’s AI safety tool Petri uses autonomous agents to study model behavior",
-      "url": "https://siliconangle.com/2025/10/07/anthropics-ai-safety-tool-petri-uses-autonomous-agents-study-model-behavior/",
-      "tldr": [
-        "Eliminates manual safety testing burden by deploying autonomous agents that probe 14 leading LLMs across 111 risky tasks identifying misalignment behaviors automatically",
-        "Tests models across four critical safety categories including deception, power-seeking behavior, sycophancy patterns, and refusal failures with systematic audit trails",
-        "Features judge models that rank LLM responses across honesty and compliance dimensions flagging risky transcripts for human review and analysis",
-        "Represents shift from static benchmarks to ongoing automated audits catching dangerous behaviors before and after model deployment in production environments"
-      ],
-      "tags": [
-        "Petri",
-        "AI safety testing",
-        "model auditing"
-      ],
-      "badges": {
-        "pmoArea": "Quality",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Advanced",
-        "time": 3,
-        "price": "Free"
-      }
-    },
-    {
-      "id": 1087,
-      "tagline": "AI search optimization strategies boost ChatGPT rankings and brand visibility by 400%",
-      "title": "Blog - Superprompt.com",
-      "url": "https://superprompt.com/blog",
-      "tldr": [
-        "Addresses invisibility in AI search results by teaching citation engineering tactics that get brands mentioned in ChatGPT, Claude, and Perplexity responses",
-        "Features generative engine optimization frameworks that convert 5x better than traditional SEO by targeting AI recommendation patterns instead of keyword rankings",
-        "Includes brand mention tracking across 15+ AI platforms with real-time monitoring dashboards measuring visibility metrics and citation frequency changes",
-        "Demonstrates agentic AI customer service implementations achieving 93% resolution rates while cutting support costs 30% through autonomous agent workflows"
-      ],
-      "tags": [
-        "generative engine optimization",
-        "AI search visibility",
-        "ChatGPT ranking"
-      ],
-      "badges": {
-        "pmoArea": "Stakeholder",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "time": 2,
-        "price": "Paid"
-      }
-    },
-    {
-      "id": 1088,
-      "tagline": "Laravel developers add AI chatbots, recommendation engines, and fraud detection with OpenAI integration",
-      "title": "How to Add AI Features to Laravel Apps in 2025",
-      "url": "https://acquaintsoft.com/blog/how-to-add-ai-features-to-laravel",
-      "tldr": [
-        "Solves customer support bottlenecks by deploying Laravel GPT chatbots that connect to FAQs, ticketing systems, and live data for instant contextual responses",
-        "Features recommendation engines using collaborative filtering that rank items per user in real-time improving retention through personalized content feeds",
-        "Includes NLP-powered intelligent search that parses intent and synonyms turning clunky keyword lookups into conversational queries with natural explanations",
-        "Fraud detection monitors login patterns, payment anomalies, and location changes using machine learning models that flag suspicious activity before damage occurs"
-      ],
-      "tags": [
-        "Laravel",
-        "fraud detection",
-        "recommendation engine"
+        "Addresses the PMO pain point of siloed data hindering project insights by creating an AI-driven workspace that connects disparate datasets for improved decision-making and reporting.",
+        "Features Auto Mode, intelligently selecting optimal AI models for tasks, and Agent Builder, which enables the creation of automated workflows leveraging internal connectors within organizations.",
+        "Begin by identifying critical data silos within PMO processes and then explore Agent Builder to create workflows that bridge these islands, automating data flow, analysis, and insights generation.",
+        "Automated report generation, proactive risk identification using cross-referenced data, and streamlined stakeholder communication through AI-driven updates are key use cases within a PMO context."
       ],
       "badges": {
         "pmoArea": "Integration",
         "implementation": "Weeks to Deploy",
         "skillLevel": "Intermediate",
-        "time": 8,
-        "price": "Freemium"
-      }
-    },
-    {
-      "id": 1089,
-      "tagline": "Build AI agents 70% faster with visual workflows and built-in guardrails",
-      "title": "Introducing AgentKit: Build Smarter AI Agents",
-      "url": "https://premiersol.live/blog/introducing-agentkit-openai-agent-builder",
-      "tldr": [
-        "Eliminates manual orchestration of agent logic, tool connections, and evaluation pipelines through unified visual workflow builder",
-        "Features drag-and-drop canvas, embedded chat UI, connector registry, and automated prompt optimization for rapid deployment",
-        "Includes safety guardrails with compliance validation, business rules enforcement, and human-in-loop approval workflows built-in",
-        "Real-world teams built procurement and work-assistant agents in hours instead of months using reusable modular components"
-      ],
-      "tags": [
-        "AgentKit",
-        "agentic workflow",
-        "guardrails"
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "time": 3,
-        "price": "Paid"
-      }
-    },
-    {
-      "id": 1091,
-      "tagline": "IBM watsonx delivers 500+ tools with governance layers for enterprise agent orchestration",
-      "title": "IBM unveils AI productivity tools across software and infrastructure ...",
-      "url": "https://www.investing.com/news/company-news/ibm-unveils-ai-productivity-tools-across-software-and-infrastructure-93CH-4274401",
-      "tldr": [
-        "Addresses fragmented hybrid cloud environments through unified control plane that monitors multi-agent workflows with policy-based governance and real-time observability",
-        "Features AgentOps governance layer providing standardized reusable flows that sequence multiple agents while maintaining security compliance across mainframe and cloud systems",
-        "Integrates Anthropic Claude models directly into development environments enabling intelligent code generation, modernization, and security-first orchestration workflows",
-        "Project Bob IDE and watsonx Assistant for Z target infrastructure automation and proactive system management reducing bottlenecks across technology lifecycles"
-      ],
-      "tags": [
-        "watsonx Orchestrate",
-        "AgentOps",
-        "Project Bob"
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Long to Deploy",
-        "skillLevel": "Expert",
-        "time": 2,
+        "readTime": 4,
         "price": "Enterprise"
-      }
+      },
+      "keywords": [
+        "Gemini Enterprise",
+        "AI",
+        "Automation",
+        "Workflow",
+        "Data Silos",
+        "Google Workspace",
+        "Agent Builder",
+        "PMO"
+      ]
     },
     {
-      "id": 1093,
-      "tagline": "ChatGPT integrates Spotify, Figma, and Canva directly into conversation workflows",
-      "title": "AI productivity tools Archives - The Daily Guardian",
-      "url": "https://thedailyguardian.com/tag/ai-productivity-tools/",
+      "id": 3505,
+      "title": "DXC Launches Assure Smart Apps to Accelerate AI-Driven Innovation in the Insurance Industry",
+      "url": "https://www.manilatimes.net/2025/10/13/tmt-newswire/pr-newswire/dxc-launches-assure-smart-apps-to-accelerate-ai-driven-innovation-in-the-insurance-industry/2199277",
+      "date": "2025-10-13",
+      "score": 90,
+      "tagline": "AI-powered insurance apps modernize operations and boost decision-making for PMOs",
       "tldr": [
-        "Eliminates app-switching friction by embedding productivity tools directly into ChatGPT enabling seamless creation and editing without leaving conversation context",
-        "Enables users to control music playback, design graphics, and create presentations through natural language commands integrated with third-party platforms",
-        "Represents shift toward unified AI workspace where multiple specialized tools respond to conversational prompts reducing cognitive load and workflow fragmentation",
-        "Integration capabilities demonstrate ChatGPT evolution from chatbot to orchestration layer that coordinates multiple productivity applications through single interface"
+        "Solves PMO challenges by streamlining insurance operations, enhancing collaboration, and improving decision-making processes through smart automation, ultimately driving efficiency and reducing operational costs.",
+        "Features include AI-powered workflows, intelligent automation, natural language processing, and modular design, enabling insurers to modernize legacy systems and leverage cloud capabilities for scalability.",
+        "Assess current PMO processes, identify areas for AI integration, explore DXC Assure Smart Apps, and deploy targeted modules to enhance specific operational workflows for immediate improvements.",
+        "Use cases encompass claims processing optimization, risk assessment automation, policy management enhancement, and enhanced customer interaction strategies, all designed to improve PMO performance."
       ],
-      "tags": [
-        "ChatGPT integrations",
-        "Figma",
-        "Spotify"
+      "badges": {
+        "pmoArea": "Integration",
+        "implementation": "Weeks to Deploy",
+        "skillLevel": "Intermediate",
+        "readTime": 5,
+        "price": "Enterprise"
+      },
+      "keywords": [
+        "AI",
+        "Insurance",
+        "Smart Apps",
+        "Automation",
+        "Workflow",
+        "DXC",
+        "Innovation",
+        "PMO"
+      ]
+    },
+    {
+      "id": 3507,
+      "title": "OpenAI Adds Full MCP Support to ChatGPT Developer Mode",
+      "url": "https://www.infoq.com/news/2025/10/chat-gpt-mcp/",
+      "date": "2025-10-13",
+      "score": 90,
+      "tagline": "Enhance project automation with ChatGPT's new MCP support.",
+      "tldr": [
+        "Streamline project management by integrating ChatGPT with existing tools, reducing manual tasks and errors.",
+        "Leverage custom connectors for real-time data interactions, enabling efficient workflows and improved decision-making.",
+        "Implement MCP by accessing Developer Mode in ChatGPT, allowing for structured tool calls and safety checks.",
+        "Use cases include updating project statuses, automating reporting, and managing resources directly within ChatGPT."
       ],
       "badges": {
         "pmoArea": "Integration",
         "implementation": "Quick Win",
-        "skillLevel": "Beginner",
-        "time": 1,
-        "price": "Freemium"
-      }
+        "skillLevel": "Intermediate",
+        "readTime": 8,
+        "price": "Enterprise"
+      },
+      "keywords": [
+        "OpenAI",
+        "ChatGPT",
+        "MCP",
+        "automation",
+        "developers",
+        "integrations",
+        "project management"
+      ]
     },
     {
-      "id": 1094,
-      "tagline": "Enterprise ChatGPT training delivers policy-aware prompts and departmental adoption frameworks",
-      "title": "ChatGPT Enterprise for Business Training | Caltech CTME",
-      "url": "https://ctme.caltech.edu/chatgpt-enterprise-for-business-training-custom.html",
+      "id": 2866,
+      "title": "NetSuite MCP unlocks with power of Agentic AI",
+      "url": "https://www.itnews.com.au/feature/netsuite-mcp-unlocks-with-power-of-agentic-ai-620933",
+      "date": "2025-10-13",
+      "score": 85,
+      "tagline": "Unlock smarter project management with Agentic AI integration.",
       "tldr": [
-        "Solves fragmented AI adoption by providing standardized prompt templates and guardrails that ensure compliance across finance, HR, and operations teams",
-        "Teaches repeatable frameworks for automating routine tasks like meeting agendas, transcripts, policy documentation, and executive summaries with brand consistency",
-        "Includes hands-on customization of ChatGPT Enterprise features like persistent instructions, custom GPTs, shared chats, and version control for team workflows",
-        "Participants leave with prompt reference guides, annotated workflows, custom onboarding GPT, and individualized automation plan for one business process"
+        "Agentic AI addresses the complexity of project management by enabling autonomous decision-making and workflow orchestration, reducing the burden on PMO teams.",
+        "Key features include natural language processing, context interpretation, and the ability to learn and adapt, enhancing project execution and reporting.",
+        "Implement Agentic AI by integrating NetSuite's MCP connector, allowing for seamless connections to various AI platforms and custom applications.",
+        "Use cases include financial reporting, automated insights generation, and workflow management, streamlining processes and improving efficiency in PMO operations."
       ],
-      "tags": [
-        "ChatGPT Enterprise",
-        "prompt engineering",
-        "enterprise adoption"
+      "badges": {
+        "pmoArea": "Integration",
+        "implementation": "Weeks to Deploy",
+        "skillLevel": "Intermediate",
+        "readTime": 6,
+        "price": "Enterprise"
+      },
+      "keywords": [
+        "Agentic AI",
+        "NetSuite",
+        "MCP connector",
+        "autonomous operations",
+        "workflow orchestration",
+        "natural language processing"
+      ]
+    },
+    {
+      "id": 3495,
+      "title": "7 AI Agents That Will Replace Your Virtual Assistant in 2025",
+      "url": "https://ai.plainenglish.io/7-ai-agents-that-will-replace-your-virtual-assistant-in-2025-b43bf00c1f8e?gi=27fe0965886d&source=rss------technology-5",
+      "date": "2025-10-13",
+      "score": 80,
+      "tagline": "Upgrade your PMO assistant: AI agents automating tasks by 2025.",
+      "tldr": [
+        "Address PMO inefficiency by transitioning from reactive virtual assistants to proactive AI agents, streamlining task management and freeing up PMO resources for strategic work.",
+        "These AI agents think, plan, and act autonomously, learning from interactions, adapting to new situations, and making informed decisions without constant human intervention.",
+        "Explore available AI agent platforms, identify key PMO tasks suitable for automation, and begin piloting AI agent integration in controlled environments.",
+        "Use AI agents for automated project status updates, risk identification, resource allocation optimization, and proactive stakeholder communication, improving project delivery and efficiency."
       ],
       "badges": {
         "pmoArea": "Resource",
-        "implementation": "Quick Win",
-        "skillLevel": "Beginner",
-        "time": 3,
-        "price": "Paid"
-      }
+        "implementation": "Weeks to Deploy",
+        "skillLevel": "Intermediate",
+        "readTime": 4,
+        "price": "Freemium"
+      },
+      "keywords": [
+        "AI agents",
+        "virtual assistant",
+        "automation",
+        "PMO",
+        "task management",
+        "efficiency",
+        "project management"
+      ]
     }
   ]
 }
