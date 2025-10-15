@@ -1,51 +1,49 @@
 {
-  "generated": "2025-10-14T05:18:02.278Z",
-  "date": "2025-10-13",
-  "count": 5,
+  "generated": "2025-10-15T05:55:21.693Z",
+  "date": "2025-10-15",
+  "count": 2,
   "cards": [
     {
-      "id": 2876,
-      "title": "Google Launches Gemini Enterprise: A New Automation Engine for Workspaces",
-      "url": "https://ai-engineering-trend.medium.com/google-launches-gemini-enterprise-a-new-automation-engine-for-workspaces-4862bccd667a",
-      "date": "2025-10-13",
+      "id": 4993,
+      "title": "Salesforce, OpenAI Partner to Integrate Agentforce 360 and ChatGPT",
+      "url": "https://analyticsindiamag.com/ai-news-updates/salesforce-openai-partner-to-integrate-agentforce-360-and-chatgpt/",
+      "date": "2025-10-15",
       "score": 90,
-      "tagline": "Gemini Enterprise: Automate project workflows, bridge data silos, and boost PMO value.",
+      "tagline": "Enhance project workflows with Salesforce and OpenAI integration.",
       "tldr": [
-        "Addresses the PMO pain point of siloed data hindering project insights by creating an AI-driven workspace that connects disparate datasets for improved decision-making and reporting.",
-        "Features Auto Mode, intelligently selecting optimal AI models for tasks, and Agent Builder, which enables the creation of automated workflows leveraging internal connectors within organizations.",
-        "Begin by identifying critical data silos within PMO processes and then explore Agent Builder to create workflows that bridge these islands, automating data flow, analysis, and insights generation.",
-        "Automated report generation, proactive risk identification using cross-referenced data, and streamlined stakeholder communication through AI-driven updates are key use cases within a PMO context."
+        "This partnership addresses the need for real-time data access and decision-making in project management.",
+        "Utilize OpenAI's advanced models like GPT-5 to create intelligent AI agents for enhanced productivity.",
+        "Integrate Salesforce’s Agentforce 360 into your workflows for seamless data retrieval and visualization.",
+        "Use cases include automating project updates, enhancing team collaboration, and improving client interactions through AI-driven insights."
       ],
       "badges": {
         "pmoArea": "Integration",
         "implementation": "Weeks to Deploy",
         "skillLevel": "Intermediate",
-        "readTime": 4,
-        "price": "Enterprise"
+        "readTime": 7,
+        "price": "Freemium"
       },
       "keywords": [
-        "Gemini Enterprise",
-        "AI",
-        "Automation",
-        "Workflow",
-        "Data Silos",
-        "Google Workspace",
-        "Agent Builder",
-        "PMO"
+        "Salesforce",
+        "OpenAI",
+        "Agentforce 360",
+        "ChatGPT",
+        "AI integration",
+        "enterprise workflows"
       ]
     },
     {
-      "id": 3505,
-      "title": "DXC Launches Assure Smart Apps to Accelerate AI-Driven Innovation in the Insurance Industry",
-      "url": "https://www.manilatimes.net/2025/10/13/tmt-newswire/pr-newswire/dxc-launches-assure-smart-apps-to-accelerate-ai-driven-innovation-in-the-insurance-industry/2199277",
-      "date": "2025-10-13",
+      "id": 4994,
+      "title": "Salesforce deepens AI ties with OpenAI, Anthropic to power Agentforce platform",
+      "url": "https://www.thehindu.com/sci-tech/technology/salesforce-deepens-ai-ties-with-openai-anthropic-to-power-agentforce-platform/article70165566.ece",
+      "date": "2025-10-15",
       "score": 90,
-      "tagline": "AI-powered insurance apps modernize operations and boost decision-making for PMOs",
+      "tagline": "Enhance project management with AI-driven insights and automation tools.",
       "tldr": [
-        "Solves PMO challenges by streamlining insurance operations, enhancing collaboration, and improving decision-making processes through smart automation, ultimately driving efficiency and reducing operational costs.",
-        "Features include AI-powered workflows, intelligent automation, natural language processing, and modular design, enabling insurers to modernize legacy systems and leverage cloud capabilities for scalability.",
-        "Assess current PMO processes, identify areas for AI integration, explore DXC Assure Smart Apps, and deploy targeted modules to enhance specific operational workflows for immediate improvements.",
-        "Use cases encompass claims processing optimization, risk assessment automation, policy management enhancement, and enhanced customer interaction strategies, all designed to improve PMO performance."
+        "Salesforce's integration of AI models addresses the need for efficient data management in PMOs, reducing manual effort and improving decision-making.",
+        "Key features include GPT-5 and Claude models for enhanced data interaction, analytics, and AI agent management within existing software ecosystems.",
+        "To implement, PMOs should explore Salesforce's Agentforce 360, integrating AI tools into workflows and training teams on new capabilities.",
+        "Use cases include automating reporting processes, improving stakeholder communication, and leveraging AI for predictive analytics in project planning."
       ],
       "badges": {
         "pmoArea": "Integration",
@@ -55,103 +53,14 @@
         "price": "Enterprise"
       },
       "keywords": [
+        "Salesforce",
         "AI",
-        "Insurance",
-        "Smart Apps",
-        "Automation",
-        "Workflow",
-        "DXC",
-        "Innovation",
-        "PMO"
-      ]
-    },
-    {
-      "id": 3507,
-      "title": "OpenAI Adds Full MCP Support to ChatGPT Developer Mode",
-      "url": "https://www.infoq.com/news/2025/10/chat-gpt-mcp/",
-      "date": "2025-10-13",
-      "score": 90,
-      "tagline": "Enhance project automation with ChatGPT's new MCP support.",
-      "tldr": [
-        "Streamline project management by integrating ChatGPT with existing tools, reducing manual tasks and errors.",
-        "Leverage custom connectors for real-time data interactions, enabling efficient workflows and improved decision-making.",
-        "Implement MCP by accessing Developer Mode in ChatGPT, allowing for structured tool calls and safety checks.",
-        "Use cases include updating project statuses, automating reporting, and managing resources directly within ChatGPT."
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Quick Win",
-        "skillLevel": "Intermediate",
-        "readTime": 8,
-        "price": "Enterprise"
-      },
-      "keywords": [
         "OpenAI",
-        "ChatGPT",
-        "MCP",
-        "automation",
-        "developers",
-        "integrations",
-        "project management"
-      ]
-    },
-    {
-      "id": 2866,
-      "title": "NetSuite MCP unlocks with power of Agentic AI",
-      "url": "https://www.itnews.com.au/feature/netsuite-mcp-unlocks-with-power-of-agentic-ai-620933",
-      "date": "2025-10-13",
-      "score": 85,
-      "tagline": "Unlock smarter project management with Agentic AI integration.",
-      "tldr": [
-        "Agentic AI addresses the complexity of project management by enabling autonomous decision-making and workflow orchestration, reducing the burden on PMO teams.",
-        "Key features include natural language processing, context interpretation, and the ability to learn and adapt, enhancing project execution and reporting.",
-        "Implement Agentic AI by integrating NetSuite's MCP connector, allowing for seamless connections to various AI platforms and custom applications.",
-        "Use cases include financial reporting, automated insights generation, and workflow management, streamlining processes and improving efficiency in PMO operations."
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 6,
-        "price": "Enterprise"
-      },
-      "keywords": [
-        "Agentic AI",
-        "NetSuite",
-        "MCP connector",
-        "autonomous operations",
-        "workflow orchestration",
-        "natural language processing"
-      ]
-    },
-    {
-      "id": 3495,
-      "title": "7 AI Agents That Will Replace Your Virtual Assistant in 2025",
-      "url": "https://ai.plainenglish.io/7-ai-agents-that-will-replace-your-virtual-assistant-in-2025-b43bf00c1f8e?gi=27fe0965886d&source=rss------technology-5",
-      "date": "2025-10-13",
-      "score": 80,
-      "tagline": "Upgrade your PMO assistant: AI agents automating tasks by 2025.",
-      "tldr": [
-        "Address PMO inefficiency by transitioning from reactive virtual assistants to proactive AI agents, streamlining task management and freeing up PMO resources for strategic work.",
-        "These AI agents think, plan, and act autonomously, learning from interactions, adapting to new situations, and making informed decisions without constant human intervention.",
-        "Explore available AI agent platforms, identify key PMO tasks suitable for automation, and begin piloting AI agent integration in controlled environments.",
-        "Use AI agents for automated project status updates, risk identification, resource allocation optimization, and proactive stakeholder communication, improving project delivery and efficiency."
-      ],
-      "badges": {
-        "pmoArea": "Resource",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 4,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "AI agents",
-        "virtual assistant",
-        "automation",
-        "PMO",
-        "task management",
-        "efficiency",
-        "project management"
+        "Anthropic",
+        "Agentforce 360",
+        "GPT-5",
+        "Claude",
+        "automation"
       ]
     }
   ]
