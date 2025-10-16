@@ -1,244 +1,36 @@
 {
-  "generated": "2025-10-15T12:00:50.963Z",
-  "date": "2025-10-15",
-  "count": 8,
+  "generated": "2025-10-16T02:10:21.632Z",
+  "date": "2025-10-16",
+  "count": 1,
   "cards": [
     {
-      "id": 4993,
-      "title": "Salesforce, OpenAI Partner to Integrate Agentforce 360 and ChatGPT",
-      "url": "https://analyticsindiamag.com/ai-news-updates/salesforce-openai-partner-to-integrate-agentforce-360-and-chatgpt/",
-      "date": "2025-10-15",
-      "score": 90,
-      "tagline": "Enhance project workflows with Salesforce and OpenAI integration.",
+      "id": 5307,
+      "title": "AI startup Viven raises $35M to create digital twins that fill in for absent team members",
+      "url": "https://siliconangle.com/2025/10/15/ai-startup-viven-raises-35m-create-digital-twins-fill-absent-team-members/",
+      "date": "2025-10-16",
+      "score": 80,
+      "tagline": "Enhance team collaboration with AI-driven digital twins for absent members",
       "tldr": [
-        "This partnership addresses the need for real-time data access and decision-making in project management.",
-        "Utilize OpenAI's advanced models like GPT-5 to create intelligent AI agents for enhanced productivity.",
-        "Integrate Salesforce’s Agentforce 360 into your workflows for seamless data retrieval and visualization.",
-        "Use cases include automating project updates, enhancing team collaboration, and improving client interactions through AI-driven insights."
+        "Bullet 1 (25-35 words): Viven addresses delays in project progress caused by absent team members, allowing for seamless communication and decision-making through AI-powered digital twins.",
+        "Bullet 2 (25-35 words): The platform creates personalized digital twins using large language models trained on individual work data, enabling them to respond to colleagues' inquiries accurately.",
+        "Bullet 3 (25-35 words): Implement Viven by training digital twins on employee data, ensuring they can assist in real-time collaboration and preserve institutional knowledge for future projects.",
+        "Bullet 4 (25-35 words): Use cases include obtaining project updates from team-level twins or accessing knowledge from absent employees, streamlining communication and decision-making processes within PMOs."
       ],
       "badges": {
-        "pmoArea": "Integration",
+        "pmoArea": "Resource",
         "implementation": "Weeks to Deploy",
         "skillLevel": "Intermediate",
         "readTime": 7,
         "price": "Freemium"
       },
       "keywords": [
-        "Salesforce",
-        "OpenAI",
-        "Agentforce 360",
-        "ChatGPT",
-        "AI integration",
-        "enterprise workflows"
-      ]
-    },
-    {
-      "id": 4994,
-      "title": "Salesforce deepens AI ties with OpenAI, Anthropic to power Agentforce platform",
-      "url": "https://www.thehindu.com/sci-tech/technology/salesforce-deepens-ai-ties-with-openai-anthropic-to-power-agentforce-platform/article70165566.ece",
-      "date": "2025-10-15",
-      "score": 90,
-      "tagline": "Enhance project management with AI-driven insights and automation tools.",
-      "tldr": [
-        "Salesforce's integration of AI models addresses the need for efficient data management in PMOs, reducing manual effort and improving decision-making.",
-        "Key features include GPT-5 and Claude models for enhanced data interaction, analytics, and AI agent management within existing software ecosystems.",
-        "To implement, PMOs should explore Salesforce's Agentforce 360, integrating AI tools into workflows and training teams on new capabilities.",
-        "Use cases include automating reporting processes, improving stakeholder communication, and leveraging AI for predictive analytics in project planning."
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 5,
-        "price": "Enterprise"
-      },
-      "keywords": [
-        "Salesforce",
         "AI",
-        "OpenAI",
-        "Anthropic",
-        "Agentforce 360",
-        "GPT-5",
-        "Claude",
-        "automation"
-      ]
-    },
-    {
-      "id": 5013,
-      "title": "Dfinity launches Caffeine, an AI platform that builds production apps from natural language prompts",
-      "url": "https://venturebeat.com/ai/dfinity-launches-caffeine-an-ai-platform-that-builds-production-apps-from",
-      "date": "2025-10-15",
-      "score": 90,
-      "tagline": "Transform project management with AI-driven app development from simple prompts.",
-      "tldr": [
-        "Dfinity's Caffeine addresses the challenge of lengthy app development cycles, enabling PMOs to create production apps quickly and efficiently from natural language inputs.",
-        "The platform leverages advanced AI capabilities to interpret user prompts, streamlining the app creation process and reducing the need for extensive coding knowledge.",
-        "To implement Caffeine, PMOs should start by exploring its user-friendly interface and integrating it into existing workflows for rapid app development.",
-        "Use cases include automating project tracking apps, generating reporting tools, and creating custom dashboards tailored to specific PMO needs."
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Quick Win",
-        "skillLevel": "Beginner",
-        "readTime": 1,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "Dfinity",
-        "Caffeine",
-        "AI platform",
-        "app development",
-        "natural language",
-        "PMO",
-        "automation"
-      ]
-    },
-    {
-      "id": 5101,
-      "title": "Noesent: AI agents team up to deliver seamless, real-time",
-      "url": "https://betalist.com/startups/noesent",
-      "date": "2025-10-15",
-      "score": 90,
-      "tagline": "Streamline fintech operations with AI-driven multi-agent solutions.",
-      "tldr": [
-        "Noesent addresses inefficiencies in fintech operations, automating tasks that traditionally require significant time and resources, thus enhancing productivity for PMOs.",
-        "Key features include real-time payment routing, fraud detection, and automated document processing, enabling faster decision-making and operational efficiency.",
-        "To implement, PMOs can integrate Noesent's AI agents into existing workflows, optimizing processes and reducing manual intervention in financial operations.",
-        "Use cases include automating payment ticket resolution, enhancing supplier management, and accelerating finance reconciliation, all critical for effective project management."
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 1,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "AI agents",
-        "fintech",
-        "automation",
-        "payment processing",
-        "fraud detection",
-        "document management"
-      ]
-    },
-    {
-      "id": 5109,
-      "title": "Can Agentic AI Fix Enterprise Efficiency Where ERP Failed?",
-      "url": "https://analyticsindiamag.com/ai-features/can-agentic-ai-fix-enterprise-efficiency-where-erp-failed/",
-      "date": "2025-10-15",
-      "score": 90,
-      "tagline": "Unlock enterprise efficiency with agentic AI solutions for PMOs.",
-      "tldr": [
-        "Bullet 1 (25-35 words): Address the inefficiencies in traditional ERP systems that hinder project management and operational processes across enterprises, leading to fragmented data and siloed workflows.",
-        "Bullet 2 (25-35 words): Explore AI capabilities that enhance data quality and streamline workflows, enabling real-time insights and adaptive decision-making for project managers in various industries.",
-        "Bullet 3 (25-35 words): Implement agentic AI by integrating it with existing systems, focusing on data discipline and collaboration among teams to improve overall enterprise efficiency and responsiveness.",
-        "Bullet 4 (25-35 words): Use cases include optimizing resource allocation, enhancing project tracking, and improving stakeholder communication through AI-driven insights and automation in project management offices."
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 6,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "Agentic AI",
-        "ERP",
-        "enterprise efficiency",
-        "data quality",
-        "project management",
-        "automation",
-        "AI solutions"
-      ]
-    },
-    {
-      "id": 5112,
-      "title": "New Jscrambler AI Assistant accelerates PCI DSS compliance decisions",
-      "url": "https://www.helpnetsecurity.com/2025/10/15/jscrambler-pci-dss-ai-assistant/",
-      "date": "2025-10-15",
-      "score": 90,
-      "tagline": "Streamline PCI DSS compliance with AI-driven decision-making tools.",
-      "tldr": [
-        "Organizations struggle with PCI DSS compliance due to complexity and cost, leading to delays and inefficiencies in script authorization workflows.",
-        "Jscrambler's AI Assistant offers insights, actionable recommendations, and instant justifications to enhance script authorization processes effectively.",
-        "Implement the AI Assistant by integrating it into existing compliance workflows to reduce human error and administrative overhead.",
-        "Use cases include onboarding vendors, adapting to payment ecosystem changes, and proactively detecting suspicious behaviors in payment scripts."
-      ],
-      "badges": {
-        "pmoArea": "Risk",
-        "implementation": "Quick Win",
-        "skillLevel": "Intermediate",
-        "readTime": 4,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "PCI DSS",
-        "compliance",
-        "AI Assistant",
-        "script authorization",
-        "cybersecurity",
-        "Jscrambler"
-      ]
-    },
-    {
-      "id": 5105,
-      "title": "Leading the Agentic AI Enterprise – Harnessing AI to Shape Decisions, Outcomes and Growth",
-      "url": "https://cio.economictimes.indiatimes.com/news/brand-solution/leading-the-agentic-ai-enterprise-harnessing-ai-to-shape-decisions-outcomes-and-growth/124570658",
-      "date": "2025-10-15",
-      "score": 75,
-      "tagline": "Transform your PMO with agentic AI for better decision-making.",
-      "tldr": [
-        "Agentic AI addresses PMO challenges by enhancing decision-making and operational efficiency, crucial for project success.",
-        "Key features include autonomous task execution, real-time adaptability, and integration into existing processes for maximum impact.",
-        "Implement agentic AI by building foundational infrastructure and ensuring cultural readiness across your organization.",
-        "Use cases for PMOs include AI-driven compliance, resource allocation, and improving project turnaround times."
-      ],
-      "badges": {
-        "pmoArea": "Resource",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 8,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "agentic AI",
-        "enterprise transformation",
-        "productivity",
-        "efficiency",
-        "autonomous systems",
-        "use cases",
-        "cultural readiness"
-      ]
-    },
-    {
-      "id": 5108,
-      "title": "Red Hat AI 3 helps enterprises scale AI workloads across hybrid environments",
-      "url": "https://www.helpnetsecurity.com/2025/10/15/red-hat-ai-3/",
-      "date": "2025-10-15",
-      "score": 75,
-      "tagline": "Streamline AI workload management for enhanced project outcomes.",
-      "tldr": [
-        "Red Hat AI 3 addresses PMO challenges by simplifying AI workload management across hybrid environments, enhancing collaboration and efficiency.",
-        "Key features include scalable inference, support for diverse models, and integration with Kubernetes for optimized performance and cost control.",
-        "Implement by leveraging Red Hat AI 3's unified platform to transition from AI experimentation to production, ensuring smooth deployment of AI workloads.",
-        "Use cases include managing AI projects across multiple teams, optimizing resource allocation, and improving response times in project delivery."
-      ],
-      "badges": {
-        "pmoArea": "Resource",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 8,
-        "price": "Enterprise"
-      },
-      "keywords": [
-        "Red Hat AI 3",
-        "AI workloads",
-        "hybrid environments",
-        "Kubernetes",
-        "inference",
+        "digital twins",
         "collaboration",
-        "enterprise AI"
+        "employee absence",
+        "large language models",
+        "institutional memory",
+        "privacy"
       ]
     }
   ]
