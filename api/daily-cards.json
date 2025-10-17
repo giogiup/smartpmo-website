@@ -1,7 +1,7 @@
 {
-  "generated": "2025-10-17T02:11:47.509Z",
+  "generated": "2025-10-17T04:15:10.528Z",
   "date": "2025-10-17",
-  "count": 2,
+  "count": 3,
   "cards": [
     {
       "id": 6075,
@@ -59,6 +59,35 @@
         "AI assistant",
         "productivity",
         "task management"
+      ]
+    },
+    {
+      "id": 6780,
+      "title": "Context as a Service: Modular Architecture for the Age of AI Agents",
+      "url": "https://medium.com/google-cloud/context-as-a-service-modular-architecture-for-the-age-of-ai-agents-58fbae3ee030",
+      "date": "2025-10-17",
+      "score": 75,
+      "tagline": "Streamline agent management with modular architecture for AI solutions",
+      "tldr": [
+        "Managing multiple AI agents can overwhelm PMOs; this article offers a modular approach to simplify maintenance and evolution.",
+        "Context as a Service (CaaS) enables reusable components for AI agents, enhancing efficiency and reducing development time.",
+        "Implement CaaS by adopting intelligent blocks for agent design, focusing on integration and lifecycle management.",
+        "Use cases include marketing automation, customer support, and e-commerce, leveraging shared components across various agents."
+      ],
+      "badges": {
+        "pmoArea": "Integration",
+        "implementation": "Weeks to Deploy",
+        "skillLevel": "Intermediate",
+        "readTime": 12,
+        "price": "Freemium"
+      },
+      "keywords": [
+        "AI Agents",
+        "Context as a Service",
+        "modular architecture",
+        "agent lifecycle",
+        "reusable components",
+        "integration"
       ]
     }
   ]
