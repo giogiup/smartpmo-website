@@ -1,36 +1,64 @@
 {
-  "generated": "2025-10-16T02:10:21.632Z",
-  "date": "2025-10-16",
-  "count": 1,
+  "generated": "2025-10-17T02:11:47.509Z",
+  "date": "2025-10-17",
+  "count": 2,
   "cards": [
     {
-      "id": 5307,
-      "title": "AI startup Viven raises $35M to create digital twins that fill in for absent team members",
-      "url": "https://siliconangle.com/2025/10/15/ai-startup-viven-raises-35m-create-digital-twins-fill-absent-team-members/",
-      "date": "2025-10-16",
-      "score": 80,
-      "tagline": "Enhance team collaboration with AI-driven digital twins for absent members",
+      "id": 6075,
+      "title": "How to use ChatGPT: A beginner's guide to the most popular AI chatbot",
+      "url": "https://www.zdnet.com/article/how-to-use-chatgpt-a-beginners-guide-to-the-most-popular-ai-chatbot/",
+      "date": "2025-10-17",
+      "score": 90,
+      "tagline": "Unlock project success with ChatGPT's AI-driven insights and tools.",
       "tldr": [
-        "Bullet 1 (25-35 words): Viven addresses delays in project progress caused by absent team members, allowing for seamless communication and decision-making through AI-powered digital twins.",
-        "Bullet 2 (25-35 words): The platform creates personalized digital twins using large language models trained on individual work data, enabling them to respond to colleagues' inquiries accurately.",
-        "Bullet 3 (25-35 words): Implement Viven by training digital twins on employee data, ensuring they can assist in real-time collaboration and preserve institutional knowledge for future projects.",
-        "Bullet 4 (25-35 words): Use cases include obtaining project updates from team-level twins or accessing knowledge from absent employees, streamlining communication and decision-making processes within PMOs."
+        "Overcome PMO challenges by leveraging AI for enhanced decision-making and efficiency.",
+        "Explore ChatGPT's advanced features like GPT-5, Deep Research, and Agent Mode for robust project management.",
+        "Follow simple steps to start using ChatGPT for your PMO needs today.",
+        "Utilize ChatGPT for tasks like project planning, risk assessment, and stakeholder communication."
       ],
       "badges": {
-        "pmoArea": "Resource",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 7,
+        "pmoArea": "Scope",
+        "implementation": "Quick Win",
+        "skillLevel": "Beginner",
+        "readTime": 18,
         "price": "Freemium"
       },
       "keywords": [
-        "AI",
-        "digital twins",
-        "collaboration",
-        "employee absence",
-        "large language models",
-        "institutional memory",
-        "privacy"
+        "ChatGPT",
+        "AI chatbot",
+        "project management",
+        "OpenAI",
+        "GPT-5",
+        "innovation"
+      ]
+    },
+    {
+      "id": 6191,
+      "title": "Microsoft empowers Windows 11 with voice-controlled Copilot AI assistant",
+      "url": "https://www.digitaltrends.com/computing/microsoft-empowers-windows-11-with-voice-controlled-copilot-ai-assistant/",
+      "date": "2025-10-17",
+      "score": 75,
+      "tagline": "Boost PMO productivity with voice-controlled AI assistance in Windows 11",
+      "tldr": [
+        "Microsoft's Copilot AI addresses PMO challenges by streamlining task management and enhancing productivity through voice commands.",
+        "Key features include voice interaction, multi-step task execution, and screen analysis for improved efficiency.",
+        "Implement by upgrading to Windows 11 and activating Copilot for immediate productivity gains.",
+        "Use cases include automating project updates, organizing documentation, and managing team communications effortlessly."
+      ],
+      "badges": {
+        "pmoArea": "Resource",
+        "implementation": "Quick Win",
+        "skillLevel": "Beginner",
+        "readTime": 6,
+        "price": "Freemium"
+      },
+      "keywords": [
+        "Microsoft",
+        "Windows 11",
+        "Copilot",
+        "AI assistant",
+        "productivity",
+        "task management"
       ]
     }
   ]
