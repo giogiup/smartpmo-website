@@ -1,93 +1,66 @@
 {
-  "generated": "2025-10-17T04:15:10.528Z",
-  "date": "2025-10-17",
-  "count": 3,
+  "generated": "2025-12-09T02:12:05.739Z",
+  "date": "2025-12-09",
+  "count": 2,
   "cards": [
     {
-      "id": 6075,
-      "title": "How to use ChatGPT: A beginner's guide to the most popular AI chatbot",
-      "url": "https://www.zdnet.com/article/how-to-use-chatgpt-a-beginners-guide-to-the-most-popular-ai-chatbot/",
-      "date": "2025-10-17",
-      "score": 90,
-      "tagline": "Unlock project success with ChatGPT's AI-driven insights and tools.",
-      "tldr": [
-        "Overcome PMO challenges by leveraging AI for enhanced decision-making and efficiency.",
-        "Explore ChatGPT's advanced features like GPT-5, Deep Research, and Agent Mode for robust project management.",
-        "Follow simple steps to start using ChatGPT for your PMO needs today.",
-        "Utilize ChatGPT for tasks like project planning, risk assessment, and stakeholder communication."
-      ],
-      "badges": {
-        "pmoArea": "Scope",
-        "implementation": "Quick Win",
-        "skillLevel": "Beginner",
-        "readTime": 18,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "ChatGPT",
-        "AI chatbot",
-        "project management",
-        "OpenAI",
-        "GPT-5",
-        "innovation"
-      ]
-    },
-    {
-      "id": 6191,
-      "title": "Microsoft empowers Windows 11 with voice-controlled Copilot AI assistant",
-      "url": "https://www.digitaltrends.com/computing/microsoft-empowers-windows-11-with-voice-controlled-copilot-ai-assistant/",
-      "date": "2025-10-17",
+      "id": 35071,
+      "title": "The state of enterprise AI",
+      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report",
+      "date": "2025-12-08",
       "score": 75,
-      "tagline": "Boost PMO productivity with voice-controlled AI assistance in Windows 11",
+      "tagline": "Unlock enterprise AI to enhance project management efficiency and outcomes.",
       "tldr": [
-        "Microsoft's Copilot AI addresses PMO challenges by streamlining task management and enhancing productivity through voice commands.",
-        "Key features include voice interaction, multi-step task execution, and screen analysis for improved efficiency.",
-        "Implement by upgrading to Windows 11 and activating Copilot for immediate productivity gains.",
-        "Use cases include automating project updates, organizing documentation, and managing team communications effortlessly."
+        "AI adoption addresses PMO challenges by improving collaboration and productivity across teams.",
+        "Key features include structured workflows and advanced reasoning capabilities for sophisticated tasks.",
+        "Implement AI by integrating tools like ChatGPT into existing PMO processes for quick wins.",
+        "Use cases include automating reporting, enhancing resource allocation, and streamlining communication."
       ],
       "badges": {
         "pmoArea": "Resource",
         "implementation": "Quick Win",
-        "skillLevel": "Beginner",
-        "readTime": 6,
-        "price": "Freemium"
+        "skillLevel": "Intermediate",
+        "readTime": 7,
+        "price": "Enterprise"
       },
       "keywords": [
-        "Microsoft",
-        "Windows 11",
-        "Copilot",
-        "AI assistant",
+        "enterprise AI",
+        "adoption",
         "productivity",
-        "task management"
+        "collaboration",
+        "workflows",
+        "ChatGPT",
+        "industries"
       ]
     },
     {
-      "id": 6780,
-      "title": "Context as a Service: Modular Architecture for the Age of AI Agents",
-      "url": "https://medium.com/google-cloud/context-as-a-service-modular-architecture-for-the-age-of-ai-agents-58fbae3ee030",
-      "date": "2025-10-17",
+      "id": 35163,
+      "title": "The state of enterprise AI",
+      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report",
+      "date": "2025-12-08",
       "score": 75,
-      "tagline": "Streamline agent management with modular architecture for AI solutions",
+      "tagline": "Unlock enterprise AI to enhance PMO efficiency and productivity.",
       "tldr": [
-        "Managing multiple AI agents can overwhelm PMOs; this article offers a modular approach to simplify maintenance and evolution.",
-        "Context as a Service (CaaS) enables reusable components for AI agents, enhancing efficiency and reducing development time.",
-        "Implement CaaS by adopting intelligent blocks for agent design, focusing on integration and lifecycle management.",
-        "Use cases include marketing automation, customer support, and e-commerce, leveraging shared components across various agents."
+        "AI adoption addresses PMO challenges by streamlining workflows and improving collaboration across teams, ultimately leading to increased productivity.",
+        "Key AI features include structured workflows, enhanced reasoning capabilities, and integration into existing processes, enabling deeper engagement with technology.",
+        "To implement, assess current workflows, identify AI tools that fit your needs, and train teams to leverage these technologies effectively.",
+        "Use cases for PMOs include project management automation, risk assessment through predictive analytics, and resource allocation optimization using AI-driven insights."
       ],
       "badges": {
-        "pmoArea": "Integration",
+        "pmoArea": "Resource",
         "implementation": "Weeks to Deploy",
         "skillLevel": "Intermediate",
-        "readTime": 12,
-        "price": "Freemium"
+        "readTime": 7,
+        "price": "Enterprise"
       },
       "keywords": [
-        "AI Agents",
-        "Context as a Service",
-        "modular architecture",
-        "agent lifecycle",
-        "reusable components",
-        "integration"
+        "enterprise AI",
+        "productivity",
+        "workflow automation",
+        "collaboration",
+        "adoption",
+        "integration",
+        "project management"
       ]
     }
   ]
