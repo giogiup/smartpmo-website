@@ -1,66 +1,35 @@
 {
-  "generated": "2025-12-09T02:12:05.739Z",
-  "date": "2025-12-09",
-  "count": 2,
+  "generated": "2025-12-11T02:07:11.789Z",
+  "date": "2025-12-11",
+  "count": 1,
   "cards": [
     {
-      "id": 35071,
-      "title": "The state of enterprise AI",
-      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report",
-      "date": "2025-12-08",
+      "id": 38597,
+      "title": "Introducing Polly: Your AI Agent Engineer",
+      "url": "https://blog.langchain.com/introducing-polly-your-ai-agent-engineer/",
+      "date": "2025-12-10",
       "score": 75,
-      "tagline": "Unlock enterprise AI to enhance project management efficiency and outcomes.",
+      "tagline": "Streamline agent debugging and improve performance with AI assistance",
       "tldr": [
-        "AI adoption addresses PMO challenges by improving collaboration and productivity across teams.",
-        "Key features include structured workflows and advanced reasoning capabilities for sophisticated tasks.",
-        "Implement AI by integrating tools like ChatGPT into existing PMO processes for quick wins.",
-        "Use cases include automating reporting, enhancing resource allocation, and streamlining communication."
+        "Polly addresses common PMO challenges in debugging AI agents, enhancing efficiency and performance.",
+        "Key features include natural language queries for debugging, analyzing conversations, and prompt engineering.",
+        "Implement Polly by integrating it into your LangSmith workflow for immediate benefits.",
+        "Use cases include debugging complex agent interactions and optimizing prompt instructions for better outcomes."
       ],
       "badges": {
-        "pmoArea": "Resource",
+        "pmoArea": "Quality",
         "implementation": "Quick Win",
         "skillLevel": "Intermediate",
-        "readTime": 7,
-        "price": "Enterprise"
+        "readTime": 5,
+        "price": "Freemium"
       },
       "keywords": [
-        "enterprise AI",
-        "adoption",
-        "productivity",
-        "collaboration",
-        "workflows",
-        "ChatGPT",
-        "industries"
-      ]
-    },
-    {
-      "id": 35163,
-      "title": "The state of enterprise AI",
-      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report",
-      "date": "2025-12-08",
-      "score": 75,
-      "tagline": "Unlock enterprise AI to enhance PMO efficiency and productivity.",
-      "tldr": [
-        "AI adoption addresses PMO challenges by streamlining workflows and improving collaboration across teams, ultimately leading to increased productivity.",
-        "Key AI features include structured workflows, enhanced reasoning capabilities, and integration into existing processes, enabling deeper engagement with technology.",
-        "To implement, assess current workflows, identify AI tools that fit your needs, and train teams to leverage these technologies effectively.",
-        "Use cases for PMOs include project management automation, risk assessment through predictive analytics, and resource allocation optimization using AI-driven insights."
-      ],
-      "badges": {
-        "pmoArea": "Resource",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 7,
-        "price": "Enterprise"
-      },
-      "keywords": [
-        "enterprise AI",
-        "productivity",
-        "workflow automation",
-        "collaboration",
-        "adoption",
-        "integration",
-        "project management"
+        "AI agent",
+        "debugging",
+        "LangSmith",
+        "performance",
+        "prompt engineering",
+        "conversational analysis"
       ]
     }
   ]
