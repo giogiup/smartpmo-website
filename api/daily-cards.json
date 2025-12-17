@@ -1,35 +1,35 @@
 {
-  "generated": "2025-12-11T02:07:11.789Z",
-  "date": "2025-12-11",
+  "generated": "2025-12-17T02:08:07.029Z",
+  "date": "2025-12-17",
   "count": 1,
   "cards": [
     {
-      "id": 38597,
-      "title": "Introducing Polly: Your AI Agent Engineer",
-      "url": "https://blog.langchain.com/introducing-polly-your-ai-agent-engineer/",
-      "date": "2025-12-10",
+      "id": 40336,
+      "title": "2026: The year of scale or fail in enterprise AI",
+      "url": "https://www.cio.com/article/4106578/2026-the-year-of-scale-or-fail-in-enterprise-ai.html",
+      "date": "2025-12-16",
       "score": 75,
-      "tagline": "Streamline agent debugging and improve performance with AI assistance",
+      "tagline": "Unlock enterprise AI success: scale or fail in 2026.",
       "tldr": [
-        "Polly addresses common PMO challenges in debugging AI agents, enhancing efficiency and performance.",
-        "Key features include natural language queries for debugging, analyzing conversations, and prompt engineering.",
-        "Implement Polly by integrating it into your LangSmith workflow for immediate benefits.",
-        "Use cases include debugging complex agent interactions and optimizing prompt instructions for better outcomes."
+        "Organizations struggle to convert AI pilots into tangible outcomes, risking inefficiency and lost opportunities.",
+        "AI can enhance productivity by automating repetitive tasks, enabling measurable improvements in various job functions.",
+        "CIOs should analyze job roles and identify AI use cases to drive productivity and efficiency.",
+        "Use cases like generative AI for software development can save significant time and costs across teams."
       ],
       "badges": {
-        "pmoArea": "Quality",
-        "implementation": "Quick Win",
+        "pmoArea": "Resource",
+        "implementation": "Weeks to Deploy",
         "skillLevel": "Intermediate",
-        "readTime": 5,
+        "readTime": 9,
         "price": "Freemium"
       },
       "keywords": [
-        "AI agent",
-        "debugging",
-        "LangSmith",
-        "performance",
-        "prompt engineering",
-        "conversational analysis"
+        "enterprise AI",
+        "productivity",
+        "CIO",
+        "automation",
+        "use cases",
+        "scaling AI"
       ]
     }
   ]
