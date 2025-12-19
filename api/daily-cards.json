@@ -1,35 +1,35 @@
 {
-  "generated": "2025-12-18T02:07:43.185Z",
-  "date": "2025-12-18",
+  "generated": "2025-12-19T02:08:39.457Z",
+  "date": "2025-12-19",
   "count": 1,
   "cards": [
     {
-      "id": 40745,
-      "title": "Google tests an AI productivity agent that lives in your inbox",
-      "url": "https://www.computerworld.com/article/4107689/google-tests-an-ai-productivity-agent-that-lives-in-your-inbox.html",
-      "date": "2025-12-17",
+      "id": 41029,
+      "title": "Project Management AI Tools 2026: What Features Actually Matter?",
+      "url": "https://www.celoxis.com/article/project-management-ai-tools",
+      "date": "2025-12-18",
       "score": 75,
-      "tagline": "Streamline PMO tasks with Google's AI productivity agent in your inbox.",
+      "tagline": "Unlock smarter project decisions with AI-powered management tools.",
       "tldr": [
-        "This tool addresses PMO pain points by automating daily task management and updates, reducing decision fatigue.",
-        "Key features include daily briefings, email drafting, and action suggestions, enhancing productivity through integration with Google services.",
-        "To implement, start by testing the CC tool in your inbox and customize its settings for your workflow.",
-        "Use cases include streamlining project updates, coordinating team tasks, and managing schedules effectively within PMO environments."
+        "Many PMOs struggle with project visibility and timely insights, leading to high failure rates. AI tools can enhance decision-making and reduce risks.",
+        "Key AI features include predictive analytics, risk detection, and intelligent resource planning, enabling proactive management of project uncertainties.",
+        "To implement, evaluate tools based on the 5R model: Relevance, Reliability, Reach, Real-Time Value, and ROI Evidence.",
+        "Use cases include real-time delay detection, resource load balancing, and scenario planning to improve project outcomes and stakeholder alignment."
       ],
       "badges": {
-        "pmoArea": "Resource",
-        "implementation": "Quick Win",
-        "skillLevel": "Beginner",
-        "readTime": 6,
+        "pmoArea": "Risk",
+        "implementation": "Weeks to Deploy",
+        "skillLevel": "Intermediate",
+        "readTime": 16,
         "price": "Freemium"
       },
       "keywords": [
-        "AI productivity",
-        "Google CC",
-        "email integration",
-        "task management",
-        "daily briefings",
-        "enterprise workflows"
+        "Project Management",
+        "AI Tools",
+        "Predictive Analytics",
+        "Resource Planning",
+        "Risk Detection",
+        "Stakeholder Alignment"
       ]
     }
   ]
