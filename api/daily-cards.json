@@ -1,35 +1,64 @@
 {
-  "generated": "2026-01-12T02:07:41.808Z",
-  "date": "2026-01-12",
-  "count": 1,
+  "generated": "2026-01-13T02:08:41.594Z",
+  "date": "2026-01-13",
+  "count": 2,
   "cards": [
     {
-      "id": 41658,
-      "title": "The A3 Framework: Assist, Automate, Avoid — A Decision System for AI Delegation",
-      "url": "https://age-of-product.com/a3-framework-assist-automate-avoid/",
-      "date": "2026-01-11",
+      "id": 41992,
+      "title": "Best AI Orchestration Solutions For Scalability 2025 | Prompts.ai",
+      "url": "https://www.prompts.ai/fr/blog/best-ai-orchestration-solutions-scalability-2025",
+      "date": "2026-01-13",
       "score": 75,
-      "tagline": "Enhance PMO decision-making with the A3 Framework for AI delegation",
+      "tagline": "Streamline AI orchestration for enhanced project management scalability.",
       "tldr": [
-        "The A3 Framework helps PMOs avoid costly mistakes by categorizing AI delegation, ensuring decisions align with project goals and stakeholder trust.",
-        "It features three key categories: Assist, Automate, and Avoid, guiding PMOs on when and how to use AI effectively.",
-        "Implement by assessing tasks before prompting AI, categorizing them, and applying the appropriate delegation strategy to enhance project outcomes.",
-        "Use cases include drafting stakeholder communications, automating reporting processes, and determining when human oversight is essential to maintain trust."
+        "AI orchestration tools address the challenge of scaling enterprise AI operations, reducing the failure rate of AI pilots through better coordination.",
+        "Key features include centralized access to multiple models, automated workflows, and cost optimization, delivering significant ROI improvements.",
+        "To implement, evaluate your needs, choose a suitable platform, and integrate it into your existing workflows for maximum efficiency.",
+        "Use cases include managing complex AI workflows, improving resource allocation, and enhancing project delivery timelines in a PMO context."
       ],
       "badges": {
-        "pmoArea": "Stakeholder",
-        "implementation": "Quick Win",
+        "pmoArea": "Integration",
+        "implementation": "Weeks to Deploy",
         "skillLevel": "Intermediate",
-        "readTime": 13,
+        "readTime": 33,
         "price": "Freemium"
       },
       "keywords": [
-        "A3 Framework",
-        "AI delegation",
-        "Agile",
-        "PMO",
-        "decision-making",
-        "Assist Automate Avoid"
+        "AI orchestration",
+        "scalability",
+        "workflow management",
+        "cost optimization",
+        "enterprise AI",
+        "project management"
+      ]
+    },
+    {
+      "id": 41994,
+      "title": "Best AI Orchestration Solutions For Scalability 2025 | Prompts.ai",
+      "url": "https://www.prompts.ai/fr/blog/best-ai-orchestration-solutions-scalability-2025",
+      "date": "2026-01-13",
+      "score": 75,
+      "tagline": "Unlock scalable AI orchestration for enhanced project management success.",
+      "tldr": [
+        "AI orchestration tools address the challenge of scaling enterprise AI operations, reducing the risk of failed projects due to poor coordination.",
+        "Key features include centralized model access, automated workflows, and cost optimization, enabling organizations to maximize their AI investments.",
+        "Implement by evaluating your current AI workflows, selecting the right orchestration platform, and integrating it into your existing systems.",
+        "Use cases include streamlining project workflows, enhancing team collaboration, and improving resource allocation through unified AI solutions."
+      ],
+      "badges": {
+        "pmoArea": "Integration",
+        "implementation": "Weeks to Deploy",
+        "skillLevel": "Intermediate",
+        "readTime": 33,
+        "price": "Freemium"
+      },
+      "keywords": [
+        "AI orchestration",
+        "scalability",
+        "cost management",
+        "workflow automation",
+        "enterprise AI",
+        "model integration"
       ]
     }
   ]
