@@ -235,6 +235,10 @@
           <h3 class="card-title">
             <a href="${card.url}" target="_blank">${card.title}</a>
           </h3>
+          <div class="card-meta">
+            <span class="article-date">${formatDate(card.date)}</span>
+            ${card.score ? `<span class="article-score">Score: ${card.score}</span>` : ''}
+          </div>
           <span class="badge tldr-badge">
             <i data-lucide="zap"></i> TLDR
           </span>
