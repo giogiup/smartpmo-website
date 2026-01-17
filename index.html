@@ -271,16 +271,29 @@
       lucide.createIcons();
     }
 
-    // Fetch real data from API - Daily Cards
+    // Fetch real data from API - Daily Cards (Latest Intelligence - enriched)
     async function loadDailyCards() {
       try {
         const response = await fetch('./api/daily-cards.json?t=' + Date.now());
         if (!response.ok) throw new Error('Failed to load cards');
         const data = await response.json();
-        console.log(`Loaded ${data.count} cards from ${data.date}`);
+        console.log(`Loaded ${data.count} enriched cards from ${data.date}`);
         renderCards(data.cards);
       } catch (error) {
         console.error('Error loading daily cards:', error);
+      }
+    }
+
+    // Fetch curated insights (Strategic Insights section)
+    async function loadCuratedInsights() {
+      try {
+        const response = await fetch('./api/displayed-articles.json?t=' + Date.now());
+        if (!response.ok) throw new Error('Failed to load curated insights');
+        const data = await response.json();
+        console.log(`Loaded ${data.strategicInsights?.length || 0} curated insights`);
+        renderCuratedSection(data.strategicInsights || []);
+      } catch (error) {
+        console.error('Error loading curated insights:', error);
       }
     }
 
@@ -368,8 +381,9 @@
       messages[carouselIndex].classList.add('active');
     }, 8000);
 
-    // Initial render - Load daily cards with badges
-    loadDailyCards();
+    // Initial render - Load both sections
+    loadDailyCards(); // Latest Intelligence with enriched cards
+    loadCuratedInsights(); // Strategic Insights (curated)
 
     // Mobile hamburger menu
     const hamburger = document.getElementById('hamburger');
