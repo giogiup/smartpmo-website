@@ -104,7 +104,8 @@
         <span>SmartPMO.ai</span>
       </a>
       <nav class="nav">
-        <a href="#insights">Daily Insights</a>
+        <a href="#latest-intelligence">Latest Intelligence</a>
+        <a href="#strategic-insights">Strategic Insights</a>
         <a href="#signup">Newsletter</a>
       </nav>
       <button class="hamburger" id="hamburger">
@@ -160,10 +161,22 @@
     </div>
   </section>
 
-  <!-- Latest Insights -->
-  <section class="insights-section" id="insights">
-    <h2 class="section-title">Today's AI Insights for PMOs</h2>
-    <div class="insights-grid" id="insights-grid"></div>
+  <!-- Section 1: Latest Intelligence (Auto) -->
+  <section class="insights-section" id="latest-intelligence">
+    <h2 class="section-title section-title--auto">
+      <i data-lucide="zap"></i> Latest Intelligence
+      <span class="section-subtitle">AI-Discovered PMO Insights</span>
+    </h2>
+    <div class="insights-grid" id="auto-articles-grid"></div>
+  </section>
+
+  <!-- Section 2: Strategic Insights (Curated) -->
+  <section class="insights-section" id="strategic-insights">
+    <h2 class="section-title section-title--curated">
+      <i data-lucide="star"></i> Strategic Insights
+      <span class="section-subtitle">Curated by PMO Experts</span>
+    </h2>
+    <div class="insights-grid" id="curated-articles-grid"></div>
   </section>
 
   <!-- Footer -->
@@ -254,18 +267,92 @@
       lucide.createIcons();
     }
 
-    // Fetch real data from API
+    // Fetch real data from API - Daily Cards (legacy, keep for now)
     async function loadDailyCards() {
       try {
         const response = await fetch('./api/daily-cards.json?t=' + Date.now());
         if (!response.ok) throw new Error('Failed to load cards');
         const data = await response.json();
         console.log(`Loaded ${data.count} cards from ${data.date}`);
-        renderCards(data.cards);
+        // Note: This is being replaced by dual-section display
+        // renderCards(data.cards);
       } catch (error) {
-        console.error('Error:', error);
-        alert('Failed to load daily insights. Please refresh.');
+        console.error('Error loading daily cards:', error);
       }
+    }
+
+    // Load dual-section articles (Latest Intelligence + Strategic Insights)
+    async function loadDisplayedArticles() {
+      try {
+        const response = await fetch('./api/displayed-articles.json?t=' + Date.now());
+        if (!response.ok) throw new Error('Failed to load articles');
+        const data = await response.json();
+
+        console.log(`Loaded ${data.counts.auto} auto + ${data.counts.curated} curated articles`);
+
+        renderAutoSection(data.latestIntelligence);
+        renderCuratedSection(data.strategicInsights);
+      } catch (error) {
+        console.error('Error loading articles:', error);
+        alert('Failed to load insights. Please refresh.');
+      }
+    }
+
+    // Render Latest Intelligence section (auto)
+    function renderAutoSection(articles) {
+      const grid = document.getElementById('auto-articles-grid');
+
+      if (articles.length === 0) {
+        grid.innerHTML = '<p class="no-articles">No articles available yet. Check back soon!</p>';
+        return;
+      }
+
+      grid.innerHTML = articles.map(article => createArticleCard(article, 'auto')).join('');
+      lucide.createIcons();
+    }
+
+    // Render Strategic Insights section (curated)
+    function renderCuratedSection(articles) {
+      const grid = document.getElementById('curated-articles-grid');
+
+      if (articles.length === 0) {
+        grid.innerHTML = '<p class="no-articles">No curated articles yet.</p>';
+        return;
+      }
+
+      grid.innerHTML = articles.map(article => createArticleCard(article, 'curated')).join('');
+      lucide.createIcons();
+    }
+
+    // Create article card HTML
+    function createArticleCard(article, type) {
+      const formattedDate = formatDate(article.publishedDate);
+      const cardClass = type === 'auto' ? 'insight-card insight-card--auto' : 'insight-card insight-card--curated';
+
+      return `
+        <div class="${cardClass}">
+          <h3 class="card-title">
+            <a href="${article.url}" target="_blank">${article.title}</a>
+          </h3>
+          <div class="card-summary">${article.summary || ''}</div>
+          <div class="card-meta">
+            <span class="article-source">${article.source || 'Source Unknown'}</span>
+            <span class="article-date">${formattedDate}</span>
+            ${article.score ? `<span class="article-score">Score: ${article.score}</span>` : ''}
+          </div>
+        </div>
+      `;
+    }
+
+    // Format date as "Jan 16, 2025"
+    function formatDate(dateString) {
+      if (!dateString) return '';
+      const date = new Date(dateString);
+      return date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
     }
 
     // Carousel rotation
@@ -278,8 +365,8 @@
       messages[carouselIndex].classList.add('active');
     }, 8000);
 
-    // Initial render
-    loadDailyCards();
+    // Initial render - Load dual-section articles
+    loadDisplayedArticles();
 
     // Mobile hamburger menu
     const hamburger = document.getElementById('hamburger');

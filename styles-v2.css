@@ -820,3 +820,141 @@ footer {
 }
 
 
+
+/* ============================================
+   DUAL-SECTION ARTICLE DISPLAY
+   Latest Intelligence (Auto) + Strategic Insights (Curated)
+   ============================================ */
+
+/* Section Title Differentiation */
+.section-title--auto {
+  color: #0ea5e9; /* Cyan */
+  border-left: 4px solid #0ea5e9;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-title--curated {
+  color: #f59e0b; /* Gold */
+  border-left: 4px solid #f59e0b;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-weight: 400;
+  margin-left: auto;
+}
+
+/* Article Cards */
+.insight-card--auto {
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.1);
+  background: rgba(14, 165, 233, 0.05);
+}
+
+.insight-card--auto:hover {
+  border-color: rgba(14, 165, 233, 0.6);
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.2);
+  transform: translateY(-4px);
+}
+
+.insight-card--curated {
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.1);
+  background: rgba(245, 158, 11, 0.05);
+}
+
+.insight-card--curated:hover {
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Card Content */
+.card-summary {
+  margin: 1rem 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.card-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-source {
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+.article-date {
+  color: var(--text-muted);
+}
+
+.article-score {
+  margin-left: auto;
+  padding: 0.25rem 0.75rem;
+  background: rgba(0, 245, 255, 0.1);
+  border-radius: 1rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+/* No Articles Message */
+.no-articles {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 3rem;
+  font-style: italic;
+}
+
+/* Responsive Grid - Already exists in main CSS, but ensure it works */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .insights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .insights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title--auto,
+  .section-title--curated {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-subtitle {
+    margin-left: 0;
+    margin-top: 0.25rem;
+  }
+}
+

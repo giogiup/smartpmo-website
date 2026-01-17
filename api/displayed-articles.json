@@ -1,0 +1,44 @@
+{
+  "latestIntelligence": [],
+  "strategicInsights": [
+    {
+      "id": 3,
+      "title": "Test Curated Article - AI in PMO Leadership",
+      "url": "https://example.com/test-curated-1768571794204",
+      "summary": "This is a test curated article demonstrating the dual-section display feature for SmartPMO.ai",
+      "source": "Test Source",
+      "publishedDate": "2026-01-16",
+      "addedDate": "2026-01-16 15:56:34",
+      "displayOrder": 0,
+      "section": "curated"
+    },
+    {
+      "id": 2,
+      "title": "Test Curated Article - AI in PMO Leadership",
+      "url": "https://example.com/test-curated-1768571585517",
+      "summary": "This is a test curated article demonstrating the dual-section display feature for SmartPMO.ai",
+      "source": "Test Source",
+      "publishedDate": "2026-01-16",
+      "addedDate": "2026-01-16 15:53:05",
+      "displayOrder": 0,
+      "section": "curated"
+    },
+    {
+      "id": 1,
+      "title": "Test Curated Article - AI in PMO Leadership",
+      "url": "https://example.com/test-curated-1768570642274",
+      "summary": "This is a test curated article demonstrating the dual-section display feature for SmartPMO.ai",
+      "source": "Test Source",
+      "publishedDate": "2026-01-16",
+      "addedDate": "2026-01-16 15:37:22",
+      "displayOrder": 0,
+      "section": "curated"
+    }
+  ],
+  "counts": {
+    "auto": 0,
+    "curated": 3,
+    "total": 3
+  },
+  "generatedAt": "2026-01-16T13:57:12.402Z"
+}
