@@ -1,5 +1,226 @@
 {
-  "latestIntelligence": [],
+  "latestIntelligence": [
+    {
+      "id": 42062,
+      "title": "Human in the loop automation: Build AI workflows that keep humans in control",
+      "url": "https://blog.n8n.io/human-in-the-loop-automation/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-01-16",
+      "discoveredAt": "2026-01-17 02:02:26",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 41994,
+      "title": "Best AI Orchestration Solutions For Scalability 2025 | Prompts.ai",
+      "url": "https://www.prompts.ai/fr/blog/best-ai-orchestration-solutions-scalability-2025",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-01-13",
+      "discoveredAt": "2026-01-13 02:06:27",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 41992,
+      "title": "Best AI Orchestration Solutions For Scalability 2025 | Prompts.ai",
+      "url": "https://www.prompts.ai/fr/blog/best-ai-orchestration-solutions-scalability-2025",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-01-13",
+      "discoveredAt": "2026-01-13 02:06:13",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 41658,
+      "title": "The A3 Framework: Assist, Automate, Avoid — A Decision System for AI Delegation",
+      "url": "https://age-of-product.com/a3-framework-assist-automate-avoid/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-01-11",
+      "discoveredAt": "2026-01-12 02:03:42",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 41309,
+      "title": "10 Best AI Project Management Tools for Project Managers",
+      "url": "https://www.celoxis.com/article/best-ai-project-management-tools",
+      "summary": "",
+      "score": 90,
+      "publishedDate": "2025-12-30",
+      "discoveredAt": "2025-12-31 02:02:35",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 41029,
+      "title": "Project Management AI Tools 2026: What Features Actually Matter?",
+      "url": "https://www.celoxis.com/article/project-management-ai-tools",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-12-18",
+      "discoveredAt": "2025-12-19 02:02:17",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 40745,
+      "title": "Google tests an AI productivity agent that lives in your inbox",
+      "url": "https://www.computerworld.com/article/4107689/google-tests-an-ai-productivity-agent-that-lives-in-your-inbox.html",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-12-17",
+      "discoveredAt": "2025-12-18 02:02:47",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 40336,
+      "title": "2026: The year of scale or fail in enterprise AI",
+      "url": "https://www.cio.com/article/4106578/2026-the-year-of-scale-or-fail-in-enterprise-ai.html",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-12-16",
+      "discoveredAt": "2025-12-17 02:00:14",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 38597,
+      "title": "Introducing Polly: Your AI Agent Engineer",
+      "url": "https://blog.langchain.com/introducing-polly-your-ai-agent-engineer/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-12-10",
+      "discoveredAt": "2025-12-11 02:02:19",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 35163,
+      "title": "The state of enterprise AI",
+      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-12-08",
+      "discoveredAt": "2025-12-09 02:05:39",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 35071,
+      "title": "The state of enterprise AI",
+      "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-12-08",
+      "discoveredAt": "2025-12-09 02:04:33",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 6780,
+      "title": "Context as a Service: Modular Architecture for the Age of AI Agents",
+      "url": "https://medium.com/google-cloud/context-as-a-service-modular-architecture-for-the-age-of-ai-agents-58fbae3ee030",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-10-17",
+      "discoveredAt": "2025-10-17 04:09:01",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 6191,
+      "title": "Microsoft empowers Windows 11 with voice-controlled Copilot AI assistant",
+      "url": "https://www.digitaltrends.com/computing/microsoft-empowers-windows-11-with-voice-controlled-copilot-ai-assistant/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-10-17",
+      "discoveredAt": "2025-10-17 02:08:19",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 6075,
+      "title": "How to use ChatGPT: A beginner's guide to the most popular AI chatbot",
+      "url": "https://www.zdnet.com/article/how-to-use-chatgpt-a-beginners-guide-to-the-most-popular-ai-chatbot/",
+      "summary": "",
+      "score": 90,
+      "publishedDate": "2025-10-17",
+      "discoveredAt": "2025-10-17 02:05:42",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 5307,
+      "title": "AI startup Viven raises $35M to create digital twins that fill in for absent team members",
+      "url": "https://siliconangle.com/2025/10/15/ai-startup-viven-raises-35m-create-digital-twins-fill-absent-team-members/",
+      "summary": "",
+      "score": 80,
+      "publishedDate": "2025-10-16",
+      "discoveredAt": "2025-10-16 02:07:08",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 5112,
+      "title": "New Jscrambler AI Assistant accelerates PCI DSS compliance decisions",
+      "url": "https://www.helpnetsecurity.com/2025/10/15/jscrambler-pci-dss-ai-assistant/",
+      "summary": "",
+      "score": 90,
+      "publishedDate": "2025-10-15",
+      "discoveredAt": "2025-10-15 11:51:16",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 5109,
+      "title": "Can Agentic AI Fix Enterprise Efficiency Where ERP Failed?",
+      "url": "https://analyticsindiamag.com/ai-features/can-agentic-ai-fix-enterprise-efficiency-where-erp-failed/",
+      "summary": "",
+      "score": 90,
+      "publishedDate": "2025-10-15",
+      "discoveredAt": "2025-10-15 11:51:14",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 5108,
+      "title": "Red Hat AI 3 helps enterprises scale AI workloads across hybrid environments",
+      "url": "https://www.helpnetsecurity.com/2025/10/15/red-hat-ai-3/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-10-15",
+      "discoveredAt": "2025-10-15 11:51:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 5105,
+      "title": "Leading the Agentic AI Enterprise – Harnessing AI to Shape Decisions, Outcomes and Growth",
+      "url": "https://cio.economictimes.indiatimes.com/news/brand-solution/leading-the-agentic-ai-enterprise-harnessing-ai-to-shape-decisions-outcomes-and-growth/124570658",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2025-10-15",
+      "discoveredAt": "2025-10-15 11:51:10",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 5101,
+      "title": "Noesent: AI agents team up to deliver seamless, real-time",
+      "url": "https://betalist.com/startups/noesent",
+      "summary": "",
+      "score": 90,
+      "publishedDate": "2025-10-15",
+      "discoveredAt": "2025-10-15 11:51:04",
+      "pmbokArea": null,
+      "section": "auto"
+    }
+  ],
   "strategicInsights": [
     {
       "id": 3,
@@ -36,9 +257,9 @@
     }
   ],
   "counts": {
-    "auto": 0,
+    "auto": 20,
     "curated": 3,
-    "total": 3
+    "total": 23
   },
-  "generatedAt": "2026-01-16T13:57:12.402Z"
+  "generatedAt": "2026-01-17T15:28:04.160Z"
 }
