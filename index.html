@@ -228,7 +228,7 @@
 
   <script>
     function renderCards(cards) {
-      const grid = document.getElementById('insights-grid');
+      const grid = document.getElementById('auto-articles-grid');
       grid.innerHTML = cards.map(card => `
         <div class="insight-card">
           <div class="card-tagline">${card.tagline}</div>
@@ -238,9 +238,9 @@
           <span class="badge tldr-badge">
             <i data-lucide="zap"></i> TLDR
           </span>
-          <div class="card-tldr">
-            ${card.tldr.map(point => `<div class="tldr-bullet">${point}</div>`).join('')}
-          </div>
+          <ul class="card-tldr">
+            ${card.tldr.map(point => `<li class="tldr-bullet">${point}</li>`).join('')}
+          </ul>
           <div class="card-badges">
             <span class="badge pmo-badge">
               <i data-lucide="layout-dashboard"></i> ${card.badges.pmoArea || 'Strategy'}
@@ -263,19 +263,18 @@
           </div>
         </div>
       `).join('');
-      
+
       lucide.createIcons();
     }
 
-    // Fetch real data from API - Daily Cards (legacy, keep for now)
+    // Fetch real data from API - Daily Cards
     async function loadDailyCards() {
       try {
         const response = await fetch('./api/daily-cards.json?t=' + Date.now());
         if (!response.ok) throw new Error('Failed to load cards');
         const data = await response.json();
         console.log(`Loaded ${data.count} cards from ${data.date}`);
-        // Note: This is being replaced by dual-section display
-        // renderCards(data.cards);
+        renderCards(data.cards);
       } catch (error) {
         console.error('Error loading daily cards:', error);
       }
@@ -365,8 +364,8 @@
       messages[carouselIndex].classList.add('active');
     }, 8000);
 
-    // Initial render - Load dual-section articles
-    loadDisplayedArticles();
+    // Initial render - Load daily cards with badges
+    loadDailyCards();
 
     // Mobile hamburger menu
     const hamburger = document.getElementById('hamburger');

@@ -223,6 +223,17 @@
   ],
   "strategicInsights": [
     {
+      "id": 4,
+      "title": "2025’s Wildest AI Breakthroughs: Reasoning Models, Coding Agents, and the Pelican That Broke the Internet",
+      "url": "https://simonwillison.net/2025/Dec/31/the-year-in-llms/",
+      "summary": "- Reasoning models + tool use became the defining capability jump of 2025.\n- Coding agents exploded, reshaping software development and burning huge token volumes.\n- Chinese open‑weight models overtook Western labs in several benchmarks.\n- Gemini surged, OpenAI stumbled, and the industry embraced long tasks, image editing, and unexpected memes.",
+      "source": "simonwillison.net",
+      "publishedDate": "2025-12-31",
+      "addedDate": "2026-01-17 17:35:09",
+      "displayOrder": 0,
+      "section": "curated"
+    },
+    {
       "id": 3,
       "title": "Test Curated Article - AI in PMO Leadership",
       "url": "https://example.com/test-curated-1768571794204",
@@ -258,8 +269,8 @@
   ],
   "counts": {
     "auto": 20,
-    "curated": 3,
-    "total": 23
+    "curated": 4,
+    "total": 24
   },
-  "generatedAt": "2026-01-17T15:28:04.160Z"
+  "generatedAt": "2026-01-17T15:35:10.054Z"
 }
