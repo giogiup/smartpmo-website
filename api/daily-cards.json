@@ -1,64 +1,36 @@
 {
-  "generated": "2026-01-13T02:08:41.594Z",
-  "date": "2026-01-13",
-  "count": 2,
+  "generated": "2026-01-17T02:08:31.902Z",
+  "date": "2026-01-17",
+  "count": 1,
   "cards": [
     {
-      "id": 41992,
-      "title": "Best AI Orchestration Solutions For Scalability 2025 | Prompts.ai",
-      "url": "https://www.prompts.ai/fr/blog/best-ai-orchestration-solutions-scalability-2025",
-      "date": "2026-01-13",
+      "id": 42062,
+      "title": "Human in the loop automation: Build AI workflows that keep humans in control",
+      "url": "https://blog.n8n.io/human-in-the-loop-automation/",
+      "date": "2026-01-16",
       "score": 75,
-      "tagline": "Streamline AI orchestration for enhanced project management scalability.",
+      "tagline": "Enhance project oversight with AI-driven human-in-the-loop automation",
       "tldr": [
-        "AI orchestration tools address the challenge of scaling enterprise AI operations, reducing the failure rate of AI pilots through better coordination.",
-        "Key features include centralized access to multiple models, automated workflows, and cost optimization, delivering significant ROI improvements.",
-        "To implement, evaluate your needs, choose a suitable platform, and integrate it into your existing workflows for maximum efficiency.",
-        "Use cases include managing complex AI workflows, improving resource allocation, and enhancing project delivery timelines in a PMO context."
+        "Human-in-the-loop automation addresses the risk of AI errors in project workflows, ensuring accuracy and compliance.",
+        "Key features include review checkpoints that allow human judgment at critical decision points, enhancing overall workflow reliability.",
+        "Implement HITL by integrating review steps in n8n workflows, focusing on high-risk tasks for optimal efficiency.",
+        "Use cases include approving project budgets, reviewing compliance documents, and validating AI-generated reports in PMO settings."
       ],
       "badges": {
-        "pmoArea": "Integration",
+        "pmoArea": "Risk",
         "implementation": "Weeks to Deploy",
         "skillLevel": "Intermediate",
-        "readTime": 33,
+        "readTime": 30,
         "price": "Freemium"
       },
       "keywords": [
-        "AI orchestration",
-        "scalability",
-        "workflow management",
-        "cost optimization",
-        "enterprise AI",
-        "project management"
-      ]
-    },
-    {
-      "id": 41994,
-      "title": "Best AI Orchestration Solutions For Scalability 2025 | Prompts.ai",
-      "url": "https://www.prompts.ai/fr/blog/best-ai-orchestration-solutions-scalability-2025",
-      "date": "2026-01-13",
-      "score": 75,
-      "tagline": "Unlock scalable AI orchestration for enhanced project management success.",
-      "tldr": [
-        "AI orchestration tools address the challenge of scaling enterprise AI operations, reducing the risk of failed projects due to poor coordination.",
-        "Key features include centralized model access, automated workflows, and cost optimization, enabling organizations to maximize their AI investments.",
-        "Implement by evaluating your current AI workflows, selecting the right orchestration platform, and integrating it into your existing systems.",
-        "Use cases include streamlining project workflows, enhancing team collaboration, and improving resource allocation through unified AI solutions."
-      ],
-      "badges": {
-        "pmoArea": "Integration",
-        "implementation": "Weeks to Deploy",
-        "skillLevel": "Intermediate",
-        "readTime": 33,
-        "price": "Freemium"
-      },
-      "keywords": [
-        "AI orchestration",
-        "scalability",
-        "cost management",
-        "workflow automation",
-        "enterprise AI",
-        "model integration"
+        "human-in-the-loop",
+        "automation",
+        "AI workflows",
+        "compliance",
+        "accuracy",
+        "n8n",
+        "decision points"
       ]
     }
   ]
