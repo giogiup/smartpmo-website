@@ -1457,27 +1457,31 @@ footer {
   display: flex;
   gap: 8px;
   padding: 12px 16px;
-  border-top: 1px solid #e5e5e5;
-  background: #fafafa;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
   margin-top: auto; /* Push to bottom of card */
 }
 
 .share-btn {
-  background: white;
-  border: 1px solid #d0d0d0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   padding: 8px 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
-  min-width: 40px;
+  gap: 6px;
+  transition: all 0.2s ease;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .share-btn:hover {
-  background: #f0f0f0;
-  border-color: #999;
+  background: rgba(255, 107, 0, 0.1);
+  border-color: rgba(255, 107, 0, 0.3);
+  color: #FF6B00;
   transform: translateY(-1px);
 }
 
@@ -1491,13 +1495,31 @@ footer {
   color: white;
 }
 
+/* LinkedIn Primary Button */
+.share-btn.linkedin-primary {
+  background: rgba(10, 102, 194, 0.15);
+  border-color: rgba(10, 102, 194, 0.3);
+  color: #0A66C2;
+}
+
+.share-btn.linkedin-primary:hover {
+  background: rgba(10, 102, 194, 0.25);
+  border-color: rgba(10, 102, 194, 0.5);
+  color: #0A66C2;
+}
+
 /* Share button icon colors */
-.icon-linkedin { color: #0A66C2; }
-.icon-twitter { color: #000; }
-.icon-email { color: #666; }
-.icon-link { color: #666; }
-.icon-whatsapp { color: #25D366; }
+.icon-linkedin { color: currentColor; }
+.icon-twitter { color: currentColor; }
+.icon-email { color: currentColor; }
+.icon-link { color: currentColor; }
+.icon-whatsapp { color: currentColor; }
 .icon-check { color: white; }
+
+/* Text labels (desktop only) */
+.share-btn span {
+  display: inline;
+}
 
 /* Mobile responsive share buttons */
 @media (max-width: 768px) {
@@ -1509,5 +1531,11 @@ footer {
   .share-btn {
     flex: 1 1 calc(33.333% - 4px);
     min-width: auto;
+    padding: 10px 8px;
+  }
+
+  /* Hide text labels on mobile */
+  .share-btn span {
+    display: none;
   }
 }
