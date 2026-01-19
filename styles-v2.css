@@ -1450,3 +1450,64 @@ footer {
     display: flex;
   }
 }
+
+/* ========== SHARE BUTTONS ========== */
+
+.card-share-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid #e5e5e5;
+  background: #fafafa;
+  margin-top: auto; /* Push to bottom of card */
+}
+
+.share-btn {
+  background: white;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  min-width: 40px;
+}
+
+.share-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+  transform: translateY(-1px);
+}
+
+.share-btn:active {
+  transform: translateY(0);
+}
+
+.share-btn.success {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+/* Share button icon colors */
+.icon-linkedin { color: #0A66C2; }
+.icon-twitter { color: #000; }
+.icon-email { color: #666; }
+.icon-link { color: #666; }
+.icon-whatsapp { color: #25D366; }
+.icon-check { color: white; }
+
+/* Mobile responsive share buttons */
+@media (max-width: 768px) {
+  .card-share-buttons {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .share-btn {
+    flex: 1 1 calc(33.333% - 4px);
+    min-width: auto;
+  }
+}
