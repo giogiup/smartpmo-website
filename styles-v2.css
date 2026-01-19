@@ -1070,8 +1070,8 @@ footer {
   font-weight: 700;
   line-height: 1.3;
   margin: 0;
-  padding-right: 9rem;    /* Space for PMO badge */
-  min-height: 3rem;       /* Ensure space for badge + title */
+  padding-right: 10rem;   /* Space for PMO badge (increased for "POTENTIAL") */
+  min-height: 3.5rem;     /* Ensure space for badge + multi-line titles */
 }
 
 .card-title a {
