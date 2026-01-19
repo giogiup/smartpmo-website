@@ -1516,6 +1516,7 @@ footer {
 
 .share-btn span {
   display: none;
+  white-space: nowrap;
 }
 
 /* Share button icon colors */
@@ -1529,6 +1530,7 @@ footer {
 @media (min-width: 768px) {
   .share-btn span {
     display: inline;
+    opacity: 1;
   }
   .share-btn {
     min-width: auto;
