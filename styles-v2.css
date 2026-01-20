@@ -1686,22 +1686,14 @@ footer {
 .icon-linkedin { color: currentColor; }
 .icon-twitter { color: currentColor; }
 .icon-email { color: currentColor; }
+.icon-copy { color: currentColor; }
 .icon-link { color: currentColor; }
 .icon-whatsapp { color: currentColor; }
 .icon-check { color: white; }
 
 @media (min-width: 768px) {
-  /* Show text only for Email and Copy buttons on desktop */
-  .btn-email span,
-  .btn-copy span {
-    display: inline;
-    opacity: 1;
-  }
-
-  /* Hide text for LinkedIn, X, WhatsApp - icon only */
-  .btn-linkedin span,
-  .btn-twitter span,
-  .btn-whatsapp span {
+  /* Hide text for all buttons on desktop - icon only */
+  .share-btn span {
     display: none;
   }
 
