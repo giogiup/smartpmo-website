@@ -1691,10 +1691,20 @@ footer {
 .icon-check { color: white; }
 
 @media (min-width: 768px) {
-  .share-btn span {
+  /* Show text only for Email and Copy buttons on desktop */
+  .btn-email span,
+  .btn-copy span {
     display: inline;
     opacity: 1;
   }
+
+  /* Hide text for LinkedIn, X, WhatsApp - icon only */
+  .btn-linkedin span,
+  .btn-twitter span,
+  .btn-whatsapp span {
+    display: none;
+  }
+
   .share-btn {
     min-width: auto;
   }
