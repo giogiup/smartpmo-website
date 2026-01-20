@@ -1528,8 +1528,8 @@ footer {
 .card-share-buttons {
   display: flex;
   flex-wrap: nowrap;
-  gap: 8px;
-  padding: 16px 24px;
+  gap: 6px;
+  padding: 12px 16px;
   background: rgba(255, 255, 255, 0.02);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-top: auto; /* Push to bottom of card */
@@ -1546,18 +1546,18 @@ footer {
 .share-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  padding: 10px 14px;
+  border-radius: 6px;
+  padding: 8px 10px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s ease;
-  min-width: 44px;
-  flex-shrink: 0;
+  min-width: 40px;
+  flex-shrink: 1;
 }
 
 .share-btn:active {
@@ -1672,8 +1672,8 @@ footer {
 }
 
 .share-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   flex-shrink: 0;
 }
 
