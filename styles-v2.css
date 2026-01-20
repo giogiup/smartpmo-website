@@ -990,10 +990,10 @@ footer {
 /* NEW: Article Card (replaces .insight-card) */
 .article-card {
   position: relative;
-  background: var(--panel);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 14px;
-  padding: 1.5rem;
+  background: rgba(20, 30, 45, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0;
   backdrop-filter: blur(20px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -1001,7 +1001,7 @@ footer {
   /* Flexbox for proper spacing */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0;
 }
 
 .article-card:hover {
@@ -1017,46 +1017,112 @@ footer {
 }
 
 /* ============================================================================
-   PMO RELEVANCE BADGE (Top-right corner)
+   PMO CATEGORY BADGE (Top-right corner) - NEW 3-CATEGORY SYSTEM
    ============================================================================ */
 
 .pmo-relevance-badge {
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  display: flex;
+  top: 16px;
+  right: 16px;
+  display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.65rem;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
-  border: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .pmo-relevance-badge i {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
-/* Direct - Bright cyan background */
-.pmo-direct {
-  background: rgba(6, 182, 212, 0.85);
-  color: #0a0f1a;
+/* PMO RELATED - Green gradient */
+.pmo-related {
+  background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  color: #FFFFFF;
 }
 
-/* Inferred - Medium teal background */
-.pmo-inferred {
-  background: rgba(20, 184, 166, 0.65);
-  color: #0a0f1a;
-}
-
-/* Potential - Subdued grey background */
+/* PMO POTENTIAL - Amber/Yellow gradient */
 .pmo-potential {
-  background: rgba(156, 163, 175, 0.55);
-  color: #0a0f1a;
+  background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #1F2937;
+}
+
+/* AI GENERAL - Blue gradient */
+.ai-general {
+  background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  color: #FFFFFF;
+}
+
+/* Legacy support - map old classes to new system */
+.pmo-direct {
+  background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  color: #FFFFFF;
+}
+
+.pmo-inferred {
+  background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #1F2937;
+}
+
+/* ============================================================================
+   CARD LAYOUT SECTIONS - 8px grid spacing
+   ============================================================================ */
+
+.card-header {
+  position: relative;
+  padding: 32px 24px 16px 24px;
+}
+
+.card-body {
+  padding: 0 24px 16px 24px;
+}
+
+.card-metadata {
+  padding: 12px 24px;
+  gap: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card-tags {
+  padding: 12px 24px 16px 24px;
+  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-date {
+  padding: 12px 24px 16px 24px;
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    padding: 28px 16px 12px 16px;
+  }
+
+  .card-body,
+  .card-metadata,
+  .card-tags,
+  .card-date {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 /* ============================================================================
@@ -1064,12 +1130,20 @@ footer {
    ============================================================================ */
 
 .card-title {
-  font-size: 1.25rem;     /* Larger than before */
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
   margin: 0;
-  padding-right: 10rem;   /* Space for PMO badge (increased for "POTENTIAL") */
-  min-height: 3.5rem;     /* Ensure space for badge + multi-line titles */
+  padding-right: 140px; /* Space for badge */
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 20px;
+    padding-right: 120px;
+  }
 }
 
 .card-title a {
@@ -1454,12 +1528,19 @@ footer {
 .card-share-buttons {
   display: flex;
   flex-wrap: nowrap;
-  gap: 4px;
-  padding: 10px 12px;
-  background: transparent;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 8px;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin-top: auto; /* Push to bottom of card */
   overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .card-share-buttons {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .share-btn {
@@ -1479,30 +1560,111 @@ footer {
   flex-shrink: 0;
 }
 
-.share-btn:hover {
-  background: rgba(255, 107, 0, 0.1);
-  border-color: rgba(255, 107, 0, 0.5);
-  color: #FF6B00;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.2);
-}
-
 .share-btn:active {
   transform: translateY(0);
 }
 
+/* LinkedIn - #0A66C2 */
+.share-btn.btn-linkedin {
+  border-color: rgba(10, 102, 194, 0.3);
+}
+.share-btn.btn-linkedin svg {
+  color: rgba(10, 102, 194, 0.6);
+}
+.share-btn.btn-linkedin:hover {
+  background: #0A66C2;
+  border-color: #0A66C2;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+}
+.share-btn.btn-linkedin:hover svg {
+  color: white;
+}
+
+/* X/Twitter - #000000 */
+.share-btn.btn-twitter {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.share-btn.btn-twitter svg {
+  color: rgba(255, 255, 255, 0.6);
+}
+.share-btn.btn-twitter:hover {
+  background: #000000;
+  border-color: #000000;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.share-btn.btn-twitter:hover svg {
+  color: white;
+}
+
+/* Email - #6B7280 */
+.share-btn.btn-email {
+  border-color: rgba(107, 114, 128, 0.3);
+}
+.share-btn.btn-email svg {
+  color: rgba(107, 114, 128, 0.6);
+}
+.share-btn.btn-email:hover {
+  background: #6B7280;
+  border-color: #6B7280;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
+}
+.share-btn.btn-email:hover svg {
+  color: white;
+}
+
+/* Copy Link - #FF6B00 */
+.share-btn.btn-copy {
+  border-color: rgba(255, 107, 0, 0.3);
+}
+.share-btn.btn-copy svg {
+  color: rgba(255, 107, 0, 0.6);
+}
+.share-btn.btn-copy:hover {
+  background: #FF6B00;
+  border-color: #FF6B00;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+}
+.share-btn.btn-copy:hover svg {
+  color: white;
+}
+
+/* WhatsApp - #25D366 */
+.share-btn.btn-whatsapp {
+  border-color: rgba(37, 211, 102, 0.3);
+}
+.share-btn.btn-whatsapp svg {
+  color: rgba(37, 211, 102, 0.6);
+}
+.share-btn.btn-whatsapp:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+.share-btn.btn-whatsapp:hover svg {
+  color: white;
+}
+
+/* Legacy support */
 .share-btn.linkedin-primary {
   background: rgba(10, 102, 194, 0.15);
   border-color: rgba(10, 102, 194, 0.3);
 }
-
 .share-btn.linkedin-primary:hover {
   background: #0A66C2;
   border-color: #0A66C2;
   color: white;
   box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
 }
-
 .share-btn.success {
   background: rgba(16, 185, 129, 0.15);
   border-color: rgba(16, 185, 129, 0.3);
