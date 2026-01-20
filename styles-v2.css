@@ -1654,6 +1654,62 @@ footer {
   color: white;
 }
 
+/* Ensure hovers work inside article-card */
+.article-card .share-btn.btn-linkedin:hover {
+  background: #0A66C2 !important;
+  border-color: #0A66C2 !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3) !important;
+}
+.article-card .share-btn.btn-linkedin:hover svg {
+  color: white !important;
+}
+
+.article-card .share-btn.btn-twitter:hover {
+  background: #000000 !important;
+  border-color: #000000 !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+.article-card .share-btn.btn-twitter:hover svg {
+  color: white !important;
+}
+
+.article-card .share-btn.btn-email:hover {
+  background: #6B7280 !important;
+  border-color: #6B7280 !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3) !important;
+}
+.article-card .share-btn.btn-email:hover svg {
+  color: white !important;
+}
+
+.article-card .share-btn.btn-copy:hover {
+  background: #FF6B00 !important;
+  border-color: #FF6B00 !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3) !important;
+}
+.article-card .share-btn.btn-copy:hover svg {
+  color: white !important;
+}
+
+.article-card .share-btn.btn-whatsapp:hover {
+  background: #25D366 !important;
+  border-color: #25D366 !important;
+  color: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
+}
+.article-card .share-btn.btn-whatsapp:hover svg {
+  color: white !important;
+}
+
 /* Legacy support */
 .share-btn.linkedin-primary {
   background: rgba(10, 102, 194, 0.15);
