@@ -1,8 +1,133 @@
 {
-  "generated": "2026-01-20T02:15:29.668Z",
+  "generated": "2026-01-20T04:16:46.859Z",
   "date": "2026-01-20",
   "count": 20,
   "cards": [
+    {
+      "id": 44591,
+      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
+      "url": "https://clickup.com/blog/ai-powered-project-execution/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Direct",
+      "tldr": [
+        "AI-powered project execution tool designed for PMO project management efficiency and cross-functional collaboration.",
+        "Implement AI features to streamline project updates and enhance team communication across departments.",
+        "Ideal for PMOs managing complex projects with tight timelines and resource allocation across multiple teams."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project execution",
+        "collaboration"
+      ]
+    },
+    {
+      "id": 44738,
+      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
+      "url": "https://clickup.com/blog/ai-powered-project-execution/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Direct",
+      "tldr": [
+        "**AI-powered project execution tool designed for PMO efficiency and cross-functional collaboration.**",
+        "Implement AI features to streamline project updates, enhance communication, and reduce management overhead.",
+        "Ideal for PMOs overseeing complex projects that require coordination across multiple teams and time zones."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "execution"
+      ]
+    },
+    {
+      "id": 44773,
+      "title": "AI in Project and Portfolio Management Today",
+      "url": "https://www.itmplatform.com/en/blog/ai-in-project-and-portfolio-management-today/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Inferred",
+      "tldr": [
+        "AI tools applicable to PMO project forecasting and risk analysis for improved decision-making.",
+        "Utilize AI for automating project tasks, enhancing efficiency and reducing manual effort.",
+        "AI-driven insights can help PMOs identify potential project risks and optimize resource allocation."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "risk analysis"
+      ]
+    },
+    {
+      "id": 45733,
+      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
+      "url": "https://clickup.com/blog/ai-powered-project-execution/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Direct",
+      "tldr": [
+        "AI-powered project execution tool designed for PMO efficiency in managing cross-functional projects.",
+        "Implement AI features to streamline communication and enhance project timelines across departments.",
+        "Ideal for project managers overseeing complex initiatives with tight resource allocation and competing priorities."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project execution",
+        "cross-functional"
+      ]
+    },
+    {
+      "id": 45741,
+      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
+      "url": "https://clickup.com/blog/ai-powered-project-execution/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Direct",
+      "tldr": [
+        "**AI-powered project execution tool designed for PMO efficiency and cross-functional collaboration.**",
+        "Implement AI features to streamline project updates and enhance team communication across departments.",
+        "Useful for PMOs managing complex projects with tight timelines and resource allocation challenges."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Resources",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "execution"
+      ]
+    },
     {
       "id": 44333,
       "title": "AI agents in project management: The new force behind high-performing teams",
@@ -229,169 +354,19 @@
       ]
     },
     {
-      "id": 43433,
-      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
-      "url": "https://clickup.com/blog/ai-powered-project-execution/",
-      "date": "2026-01-19",
-      "score": 90,
-      "pmo_relevance": "Direct",
-      "tldr": [
-        "AI-powered project execution tool designed for PMO efficiency in managing cross-functional projects.",
-        "Implement AI features to streamline communication and enhance project timelines across departments.",
-        "Useful for PMOs overseeing complex initiatives requiring tight resource allocation and coordination."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Resources",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project execution",
-        "cross-functional"
-      ]
-    },
-    {
-      "id": 42520,
-      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
-      "url": "https://clickup.com/blog/ai-powered-project-execution/",
-      "date": "2026-01-19",
-      "score": 90,
-      "pmo_relevance": "Direct",
-      "tldr": [
-        "**AI-powered project execution tool designed for PMO project delivery, enhancing speed and efficiency.**",
-        "Implement AI features to streamline cross-functional communication and resource allocation in projects.",
-        "Ideal for PMOs managing complex initiatives across multiple teams and time zones."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project execution",
-        "cross-functional"
-      ]
-    },
-    {
-      "id": 44028,
-      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
-      "url": "https://clickup.com/blog/ai-powered-project-execution/",
-      "date": "2026-01-19",
-      "score": 90,
-      "pmo_relevance": "Direct",
-      "tldr": [
-        "AI-powered project execution tool designed for PMO efficiency and cross-functional collaboration.",
-        "Implement AI features to streamline project updates, enhance communication, and reduce time spent on management tasks.",
-        "Ideal for PMOs overseeing complex projects with multiple teams and tight deadlines."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project execution",
-        "collaboration"
-      ]
-    },
-    {
-      "id": 42557,
-      "title": "AI in Project and Portfolio Management Today",
-      "url": "https://www.itmplatform.com/en/blog/ai-in-project-and-portfolio-management-today/",
-      "date": "2026-01-19",
-      "score": 85,
-      "pmo_relevance": "Inferred",
-      "tldr": [
-        "AI tools applicable to PMO project forecasting and risk analysis for improved decision-making.",
-        "Utilize AI for automating task management and enhancing team collaboration through sentiment analysis.",
-        "Ideal for PMOs seeking to leverage AI for data-driven insights and efficient project execution."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project management",
-        "risk analysis"
-      ]
-    },
-    {
-      "id": 43803,
-      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
-      "url": "https://clickup.com/blog/ai-powered-project-execution/",
-      "date": "2026-01-19",
-      "score": 85,
-      "pmo_relevance": "Direct",
-      "tldr": [
-        "AI-powered project execution tool designed for PMO efficiency and cross-functional collaboration.",
-        "Implement AI features to streamline project updates, resource allocation, and communication across teams.",
-        "Useful for PMOs managing complex projects with tight timelines and multiple stakeholders."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Resources",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project management",
-        "execution"
-      ]
-    },
-    {
-      "id": 44036,
-      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
-      "url": "https://clickup.com/blog/ai-powered-project-execution/",
-      "date": "2026-01-19",
-      "score": 85,
-      "pmo_relevance": "Direct",
-      "tldr": [
-        "AI-powered execution tool designed for PMO project delivery and enhanced team collaboration.",
-        "Implement AI features to streamline project updates and improve cross-functional communication.",
-        "Ideal for PMOs managing complex, multi-departmental projects with tight timelines and resource allocation."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project execution",
-        "collaboration"
-      ]
-    },
-    {
-      "id": 42661,
+      "id": 44878,
       "title": "AI agents in project management: The new force behind high-performing teams",
       "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
-      "date": "2026-01-19",
+      "date": "2026-01-20",
       "score": 75,
-      "pmo_relevance": "Inferred",
+      "pmo_relevance": "Direct",
       "tldr": [
-        "AI-driven project management tools can benefit PMO teams by enhancing workflow efficiency and decision-making.",
-        "Utilize AI agents to automate repetitive tasks and improve project visibility for better stakeholder engagement.",
-        "Applicable for PMOs looking to streamline processes across various teams, from marketing to IT."
+        "AI agents designed for PMO project execution can enhance team performance and streamline workflows.",
+        "Implement AI-driven tools to automate reporting and improve project visibility for stakeholders.",
+        "Useful for PMOs looking to align strategy with execution across multiple projects and teams."
       ],
       "badges": {
-        "read_time": 16,
+        "read_time": 22,
         "pmo_focus": "Performance",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
@@ -400,49 +375,74 @@
       "keywords": [
         "AI agents",
         "project management",
-        "workflow automation"
+        "team performance"
       ]
     },
     {
-      "id": 42675,
+      "id": 44881,
+      "title": "AI agents in project management: The new force behind high-performing teams",
+      "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
+      "date": "2026-01-20",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "tldr": [
+        "AI agents designed for PMO project execution can enhance team performance and efficiency.",
+        "Implement AI-driven tools to automate reporting and streamline workflows for better outcomes.",
+        "Useful for PMOs looking to align strategy with execution across multiple projects."
+      ],
+      "badges": {
+        "read_time": 22,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "project management",
+        "team performance"
+      ]
+    },
+    {
+      "id": 44892,
       "title": "CPO predictions: The year AI finally learns to speak workflow",
       "url": "https://www.wrike.com/blog/ai-workflow-2026/",
-      "date": "2026-01-19",
+      "date": "2026-01-20",
       "score": 75,
       "pmo_relevance": "Inferred",
       "tldr": [
-        "AI-driven workflow automation tools applicable to PMO project execution and resource management.",
-        "Implement AI solutions to streamline reporting and enhance visibility across project timelines.",
-        "Useful for PMOs looking to optimize workflows and improve collaboration among teams."
+        "AI-driven workflow management tools can benefit PMO project execution and team alignment.",
+        "Implement AI solutions to automate routine tasks and enhance project visibility across teams.",
+        "Useful for PMOs looking to streamline processes and improve efficiency in project delivery."
       ],
       "badges": {
         "read_time": 19,
-        "pmo_focus": "Tools",
+        "pmo_focus": "Alignment",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
+        "AI",
         "workflow",
-        "automation",
-        "AI"
+        "project management"
       ]
     },
     {
-      "id": 42833,
+      "id": 45072,
       "title": "AI agents in project management: The new force behind high-performing teams",
       "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
-      "date": "2026-01-19",
+      "date": "2026-01-20",
       "score": 75,
-      "pmo_relevance": "Inferred",
+      "pmo_relevance": "Direct",
       "tldr": [
-        "AI agents applicable to PMO project execution and resource optimization across teams.",
-        "Implement AI-driven analytics to enhance decision-making and streamline project workflows.",
-        "Useful for PMOs seeking to improve collaboration and efficiency in multi-team environments."
+        "AI agents designed for PMO project execution can enhance team collaboration and efficiency.",
+        "Implement AI tools to automate reporting and streamline project workflows for better visibility.",
+        "Useful for PMOs aiming to improve project delivery timelines and resource allocation across teams."
       ],
       "badges": {
-        "read_time": 16,
-        "pmo_focus": "Resources",
+        "read_time": 22,
+        "pmo_focus": "Performance",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
@@ -450,20 +450,45 @@
       "keywords": [
         "AI agents",
         "project management",
-        "workflow optimization"
+        "team collaboration"
       ]
     },
     {
-      "id": 42844,
+      "id": 45075,
+      "title": "AI agents in project management: The new force behind high-performing teams",
+      "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
+      "date": "2026-01-20",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "tldr": [
+        "AI agents designed for PMO project execution can enhance team performance and efficiency.",
+        "Implement AI tools to automate routine tasks and improve project tracking across teams.",
+        "Useful for PMOs managing diverse projects by streamlining workflows and enhancing collaboration."
+      ],
+      "badges": {
+        "read_time": 22,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "project management",
+        "team performance"
+      ]
+    },
+    {
+      "id": 45086,
       "title": "CPO predictions: The year AI finally learns to speak workflow",
       "url": "https://www.wrike.com/blog/ai-workflow-2026/",
-      "date": "2026-01-19",
+      "date": "2026-01-20",
       "score": 75,
       "pmo_relevance": "Inferred",
       "tldr": [
         "AI-driven workflow management tools can benefit PMO project execution and resource allocation.",
-        "Implement AI solutions to streamline project tracking and enhance visibility across teams.",
-        "Useful for PMOs looking to automate reporting and improve stakeholder communication in complex projects."
+        "Implement AI solutions to streamline project tracking and enhance team collaboration across portfolios.",
+        "Useful for PMOs looking to improve efficiency in managing multiple projects and workflows."
       ],
       "badges": {
         "read_time": 19,
@@ -476,31 +501,6 @@
         "AI",
         "workflow",
         "project management"
-      ]
-    },
-    {
-      "id": 43523,
-      "title": "AI agents in project management: The new force behind high-performing teams",
-      "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
-      "date": "2026-01-19",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "tldr": [
-        "AI-driven project management tools can benefit PMO resource planning and execution efficiency.",
-        "Implement AI agents to streamline workflows, enhance collaboration, and automate routine tasks.",
-        "Useful for PMOs looking to improve project delivery timelines and team performance across various industries."
-      ],
-      "badges": {
-        "read_time": 16,
-        "pmo_focus": "Resources",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "project management",
-        "workflow automation"
       ]
     }
   ]
