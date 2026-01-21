@@ -1,8 +1,86 @@
 {
-  "generated": "2026-01-20T20:22:52.976Z",
-  "date": "2026-01-20",
-  "count": 4,
+  "generated": "2026-01-21T02:16:49.205Z",
+  "date": "2026-01-21",
+  "count": 8,
   "cards": [
+    {
+      "id": 47030,
+      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
+      "url": "https://clickup.com/blog/ai-powered-project-execution/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Direct",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI-powered execution tool designed for PMO project management efficiency and cross-functional collaboration.",
+        "Implement AI features to streamline communication and enhance project timelines across teams.",
+        "Ideal for PMOs managing complex, multi-departmental projects with tight resource allocation."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Resources",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "execution"
+      ]
+    },
+    {
+      "id": 46702,
+      "title": "AI agents in project management: The new force behind high-performing teams",
+      "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Direct",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI agents designed for PMO project management can enhance team performance and streamline workflows.",
+        "Implement AI tools to automate routine tasks and improve project delivery efficiency.",
+        "Useful for PMOs looking to leverage AI for better resource allocation and risk management."
+      ],
+      "badges": {
+        "read_time": 22,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "project management",
+        "team performance"
+      ]
+    },
+    {
+      "id": 46593,
+      "title": "AI in Project and Portfolio Management Today",
+      "url": "https://www.itmplatform.com/en/blog/ai-in-project-and-portfolio-management-today/",
+      "date": "2026-01-20",
+      "score": 85,
+      "pmo_relevance": "Direct",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI tools designed for PMO project forecasting can enhance accuracy in estimating project parameters.",
+        "Implement AI-driven risk analysis to proactively identify potential project obstacles and improve decision-making.",
+        "Custom-trained AI models can automate tasks, improving efficiency in project management workflows for PMOs."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "risk analysis"
+      ]
+    },
     {
       "id": 46360,
       "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
@@ -53,6 +131,32 @@
         "AI",
         "project management",
         "risk analysis"
+      ]
+    },
+    {
+      "id": 46074,
+      "title": "CPO predictions: The year AI finally learns to speak workflow",
+      "url": "https://www.wrike.com/blog/ai-workflow-2026/",
+      "date": "2026-01-20",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI-driven workflow automation applicable to PMO project execution and resource management.",
+        "Implement AI tools to streamline project workflows and enhance team collaboration across departments.",
+        "Useful for PMOs looking to improve efficiency in managing project timelines and deliverables."
+      ],
+      "badges": {
+        "read_time": 19,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "workflow",
+        "automation",
+        "AI"
       ]
     },
     {
