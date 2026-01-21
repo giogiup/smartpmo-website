@@ -1,8 +1,60 @@
 {
-  "generated": "2026-01-21T02:16:49.205Z",
+  "generated": "2026-01-21T04:16:01.302Z",
   "date": "2026-01-21",
-  "count": 8,
+  "count": 10,
   "cards": [
+    {
+      "id": 47775,
+      "title": "CPO predictions: The year AI finally learns to speak workflow",
+      "url": "https://www.wrike.com/blog/ai-workflow-2026/",
+      "date": "2026-01-21",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI-driven workflow automation applicable to PMO project execution and resource management.",
+        "Implement AI tools to streamline project workflows, enhance visibility, and reduce bottlenecks.",
+        "Useful for PMOs managing complex projects across multiple teams to improve alignment and delivery."
+      ],
+      "badges": {
+        "read_time": 19,
+        "pmo_focus": "Alignment",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "workflow",
+        "automation",
+        "project management"
+      ]
+    },
+    {
+      "id": 47764,
+      "title": "AI agents in project management: The new force behind high-performing teams",
+      "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
+      "date": "2026-01-21",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI agents designed for PMO project execution can enhance team performance and efficiency.",
+        "Implement AI tools to automate routine tasks and improve project tracking across teams.",
+        "Useful for PMOs aiming to streamline workflows and deliver projects on time and within budget."
+      ],
+      "badges": {
+        "read_time": 22,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "project management",
+        "team performance"
+      ]
+    },
     {
       "id": 47030,
       "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
