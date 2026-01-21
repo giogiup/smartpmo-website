@@ -1,7 +1,7 @@
 {
-  "generated": "2026-01-21T14:26:53.892Z",
+  "generated": "2026-01-21T20:20:17.785Z",
   "date": "2026-01-21",
-  "count": 4,
+  "count": 5,
   "cards": [
     {
       "id": 47030,
@@ -79,6 +79,32 @@
         "AI",
         "project management",
         "risk analysis"
+      ]
+    },
+    {
+      "id": 48108,
+      "title": "Where I'm at with AI",
+      "url": "https://paulosman.me/2026/01/18/where-im-at-with-ai/",
+      "date": "2026-01-20",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "Generative AI tools with potential PMO applications in project execution and coding efficiency.",
+        "Utilize AI for routine coding tasks and project ideation to enhance team productivity.",
+        "Ideal for software development teams looking to accelerate project delivery and improve code quality."
+      ],
+      "badges": {
+        "read_time": 14,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "generative AI",
+        "productivity",
+        "software development"
       ]
     },
     {
