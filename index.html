@@ -799,7 +799,16 @@
 
     // Render Latest Intelligence section (auto)
     function renderAutoSection(articles) {
+      const skeletonEl = document.getElementById('skeleton-loaders');
       const grid = document.getElementById('auto-articles-grid');
+
+      // Hide skeleton loaders
+      if (skeletonEl) {
+        skeletonEl.style.display = 'none';
+      }
+
+      // Show grid
+      grid.style.display = 'grid';
 
       if (articles.length === 0) {
         grid.innerHTML = '<p class="no-articles">No articles available yet. Check back soon!</p>';
@@ -1032,8 +1041,7 @@ via SmartPMO.ai`;
 
     // ========== END SHARE FUNCTIONS ==========
 
-    loadDailyCards(); // Latest Intelligence with enriched cards
-    loadCuratedInsights(); // Strategic Insights (curated)
+    loadDisplayedArticles(); // Load both Latest Intelligence and Strategic Insights
 
     // Mobile hamburger menu (right-slide, 44px tap target)
     const hamburgerBtn = document.getElementById('hamburger');
