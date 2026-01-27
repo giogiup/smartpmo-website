@@ -1041,7 +1041,8 @@ via SmartPMO.ai`;
 
     // ========== END SHARE FUNCTIONS ==========
 
-    loadDisplayedArticles(); // Load both Latest Intelligence and Strategic Insights
+    loadDailyCards(); // Latest Intelligence with enriched cards (rich data from daily-cards.json)
+    loadCuratedInsights(); // Strategic Insights (curated articles from displayed-articles.json)
 
     // Mobile hamburger menu (right-slide, 44px tap target)
     const hamburgerBtn = document.getElementById('hamburger');
