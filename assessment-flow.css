@@ -1,0 +1,312 @@
+/* ==================== ASSESSMENT FLOW - RESULT POPUP + EMAIL MODAL ==================== */
+/* Version: 1.0 - Based on COMPLETE_DESIGN_SPEC_v4.md */
+
+/* Result Popup (Centered) */
+.hero-result-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9500;
+  background: rgba(15, 20, 30, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid currentColor;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.hero-result-popup.hero-active {
+  display: block;
+}
+
+/* Border colors per quadrant */
+.hero-result-popup.hero-q1 { border-color: rgba(6, 182, 212, 0.6); }
+.hero-result-popup.hero-q2 { border-color: rgba(139, 92, 246, 0.6); }
+.hero-result-popup.hero-q3 { border-color: rgba(107, 114, 128, 0.6); }
+.hero-result-popup.hero-q4 { border-color: rgba(245, 158, 11, 0.6); }
+
+.hero-result-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-result-subtitle {
+  font-size: 1.1rem;
+  color: #b0c4de;
+  margin-bottom: 1.5rem;
+}
+
+.hero-result-desc {
+  font-size: 1rem;
+  color: #c4d4e8;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-result-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1.5rem 0;
+}
+
+.hero-result-cta-text {
+  font-size: 0.95rem;
+  color: #b0c4de;
+  margin-bottom: 1rem;
+}
+
+.hero-result-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background: linear-gradient(135deg, #00D4FF, #825AFF);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hero-result-cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-result-close {
+  margin-top: 1rem;
+  color: #b0c4de;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hero-result-close:hover {
+  color: #fff;
+}
+
+/* Result Backdrop */
+.hero-result-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 9400;
+}
+
+.hero-result-backdrop.hero-active {
+  display: block;
+}
+
+/* Email Modal */
+.hero-email-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9600;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-email-modal.hero-active {
+  display: flex;
+}
+
+.hero-email-card {
+  background: rgba(15, 20, 30, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid rgba(0, 212, 255, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 420px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.hero-email-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #00D4FF;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.hero-email-input {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  transition: border 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.hero-email-input:focus {
+  outline: none;
+  border-color: #00D4FF;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-email-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Checkboxes */
+.hero-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-checkbox-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.hero-checkbox-item:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hero-checkbox {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.hero-checkbox:checked {
+  background: linear-gradient(135deg, #00D4FF, #825AFF);
+  border-color: #00D4FF;
+}
+
+.hero-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero-checkbox-label {
+  flex: 1;
+}
+
+.hero-checkbox-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.hero-checkbox-desc {
+  font-size: 0.875rem;
+  color: #b0c4de;
+  line-height: 1.4;
+}
+
+/* Submit Button */
+.hero-email-submit {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  background: linear-gradient(135deg, #00D4FF, #825AFF);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-bottom: 0.75rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.hero-email-submit:hover {
+  transform: translateY(-2px);
+}
+
+.hero-email-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.hero-email-skip {
+  text-align: center;
+  color: #b0c4de;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.hero-email-skip:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Error Message */
+.hero-error {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin-top: -0.75rem;
+  margin-bottom: 0.75rem;
+  display: none;
+}
+
+.hero-error.hero-active {
+  display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-result-popup {
+    padding: 2rem 1.5rem;
+    max-width: 95%;
+  }
+
+  .hero-result-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-email-card {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .hero-email-title {
+    font-size: 1.25rem;
+  }
+}

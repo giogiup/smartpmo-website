@@ -4,14 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SmartPMO.ai — AI Insights for PMO Professionals</title>
-  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
   <!-- Preload hero image for faster LCP -->
   <link rel="preload" as="image" href="hero-barista-small.jpg" imagesrcset="hero-barista-small.jpg 600w, hero-barista.jpg 1200w">
   
-  <!-- Font with display=swap to prevent invisible text -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts: Display + Serif for editorial feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-v2.css?v=2e8a52a">
+  <link rel="stylesheet" href="styles-v3.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="header-styles.css">
+  <link rel="stylesheet" href="assessment-flow.css">
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -66,19 +74,13 @@
 </head>
 <body>
 
-<!-- Demo Banner -->
-<div class="demo-banner">
-    <div class="demo-banner-content">
-        <span class="demo-banner-text">DEMO MODE - Website launching officially in 3 weeks - Stay tuned for the full launch!</span>
-        <span class="demo-banner-text">DEMO MODE - Website launching officially in 3 weeks - Stay tuned for the full launch!</span>
-    </div>
-</div>
+  <!-- Header Component (V4) -->
+  <header class="site-header">
+    <div class="site-header-content">
 
-  <!-- Header -->
-  <header>
-    <div class="header-inner">
-      <a href="#" class="brand" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.75rem;">
-       <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <!-- Logo + Brand -->
+      <a href="/" class="site-header-brand">
+        <svg class="site-header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <rect x="4" y="6" width="8" height="2" rx="1" fill="#4C78FF"/>
           <rect x="4" y="10" width="12" height="2" rx="1" fill="#00D4FF"/>
           <rect x="4" y="14" width="6" height="2" rx="1" fill="#00F5FF"/>
@@ -101,78 +103,308 @@
             <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#4C78FF"/>
           </g>
         </svg>
-        <span>SmartPMO.ai</span>
+        <span class="site-header-name">SmartPMO.ai</span>
       </a>
-      <nav class="nav desktop-nav">
-        <a href="#latest-intelligence">Latest Intelligence</a>
-        <a href="#strategic-insights">Strategic Insights</a>
-        <a href="#signup">Newsletter</a>
+
+      <!-- Desktop Navigation -->
+      <nav class="site-header-nav">
+        <a href="#latest-intelligence" class="site-header-nav-link">Latest Intelligence</a>
+        <a href="#strategic-insights" class="site-header-nav-link">Strategic Insights</a>
+        <a href="#signup" class="site-header-nav-link">Newsletter</a>
+        <a href="#blog" class="site-header-nav-link">Blog</a>
+        <button class="site-header-cta-button" onclick="HeroAssessment.openModal()">
+          <span>Take Assessment</span>
+          <span>→</span>
+        </button>
       </nav>
 
-      <!-- Hamburger button (44x44px tap target) -->
-      <button class="hamburger-btn" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+      <!-- Mobile Menu Toggle -->
+      <button class="site-header-mobile-toggle" onclick="HeaderMenu.toggle()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-    </div>
 
-    <!-- Mobile menu (slides from right) -->
-    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <button class="close-btn" id="close-menu" aria-label="Close menu">
-        <i data-lucide="x"></i>
-      </button>
-      <nav aria-label="Mobile navigation">
-        <a href="#latest-intelligence">Latest Intelligence</a>
-        <a href="#strategic-insights">Strategic Insights</a>
-        <a href="#signup">Newsletter</a>
-      </nav>
     </div>
-    <div class="mobile-menu-backdrop" id="mobile-backdrop"></div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      
-      <!-- Left: Funnel Visual + Carousel -->
-      <div class="hero-left">
-        <div class="hero-image">
-          <img src="hero-barista.png"
-               alt="AI robot barista crafting PMO insights"
-               loading="lazy"
-               srcset="hero-barista.jpg 1200w, hero-barista-small.jpg 600w"
-               sizes="(max-width: 768px) 100vw, 50vw"
-               width="600"
-               height="600">
-        </div>
-        
-        <h1 class="hero-headline">30,000 AI articles distilled into 10 daily PMO Insights.</h1>
-        
-        <div class="carousel">
-          <p class="carousel-msg active">150,000 AI articles analyzed weekly. Top 20 delivered weekly to your Inbox.</p>
-          <p class="carousel-msg">AI + PMO relevance, curated in your weekly digest.</p>
-          <p class="carousel-msg">Stop researching. Start leading with AI insights.</p>
-        </div>
-      </div>
-
-      <!-- Right: Newsletter Signup -->
-      <div class="hero-right">
-        <div id="signup"></div>
-        <div class="signup-card">
-  <h2>Get Your Weekly Top 20</h2>
-  <p>AI-curated PMO insights delivered free, every week.</p>
-
-  <!-- EmailOctopus Embedded Form -->
-  <div class="emailoctopus-form-wrapper">
-    <script async src="https://eocampaign1.com/form/73a90686-a1f9-11f0-9b87-6727ec6b3f72.js" data-form="73a90686-a1f9-11f0-9b87-6727ec6b3f72"></script>
+  <!-- Mobile Menu Overlay -->
+  <div class="site-header-mobile-menu" id="siteHeaderMobileMenu">
+    <nav class="site-header-mobile-nav">
+      <a href="#latest-intelligence" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Latest Intelligence</a>
+      <a href="#strategic-insights" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Strategic Insights</a>
+      <a href="#signup" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Newsletter</a>
+      <a href="#blog" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Blog</a>
+      <button class="site-header-mobile-cta" onclick="HeaderMenu.close(); HeroAssessment.openModal()">
+        <span>Take Assessment</span>
+        <span>→</span>
+      </button>
+    </nav>
   </div>
 
-  <p class="signup-note">✓ Weekly digest · 5-min read · Unsubscribe anytime</p>
-</div>
+  <!-- HERO SECTION - MODULAR -->
+  <section class="hero-section">
+    <div class="hero-content">
+
+      <!-- LEFT: Copy -->
+      <div class="hero-copy">
+        <div class="hero-number-big">52%</div>
+        <div class="hero-number-label">OF PMOS</div>
+        <h1 class="hero-headline">
+          are stuck in<br>
+          <span class="hero-headline-emphasis">AI pilot purgatory</span>
+        </h1>
+        <p class="hero-subheadline">Where does your PMO stand on the AI adoption curve?</p>
+        <button class="hero-btn-primary" onclick="HeroAssessment.openModal()">
+          <span>Take 30-Second Assessment</span>
+          <span>→</span>
+        </button>
+      </div>
+
+      <!-- RIGHT: Quadrant Grid -->
+      <div class="hero-visual-wrapper">
+
+        <div class="hero-quadrant-grid">
+
+          <!-- Y-Axis (Vertical - Value) -->
+          <div class="hero-y-axis">
+            <span class="hero-axis-low">LOW</span>
+            <svg width="60" height="2">
+              <polygon points="0,1 60,2 60,0" fill="url(#hero-g2)"/>
+              <defs>
+                <linearGradient id="hero-g2">
+                  <stop offset="0%" stop-color="rgba(107,114,128,0.3)"/>
+                  <stop offset="100%" stop-color="rgba(6,182,212,0.8)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="hero-axis-label">VALUE</span>
+            <svg width="60" height="2">
+              <polygon points="0,0 60,1 0,2" fill="url(#hero-g1)"/>
+              <defs>
+                <linearGradient id="hero-g1">
+                  <stop offset="0%" stop-color="rgba(6,182,212,0.8)"/>
+                  <stop offset="100%" stop-color="rgba(107,114,128,0.3)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="hero-axis-high">HIGH</span>
+          </div>
+
+          <!-- Q1: Prompt Whisperers (Top-Left) -->
+          <div class="hero-quad hero-q1" data-quad="q1"
+               onmouseenter="HeroAssessment.showTooltip('q1')"
+               onmouseleave="HeroAssessment.hideTooltip('q1')"
+               onclick="HeroAssessment.handleQuadrantClick('q1')">
+            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-hover-hint">Hover for details</div>
+            <div class="hero-tooltip hero-q1">Strategic AI users who pick high-value use cases and deploy thoughtfully.</div>
+            <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="20" cy="20" r="8"/>
+              <path d="M12 36 Q12 28, 20 28 Q28 28, 28 36"/>
+              <circle cx="36" cy="18" r="6" fill="none"/>
+              <path d="M36 24 L34 28 L32 26"/>
+              <circle cx="46" cy="26" r="6" fill="none"/>
+              <path d="M46 32 L44 36 L42 34"/>
+              <circle cx="56" cy="34" r="6" fill="none"/>
+              <path d="M56 40 L54 44 L52 42"/>
+            </svg>
+            <div class="hero-qname">Prompt<br>Whisperers</div>
+            <div class="hero-qpct">28%</div>
+          </div>
+
+          <!-- Q2: Zen PMO (Top-Right) -->
+          <div class="hero-quad hero-q2" data-quad="q2"
+               onmouseenter="HeroAssessment.showTooltip('q2')"
+               onmouseleave="HeroAssessment.hideTooltip('q2')"
+               onclick="HeroAssessment.handleQuadrantClick('q2')">
+            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-hover-hint">Hover for details</div>
+            <div class="hero-tooltip hero-q2">AI is deeply embedded across the entire PMO - it's the operating system.</div>
+            <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="32" cy="32" r="20"/>
+              <path d="M32 12 Q32 22, 32 32 Q32 42, 32 52" stroke-width="2.5"/>
+              <path d="M32 12 Q42 22, 32 32 Q22 42, 32 52" fill="currentColor" opacity="0.2"/>
+              <circle cx="32" cy="22" r="3" fill="currentColor"/>
+              <circle cx="32" cy="42" r="3" stroke="currentColor" fill="none"/>
+            </svg>
+            <div class="hero-qname">Zen PMO</div>
+            <div class="hero-qpct">6%</div>
+          </div>
+
+          <!-- Q3: Spreadsheet Nation (Bottom-Left) -->
+          <div class="hero-quad hero-q3" data-quad="q3"
+               onmouseenter="HeroAssessment.showTooltip('q3')"
+               onmouseleave="HeroAssessment.hideTooltip('q3')"
+               onclick="HeroAssessment.handleQuadrantClick('q3')">
+            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-hover-hint">Hover for details</div>
+            <div class="hero-tooltip hero-q3">Still relying on traditional tools and processes without systematic AI use.</div>
+            <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="12" y="12" width="40" height="40" rx="3"/>
+              <line x1="26" y1="12" x2="26" y2="52"/>
+              <line x1="40" y1="12" x2="40" y2="52"/>
+              <line x1="12" y1="24" x2="52" y2="24"/>
+              <line x1="12" y1="36" x2="52" y2="36"/>
+              <rect x="15" y="38" width="7" height="12" fill="currentColor" opacity="0.6"/>
+              <rect x="29" y="30" width="7" height="20" fill="currentColor" opacity="0.6"/>
+              <rect x="43" y="26" width="7" height="24" fill="currentColor" opacity="0.6"/>
+            </svg>
+            <div class="hero-qname">Spreadsheet<br>Nation</div>
+            <div class="hero-qpct">10%</div>
+          </div>
+
+          <!-- Q4: ChatGPT Fan Club (Bottom-Right) -->
+          <div class="hero-quad hero-q4" data-quad="q4"
+               onmouseenter="HeroAssessment.showTooltip('q4')"
+               onmouseleave="HeroAssessment.hideTooltip('q4')"
+               onclick="HeroAssessment.handleQuadrantClick('q4')">
+            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-hover-hint">Hover for details</div>
+            <div class="hero-tooltip hero-q4">High AI usage but scattered pilots without clear value or strategic direction.</div>
+            <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="24" r="6"/>
+              <path d="M12 38 Q12 32, 18 32 Q24 32, 24 38"/>
+              <circle cx="32" cy="22" r="7"/>
+              <path d="M25 38 Q25 30, 32 30 Q39 30, 39 38"/>
+              <circle cx="46" cy="24" r="6"/>
+              <path d="M40 38 Q40 32, 46 32 Q52 32, 52 38"/>
+              <rect x="26" y="44" width="22" height="14" rx="3"/>
+              <path d="M32 58 L32 60 L34 58"/>
+              <circle cx="32" cy="51" r="1.2" fill="currentColor"/>
+              <circle cx="38" cy="51" r="1.2" fill="currentColor"/>
+              <circle cx="44" cy="51" r="1.2" fill="currentColor"/>
+            </svg>
+            <div class="hero-qname">ChatGPT<br>Fan Club</div>
+            <div class="hero-qpct">52%</div>
+          </div>
+
+          <!-- X-Axis (Horizontal - AI Adoption) -->
+          <div class="hero-x-axis">
+            <span class="hero-axis-low">LOW</span>
+            <svg width="70" height="2">
+              <polygon points="0,1 70,2 70,0" fill="url(#hero-g3)"/>
+              <defs>
+                <linearGradient id="hero-g3">
+                  <stop offset="0%" stop-color="rgba(107,114,128,0.3)"/>
+                  <stop offset="100%" stop-color="rgba(6,182,212,0.8)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="hero-axis-label">AI ADOPTION</span>
+            <svg width="70" height="2">
+              <polygon points="0,0 70,1 0,2" fill="url(#hero-g4)"/>
+              <defs>
+                <linearGradient id="hero-g4">
+                  <stop offset="0%" stop-color="rgba(6,182,212,0.8)"/>
+                  <stop offset="100%" stop-color="rgba(107,114,128,0.3)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="hero-axis-high">HIGH</span>
+          </div>
+
+        </div>
 
       </div>
 
+    </div>
+  </section>
+
+  <!-- Hero Modal -->
+  <div class="hero-modal-overlay" id="heroModalOverlay" onclick="HeroAssessment.closeModalIfClickOutside(event)">
+    <div class="hero-modal" onclick="event.stopPropagation()">
+      <div class="hero-modal-header">
+        <div class="hero-modal-title">PMO AI Assessment</div>
+        <div class="hero-modal-subtitle">3 quick questions</div>
+      </div>
+      <div id="heroQuestionContainer"></div>
+    </div>
+  </div>
+
+  <!-- Hero Result Modal (Mobile) -->
+  <div class="hero-result-modal" id="heroResultModal">
+    <svg class="hero-result-icon-large" id="heroResultIconLarge" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></svg>
+    <div class="hero-result-title" id="heroResultTitle"></div>
+    <div class="hero-result-percentage" id="heroResultPercentage"></div>
+    <div class="hero-result-description" id="heroResultDescription"></div>
+    <button class="hero-btn-result-cta" onclick="HeroAssessment.closeResultModal()">See Your Position on Matrix →</button>
+  </div>
+
+  <!-- Hero Bottom Sheet (Mobile) -->
+  <div class="hero-bottom-sheet" id="heroBottomSheet">
+    <div class="hero-drag-handle"></div>
+    <button class="hero-close-sheet" onclick="HeroAssessment.closeBottomSheet()">×</button>
+    <div class="hero-bottom-sheet-content" id="heroBottomSheetContent"></div>
+  </div>
+
+  <!-- Result Popup (Centered) - V4 -->
+  <div class="hero-result-backdrop" id="heroResultBackdrop"></div>
+  <div class="hero-result-popup" id="heroResultPopup">
+    <h2 class="hero-result-title" id="resultTitle"></h2>
+    <p class="hero-result-subtitle" id="resultSubtitle"></p>
+    <p class="hero-result-desc" id="resultDesc"></p>
+
+    <div class="hero-result-divider"></div>
+
+    <p class="hero-result-cta-text">Want a detailed assessment?</p>
+    <button class="hero-result-cta-btn" onclick="AssessmentFlow.showEmailModal()">
+      Get Advanced Assessment →
+    </button>
+
+    <div class="hero-result-close" onclick="AssessmentFlow.closeResultPopup()">Close</div>
+  </div>
+
+  <!-- Email Modal - V4 -->
+  <div class="hero-email-modal" id="heroEmailModal">
+    <div class="hero-email-card">
+      <h2 class="hero-email-title">Get Your Assessment</h2>
+
+      <input
+        type="email"
+        class="hero-email-input"
+        id="heroEmailInput"
+        placeholder="your@email.com"
+      >
+
+      <div class="hero-error" id="heroErrorMsg">Please enter a valid email</div>
+
+      <div class="hero-checkbox-group">
+        <label class="hero-checkbox-item">
+          <input type="checkbox" class="hero-checkbox" id="heroCheckAssessment" checked>
+          <div class="hero-checkbox-label">
+            <div class="hero-checkbox-title">Advanced Assessment</div>
+            <div class="hero-checkbox-desc">Link to full PMO AI readiness survey</div>
+          </div>
+        </label>
+
+        <label class="hero-checkbox-item">
+          <input type="checkbox" class="hero-checkbox" id="heroCheckNewsletter" checked>
+          <div class="hero-checkbox-label">
+            <div class="hero-checkbox-title">Weekly Newsletter</div>
+            <div class="hero-checkbox-desc">AI insights for PMO professionals</div>
+          </div>
+        </label>
+      </div>
+
+      <button class="hero-email-submit" onclick="AssessmentFlow.submitEmail()">Continue →</button>
+
+      <div class="hero-email-skip" onclick="AssessmentFlow.closeEmailModal()">Not right now</div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section id="signup" class="newsletter-section" style="margin-top: 6rem; padding: 4rem 1.5rem; background: var(--color-surface);">
+    <div class="newsletter-card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-text-primary);">Get Your Weekly Top 20</h2>
+      <p style="margin-bottom: 2rem; color: var(--color-text-muted);">AI-curated PMO insights delivered free, every week.</p>
+
+      <!-- EmailOctopus Embedded Form -->
+      <div class="emailoctopus-form-wrapper">
+        <script async src="https://eocampaign1.com/form/73a90686-a1f9-11f0-9b87-6727ec6b3f72.js" data-form="73a90686-a1f9-11f0-9b87-6727ec6b3f72"></script>
+      </div>
+
+      <p class="signup-note" style="margin-top: 1.5rem; font-size: 0.875rem; color: var(--color-text-muted);">✓ Weekly digest · 5-min read · Unsubscribe anytime</p>
     </div>
   </section>
 
@@ -840,6 +1072,38 @@ via SmartPMO.ai`;
         closeMenu();
       }
     });
+  </script>
+
+  <!-- PMO AI Assessment - Modular Hero -->
+  <script src="hero-assessment.js"></script>
+
+  <!-- Assessment Flow (Result Popup + Email Modal) -->
+  <script src="assessment-flow.js"></script>
+
+  <!-- Header Menu JavaScript -->
+  <script>
+  const HeaderMenu = (() => {
+    return {
+      toggle: function() {
+        const menu = document.getElementById('siteHeaderMobileMenu');
+        menu.classList.toggle('active');
+      },
+      close: function() {
+        const menu = document.getElementById('siteHeaderMobileMenu');
+        menu.classList.remove('active');
+      }
+    };
+  })();
+
+  // Close on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') HeaderMenu.close();
+  });
+
+  // Close on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) HeaderMenu.close();
+  });
   </script>
 
 </body>
