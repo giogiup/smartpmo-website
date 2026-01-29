@@ -1,137 +1,222 @@
-{
-  "generated": "2026-01-22T16:54:22.166Z",
-  "date": "2026-01-22",
-  "count": 5,
-  "cards": [
-    {
-      "id": 47030,
-      "title": "From Chaos to Clarity: A Project Manager’s Guide to AI-Powered Execution",
-      "url": "https://clickup.com/blog/ai-powered-project-execution/",
-      "date": "2026-01-20",
-      "score": 85,
-      "pmo_relevance": "Direct",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "AI-powered execution tool designed for PMO project management efficiency and cross-functional collaboration.",
-        "Implement AI features to streamline communication and enhance project timelines across teams.",
-        "Ideal for PMOs managing complex, multi-departmental projects with tight resource allocation."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Resources",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project management",
-        "execution"
-      ]
-    },
-    {
-      "id": 46702,
-      "title": "AI agents in project management: The new force behind high-performing teams",
-      "url": "https://www.wrike.com/blog/ai-agents-in-project-management/",
-      "date": "2026-01-20",
-      "score": 85,
-      "pmo_relevance": "Direct",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "AI agents designed for PMO project management can enhance team performance and streamline workflows.",
-        "Implement AI tools to automate routine tasks and improve project delivery efficiency.",
-        "Useful for PMOs looking to leverage AI for better resource allocation and risk management."
-      ],
-      "badges": {
-        "read_time": 22,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "project management",
-        "team performance"
-      ]
-    },
-    {
-      "id": 46593,
-      "title": "AI in Project and Portfolio Management Today",
-      "url": "https://www.itmplatform.com/en/blog/ai-in-project-and-portfolio-management-today/",
-      "date": "2026-01-20",
-      "score": 85,
-      "pmo_relevance": "Direct",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "AI tools designed for PMO project forecasting can enhance accuracy in estimating project parameters.",
-        "Implement AI-driven risk analysis to proactively identify potential project obstacles and improve decision-making.",
-        "Custom-trained AI models can automate tasks, improving efficiency in project management workflows for PMOs."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project management",
-        "risk analysis"
-      ]
-    },
-    {
-      "id": 48108,
-      "title": "Where I'm at with AI",
-      "url": "https://paulosman.me/2026/01/18/where-im-at-with-ai/",
-      "date": "2026-01-20",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "Generative AI tools with potential PMO applications in project execution and coding efficiency.",
-        "Utilize AI for routine coding tasks and project ideation to enhance team productivity.",
-        "Ideal for software development teams looking to accelerate project delivery and improve code quality."
-      ],
-      "badges": {
-        "read_time": 14,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "generative AI",
-        "productivity",
-        "software development"
-      ]
-    },
-    {
-      "id": 46074,
-      "title": "CPO predictions: The year AI finally learns to speak workflow",
-      "url": "https://www.wrike.com/blog/ai-workflow-2026/",
-      "date": "2026-01-20",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "AI-driven workflow automation applicable to PMO project execution and resource management.",
-        "Implement AI tools to streamline project workflows and enhance team collaboration across departments.",
-        "Useful for PMOs looking to improve efficiency in managing project timelines and deliverables."
-      ],
-      "badges": {
-        "read_time": 19,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "workflow",
-        "automation",
-        "AI"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 61113,
+    "title": "Summit Launches New Data, Analytics, and AI Services Portfolio to Strengthen Data Foundations and Accelerate AI Impact",
+    "url": "https://www.prweb.com/releases/summit-launches-new-data-analytics-and-ai-services-portfolio-to-strengthen-data-foundations-and-accelerate-ai-impact-302672436.html",
+    "score": 90,
+    "category": "PMO_RELATED",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 272
+  },
+  {
+    "id": 61108,
+    "title": "AI Agents Shatter Compliance Foundations, Forcing CISOs to the Front Lines",
+    "url": "https://www.webpronews.com/ai-agents-shatter-compliance-foundations-forcing-cisos-to-the-front-lines/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 268
+  },
+  {
+    "id": 61109,
+    "title": "AI Agents' Platform Grip: GitLab and Harness Lure Enterprises in DevSecOps Shift",
+    "url": "https://www.webpronews.com/ai-agents-platform-grip-gitlab-and-harness-lure-enterprises-in-devsecops-shift/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 268
+  },
+  {
+    "id": 61092,
+    "title": "Lorikeet launches Coach: an analytics agent to perk up AI customer support",
+    "url": "https://siliconangle.com/2026/01/29/lorikeet-launches-coach-analytics-agent-perk-ai-customer-support/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 178
+  },
+  {
+    "id": 60534,
+    "title": "Slackbot for Sales: Introducing Your AI-Powered Wingman",
+    "url": "https://slack.com/blog/productivity/slackbot-for-sales",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 52
+  },
+  {
+    "id": 60504,
+    "title": "﻿How to Use Generative AI for Pricing",
+    "url": "https://sloanreview.mit.edu/article/how-to-use-generative-ai-for-pricing/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 331
+  },
+  {
+    "id": 60496,
+    "title": "Why your IT operations team is your AI adoption blueprint",
+    "url": "https://www.cio.com/article/4123698/why-your-it-operations-team-is-your-ai-adoption-blueprint.html",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 332
+  },
+  {
+    "id": 60480,
+    "title": "Indian IT firms shift to AI-led execution as RPE rises",
+    "url": "https://www.thehindubusinessline.com/info-tech/indian-it-firms-see-revenue-per-employee-gains-amid-shift-to-ai-led-delivery/article70562171.ece",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 266
+  },
+  {
+    "id": 60476,
+    "title": "Show HN: Lexiso – Authorization layer for AI agents that spend money",
+    "url": "https://news.ycombinator.com/item?id=46804225",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 268
+  },
+  {
+    "id": 60477,
+    "title": "The Great Interface Erosion: Why AI Agents Are Poised to Devour Enterprise SaaS",
+    "url": "https://www.webpronews.com/the-great-interface-erosion-why-ai-agents-are-poised-to-devour-enterprise-saas/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 268
+  },
+  {
+    "id": 60376,
+    "title": "ServiceNow inks another AI partnership, this time with Anthropic",
+    "url": "https://techcrunch.com/2026/01/28/servicenow-inks-another-ai-partnership-this-time-with-anthropic/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-28",
+    "sourceId": 70
+  },
+  {
+    "id": 60347,
+    "title": "How to Design Self-Reflective Dual-Agent Governance Systems with Constitutional AI for Secure and Compliant Financial Operations",
+    "url": "https://www.marktechpost.com/2026/01/28/how-to-design-self-reflective-dual-agent-governance-systems-with-constitutional-ai-for-secure-and-compliant-financial-operations/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 25
+  },
+  {
+    "id": 58256,
+    "title": "Claude expands tool connections using MCP",
+    "url": "https://www.itsecuritynews.info/claude-expands-tool-connections-using-mcp/",
+    "score": 80,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-27",
+    "sourceId": 263
+  },
+  {
+    "id": 61144,
+    "title": "Claude Code with Google Vertex AI - Portkey Docs",
+    "url": "https://docs.portkey.ai/docs/integrations/libraries/claude-code-vertex",
+    "score": 75,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 259
+  },
+  {
+    "id": 58145,
+    "title": "Brain drain: Are Zombie Projects eating your team’s productivity alive?",
+    "url": "https://www.atlassian.com/blog/productivity/zombie-projects",
+    "score": 70,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-26",
+    "sourceId": 5
+  },
+  {
+    "id": 59169,
+    "title": "How to Implement Work Execution Management for Teams",
+    "url": "https://clickup.com/blog/work-execution-management/",
+    "score": 65,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-27",
+    "sourceId": 3
+  },
+  {
+    "id": 61107,
+    "title": "AI Agents Resurrect the Database Imperative",
+    "url": "https://www.webpronews.com/ai-agents-resurrect-the-database-imperative/",
+    "score": 60,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 268
+  },
+  {
+    "id": 60503,
+    "title": "Why a lack of governance will hurt companies using agentic AI",
+    "url": "https://www.fastcompany.com/91479520/why-a-lack-of-governance-will-hurt-companies-using-agentic-ai?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+    "score": 60,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 290
+  },
+  {
+    "id": 60491,
+    "title": "LinkedIn’s AI Verification Push Signals Shift in Professional Credentialing as Platform Battles Skills Inflation",
+    "url": "https://www.webpronews.com/linkedins-ai-verification-push-signals-shift-in-professional-credentialing-as-platform-battles-skills-inflation/",
+    "score": 60,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 264
+  },
+  {
+    "id": 60483,
+    "title": "The Purple Giant’s Last Stand: Inside Yahoo’s Calculated Pivot to AI Commerce",
+    "url": "https://www.webpronews.com/the-purple-giants-last-stand-inside-yahoos-calculated-pivot-to-ai-commerce/",
+    "score": 60,
+    "category": "PMO_POTENTIAL",
+    "application": "AI insights for PMO professionals",
+    "summary": "Click to read more about this AI development and its implications for project management.",
+    "publishedDate": "2026-01-29",
+    "sourceId": 272
+  }
+]
