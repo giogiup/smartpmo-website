@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-01-29T19:11:51.376Z",
-  "articlesDisplayed": 20,
-  "categoryCounts": {
-    "PMO_RELATED": 1,
-    "PMO_POTENTIAL": 19,
-    "AI_GENERAL": 0
-  },
-  "avgScore": 75
+  "generated_at": "2026-01-29T20:32:29.580Z",
+  "period": "24h",
+  "discovered": 178,
+  "analyzed": 100,
+  "insights": 16,
+  "pass_rate": 56.18,
+  "avg_score": 29.1,
+  "last_updated": "2026-01-29T20:32:29.580Z"
 }
