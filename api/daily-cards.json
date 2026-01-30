@@ -1,8 +1,86 @@
 {
-  "generated": "2026-01-30T04:18:18.173Z",
+  "generated": "2026-01-30T14:22:59.620Z",
   "date": "2026-01-30",
-  "count": 13,
+  "count": 17,
   "cards": [
+    {
+      "id": 61488,
+      "title": "Google’s Gemini AI Assistant Finally Bridges the Calendar Gap with Secondary and Shared Event Support",
+      "url": "https://www.webpronews.com/googles-gemini-ai-assistant-finally-bridges-the-calendar-gap-with-secondary-and-shared-event-support/",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Calendar management feature applicable to PMO scheduling and resource allocation across multiple projects.",
+        "Users can now manage secondary and shared calendars seamlessly, enhancing collaboration and visibility.",
+        "Ideal for PMOs coordinating complex schedules across teams and stakeholders using shared calendars."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Resources",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "calendar management",
+        "AI assistant",
+        "productivity tools"
+      ]
+    },
+    {
+      "id": 61467,
+      "title": "Google Project Genie turns prompts into interactive worlds • The Register",
+      "url": "https://www.theregister.com/2026/01/29/googles_project_genie_ai/",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI world-model prototype with potential PMO applications in project visualization and stakeholder engagement.",
+        "Users can generate interactive 3D environments from text prompts, enhancing project presentations and reviews.",
+        "Ideal for PMOs looking to create immersive experiences for project planning and stakeholder buy-in."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "3D environments",
+        "project visualization"
+      ]
+    },
+    {
+      "id": 61468,
+      "title": "Panelists highlight how AI can improve tracking , reduce scope surprises",
+      "url": "https://www.constructiondive.com/news/panelists-ai-built-by-builders-webinar/810933/",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI tools applicable to PMO risk management by enhancing tracking and reducing scope surprises.",
+        "Implement AI-driven software that centers on worker input for better job cost accuracy in real time.",
+        "Useful for PMOs managing construction projects to improve safety and efficiency amidst labor shortages."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "construction",
+        "risk management"
+      ]
+    },
     {
       "id": 61113,
       "title": "Summit Launches New Data, Analytics, and AI Services Portfolio to Strengthen Data Foundations and Accelerate AI Impact",
@@ -160,121 +238,147 @@
       ]
     },
     {
-      "id": 60480,
-      "title": "Indian IT firms shift to AI-led execution as RPE rises",
-      "url": "https://www.thehindubusinessline.com/info-tech/indian-it-firms-see-revenue-per-employee-gains-amid-shift-to-ai-led-delivery/article70562171.ece",
+      "id": 61453,
+      "title": "AI is coming to an enterprise near you and Zscaler aims to secure it",
+      "url": "https://siliconangle.com/2026/01/29/ai-coming-enterprise-near-zscaler-aims-secure/",
       "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**AI-driven execution can enhance PMO performance by improving revenue per employee metrics.**",
-        "Firms can leverage automation and AI to optimize project delivery and reduce headcount reliance.",
-        "Mid-tier companies can adopt AI strategies to compete effectively with larger firms in project execution."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "automation",
-        "revenue per employee"
-      ]
-    },
-    {
-      "id": 60476,
-      "title": "Show HN: Lexiso – Authorization layer for AI agents that spend money",
-      "url": "https://news.ycombinator.com/item?id=46804225",
-      "date": "2026-01-29",
-      "score": 80,
+      "score": 75,
       "pmo_relevance": "Potential",
       "pmo_category": "PMO_POTENTIAL",
       "tldr": [
-        "Authorization layer for AI agents with potential PMO applications in financial workflow management.",
-        "Integrate Lexiso API to define spending policies and ensure compliance for AI-driven procurement processes.",
-        "Useful for PMOs overseeing projects that involve AI agents making financial decisions and purchases."
+        "AI security suite with potential PMO applications in risk management and governance frameworks.",
+        "Zscaler's new features can help PMOs enhance visibility and control over AI deployments.",
+        "Useful for organizations navigating AI integration while ensuring compliance and security protocols."
       ],
       "badges": {
-        "read_time": 2,
-        "pmo_focus": "Finance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "financial workflows",
-        "authorization"
-      ]
-    },
-    {
-      "id": 60477,
-      "title": "The Great Interface Erosion: Why AI Agents Are Poised to Devour Enterprise SaaS",
-      "url": "https://www.webpronews.com/the-great-interface-erosion-why-ai-agents-are-poised-to-devour-enterprise-saas/",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI agents with potential PMO applications in automating workflows and reducing reliance on GUIs.",
-        "Organizations can explore AI-driven solutions to enhance data interaction and streamline project execution.",
-        "Ideal for PMOs looking to improve efficiency in managing enterprise software and workflows."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Tools",
-        "value_type": "Research Insight",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "enterprise SaaS",
-        "workflow automation"
-      ]
-    },
-    {
-      "id": 60347,
-      "title": "How to Design Self-Reflective Dual-Agent Governance Systems with Constitutional AI for Secure and Compliant Financial Operations",
-      "url": "https://www.marktechpost.com/2026/01/28/how-to-design-self-reflective-dual-agent-governance-systems-with-constitutional-ai-for-secure-and-compliant-financial-operations/",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Dual-agent governance system with potential PMO applications in financial compliance and oversight.",
-        "Implement a Worker Agent for execution and an Auditor Agent for policy enforcement in financial operations.",
-        "Useful for organizations seeking to enhance risk management and compliance in high-stakes financial workflows."
-      ],
-      "badges": {
-        "read_time": 15,
+        "read_time": 7,
         "pmo_focus": "Governance",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "governance",
-        "financial compliance",
+        "AI security",
+        "risk management",
+        "governance"
+      ]
+    },
+    {
+      "id": 61454,
+      "title": "Virtue AI debuts AgentSuite platform to help enterprises secure AI agents",
+      "url": "https://siliconangle.com/2026/01/29/virtue-ai-debuts-agentsuite-platform-help-enterprises-secure-ai-agents/",
+      "date": "2026-01-29",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AgentSuite with potential PMO applications in cybersecurity for AI agent management.",
+        "Integrates with CI/CD systems to flag vulnerabilities before deployment, enhancing project delivery.",
+        "Useful for PMOs overseeing AI projects to ensure compliance and security during development."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "cybersecurity",
+        "AI agents",
+        "compliance"
+      ]
+    },
+    {
+      "id": 61418,
+      "title": "Scaling enterprise AI: lessons in governance and operating models from IBM",
+      "url": "https://stackoverflow.blog/2026/01/29/scaling-enterprise-ai-lessons-in-governance-and-operating-models-from-ibm/",
+      "date": "2026-01-29",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Governance framework essential for PMO to balance innovation and risk in AI projects.**",
+        "Implement AI certification models to ensure understanding of data privacy and security among project teams.",
+        "Hybrid teams combining business and IT expertise can enhance PMO efficiency in AI project delivery."
+      ],
+      "badges": {
+        "read_time": 14,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI governance",
+        "project delivery",
+        "hybrid teams"
+      ]
+    },
+    {
+      "id": 61350,
+      "title": "Scaling content review operations with multi-agent workflow",
+      "url": "https://aws.amazon.com/blogs/machine-learning/scaling-content-review-operations-with-multi-agent-workflow/",
+      "date": "2026-01-29",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI-driven content review system can boost PMO efficiency by automating validation processes.",
+        "Utilize multi-agent workflows to streamline content accuracy checks and reduce manual effort.",
+        "Applicable for PMOs overseeing diverse content types, enhancing strategic review capabilities."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "content review",
+        "automation",
         "AI agents"
       ]
     },
     {
-      "id": 60376,
-      "title": "ServiceNow inks another AI partnership, this time with Anthropic",
-      "url": "https://techcrunch.com/2026/01/28/servicenow-inks-another-ai-partnership-this-time-with-anthropic/",
-      "date": "2026-01-28",
-      "score": 80,
+      "id": 61332,
+      "title": "ServiceNow embeds Anthropic Claude as its default Build Agent model",
+      "url": "https://www.cio.com/article/4124222/servicenow-embeds-anthropic-claude-as-its-default-build-agent-model.html",
+      "date": "2026-01-29",
+      "score": 75,
       "pmo_relevance": "Potential",
       "pmo_category": "PMO_POTENTIAL",
       "tldr": [
-        "AI partnership with Anthropic could support PMO initiatives in workflow automation and efficiency.",
-        "Integrating Claude models into ServiceNow's platform may enhance project delivery and resource management.",
-        "Useful for enterprises seeking to streamline operations through AI-driven workflows and applications."
+        "AI-driven workflows with potential PMO applications in project execution and automation.",
+        "ServiceNow's integration with Anthropic Claude can enhance project delivery through autonomous processes.",
+        "Ideal for PMOs in healthcare and life sciences aiming to streamline claims processing and research analysis."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI workflows",
+        "automation",
+        "project delivery"
+      ]
+    },
+    {
+      "id": 61323,
+      "title": "Achieving AI ROI with Agentic AI: From Data Foundations to Enterprise Deployment (Mexico Time)",
+      "url": "https://tdwi.org/webcasts/2026/01/ta-all-achieving-ai-roi-with-agentic-ai-from-data-foundations-to-enterprise-deployment-latam-quick.aspx",
+      "date": "2026-01-29",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Agentic AI with potential PMO applications in automating project workflows and enhancing data management.",
+        "Organizations can benefit from understanding the end-to-end process of operationalizing AI for improved project outcomes.",
+        "Ideal for PMOs looking to leverage AI for scalable and explainable project delivery across various departments."
       ],
       "badges": {
         "read_time": 5,
@@ -284,61 +388,61 @@
         "price": "Free"
       },
       "keywords": [
-        "AI",
-        "workflow",
-        "automation"
+        "agentic AI",
+        "data management",
+        "workflow automation"
       ]
     },
     {
-      "id": 58256,
-      "title": "Claude expands tool connections using MCP",
-      "url": "https://www.itsecuritynews.info/claude-expands-tool-connections-using-mcp/",
-      "date": "2026-01-27",
-      "score": 80,
-      "pmo_relevance": "Inferred",
+      "id": 61324,
+      "title": "Achieving AI ROI with Agentic AI: From Data Foundations to Enterprise Deployment (Mexico Time)",
+      "url": "https://tdwi.org/webcasts/2026/01/ta-all-achieving-ai-roi-with-agentic-ai-from-data-foundations-to-enterprise-deployment-latam.aspx",
+      "date": "2026-01-29",
+      "score": 75,
+      "pmo_relevance": "Potential",
       "pmo_category": "PMO_POTENTIAL",
       "tldr": [
-        "Interactive tool support in Claude AI enhances PMO project management capabilities by integrating external applications directly.",
-        "Users can utilize project management boards and analytics dashboards within Claude's interface for streamlined workflows.",
-        "Ideal for PMOs looking to improve collaboration and efficiency in managing multiple projects simultaneously."
+        "Agentic AI with potential PMO applications in automating workflows and enhancing operational efficiency.",
+        "Organizations can leverage data engineering practices to build reliable data pipelines for AI deployment.",
+        "Useful for PMOs looking to operationalize AI solutions that drive measurable business value across projects."
       ],
       "badges": {
-        "read_time": 4,
+        "read_time": 6,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "agentic AI",
+        "data engineering",
+        "workflow automation"
+      ]
+    },
+    {
+      "id": 61144,
+      "title": "Claude Code with Google Vertex AI - Portkey Docs",
+      "url": "https://docs.portkey.ai/docs/integrations/libraries/claude-code-vertex",
+      "date": "2026-01-29",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI integration with Google Vertex AI could support PMO project execution through enhanced automation capabilities.",
+        "Utilize Claude Code to streamline workflows and improve efficiency in project management tasks.",
+        "Useful for PMOs looking to leverage AI for better resource allocation and cost tracking."
+      ],
+      "badges": {
+        "read_time": 12,
         "pmo_focus": "Tools",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "Claude AI",
-        "project management",
-        "MCP"
-      ]
-    },
-    {
-      "id": 58145,
-      "title": "Brain drain: Are Zombie Projects eating your team’s productivity alive?",
-      "url": "https://www.atlassian.com/blog/productivity/zombie-projects",
-      "date": "2026-01-26",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Project management insights applicable to PMO productivity challenges caused by Zombie Projects.",
-        "Identify and prioritize active projects to reduce clutter and enhance team focus.",
-        "Useful for PMOs managing multiple projects with limited resources and potential burnout risks."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Performance",
-        "value_type": "Research Insight",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "productivity",
-        "project management",
-        "team dynamics"
+        "AI integration",
+        "project execution",
+        "resource allocation"
       ]
     }
   ]
