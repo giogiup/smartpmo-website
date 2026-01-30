@@ -1,7 +1,7 @@
 {
-  "generated": "2026-01-29T20:32:27.686Z",
-  "date": "2026-01-29",
-  "count": 8,
+  "generated": "2026-01-30T04:18:18.173Z",
+  "date": "2026-01-30",
+  "count": 13,
   "cards": [
     {
       "id": 61113,
@@ -27,6 +27,32 @@
         "data analytics",
         "AI adoption",
         "project execution"
+      ]
+    },
+    {
+      "id": 61108,
+      "title": "AI Agents Shatter Compliance Foundations, Forcing CISOs to the Front Lines",
+      "url": "https://www.webpronews.com/ai-agents-shatter-compliance-foundations-forcing-cisos-to-the-front-lines/",
+      "date": "2026-01-29",
+      "score": 80,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI agents with potential PMO applications in compliance management and risk mitigation.",
+        "CISOs can leverage AI to enhance identity and access controls for regulatory compliance.",
+        "Useful for PMOs overseeing projects that involve sensitive data handling and compliance frameworks."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Governance",
+        "value_type": "Research Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "compliance",
+        "risk management"
       ]
     },
     {
@@ -134,6 +160,32 @@
       ]
     },
     {
+      "id": 60480,
+      "title": "Indian IT firms shift to AI-led execution as RPE rises",
+      "url": "https://www.thehindubusinessline.com/info-tech/indian-it-firms-see-revenue-per-employee-gains-amid-shift-to-ai-led-delivery/article70562171.ece",
+      "date": "2026-01-29",
+      "score": 80,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI-driven execution can enhance PMO performance by improving revenue per employee metrics.**",
+        "Firms can leverage automation and AI to optimize project delivery and reduce headcount reliance.",
+        "Mid-tier companies can adopt AI strategies to compete effectively with larger firms in project execution."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "automation",
+        "revenue per employee"
+      ]
+    },
+    {
       "id": 60476,
       "title": "Show HN: Lexiso – Authorization layer for AI agents that spend money",
       "url": "https://news.ycombinator.com/item?id=46804225",
@@ -183,6 +235,84 @@
         "AI agents",
         "enterprise SaaS",
         "workflow automation"
+      ]
+    },
+    {
+      "id": 60347,
+      "title": "How to Design Self-Reflective Dual-Agent Governance Systems with Constitutional AI for Secure and Compliant Financial Operations",
+      "url": "https://www.marktechpost.com/2026/01/28/how-to-design-self-reflective-dual-agent-governance-systems-with-constitutional-ai-for-secure-and-compliant-financial-operations/",
+      "date": "2026-01-29",
+      "score": 80,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Dual-agent governance system with potential PMO applications in financial compliance and oversight.",
+        "Implement a Worker Agent for execution and an Auditor Agent for policy enforcement in financial operations.",
+        "Useful for organizations seeking to enhance risk management and compliance in high-stakes financial workflows."
+      ],
+      "badges": {
+        "read_time": 15,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "governance",
+        "financial compliance",
+        "AI agents"
+      ]
+    },
+    {
+      "id": 60376,
+      "title": "ServiceNow inks another AI partnership, this time with Anthropic",
+      "url": "https://techcrunch.com/2026/01/28/servicenow-inks-another-ai-partnership-this-time-with-anthropic/",
+      "date": "2026-01-28",
+      "score": 80,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI partnership with Anthropic could support PMO initiatives in workflow automation and efficiency.",
+        "Integrating Claude models into ServiceNow's platform may enhance project delivery and resource management.",
+        "Useful for enterprises seeking to streamline operations through AI-driven workflows and applications."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "workflow",
+        "automation"
+      ]
+    },
+    {
+      "id": 58256,
+      "title": "Claude expands tool connections using MCP",
+      "url": "https://www.itsecuritynews.info/claude-expands-tool-connections-using-mcp/",
+      "date": "2026-01-27",
+      "score": 80,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Interactive tool support in Claude AI enhances PMO project management capabilities by integrating external applications directly.",
+        "Users can utilize project management boards and analytics dashboards within Claude's interface for streamlined workflows.",
+        "Ideal for PMOs looking to improve collaboration and efficiency in managing multiple projects simultaneously."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Claude AI",
+        "project management",
+        "MCP"
       ]
     },
     {
