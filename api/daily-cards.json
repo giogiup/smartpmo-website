@@ -1,8 +1,60 @@
 {
-  "generated": "2026-01-30T20:20:24.724Z",
-  "date": "2026-01-30",
+  "generated": "2026-01-31T04:14:56.170Z",
+  "date": "2026-01-31",
   "count": 20,
   "cards": [
+    {
+      "id": 62266,
+      "title": "ServiceNow and Anthropic Disclose AI Deal",
+      "url": "https://aibusiness.com/agentic-ai/servicenow-and-anthropic-ai-deal",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI agent builder with potential PMO applications in workflow automation across various industries.",
+        "ServiceNow's integration of Claude models can enhance project delivery through AI-assisted workflows.",
+        "Useful for PMOs looking to streamline processes in healthcare and IT service management."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "workflow",
+        "automation"
+      ]
+    },
+    {
+      "id": 62244,
+      "title": "Scale AI in South Africa using Amazon Bedrock global cross-Region inference with Anthropic Claude 4.5 models",
+      "url": "https://aws.amazon.com/blogs/machine-learning/scale-ai-in-south-africa-using-amazon-bedrock-global-cross-region-inference-with-anthropic-claude-4-5-models/",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Global cross-Region inference with Amazon Bedrock could support PMO resource optimization and scalability.",
+        "Utilize AWS Identity and Access Management for configuring permissions and invoking models effectively.",
+        "Ideal for PMOs in South Africa managing AI applications with enhanced throughput during peak usage."
+      ],
+      "badges": {
+        "read_time": 12,
+        "pmo_focus": "Resources",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI applications",
+        "resource optimization",
+        "throughput"
+      ]
+    },
     {
       "id": 61495,
       "title": "Mentorship in Modern Engineering Teams: The ROI Question in the Age of AI",
@@ -134,107 +186,133 @@
       ]
     },
     {
-      "id": 60480,
-      "title": "Indian IT firms shift to AI-led execution as RPE rises",
-      "url": "https://www.thehindubusinessline.com/info-tech/indian-it-firms-see-revenue-per-employee-gains-amid-shift-to-ai-led-delivery/article70562171.ece",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**AI-driven execution can enhance PMO performance by improving revenue per employee metrics.**",
-        "Firms can leverage automation and AI to optimize project delivery and reduce headcount reliance.",
-        "Mid-tier companies can adopt AI strategies to compete effectively with larger firms in project execution."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "automation",
-        "revenue per employee"
-      ]
-    },
-    {
-      "id": 60476,
-      "title": "Show HN: Lexiso – Authorization layer for AI agents that spend money",
-      "url": "https://news.ycombinator.com/item?id=46804225",
+      "id": 61108,
+      "title": "AI Agents Shatter Compliance Foundations, Forcing CISOs to the Front Lines",
+      "url": "https://www.webpronews.com/ai-agents-shatter-compliance-foundations-forcing-cisos-to-the-front-lines/",
       "date": "2026-01-29",
       "score": 80,
       "pmo_relevance": "Potential",
       "pmo_category": "PMO_POTENTIAL",
       "tldr": [
-        "Authorization layer for AI agents with potential PMO applications in financial workflow management.",
-        "Integrate Lexiso API to define spending policies and ensure compliance for AI-driven procurement processes.",
-        "Useful for PMOs overseeing projects that involve AI agents making financial decisions and purchases."
+        "AI agents with potential PMO applications in compliance management and risk mitigation.",
+        "CISOs can leverage AI to enhance identity and access controls for regulatory compliance.",
+        "Useful for PMOs overseeing projects that involve sensitive data handling and compliance frameworks."
       ],
       "badges": {
-        "read_time": 2,
-        "pmo_focus": "Finance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "financial workflows",
-        "authorization"
-      ]
-    },
-    {
-      "id": 60477,
-      "title": "The Great Interface Erosion: Why AI Agents Are Poised to Devour Enterprise SaaS",
-      "url": "https://www.webpronews.com/the-great-interface-erosion-why-ai-agents-are-poised-to-devour-enterprise-saas/",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI agents with potential PMO applications in automating workflows and reducing reliance on GUIs.",
-        "Organizations can explore AI-driven solutions to enhance data interaction and streamline project execution.",
-        "Ideal for PMOs looking to improve efficiency in managing enterprise software and workflows."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Tools",
+        "read_time": 6,
+        "pmo_focus": "Governance",
         "value_type": "Research Insight",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
         "AI agents",
-        "enterprise SaaS",
-        "workflow automation"
+        "compliance",
+        "risk management"
       ]
     },
     {
-      "id": 60347,
-      "title": "How to Design Self-Reflective Dual-Agent Governance Systems with Constitutional AI for Secure and Compliant Financial Operations",
-      "url": "https://www.marktechpost.com/2026/01/28/how-to-design-self-reflective-dual-agent-governance-systems-with-constitutional-ai-for-secure-and-compliant-financial-operations/",
+      "id": 61109,
+      "title": "AI Agents' Platform Grip: GitLab and Harness Lure Enterprises in DevSecOps Shift",
+      "url": "https://www.webpronews.com/ai-agents-platform-grip-gitlab-and-harness-lure-enterprises-in-devsecops-shift/",
       "date": "2026-01-29",
       "score": 80,
-      "pmo_relevance": "Potential",
+      "pmo_relevance": "Inferred",
       "pmo_category": "PMO_POTENTIAL",
       "tldr": [
-        "Dual-agent governance system with potential PMO applications in financial compliance and oversight.",
-        "Implement a Worker Agent for execution and an Auditor Agent for policy enforcement in financial operations.",
-        "Useful for organizations seeking to enhance risk management and compliance in high-stakes financial workflows."
+        "AI agents from GitLab and Harness can benefit PMO project execution by automating incident resolution.",
+        "Integrate AI tools into DevSecOps workflows to enhance efficiency and reduce incident response times.",
+        "Useful for enterprises looking to streamline DevSecOps processes and improve project delivery outcomes."
       ],
       "badges": {
-        "read_time": 15,
-        "pmo_focus": "Governance",
+        "read_time": 7,
+        "pmo_focus": "Performance",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "governance",
-        "financial compliance",
-        "AI agents"
+        "DevSecOps",
+        "AI agents",
+        "automation"
+      ]
+    },
+    {
+      "id": 61092,
+      "title": "Lorikeet launches Coach: an analytics agent to perk up AI customer support",
+      "url": "https://siliconangle.com/2026/01/29/lorikeet-launches-coach-analytics-agent-perk-ai-customer-support/",
+      "date": "2026-01-29",
+      "score": 80,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Analytics agent designed for PMO performance monitoring of AI customer support processes.",
+        "Utilize thematic analysis and ticket quality scores to enhance support ticket diagnostics.",
+        "Useful for organizations seeking to improve AI-driven customer service effectiveness and visibility."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI support",
+        "customer satisfaction",
+        "analytics"
+      ]
+    },
+    {
+      "id": 60504,
+      "title": "﻿How to Use Generative AI for Pricing",
+      "url": "https://sloanreview.mit.edu/article/how-to-use-generative-ai-for-pricing/",
+      "date": "2026-01-29",
+      "score": 80,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Generative AI tools with potential PMO applications in pricing strategy optimization for projects.",
+        "Utilize AI-driven pricing recommendations to enhance project budgeting and financial forecasting accuracy.",
+        "Useful for PMOs aiming to implement data-driven pricing strategies in retail or service sectors."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Finance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "generative AI",
+        "pricing strategy",
+        "financial management"
+      ]
+    },
+    {
+      "id": 60496,
+      "title": "Why your IT operations team is your AI adoption blueprint",
+      "url": "https://www.cio.com/article/4123698/why-your-it-operations-team-is-your-ai-adoption-blueprint.html",
+      "date": "2026-01-29",
+      "score": 80,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI tools applicable to PMO operations for enhancing efficiency and problem-solving capabilities.",
+        "Encourage IT operations teams to adopt AI for real-time issue resolution and automation of tasks.",
+        "Useful for PMOs seeking to bridge the gap between strategy and actual AI tool adoption across departments."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI adoption",
+        "IT operations",
+        "efficiency"
       ]
     },
     {
@@ -368,6 +446,32 @@
       ]
     },
     {
+      "id": 61323,
+      "title": "Achieving AI ROI with Agentic AI: From Data Foundations to Enterprise Deployment (Mexico Time)",
+      "url": "https://tdwi.org/webcasts/2026/01/ta-all-achieving-ai-roi-with-agentic-ai-from-data-foundations-to-enterprise-deployment-latam-quick.aspx",
+      "date": "2026-01-29",
+      "score": 75,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Agentic AI with potential PMO applications in automating project workflows and enhancing data management.",
+        "Organizations can benefit from understanding the end-to-end process of operationalizing AI for improved project outcomes.",
+        "Ideal for PMOs looking to leverage AI for scalable and explainable project delivery across various departments."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "agentic AI",
+        "data management",
+        "workflow automation"
+      ]
+    },
+    {
       "id": 61324,
       "title": "Achieving AI ROI with Agentic AI: From Data Foundations to Enterprise Deployment (Mexico Time)",
       "url": "https://tdwi.org/webcasts/2026/01/ta-all-achieving-ai-roi-with-agentic-ai-from-data-foundations-to-enterprise-deployment-latam.aspx",
@@ -394,132 +498,28 @@
       ]
     },
     {
-      "id": 61320,
-      "title": "Virtue AI AgentSuite enables enterprises to test and secure AI agents",
-      "url": "https://www.itsecuritynews.info/virtue-ai-agentsuite-enables-enterprises-to-test-and-secure-ai-agents/",
+      "id": 61207,
+      "title": "Mistral AI Upgrades Vibe Coding Agent",
+      "url": "https://aibusiness.com/foundation-models/mistral-ai-upgrades-vibe-coding-agent",
       "date": "2026-01-29",
       "score": 75,
       "pmo_relevance": "Potential",
       "pmo_category": "PMO_POTENTIAL",
       "tldr": [
-        "AI security platform with potential PMO applications in risk management and compliance oversight.",
-        "Enterprises can leverage AgentSuite to enforce security policies and prevent unauthorized actions by AI agents.",
-        "Useful for PMOs overseeing projects that involve AI systems and sensitive data management."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Risk",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI security",
-        "compliance",
-        "risk management"
-      ]
-    },
-    {
-      "id": 61321,
-      "title": "Virtue AI AgentSuite enables enterprises to test and secure AI agents",
-      "url": "https://www.helpnetsecurity.com/2026/01/29/virtue-ai-agentsuite-platform/",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI security platform with potential PMO applications in risk management and compliance enforcement.",
-        "Organizations can utilize AgentSuite to monitor AI agents and ensure adherence to security policies.",
-        "Ideal for PMOs overseeing projects that integrate AI technologies and require robust security measures."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI security",
-        "risk management",
-        "compliance"
-      ]
-    },
-    {
-      "id": 61295,
-      "title": "Beyond Utilization Rates: How AI is Solving the Talent “Visibility Gap”",
-      "url": "https://blog.planview.com/beyond-utilization-rates-ai-talent-forecasting/",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI resource management tool applicable to PMO capacity planning and talent allocation.",
-        "Utilize AI to identify available resources and required skills for upcoming projects.",
-        "Useful for PMOs aiming to enhance project alignment and optimize resource utilization."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Resources",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "resource management",
-        "capacity planning"
-      ]
-    },
-    {
-      "id": 61240,
-      "title": "Apiiro’s Guardian Agent guards against insecure AI code",
-      "url": "https://www.infoworld.com/article/4124491/apiiros-guardian-agent-guards-against-insecure-ai-code.html",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI agent with potential PMO applications in software security and compliance management.",
-        "Can help prevent vulnerabilities before code is generated, enhancing overall project security.",
-        "Useful for PMOs overseeing software development projects that utilize AI coding agents."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Risk Management",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI security",
-        "software development",
-        "vulnerabilities"
-      ]
-    },
-    {
-      "id": 60376,
-      "title": "ServiceNow inks another AI partnership, this time with Anthropic",
-      "url": "https://techcrunch.com/2026/01/28/servicenow-inks-another-ai-partnership-this-time-with-anthropic/",
-      "date": "2026-01-28",
-      "score": 80,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI partnership with Anthropic could support PMO initiatives in workflow automation and efficiency.",
-        "Integrating Claude models into ServiceNow's platform may enhance project delivery and resource management.",
-        "Useful for enterprises seeking to streamline operations through AI-driven workflows and applications."
+        "Coding agent with potential PMO applications in software development efficiency and project delivery.",
+        "Mistral Vibe 2.0 enables faster code building, maintenance, and deployment for development teams.",
+        "Useful for PMOs overseeing tech projects requiring rapid iterations and agile methodologies."
       ],
       "badges": {
         "read_time": 5,
-        "pmo_focus": "Tools",
+        "pmo_focus": "Performance",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
         "AI",
-        "workflow",
+        "software development",
         "automation"
       ]
     }
