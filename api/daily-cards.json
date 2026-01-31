@@ -1,8 +1,112 @@
 {
-  "generated": "2026-01-31T04:14:56.170Z",
+  "generated": "2026-01-31T14:17:25.491Z",
   "date": "2026-01-31",
   "count": 20,
   "cards": [
+    {
+      "id": 62447,
+      "title": "Anthropic debuts Claude Cowork plugins to help users automate more tasks",
+      "url": "https://siliconangle.com/2026/01/30/anthropic-debuts-claude-cowork-plugins-help-users-automate-tasks/",
+      "date": "2026-01-31",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Automation tool applicable to PMO workflows for enhancing task efficiency and reducing manual effort.",
+        "Users can create custom plugins to tailor Claude Cowork for specific project management tasks.",
+        "Ideal for teams needing to automate document handling and data visualization in project execution."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "automation",
+        "plugins",
+        "project management"
+      ]
+    },
+    {
+      "id": 62371,
+      "title": "From LLMs to Agents: How BigID is Enabling Secure Agentic AI for Data Governance",
+      "url": "https://dzone.com/articles/from-llms-to-agents-how-bigid-is-enabling-secure-a-1",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Agentic AI applicable to PMO data governance and compliance processes, enhancing decision-making efficiency.",
+        "Integrate BigID's Agentic Automation App to streamline data discovery and governance workflows for project management.",
+        "Useful for PMOs seeking to automate compliance and improve data-driven insights across enterprise projects."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "agentic AI",
+        "data governance",
+        "automation"
+      ]
+    },
+    {
+      "id": 62372,
+      "title": "Automating TDD: Using AI to Generate Edge-Case Unit Tests",
+      "url": "https://dzone.com/articles/automating-tdd-ai-edge-case-tests",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI-driven testing tool applicable to PMO software development processes for enhanced code reliability.",
+        "Implement a 'Threat-Model-First' workflow to identify edge cases before coding begins.",
+        "Useful for teams aiming to improve software quality and reduce bugs in project deliverables."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "testing",
+        "software development"
+      ]
+    },
+    {
+      "id": 62355,
+      "title": "Inside Google's 'Project EAT' That Is Supercharging Employees With AI",
+      "url": "https://www.businessinsider.com/google-project-eat-ai-infrastructure-tools-chips-artificial-intelligence-2026-1",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI initiative designed for PMO employee productivity and technology adoption across teams.",
+        "Project EAT encourages standardized AI tool usage to enhance operational efficiency.",
+        "Useful for PMOs aiming to integrate AI capabilities into project management workflows."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "employee productivity",
+        "technology adoption"
+      ]
+    },
     {
       "id": 62266,
       "title": "ServiceNow and Anthropic Disclose AI Deal",
@@ -186,32 +290,6 @@
       ]
     },
     {
-      "id": 61108,
-      "title": "AI Agents Shatter Compliance Foundations, Forcing CISOs to the Front Lines",
-      "url": "https://www.webpronews.com/ai-agents-shatter-compliance-foundations-forcing-cisos-to-the-front-lines/",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI agents with potential PMO applications in compliance management and risk mitigation.",
-        "CISOs can leverage AI to enhance identity and access controls for regulatory compliance.",
-        "Useful for PMOs overseeing projects that involve sensitive data handling and compliance frameworks."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Governance",
-        "value_type": "Research Insight",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "compliance",
-        "risk management"
-      ]
-    },
-    {
       "id": 61109,
       "title": "AI Agents' Platform Grip: GitLab and Harness Lure Enterprises in DevSecOps Shift",
       "url": "https://www.webpronews.com/ai-agents-platform-grip-gitlab-and-harness-lure-enterprises-in-devsecops-shift/",
@@ -235,84 +313,6 @@
         "DevSecOps",
         "AI agents",
         "automation"
-      ]
-    },
-    {
-      "id": 61092,
-      "title": "Lorikeet launches Coach: an analytics agent to perk up AI customer support",
-      "url": "https://siliconangle.com/2026/01/29/lorikeet-launches-coach-analytics-agent-perk-ai-customer-support/",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Analytics agent designed for PMO performance monitoring of AI customer support processes.",
-        "Utilize thematic analysis and ticket quality scores to enhance support ticket diagnostics.",
-        "Useful for organizations seeking to improve AI-driven customer service effectiveness and visibility."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI support",
-        "customer satisfaction",
-        "analytics"
-      ]
-    },
-    {
-      "id": 60504,
-      "title": "﻿How to Use Generative AI for Pricing",
-      "url": "https://sloanreview.mit.edu/article/how-to-use-generative-ai-for-pricing/",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Generative AI tools with potential PMO applications in pricing strategy optimization for projects.",
-        "Utilize AI-driven pricing recommendations to enhance project budgeting and financial forecasting accuracy.",
-        "Useful for PMOs aiming to implement data-driven pricing strategies in retail or service sectors."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Finance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "generative AI",
-        "pricing strategy",
-        "financial management"
-      ]
-    },
-    {
-      "id": 60496,
-      "title": "Why your IT operations team is your AI adoption blueprint",
-      "url": "https://www.cio.com/article/4123698/why-your-it-operations-team-is-your-ai-adoption-blueprint.html",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI tools applicable to PMO operations for enhancing efficiency and problem-solving capabilities.",
-        "Encourage IT operations teams to adopt AI for real-time issue resolution and automation of tasks.",
-        "Useful for PMOs seeking to bridge the gap between strategy and actual AI tool adoption across departments."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI adoption",
-        "IT operations",
-        "efficiency"
       ]
     },
     {
