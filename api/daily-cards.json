@@ -1,8 +1,174 @@
 {
-  "generated": "2026-01-31T14:17:25.491Z",
-  "date": "2026-01-31",
-  "count": 20,
+  "generated": "2026-02-04T19:23:13.078Z",
+  "date": "2026-02-04",
+  "count": 19,
   "cards": [
+    {
+      "id": 65378,
+      "title": "DMRC plans AI-powered management system to reason, execute project workflows",
+      "url": "https://economictimes.indiatimes.com/industry/transportation/railways/dmrc-plans-ai-powered-management-system-to-reason-execute-project-workflows/articleshow/127909048.cms",
+      "date": "2026-02-04",
+      "score": 90,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "DMRC plans AI-powered management system to reason, execute project workflows"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 65379,
+      "title": "The Mindful Manager: How Staying Present Helps Project Leaders Harness AI",
+      "url": "https://scienceblog.com/the-mindful-manager-how-staying-present-helps-project-leaders-harness-ai/",
+      "date": "2026-02-04",
+      "score": 80,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "The Mindful Manager: How Staying Present Helps Project Leaders Harness AI"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 65377,
+      "title": "FactSet Launches AI Doc Ingest for Cobalt, Transforming Private Capital Data Collection with AI-Powered Automation",
+      "url": "https://www.manilatimes.net/2026/02/04/tmt-newswire/globenewswire/factset-launches-ai-doc-ingest-for-cobalt-transforming-private-capital-data-collection-with-ai-powered-automation/2271588",
+      "date": "2026-02-04",
+      "score": 80,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "FactSet Launches AI Doc Ingest for Cobalt, Transforming Private Capital Data Collection with AI-Powered Automation"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 65183,
+      "title": "AI Governance for AI Agents: Ship Fast, Stay Safe",
+      "url": "https://dzone.com/articles/ai-governance-ai-agents-best-practices",
+      "date": "2026-02-04",
+      "score": 80,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "AI Governance for AI Agents: Ship Fast, Stay Safe"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 65374,
+      "title": "Google Workspace 2026 Productivity Tips, AI Tools & Improved Planning Workflows",
+      "url": "https://www.geeky-gadgets.com/google-workspace-project-gap/",
+      "date": "2026-02-04",
+      "score": 70,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Google Workspace 2026 Productivity Tips, AI Tools & Improved Planning Workflows"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 65344,
+      "title": "Nemotron Labs: How AI Agents Are Turning Documents Into Real-Time Business Intelligence",
+      "url": "https://blogs.nvidia.com/blog/ai-agents-intelligent-document-processing/",
+      "date": "2026-02-04",
+      "score": 70,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Nemotron Labs: How AI Agents Are Turning Documents Into Real-Time Business Intelligence"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 65221,
+      "title": "Claude Code Distribution Framework: How I turned \"how do I get customers?\" into an AI workflow",
+      "url": "https://www.indiehackers.com/product/claude-code-distribution-framework?post=tsNVsGPVHgq7ActcwL2b",
+      "date": "2026-02-04",
+      "score": 70,
+      "pmo_relevance": "Potential",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Claude Code Distribution Framework: How I turned \"how do I get customers?\" into an AI workflow"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 62545,
+      "title": "RAF-led Project BOYD to explore AI-driven planning",
+      "url": "https://ukdefencejournal.org.uk/raf-led-project-boyd-to-explore-ai-driven-planning/",
+      "date": "2026-01-31",
+      "score": 85,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI-driven planning aims to enhance military decision-making efficiency.**",
+        "Project BOYD will utilize AI to streamline command and control processes.",
+        "The initiative focuses on improving commanders' information processing and operational decisions."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "military planning",
+        "Project BOYD"
+      ]
+    },
     {
       "id": 62447,
       "title": "Anthropic debuts Claude Cowork plugins to help users automate more tasks",
@@ -79,6 +245,32 @@
         "AI",
         "testing",
         "software development"
+      ]
+    },
+    {
+      "id": 62366,
+      "title": "6 async practices that surface buried insights (and how AI can help)",
+      "url": "https://www.atlassian.com/blog/productivity/async-practices-that-surface-buried-insights",
+      "date": "2026-01-30",
+      "score": 75,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Intentional async practices can uncover vital knowledge for teams**.",
+        "AI can assist in gathering and summarizing existing insights effectively.",
+        "Useful for teams to prevent duplicate work and enhance decision-making."
+      ],
+      "badges": {
+        "read_time": 15,
+        "pmo_focus": "Knowledge",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "async practices",
+        "AI",
+        "knowledge management"
       ]
     },
     {
@@ -261,266 +453,6 @@
         "AI",
         "construction",
         "risk management"
-      ]
-    },
-    {
-      "id": 61113,
-      "title": "Summit Launches New Data, Analytics, and AI Services Portfolio to Strengthen Data Foundations and Accelerate AI Impact",
-      "url": "https://www.prweb.com/releases/summit-launches-new-data-analytics-and-ai-services-portfolio-to-strengthen-data-foundations-and-accelerate-ai-impact-302672436.html",
-      "date": "2026-01-29",
-      "score": 90,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "Data analytics portfolio applicable to PMO project execution and performance tracking across organizations.",
-        "Summit offers services to unify data, enhance analytics, and support AI initiatives for better decision-making.",
-        "Ideal for PMOs seeking to improve data governance and accelerate AI adoption in enterprise projects."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "data analytics",
-        "AI adoption",
-        "project execution"
-      ]
-    },
-    {
-      "id": 61109,
-      "title": "AI Agents' Platform Grip: GitLab and Harness Lure Enterprises in DevSecOps Shift",
-      "url": "https://www.webpronews.com/ai-agents-platform-grip-gitlab-and-harness-lure-enterprises-in-devsecops-shift/",
-      "date": "2026-01-29",
-      "score": 80,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI agents from GitLab and Harness can benefit PMO project execution by automating incident resolution.",
-        "Integrate AI tools into DevSecOps workflows to enhance efficiency and reduce incident response times.",
-        "Useful for enterprises looking to streamline DevSecOps processes and improve project delivery outcomes."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "DevSecOps",
-        "AI agents",
-        "automation"
-      ]
-    },
-    {
-      "id": 61453,
-      "title": "AI is coming to an enterprise near you and Zscaler aims to secure it",
-      "url": "https://siliconangle.com/2026/01/29/ai-coming-enterprise-near-zscaler-aims-secure/",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI security suite with potential PMO applications in risk management and governance frameworks.",
-        "Zscaler's new features can help PMOs enhance visibility and control over AI deployments.",
-        "Useful for organizations navigating AI integration while ensuring compliance and security protocols."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI security",
-        "risk management",
-        "governance"
-      ]
-    },
-    {
-      "id": 61454,
-      "title": "Virtue AI debuts AgentSuite platform to help enterprises secure AI agents",
-      "url": "https://siliconangle.com/2026/01/29/virtue-ai-debuts-agentsuite-platform-help-enterprises-secure-ai-agents/",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AgentSuite with potential PMO applications in cybersecurity for AI agent management.",
-        "Integrates with CI/CD systems to flag vulnerabilities before deployment, enhancing project delivery.",
-        "Useful for PMOs overseeing AI projects to ensure compliance and security during development."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "cybersecurity",
-        "AI agents",
-        "compliance"
-      ]
-    },
-    {
-      "id": 61418,
-      "title": "Scaling enterprise AI: lessons in governance and operating models from IBM",
-      "url": "https://stackoverflow.blog/2026/01/29/scaling-enterprise-ai-lessons-in-governance-and-operating-models-from-ibm/",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Governance framework essential for PMO to balance innovation and risk in AI projects.**",
-        "Implement AI certification models to ensure understanding of data privacy and security among project teams.",
-        "Hybrid teams combining business and IT expertise can enhance PMO efficiency in AI project delivery."
-      ],
-      "badges": {
-        "read_time": 14,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI governance",
-        "project delivery",
-        "hybrid teams"
-      ]
-    },
-    {
-      "id": 61350,
-      "title": "Scaling content review operations with multi-agent workflow",
-      "url": "https://aws.amazon.com/blogs/machine-learning/scaling-content-review-operations-with-multi-agent-workflow/",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI-driven content review system can boost PMO efficiency by automating validation processes.",
-        "Utilize multi-agent workflows to streamline content accuracy checks and reduce manual effort.",
-        "Applicable for PMOs overseeing diverse content types, enhancing strategic review capabilities."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "content review",
-        "automation",
-        "AI agents"
-      ]
-    },
-    {
-      "id": 61332,
-      "title": "ServiceNow embeds Anthropic Claude as its default Build Agent model",
-      "url": "https://www.cio.com/article/4124222/servicenow-embeds-anthropic-claude-as-its-default-build-agent-model.html",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI-driven workflows with potential PMO applications in project execution and automation.",
-        "ServiceNow's integration with Anthropic Claude can enhance project delivery through autonomous processes.",
-        "Ideal for PMOs in healthcare and life sciences aiming to streamline claims processing and research analysis."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI workflows",
-        "automation",
-        "project delivery"
-      ]
-    },
-    {
-      "id": 61323,
-      "title": "Achieving AI ROI with Agentic AI: From Data Foundations to Enterprise Deployment (Mexico Time)",
-      "url": "https://tdwi.org/webcasts/2026/01/ta-all-achieving-ai-roi-with-agentic-ai-from-data-foundations-to-enterprise-deployment-latam-quick.aspx",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Agentic AI with potential PMO applications in automating project workflows and enhancing data management.",
-        "Organizations can benefit from understanding the end-to-end process of operationalizing AI for improved project outcomes.",
-        "Ideal for PMOs looking to leverage AI for scalable and explainable project delivery across various departments."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "agentic AI",
-        "data management",
-        "workflow automation"
-      ]
-    },
-    {
-      "id": 61324,
-      "title": "Achieving AI ROI with Agentic AI: From Data Foundations to Enterprise Deployment (Mexico Time)",
-      "url": "https://tdwi.org/webcasts/2026/01/ta-all-achieving-ai-roi-with-agentic-ai-from-data-foundations-to-enterprise-deployment-latam.aspx",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Agentic AI with potential PMO applications in automating workflows and enhancing operational efficiency.",
-        "Organizations can leverage data engineering practices to build reliable data pipelines for AI deployment.",
-        "Useful for PMOs looking to operationalize AI solutions that drive measurable business value across projects."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Enablement",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "agentic AI",
-        "data engineering",
-        "workflow automation"
-      ]
-    },
-    {
-      "id": 61207,
-      "title": "Mistral AI Upgrades Vibe Coding Agent",
-      "url": "https://aibusiness.com/foundation-models/mistral-ai-upgrades-vibe-coding-agent",
-      "date": "2026-01-29",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Coding agent with potential PMO applications in software development efficiency and project delivery.",
-        "Mistral Vibe 2.0 enables faster code building, maintenance, and deployment for development teams.",
-        "Useful for PMOs overseeing tech projects requiring rapid iterations and agile methodologies."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "software development",
-        "automation"
       ]
     }
   ]
