@@ -1,6 +1,50 @@
 {
   "latestIntelligence": [
     {
+      "id": 65543,
+      "title": "NAVER D2SF Invests in AI Workflow Automation Platform 'CNAPS.AI'",
+      "url": "https://www.manilatimes.net/2026/02/05/tmt-newswire/pr-newswire/naver-d2sf-invests-in-ai-workflow-automation-platform-cnapsai/2272110",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-05",
+      "discoveredAt": "2026-02-05 13:42:07",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 65539,
+      "title": "SMM AI Readiness: A Prescriptive AI Checklist",
+      "url": "https://www.iiot-world.com/smart-manufacturing/hybrid-manufacturing/smm-ai-readiness-prescriptive-checklist/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-05",
+      "discoveredAt": "2026-02-05 13:42:03",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 65530,
+      "title": "Microsoft brings project-focused AI agents into OneDrive",
+      "url": "https://www.helpnetsecurity.com/2026/02/05/microsoft-onedrive-ai-agents/",
+      "summary": "",
+      "score": 85,
+      "publishedDate": "2026-02-05",
+      "discoveredAt": "2026-02-05 13:41:55",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 65452,
+      "title": "Wrike agents: No-code AI for supercharged productivity",
+      "url": "https://www.wrike.com/blog/wrike-ai-agents/",
+      "summary": "",
+      "score": 80,
+      "publishedDate": "2026-02-05",
+      "discoveredAt": "2026-02-05 13:37:29",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 65378,
       "title": "DMRC plans AI-powered management system to reason, execute project workflows",
       "url": "https://economictimes.indiatimes.com/industry/transportation/railways/dmrc-plans-ai-powered-management-system-to-reason-execute-project-workflows/articleshow/127909048.cms",
@@ -175,39 +219,6 @@
       "discoveredAt": "2026-01-30 14:01:14",
       "pmbokArea": null,
       "section": "auto"
-    },
-    {
-      "id": 61488,
-      "title": "Google’s Gemini AI Assistant Finally Bridges the Calendar Gap with Secondary and Shared Event Support",
-      "url": "https://www.webpronews.com/googles-gemini-ai-assistant-finally-bridges-the-calendar-gap-with-secondary-and-shared-event-support/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-01-30",
-      "discoveredAt": "2026-01-30 04:10:57",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 61467,
-      "title": "Google Project Genie turns prompts into interactive worlds • The Register",
-      "url": "https://www.theregister.com/2026/01/29/googles_project_genie_ai/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-01-30",
-      "discoveredAt": "2026-01-30 04:10:31",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 61468,
-      "title": "Panelists highlight how AI can improve tracking , reduce scope surprises",
-      "url": "https://www.constructiondive.com/news/panelists-ai-built-by-builders-webinar/810933/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-01-30",
-      "discoveredAt": "2026-01-30 04:10:31",
-      "pmbokArea": null,
-      "section": "auto"
     }
   ],
   "strategicInsights": [
@@ -257,9 +268,9 @@
     }
   ],
   "counts": {
-    "auto": 19,
+    "auto": 20,
     "curated": 4,
-    "total": 23
+    "total": 24
   },
-  "generatedAt": "2026-02-04T19:22:28.532Z"
+  "generatedAt": "2026-02-05T16:45:21.447Z"
 }
