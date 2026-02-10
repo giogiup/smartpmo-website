@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-05T16:56:34.411Z",
-  "date": "2026-02-05",
+  "generated": "2026-02-10T12:56:57.321Z",
+  "date": "2026-02-10",
   "count": 20,
   "cards": [
+    {
+      "id": 66893,
+      "title": "AI Agents That Execute Business Workflows (Claude Code for ERP)",
+      "url": "https://news.ycombinator.com/item?id=46955034",
+      "date": "2026-02-10",
+      "score": 80,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**AI agents automate business workflows, enhancing efficiency in ERP systems.**",
+        "The system executes tasks like procurement and invoicing autonomously.",
+        "Designed for small service businesses to streamline operations."
+      ],
+      "badges": {
+        "read_time": 2,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "business workflows",
+        "ERP systems"
+      ]
+    },
+    {
+      "id": 66894,
+      "title": "What Is OpenClaw and How to Build AI-Powered Automation Workflows",
+      "url": "https://www.c-sharpcorner.com/article/what-is-openclaw-and-how-to-build-ai-powered-automation-workflows/",
+      "date": "2026-02-10",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**OpenClaw enables AI-powered automation workflows for various applications.**",
+        "Users can build custom workflows using a user-friendly interface.",
+        "Ideal for enhancing efficiency in project management tasks."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "OpenClaw",
+        "AI automation",
+        "workflow management"
+      ]
+    },
     {
       "id": 65530,
       "title": "Microsoft brings project-focused AI agents into OneDrive",
@@ -297,58 +349,6 @@
         "automation",
         "plugins",
         "project management"
-      ]
-    },
-    {
-      "id": 62371,
-      "title": "From LLMs to Agents: How BigID is Enabling Secure Agentic AI for Data Governance",
-      "url": "https://dzone.com/articles/from-llms-to-agents-how-bigid-is-enabling-secure-a-1",
-      "date": "2026-01-30",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Agentic AI applicable to PMO data governance and compliance processes, enhancing decision-making efficiency.",
-        "Integrate BigID's Agentic Automation App to streamline data discovery and governance workflows for project management.",
-        "Useful for PMOs seeking to automate compliance and improve data-driven insights across enterprise projects."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "agentic AI",
-        "data governance",
-        "automation"
-      ]
-    },
-    {
-      "id": 62372,
-      "title": "Automating TDD: Using AI to Generate Edge-Case Unit Tests",
-      "url": "https://dzone.com/articles/automating-tdd-ai-edge-case-tests",
-      "date": "2026-01-30",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI-driven testing tool applicable to PMO software development processes for enhanced code reliability.",
-        "Implement a 'Threat-Model-First' workflow to identify edge cases before coding begins.",
-        "Useful for teams aiming to improve software quality and reduce bugs in project deliverables."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "testing",
-        "software development"
       ]
     },
     {

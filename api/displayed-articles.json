@@ -1,6 +1,28 @@
 {
   "latestIntelligence": [
     {
+      "id": 66894,
+      "title": "What Is OpenClaw and How to Build AI-Powered Automation Workflows",
+      "url": "https://www.c-sharpcorner.com/article/what-is-openclaw-and-how-to-build-ai-powered-automation-workflows/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-10",
+      "discoveredAt": "2026-02-10 12:28:16",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 66893,
+      "title": "AI Agents That Execute Business Workflows (Claude Code for ERP)",
+      "url": "https://news.ycombinator.com/item?id=46955034",
+      "summary": "",
+      "score": 80,
+      "publishedDate": "2026-02-10",
+      "discoveredAt": "2026-02-10 12:28:14",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 65543,
       "title": "NAVER D2SF Invests in AI Workflow Automation Platform 'CNAPS.AI'",
       "url": "https://www.manilatimes.net/2026/02/05/tmt-newswire/pr-newswire/naver-d2sf-invests-in-ai-workflow-automation-platform-cnapsai/2272110",
@@ -144,28 +166,6 @@
       "section": "auto"
     },
     {
-      "id": 62371,
-      "title": "From LLMs to Agents: How BigID is Enabling Secure Agentic AI for Data Governance",
-      "url": "https://dzone.com/articles/from-llms-to-agents-how-bigid-is-enabling-secure-a-1",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-01-30",
-      "discoveredAt": "2026-01-31 04:01:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 62372,
-      "title": "Automating TDD: Using AI to Generate Edge-Case Unit Tests",
-      "url": "https://dzone.com/articles/automating-tdd-ai-edge-case-tests",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-01-30",
-      "discoveredAt": "2026-01-31 04:01:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 62366,
       "title": "6 async practices that surface buried insights (and how AI can help)",
       "url": "https://www.atlassian.com/blog/productivity/async-practices-that-surface-buried-insights",
@@ -272,5 +272,5 @@
     "curated": 4,
     "total": 24
   },
-  "generatedAt": "2026-02-05T16:45:21.447Z"
+  "generatedAt": "2026-02-10T12:57:07.156Z"
 }
