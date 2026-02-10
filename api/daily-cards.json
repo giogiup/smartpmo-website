@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-10T12:56:57.321Z",
+  "generated": "2026-02-10T15:44:18.807Z",
   "date": "2026-02-10",
   "count": 20,
   "cards": [
@@ -352,133 +352,133 @@
       ]
     },
     {
-      "id": 62366,
-      "title": "6 async practices that surface buried insights (and how AI can help)",
-      "url": "https://www.atlassian.com/blog/productivity/async-practices-that-surface-buried-insights",
-      "date": "2026-01-30",
-      "score": 75,
+      "id": 61125,
+      "title": "Domo's App Catalyst: Bridging AI Prompts to Enterprise Apps",
+      "url": "https://www.webpronews.com/domos-app-catalyst-bridging-ai-prompts-to-enterprise-apps/",
+      "date": "2026-01-29",
+      "score": 90,
       "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
+      "pmo_category": "AI_GENERAL",
       "tldr": [
-        "**Intentional async practices can uncover vital knowledge for teams**.",
-        "AI can assist in gathering and summarizing existing insights effectively.",
-        "Useful for teams to prevent duplicate work and enhance decision-making."
+        "App Catalyst tool applicable to PMO project delivery by transforming natural language into production-ready apps.",
+        "Integrate with platforms like Snowflake and Databricks to enhance data governance and compliance in app development.",
+        "Ideal for technical users in PMOs seeking rapid prototyping and stakeholder demonstrations of AI-driven applications."
       ],
       "badges": {
-        "read_time": 15,
-        "pmo_focus": "Knowledge",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "async practices",
-        "AI",
-        "knowledge management"
-      ]
-    },
-    {
-      "id": 62355,
-      "title": "Inside Google's 'Project EAT' That Is Supercharging Employees With AI",
-      "url": "https://www.businessinsider.com/google-project-eat-ai-infrastructure-tools-chips-artificial-intelligence-2026-1",
-      "date": "2026-01-30",
-      "score": 75,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI initiative designed for PMO employee productivity and technology adoption across teams.",
-        "Project EAT encourages standardized AI tool usage to enhance operational efficiency.",
-        "Useful for PMOs aiming to integrate AI capabilities into project management workflows."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Enablement",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "employee productivity",
-        "technology adoption"
-      ]
-    },
-    {
-      "id": 62266,
-      "title": "ServiceNow and Anthropic Disclose AI Deal",
-      "url": "https://aibusiness.com/agentic-ai/servicenow-and-anthropic-ai-deal",
-      "date": "2026-01-30",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "AI agent builder with potential PMO applications in workflow automation across various industries.",
-        "ServiceNow's integration of Claude models can enhance project delivery through AI-assisted workflows.",
-        "Useful for PMOs looking to streamline processes in healthcare and IT service management."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "workflow",
-        "automation"
-      ]
-    },
-    {
-      "id": 62244,
-      "title": "Scale AI in South Africa using Amazon Bedrock global cross-Region inference with Anthropic Claude 4.5 models",
-      "url": "https://aws.amazon.com/blogs/machine-learning/scale-ai-in-south-africa-using-amazon-bedrock-global-cross-region-inference-with-anthropic-claude-4-5-models/",
-      "date": "2026-01-30",
-      "score": 75,
-      "pmo_relevance": "Potential",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Global cross-Region inference with Amazon Bedrock could support PMO resource optimization and scalability.",
-        "Utilize AWS Identity and Access Management for configuring permissions and invoking models effectively.",
-        "Ideal for PMOs in South Africa managing AI applications with enhanced throughput during peak usage."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "Resources",
+        "read_time": 5,
+        "pmo_focus": "Governance",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
         "AI applications",
-        "resource optimization",
-        "throughput"
+        "data governance",
+        "app development"
       ]
     },
     {
-      "id": 61495,
-      "title": "Mentorship in Modern Engineering Teams: The ROI Question in the Age of AI",
-      "url": "https://dzone.com/articles/mentorship-roi-modern-engineering-ai",
-      "date": "2026-01-30",
-      "score": 75,
+      "id": 60336,
+      "title": "How Atlassian cut PR cycle time by 45% with AI code reviews",
+      "url": "https://www.atlassian.com/blog/announcements/how-we-cut-pr-cycle-time-with-ai-code-reviews",
+      "date": "2026-01-29",
+      "score": 90,
       "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
+      "pmo_category": "AI_GENERAL",
       "tldr": [
-        "Mentorship strategies applicable to PMO team development and junior engineer integration.",
-        "Implement structured mentorship programs to enhance junior engineers' skills and team stability.",
-        "Useful for PMOs aiming to improve junior talent retention and productivity in an AI-driven environment."
+        "AI code review tool that **cut PR cycle time by 45%**, enhancing team efficiency.",
+        "Rovo Dev provides instant feedback and enforces coding standards, useful for PMO quality assurance.",
+        "Ideal for software development teams looking to streamline code review processes and reduce bottlenecks."
       ],
       "badges": {
-        "read_time": 9,
-        "pmo_focus": "Knowledge",
+        "read_time": 7,
+        "pmo_focus": "Performance",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "mentorship",
         "AI",
-        "engineering"
+        "code review",
+        "efficiency"
+      ]
+    },
+    {
+      "id": 60468,
+      "title": "ServiceNow boasts about years of sweat equity that went into making its AI agents smarter",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/28/servicenow_ai_agents/",
+      "date": "2026-01-28",
+      "score": 90,
+      "pmo_relevance": "Potential",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI agents with potential PMO applications in workflow optimization and process automation.",
+        "ServiceNow's AI capabilities can enhance project delivery by leveraging extensive historical data.",
+        "Useful for PMOs looking to improve efficiency through intelligent automation of routine tasks."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "workflow optimization",
+        "automation"
+      ]
+    },
+    {
+      "id": 60462,
+      "title": "Dynatrace Intelligence aims to advance autonomous software operations",
+      "url": "https://siliconangle.com/2026/01/28/dynatrace-introduces-dynatrace-intelligence-advance-autonomous-software-operations/",
+      "date": "2026-01-28",
+      "score": 90,
+      "pmo_relevance": "Potential",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI-driven operations system with potential PMO applications in enhancing software reliability and governance.",
+        "Utilizes real-time system intelligence to support decision-making and improve operational outcomes.",
+        "Ideal for PMOs overseeing complex software environments and seeking to automate project delivery processes."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "software operations",
+        "governance"
+      ]
+    },
+    {
+      "id": 60341,
+      "title": "Claude Cowork: AI Agents’ Email Moment for Non-Coders",
+      "url": "https://dzone.com/articles/claude-cowork-ai-agents-non-coders",
+      "date": "2026-01-28",
+      "score": 90,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "AI agents like Claude Cowork can benefit PMO teams by streamlining task delegation and enhancing productivity.",
+        "Integrate Claude Cowork to automate routine tasks, allowing team members to focus on higher-value activities.",
+        "Useful for agile practitioners looking to improve efficiency in project execution and management workflows."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "productivity",
+        "agile"
       ]
     }
   ]
