@@ -1,6 +1,171 @@
 {
   "latestIntelligence": [
     {
+      "id": 67069,
+      "title": "Microsoft Copilot Oversharing Data? Not Anymore. Meet Zscaler’s New Wizard",
+      "url": "https://www.zscaler.com/blogs/product-insights/microsoft-copilot-oversharing-data-not-anymore-meet-zscaler-s-new-wizard",
+      "summary": "",
+      "score": 49,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:32",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67068,
+      "title": "From Experimentation to Exploitation: How Cybercriminals Are Weaponizing Google’s Own AI Tools Against the Digital World",
+      "url": "https://www.webpronews.com/from-experimentation-to-exploitation-how-cybercriminals-are-weaponizing-googles-own-ai-tools-against-the-digital-world/",
+      "summary": "",
+      "score": 49,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:30",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67066,
+      "title": "Cloud teams are hitting maturity walls in governance, security, and AI use",
+      "url": "https://www.helpnetsecurity.com/2026/02/12/enterprise-cloud-governance-gaps-governance-security/",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:28",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67061,
+      "title": "The Trillion-Dollar Reckoning: How AI Threatens to Unravel Private Equity’s Massive SaaS Empire",
+      "url": "https://www.webpronews.com/the-trillion-dollar-reckoning-how-ai-threatens-to-unravel-private-equitys-massive-saas-empire/",
+      "summary": "",
+      "score": 49,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:24",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67057,
+      "title": "e& drives AI-first workforce transformation with Oracle Cloud",
+      "url": "https://www.computerweekly.com/news/366639056/e-drives-AI-first-workforce-transformation-with-Oracle-Cloud",
+      "summary": "",
+      "score": 49,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:22",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67053,
+      "title": "Implementing an AI Portfolio Manager. With Learning!",
+      "url": "https://quantape.substack.com/p/implementing-an-ai-portfolio-manager",
+      "summary": "",
+      "score": 80,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:20",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67054,
+      "title": "Hands-On AI Trading for Quantitative Trading: Python, QuantConnect and AWS Guide",
+      "url": "https://blog.quantinsti.com/ai-quantitative-trading-python-quantconnect-aws/",
+      "summary": "",
+      "score": 50,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:20",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67051,
+      "title": "How AI Is Changing Daily Work Workflows In Practical Ways",
+      "url": "https://bitrebels.com/technology/how-ai-is-changing-daily-work-workflows-in-practical-ways/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67047,
+      "title": "Coinbase Launches Crypto Wallets Purpose-Built For AI Agents",
+      "url": "https://cointelegraph.com/news/coinbase-launches-crypto-wallets-built-ai-agents",
+      "summary": "",
+      "score": 49,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:10",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67049,
+      "title": "Kyndryl Unveils Agentic AI Workflow Governance for Trusted Deployment of Mission‑Critical AI Agents",
+      "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/kyndryl-unveils-agentic-ai-workflow-governance-for-trusted-deployment-of-mission%e2%80%91critical-ai-agents/",
+      "summary": "",
+      "score": 71,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:15:10",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67037,
+      "title": "Samsung starts mass production of next-gen AI memory chip",
+      "url": "https://techxplore.com/news/2026-02-samsung-mass-production-gen-ai.html",
+      "summary": "",
+      "score": 49,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:14:15",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 66968,
+      "title": "How We Built Sheeter.ai to Save Hours of Excel Formula Work",
+      "url": "https://www.indiehackers.com/product/sheeter-ai?post=oztoDIfJIeh0zaHybTHy",
+      "summary": "",
+      "score": 50,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:09:24",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 66949,
+      "title": "What is Project Portfolio Management (PPM)?",
+      "url": "https://www.celoxis.com/article/what-is-project-portfolio-management",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:08:56",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 66948,
+      "title": "How to choose easy-to-learn project management software for new users",
+      "url": "https://www.wrike.com/blog/choose-easy-project-management-software-for-new-users/",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:08:22",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 66931,
+      "title": "Prompt governance is the new data governance",
+      "url": "https://www.cio.com/article/4130960/prompt-governance-is-the-new-data-governance.html",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-12",
+      "discoveredAt": "2026-02-12 13:04:20",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 66894,
       "title": "What Is OpenClaw and How to Build AI-Powered Automation Workflows",
       "url": "https://www.c-sharpcorner.com/article/what-is-openclaw-and-how-to-build-ai-powered-automation-workflows/",
@@ -19,17 +184,6 @@
       "score": 80,
       "publishedDate": "2026-02-10",
       "discoveredAt": "2026-02-10 12:28:14",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65543,
-      "title": "NAVER D2SF Invests in AI Workflow Automation Platform 'CNAPS.AI'",
-      "url": "https://www.manilatimes.net/2026/02/05/tmt-newswire/pr-newswire/naver-d2sf-invests-in-ai-workflow-automation-platform-cnapsai/2272110",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-05",
-      "discoveredAt": "2026-02-05 13:42:07",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -63,160 +217,6 @@
       "score": 80,
       "publishedDate": "2026-02-05",
       "discoveredAt": "2026-02-05 13:37:29",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65378,
-      "title": "DMRC plans AI-powered management system to reason, execute project workflows",
-      "url": "https://economictimes.indiatimes.com/industry/transportation/railways/dmrc-plans-ai-powered-management-system-to-reason-execute-project-workflows/articleshow/127909048.cms",
-      "summary": "",
-      "score": 90,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:50:26",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65379,
-      "title": "The Mindful Manager: How Staying Present Helps Project Leaders Harness AI",
-      "url": "https://scienceblog.com/the-mindful-manager-how-staying-present-helps-project-leaders-harness-ai/",
-      "summary": "",
-      "score": 80,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:50:26",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65377,
-      "title": "FactSet Launches AI Doc Ingest for Cobalt, Transforming Private Capital Data Collection with AI-Powered Automation",
-      "url": "https://www.manilatimes.net/2026/02/04/tmt-newswire/globenewswire/factset-launches-ai-doc-ingest-for-cobalt-transforming-private-capital-data-collection-with-ai-powered-automation/2271588",
-      "summary": "",
-      "score": 80,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:50:22",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65374,
-      "title": "Google Workspace 2026 Productivity Tips, AI Tools & Improved Planning Workflows",
-      "url": "https://www.geeky-gadgets.com/google-workspace-project-gap/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:50:17",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65344,
-      "title": "Nemotron Labs: How AI Agents Are Turning Documents Into Real-Time Business Intelligence",
-      "url": "https://blogs.nvidia.com/blog/ai-agents-intelligent-document-processing/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:48:52",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65221,
-      "title": "Claude Code Distribution Framework: How I turned \"how do I get customers?\" into an AI workflow",
-      "url": "https://www.indiehackers.com/product/claude-code-distribution-framework?post=tsNVsGPVHgq7ActcwL2b",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:44:34",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65183,
-      "title": "AI Governance for AI Agents: Ship Fast, Stay Safe",
-      "url": "https://dzone.com/articles/ai-governance-ai-agents-best-practices",
-      "summary": "",
-      "score": 80,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:39:52",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 62545,
-      "title": "RAF-led Project BOYD to explore AI-driven planning",
-      "url": "https://ukdefencejournal.org.uk/raf-led-project-boyd-to-explore-ai-driven-planning/",
-      "summary": "",
-      "score": 85,
-      "publishedDate": "2026-01-31",
-      "discoveredAt": "2026-01-31 14:11:02",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 62447,
-      "title": "Anthropic debuts Claude Cowork plugins to help users automate more tasks",
-      "url": "https://siliconangle.com/2026/01/30/anthropic-debuts-claude-cowork-plugins-help-users-automate-tasks/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-01-31",
-      "discoveredAt": "2026-01-31 04:10:05",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 61125,
-      "title": "Domo's App Catalyst: Bridging AI Prompts to Enterprise Apps",
-      "url": "https://www.webpronews.com/domos-app-catalyst-bridging-ai-prompts-to-enterprise-apps/",
-      "summary": "",
-      "score": 90,
-      "publishedDate": "2026-01-29",
-      "discoveredAt": "2026-01-29 14:12:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 60468,
-      "title": "ServiceNow boasts about years of sweat equity that went into making its AI agents smarter",
-      "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/28/servicenow_ai_agents/",
-      "summary": "",
-      "score": 90,
-      "publishedDate": "2026-01-28",
-      "discoveredAt": "2026-01-29 04:10:09",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 60462,
-      "title": "Dynatrace Intelligence aims to advance autonomous software operations",
-      "url": "https://siliconangle.com/2026/01/28/dynatrace-introduces-dynatrace-intelligence-advance-autonomous-software-operations/",
-      "summary": "",
-      "score": 90,
-      "publishedDate": "2026-01-28",
-      "discoveredAt": "2026-01-29 04:10:01",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 60341,
-      "title": "Claude Cowork: AI Agents’ Email Moment for Non-Coders",
-      "url": "https://dzone.com/articles/claude-cowork-ai-agents-non-coders",
-      "summary": "",
-      "score": 90,
-      "publishedDate": "2026-01-28",
-      "discoveredAt": "2026-01-29 04:01:23",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 60336,
-      "title": "How Atlassian cut PR cycle time by 45% with AI code reviews",
-      "url": "https://www.atlassian.com/blog/announcements/how-we-cut-pr-cycle-time-with-ai-code-reviews",
-      "summary": "",
-      "score": 90,
-      "publishedDate": "2026-01-29",
-      "discoveredAt": "2026-01-29 04:01:00",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -272,5 +272,5 @@
     "curated": 4,
     "total": 24
   },
-  "generatedAt": "2026-02-10T15:44:30.323Z"
+  "generatedAt": "2026-02-12T15:32:20.809Z"
 }

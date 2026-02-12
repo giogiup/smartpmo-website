@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-10T15:44:18.807Z",
-  "date": "2026-02-10",
+  "generated": "2026-02-12T15:32:20.770Z",
+  "date": "2026-02-04",
   "count": 20,
   "cards": [
     {
@@ -300,6 +300,58 @@
       "keywords": []
     },
     {
+      "id": 65345,
+      "title": "Positron AI raises $230M at over $1B valuation to build energy-efficient AI accelerator hardware",
+      "url": "https://siliconangle.com/2026/02/04/positron-ai-raises-230m-1b-valuation-build-energy-efficient-ai-accelerator-hardware/",
+      "date": "2026-02-04",
+      "score": 49,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Positron AI secures $230M funding to enhance AI accelerator hardware efficiency.**",
+        "The funding values the company at over $1 billion, indicating strong investor confidence.",
+        "This development aims to address energy consumption challenges in AI technology."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Positron AI",
+        "funding",
+        "AI accelerator hardware"
+      ]
+    },
+    {
+      "id": 65247,
+      "title": "Intel sets sights on data center GPUs amid AI-driven infrastructure shifts",
+      "url": "https://www.computerworld.com/article/4127119/intel-sets-sights-on-data-center-gpus-amid-ai-driven-infrastructure-shifts-2.html",
+      "date": "2026-02-04",
+      "score": 49,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "Intel aims to enhance its data center GPUs in response to AI infrastructure demands.",
+        "The focus is on improving performance for AI workloads and data processing.",
+        "This move is part of a broader trend in the tech industry towards AI-driven solutions."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Intel",
+        "data center GPUs",
+        "AI infrastructure"
+      ]
+    },
+    {
       "id": 62545,
       "title": "RAF-led Project BOYD to explore AI-driven planning",
       "url": "https://ukdefencejournal.org.uk/raf-led-project-boyd-to-explore-ai-driven-planning/",
@@ -401,58 +453,6 @@
         "AI",
         "code review",
         "efficiency"
-      ]
-    },
-    {
-      "id": 60468,
-      "title": "ServiceNow boasts about years of sweat equity that went into making its AI agents smarter",
-      "url": "https://go.theregister.com/feed/www.theregister.com/2026/01/28/servicenow_ai_agents/",
-      "date": "2026-01-28",
-      "score": 90,
-      "pmo_relevance": "Potential",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "AI agents with potential PMO applications in workflow optimization and process automation.",
-        "ServiceNow's AI capabilities can enhance project delivery by leveraging extensive historical data.",
-        "Useful for PMOs looking to improve efficiency through intelligent automation of routine tasks."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "workflow optimization",
-        "automation"
-      ]
-    },
-    {
-      "id": 60462,
-      "title": "Dynatrace Intelligence aims to advance autonomous software operations",
-      "url": "https://siliconangle.com/2026/01/28/dynatrace-introduces-dynatrace-intelligence-advance-autonomous-software-operations/",
-      "date": "2026-01-28",
-      "score": 90,
-      "pmo_relevance": "Potential",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "AI-driven operations system with potential PMO applications in enhancing software reliability and governance.",
-        "Utilizes real-time system intelligence to support decision-making and improve operational outcomes.",
-        "Ideal for PMOs overseeing complex software environments and seeking to automate project delivery processes."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "software operations",
-        "governance"
       ]
     },
     {
