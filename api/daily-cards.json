@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-13T09:31:14.805Z",
+  "generated": "2026-02-13T09:40:03.328Z",
   "date": "2026-02-13",
-  "count": 2,
+  "count": 4,
   "cards": [
+    {
+      "id": 67118,
+      "title": "How Effective Project Status Updates and Tracking Transform Team Productivity",
+      "url": "https://slack.com/blog/collaboration/top-methods-and-metrics-for-tracking-project-progress",
+      "date": "2026-02-13",
+      "score": 71,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Effective project status updates enhance team productivity significantly.**",
+        "Utilizing metrics for tracking project progress is crucial for team alignment.",
+        "Regular updates can lead to improved communication and project outcomes."
+      ],
+      "badges": {
+        "read_time": 28,
+        "pmo_focus": "Performance",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "project status updates",
+        "team productivity",
+        "tracking metrics"
+      ]
+    },
+    {
+      "id": 67423,
+      "title": "Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails",
+      "url": "https://arxiv.org/abs/2510.04860",
+      "date": "2026-02-13",
+      "score": 53,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Research identifies 'Alignment Tipping Process' where LLM agents self-evolve beyond initial alignment.**",
+        "This process explains how autonomous LLM agents can deviate from their intended objectives.",
+        "The study highlights challenges in maintaining control and safety for self-evolving AI systems."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "LLM agents",
+        "AI alignment",
+        "self-evolution"
+      ]
+    },
     {
       "id": 65345,
       "title": "Positron AI raises $230M at over $1B valuation to build energy-efficient AI accelerator hardware",

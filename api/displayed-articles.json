@@ -12,6 +12,17 @@
       "section": "auto"
     },
     {
+      "id": 67215,
+      "title": "STAR : Bridging Statistical and Agentic Reasoning for Large Model Performance Prediction",
+      "url": "https://arxiv.org/abs/2602.12143",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 67118,
       "title": "How Effective Project Status Updates and Tracking Transform Team Productivity",
       "url": "https://slack.com/blog/collaboration/top-methods-and-metrics-for-tracking-project-progress",
@@ -41,6 +52,17 @@
       "score": 49,
       "publishedDate": "2026-02-04",
       "discoveredAt": "2026-02-04 18:47:08",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 65184,
+      "title": "I Built AIBrowser With Claude Code: A Desktop Version of Manus",
+      "url": "https://dzone.com/articles/ai-browser-desktop-claude-code",
+      "summary": "",
+      "score": 49,
+      "publishedDate": "2026-02-04",
+      "discoveredAt": "2026-02-04 18:39:52",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -92,9 +114,9 @@
     }
   ],
   "counts": {
-    "auto": 4,
+    "auto": 6,
     "curated": 4,
-    "total": 8
+    "total": 10
   },
-  "generatedAt": "2026-02-13T09:31:14.842Z"
+  "generatedAt": "2026-02-13T09:40:03.365Z"
 }
