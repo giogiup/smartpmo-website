@@ -1,6 +1,39 @@
 {
   "latestIntelligence": [
     {
+      "id": 67514,
+      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
+      "url": "https://arxiv.org/abs/2602.11224",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:36",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67501,
+      "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
+      "url": "https://arxiv.org/abs/2602.12036",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:34",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67463,
+      "title": "PRIME: Policy-Reinforced Iterative Multi-agent Execution for Algorithmic Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2602.11170",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:31",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 67423,
       "title": "Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails",
       "url": "https://arxiv.org/abs/2510.04860",
@@ -8,6 +41,39 @@
       "score": 53,
       "publishedDate": "2026-02-13",
       "discoveredAt": "2026-02-13 09:15:28",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67382,
+      "title": "SMaRT: Select, Mix, and ReinvenT -- A Strategy Fusion Framework for LLM-Driven Reasoning and Planning",
+      "url": "https://arxiv.org/abs/2510.18095",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:24",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67334,
+      "title": "Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making",
+      "url": "https://arxiv.org/abs/2602.11924",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:21",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67241,
+      "title": "From Instruction to Output: The Role of Prompting in Modern NLG",
+      "url": "https://arxiv.org/abs/2602.11179",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:14",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -23,6 +89,28 @@
       "section": "auto"
     },
     {
+      "id": 67188,
+      "title": "FlowMind: Execute-Summarize for Structured Workflow Generation from LLM Reasoning",
+      "url": "https://arxiv.org/abs/2602.11782",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:11",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67152,
+      "title": "The PBSAI Governance Ecosystem: A Multi-Agent AI Reference Architecture for Securing Enterprise AI Estates",
+      "url": "https://arxiv.org/abs/2602.11301",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:10",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 67118,
       "title": "How Effective Project Status Updates and Tracking Transform Team Productivity",
       "url": "https://slack.com/blog/collaboration/top-methods-and-metrics-for-tracking-project-progress",
@@ -34,35 +122,13 @@
       "section": "auto"
     },
     {
-      "id": 65345,
-      "title": "Positron AI raises $230M at over $1B valuation to build energy-efficient AI accelerator hardware",
-      "url": "https://siliconangle.com/2026/02/04/positron-ai-raises-230m-1b-valuation-build-energy-efficient-ai-accelerator-hardware/",
+      "id": 67105,
+      "title": "Launched SmartPack: Persistent AI assistants with one paste",
+      "url": "https://www.indiehackers.com/product/smartpack?post=DlzBh95SLsuBKrmmGGC3",
       "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:49:22",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65247,
-      "title": "Intel sets sights on data center GPUs amid AI-driven infrastructure shifts",
-      "url": "https://www.computerworld.com/article/4127119/intel-sets-sights-on-data-center-gpus-amid-ai-driven-infrastructure-shifts-2.html",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:47:08",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65184,
-      "title": "I Built AIBrowser With Claude Code: A Desktop Version of Manus",
-      "url": "https://dzone.com/articles/ai-browser-desktop-claude-code",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-04",
-      "discoveredAt": "2026-02-04 18:39:52",
+      "score": 66,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:04:28",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -114,9 +180,9 @@
     }
   ],
   "counts": {
-    "auto": 6,
+    "auto": 12,
     "curated": 4,
-    "total": 10
+    "total": 16
   },
-  "generatedAt": "2026-02-13T09:40:03.365Z"
+  "generatedAt": "2026-02-13T09:45:10.613Z"
 }

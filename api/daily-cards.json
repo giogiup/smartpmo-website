@@ -1,7 +1,7 @@
 {
-  "generated": "2026-02-13T09:40:03.328Z",
+  "generated": "2026-02-13T09:45:10.574Z",
   "date": "2026-02-13",
-  "count": 4,
+  "count": 6,
   "cards": [
     {
       "id": 67118,
@@ -56,6 +56,32 @@
       ]
     },
     {
+      "id": 67215,
+      "title": "STAR : Bridging Statistical and Agentic Reasoning for Large Model Performance Prediction",
+      "url": "https://arxiv.org/abs/2602.12143",
+      "date": "2026-02-13",
+      "score": 53,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "STAR framework improves performance prediction for large AI models by integrating statistical and agentic reasoning.",
+        "The framework combines traditional statistical methods with agentic reasoning to enhance model evaluations.",
+        "This approach aims to optimize AI model performance across various applications."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "STAR",
+        "AI models",
+        "performance prediction"
+      ]
+    },
+    {
       "id": 65345,
       "title": "Positron AI raises $230M at over $1B valuation to build energy-efficient AI accelerator hardware",
       "url": "https://siliconangle.com/2026/02/04/positron-ai-raises-230m-1b-valuation-build-energy-efficient-ai-accelerator-hardware/",
@@ -105,6 +131,32 @@
         "Intel",
         "data center GPUs",
         "AI infrastructure"
+      ]
+    },
+    {
+      "id": 65184,
+      "title": "I Built AIBrowser With Claude Code: A Desktop Version of Manus",
+      "url": "https://dzone.com/articles/ai-browser-desktop-claude-code",
+      "date": "2026-02-04",
+      "score": 49,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**AIBrowser is a desktop application built using Claude code, designed for enhanced AI browsing capabilities.**",
+        "The application leverages advanced AI features to improve user experience while browsing.",
+        "It aims to provide a more efficient way for users to interact with AI-driven content."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AIBrowser",
+        "Claude code",
+        "AI browsing"
       ]
     }
   ]
