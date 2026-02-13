@@ -1,222 +1,24 @@
 {
   "latestIntelligence": [
     {
-      "id": 67069,
-      "title": "Microsoft Copilot Oversharing Data? Not Anymore. Meet Zscaler’s New Wizard",
-      "url": "https://www.zscaler.com/blogs/product-insights/microsoft-copilot-oversharing-data-not-anymore-meet-zscaler-s-new-wizard",
+      "id": 65345,
+      "title": "Positron AI raises $230M at over $1B valuation to build energy-efficient AI accelerator hardware",
+      "url": "https://siliconangle.com/2026/02/04/positron-ai-raises-230m-1b-valuation-build-energy-efficient-ai-accelerator-hardware/",
       "summary": "",
       "score": 49,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:32",
+      "publishedDate": "2026-02-04",
+      "discoveredAt": "2026-02-04 18:49:22",
       "pmbokArea": null,
       "section": "auto"
     },
     {
-      "id": 67068,
-      "title": "From Experimentation to Exploitation: How Cybercriminals Are Weaponizing Google’s Own AI Tools Against the Digital World",
-      "url": "https://www.webpronews.com/from-experimentation-to-exploitation-how-cybercriminals-are-weaponizing-googles-own-ai-tools-against-the-digital-world/",
+      "id": 65247,
+      "title": "Intel sets sights on data center GPUs amid AI-driven infrastructure shifts",
+      "url": "https://www.computerworld.com/article/4127119/intel-sets-sights-on-data-center-gpus-amid-ai-driven-infrastructure-shifts-2.html",
       "summary": "",
       "score": 49,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:30",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67066,
-      "title": "Cloud teams are hitting maturity walls in governance, security, and AI use",
-      "url": "https://www.helpnetsecurity.com/2026/02/12/enterprise-cloud-governance-gaps-governance-security/",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:28",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67061,
-      "title": "The Trillion-Dollar Reckoning: How AI Threatens to Unravel Private Equity’s Massive SaaS Empire",
-      "url": "https://www.webpronews.com/the-trillion-dollar-reckoning-how-ai-threatens-to-unravel-private-equitys-massive-saas-empire/",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:24",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67057,
-      "title": "e& drives AI-first workforce transformation with Oracle Cloud",
-      "url": "https://www.computerweekly.com/news/366639056/e-drives-AI-first-workforce-transformation-with-Oracle-Cloud",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:22",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67053,
-      "title": "Implementing an AI Portfolio Manager. With Learning!",
-      "url": "https://quantape.substack.com/p/implementing-an-ai-portfolio-manager",
-      "summary": "",
-      "score": 80,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:20",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67054,
-      "title": "Hands-On AI Trading for Quantitative Trading: Python, QuantConnect and AWS Guide",
-      "url": "https://blog.quantinsti.com/ai-quantitative-trading-python-quantconnect-aws/",
-      "summary": "",
-      "score": 50,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:20",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67051,
-      "title": "How AI Is Changing Daily Work Workflows In Practical Ways",
-      "url": "https://bitrebels.com/technology/how-ai-is-changing-daily-work-workflows-in-practical-ways/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67047,
-      "title": "Coinbase Launches Crypto Wallets Purpose-Built For AI Agents",
-      "url": "https://cointelegraph.com/news/coinbase-launches-crypto-wallets-built-ai-agents",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:10",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67049,
-      "title": "Kyndryl Unveils Agentic AI Workflow Governance for Trusted Deployment of Mission‑Critical AI Agents",
-      "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/kyndryl-unveils-agentic-ai-workflow-governance-for-trusted-deployment-of-mission%e2%80%91critical-ai-agents/",
-      "summary": "",
-      "score": 71,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:15:10",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67037,
-      "title": "Samsung starts mass production of next-gen AI memory chip",
-      "url": "https://techxplore.com/news/2026-02-samsung-mass-production-gen-ai.html",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:14:15",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 66968,
-      "title": "How We Built Sheeter.ai to Save Hours of Excel Formula Work",
-      "url": "https://www.indiehackers.com/product/sheeter-ai?post=oztoDIfJIeh0zaHybTHy",
-      "summary": "",
-      "score": 50,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:09:24",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 66949,
-      "title": "What is Project Portfolio Management (PPM)?",
-      "url": "https://www.celoxis.com/article/what-is-project-portfolio-management",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:08:56",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 66948,
-      "title": "How to choose easy-to-learn project management software for new users",
-      "url": "https://www.wrike.com/blog/choose-easy-project-management-software-for-new-users/",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:08:22",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 66931,
-      "title": "Prompt governance is the new data governance",
-      "url": "https://www.cio.com/article/4130960/prompt-governance-is-the-new-data-governance.html",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-12",
-      "discoveredAt": "2026-02-12 13:04:20",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 66894,
-      "title": "What Is OpenClaw and How to Build AI-Powered Automation Workflows",
-      "url": "https://www.c-sharpcorner.com/article/what-is-openclaw-and-how-to-build-ai-powered-automation-workflows/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-10",
-      "discoveredAt": "2026-02-10 12:28:16",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 66893,
-      "title": "AI Agents That Execute Business Workflows (Claude Code for ERP)",
-      "url": "https://news.ycombinator.com/item?id=46955034",
-      "summary": "",
-      "score": 80,
-      "publishedDate": "2026-02-10",
-      "discoveredAt": "2026-02-10 12:28:14",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65539,
-      "title": "SMM AI Readiness: A Prescriptive AI Checklist",
-      "url": "https://www.iiot-world.com/smart-manufacturing/hybrid-manufacturing/smm-ai-readiness-prescriptive-checklist/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-05",
-      "discoveredAt": "2026-02-05 13:42:03",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65530,
-      "title": "Microsoft brings project-focused AI agents into OneDrive",
-      "url": "https://www.helpnetsecurity.com/2026/02/05/microsoft-onedrive-ai-agents/",
-      "summary": "",
-      "score": 85,
-      "publishedDate": "2026-02-05",
-      "discoveredAt": "2026-02-05 13:41:55",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 65452,
-      "title": "Wrike agents: No-code AI for supercharged productivity",
-      "url": "https://www.wrike.com/blog/wrike-ai-agents/",
-      "summary": "",
-      "score": 80,
-      "publishedDate": "2026-02-05",
-      "discoveredAt": "2026-02-05 13:37:29",
+      "publishedDate": "2026-02-04",
+      "discoveredAt": "2026-02-04 18:47:08",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -268,9 +70,9 @@
     }
   ],
   "counts": {
-    "auto": 20,
+    "auto": 2,
     "curated": 4,
-    "total": 24
+    "total": 6
   },
-  "generatedAt": "2026-02-12T15:32:20.809Z"
+  "generatedAt": "2026-02-13T08:55:01.379Z"
 }
