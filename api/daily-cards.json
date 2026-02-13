@@ -1,526 +1,58 @@
 {
-  "generated": "2026-02-12T18:16:28.111Z",
-  "date": "2026-02-12",
-  "count": 20,
+  "generated": "2026-02-13T09:31:14.805Z",
+  "date": "2026-02-13",
+  "count": 2,
   "cards": [
     {
-      "id": 67053,
-      "title": "Implementing an AI Portfolio Manager. With Learning!",
-      "url": "https://quantape.substack.com/p/implementing-an-ai-portfolio-manager",
-      "date": "2026-02-12",
-      "score": 80,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
+      "id": 65345,
+      "title": "Positron AI raises $230M at over $1B valuation to build energy-efficient AI accelerator hardware",
+      "url": "https://siliconangle.com/2026/02/04/positron-ai-raises-230m-1b-valuation-build-energy-efficient-ai-accelerator-hardware/",
+      "date": "2026-02-04",
+      "score": 49,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
       "tldr": [
-        "**AI portfolio manager designed for dynamic investment strategies and continuous learning.**",
-        "Utilizes Cloudflare Workers and D1 for real-time data processing and decision-making.",
-        "Enables automated stock selection, position sizing, and scheduled rebalancing."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Portfolio",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI portfolio manager",
-        "investment strategies",
-        "automated trading"
-      ]
-    },
-    {
-      "id": 66949,
-      "title": "What is Project Portfolio Management (PPM)?",
-      "url": "https://www.celoxis.com/article/what-is-project-portfolio-management",
-      "date": "2026-02-12",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Project Portfolio Management (PPM) enhances project oversight and resource allocation.**",
-        "PPM integrates various projects to align with strategic goals and optimize performance.",
-        "Useful for organizations managing multiple projects simultaneously."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Project Portfolio Management",
-        "PPM",
-        "project management"
-      ]
-    },
-    {
-      "id": 67049,
-      "title": "Kyndryl Unveils Agentic AI Workflow Governance for Trusted Deployment of Mission‑Critical AI Agents",
-      "url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/kyndryl-unveils-agentic-ai-workflow-governance-for-trusted-deployment-of-mission%e2%80%91critical-ai-agents/",
-      "date": "2026-02-12",
-      "score": 71,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Kyndryl's new AI governance tool enhances trust in mission-critical AI deployments.**",
-        "Focuses on workflow governance to ensure reliable AI agent operations.",
-        "Applicable to PMO for overseeing AI project management and compliance."
-      ],
-      "badges": {
-        "read_time": 13,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Kyndryl",
-        "AI governance",
-        "workflow management"
-      ]
-    },
-    {
-      "id": 66931,
-      "title": "Prompt governance is the new data governance",
-      "url": "https://www.cio.com/article/4130960/prompt-governance-is-the-new-data-governance.html",
-      "date": "2026-02-12",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Prompt governance enhances data governance practices in organizations.**",
-        "Focuses on integrating AI tools for effective data management.",
-        "Useful for PMOs looking to improve data handling and compliance."
-      ],
-      "badges": {
-        "read_time": 19,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "prompt governance",
-        "data governance",
-        "AI integration"
-      ]
-    },
-    {
-      "id": 67066,
-      "title": "Cloud teams are hitting maturity walls in governance, security, and AI use",
-      "url": "https://www.helpnetsecurity.com/2026/02/12/enterprise-cloud-governance-gaps-governance-security/",
-      "date": "2026-02-12",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Cloud teams face challenges in governance and security as they mature.**",
-        "Organizations need to address gaps in AI governance and security measures.",
-        "Effective governance frameworks are crucial for managing AI and cloud technologies."
+        "**Positron AI secures $230M funding to enhance AI accelerator hardware efficiency.**",
+        "The funding values the company at over $1 billion, indicating strong investor confidence.",
+        "This development aims to address energy consumption challenges in AI technology."
       ],
       "badges": {
         "read_time": 9,
-        "pmo_focus": "Governance",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "cloud governance",
-        "security",
-        "AI maturity"
-      ]
-    },
-    {
-      "id": 66948,
-      "title": "How to choose easy-to-learn project management software for new users",
-      "url": "https://www.wrike.com/blog/choose-easy-project-management-software-for-new-users/",
-      "date": "2026-02-12",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Wrike's project management software simplifies task management for new users.**",
-        "Designed to save time on mundane tasks, enhancing productivity.",
-        "Ideal for teams looking to streamline project workflows and improve collaboration."
-      ],
-      "badges": {
-        "read_time": 24,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "project management",
-        "Wrike",
-        "software"
-      ]
-    },
-    {
-      "id": 67051,
-      "title": "How AI Is Changing Daily Work Workflows In Practical Ways",
-      "url": "https://bitrebels.com/technology/how-ai-is-changing-daily-work-workflows-in-practical-ways/",
-      "date": "2026-02-12",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**AI tools can streamline daily workflows and enhance productivity.**",
-        "Integration of AI into routine tasks can lead to significant time savings.",
-        "AI applications can assist in automating documentation and task management."
-      ],
-      "badges": {
-        "read_time": 13,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "workflows",
-        "productivity"
-      ]
-    },
-    {
-      "id": 67054,
-      "title": "Hands-On AI Trading for Quantitative Trading: Python, QuantConnect and AWS Guide",
-      "url": "https://blog.quantinsti.com/ai-quantitative-trading-python-quantconnect-aws/",
-      "date": "2026-02-12",
-      "score": 50,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Hands-on guide for AI trading using Python, QuantConnect, and AWS.**",
-        "Learn to implement quantitative trading strategies effectively.",
-        "Ideal for traders looking to leverage AI in their trading systems."
-      ],
-      "badges": {
-        "read_time": 11,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "AI trading",
-        "QuantConnect",
-        "Python"
+        "Positron AI",
+        "funding",
+        "AI accelerator hardware"
       ]
     },
     {
-      "id": 66968,
-      "title": "How We Built Sheeter.ai to Save Hours of Excel Formula Work",
-      "url": "https://www.indiehackers.com/product/sheeter-ai?post=oztoDIfJIeh0zaHybTHy",
-      "date": "2026-02-12",
-      "score": 50,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Sheeter.ai automates Excel formula tasks, saving users hours of work.**",
-        "The tool leverages AI to streamline spreadsheet management and enhance productivity.",
-        "Ideal for professionals seeking to optimize their data handling processes."
-      ],
-      "badges": {
-        "read_time": 2,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Sheeter.ai",
-        "Excel automation",
-        "AI productivity"
-      ]
-    },
-    {
-      "id": 67069,
-      "title": "Microsoft Copilot Oversharing Data? Not Anymore. Meet Zscaler’s New Wizard",
-      "url": "https://www.zscaler.com/blogs/product-insights/microsoft-copilot-oversharing-data-not-anymore-meet-zscaler-s-new-wizard",
-      "date": "2026-02-12",
+      "id": 65247,
+      "title": "Intel sets sights on data center GPUs amid AI-driven infrastructure shifts",
+      "url": "https://www.computerworld.com/article/4127119/intel-sets-sights-on-data-center-gpus-amid-ai-driven-infrastructure-shifts-2.html",
+      "date": "2026-02-04",
       "score": 49,
       "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "Zscaler introduces a new wizard to enhance data security for Microsoft Copilot users.",
-        "The tool addresses previous data oversharing concerns effectively.",
-        "This innovation aims to streamline secure access to applications and data."
+        "Intel aims to enhance its data center GPUs in response to AI infrastructure demands.",
+        "The focus is on improving performance for AI workloads and data processing.",
+        "This move is part of a broader trend in the tech industry towards AI-driven solutions."
       ],
       "badges": {
-        "read_time": 17,
+        "read_time": 10,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "Zscaler",
-        "Microsoft Copilot",
-        "data security"
-      ]
-    },
-    {
-      "id": 67068,
-      "title": "From Experimentation to Exploitation: How Cybercriminals Are Weaponizing Google’s Own AI Tools Against the Digital World",
-      "url": "https://www.webpronews.com/from-experimentation-to-exploitation-how-cybercriminals-are-weaponizing-googles-own-ai-tools-against-the-digital-world/",
-      "date": "2026-02-12",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "Cybercriminals are leveraging Google's AI tools for malicious purposes.",
-        "The article discusses the shift from experimentation to exploitation in AI.",
-        "It highlights the risks posed by AI misuse in the digital landscape."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "cybercrime",
-        "AI tools",
-        "Google"
-      ]
-    },
-    {
-      "id": 67061,
-      "title": "The Trillion-Dollar Reckoning: How AI Threatens to Unravel Private Equity’s Massive SaaS Empire",
-      "url": "https://www.webpronews.com/the-trillion-dollar-reckoning-how-ai-threatens-to-unravel-private-equitys-massive-saas-empire/",
-      "date": "2026-02-12",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "AI advancements pose a threat to the private equity SaaS market.",
-        "The article discusses the potential disruption AI could cause in the SaaS industry.",
-        "Investors must adapt to the changing landscape influenced by AI technologies."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "private equity",
-        "SaaS"
-      ]
-    },
-    {
-      "id": 67057,
-      "title": "e& drives AI-first workforce transformation with Oracle Cloud",
-      "url": "https://www.computerweekly.com/news/366639056/e-drives-AI-first-workforce-transformation-with-Oracle-Cloud",
-      "date": "2026-02-12",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "e& is transforming its workforce with an AI-first approach using Oracle Cloud.",
-        "The initiative aims to enhance operational efficiency and employee productivity.",
-        "This transformation is part of a broader trend in leveraging AI in the workplace."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "workforce transformation",
-        "Oracle Cloud"
-      ]
-    },
-    {
-      "id": 67047,
-      "title": "Coinbase Launches Crypto Wallets Purpose-Built For AI Agents",
-      "url": "https://cointelegraph.com/news/coinbase-launches-crypto-wallets-built-ai-agents",
-      "date": "2026-02-12",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "Coinbase launches crypto wallets specifically designed for AI agents, allowing for automated trading.",
-        "Users can set controls for AI agents to manage liquidity and execute trades anytime.",
-        "This innovation aims to enhance the integration of AI in cryptocurrency management."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Coinbase",
-        "crypto wallets",
-        "AI agents"
-      ]
-    },
-    {
-      "id": 67037,
-      "title": "Samsung starts mass production of next-gen AI memory chip",
-      "url": "https://techxplore.com/news/2026-02-samsung-mass-production-gen-ai.html",
-      "date": "2026-02-12",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "Samsung begins mass production of next-gen AI memory chips, enhancing performance and efficiency.",
-        "These chips are designed to support advanced AI applications and data processing.",
-        "This development marks a significant step in AI hardware innovation."
-      ],
-      "badges": {
-        "read_time": 1,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Samsung",
-        "AI memory chip",
-        "mass production"
-      ]
-    },
-    {
-      "id": 66893,
-      "title": "AI Agents That Execute Business Workflows (Claude Code for ERP)",
-      "url": "https://news.ycombinator.com/item?id=46955034",
-      "date": "2026-02-10",
-      "score": 80,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**AI agents automate business workflows, enhancing efficiency in ERP systems.**",
-        "The system executes tasks like procurement and invoicing autonomously.",
-        "Designed for small service businesses to streamline operations."
-      ],
-      "badges": {
-        "read_time": 2,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "business workflows",
-        "ERP systems"
-      ]
-    },
-    {
-      "id": 66894,
-      "title": "What Is OpenClaw and How to Build AI-Powered Automation Workflows",
-      "url": "https://www.c-sharpcorner.com/article/what-is-openclaw-and-how-to-build-ai-powered-automation-workflows/",
-      "date": "2026-02-10",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**OpenClaw enables AI-powered automation workflows for various applications.**",
-        "Users can build custom workflows using a user-friendly interface.",
-        "Ideal for enhancing efficiency in project management tasks."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "OpenClaw",
-        "AI automation",
-        "workflow management"
-      ]
-    },
-    {
-      "id": 65530,
-      "title": "Microsoft brings project-focused AI agents into OneDrive",
-      "url": "https://www.helpnetsecurity.com/2026/02/05/microsoft-onedrive-ai-agents/",
-      "date": "2026-02-05",
-      "score": 85,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Microsoft introduces AI agents in OneDrive to enhance project management capabilities.**",
-        "These AI agents assist users in organizing and managing project-related files effectively.",
-        "Ideal for teams looking to streamline project workflows and improve collaboration."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Microsoft",
-        "OneDrive",
-        "AI agents"
-      ]
-    },
-    {
-      "id": 65452,
-      "title": "Wrike agents: No-code AI for supercharged productivity",
-      "url": "https://www.wrike.com/blog/wrike-ai-agents/",
-      "date": "2026-02-05",
-      "score": 80,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**No-code AI agents designed to enhance productivity for PMO teams.**",
-        "Integrates seamlessly with existing workflows to streamline project management tasks.",
-        "Ideal for automating routine processes and improving project delivery efficiency."
-      ],
-      "badges": {
-        "read_time": 20,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Wrike",
-        "AI agents",
-        "productivity"
-      ]
-    },
-    {
-      "id": 65539,
-      "title": "SMM AI Readiness: A Prescriptive AI Checklist",
-      "url": "https://www.iiot-world.com/smart-manufacturing/hybrid-manufacturing/smm-ai-readiness-prescriptive-checklist/",
-      "date": "2026-02-05",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**AI readiness checklist enhances strategic planning for manufacturers.**",
-        "Focuses on assessing AI capabilities and integration within smart manufacturing.",
-        "Useful for organizations aiming to leverage AI for operational efficiency."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI readiness",
-        "smart manufacturing",
-        "checklist"
+        "Intel",
+        "data center GPUs",
+        "AI infrastructure"
       ]
     }
   ]
