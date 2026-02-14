@@ -89,17 +89,6 @@
       "section": "auto"
     },
     {
-      "id": 67118,
-      "title": "How Effective Project Status Updates and Tracking Transform Team Productivity",
-      "url": "https://slack.com/blog/collaboration/top-methods-and-metrics-for-tracking-project-progress",
-      "summary": "",
-      "score": 71,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:05:34",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 67110,
       "title": "On Agent Frameworks and Agent Observability",
       "url": "https://blog.langchain.com/on-agent-frameworks-and-agent-observability/",
@@ -180,9 +169,9 @@
     }
   ],
   "counts": {
-    "auto": 12,
+    "auto": 11,
     "curated": 4,
-    "total": 16
+    "total": 15
   },
-  "generatedAt": "2026-02-14T20:33:35.132Z"
+  "generatedAt": "2026-02-14T20:36:18.018Z"
 }
