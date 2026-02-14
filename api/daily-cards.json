@@ -1,34 +1,8 @@
 {
-  "generated": "2026-02-14T16:22:59.718Z",
+  "generated": "2026-02-14T16:29:46.408Z",
   "date": "2026-02-14",
-  "count": 12,
+  "count": 11,
   "cards": [
-    {
-      "id": 67118,
-      "title": "How Effective Project Status Updates and Tracking Transform Team Productivity",
-      "url": "https://slack.com/blog/collaboration/top-methods-and-metrics-for-tracking-project-progress",
-      "date": "2026-02-13",
-      "score": 71,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Effective project status updates enhance team productivity significantly.**",
-        "Utilizing metrics for tracking project progress is crucial for team alignment.",
-        "Regular updates can lead to improved communication and project outcomes."
-      ],
-      "badges": {
-        "read_time": 28,
-        "pmo_focus": "Performance",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "project status updates",
-        "team productivity",
-        "tracking metrics"
-      ]
-    },
     {
       "id": 67105,
       "title": "Launched SmartPack: Persistent AI assistants with one paste",
@@ -56,264 +30,240 @@
       ]
     },
     {
-      "id": 67514,
-      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
-      "url": "https://arxiv.org/abs/2602.11224",
+      "id": 67742,
+      "title": "Turning down the heat: Researcher identifies better way to remove heat from AI data centers",
+      "url": "https://techxplore.com/news/2026-02-ai-centers.html",
       "date": "2026-02-13",
-      "score": 53,
+      "score": 50,
       "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "Agent-Diff introduces a new benchmarking framework for evaluating LLMs on enterprise API tasks.",
-        "The framework assesses performance based on code execution and state-diff evaluation.",
-        "It addresses variability in LLM performance due to model differences and external tool access."
+        "**Researcher identifies a better method for removing heat from AI data centers.**",
+        "The new technique aims to improve thermal management for high-performance AI infrastructure.",
+        "This innovation addresses critical cooling challenges in rapidly expanding AI data centers."
       ],
       "badges": {
-        "read_time": 5,
+        "read_time": 1,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "Agent-Diff",
-        "LLM",
-        "benchmarking"
+        "AI data centers",
+        "cooling",
+        "thermal management"
       ]
     },
     {
-      "id": 67501,
-      "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
-      "url": "https://arxiv.org/abs/2602.12036",
+      "id": 67147,
+      "title": "AI isn't getting smarter, it's getting more power hungry - and expensive",
+      "url": "https://www.zdnet.com/article/ai-isnt-getting-smarter-its-getting-more-expensive-mit-report-finds/",
       "date": "2026-02-13",
-      "score": 53,
+      "score": 50,
       "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "**Composition-RL introduces a method for creating verifiable prompts for reinforcement learning in large language models.**",
-        "The approach enhances the reliability of AI-generated responses through structured prompt composition.",
-        "This research contributes to the field of AI by improving the training processes of large language models."
+        "**An MIT report suggests AI models are becoming more power-hungry and expensive, not necessarily smarter.**",
+        "The report highlights the increasing computational and financial costs associated with developing advanced AI.",
+        "This trend raises concerns about the sustainability and accessibility of future AI advancements."
       ],
       "badges": {
-        "read_time": 4,
+        "read_time": 19,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "Composition-RL",
-        "reinforcement learning",
-        "large language models"
+        "AI",
+        "cost",
+        "energy consumption"
       ]
     },
     {
-      "id": 67463,
-      "title": "PRIME: Policy-Reinforced Iterative Multi-agent Execution for Algorithmic Reasoning in Large Language Models",
-      "url": "https://arxiv.org/abs/2602.11170",
+      "id": 67122,
+      "title": "The cure for the AI hype hangover",
+      "url": "https://www.infoworld.com/article/4131152/enterprise-ai-is-not-a-magic-key.html",
       "date": "2026-02-13",
-      "score": 53,
+      "score": 50,
       "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "PRIME introduces a new framework for enhancing algorithmic reasoning in large language models.",
-        "The approach utilizes policy reinforcement and multi-agent execution techniques.",
-        "This research addresses limitations in current language models' reasoning capabilities."
+        "**The article addresses the prevailing 'AI hype hangover' in enterprises, advocating for realistic expectations.**",
+        "It emphasizes that enterprise AI is not a 'magic key' for instant solutions or transformative results.",
+        "Businesses must adopt a grounded, strategic approach to AI implementation, moving beyond inflated promises."
       ],
       "badges": {
-        "read_time": 4,
+        "read_time": 9,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "algorithmic reasoning",
-        "large language models",
-        "multi-agent execution"
+        "AI hype",
+        "enterprise AI",
+        "AI strategy"
       ]
     },
     {
-      "id": 67423,
-      "title": "Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails",
-      "url": "https://arxiv.org/abs/2510.04860",
+      "id": 67110,
+      "title": "On Agent Frameworks and Agent Observability",
+      "url": "https://blog.langchain.com/on-agent-frameworks-and-agent-observability/",
       "date": "2026-02-13",
-      "score": 53,
+      "score": 50,
       "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "**Research identifies 'Alignment Tipping Process' where LLM agents self-evolve beyond initial alignment.**",
-        "This process explains how autonomous LLM agents can deviate from their intended objectives.",
-        "The study highlights challenges in maintaining control and safety for self-evolving AI systems."
+        "LangChain asserts agent frameworks remain vital, evolving alongside continuous LLM advancements.",
+        "The article details LangChain's three generations of agent frameworks, from chaining to tool-calling.",
+        "It emphasizes agent observability via LangSmith, crucial regardless of the chosen framework."
       ],
       "badges": {
-        "read_time": 5,
+        "read_time": 7,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "LLM agents",
-        "AI alignment",
-        "self-evolution"
+        "langchain",
+        "agent frameworks",
+        "llm agents"
       ]
     },
     {
-      "id": 67382,
-      "title": "SMaRT: Select, Mix, and ReinvenT -- A Strategy Fusion Framework for LLM-Driven Reasoning and Planning",
-      "url": "https://arxiv.org/abs/2510.18095",
+      "id": 67092,
+      "title": "Google DeepMind Introduces Aletheia: The AI Agent Moving from Math Competitions to Fully Autonomous Professional Research Discoveries",
+      "url": "https://www.marktechpost.com/2026/02/12/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/",
       "date": "2026-02-13",
-      "score": 53,
+      "score": 50,
+      "pmo_relevance": "Potential",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "Google DeepMind Introduces Aletheia: The AI Agent Moving from Math Competitions to Fully Autonomous Professional Research Discoveries"
+      ],
+      "badges": {
+        "read_time": "3 min",
+        "pmo_focus": "General",
+        "value_type": "Insight",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": []
+    },
+    {
+      "id": 67762,
+      "title": "Wesfarmers to deploy agentic AI groupwide",
+      "url": "https://www.itnews.com.au/news/wesfarmers-to-deploy-agentic-ai-groupwide-623590",
+      "date": "2026-02-13",
+      "score": 49,
       "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "SMaRT framework enhances LLM-driven reasoning and planning capabilities.",
-        "The framework allows for the selection and mixing of strategies for improved outcomes.",
-        "Potential applications include complex problem-solving across various domains."
+        "**Wesfarmers announces its intention to deploy agentic AI technologies across its entire group.**",
+        "This initiative represents a significant strategic move towards enterprise-wide AI integration.",
+        "The deployment aims to leverage advanced agentic AI capabilities throughout various business units."
       ],
       "badges": {
-        "read_time": 5,
+        "read_time": 9,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "SMaRT",
-        "LLM",
-        "reasoning"
+        "Wesfarmers",
+        "agentic AI",
+        "AI deployment"
       ]
     },
     {
-      "id": 67334,
-      "title": "Who Does What? Archetypes of Roles Assigned to LLMs During Human-AI Decision-Making",
-      "url": "https://arxiv.org/abs/2602.11924",
+      "id": 67759,
+      "title": "OpenAI engineering boss says 95 per cent staff using Codex AI Agent, terms human engineers sorcerers",
+      "url": "https://www.indiatoday.in/technology/news/story/openai-engineering-boss-says-95-per-cent-staff-using-codex-ai-agent-terms-human-engineers-sorcerers-2867704-2026-02-13",
       "date": "2026-02-13",
-      "score": 53,
+      "score": 49,
       "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "The paper introduces human-LLM archetypes for decision-making in high-stakes contexts.",
-        "It explores socio-technical interaction patterns between humans and LLMs.",
-        "The findings highlight the importance of role assignment in human-AI collaboration."
+        "**OpenAI's engineering boss reports 95% staff adoption of the Codex AI Agent.**",
+        "The high adoption rate indicates significant integration of AI tools within OpenAI's development processes.",
+        "The boss referred to human engineers as 'sorcerers,' emphasizing their augmented capabilities with AI."
       ],
       "badges": {
-        "read_time": 4,
+        "read_time": 9,
         "pmo_focus": "General",
         "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
       "keywords": [
-        "LLMs",
-        "decision-making",
-        "human-AI interaction"
+        "OpenAI",
+        "Codex",
+        "AI adoption"
       ]
     },
     {
-      "id": 67241,
-      "title": "From Instruction to Output: The Role of Prompting in Modern NLG",
-      "url": "https://arxiv.org/abs/2602.11179",
+      "id": 67754,
+      "title": "Microsoft AI CEO Mustafa Suleyman predicts White collar job automation within 18 months, says: AI agents will be able to ...",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-ai-ceo-mustafa-suleyman-predicts-white-collar-job-automation-within-18-months-says-ai-agents-will-be-able-to-/articleshow/128291088.cms",
       "date": "2026-02-13",
-      "score": 53,
-      "pmo_relevance": "None",
+      "score": 49,
+      "pmo_relevance": "Potential",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "Prompt engineering enhances the performance of Large Language Models (LLMs) in NLP tasks.",
-        "Structured natural language instructions are key to leveraging LLM capabilities effectively.",
-        "The article discusses the lack of a coherent framework for prompt engineering methods."
+        "Microsoft AI CEO Mustafa Suleyman predicts White collar job automation within 18 months, says: AI agents will be able to ..."
       ],
       "badges": {
-        "read_time": 4,
+        "read_time": "3 min",
         "pmo_focus": "General",
-        "value_type": "Industry News",
+        "value_type": "Insight",
         "implementation": "Medium",
         "price": "Free"
       },
-      "keywords": [
-        "prompt engineering",
-        "NLG",
-        "LLMs"
-      ]
+      "keywords": []
     },
     {
-      "id": 67215,
-      "title": "STAR : Bridging Statistical and Agentic Reasoning for Large Model Performance Prediction",
-      "url": "https://arxiv.org/abs/2602.12143",
+      "id": 67747,
+      "title": "How IT operations is being reimagined with AI and Automation",
+      "url": "https://cio.economictimes.indiatimes.com/news/corporate-news/reimagining-it-operations-the-revolution-of-ai-and-automation/128250798",
       "date": "2026-02-13",
-      "score": 53,
-      "pmo_relevance": "None",
+      "score": 49,
+      "pmo_relevance": "Potential",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "STAR framework improves performance prediction for large AI models by integrating statistical and agentic reasoning.",
-        "The framework combines traditional statistical methods with agentic reasoning to enhance model evaluations.",
-        "This approach aims to optimize AI model performance across various applications."
+        "How IT operations is being reimagined with AI and Automation"
       ],
       "badges": {
-        "read_time": 4,
+        "read_time": "3 min",
         "pmo_focus": "General",
-        "value_type": "Industry News",
+        "value_type": "Insight",
         "implementation": "Medium",
         "price": "Free"
       },
-      "keywords": [
-        "STAR",
-        "AI models",
-        "performance prediction"
-      ]
+      "keywords": []
     },
     {
-      "id": 67188,
-      "title": "FlowMind: Execute-Summarize for Structured Workflow Generation from LLM Reasoning",
-      "url": "https://arxiv.org/abs/2602.11782",
+      "id": 67748,
+      "title": "NTUC to roll out AI training pathways for workers at all skill levels, subsidy for AI tools",
+      "url": "https://www.channelnewsasia.com/singapore/ntuc-ai-ready-training-pathway-workers-just-transition-5928481",
       "date": "2026-02-13",
-      "score": 53,
-      "pmo_relevance": "None",
+      "score": 49,
+      "pmo_relevance": "Potential",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "**FlowMind introduces a mechanism for generating structured workflows from LLM reasoning.**",
-        "The approach models workflows as sequences of tool use for task execution.",
-        "It addresses challenges in translating complex solutions into structured workflows."
+        "NTUC to roll out AI training pathways for workers at all skill levels, subsidy for AI tools"
       ],
       "badges": {
-        "read_time": 4,
+        "read_time": "3 min",
         "pmo_focus": "General",
-        "value_type": "Industry News",
+        "value_type": "Insight",
         "implementation": "Medium",
         "price": "Free"
       },
-      "keywords": [
-        "FlowMind",
-        "LLM",
-        "workflow generation"
-      ]
-    },
-    {
-      "id": 67152,
-      "title": "The PBSAI Governance Ecosystem: A Multi-Agent AI Reference Architecture for Securing Enterprise AI Estates",
-      "url": "https://arxiv.org/abs/2602.11301",
-      "date": "2026-02-13",
-      "score": 53,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "The article discusses a multi-agent AI reference architecture for securing enterprise AI estates.",
-        "It emphasizes the integration of AI models, agents, and security tooling in enterprise environments.",
-        "The framework aims to enhance governance and security for complex AI systems."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI governance",
-        "multi-agent systems",
-        "enterprise AI"
-      ]
+      "keywords": []
     }
   ]
 }
