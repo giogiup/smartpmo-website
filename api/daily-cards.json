@@ -1,8 +1,34 @@
 {
-  "generated": "2026-02-14T16:29:46.408Z",
+  "generated": "2026-02-14T20:07:17.354Z",
   "date": "2026-02-14",
-  "count": 11,
+  "count": 12,
   "cards": [
+    {
+      "id": 67118,
+      "title": "How Effective Project Status Updates and Tracking Transform Team Productivity",
+      "url": "https://slack.com/blog/collaboration/top-methods-and-metrics-for-tracking-project-progress",
+      "date": "2026-02-13",
+      "score": 71,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Effective project status updates enhance team productivity significantly.**",
+        "Utilizing metrics for tracking project progress is crucial for team alignment.",
+        "Regular updates can lead to improved communication and project outcomes."
+      ],
+      "badges": {
+        "read_time": 28,
+        "pmo_focus": "Performance",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "project status updates",
+        "team productivity",
+        "tracking metrics"
+      ]
+    },
     {
       "id": 67105,
       "title": "Launched SmartPack: Persistent AI assistants with one paste",
