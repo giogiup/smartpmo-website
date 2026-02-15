@@ -1,6 +1,39 @@
 {
   "latestIntelligence": [
     {
+      "id": 67995,
+      "title": "The A3 Handoff Canvas: Six Questions That Turn AI Delegation Into a Repeatable Workflow",
+      "url": "https://age-of-product.com/a3-handoff-canvas/",
+      "summary": "",
+      "score": 71,
+      "publishedDate": "2026-02-15",
+      "discoveredAt": "2026-02-15 13:58:13",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67965,
+      "title": "Introducing Markdown for Agents",
+      "url": "https://blog.cloudflare.com/markdown-for-agents/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-15",
+      "discoveredAt": "2026-02-15 13:57:03",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67971,
+      "title": "How Workers powers our internal maintenance scheduling pipeline",
+      "url": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
+      "summary": "",
+      "score": 71,
+      "publishedDate": "2026-02-15",
+      "discoveredAt": "2026-02-15 13:57:03",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 67889,
       "title": "Workflow Automation for Teams: Processes, Tools & Best Practices",
       "url": "https://clickup.com/blog/workflow-automation/",
@@ -180,9 +213,9 @@
     }
   ],
   "counts": {
-    "auto": 12,
+    "auto": 15,
     "curated": 4,
-    "total": 16
+    "total": 19
   },
-  "generatedAt": "2026-02-15T12:30:19.315Z"
+  "generatedAt": "2026-02-15T14:07:57.172Z"
 }

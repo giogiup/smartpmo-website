@@ -1,8 +1,86 @@
 {
-  "generated": "2026-02-15T12:30:19.167Z",
+  "generated": "2026-02-15T14:07:57.168Z",
   "date": "2026-02-15",
-  "count": 12,
+  "count": 15,
   "cards": [
+    {
+      "id": 67995,
+      "title": "The A3 Handoff Canvas: Six Questions That Turn AI Delegation Into a Repeatable Workflow",
+      "url": "https://age-of-product.com/a3-handoff-canvas/",
+      "date": "2026-02-15",
+      "score": 71,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The A3 Handoff Canvas provides a structured approach for delegating tasks to AI.**",
+        "It utilizes six key questions to ensure clarity and effectiveness in AI assignments.",
+        "The framework aims to transform AI delegation into a consistent and repeatable workflow."
+      ],
+      "badges": {
+        "read_time": 23,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI delegation",
+        "A3 canvas",
+        "workflow"
+      ]
+    },
+    {
+      "id": 67971,
+      "title": "How Workers powers our internal maintenance scheduling pipeline",
+      "url": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
+      "date": "2026-02-15",
+      "score": 71,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Cloudflare built an internal maintenance scheduling pipeline powered by Cloudflare Workers.**",
+        "The system automates the scheduling and execution of critical infrastructure maintenance tasks.",
+        "This internal solution enhances reliability and efficiency for Cloudflare's global network."
+      ],
+      "badges": {
+        "read_time": 17,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Cloudflare Workers",
+        "maintenance scheduling",
+        "automation"
+      ]
+    },
+    {
+      "id": 67965,
+      "title": "Introducing Markdown for Agents",
+      "url": "https://blog.cloudflare.com/markdown-for-agents/",
+      "date": "2026-02-15",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Cloudflare introduces Markdown support, enabling agents to format communications for improved clarity and structure.",
+        "This feature allows agents to use bolding, italics, lists, and code blocks for more effective information exchange.",
+        "Enhances internal communication and documentation, which could assist PMO teams in standardizing project updates and knowledge sharing."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Knowledge",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Cloudflare",
+        "Markdown",
+        "communication"
+      ]
+    },
     {
       "id": 67889,
       "title": "Workflow Automation for Teams: Processes, Tools & Best Practices",
