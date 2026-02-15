@@ -1,6 +1,17 @@
 {
   "latestIntelligence": [
     {
+      "id": 67889,
+      "title": "Workflow Automation for Teams: Processes, Tools & Best Practices",
+      "url": "https://clickup.com/blog/workflow-automation/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-15",
+      "discoveredAt": "2026-02-15 07:29:07",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 67762,
       "title": "Wesfarmers to deploy agentic AI groupwide",
       "url": "https://www.itnews.com.au/news/wesfarmers-to-deploy-agentic-ai-groupwide-623590",
@@ -169,9 +180,9 @@
     }
   ],
   "counts": {
-    "auto": 11,
+    "auto": 12,
     "curated": 4,
-    "total": 15
+    "total": 16
   },
-  "generatedAt": "2026-02-14T20:36:18.018Z"
+  "generatedAt": "2026-02-15T12:30:19.315Z"
 }

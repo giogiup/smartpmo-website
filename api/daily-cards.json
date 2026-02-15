@@ -1,8 +1,34 @@
 {
-  "generated": "2026-02-14T20:36:17.982Z",
-  "date": "2026-02-14",
-  "count": 11,
+  "generated": "2026-02-15T12:30:19.167Z",
+  "date": "2026-02-15",
+  "count": 12,
   "cards": [
+    {
+      "id": 67889,
+      "title": "Workflow Automation for Teams: Processes, Tools & Best Practices",
+      "url": "https://clickup.com/blog/workflow-automation/",
+      "date": "2026-02-15",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The article outlines workflow automation for teams, covering processes, tools, and best practices.**",
+        "It details how automating repetitive tasks can significantly boost team efficiency and communication.",
+        "These automation principles are relevant to project teams seeking to optimize operational workflows and task management."
+      ],
+      "badges": {
+        "read_time": 50,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "workflow automation",
+        "team productivity",
+        "process improvement"
+      ]
+    },
     {
       "id": 67105,
       "title": "Launched SmartPack: Persistent AI assistants with one paste",
@@ -139,19 +165,25 @@
       "url": "https://www.marktechpost.com/2026/02/12/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/",
       "date": "2026-02-13",
       "score": 50,
-      "pmo_relevance": "Potential",
+      "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "Google DeepMind Introduces Aletheia: The AI Agent Moving from Math Competitions to Fully Autonomous Professional Research Discoveries"
+        "**Google DeepMind introduces Aletheia, an AI agent for autonomous professional research discoveries.**",
+        "Aletheia represents a significant advancement from solving math competitions to complex research tasks.",
+        "This AI agent aims to perform fully autonomous research, potentially accelerating scientific breakthroughs."
       ],
       "badges": {
-        "read_time": "3 min",
+        "read_time": 32,
         "pmo_focus": "General",
-        "value_type": "Insight",
+        "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
-      "keywords": []
+      "keywords": [
+        "Google DeepMind",
+        "Aletheia",
+        "AI Agent"
+      ]
     },
     {
       "id": 67762,
@@ -211,19 +243,25 @@
       "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-ai-ceo-mustafa-suleyman-predicts-white-collar-job-automation-within-18-months-says-ai-agents-will-be-able-to-/articleshow/128291088.cms",
       "date": "2026-02-13",
       "score": 49,
-      "pmo_relevance": "Potential",
+      "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "Microsoft AI CEO Mustafa Suleyman predicts White collar job automation within 18 months, says: AI agents will be able to ..."
+        "**Microsoft AI CEO Mustafa Suleyman predicts significant white-collar job automation.**",
+        "This widespread automation is expected to occur within the next 18 months.",
+        "The prediction emphasizes the rapidly advancing capabilities of AI agents in professional roles."
       ],
       "badges": {
-        "read_time": "3 min",
+        "read_time": 16,
         "pmo_focus": "General",
-        "value_type": "Insight",
+        "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
-      "keywords": []
+      "keywords": [
+        "Microsoft",
+        "AI",
+        "automation"
+      ]
     },
     {
       "id": 67747,
@@ -231,19 +269,25 @@
       "url": "https://cio.economictimes.indiatimes.com/news/corporate-news/reimagining-it-operations-the-revolution-of-ai-and-automation/128250798",
       "date": "2026-02-13",
       "score": 49,
-      "pmo_relevance": "Potential",
+      "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "How IT operations is being reimagined with AI and Automation"
+        "**AI and automation are fundamentally transforming how IT operations are managed.**",
+        "These technologies aim to enhance efficiency, reduce manual intervention, and optimize processes.",
+        "The article explores the ongoing revolution in IT operations driven by intelligent automation."
       ],
       "badges": {
-        "read_time": "3 min",
+        "read_time": 8,
         "pmo_focus": "General",
-        "value_type": "Insight",
+        "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
-      "keywords": []
+      "keywords": [
+        "IT operations",
+        "AI",
+        "automation"
+      ]
     },
     {
       "id": 67748,
@@ -251,19 +295,25 @@
       "url": "https://www.channelnewsasia.com/singapore/ntuc-ai-ready-training-pathway-workers-just-transition-5928481",
       "date": "2026-02-13",
       "score": 49,
-      "pmo_relevance": "Potential",
+      "pmo_relevance": "None",
       "pmo_category": "AI_GENERAL",
       "tldr": [
-        "NTUC to roll out AI training pathways for workers at all skill levels, subsidy for AI tools"
+        "**NTUC announces AI training pathways for workers across all skill levels.**",
+        "Subsidies will be provided for AI tools to support this initiative.",
+        "The program aims to facilitate a just transition for workers in the evolving job market."
       ],
       "badges": {
-        "read_time": "3 min",
+        "read_time": 16,
         "pmo_focus": "General",
-        "value_type": "Insight",
+        "value_type": "Industry News",
         "implementation": "Medium",
         "price": "Free"
       },
-      "keywords": []
+      "keywords": [
+        "NTUC",
+        "AI training",
+        "worker transition"
+      ]
     }
   ]
 }
