@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-15T14:07:57.168Z",
-  "date": "2026-02-15",
-  "count": 15,
+  "generated": "2026-02-16T14:18:52.396Z",
+  "date": "2026-02-16",
+  "count": 20,
   "cards": [
+    {
+      "id": 68054,
+      "title": "I built an AI secretary that lives in your WhatsApp — and it's not just another chatbot",
+      "url": "https://www.indiehackers.com/post/i-built-an-ai-secretary-that-lives-in-your-whatsapp-and-its-not-just-another-chatbot-d9b1bdc8f6",
+      "date": "2026-02-16",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**irel is an AI secretary for WhatsApp that automates tasks beyond simple chatbot interactions.**",
+        "It provides features like email auto-triaging, smart reminders, and daily briefs for schedules and priorities.",
+        "The tool enables 'Jobs' for autonomous, recurring delegations, assisting with personal and professional organization."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Tools",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI assistant",
+        "WhatsApp",
+        "task automation"
+      ]
+    },
+    {
+      "id": 68216,
+      "title": "Milan-based Contents secures €5.9 million for AI workflow platform, sets up Doha hub for Middle East expansion",
+      "url": "https://www.eu-startups.com/2026/02/milan-based-contents-secures-e5-9-million-for-ai-workflow-platform-sets-up-doha-hub-for-middle-east-expansion/",
+      "date": "2026-02-16",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Milan-based Contents secured €5.9 million to advance its AI workflow platform.**",
+        "The company is expanding into the Middle East with a new hub in Doha.",
+        "The investment supports scaling AI-powered solutions, relevant for optimizing various business processes."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Tools",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "workflow",
+        "funding"
+      ]
+    },
     {
       "id": 67995,
       "title": "The A3 Handoff Canvas: Six Questions That Turn AI Delegation Into a Repeatable Workflow",
@@ -108,6 +160,32 @@
       ]
     },
     {
+      "id": 68031,
+      "title": "How Mid-Size Businesses Can Unlock Productivity with Agentic Automation",
+      "url": "https://www.technosip.com/uncategorized/how-mid-size-businesses-can-unlock-productivity-with-agentic-automation/",
+      "date": "2026-02-15",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Mid-size businesses can unlock significant productivity gains through agentic automation implementation.**",
+        "Agentic automation utilizes AI agents to autonomously perform tasks and achieve business objectives.",
+        "This technology can streamline operations, automate repetitive tasks, and enhance strategic decision-making."
+      ],
+      "badges": {
+        "read_time": 14,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "agentic automation",
+        "productivity",
+        "mid-size businesses"
+      ]
+    },
+    {
       "id": 67105,
       "title": "Launched SmartPack: Persistent AI assistants with one paste",
       "url": "https://www.indiehackers.com/product/smartpack?post=DlzBh95SLsuBKrmmGGC3",
@@ -131,6 +209,58 @@
         "SmartPack",
         "AI assistants",
         "productivity"
+      ]
+    },
+    {
+      "id": 67514,
+      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
+      "url": "https://arxiv.org/abs/2602.11224",
+      "date": "2026-02-13",
+      "score": 53,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "Agent-Diff introduces a new benchmarking framework for evaluating LLMs on enterprise API tasks.",
+        "The framework assesses performance based on code execution and state-diff evaluation.",
+        "It addresses variability in LLM performance due to model differences and external tool access."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Agent-Diff",
+        "LLM",
+        "benchmarking"
+      ]
+    },
+    {
+      "id": 67501,
+      "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
+      "url": "https://arxiv.org/abs/2602.12036",
+      "date": "2026-02-13",
+      "score": 53,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Composition-RL introduces a method for creating verifiable prompts for reinforcement learning in large language models.**",
+        "The approach enhances the reliability of AI-generated responses through structured prompt composition.",
+        "This research contributes to the field of AI by improving the training processes of large language models."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Composition-RL",
+        "reinforcement learning",
+        "large language models"
       ]
     },
     {

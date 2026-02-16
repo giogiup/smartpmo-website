@@ -1,6 +1,39 @@
 {
   "latestIntelligence": [
     {
+      "id": 68216,
+      "title": "Milan-based Contents secures €5.9 million for AI workflow platform, sets up Doha hub for Middle East expansion",
+      "url": "https://www.eu-startups.com/2026/02/milan-based-contents-secures-e5-9-million-for-ai-workflow-platform-sets-up-doha-hub-for-middle-east-expansion/",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-16",
+      "discoveredAt": "2026-02-16 14:06:42",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 68054,
+      "title": "I built an AI secretary that lives in your WhatsApp — and it's not just another chatbot",
+      "url": "https://www.indiehackers.com/post/i-built-an-ai-secretary-that-lives-in-your-whatsapp-and-its-not-just-another-chatbot-d9b1bdc8f6",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-16",
+      "discoveredAt": "2026-02-16 13:56:19",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 68031,
+      "title": "How Mid-Size Businesses Can Unlock Productivity with Agentic Automation",
+      "url": "https://www.technosip.com/uncategorized/how-mid-size-businesses-can-unlock-productivity-with-agentic-automation/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-02-15",
+      "discoveredAt": "2026-02-16 13:53:46",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 67995,
       "title": "The A3 Handoff Canvas: Six Questions That Turn AI Delegation Into a Repeatable Workflow",
       "url": "https://age-of-product.com/a3-handoff-canvas/",
@@ -111,6 +144,28 @@
       "section": "auto"
     },
     {
+      "id": 67514,
+      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
+      "url": "https://arxiv.org/abs/2602.11224",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:36",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 67501,
+      "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
+      "url": "https://arxiv.org/abs/2602.12036",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-13",
+      "discoveredAt": "2026-02-13 09:15:34",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 67147,
       "title": "AI isn't getting smarter, it's getting more power hungry - and expensive",
       "url": "https://www.zdnet.com/article/ai-isnt-getting-smarter-its-getting-more-expensive-mit-report-finds/",
@@ -213,9 +268,9 @@
     }
   ],
   "counts": {
-    "auto": 15,
+    "auto": 20,
     "curated": 4,
-    "total": 19
+    "total": 24
   },
-  "generatedAt": "2026-02-15T14:07:57.172Z"
+  "generatedAt": "2026-02-16T14:18:52.467Z"
 }
