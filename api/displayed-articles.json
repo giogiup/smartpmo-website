@@ -1,6 +1,28 @@
 {
   "latestIntelligence": [
     {
+      "id": 69225,
+      "title": "Solink introduces AI Agents designed to act on video and business data in real time",
+      "url": "https://siliconangle.com/2026/02/18/solink-introduces-ai-agents-designed-act-video-business-data-real-time/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-18",
+      "discoveredAt": "2026-02-19 11:12:02",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 68477,
+      "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-18",
+      "discoveredAt": "2026-02-19 11:03:17",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 68216,
       "title": "Milan-based Contents secures €5.9 million for AI workflow platform, sets up Doha hub for Middle East expansion",
       "url": "https://www.eu-startups.com/2026/02/milan-based-contents-secures-e5-9-million-for-ai-workflow-platform-sets-up-doha-hub-for-middle-east-expansion/",
@@ -74,28 +96,6 @@
       "score": 70,
       "publishedDate": "2026-02-15",
       "discoveredAt": "2026-02-15 07:29:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67762,
-      "title": "Wesfarmers to deploy agentic AI groupwide",
-      "url": "https://www.itnews.com.au/news/wesfarmers-to-deploy-agentic-ai-groupwide-623590",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:19:35",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67759,
-      "title": "OpenAI engineering boss says 95 per cent staff using Codex AI Agent, terms human engineers sorcerers",
-      "url": "https://www.indiatoday.in/technology/news/story/openai-engineering-boss-says-95-per-cent-staff-using-codex-ai-agent-terms-human-engineers-sorcerers-2867704-2026-02-13",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:19:33",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -272,5 +272,5 @@
     "curated": 4,
     "total": 24
   },
-  "generatedAt": "2026-02-16T14:18:52.467Z"
+  "generatedAt": "2026-02-19T11:36:06.333Z"
 }
