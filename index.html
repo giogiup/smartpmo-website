@@ -700,7 +700,6 @@
 
           <!-- Vote Buttons (B-04) -->
           <div class="vote-bar" data-article-id="${normalizedCard.id}" aria-label="Rate this article">
-            <span class="vote-bar__label">Useful?</span>
             <button class="vote-btn vote-btn--up" aria-label="Useful" aria-pressed="false">
               <span class="vote-icon">👍</span>
               <span class="vote-count vote-count--up">0</span>
@@ -865,7 +864,6 @@
 
           <!-- Vote Buttons (B-04) -->
           <div class="vote-bar" data-article-id="${article.id}" aria-label="Rate this article">
-            <span class="vote-bar__label">Useful?</span>
             <button class="vote-btn vote-btn--up" aria-label="Useful" aria-pressed="false">
               <span class="vote-icon">👍</span>
               <span class="vote-count vote-count--up">0</span>
@@ -1122,28 +1120,27 @@ via SmartPMO.ai`;
     const API_BASE = 'http://localhost:3334';
     const CARD_CONTAINER_ID = 'auto-articles-grid';
 
-    // ── State ────────────────────────────────────────────────────────────────
-    let apiReachable = true;
-
     // ── Helpers ──────────────────────────────────────────────────────────────
     function getVoteBars() {
       return Array.from(document.querySelectorAll('.vote-bar[data-article-id]'));
     }
 
+    // F-3B: No is-disabled — both buttons always clickable; aria-pressed marks current vote
     function applyVoteState(voteBar, userVote, upvotes, downvotes) {
-      const upBtn   = voteBar.querySelector('.vote-btn--up');
-      const downBtn = voteBar.querySelector('.vote-btn--down');
-      const upCount = voteBar.querySelector('.vote-count--up');
+      const upBtn     = voteBar.querySelector('.vote-btn--up');
+      const downBtn   = voteBar.querySelector('.vote-btn--down');
+      const upCount   = voteBar.querySelector('.vote-count--up');
       const downCount = voteBar.querySelector('.vote-count--down');
 
       if (upCount)   upCount.textContent   = upvotes;
       if (downCount) downCount.textContent = downvotes;
 
       if (userVote) {
-        const pressedBtn   = userVote === 'up' ? upBtn   : downBtn;
-        const disabledBtn  = userVote === 'up' ? downBtn : upBtn;
-        if (pressedBtn)  { pressedBtn.setAttribute('aria-pressed', 'true');  }
-        if (disabledBtn) { disabledBtn.setAttribute('aria-pressed', 'false'); disabledBtn.classList.add('is-disabled'); }
+        const pressedBtn = userVote === 'up' ? upBtn   : downBtn;
+        const otherBtn   = userVote === 'up' ? downBtn : upBtn;
+        if (pressedBtn) pressedBtn.setAttribute('aria-pressed', 'true');
+        // F-3B: other button stays enabled — user can switch vote
+        if (otherBtn)   { otherBtn.setAttribute('aria-pressed', 'false'); otherBtn.classList.remove('is-disabled'); }
       } else {
         if (upBtn)   { upBtn.setAttribute('aria-pressed', 'false');   upBtn.classList.remove('is-disabled');   }
         if (downBtn) { downBtn.setAttribute('aria-pressed', 'false'); downBtn.classList.remove('is-disabled'); }
@@ -1154,11 +1151,23 @@ via SmartPMO.ai`;
       voteBar.classList.add('vote-bar--hidden');
     }
 
-    // ── Load vote counts for all visible cards (batch sequential) ────────────
+    // ── F-1: Health-check-first approach ─────────────────────────────────────
     async function loadAllVotes() {
       const bars = getVoteBars();
       if (!bars.length) return;
 
+      // Step 1: probe /health with a short timeout
+      try {
+        const healthRes = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(2000) });
+        if (!healthRes.ok) throw new Error(`HTTP ${healthRes.status}`);
+      } catch (err) {
+        // API unreachable — hide ALL bars uniformly
+        console.warn('[VotesModule] API unreachable, hiding all vote bars:', err.message);
+        bars.forEach(hideVoteBar);
+        return;
+      }
+
+      // Step 2: API is up — load each article's votes
       for (const bar of bars) {
         const articleId = bar.dataset.articleId;
         if (!articleId) continue;
@@ -1168,11 +1177,8 @@ via SmartPMO.ai`;
           const data = await res.json();
           applyVoteState(bar, data.userVote, data.upvotes, data.downvotes);
         } catch (err) {
-          if (!apiReachable) break; // API down — stop trying
+          // Individual failure — leave bar visible at 0/0, do not break loop
           console.warn(`[VotesModule] Could not load votes for article ${articleId}:`, err.message);
-          hideVoteBar(bar);
-          apiReachable = false;
-          break;
         }
       }
     }
@@ -1182,28 +1188,34 @@ via SmartPMO.ai`;
       const articleId = voteBar.dataset.articleId;
       const vote      = clickedBtn.classList.contains('vote-btn--up') ? 'up' : 'down';
 
-      const upBtn    = voteBar.querySelector('.vote-btn--up');
-      const downBtn  = voteBar.querySelector('.vote-btn--down');
-      const upCount  = voteBar.querySelector('.vote-count--up');
+      const upBtn     = voteBar.querySelector('.vote-btn--up');
+      const downBtn   = voteBar.querySelector('.vote-btn--down');
+      const upCount   = voteBar.querySelector('.vote-count--up');
       const downCount = voteBar.querySelector('.vote-count--down');
 
-      // Optimistic update
+      // Capture previous state for rollback
       const prevUpPressed   = upBtn?.getAttribute('aria-pressed') === 'true';
       const prevDownPressed = downBtn?.getAttribute('aria-pressed') === 'true';
       const prevUpCount     = parseInt(upCount?.textContent || '0', 10);
       const prevDownCount   = parseInt(downCount?.textContent || '0', 10);
 
+      // F-3B: Optimistic update — account for vote switching
+      // If user previously voted the OTHER direction, subtract that count too
+      let newUpCount   = prevUpCount;
+      let newDownCount = prevDownCount;
+
       if (vote === 'up') {
-        upBtn?.setAttribute('aria-pressed', 'true');
-        downBtn?.setAttribute('aria-pressed', 'false');
-        downBtn?.classList.add('is-disabled');
-        if (upCount) upCount.textContent = prevUpCount + 1;
+        newUpCount += 1;
+        if (prevDownPressed) newDownCount = Math.max(0, newDownCount - 1); // switching from down
       } else {
-        downBtn?.setAttribute('aria-pressed', 'true');
-        upBtn?.setAttribute('aria-pressed', 'false');
-        upBtn?.classList.add('is-disabled');
-        if (downCount) downCount.textContent = prevDownCount + 1;
+        newDownCount += 1;
+        if (prevUpPressed) newUpCount = Math.max(0, newUpCount - 1); // switching from up
       }
+
+      upBtn?.setAttribute('aria-pressed', vote === 'up' ? 'true' : 'false');
+      downBtn?.setAttribute('aria-pressed', vote === 'down' ? 'true' : 'false');
+      if (upCount)   upCount.textContent   = newUpCount;
+      if (downCount) downCount.textContent = newDownCount;
 
       try {
         const res  = await fetch(`${API_BASE}/vote`, {
@@ -1214,16 +1226,14 @@ via SmartPMO.ai`;
         });
         const data = await res.json();
 
-        if (res.status === 409 || res.status === 200) {
-          // Confirm with server counts and lock state
+        if (res.status === 200 || res.status === 409) {
+          // Confirm with server-authoritative counts
           applyVoteState(voteBar, data.userVote, data.upvotes, data.downvotes);
         } else {
-          // Unexpected — revert optimistic update
           console.error('[VotesModule] Unexpected response:', res.status, data);
           applyVoteState(voteBar, prevUpPressed ? 'up' : prevDownPressed ? 'down' : null, prevUpCount, prevDownCount);
         }
       } catch (err) {
-        // Network error — revert optimistic update
         console.error('[VotesModule] Vote failed:', err.message);
         applyVoteState(voteBar, prevUpPressed ? 'up' : prevDownPressed ? 'down' : null, prevUpCount, prevDownCount);
       }
@@ -1234,8 +1244,8 @@ via SmartPMO.ai`;
       container.addEventListener('click', (e) => {
         const btn = e.target.closest('.vote-btn');
         if (!btn) return;
-        if (btn.classList.contains('is-disabled')) return;
-        if (btn.getAttribute('aria-pressed') === 'true') return; // already voted
+        // F-3B: removed is-disabled guard — buttons always clickable
+        if (btn.getAttribute('aria-pressed') === 'true') return; // no-op: clicking own current vote
 
         const voteBar = btn.closest('.vote-bar');
         if (!voteBar) return;

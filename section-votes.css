@@ -15,15 +15,6 @@
   border-top: 1px solid var(--glass-border);
 }
 
-.vote-bar__label {
-  font-size: 0.7rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-right: 0.25rem;
-  white-space: nowrap;
-}
-
 /* ── Buttons ─────────────────────────────────────────────────────────────────  */
 .vote-btn {
   display: inline-flex;
@@ -68,13 +59,6 @@
 
 .vote-btn--down[aria-pressed="true"] .vote-icon {
   filter: none;
-}
-
-/* ── Disabled / locked state (other button after voting) ─────────────────────  */
-.vote-btn.is-disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-  pointer-events: none;
 }
 
 /* ── Icon + count ────────────────────────────────────────────────────────────  */
