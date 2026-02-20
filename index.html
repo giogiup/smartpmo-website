@@ -1213,7 +1213,7 @@ via SmartPMO.ai`;
         // F-3B: removed is-disabled guard — buttons always clickable
         if (btn.getAttribute('aria-pressed') === 'true') return; // no-op: clicking own current vote
 
-        const voteBar = btn.closest('.vote-bar');
+        const voteBar = btn.closest('.card-footer-a');
         if (!voteBar) return;
 
         handleVoteClick(voteBar, btn);
@@ -1235,7 +1235,7 @@ via SmartPMO.ai`;
       if (!mainGrid) return;
 
       const observer = new MutationObserver((mutations, obs) => {
-        const bars = mainGrid.querySelectorAll('.vote-bar[data-article-id]');
+        const bars = mainGrid.querySelectorAll('.card-footer-a[data-article-id]');
         if (bars.length > 0) {
           obs.disconnect();
           loadAllVotes();
@@ -1244,7 +1244,7 @@ via SmartPMO.ai`;
       observer.observe(mainGrid, { childList: true, subtree: false });
 
       // Also try immediately (if cards already rendered by the time init runs)
-      if (mainGrid.querySelectorAll('.vote-bar[data-article-id]').length > 0) {
+      if (mainGrid.querySelectorAll('.card-footer-a[data-article-id]').length > 0) {
         observer.disconnect();
         loadAllVotes();
       }
