@@ -978,9 +978,7 @@ footer {
    ============================================================================ */
 
 .pmo-relevance-badge {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  position: static; /* Inline in badge row, not absolute */
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -1040,7 +1038,7 @@ footer {
 
 .card-header {
   position: relative;
-  padding: 32px 24px 16px 24px;
+  padding: 18px 18px 12px 18px;
 }
 
 .card-body {
@@ -1068,18 +1066,89 @@ footer {
   padding: 12px 24px 16px 24px;
 }
 
+/* Option A: hide old separate zones */
+.card-metadata,
+.card-tags,
+.card-date {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .card-header {
-    padding: 28px 16px 12px 16px;
+    padding: 14px 12px 10px 12px;
   }
 
   .card-body,
   .card-metadata,
   .card-tags,
   .card-date {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
+}
+
+/* ============================================================================
+   OPTION A CARD LAYOUT — Badge row + Unified footer
+   ============================================================================ */
+
+.card-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+/* Option A unified footer */
+.card-footer-a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-top: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.015);
+  margin-top: auto;
+}
+
+.card-footer-a .footer-votes {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.card-footer-a .footer-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+.card-footer-a .footer-share {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* Vote button sizing in footer */
+.card-footer-a .vote-btn {
+  height: 32px;
+  padding: 0 10px;
+}
+
+/* Share icon sizing in footer (icon-only, no text label) */
+.card-footer-a .share-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: unset;
+}
+
+.card-footer-a .share-btn span {
+  display: none; /* Hide text labels in footer */
 }
 
 /* ============================================================================
@@ -1093,13 +1162,13 @@ footer {
   letter-spacing: -0.02em;
   color: #FFFFFF;
   margin: 0;
-  padding-right: 140px; /* Space for badge */
+  padding-right: 0; /* Badge now inline above title */
 }
 
 @media (max-width: 768px) {
   .card-title {
     font-size: 20px;
-    padding-right: 120px;
+    padding-right: 0;
   }
 }
 
@@ -1143,10 +1212,10 @@ footer {
   font-weight: 700;
 }
 
-/* First bullet - BOLDED */
+/* First bullet - plain weight (same as other bullets) */
 .card-tldr li:first-child {
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 400;
+  color: var(--text-muted);
 }
 
 /* ============================================================================
@@ -1327,19 +1396,8 @@ footer {
     gap: 1rem;
   }
 
-  .article-card {
-    padding: 1.25rem;
-  }
-
-  /* PMO badge moves below title on mobile */
-  .pmo-relevance-badge {
-    position: static;
-    width: fit-content;
-    margin-bottom: 0.5rem;
-  }
-
-  .card-title {
-    padding-right: 0;
+  .card-badge-row {
+    gap: 6px;
   }
 }
 
