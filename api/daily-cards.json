@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-19T11:36:05.737Z",
-  "date": "2026-02-19",
+  "generated": "2026-02-20T04:25:28.401Z",
+  "date": "2026-02-20",
   "count": 20,
   "cards": [
+    {
+      "id": 69225,
+      "title": "Solink introduces AI Agents designed to act on video and business data in real time",
+      "url": "https://siliconangle.com/2026/02/18/solink-introduces-ai-agents-designed-act-video-business-data-real-time/",
+      "date": "2026-02-18",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Solink unveils new AI Agents capable of real-time analysis and action on video and business data.**",
+        "These agents are designed to process diverse data streams, enabling immediate operational responses.",
+        "The technology aims to enhance operational efficiency and decision-making through automated insights."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Tools",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Solink",
+        "AI Agents",
+        "real-time data"
+      ]
+    },
+    {
+      "id": 68477,
+      "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+      "date": "2026-02-18",
+      "score": 53,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Amazon shares real-world lessons on effectively evaluating AI agents and agentic systems.**",
+        "The article details challenges and strategies in developing robust evaluation frameworks for AI agents.",
+        "It provides insights from Amazon's experience in building and deploying complex agentic AI systems."
+      ],
+      "badges": {
+        "read_time": 23,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "evaluation",
+        "agentic systems"
+      ]
+    },
     {
       "id": 68054,
       "title": "I built an AI secretary that lives in your WhatsApp — and it's not just another chatbot",
@@ -391,58 +443,6 @@
         "Google DeepMind",
         "Aletheia",
         "AI Agent"
-      ]
-    },
-    {
-      "id": 67762,
-      "title": "Wesfarmers to deploy agentic AI groupwide",
-      "url": "https://www.itnews.com.au/news/wesfarmers-to-deploy-agentic-ai-groupwide-623590",
-      "date": "2026-02-13",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Wesfarmers announces its intention to deploy agentic AI technologies across its entire group.**",
-        "This initiative represents a significant strategic move towards enterprise-wide AI integration.",
-        "The deployment aims to leverage advanced agentic AI capabilities throughout various business units."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Wesfarmers",
-        "agentic AI",
-        "AI deployment"
-      ]
-    },
-    {
-      "id": 67759,
-      "title": "OpenAI engineering boss says 95 per cent staff using Codex AI Agent, terms human engineers sorcerers",
-      "url": "https://www.indiatoday.in/technology/news/story/openai-engineering-boss-says-95-per-cent-staff-using-codex-ai-agent-terms-human-engineers-sorcerers-2867704-2026-02-13",
-      "date": "2026-02-13",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**OpenAI's engineering boss reports 95% staff adoption of the Codex AI Agent.**",
-        "The high adoption rate indicates significant integration of AI tools within OpenAI's development processes.",
-        "The boss referred to human engineers as 'sorcerers,' emphasizing their augmented capabilities with AI."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "OpenAI",
-        "Codex",
-        "AI adoption"
       ]
     },
     {

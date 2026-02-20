@@ -1,6 +1,17 @@
 {
   "latestIntelligence": [
     {
+      "id": 69475,
+      "title": "The Sound of Data: Why Your Voice is the Hardest Problem in AI",
+      "url": "https://hackernoon.com/the-sound-of-data-why-your-voice-is-the-hardest-problem-in-ai?source=rss",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-20",
+      "discoveredAt": "2026-02-20 04:08:23",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 69225,
       "title": "Solink introduces AI Agents designed to act on video and business data in real time",
       "url": "https://siliconangle.com/2026/02/18/solink-introduces-ai-agents-designed-act-video-business-data-real-time/",
@@ -96,17 +107,6 @@
       "score": 70,
       "publishedDate": "2026-02-15",
       "discoveredAt": "2026-02-15 07:29:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67754,
-      "title": "Microsoft AI CEO Mustafa Suleyman predicts White collar job automation within 18 months, says: AI agents will be able to ...",
-      "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-ai-ceo-mustafa-suleyman-predicts-white-collar-job-automation-within-18-months-says-ai-agents-will-be-able-to-/articleshow/128291088.cms",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:19:26",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -272,5 +272,5 @@
     "curated": 4,
     "total": 24
   },
-  "generatedAt": "2026-02-19T11:36:06.333Z"
+  "generatedAt": "2026-02-20T04:25:29.028Z"
 }
