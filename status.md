@@ -2,11 +2,9 @@
 
 ---
 
-## Current Status: ⚠️ REGRESSION DEPLOYED — SPEC READY
+## Current Status: 🔴 SITE DOWN — ZERO CSS LOADING
 
-**Live bug:** Skeleton + real cards both visible (desktop and mobile)  
-**Spec to fix:** `SPEC-MOBILE-FIX-v2.md`  
-**Action required:** Claude Code to implement spec and deploy
+**Spec ready for Claude Code:** `SPEC-SITE-RECOVERY-v1.md`
 
 ---
 
@@ -14,34 +12,50 @@
 
 | # | Severity | Status | Description |
 |---|----------|--------|-------------|
-| 1 | CRITICAL | ⚠️ Spec written | Skeleton loader + real cards both visible — `display:grid !important` prevents JS from hiding either grid |
-| 2 | HIGH | ⚠️ Spec written | Mobile horizontal overflow — hero Y-axis, grid columns (v1 fix deployed but masked by issue 1) |
+| 1 | CATASTROPHIC | 🔴 Spec ready | All 6 CSS hrefs corrupted to `href="=679d476"` — zero styles load on any device |
+| 2 | HIGH | 🔴 Spec ready | `push-bust.ps1` regex will re-corrupt hrefs on every future run |
+| 3 | MEDIUM | ✅ Already clean | `mobile-fixes.css` has no `display: grid !important` — no action needed |
+| 4 | HIGH | ⏳ Post-recovery | Mobile horizontal overflow — hero Y-axis left:-95px overflows on phones ≤430px |
 
 ---
 
-## Issue History
+## Issue Detail
 
-### Issue 1 — Skeleton cards visible with real cards (REGRESSION, introduced v1)
+### Issue 1 — CSS hrefs destroyed
 
-**Spec:** `SPEC-MOBILE-FIX-v2.md`  
-**Root cause:** `mobile-fixes.css` uses `display: grid !important` on `.insights-grid`. CSS `!important` in stylesheets overrides inline `style` attributes. JS sets `element.style.display = 'none'` (inline) to hide/show skeleton vs real cards — `!important` defeats this. Both skeleton and real-cards divs share `.insights-grid` class and both render simultaneously.  
-**Fix required:** Remove `display: grid !important` from all three breakpoint blocks in `mobile-fixes.css`. Base `display: grid` without `!important` already exists in `styles-v2.css`.
+`push-bust.ps1` two-pass regex consumed the CSS filenames, leaving only `=679d476` in each href. Browser requests that as a relative URL — 404s — so zero styles load.
 
-### Issue 2 — Mobile horizontal overflow (original bug)
+Committed state of `index.html`:
+```html
+<link rel="stylesheet" href="=679d476">   ← was styles-v2.css
+<link rel="stylesheet" href="=679d476">   ← was hero.css
+<link rel="stylesheet" href="=679d476">   ← was header-styles.css
+<link rel="stylesheet" href="=679d476">   ← was assessment-flow.css
+<link rel="stylesheet" href="=679d476">   ← was section-votes.css
+<link rel="stylesheet" href="=679d476">   ← was mobile-fixes.css
+```
 
-**Spec:** `SPEC-MOBILE-FIX-v1.md` (partially deployed)  
-**Root cause:** `hero.css` `.hero-y-axis { left: -95px }` overflows viewport on phones ≤430px. Multiple conflicting `minmax()` grid rules in `styles-v2.css`. Cache-busting regex in push script didn't match plain CSS hrefs.  
-**Fix deployed:** `mobile-fixes.css` created, `push-bust.ps1` updated. Effectiveness masked by Issue 1 regression.
+### Issue 2 — push-bust.ps1 fragile regex
+
+Two-pass approach: first pass targets `filename?v=existing`, second pass targets bare `filename`. On the previous run, the second pass matched `filename` inside an already-versioned href and stripped the filename, leaving `=SHA`. Cannot self-heal once corrupted.
+
+### Issue 3 — Skeleton loader (resolved)
+
+`mobile-fixes.css` no longer contains `display: grid !important`. No action required.
+
+### Issue 4 — Mobile horizontal overflow (pending)
+
+`hero.css` positions `.hero-y-axis` at `left: -95px` on mobile. On a 390px viewport this pushes ~71px past the left edge. `mobile-fixes.css` contains overrides (`display: none` on axes, constrained quadrant grid) but cannot be verified until Issue 1 is resolved and CSS is actually loading.
 
 ---
 
 ## Deployment History
 
-| Date | Commit | Spec | Description | Result |
-|------|--------|------|-------------|--------|
-| 2026-02-20 | 47e49c8 | — | styles-v2.css mobile CSS edits | ❌ No effect — cache not busted |
-| 2026-02-20 | TBD | v1 | mobile-fixes.css created, push-bust.ps1 fixed | ❌ Regression: skeleton visible on all viewports |
-| PENDING | — | v2 | Remove display:grid !important from mobile-fixes.css | ⏳ Spec ready, not implemented |
+| Date | Description | Result |
+|------|-------------|--------|
+| 2026-02-20 | Direct edits to `styles-v2.css` | ❌ No effect — cache not busted |
+| 2026-02-20 | Created `mobile-fixes.css`, updated `push-bust.ps1` | ❌ Regression — hrefs corrupted, skeleton stuck |
+| PENDING | `SPEC-SITE-RECOVERY-v1.md` | ⏳ Awaiting Claude Code implementation |
 
 ---
 
@@ -54,12 +68,13 @@
 | `header-styles.css` | Header | Do not edit |
 | `assessment-flow.css` | Modals | Do not edit |
 | `section-votes.css` | Vote buttons | Do not edit |
-| `mobile-fixes.css` | **All mobile overrides** | Edit here only |
+| `mobile-fixes.css` | All mobile overrides | Edit here only |
 
-**Rule:** Never use `display !important` on any class that JS also controls via inline `style`. JS inline style cannot override `!important`.
+**Rule:** Never use `display !important` on any class JS also controls via inline `style`.
 
 ---
 
-## Pending (Post-fix)
+## Pending Post-Recovery
 
+- [ ] Verify mobile overflow resolved once CSS loads
 - [ ] Create `og-image.png` (1200×630) and re-add og:image meta tags

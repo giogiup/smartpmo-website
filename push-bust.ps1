@@ -2,28 +2,38 @@ param(
     [string]$msg = "deploy"
 )
 
-# stage everything
+# Stage and commit everything
 git add .
-
-# commit
 git commit -m $msg
 
-# grab short SHA
+# Get short SHA
 $sha = (git rev-parse --short HEAD)
 
-# bust ALL css file references (with or without existing ?v= param)
-$html = Get-Content index.html -Raw
-$cssFiles = @('styles-v2.css', 'hero.css', 'header-styles.css', 'assessment-flow.css', 'section-votes.css', 'mobile-fixes.css')
-foreach ($css in $cssFiles) {
-    $escaped = [regex]::Escape($css)
-    $html = $html -replace "${escaped}\?v=[^""]*", "$css?v=$sha"
-    $html = $html -replace "${escaped}(?!\?v=)", "$css?v=$sha"
-}
-$html | Set-Content index.html
+# Robust CSS cache-busting:
+# Matches the ENTIRE href="..." value containing the css filename anywhere.
+# Handles: bare filename, already-versioned, or any previously corrupted state.
+$html = Get-Content index.html -Raw -Encoding UTF8
 
-# amend commit with updated HTML
+$cssFiles = @(
+    'styles-v2.css',
+    'hero.css',
+    'header-styles.css',
+    'assessment-flow.css',
+    'section-votes.css',
+    'mobile-fixes.css'
+)
+
+foreach ($css in $cssFiles) {
+    $escapedCss = [regex]::Escape($css)
+    # Match href="...FILENAME..." (entire value) and replace wholesale
+    $html = $html -replace ('href="[^"]*' + $escapedCss + '[^"]*"'), ('href="' + $css + '?v=' + $sha + '"')
+}
+
+$html | Set-Content index.html -Encoding UTF8
+
+# Amend commit with updated index.html
 git add index.html
 git commit --amend --no-edit
 
-# push
+# Push
 git push
