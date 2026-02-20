@@ -1,7 +1,7 @@
 /*
  * mobile-fixes.css — Loaded LAST, overrides all other CSS for mobile layout
  * DO NOT EDIT other CSS files. All mobile overrides live here.
- * SPEC: SPEC-MOBILE-FIX-v1.md
+ * SPEC: SPEC-MOBILE-FIX-v1.md + SPEC-MOBILE-FIX-v2.md
  */
 
 /* ── Prevent all horizontal overflow ── */
@@ -23,7 +23,6 @@ html, body {
 /* ── Article grid: single column on mobile ── */
 @media (max-width: 639px) {
   .insights-grid {
-    display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 1rem !important;
     width: 100% !important;
@@ -34,7 +33,6 @@ html, body {
 /* ── Article grid: two columns on tablet ── */
 @media (min-width: 640px) and (max-width: 1023px) {
   .insights-grid {
-    display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1.25rem !important;
     width: 100% !important;
@@ -45,7 +43,6 @@ html, body {
 /* ── Article grid: three columns on desktop ── */
 @media (min-width: 1024px) {
   .insights-grid {
-    display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 1.5rem !important;
   }
