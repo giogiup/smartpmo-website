@@ -142,3 +142,73 @@ html, body {
     flex-wrap: wrap !important;
   }
 }
+
+/* ── Maintenance banner: body offset already handled inline in index.html ── */
+
+/* ── Hero: stack vertically on mobile ── */
+@media (max-width: 767px) {
+  .hero-section {
+    overflow: hidden !important;
+  }
+
+  .hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.5rem !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-copy {
+    order: 1 !important;
+    width: 100% !important;
+  }
+
+  .hero-visual-wrapper {
+    order: 2 !important;
+    width: 100% !important;
+  }
+}
+
+/* ── Card footer: always visible on mobile, flex wrap if needed ── */
+@media (max-width: 767px) {
+  .card-footer-a {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 10px 12px !important;
+    min-height: 48px !important;
+  }
+
+  .footer-votes {
+    display: flex !important;
+    gap: 5px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .footer-share {
+    display: flex !important;
+    gap: 4px !important;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+  }
+
+  /* Share buttons: ensure minimum tappable size on mobile */
+  .card-footer-a .share-btn {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Vote buttons: minimum tappable size */
+  .card-footer-a .vote-btn {
+    min-height: 34px !important;
+    padding: 0 8px !important;
+  }
+}

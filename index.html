@@ -113,12 +113,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-v2.css?v=32129f3">
-  <link rel="stylesheet" href="hero.css?v=32129f3">
-  <link rel="stylesheet" href="header-styles.css?v=32129f3">
-  <link rel="stylesheet" href="assessment-flow.css?v=32129f3">
-  <link rel="stylesheet" href="section-votes.css?v=32129f3">
-  <link rel="stylesheet" href="mobile-fixes.css?v=32129f3">
+  <link rel="stylesheet" href="styles-v2.css?v=5168e21">
+  <link rel="stylesheet" href="hero.css?v=5168e21">
+  <link rel="stylesheet" href="header-styles.css?v=5168e21">
+  <link rel="stylesheet" href="assessment-flow.css?v=5168e21">
+  <link rel="stylesheet" href="section-votes.css?v=5168e21">
+  <link rel="stylesheet" href="mobile-fixes.css?v=5168e21">
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -172,6 +172,49 @@
   </style>
 </head>
 <body>
+
+<!-- ── Maintenance Banner ── -->
+<div id="maintenance-banner" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #1a1a1a;
+  text-align: center;
+  padding: 0.6rem 3rem 0.6rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+">
+  🔧 We're making improvements — some features may be temporarily unavailable. Thanks for your patience.
+  <button onclick="document.getElementById('maintenance-banner').style.display='none'" style="
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #1a1a1a;
+    line-height: 1;
+    padding: 0.25rem;
+  " aria-label="Dismiss">×</button>
+</div>
+<style>
+  /* Banner offset: push fixed header below banner */
+  .site-header { top: 38px !important; }
+  body { padding-top: calc(70px + 38px) !important; }
+  @media (max-width: 639px) {
+    .site-header { top: 52px !important; }
+    body { padding-top: calc(70px + 52px) !important; }
+    #maintenance-banner { font-size: 0.8rem !important; padding: 0.75rem 3rem 0.75rem 0.75rem !important; }
+  }
+</style>
 
   <!-- Header Component (V4) -->
   <header class="site-header">
@@ -1212,7 +1255,11 @@ via SmartPMO.ai`;
     }
 
     function hideVoteBar(voteBar) {
-      voteBar.style.display = 'none';
+      // Only hide the vote buttons — keep the footer and share buttons visible
+      const votesEl = voteBar.querySelector('.footer-votes');
+      const dividerEl = voteBar.querySelector('.footer-divider');
+      if (votesEl) votesEl.style.display = 'none';
+      if (dividerEl) dividerEl.style.display = 'none';
     }
 
     // ── F-1: Health-check-first approach ─────────────────────────────────────
@@ -1397,5 +1444,6 @@ via SmartPMO.ai`;
 
 </body>
 </html>
+
 
 
