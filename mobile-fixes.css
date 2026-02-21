@@ -221,13 +221,15 @@ html, body {
 
 /* Footer centre date — Option A */
 .footer-date {
-  flex: 0 1 auto;
-  padding: 0 10px;
-  text-align: center;
+  flex-shrink: 0;
   font-size: 0.7rem;
   color: var(--color-text-muted, rgba(176, 196, 222, 0.6));
   font-style: italic;
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
+}
+
+.card-footer-a {
+  flex-wrap: nowrap;
 }
