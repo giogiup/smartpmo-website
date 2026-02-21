@@ -1140,7 +1140,7 @@ footer {
 }
 
 /* Share icon sizing in footer (icon-only, no text label) */
-.card-footer-a .share-btn {
+.card-footer-a .shr-icon {
   width: 30px;
   height: 30px;
   padding: 0;
@@ -1150,7 +1150,7 @@ footer {
   min-width: unset;
 }
 
-.card-footer-a .share-btn span {
+.card-footer-a .shr-icon span {
   display: none; /* Hide text labels in footer */
 }
 
@@ -1560,7 +1560,7 @@ footer {
   }
 }
 
-.share-btn {
+.shr-icon {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -1577,180 +1577,180 @@ footer {
   flex-shrink: 1;
 }
 
-.share-btn:active {
+.shr-icon:active {
   transform: translateY(0);
 }
 
 /* LinkedIn - #0A66C2 */
-.share-btn.btn-linkedin {
+.shr-icon.btn-linkedin {
   border-color: rgba(10, 102, 194, 0.3);
 }
-.share-btn.btn-linkedin svg {
+.shr-icon.btn-linkedin svg {
   color: rgba(10, 102, 194, 0.6);
 }
-.share-btn.btn-linkedin:hover {
+.shr-icon.btn-linkedin:hover {
   background: #0A66C2;
   border-color: #0A66C2;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
 }
-.share-btn.btn-linkedin:hover svg {
+.shr-icon.btn-linkedin:hover svg {
   color: white;
 }
 
 /* X/Twitter - #000000 */
-.share-btn.btn-twitter {
+.shr-icon.btn-twitter {
   border-color: rgba(255, 255, 255, 0.2);
 }
-.share-btn.btn-twitter svg {
+.shr-icon.btn-twitter svg {
   color: rgba(255, 255, 255, 0.6);
 }
-.share-btn.btn-twitter:hover {
+.shr-icon.btn-twitter:hover {
   background: #000000;
   border-color: #000000;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
-.share-btn.btn-twitter:hover svg {
+.shr-icon.btn-twitter:hover svg {
   color: white;
 }
 
 /* Email - #6B7280 */
-.share-btn.btn-email {
+.shr-icon.btn-email {
   border-color: rgba(107, 114, 128, 0.3);
 }
-.share-btn.btn-email svg {
+.shr-icon.btn-email svg {
   color: rgba(107, 114, 128, 0.6);
 }
-.share-btn.btn-email:hover {
+.shr-icon.btn-email:hover {
   background: #6B7280;
   border-color: #6B7280;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3);
 }
-.share-btn.btn-email:hover svg {
+.shr-icon.btn-email:hover svg {
   color: white;
 }
 
 /* Copy Link - #FF6B00 */
-.share-btn.btn-copy {
+.shr-icon.btn-copy {
   border-color: rgba(255, 107, 0, 0.3);
 }
-.share-btn.btn-copy svg {
+.shr-icon.btn-copy svg {
   color: rgba(255, 107, 0, 0.6);
 }
-.share-btn.btn-copy:hover {
+.shr-icon.btn-copy:hover {
   background: #FF6B00;
   border-color: #FF6B00;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
 }
-.share-btn.btn-copy:hover svg {
+.shr-icon.btn-copy:hover svg {
   color: white;
 }
 
 /* WhatsApp - #25D366 */
-.share-btn.btn-whatsapp {
+.shr-icon.btn-whatsapp {
   border-color: rgba(37, 211, 102, 0.3);
 }
-.share-btn.btn-whatsapp svg {
+.shr-icon.btn-whatsapp svg {
   color: rgba(37, 211, 102, 0.6);
 }
-.share-btn.btn-whatsapp:hover {
+.shr-icon.btn-whatsapp:hover {
   background: #25D366;
   border-color: #25D366;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
-.share-btn.btn-whatsapp:hover svg {
+.shr-icon.btn-whatsapp:hover svg {
   color: white;
 }
 
 /* Ensure hovers work inside article-card */
-.article-card .share-btn.btn-linkedin:hover {
+.article-card .shr-icon.btn-linkedin:hover {
   background: #0A66C2 !important;
   border-color: #0A66C2 !important;
   color: white !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3) !important;
 }
-.article-card .share-btn.btn-linkedin:hover svg {
+.article-card .shr-icon.btn-linkedin:hover svg {
   color: white !important;
 }
 
-.article-card .share-btn.btn-twitter:hover {
+.article-card .shr-icon.btn-twitter:hover {
   background: #000000 !important;
   border-color: #000000 !important;
   color: white !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
 }
-.article-card .share-btn.btn-twitter:hover svg {
+.article-card .shr-icon.btn-twitter:hover svg {
   color: white !important;
 }
 
-.article-card .share-btn.btn-email:hover {
+.article-card .shr-icon.btn-email:hover {
   background: #6B7280 !important;
   border-color: #6B7280 !important;
   color: white !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(107, 114, 128, 0.3) !important;
 }
-.article-card .share-btn.btn-email:hover svg {
+.article-card .shr-icon.btn-email:hover svg {
   color: white !important;
 }
 
-.article-card .share-btn.btn-copy:hover {
+.article-card .shr-icon.btn-copy:hover {
   background: #FF6B00 !important;
   border-color: #FF6B00 !important;
   color: white !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3) !important;
 }
-.article-card .share-btn.btn-copy:hover svg {
+.article-card .shr-icon.btn-copy:hover svg {
   color: white !important;
 }
 
-.article-card .share-btn.btn-whatsapp:hover {
+.article-card .shr-icon.btn-whatsapp:hover {
   background: #25D366 !important;
   border-color: #25D366 !important;
   color: white !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
 }
-.article-card .share-btn.btn-whatsapp:hover svg {
+.article-card .shr-icon.btn-whatsapp:hover svg {
   color: white !important;
 }
 
 /* Legacy support */
-.share-btn.linkedin-primary {
+.shr-icon.linkedin-primary {
   background: rgba(10, 102, 194, 0.15);
   border-color: rgba(10, 102, 194, 0.3);
 }
-.share-btn.linkedin-primary:hover {
+.shr-icon.linkedin-primary:hover {
   background: #0A66C2;
   border-color: #0A66C2;
   color: white;
   box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
 }
-.share-btn.success {
+.shr-icon.success {
   background: rgba(16, 185, 129, 0.15);
   border-color: rgba(16, 185, 129, 0.3);
   color: #10b981;
 }
 
-.share-btn svg {
+.shr-icon svg {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
 }
 
-.share-btn span {
+.shr-icon span {
   display: none;
   white-space: nowrap;
 }
@@ -1766,11 +1766,11 @@ footer {
 
 @media (min-width: 768px) {
   /* Hide text for all buttons on desktop - icon only */
-  .share-btn span {
+  .shr-icon span {
     display: none;
   }
 
-  .share-btn {
+  .shr-icon {
     min-width: auto;
   }
 }
@@ -1780,7 +1780,7 @@ footer {
     gap: 6px;
     padding: 12px;
   }
-  .share-btn {
+  .shr-icon {
     flex: 1;
     justify-content: center;
     padding: 10px 8px;

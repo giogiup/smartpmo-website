@@ -174,13 +174,13 @@ html, body {
   gap: 3px !important;
 }
 /* Compact share buttons in footer */
-.card-footer-a .share-btn {
+.card-footer-a .shr-icon {
   width: 26px !important;
   height: 26px !important;
   min-width: 26px !important;
   padding: 0 !important;
 }
-.card-footer-a .share-btn svg {
+.card-footer-a .shr-icon svg {
   width: 15px !important;
   height: 15px !important;
 }
@@ -224,12 +224,12 @@ html, body {
     padding: 8px 10px !important;
     min-height: 40px !important;
   }
-  .card-footer-a .share-btn {
+  .card-footer-a .shr-icon {
     width: 32px !important;
     height: 32px !important;
     min-width: 32px !important;
   }
-  .card-footer-a .share-btn svg {
+  .card-footer-a .shr-icon svg {
     width: 17px !important;
     height: 17px !important;
   }
