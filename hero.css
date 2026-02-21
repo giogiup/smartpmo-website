@@ -43,8 +43,8 @@
 
 .hero-band-1 {
   text-align: center;
-  padding: 2.5rem 2rem 0.75rem;
-  max-width: 900px;
+  padding: 1rem 2rem 0.75rem;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   animation: hero-fade-up 0.6s ease-out both;
@@ -145,6 +145,7 @@
   border-radius: 16px;
   position: relative;
   transform: translateZ(0);
+  overflow: visible;
   box-shadow:
     0 0 60px rgba(6, 182, 212, 0.08),
     0 0 120px rgba(139, 92, 246, 0.06);
@@ -160,7 +161,7 @@
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   transform: translateZ(0);
   will-change: transform, opacity;
 }
@@ -327,45 +328,54 @@
   50% { opacity: 1; }
 }
 
-/* Tooltip (Desktop Hover) */
+/* Tooltip (Desktop Hover) — floating card over grid */
 .hero-tooltip {
   position: absolute;
-  inset: 0;
-  background: rgba(10,14,26,0.85);
+  background: rgba(10, 14, 26, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 2px solid currentColor;
-  border-radius: inherit;
-  padding: 1.25rem;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #fff;
-  z-index: 20;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #e0e7ff;
+  z-index: 50;
   display: none;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  max-width: 280px;
+  text-align: left;
+  width: 320px;
+  max-height: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  overflow: visible;
 }
 
 .hero-tooltip.hero-active {
-  display: flex;
+  display: block;
 }
 
-.hero-tooltip.hero-q1 {
-  border-color: rgba(6,182,212,0.6);
+/* Q1 (top-left): tooltip anchored at top-left, extends right and down */
+.hero-quad.hero-q1 .hero-tooltip {
+  top: 0;
+  left: 0;
 }
 
-.hero-tooltip.hero-q2 {
-  border-color: rgba(139,92,246,0.6);
+/* Q2 (top-right): tooltip anchored at top-right, extends left */
+.hero-quad.hero-q2 .hero-tooltip {
+  top: 0;
+  right: 0;
 }
 
-.hero-tooltip.hero-q3 {
-  border-color: rgba(107,114,128,0.6);
+/* Q3 (bottom-left): tooltip anchored at bottom-left, extends right and up */
+.hero-quad.hero-q3 .hero-tooltip {
+  bottom: 0;
+  left: 0;
 }
 
-.hero-tooltip.hero-q4 {
-  border-color: rgba(245,158,11,0.6);
+/* Q4 (bottom-right): tooltip anchored at bottom-right, extends left and up */
+.hero-quad.hero-q4 .hero-tooltip {
+  bottom: 0;
+  right: 0;
 }
 
 /* Mobile: Tap-to-expand accordion tooltip */
@@ -512,7 +522,7 @@
 
 @media (max-width: 768px) {
   .hero-band-1 {
-    padding: 2.5rem 1.5rem 0.5rem;
+    padding: 1rem 1.5rem 0.5rem;
   }
 
   .hero-headline {
