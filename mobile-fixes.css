@@ -93,12 +93,6 @@ html, body {
     display: none !important;
   }
 
-  /* Hero content padding */
-  .hero-content {
-    padding: 0 1rem !important;
-    box-sizing: border-box !important;
-  }
-
   /* Hero section itself */
   .hero-section {
     overflow: hidden !important;
@@ -192,28 +186,13 @@ html, body {
 
 /* ── Maintenance banner: body offset already handled inline in index.html ── */
 
-/* ── Hero: stack vertically on mobile ── */
+/* ── Hero bands: ensure proper stacking on mobile ── */
 @media (max-width: 767px) {
   .hero-section {
     overflow: hidden !important;
   }
 
-  .hero-content {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 1.5rem !important;
-    padding: 0 1rem !important;
-    box-sizing: border-box !important;
-  }
-
-  .hero-copy {
-    order: 1 !important;
-    width: 100% !important;
-  }
-
   .hero-visual-wrapper {
-    order: 2 !important;
     width: 100% !important;
   }
 }

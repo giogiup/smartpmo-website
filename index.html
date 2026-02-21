@@ -113,12 +113,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-v2.css?v=8ba3767">
-  <link rel="stylesheet" href="hero.css?v=8ba3767">
-  <link rel="stylesheet" href="header-styles.css?v=8ba3767">
-  <link rel="stylesheet" href="assessment-flow.css?v=8ba3767">
-  <link rel="stylesheet" href="section-votes.css?v=8ba3767">
-  <link rel="stylesheet" href="mobile-fixes.css?v=8ba3767">
+  <link rel="stylesheet" href="styles-v2.css?v=73b89f8">
+  <link rel="stylesheet" href="hero.css?v=73b89f8">
+  <link rel="stylesheet" href="header-styles.css?v=73b89f8">
+
+  <link rel="stylesheet" href="section-votes.css?v=73b89f8">
+  <link rel="stylesheet" href="mobile-fixes.css?v=73b89f8">
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -141,9 +141,6 @@
       body {
         overflow-x: hidden !important;
         max-width: 100vw !important;
-      }
-      .hero-content {
-        overflow: hidden !important;
       }
       .emailoctopus-form-wrapper > * {
         max-width: calc(100vw - 40px) !important;
@@ -252,12 +249,11 @@
       <nav class="site-header-nav">
         <a href="#latest-intelligence" class="site-header-nav-link">Latest Intelligence</a>
         <a href="#strategic-insights" class="site-header-nav-link">Strategic Insights</a>
-        <a href="#signup" class="site-header-nav-link">Newsletter</a>
         <a href="#blog" class="site-header-nav-link">Blog</a>
-        <button class="site-header-cta-button" onclick="HeroAssessment.openModal()">
+        <a href="/assessment" class="site-header-cta-button">
           <span>Take Assessment</span>
-          <span>→</span>
-        </button>
+          <span>&rarr;</span>
+        </a>
       </nav>
 
       <!-- Mobile Menu Toggle -->
@@ -275,35 +271,41 @@
     <nav class="site-header-mobile-nav">
       <a href="#latest-intelligence" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Latest Intelligence</a>
       <a href="#strategic-insights" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Strategic Insights</a>
-      <a href="#signup" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Newsletter</a>
       <a href="#blog" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Blog</a>
-      <button class="site-header-mobile-cta" onclick="HeaderMenu.close(); HeroAssessment.openModal()">
+      <a href="/assessment" class="site-header-mobile-cta" onclick="HeaderMenu.close()">
         <span>Take Assessment</span>
-        <span>→</span>
-      </button>
+        <span>&rarr;</span>
+      </a>
     </nav>
   </div>
 
-  <!-- HERO SECTION - MODULAR -->
+  <!-- HERO SECTION - LAYOUT B (Stacked Narrative) -->
   <section class="hero-section">
-    <div class="hero-content">
 
-      <!-- LEFT: Copy -->
-      <div class="hero-copy">
-        <div class="hero-number-big">52%</div>
-        <div class="hero-number-label">OF PMOS</div>
-        <h1 class="hero-headline">
-          are stuck in<br>
-          <span class="hero-headline-emphasis">AI pilot purgatory</span>
-        </h1>
-        <p class="hero-subheadline">Where does your PMO stand on the AI adoption curve?</p>
-        <button class="hero-btn-primary" onclick="HeroAssessment.openModal()">
-          <span>Take 30-Second Assessment</span>
-          <span>→</span>
-        </button>
+    <!-- Band 1: Headline -->
+    <div class="hero-band-1">
+      <h1 class="hero-headline">How Smart is Your PMO at AI?</h1>
+      <p class="hero-subheadline">Every day, 8.5 million articles are published online.<br>We find the ones that matter for PMO practitioners.</p>
+    </div>
+
+    <!-- Band 2: Copy + Quadrant Grid -->
+    <div class="hero-band-2">
+
+      <!-- Left: Value prop + Assessment CTA -->
+      <div class="hero-band-2-copy">
+        <p class="hero-body">
+          SmartPMO.ai scans thousands of articles daily and uses AI to surface the insights at the intersection of artificial intelligence and project management. No noise. No irrelevant content. Just the articles, tools, and techniques that PMO practitioners can actually use.
+        </p>
+        <p class="hero-assessment-prompt">
+          Take the 15-question assessment to find your PMO's AI quadrant &mdash; and get a personalised action plan to move forward.
+        </p>
+        <a href="/assessment" class="hero-btn-primary">
+          <span>Take the Assessment</span>
+          <span>&rarr;</span>
+        </a>
       </div>
 
-      <!-- RIGHT: Quadrant Grid -->
+      <!-- Right: Quadrant Grid -->
       <div class="hero-visual-wrapper">
 
         <div class="hero-quadrant-grid">
@@ -338,9 +340,9 @@
                onmouseenter="HeroAssessment.showTooltip('q1')"
                onmouseleave="HeroAssessment.hideTooltip('q1')"
                onclick="HeroAssessment.handleQuadrantClick('q1')">
-            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip hero-q1">Strategic AI users who pick high-value use cases and deploy thoughtfully.</div>
+            <div class="hero-tooltip hero-q1">You haven't rolled AI out widely, but the use cases you've chosen are delivering measurable results. You're strategic and selective &mdash; picking high-value applications and proving ROI before scaling. The risk now is staying small when you've already proven the model works.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="20" cy="20" r="8"/>
               <path d="M12 36 Q12 28, 20 28 Q28 28, 28 36"/>
@@ -360,9 +362,9 @@
                onmouseenter="HeroAssessment.showTooltip('q2')"
                onmouseleave="HeroAssessment.hideTooltip('q2')"
                onclick="HeroAssessment.handleQuadrantClick('q2')">
-            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip hero-q2">AI is deeply embedded across the entire PMO - it's the operating system.</div>
+            <div class="hero-tooltip hero-q2">AI is woven into how your PMO plans, executes, monitors, and reports. You have governance, metrics, and leadership sees the PMO as a strategic partner. Only 6% of PMOs reach this level. Your challenge is staying ahead as the landscape shifts monthly.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="32" cy="32" r="20"/>
               <path d="M32 12 Q32 22, 32 32 Q32 42, 32 52" stroke-width="2.5"/>
@@ -379,9 +381,9 @@
                onmouseenter="HeroAssessment.showTooltip('q3')"
                onmouseleave="HeroAssessment.hideTooltip('q3')"
                onclick="HeroAssessment.handleQuadrantClick('q3')">
-            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip hero-q3">Still relying on traditional tools and processes without systematic AI use.</div>
+            <div class="hero-tooltip hero-q3">Your PMO runs on manual processes, spreadsheets, and established routines. AI hasn't entered the picture in any meaningful way yet. You're not behind &mdash; most PMOs were here 18 months ago. But the gap between AI-enabled PMOs and traditional ones is widening fast.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="12" y="12" width="40" height="40" rx="3"/>
               <line x1="26" y1="12" x2="26" y2="52"/>
@@ -401,9 +403,9 @@
                onmouseenter="HeroAssessment.showTooltip('q4')"
                onmouseleave="HeroAssessment.hideTooltip('q4')"
                onclick="HeroAssessment.handleQuadrantClick('q4')">
-            <div class="hero-tap-indicator">ℹ️</div>
+            <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip hero-q4">High AI usage but scattered pilots without clear value or strategic direction.</div>
+            <div class="hero-tooltip hero-q4">Your team has jumped into AI &mdash; ChatGPT, Copilot, transcription tools &mdash; but it's scattered experimentation. Individual productivity improves, but leadership can't see the impact. You're in pilot purgatory: lots of activity, no proven business value. 52% of PMOs are stuck here.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="18" cy="24" r="6"/>
               <path d="M12 38 Q12 32, 18 32 Q24 32, 24 38"/>
@@ -451,103 +453,36 @@
       </div>
 
     </div>
-  </section>
 
-  <!-- Hero Modal -->
-  <div class="hero-modal-overlay" id="heroModalOverlay" onclick="HeroAssessment.closeModalIfClickOutside(event)">
-    <div class="hero-modal" onclick="event.stopPropagation()">
-      <div class="hero-modal-header">
-        <div class="hero-modal-title">PMO AI Assessment</div>
-        <div class="hero-modal-subtitle">3 quick questions</div>
-      </div>
-      <div id="heroQuestionContainer"></div>
-    </div>
-  </div>
+    <!-- Band 3: Newsletter + Quarterly Report -->
+    <div class="hero-band-3">
 
-  <!-- Hero Result Modal (Mobile) -->
-  <div class="hero-result-modal" id="heroResultModal">
-    <svg class="hero-result-icon-large" id="heroResultIconLarge" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></svg>
-    <div class="hero-result-title" id="heroResultTitle"></div>
-    <div class="hero-result-percentage" id="heroResultPercentage"></div>
-    <div class="hero-result-description" id="heroResultDescription"></div>
-    <button class="hero-btn-result-cta" onclick="HeroAssessment.closeResultModal()">See Your Position on Matrix →</button>
-  </div>
-
-  <!-- Hero Bottom Sheet (Mobile) -->
-  <div class="hero-bottom-sheet" id="heroBottomSheet">
-    <div class="hero-drag-handle"></div>
-    <button class="hero-close-sheet" onclick="HeroAssessment.closeBottomSheet()">×</button>
-    <div class="hero-bottom-sheet-content" id="heroBottomSheetContent"></div>
-  </div>
-
-  <!-- Result Popup (Centered) - V4 -->
-  <div class="hero-result-backdrop" id="heroResultBackdrop"></div>
-  <div class="hero-result-popup" id="heroResultPopup">
-    <h2 class="hero-result-title" id="resultTitle"></h2>
-    <p class="hero-result-subtitle" id="resultSubtitle"></p>
-    <p class="hero-result-desc" id="resultDesc"></p>
-
-    <div class="hero-result-divider"></div>
-
-    <p class="hero-result-cta-text">Want a detailed assessment?</p>
-    <button class="hero-result-cta-btn" onclick="AssessmentFlow.showEmailModal()">
-      Get Advanced Assessment →
-    </button>
-
-    <div class="hero-result-close" onclick="AssessmentFlow.closeResultPopup()">Close</div>
-  </div>
-
-  <!-- Email Modal - V4 -->
-  <div class="hero-email-modal" id="heroEmailModal">
-    <div class="hero-email-card">
-      <h2 class="hero-email-title">Get Your Assessment</h2>
-
-      <input
-        type="email"
-        class="hero-email-input"
-        id="heroEmailInput"
-        placeholder="your@email.com"
-      >
-
-      <div class="hero-error" id="heroErrorMsg">Please enter a valid email</div>
-
-      <div class="hero-checkbox-group">
-        <label class="hero-checkbox-item">
-          <input type="checkbox" class="hero-checkbox" id="heroCheckAssessment" checked>
-          <div class="hero-checkbox-label">
-            <div class="hero-checkbox-title">Advanced Assessment</div>
-            <div class="hero-checkbox-desc">Link to full PMO AI readiness survey</div>
-          </div>
-        </label>
-
-        <label class="hero-checkbox-item">
-          <input type="checkbox" class="hero-checkbox" id="heroCheckNewsletter" checked>
-          <div class="hero-checkbox-label">
-            <div class="hero-checkbox-title">Weekly Newsletter</div>
-            <div class="hero-checkbox-desc">AI insights for PMO professionals</div>
-          </div>
-        </label>
+      <!-- Left: Newsletter -->
+      <div class="hero-band-3-newsletter">
+        <div class="hero-band-3-icon">&#128236;</div>
+        <h3 class="hero-band-3-title">Weekly Top 20</h3>
+        <p class="hero-band-3-desc">The best AI-for-PMO articles of the week, delivered free every Friday.</p>
+        <div class="hero-newsletter-form">
+          <!-- EmailOctopus Embedded Form -->
+          <script async src="https://eocampaign1.com/form/73a90686-a1f9-11f0-9b87-6727ec6b3f72.js" data-form="73a90686-a1f9-11f0-9b87-6727ec6b3f72"></script>
+        </div>
       </div>
 
-      <button class="hero-email-submit" onclick="AssessmentFlow.submitEmail()">Continue →</button>
-
-      <div class="hero-email-skip" onclick="AssessmentFlow.closeEmailModal()">Not right now</div>
-    </div>
-  </div>
-
-  <!-- Newsletter Section -->
-  <section id="signup" class="newsletter-section" style="margin-top: 6rem; padding: 4rem 1.5rem; background: var(--color-surface);">
-    <div class="newsletter-card" style="max-width: 600px; margin: 0 auto; text-align: center;">
-      <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-text-primary);">Get Your Weekly Top 20</h2>
-      <p style="margin-bottom: 2rem; color: var(--color-text-muted);">AI-curated PMO insights delivered free, every week.</p>
-
-      <!-- EmailOctopus Embedded Form -->
-      <div class="emailoctopus-form-wrapper">
-        <script async src="https://eocampaign1.com/form/73a90686-a1f9-11f0-9b87-6727ec6b3f72.js" data-form="73a90686-a1f9-11f0-9b87-6727ec6b3f72"></script>
+      <!-- Right: Quarterly Report -->
+      <div class="hero-band-3-report">
+        <div class="hero-band-3-icon">&#128202;</div>
+        <h3 class="hero-band-3-title">Quarterly Report</h3>
+        <p class="hero-band-3-desc"><em>AI Maturity in PMOs: The Global Reality Check</em> &mdash; our deep-dive into how PMOs worldwide are adopting AI.</p>
+        <div class="hero-report-status">Coming Soon</div>
+        <button class="hero-btn-secondary" onclick="document.getElementById('hero-report-email').focus()">
+          <span>Notify Me</span>
+          <span>&rarr;</span>
+        </button>
+        <input type="email" id="hero-report-email" class="hero-report-email-input" placeholder="your@email.com" aria-label="Email for quarterly report notification">
       </div>
 
-      <p class="signup-note" style="margin-top: 1.5rem; font-size: 0.875rem; color: var(--color-text-muted);">✓ Weekly digest · 5-min read · Unsubscribe anytime</p>
     </div>
+
   </section>
 
   <!-- Section 1: Latest Intelligence (Auto) -->
@@ -1047,17 +982,6 @@
       return `${day} ${month} ${year}`;
     }
 
-    // Carousel rotation
-    let carouselIndex = 0;
-    const messages = document.querySelectorAll('.carousel-msg');
-    
-    setInterval(() => {
-      messages[carouselIndex].classList.remove('active');
-      carouselIndex = (carouselIndex + 1) % messages.length;
-      messages[carouselIndex].classList.add('active');
-    }, 8000);
-
-    // Initial render - Load both sections
     // ========== SHARE FUNCTIONS ==========
 
     function buildShareUrl(baseUrl, cardId, platform) {
@@ -1187,44 +1111,6 @@ via SmartPMO.ai`;
 
     loadDailyCards(); // Latest Intelligence with enriched cards (rich data from daily-cards.json)
     loadCuratedInsights(); // Strategic Insights (curated articles from displayed-articles.json)
-
-    // Mobile hamburger menu (right-slide, 44px tap target)
-    const hamburgerBtn = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileBackdrop = document.getElementById('mobile-backdrop');
-    const closeBtn = document.getElementById('close-menu');
-
-    function openMenu() {
-      mobileMenu.classList.add('active');
-      mobileBackdrop.classList.add('active');
-      hamburgerBtn.setAttribute('aria-expanded', 'true');
-      mobileMenu.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden'; // Prevent scroll
-    }
-
-    function closeMenu() {
-      mobileMenu.classList.remove('active');
-      mobileBackdrop.classList.remove('active');
-      hamburgerBtn.setAttribute('aria-expanded', 'false');
-      mobileMenu.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = ''; // Restore scroll
-    }
-
-    hamburgerBtn.addEventListener('click', openMenu);
-    closeBtn.addEventListener('click', closeMenu);
-    mobileBackdrop.addEventListener('click', closeMenu);
-
-    // Close menu on link click (smooth scroll)
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeMenu);
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
-        closeMenu();
-      }
-    });
 
   </script>
 
@@ -1428,9 +1314,6 @@ via SmartPMO.ai`;
   <!-- PMO AI Assessment - Modular Hero -->
   <script src="hero-assessment.js"></script>
 
-  <!-- Assessment Flow (Result Popup + Email Modal) -->
-  <script src="assessment-flow.js"></script>
-
   <!-- Header Menu JavaScript -->
   <script>
   const HeaderMenu = (() => {
@@ -1459,6 +1342,7 @@ via SmartPMO.ai`;
 
 </body>
 </html>
+
 
 
 

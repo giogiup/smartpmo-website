@@ -18,7 +18,6 @@ $cssFiles = @(
     'styles-v2.css',
     'hero.css',
     'header-styles.css',
-    'assessment-flow.css',
     'section-votes.css',
     'mobile-fixes.css'
 )
