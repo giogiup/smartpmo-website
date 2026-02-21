@@ -113,12 +113,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-v2.css?v=6ea542f">
-  <link rel="stylesheet" href="hero.css?v=6ea542f">
-  <link rel="stylesheet" href="header-styles.css?v=6ea542f">
+  <link rel="stylesheet" href="styles-v2.css?v=9bb55e5">
+  <link rel="stylesheet" href="hero.css?v=9bb55e5">
+  <link rel="stylesheet" href="header-styles.css?v=9bb55e5">
 
-  <link rel="stylesheet" href="section-votes.css?v=6ea542f">
-  <link rel="stylesheet" href="mobile-fixes.css?v=6ea542f">
+  <link rel="stylesheet" href="section-votes.css?v=9bb55e5">
+  <link rel="stylesheet" href="mobile-fixes.css?v=9bb55e5">
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -344,7 +344,6 @@
                onclick="HeroAssessment.handleQuadrantClick('q1')">
             <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip"><strong style="display:block; margin-bottom:0.5rem; font-size:0.95rem; color:#06B6D4;">Prompt Whisperers</strong>You haven't rolled AI out widely, but the use cases you've chosen are delivering measurable results. You're strategic and selective &mdash; picking high-value applications and proving ROI before scaling. The risk now is staying small when you've already proven the model works.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="20" cy="20" r="8"/>
               <path d="M12 36 Q12 28, 20 28 Q28 28, 28 36"/>
@@ -366,7 +365,6 @@
                onclick="HeroAssessment.handleQuadrantClick('q2')">
             <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip"><strong style="display:block; margin-bottom:0.5rem; font-size:0.95rem; color:#8B5CF6;">Zen PMO</strong>AI is woven into how your PMO plans, executes, monitors, and reports. You have governance, metrics, and leadership sees the PMO as a strategic partner. Only 6% of PMOs reach this level. Your challenge is staying ahead as the landscape shifts monthly.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="32" cy="32" r="20"/>
               <path d="M32 12 Q32 22, 32 32 Q32 42, 32 52" stroke-width="2.5"/>
@@ -385,7 +383,6 @@
                onclick="HeroAssessment.handleQuadrantClick('q3')">
             <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip"><strong style="display:block; margin-bottom:0.5rem; font-size:0.95rem; color:#9CA3AF;">Spreadsheet Nation</strong>Your PMO runs on manual processes, spreadsheets, and established routines. AI hasn't entered the picture in any meaningful way yet. You're not behind &mdash; most PMOs were here 18 months ago. But the gap between AI-enabled PMOs and traditional ones is widening fast.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="12" y="12" width="40" height="40" rx="3"/>
               <line x1="26" y1="12" x2="26" y2="52"/>
@@ -407,7 +404,6 @@
                onclick="HeroAssessment.handleQuadrantClick('q4')">
             <div class="hero-tap-indicator">&#8505;&#65039;</div>
             <div class="hero-hover-hint">Hover for details</div>
-            <div class="hero-tooltip"><strong style="display:block; margin-bottom:0.5rem; font-size:0.95rem; color:#F59E0B;">ChatGPT Fan Club</strong>Your team has jumped into AI &mdash; ChatGPT, Copilot, transcription tools &mdash; but it's scattered experimentation. Individual productivity improves, but leadership can't see the impact. You're in pilot purgatory: lots of activity, no proven business value. 52% of PMOs are stuck here.</div>
             <svg class="hero-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="18" cy="24" r="6"/>
               <path d="M12 38 Q12 32, 18 32 Q24 32, 24 38"/>
@@ -449,6 +445,9 @@
             </svg>
             <span class="hero-axis-high">HIGH</span>
           </div>
+
+          <!-- Shared desktop tooltip overlay -->
+          <div id="heroGridTooltip" class="hero-grid-tooltip"></div>
 
         </div>
 
@@ -1344,6 +1343,7 @@ via SmartPMO.ai`;
 
 </body>
 </html>
+
 
 
 

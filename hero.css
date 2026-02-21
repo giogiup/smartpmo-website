@@ -328,55 +328,50 @@
   50% { opacity: 1; }
 }
 
-/* Tooltip (Desktop Hover) — floating card over grid */
-.hero-tooltip {
+/* Grid-level tooltip overlay (desktop) */
+.hero-grid-tooltip {
   position: absolute;
-  background: rgba(10, 14, 26, 0.95);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  background: rgba(10, 14, 26, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 2px solid currentColor;
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
+  border: 2px solid rgba(6, 182, 212, 0.5);
+  border-radius: 14px;
+  padding: 1.5rem;
   font-size: 0.85rem;
   line-height: 1.65;
   color: #e0e7ff;
+  text-align: left;
   z-index: 50;
   display: none;
-  text-align: left;
-  width: 320px;
-  max-height: none;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   pointer-events: none;
-  overflow: visible;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
 }
 
-.hero-tooltip.hero-active {
+.hero-grid-tooltip.hero-active {
   display: block;
 }
 
-/* Q1 (top-left): tooltip anchored at top-left, extends right and down */
-.hero-quad.hero-q1 .hero-tooltip {
-  top: 0;
-  left: 0;
+/* Border color per quadrant — set by JS data attribute */
+.hero-grid-tooltip[data-quad="q1"] { border-color: rgba(6, 182, 212, 0.6); }
+.hero-grid-tooltip[data-quad="q2"] { border-color: rgba(139, 92, 246, 0.6); }
+.hero-grid-tooltip[data-quad="q3"] { border-color: rgba(107, 114, 128, 0.5); }
+.hero-grid-tooltip[data-quad="q4"] { border-color: rgba(245, 158, 11, 0.6); }
+
+.hero-grid-tooltip .tooltip-title {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
 }
 
-/* Q2 (top-right): tooltip anchored at top-right, extends left */
-.hero-quad.hero-q2 .hero-tooltip {
-  top: 0;
-  right: 0;
-}
-
-/* Q3 (bottom-left): tooltip anchored at bottom-left, extends right and up */
-.hero-quad.hero-q3 .hero-tooltip {
-  bottom: 0;
-  left: 0;
-}
-
-/* Q4 (bottom-right): tooltip anchored at bottom-right, extends left and up */
-.hero-quad.hero-q4 .hero-tooltip {
-  bottom: 0;
-  right: 0;
-}
+.hero-grid-tooltip[data-quad="q1"] .tooltip-title { color: #06B6D4; }
+.hero-grid-tooltip[data-quad="q2"] .tooltip-title { color: #8B5CF6; }
+.hero-grid-tooltip[data-quad="q3"] .tooltip-title { color: #9CA3AF; }
+.hero-grid-tooltip[data-quad="q4"] .tooltip-title { color: #F59E0B; }
 
 /* Mobile: Tap-to-expand accordion tooltip */
 .hero-tooltip-accordion {
@@ -515,6 +510,45 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ==================== DESKTOP LAYOUT OVERRIDE ==================== */
+/* Merges Band 1 into Band 2 for unified two-column layout */
+
+@media (min-width: 769px) {
+
+  /* Band 1: left-align, match Band 2 container */
+  .hero-band-1 {
+    text-align: left;
+    max-width: 1400px;
+    padding: 0.5rem 4rem 0;
+  }
+
+  /* Headline: smaller on desktop to fit left column proportionally */
+  .hero-headline {
+    font-size: 2.75rem;
+  }
+
+  .hero-subheadline {
+    font-size: 1.1rem;
+  }
+
+  /* Band 2: tighten gap to Band 1, remove top padding */
+  .hero-band-2 {
+    padding-top: 0;
+    gap: 2rem;
+  }
+
+  /* Left copy column: remove max-width constraint */
+  .hero-band-2-copy {
+    max-width: none;
+  }
+
+  /* Quadrant grid: slightly smaller on desktop for proportion */
+  .hero-quadrant-grid {
+    width: 360px;
+    height: 360px;
   }
 }
 
