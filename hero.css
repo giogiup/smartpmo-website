@@ -528,21 +528,25 @@
   /* Headline: smaller on desktop to fit left column proportionally */
   .hero-headline {
     font-size: 2.75rem;
+    margin-bottom: 0;
   }
 
-  .hero-subheadline {
-    font-size: 1.1rem;
-  }
-
-  /* Band 2: tighten gap to Band 1, remove top padding */
+  /* Band 2: tighten gap to Band 1, remove top padding, top-align grid */
   .hero-band-2 {
     padding-top: 0;
     gap: 2rem;
+    align-items: start;
   }
 
   /* Left copy column: remove max-width constraint */
   .hero-band-2-copy {
     max-width: none;
+  }
+
+  /* Subheadline now inside Band 2 — left-aligned, with spacing */
+  .hero-subheadline {
+    text-align: left;
+    margin-bottom: 1rem;
   }
 
   /* Quadrant grid: slightly smaller on desktop for proportion */
