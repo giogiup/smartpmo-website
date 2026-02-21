@@ -1130,6 +1130,7 @@ footer {
   display: flex;
   gap: 4px;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 /* Vote button sizing in footer */

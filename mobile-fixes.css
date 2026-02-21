@@ -192,11 +192,13 @@ html, body {
     display: flex !important;
     gap: 4px !important;
     flex-shrink: 0 !important;
+    margin-left: auto !important;
   }
 
   .footer-date {
-    flex: 1 !important;
+    flex: 0 1 auto !important;
     min-width: 0 !important;
+    padding: 0 6px !important;
   }
 
   /* Share buttons: ensure minimum tappable size on mobile */
@@ -219,7 +221,8 @@ html, body {
 
 /* Footer centre date — Option A */
 .footer-date {
-  flex: 1;
+  flex: 0 1 auto;
+  padding: 0 10px;
   text-align: center;
   font-size: 0.7rem;
   color: var(--color-text-muted, rgba(176, 196, 222, 0.6));
