@@ -113,12 +113,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-v2.css?v=266df67">
-  <link rel="stylesheet" href="hero.css?v=266df67">
-  <link rel="stylesheet" href="header-styles.css?v=266df67">
-  <link rel="stylesheet" href="assessment-flow.css?v=266df67">
-  <link rel="stylesheet" href="section-votes.css?v=266df67">
-  <link rel="stylesheet" href="mobile-fixes.css?v=266df67">
+  <link rel="stylesheet" href="styles-v2.css?v=191479b">
+  <link rel="stylesheet" href="hero.css?v=191479b">
+  <link rel="stylesheet" href="header-styles.css?v=191479b">
+  <link rel="stylesheet" href="assessment-flow.css?v=191479b">
+  <link rel="stylesheet" href="section-votes.css?v=191479b">
+  <link rel="stylesheet" href="mobile-fixes.css?v=191479b">
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -821,7 +821,7 @@
             </ul>
           </div>
 
-          <!-- Unified Footer: votes LEFT + divider + share RIGHT -->
+          <!-- Unified Footer: votes LEFT + divider + date centre + divider + share RIGHT -->
           <div class="card-footer-a" data-article-id="${normalizedCard.id}">
             <div class="footer-votes">
               <button class="vote-btn vote-btn--up" aria-label="Useful" aria-pressed="false">
@@ -834,6 +834,7 @@
               </button>
             </div>
             <div class="footer-divider"></div>
+            ${normalizedCard.date ? `<span class="footer-date">${formatCardDate(normalizedCard.date)}</span><div class="footer-divider"></div>` : ''}
             <div class="footer-share">
               <button onclick='shareToLinkedIn(${JSON.stringify({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url, ai_description: normalizedCard.tldr.join(' ')})})' class="share-btn btn-linkedin" title="Share on LinkedIn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -1033,6 +1034,17 @@
         day: 'numeric',
         year: 'numeric'
       });
+    }
+
+    // Compact card date format: "25 Feb 26"
+    function formatCardDate(dateString) {
+      if (!dateString) return '';
+      const date = new Date(dateString);
+      if (isNaN(date.getTime())) return '';
+      const day = date.getDate();
+      const month = date.toLocaleDateString('en-GB', { month: 'short' });
+      const year = String(date.getFullYear()).slice(-2);
+      return `${day} ${month} ${year}`;
     }
 
     // Carousel rotation
@@ -1444,6 +1456,7 @@ via SmartPMO.ai`;
 
 </body>
 </html>
+
 
 
 

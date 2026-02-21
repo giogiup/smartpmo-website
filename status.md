@@ -15,6 +15,7 @@
 | 3 | HIGH | 🔴 Spec ready | Mobile hero not stacking — `.hero-content` not collapsing to column |
 | 4 | LOW  | ✅ Done | Maintenance banner — live on site |
 | 5 | HIGH | ⏳ Pending | `og-image.png` not created — og:image meta tags commented out |
+| 6 | HIGH | 🔴 Spec ready | Published date not shown on Latest Intelligence cards — `FIX-SPEC-CARD-PUB-DATE.md` |
 
 ---
 
@@ -53,7 +54,7 @@
 | 2026-02-20 | Created `mobile-fixes.css`, updated `push-bust.ps1` | ❌ Regression — hrefs corrupted |
 | 2026-02-20 | `SPEC-SITE-RECOVERY-v1.md` implemented | ✅ Desktop restored — all 6 CSS hrefs loading |
 | 2026-02-20 | Maintenance banner + `hideVoteBar` fix | ✅ Banner live, share buttons visible on mobile |
-| PENDING | `SPEC-VOTES-CLOUDFLARE-WORKER.md` | ⏳ Awaiting Claude Code + wrangler login |
+| 2026-02-21 | `SPEC-VOTES-CLOUDFLARE-WORKER.md` — Cloudflare Worker deployed | ✅ Mobile votes live |
 | PENDING | `SPEC-MOBILE-FIX-v3.md` Change 3 (hero stack) | ⏳ Awaiting Claude Code |
 
 ---
