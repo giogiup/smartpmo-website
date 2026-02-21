@@ -131,16 +131,33 @@ html, body {
   }
 }
 
-/* ── Footer share buttons: wrap on very small screens ── */
-@media (max-width: 400px) {
-  .card-footer-a {
-    flex-wrap: wrap !important;
-    gap: 6px !important;
-  }
-
-  .footer-share {
-    flex-wrap: wrap !important;
-  }
+/* FIX-SPEC-CARD-FOOTER-SHARE-BUTTONS */
+.card-footer-a {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  overflow: visible !important;
+}
+.card-footer-a .footer-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.card-footer-a .footer-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.footer-date {
+  font-size: 0.7rem;
+  color: rgba(176, 196, 222, 0.6);
+  font-style: italic;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* ── Maintenance banner: body offset already handled inline in index.html ── */
@@ -171,13 +188,9 @@ html, body {
   }
 }
 
-/* ── Card footer: always visible on mobile, flex wrap if needed ── */
+/* ── Card footer: tappable size on mobile ── */
 @media (max-width: 767px) {
   .card-footer-a {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    gap: 6px !important;
     padding: 10px 12px !important;
     min-height: 48px !important;
   }
@@ -185,20 +198,6 @@ html, body {
   .footer-votes {
     display: flex !important;
     gap: 5px !important;
-    flex-shrink: 0 !important;
-  }
-
-  .footer-share {
-    display: flex !important;
-    gap: 4px !important;
-    flex-shrink: 0 !important;
-    margin-left: auto !important;
-  }
-
-  .footer-date {
-    flex: 0 1 auto !important;
-    min-width: 0 !important;
-    padding: 0 6px !important;
   }
 
   /* Share buttons: ensure minimum tappable size on mobile */
@@ -217,19 +216,4 @@ html, body {
     min-height: 34px !important;
     padding: 0 8px !important;
   }
-}
-
-/* Footer centre date — Option A */
-.footer-date {
-  flex-shrink: 0;
-  font-size: 0.7rem;
-  color: var(--color-text-muted, rgba(176, 196, 222, 0.6));
-  font-style: italic;
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
-}
-
-.card-footer-a {
-  flex-wrap: nowrap;
 }
