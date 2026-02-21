@@ -131,33 +131,63 @@ html, body {
   }
 }
 
-/* FIX-SPEC-CARD-FOOTER-SHARE-BUTTONS */
+/* FIX-SPEC-CARD-FOOTER-OVERFLOW (Fix 47) — replaces Fix 46 block */
 .card-footer-a {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   flex-wrap: nowrap !important;
   overflow: visible !important;
+  gap: 6px !important;
+  padding: 8px 12px !important;
 }
 .card-footer-a .footer-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
 }
 .card-footer-a .footer-right {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  flex-shrink: 0;
+  display: flex !important;
+  align-items: center !important;
+  gap: 2px !important;
+  flex-shrink: 0 !important;
 }
 .footer-date {
-  font-size: 0.7rem;
-  color: rgba(176, 196, 222, 0.6);
-  font-style: italic;
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
+  font-size: 0.65rem !important;
+  color: rgba(176, 196, 222, 0.6) !important;
+  font-style: italic !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+/* Compact vote buttons in footer */
+.card-footer-a .vote-btn {
+  min-width: auto !important;
+  min-height: auto !important;
+  height: 28px !important;
+  padding: 0 6px !important;
+  gap: 3px !important;
+}
+/* Compact share buttons in footer */
+.card-footer-a .share-btn {
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  padding: 0 !important;
+}
+.card-footer-a .share-btn svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+.card-footer-a .footer-divider {
+  width: 1px !important;
+  height: 16px !important;
+  flex-shrink: 0 !important;
 }
 
 /* ── Maintenance banner: body offset already handled inline in index.html ── */
@@ -188,32 +218,23 @@ html, body {
   }
 }
 
-/* ── Card footer: tappable size on mobile ── */
+/* ── Card footer: tappable size on mobile (Fix 47) ── */
 @media (max-width: 767px) {
   .card-footer-a {
-    padding: 10px 12px !important;
-    min-height: 48px !important;
+    padding: 8px 10px !important;
+    min-height: 40px !important;
   }
-
-  .footer-votes {
-    display: flex !important;
-    gap: 5px !important;
-  }
-
-  /* Share buttons: ensure minimum tappable size on mobile */
   .card-footer-a .share-btn {
-    width: 34px !important;
-    height: 34px !important;
-    min-width: 34px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-shrink: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
   }
-
-  /* Vote buttons: minimum tappable size */
+  .card-footer-a .share-btn svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
   .card-footer-a .vote-btn {
-    min-height: 34px !important;
-    padding: 0 8px !important;
+    min-height: 32px !important;
+    padding: 0 6px !important;
   }
 }
