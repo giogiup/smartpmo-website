@@ -1,6 +1,39 @@
 {
   "latestIntelligence": [
     {
+      "id": 70356,
+      "title": "OpenAI's $112 Billion Cash Burn Forecast Reveals the Staggering Cost of Winning the AI Race",
+      "url": "https://www.webpronews.com/openais-112-billion-cash-burn-forecast-reveals-the-staggering-cost-of-winning-the-ai-race/",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-21",
+      "discoveredAt": "2026-02-21 04:11:43",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 70164,
+      "title": "96% of developers don’t trust AI code: Here’s a step toward the fix",
+      "url": "https://thenewstack.io/agentic-ai-verification-impact/",
+      "summary": "",
+      "score": 53,
+      "publishedDate": "2026-02-20",
+      "discoveredAt": "2026-02-21 04:08:23",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 69952,
+      "title": "Look Out, OpenAI: Perplexity Admits AI Adverts Were a Mistake, Is Now Getting Rid of Them",
+      "url": "https://futurism.com/artificial-intelligence/openai-perplexity-admits-ai-adverts-mistake",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-20",
+      "discoveredAt": "2026-02-21 04:06:31",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 69475,
       "title": "The Sound of Data: Why Your Voice is the Hardest Problem in AI",
       "url": "https://hackernoon.com/the-sound-of-data-why-your-voice-is-the-hardest-problem-in-ai?source=rss",
@@ -107,39 +140,6 @@
       "score": 70,
       "publishedDate": "2026-02-15",
       "discoveredAt": "2026-02-15 07:29:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67747,
-      "title": "How IT operations is being reimagined with AI and Automation",
-      "url": "https://cio.economictimes.indiatimes.com/news/corporate-news/reimagining-it-operations-the-revolution-of-ai-and-automation/128250798",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:19:19",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67748,
-      "title": "NTUC to roll out AI training pathways for workers at all skill levels, subsidy for AI tools",
-      "url": "https://www.channelnewsasia.com/singapore/ntuc-ai-ready-training-pathway-workers-just-transition-5928481",
-      "summary": "",
-      "score": 49,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:19:19",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67742,
-      "title": "Turning down the heat: Researcher identifies better way to remove heat from AI data centers",
-      "url": "https://techxplore.com/news/2026-02-ai-centers.html",
-      "summary": "",
-      "score": 50,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:17:38",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -272,5 +272,5 @@
     "curated": 4,
     "total": 24
   },
-  "generatedAt": "2026-02-20T04:25:29.028Z"
+  "generatedAt": "2026-02-21T04:21:52.864Z"
 }

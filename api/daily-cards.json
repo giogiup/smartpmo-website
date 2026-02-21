@@ -1,8 +1,34 @@
 {
-  "generated": "2026-02-20T04:25:28.401Z",
-  "date": "2026-02-20",
+  "generated": "2026-02-21T04:21:52.593Z",
+  "date": "2026-02-21",
   "count": 20,
   "cards": [
+    {
+      "id": 69475,
+      "title": "The Sound of Data: Why Your Voice is the Hardest Problem in AI",
+      "url": "https://hackernoon.com/the-sound-of-data-why-your-voice-is-the-hardest-problem-in-ai?source=rss",
+      "date": "2026-02-20",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**The article explains why human voice recognition and understanding represent the hardest problems in AI development.**",
+        "It delves into complexities like diverse accents, emotional context, background noise, and subtle linguistic nuances.",
+        "Overcoming these voice-related hurdles is crucial for advancing natural and intuitive AI interactions and applications."
+      ],
+      "badges": {
+        "read_time": 3,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "voice recognition",
+        "natural language processing"
+      ]
+    },
     {
       "id": 69225,
       "title": "Solink introduces AI Agents designed to act on video and business data in real time",
@@ -443,32 +469,6 @@
         "Google DeepMind",
         "Aletheia",
         "AI Agent"
-      ]
-    },
-    {
-      "id": 67754,
-      "title": "Microsoft AI CEO Mustafa Suleyman predicts White collar job automation within 18 months, says: AI agents will be able to ...",
-      "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-ai-ceo-mustafa-suleyman-predicts-white-collar-job-automation-within-18-months-says-ai-agents-will-be-able-to-/articleshow/128291088.cms",
-      "date": "2026-02-13",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Microsoft AI CEO Mustafa Suleyman predicts significant white-collar job automation.**",
-        "This widespread automation is expected to occur within the next 18 months.",
-        "The prediction emphasizes the rapidly advancing capabilities of AI agents in professional roles."
-      ],
-      "badges": {
-        "read_time": 16,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Microsoft",
-        "AI",
-        "automation"
       ]
     },
     {
