@@ -234,43 +234,76 @@
       "section": "curated"
     },
     {
-      "id": 3,
-      "title": "Test Curated Article - AI in PMO Leadership",
-      "url": "https://example.com/test-curated-1768571794204",
-      "summary": "This is a test curated article demonstrating the dual-section display feature for SmartPMO.ai",
-      "source": "Test Source",
-      "publishedDate": "2026-01-16",
-      "addedDate": "2026-01-16 15:56:34",
-      "displayOrder": 0,
+      "id": 5,
+      "title": "New Superpowers Plugin Guides Claude Code AI : Brainstorm, Planning & Executing a Tested Builds",
+      "url": "https://www.geeky-gadgets.com/superpowers-claude-code-plugin/?utm_source=flipboard&utm_content=topic/software",
+      "summary": "- The Superpowers plugin gives Claude Code a structured workflow centered on planning, TDD, and precision.\n- It uses parallel sub‑agents to speed execution and reduce developer effort.\n- Automated Git commits and Red‑Green testing maintain clean history and reliable code.\n- Versus tools like Opus 4.6, Beads, and Ralph, it emphasizes detailed planning and actionable steps.\n- It shines on large, multi‑feature projects but can feel heavy for small tasks.",
+      "source": null,
+      "publishedDate": "2026-02-16",
+      "addedDate": "2026-02-22 15:30:04",
+      "displayOrder": 1,
       "section": "curated"
     },
     {
-      "id": 2,
-      "title": "Test Curated Article - AI in PMO Leadership",
-      "url": "https://example.com/test-curated-1768571585517",
-      "summary": "This is a test curated article demonstrating the dual-section display feature for SmartPMO.ai",
-      "source": "Test Source",
-      "publishedDate": "2026-01-16",
-      "addedDate": "2026-01-16 15:53:05",
-      "displayOrder": 0,
+      "id": 6,
+      "title": "The A.I. Moral Crisis is Here",
+      "url": "https://www.youtube.com/watch?v=UAPRa4BRXFo",
+      "summary": "- The segment covers the resignations of key AI‑safety researchers from OpenAI and Anthropic, who warn that labs are moving too fast without adequate safeguards.\n- Their departures highlight a growing ethical and governance crisis inside major AI companies.\n- Journalist Gideon Lewis‑Kraus discusses his investigation into these resignations and what they reveal about internal tensions.\n- The video frames this moment as a public‑interest issue, urging scrutiny  powerful AI systems development",
+      "source": "MS Now",
+      "publishedDate": "2026-02-16",
+      "addedDate": "2026-02-22 15:38:23",
+      "displayOrder": 2,
       "section": "curated"
     },
     {
-      "id": 1,
-      "title": "Test Curated Article - AI in PMO Leadership",
-      "url": "https://example.com/test-curated-1768570642274",
-      "summary": "This is a test curated article demonstrating the dual-section display feature for SmartPMO.ai",
-      "source": "Test Source",
-      "publishedDate": "2026-01-16",
-      "addedDate": "2026-01-16 15:37:22",
-      "displayOrder": 0,
+      "id": 7,
+      "title": "The visibility mirage: Why AI pilots keep stalling between ambition and impact",
+      "url": "https://www.techradar.com/pro/the-visibility-mirage-why-ai-pilots-keep-stalling-between-ambition-and-impact?utm_source=flipboard&utm_content=topic/business",
+      "summary": "- AI pilots stall due to integration complexity, system sprawl, and late governance, which slow progress once work moves beyond early prototypes.\n- Leaders see milestones while practitioners face daily friction, creating a visibility gap that hides execution issues until they escalate.\n- Success requires early ownership, integration planning, shared visibility, and funding so pilots can scale into reliable production systems.",
+      "source": "Tech Radar",
+      "publishedDate": "2026-02-15",
+      "addedDate": "2026-02-22 15:59:54",
+      "displayOrder": 4,
+      "section": "curated"
+    },
+    {
+      "id": 8,
+      "title": "AI models that simulate internal debate dramatically improve accuracy on complex tasks",
+      "url": "https://venturebeat.com/orchestration/ai-models-that-simulate-internal-debate-dramatically-improve-accuracy-on?utm_source=flipboard&utm_content=topic/artificialintelligence",
+      "summary": "- Google’s study shows top reasoning models improve accuracy by simulating internal debates among diverse “personas,” a process they call society of thought.\n- These autonomous multi‑voice checks—verification, dissent, backtracking—boost performance more than long monologues or sanitized training data.\n- Enterprises can enhance reasoning by prompting conflicting roles, using debate‑rich training data, and exposing internal dissent for trust and auditing.",
+      "source": "Venture Beat",
+      "publishedDate": "2026-01-30",
+      "addedDate": "2026-02-22 16:02:38",
+      "displayOrder": 5,
+      "section": "curated"
+    },
+    {
+      "id": 9,
+      "title": "How to Build a Self-Organizing Agent Memory System for Long-Term AI Reasoning ",
+      "url": "https://www.marktechpost.com/2026/02/14/how-to-build-a-self-organizing-agent-memory-system-for-long-term-ai-reasoning/?utm_source=flipboard&utm_content=Marktechpost/magazine/AI+Dev+News",
+      "summary": "- The tutorial builds a self‑organizing agent memory system that converts interactions into structured knowledge units, separating reasoning from memory extraction, compression, and organization.\n- Using SQLite, scenes, summaries, and symbolic retrieval, the system maintains long‑term context without relying solely on opaque vector search.\n- A memory manager and worker agent collaborate so the agent recalls relevant scenes, updates memory, and supports stable long‑horizon reasoning.",
+      "source": "marktechpost.com",
+      "publishedDate": "2026-02-14",
+      "addedDate": "2026-02-22 16:06:42",
+      "displayOrder": 6,
+      "section": "curated"
+    },
+    {
+      "id": 10,
+      "title": "WTF is Markdown for AI agents? ",
+      "url": "https://digiday.com/media/wtf-is-markdown-for-ai-agents/?utm_campaign=digidaydis&utm_medium=rss&utm_source=flipboard",
+      "summary": "- AI agents prefer markdown over HTML because it removes layout noise, reduces token cost, and delivers clean, structured content that models can parse efficiently.\n- Cloudflare and others now auto‑convert HTML to markdown so agents can access text‑only versions, improving accuracy, reducing hallucinations, and lowering compute waste for AI crawlers.\n- Markdown (and LLM.txt) helps brands ensure clearer facts in AI answers, though direct financial benefit for publishers remains uncertain",
+      "source": "digiday.com",
+      "publishedDate": "2026-02-16",
+      "addedDate": "2026-02-22 16:10:35",
+      "displayOrder": 7,
       "section": "curated"
     }
   ],
   "counts": {
     "auto": 20,
-    "curated": 4,
-    "total": 24
+    "curated": 7,
+    "total": 27
   },
-  "generatedAt": "2026-02-22T04:20:09.019Z"
+  "generatedAt": "2026-02-22T14:10:41.103Z"
 }
