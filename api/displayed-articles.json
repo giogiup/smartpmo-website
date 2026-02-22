@@ -1,6 +1,17 @@
 {
   "latestIntelligence": [
     {
+      "id": 70595,
+      "title": "The Sequence Radar #811: Last Week in AI: OpenAI's Capital Leap, India's Summit, and the Next Frontier of Models",
+      "url": "https://thesequence.substack.com/p/the-sequence-radar-811-last-week",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-22",
+      "discoveredAt": "2026-02-22 15:03:08",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 70356,
       "title": "OpenAI's $112 Billion Cash Burn Forecast Reveals the Staggering Cost of Winning the AI Race",
       "url": "https://www.webpronews.com/openais-112-billion-cash-burn-forecast-reveals-the-staggering-cost-of-winning-the-ai-race/",
@@ -63,6 +74,17 @@
       "score": 70,
       "publishedDate": "2026-02-18",
       "discoveredAt": "2026-02-19 11:12:02",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 69153,
+      "title": "Advance Planning for AI Project Evaluation",
+      "url": "https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-02-18",
+      "discoveredAt": "2026-02-19 11:10:41",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -151,28 +173,6 @@
       "score": 70,
       "publishedDate": "2026-02-15",
       "discoveredAt": "2026-02-15 07:29:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67501,
-      "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
-      "url": "https://arxiv.org/abs/2602.12036",
-      "summary": "",
-      "score": 53,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:15:34",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67147,
-      "title": "AI isn't getting smarter, it's getting more power hungry - and expensive",
-      "url": "https://www.zdnet.com/article/ai-isnt-getting-smarter-its-getting-more-expensive-mit-report-finds/",
-      "summary": "",
-      "score": 50,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:15:05",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -305,5 +305,5 @@
     "curated": 7,
     "total": 27
   },
-  "generatedAt": "2026-02-22T14:10:41.103Z"
+  "generatedAt": "2026-02-22T15:19:10.473Z"
 }

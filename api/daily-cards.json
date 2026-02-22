@@ -1,8 +1,34 @@
 {
-  "generated": "2026-02-22T04:20:08.728Z",
+  "generated": "2026-02-22T15:19:10.467Z",
   "date": "2026-02-22",
   "count": 20,
   "cards": [
+    {
+      "id": 70595,
+      "title": "The Sequence Radar #811: Last Week in AI: OpenAI's Capital Leap, India's Summit, and the Next Frontier of Models",
+      "url": "https://thesequence.substack.com/p/the-sequence-radar-811-last-week",
+      "date": "2026-02-22",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**OpenAI's significant capital raise and India's AI summit were key highlights in last week's AI news.**",
+        "The report also touched upon the next frontier of AI models and massive funding rounds.",
+        "Future editions will explore video models as physics engines and the GLM-5 release."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI news",
+        "OpenAI",
+        "India AI"
+      ]
+    },
     {
       "id": 70356,
       "title": "OpenAI's $112 Billion Cash Burn Forecast Reveals the Staggering Cost of Winning the AI Race",
@@ -27,6 +53,32 @@
         "OpenAI",
         "AI investment",
         "cash burn"
+      ]
+    },
+    {
+      "id": 70158,
+      "title": "India chases 'DeepSeek moment' with homegrown AI",
+      "url": "https://techxplore.com/news/2026-02-india-deepseek-moment-homegrown-ai.html",
+      "date": "2026-02-20",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**India is actively pursuing a significant breakthrough in its domestic AI development.**",
+        "The nation aims to achieve a 'DeepSeek moment' by developing its own impactful homegrown AI models.",
+        "This strategic initiative focuses on fostering self-reliance and global competitiveness in artificial intelligence."
+      ],
+      "badges": {
+        "read_time": 1,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "India AI",
+        "homegrown AI",
+        "DeepSeek"
       ]
     },
     {
@@ -105,6 +157,32 @@
         "AI code",
         "developer trust",
         "agentic AI"
+      ]
+    },
+    {
+      "id": 69153,
+      "title": "Advance Planning for AI Project Evaluation",
+      "url": "https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/",
+      "date": "2026-02-18",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Highlights the necessity of advance planning for effectively evaluating AI projects within a project management context.**",
+        "Discusses key metrics and frameworks for assessing AI project success from inception.",
+        "Emphasizes integrating evaluation strategies early to ensure AI initiatives deliver expected business value."
+      ],
+      "badges": {
+        "read_time": 20,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI projects",
+        "project evaluation",
+        "advance planning"
       ]
     },
     {
@@ -365,84 +443,6 @@
         "SmartPack",
         "AI assistants",
         "productivity"
-      ]
-    },
-    {
-      "id": 67514,
-      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
-      "url": "https://arxiv.org/abs/2602.11224",
-      "date": "2026-02-13",
-      "score": 53,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "Agent-Diff introduces a new benchmarking framework for evaluating LLMs on enterprise API tasks.",
-        "The framework assesses performance based on code execution and state-diff evaluation.",
-        "It addresses variability in LLM performance due to model differences and external tool access."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Agent-Diff",
-        "LLM",
-        "benchmarking"
-      ]
-    },
-    {
-      "id": 67501,
-      "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
-      "url": "https://arxiv.org/abs/2602.12036",
-      "date": "2026-02-13",
-      "score": 53,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Composition-RL introduces a method for creating verifiable prompts for reinforcement learning in large language models.**",
-        "The approach enhances the reliability of AI-generated responses through structured prompt composition.",
-        "This research contributes to the field of AI by improving the training processes of large language models."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Composition-RL",
-        "reinforcement learning",
-        "large language models"
-      ]
-    },
-    {
-      "id": 67147,
-      "title": "AI isn't getting smarter, it's getting more power hungry - and expensive",
-      "url": "https://www.zdnet.com/article/ai-isnt-getting-smarter-its-getting-more-expensive-mit-report-finds/",
-      "date": "2026-02-13",
-      "score": 50,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**An MIT report suggests AI models are becoming more power-hungry and expensive, not necessarily smarter.**",
-        "The report highlights the increasing computational and financial costs associated with developing advanced AI.",
-        "This trend raises concerns about the sustainability and accessibility of future AI advancements."
-      ],
-      "badges": {
-        "read_time": 19,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "cost",
-        "energy consumption"
       ]
     },
     {
