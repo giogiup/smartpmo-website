@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-21T04:21:52.593Z",
-  "date": "2026-02-21",
+  "generated": "2026-02-22T04:20:08.728Z",
+  "date": "2026-02-22",
   "count": 20,
   "cards": [
+    {
+      "id": 70356,
+      "title": "OpenAI's $112 Billion Cash Burn Forecast Reveals the Staggering Cost of Winning the AI Race",
+      "url": "https://www.webpronews.com/openais-112-billion-cash-burn-forecast-reveals-the-staggering-cost-of-winning-the-ai-race/",
+      "date": "2026-02-21",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**OpenAI is projected to burn $112 billion in cash to win the competitive AI race.**",
+        "This forecast reveals the immense financial investment required for AI leadership.",
+        "The substantial expenditure underscores the high stakes in the global AI competition."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "OpenAI",
+        "AI investment",
+        "cash burn"
+      ]
+    },
+    {
+      "id": 69952,
+      "title": "Look Out, OpenAI: Perplexity Admits AI Adverts Were a Mistake, Is Now Getting Rid of Them",
+      "url": "https://futurism.com/artificial-intelligence/openai-perplexity-admits-ai-adverts-mistake",
+      "date": "2026-02-20",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Perplexity is removing AI-generated advertisements, acknowledging them as a mistake.**",
+        "The decision impacts AI monetization strategies and user experience in AI search.",
+        "This move positions Perplexity against OpenAI, highlighting different approaches to AI integration."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Perplexity",
+        "AI advertising",
+        "OpenAI"
+      ]
+    },
     {
       "id": 69475,
       "title": "The Sound of Data: Why Your Voice is the Hardest Problem in AI",
@@ -27,6 +79,32 @@
         "AI",
         "voice recognition",
         "natural language processing"
+      ]
+    },
+    {
+      "id": 70164,
+      "title": "96% of developers don’t trust AI code: Here’s a step toward the fix",
+      "url": "https://thenewstack.io/agentic-ai-verification-impact/",
+      "date": "2026-02-20",
+      "score": 53,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**A new report reveals 96% of developers distrust AI-generated code, highlighting a major industry challenge.**",
+        "The article suggests agentic AI verification as a crucial method to build confidence in AI-produced code.",
+        "This approach aims to enhance the reliability and trustworthiness of AI-assisted coding tools for wider adoption."
+      ],
+      "badges": {
+        "read_time": 43,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI code",
+        "developer trust",
+        "agentic AI"
       ]
     },
     {
@@ -342,32 +420,6 @@
       ]
     },
     {
-      "id": 67742,
-      "title": "Turning down the heat: Researcher identifies better way to remove heat from AI data centers",
-      "url": "https://techxplore.com/news/2026-02-ai-centers.html",
-      "date": "2026-02-13",
-      "score": 50,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Researcher identifies a better method for removing heat from AI data centers.**",
-        "The new technique aims to improve thermal management for high-performance AI infrastructure.",
-        "This innovation addresses critical cooling challenges in rapidly expanding AI data centers."
-      ],
-      "badges": {
-        "read_time": 1,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI data centers",
-        "cooling",
-        "thermal management"
-      ]
-    },
-    {
       "id": 67147,
       "title": "AI isn't getting smarter, it's getting more power hungry - and expensive",
       "url": "https://www.zdnet.com/article/ai-isnt-getting-smarter-its-getting-more-expensive-mit-report-finds/",
@@ -469,58 +521,6 @@
         "Google DeepMind",
         "Aletheia",
         "AI Agent"
-      ]
-    },
-    {
-      "id": 67747,
-      "title": "How IT operations is being reimagined with AI and Automation",
-      "url": "https://cio.economictimes.indiatimes.com/news/corporate-news/reimagining-it-operations-the-revolution-of-ai-and-automation/128250798",
-      "date": "2026-02-13",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**AI and automation are fundamentally transforming how IT operations are managed.**",
-        "These technologies aim to enhance efficiency, reduce manual intervention, and optimize processes.",
-        "The article explores the ongoing revolution in IT operations driven by intelligent automation."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "IT operations",
-        "AI",
-        "automation"
-      ]
-    },
-    {
-      "id": 67748,
-      "title": "NTUC to roll out AI training pathways for workers at all skill levels, subsidy for AI tools",
-      "url": "https://www.channelnewsasia.com/singapore/ntuc-ai-ready-training-pathway-workers-just-transition-5928481",
-      "date": "2026-02-13",
-      "score": 49,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**NTUC announces AI training pathways for workers across all skill levels.**",
-        "Subsidies will be provided for AI tools to support this initiative.",
-        "The program aims to facilitate a just transition for workers in the evolving job market."
-      ],
-      "badges": {
-        "read_time": 16,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "NTUC",
-        "AI training",
-        "worker transition"
       ]
     }
   ]

@@ -23,6 +23,17 @@
       "section": "auto"
     },
     {
+      "id": 70158,
+      "title": "India chases 'DeepSeek moment' with homegrown AI",
+      "url": "https://techxplore.com/news/2026-02-india-deepseek-moment-homegrown-ai.html",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-20",
+      "discoveredAt": "2026-02-21 04:08:13",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 69952,
       "title": "Look Out, OpenAI: Perplexity Admits AI Adverts Were a Mistake, Is Now Getting Rid of Them",
       "url": "https://futurism.com/artificial-intelligence/openai-perplexity-admits-ai-adverts-mistake",
@@ -144,17 +155,6 @@
       "section": "auto"
     },
     {
-      "id": 67514,
-      "title": "Agent-Diff: Benchmarking LLM Agents on Enterprise API Tasks via Code Execution with State-Diff-Based Evaluation",
-      "url": "https://arxiv.org/abs/2602.11224",
-      "summary": "",
-      "score": 53,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:15:36",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 67501,
       "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
       "url": "https://arxiv.org/abs/2602.12036",
@@ -272,5 +272,5 @@
     "curated": 4,
     "total": 24
   },
-  "generatedAt": "2026-02-21T04:21:52.864Z"
+  "generatedAt": "2026-02-22T04:20:09.019Z"
 }
