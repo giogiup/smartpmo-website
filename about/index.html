@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About SmartPMO.ai — Why We Built This</title>
+
+  <!-- Primary SEO -->
+  <meta name="description" content="SmartPMO.ai was built by a PMO professional to solve content overload. AI-powered discovery at the intersection of AI and project management.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="SmartPMO.ai">
+  <link rel="canonical" href="https://smartpmo.ai/about">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SmartPMO.ai">
+  <meta property="og:url" content="https://smartpmo.ai/about">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="About SmartPMO.ai — Why We Built This">
+  <meta property="og:description" content="SmartPMO.ai was built by a PMO professional to solve content overload. AI-powered discovery at the intersection of AI and project management.">
+  <meta property="og:image:alt" content="SmartPMO.ai — About">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@SmartPMOai">
+  <meta name="twitter:title" content="About SmartPMO.ai — Why We Built This">
+  <meta name="twitter:description" content="SmartPMO.ai was built by a PMO professional to solve content overload. AI-powered discovery at the intersection of AI and project management.">
+
+  <!-- Mobile / PWA -->
+  <meta name="theme-color" content="#06B6D4">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SmartPMO.ai">
+
+  <!-- Favicon chain -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- JSON-LD: AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://smartpmo.ai/about#aboutpage",
+    "name": "About SmartPMO.ai",
+    "description": "SmartPMO.ai was built by a PMO professional to solve content overload. AI-powered discovery at the intersection of AI and project management.",
+    "url": "https://smartpmo.ai/about",
+    "isPartOf": {
+      "@id": "https://smartpmo.ai/#website"
+    },
+    "publisher": {
+      "@id": "https://smartpmo.ai/#organization"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../header-styles.css">
+
+  <style>
+    /* ── Base reset ── */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0a0e1a;
+      color: #e0e7ff;
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-top: 70px;
+    }
+
+    /* ── Reduced motion ── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ── Focus indicators ── */
+    .about-page a:focus,
+    .about-page button:focus {
+      outline: 2px solid #00F5FF;
+      outline-offset: 2px;
+    }
+
+    /* ── About Page Scoped Styles ── */
+    .about-page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+      color: #c8d3e8;
+      line-height: 1.8;
+    }
+
+    .about-page h1 {
+      font-family: 'Spectral', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-page .page-subtitle {
+      font-size: clamp(1.1rem, 3vw, 1.3rem);
+      color: #8899b0;
+      margin-bottom: 2.5rem;
+    }
+
+    .about-page h2 {
+      font-family: 'Spectral', Georgia, serif;
+      font-size: clamp(1.3rem, 4vw, 1.6rem);
+      font-weight: 600;
+      color: #00F5FF;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-page p {
+      margin-bottom: 1.25rem;
+    }
+
+    .about-page section {
+      margin-bottom: 0.5rem;
+    }
+
+    .about-page hr {
+      border: none;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      margin: 2.5rem 0;
+    }
+
+    .about-page a {
+      color: #00F5FF;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.2s ease;
+    }
+
+    .about-page a:hover {
+      color: #ffffff;
+    }
+
+    /* ── Stat callout box ── */
+    .about-page .stat-callout {
+      border-left: 3px solid #00F5FF;
+      background: linear-gradient(135deg, rgba(0, 245, 255, 0.06), rgba(76, 120, 255, 0.04));
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .about-page .stat-callout strong {
+      color: #00F5FF;
+    }
+
+    /* ── Career path + Pipeline flow chips ── */
+    .about-page .chip-flow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .about-page .chip-flow-item {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background: rgba(0, 245, 255, 0.08);
+      border: 1px solid rgba(0, 245, 255, 0.2);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #c8d3e8;
+      white-space: nowrap;
+    }
+
+    .about-page .chip-flow-arrow {
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* ── Cyan bullet list ── */
+    .about-page .cyan-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0;
+    }
+
+    .about-page .cyan-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-page .cyan-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #00F5FF;
+    }
+
+    .about-page .cyan-list strong {
+      color: #ffffff;
+    }
+
+    /* ── Category cards ── */
+    .about-page .category-cards {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .about-page .category-card {
+      background: rgba(30, 35, 45, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .about-page .category-card h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-page .category-card p {
+      font-size: 0.92rem;
+      margin-bottom: 0;
+      color: #a0b0c8;
+    }
+
+    /* ── CTA block ── */
+    .about-page .cta-block {
+      text-align: center;
+      padding: 2.5rem 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(76, 120, 255, 0.06), rgba(0, 212, 255, 0.04));
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    .about-page .cta-block h2 {
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-page .cta-block p {
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+      color: #a0b0c8;
+    }
+
+    .about-page .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .about-page .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      background: linear-gradient(135deg, #4C78FF, #00D4FF);
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      min-height: 48px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .about-page .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 212, 255, 0.3);
+      color: #ffffff;
+    }
+
+    .about-page .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      background: transparent;
+      color: #8899b0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      cursor: pointer;
+      min-height: 48px;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .about-page .btn-secondary:hover {
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ── Back link ── */
+    .about-page .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #6b7280;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .about-page .back-link:hover {
+      color: #00F5FF;
+    }
+
+    /* ── Footer ── */
+    .about-footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #6b7280;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* ── Mobile (320px–767px) ── */
+    @media (max-width: 767px) {
+      .about-page {
+        padding: 2rem 1.25rem 3rem;
+      }
+
+      .about-page .chip-flow {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .about-page .chip-flow-arrow {
+        transform: rotate(90deg);
+        margin: -0.25rem 0 -0.25rem 1.5rem;
+      }
+
+      .about-page .cta-buttons {
+        flex-direction: column;
+      }
+
+      .about-page .btn-primary,
+      .about-page .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header (same as index.html) -->
+  <header class="site-header">
+    <div class="site-header-content">
+
+      <!-- Logo + Brand -->
+      <a href="/" class="site-header-brand">
+        <svg class="site-header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <rect x="4" y="6" width="8" height="2" rx="1" fill="#4C78FF"/>
+          <rect x="4" y="10" width="12" height="2" rx="1" fill="#00D4FF"/>
+          <rect x="4" y="14" width="6" height="2" rx="1" fill="#00F5FF"/>
+          <circle cx="3" cy="7" r="1.5" fill="#825AFF"/>
+          <circle cx="3" cy="11" r="1.5" fill="#00D4FF"/>
+          <circle cx="3" cy="15" r="1.5" fill="#00F5FF"/>
+          <g transform="translate(13,7) scale(0.7)">
+            <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00F5FF"/>
+            <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
+            <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#4C78FF"/>
+          </g>
+          <g transform="translate(17,11) scale(1.3)">
+            <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#00F5FF"/>
+            <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#ffffff" opacity="0.8"/>
+            <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#825AFF"/>
+          </g>
+          <g transform="translate(11,15) scale(1.0)">
+            <path d="M0 -3 Q1 -1 3 0 Q1 1 0 3 Q-1 1 -3 0 Q-1 -1 0 -3 Z" fill="#ffffff"/>
+            <path d="M0 -2 Q0.7 -0.7 2 0 Q0.7 0.7 0 2 Q-0.7 0.7 -2 0 Q-0.7 -0.7 0 -2 Z" fill="#00F5FF" opacity="0.9"/>
+            <path d="M0 -1.2 Q0.4 -0.4 1.2 0 Q0.4 0.4 0 1.2 Q-0.4 0.4 -1.2 0 Q-0.4 -0.4 0 -1.2 Z" fill="#4C78FF"/>
+          </g>
+        </svg>
+        <span class="site-header-name">SmartPMO.ai</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="site-header-nav">
+        <a href="/#latest-intelligence" class="site-header-nav-link">Latest Intelligence</a>
+        <a href="/#strategic-insights" class="site-header-nav-link">Strategic Insights</a>
+        <a href="/#blog" class="site-header-nav-link">Blog</a>
+        <a href="/about" class="site-header-nav-link">About</a>
+        <a href="/assessment" class="site-header-cta-button">
+          <span>Take Assessment</span>
+          <span>&rarr;</span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="site-header-mobile-toggle" onclick="HeaderMenu.toggle()" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="site-header-mobile-menu" id="siteHeaderMobileMenu">
+    <nav class="site-header-mobile-nav">
+      <a href="/#latest-intelligence" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Latest Intelligence</a>
+      <a href="/#strategic-insights" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Strategic Insights</a>
+      <a href="/#blog" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Blog</a>
+      <a href="/about" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">About</a>
+      <a href="/assessment" class="site-header-mobile-cta" onclick="HeaderMenu.close()">
+        <span>Take Assessment</span>
+        <span>&rarr;</span>
+      </a>
+    </nav>
+  </div>
+
+  <main class="about-page">
+
+    <!-- Section A: Page Title -->
+    <section aria-labelledby="about-title">
+      <h1 id="about-title">About SmartPMO.ai</h1>
+      <p class="page-subtitle">Built to solve a problem no one else was solving.</p>
+    </section>
+
+    <hr>
+
+    <!-- Section B: The Problem -->
+    <section aria-labelledby="about-problem">
+      <h2 id="about-problem">The Problem</h2>
+      <p>I run enterprise PMO operations. I'm responsible for implementing AI at scale across organisations and within PMO functions. Despite 15+ years in this work, I was drowning in content.</p>
+      <p>Subscribed to 50+ AI sources. Still missed critical developments at the PMO-AI intersection.</p>
+
+      <div class="stat-callout">
+        <strong>8.5 million</strong> articles and blog posts are published online every day &mdash; approximately 7.5 million blog posts (<a href="https://www.techbusinessnews.com.au/blog/how-many-blogs-are-there-in-the-world-blogging-statistics-2023/" target="_blank" rel="noopener">Tech Business News, 2025</a>) plus nearly 1 million news articles from 26,000+ publishers (<a href="https://www.newscatcherapi.com/blog-posts/60-000-ai-generated-news-articles-are-published-every-day" target="_blank" rel="noopener">NewsCatcher, 2024</a>). Finding the fraction of a percent relevant to PMO work is impossible manually.
+      </div>
+
+      <p>I needed a system that could process millions of articles, score them for PMO applicability, and surface the signal. So I built one.</p>
+    </section>
+
+    <hr>
+
+    <!-- Section C: Who Built This -->
+    <section aria-labelledby="about-who">
+      <h2 id="about-who">Who Built This</h2>
+      <p>I'm a PMO professional who came up through the full delivery chain:</p>
+
+      <div class="chip-flow" role="list" aria-label="Career path">
+        <span class="chip-flow-item" role="listitem">Software Engineering</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">Business Analysis</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">System Design</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">Project Management</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">Programme Management</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">PMO Leadership</span>
+      </div>
+
+      <p>Over 15 years I've designed PMO processes from scratch, restructured individual PMOs, rebuilt enterprise PMO functions across multiple divisions, and currently oversee enterprise PMOs at scale.</p>
+      <p>I'm also an active AI practitioner. I work with AI daily &mdash; not as a casual user. I'm actively forging enterprise AI strategy and developing AI-powered ecosystems in organisations.</p>
+      <p>That combination &mdash; deep PMO domain knowledge plus hands-on AI implementation &mdash; is what drives this. I built SmartPMO.ai because I needed it. I'm sharing it because every PMO professional has the same problem.</p>
+    </section>
+
+    <hr>
+
+    <!-- Section D: What You Get -->
+    <section aria-labelledby="about-what">
+      <h2 id="about-what">What You Get</h2>
+      <p>Curated intelligence for PMO professionals who don't have time to process millions of articles. You see the newest, most relevant content &mdash; not stale discoveries or vendor pitches.</p>
+
+      <ul class="cyan-list">
+        <li><strong>Just signal.</strong> Working automation plus PMO domain validation.</li>
+        <li><strong>No vendor deals.</strong> I'm not paid by AI companies to feature content.</li>
+        <li><strong>No affiliate links.</strong> Direct links to original sources only.</li>
+        <li><strong>No ads.</strong> Not a monetisation play.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Section E: How It Works -->
+    <section aria-labelledby="about-how">
+      <h2 id="about-how">How It Works</h2>
+      <p>SmartPMO.ai runs an automated AI pipeline daily. It scans hundreds of sources, scores every article for PMO relevance, and surfaces the ones worth your time.</p>
+
+      <div class="chip-flow" role="list" aria-label="Pipeline steps">
+        <span class="chip-flow-item" role="listitem">Discover</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">PreFilter</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">Score</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">Fetch</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">Enrich</span>
+        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
+        <span class="chip-flow-item" role="listitem">Publish</span>
+      </div>
+
+      <p>The engine processes RSS feeds, news APIs, and targeted searches. AI models evaluate each article for PMO applicability &mdash; both direct mentions and inferred relevance. The highest-scoring articles are enriched with summaries and categorisation, then published to the site.</p>
+      <p>The details of how the engine works are proprietary. The results speak for themselves.</p>
+    </section>
+
+    <hr>
+
+    <!-- Section F: Three Article Categories -->
+    <section aria-labelledby="about-categories">
+      <h2 id="about-categories">Three Article Categories</h2>
+
+      <div class="category-cards">
+        <div class="category-card">
+          <h3 style="color: #00F5FF;">PMO Related</h3>
+          <p>AI tools and techniques explicitly for PMO work. Mentions project management, portfolio management, resource allocation, or risk management alongside AI capabilities.</p>
+        </div>
+        <div class="category-card">
+          <h3 style="color: #FFD700;">PMO Potential</h3>
+          <p>AI developments with clear inferred PMO applications. Documentation generators, workflow automation, scenario planning &mdash; tools that don't mention PMO but solve PMO problems.</p>
+        </div>
+        <div class="category-card">
+          <h3 style="color: #825AFF;">AI General</h3>
+          <p>Significant AI breakthroughs worth knowing. Major model releases, novel techniques, industry shifts that PMO professionals should be aware of.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Section G: Why Share This -->
+    <section aria-labelledby="about-why">
+      <h2 id="about-why">Why Share This</h2>
+      <p>This started as a personal tool to solve content overload. It works. The automation runs daily. The articles you see were discovered from millions of possibilities.</p>
+      <p>I'm sharing it with the PMO community because the problem is universal: too much content, not enough time, need for reliable signal at the PMO-AI intersection.</p>
+      <p>No vendors. No bias. Just working automation plus PMO domain validation.</p>
+    </section>
+
+    <hr>
+
+    <!-- Section H: CTA Block -->
+    <div class="cta-block">
+      <h2>Stay Current</h2>
+      <p>Personal insights, implementation stories, and lessons from building AI-powered PMO systems &mdash; on the blog.</p>
+      <div class="cta-buttons">
+        <a href="/" class="btn-primary">View Today's Insights &rarr;</a>
+        <a href="/blog" class="btn-secondary">Read the Blog &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Section I: Back Link -->
+    <a href="/" class="back-link" aria-label="Back to SmartPMO.ai homepage">&larr; Back to SmartPMO.ai</a>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="about-footer">
+    <p>&copy; 2025 SmartPMO.ai &mdash; AI-powered insights for PMO professionals</p>
+  </footer>
+
+  <!-- Header Menu JavaScript -->
+  <script>
+  const HeaderMenu = (() => {
+    return {
+      toggle: function() {
+        const menu = document.getElementById('siteHeaderMobileMenu');
+        menu.classList.toggle('active');
+      },
+      close: function() {
+        const menu = document.getElementById('siteHeaderMobileMenu');
+        menu.classList.remove('active');
+      }
+    };
+  })();
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') HeaderMenu.close();
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) HeaderMenu.close();
+  });
+  </script>
+
+</body>
+</html>

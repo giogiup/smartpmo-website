@@ -16,6 +16,7 @@
 | 4 | LOW  | ✅ Done | Maintenance banner — live on site |
 | 5 | HIGH | ⏳ Pending | `og-image.png` not created — og:image meta tags commented out |
 | 6 | HIGH | 🔴 Spec ready | Published date not shown on Latest Intelligence cards — `FIX-SPEC-CARD-PUB-DATE.md` |
+| 7 | HIGH | 🔴 Spec ready | About page missing — nav link exists but points to homepage (no `/about/index.html`). Spec: `SPEC-ABOUT-PAGE.md` (B-01) |
 
 ---
 
