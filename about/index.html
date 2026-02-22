@@ -59,7 +59,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="../header-styles.css">
@@ -101,7 +101,7 @@
     }
 
     .about-page h1 {
-      font-family: 'Spectral', Georgia, serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: clamp(2rem, 5vw, 2.8rem);
       font-weight: 700;
       color: #ffffff;
@@ -115,7 +115,7 @@
     }
 
     .about-page h2 {
-      font-family: 'Spectral', Georgia, serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       font-size: clamp(1.3rem, 4vw, 1.6rem);
       font-weight: 600;
       color: #00F5FF;
@@ -510,22 +510,7 @@
       <h2 id="about-how">How It Works</h2>
       <p>SmartPMO.ai runs an automated AI pipeline daily. It scans hundreds of sources, scores every article for PMO relevance, and surfaces the ones worth your time.</p>
 
-      <div class="chip-flow" role="list" aria-label="Pipeline steps">
-        <span class="chip-flow-item" role="listitem">Discover</span>
-        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
-        <span class="chip-flow-item" role="listitem">PreFilter</span>
-        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
-        <span class="chip-flow-item" role="listitem">Score</span>
-        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
-        <span class="chip-flow-item" role="listitem">Fetch</span>
-        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
-        <span class="chip-flow-item" role="listitem">Enrich</span>
-        <span class="chip-flow-arrow" aria-hidden="true">&rarr;</span>
-        <span class="chip-flow-item" role="listitem">Publish</span>
-      </div>
-
       <p>The engine processes RSS feeds, news APIs, and targeted searches. AI models evaluate each article for PMO applicability &mdash; both direct mentions and inferred relevance. The highest-scoring articles are enriched with summaries and categorisation, then published to the site.</p>
-      <p>The details of how the engine works are proprietary. The results speak for themselves.</p>
     </section>
 
     <hr>
