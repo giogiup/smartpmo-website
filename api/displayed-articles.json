@@ -1,6 +1,28 @@
 {
   "latestIntelligence": [
     {
+      "id": 71238,
+      "title": "Altman: You think AI is wasted energy? Try raising 100 billion humans",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/sam_altman_ai_efficiency/",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-23",
+      "discoveredAt": "2026-02-23 18:55:46",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 71000,
+      "title": "Import AI 446: Nuclear LLMs; China’s big AI benchmark; measurement and AI policy",
+      "url": "https://jack-clark.net/2026/02/23/import-ai-446-nuclear-llms-chinas-big-ai-benchmark-measurement-and-ai-policy/",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-23",
+      "discoveredAt": "2026-02-23 18:47:52",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 70595,
       "title": "The Sequence Radar #811: Last Week in AI: OpenAI's Capital Leap, India's Summit, and the Next Frontier of Models",
       "url": "https://thesequence.substack.com/p/the-sequence-radar-811-last-week",
@@ -177,28 +199,6 @@
       "section": "auto"
     },
     {
-      "id": 67122,
-      "title": "The cure for the AI hype hangover",
-      "url": "https://www.infoworld.com/article/4131152/enterprise-ai-is-not-a-magic-key.html",
-      "summary": "",
-      "score": 50,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:13:18",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67110,
-      "title": "On Agent Frameworks and Agent Observability",
-      "url": "https://blog.langchain.com/on-agent-frameworks-and-agent-observability/",
-      "summary": "",
-      "score": 50,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:04:32",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 67105,
       "title": "Launched SmartPack: Persistent AI assistants with one paste",
       "url": "https://www.indiehackers.com/product/smartpack?post=DlzBh95SLsuBKrmmGGC3",
@@ -305,5 +305,5 @@
     "curated": 7,
     "total": 27
   },
-  "generatedAt": "2026-02-23T04:17:20.593Z"
+  "generatedAt": "2026-02-23T19:11:05.793Z"
 }

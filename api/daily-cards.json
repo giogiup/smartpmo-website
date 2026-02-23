@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-23T04:17:19.870Z",
+  "generated": "2026-02-23T19:11:05.787Z",
   "date": "2026-02-23",
   "count": 20,
   "cards": [
+    {
+      "id": 71238,
+      "title": "Altman: You think AI is wasted energy? Try raising 100 billion humans",
+      "url": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/sam_altman_ai_efficiency/",
+      "date": "2026-02-23",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Sam Altman defends AI's energy consumption by comparing it to the vast resources needed for human life.**",
+        "He argues AI's 'wasted energy' is justified considering the resources for human population growth.",
+        "This statement addresses ongoing debates about AI's environmental impact and resource utilization."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Sam Altman",
+        "AI energy",
+        "AI efficiency"
+      ]
+    },
+    {
+      "id": 71000,
+      "title": "Import AI 446: Nuclear LLMs; China’s big AI benchmark; measurement and AI policy",
+      "url": "https://jack-clark.net/2026/02/23/import-ai-446-nuclear-llms-chinas-big-ai-benchmark-measurement-and-ai-policy/",
+      "date": "2026-02-23",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Import AI 446 emphasizes the critical role of AI system measurement for effective policy and governance.**",
+        "AI researcher Jacob Steinhardt advocates investing in tools to measure AI properties and reduce policy compliance costs.",
+        "Accurate measurement, as seen with CO2 monitoring or COVID-19 testing, helps orient strategies and shift incentives."
+      ],
+      "badges": {
+        "read_time": 13,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI measurement",
+        "AI policy",
+        "AI governance"
+      ]
+    },
     {
       "id": 70595,
       "title": "The Sequence Radar #811: Last Week in AI: OpenAI's Capital Leap, India's Summit, and the Next Frontier of Models",
@@ -443,58 +495,6 @@
         "SmartPack",
         "AI assistants",
         "productivity"
-      ]
-    },
-    {
-      "id": 67122,
-      "title": "The cure for the AI hype hangover",
-      "url": "https://www.infoworld.com/article/4131152/enterprise-ai-is-not-a-magic-key.html",
-      "date": "2026-02-13",
-      "score": 50,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**The article addresses the prevailing 'AI hype hangover' in enterprises, advocating for realistic expectations.**",
-        "It emphasizes that enterprise AI is not a 'magic key' for instant solutions or transformative results.",
-        "Businesses must adopt a grounded, strategic approach to AI implementation, moving beyond inflated promises."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI hype",
-        "enterprise AI",
-        "AI strategy"
-      ]
-    },
-    {
-      "id": 67110,
-      "title": "On Agent Frameworks and Agent Observability",
-      "url": "https://blog.langchain.com/on-agent-frameworks-and-agent-observability/",
-      "date": "2026-02-13",
-      "score": 50,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "LangChain asserts agent frameworks remain vital, evolving alongside continuous LLM advancements.",
-        "The article details LangChain's three generations of agent frameworks, from chaining to tool-calling.",
-        "It emphasizes agent observability via LangSmith, crucial regardless of the chosen framework."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "langchain",
-        "agent frameworks",
-        "llm agents"
       ]
     },
     {
