@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-24T04:20:44.177Z",
+  "generated": "2026-02-24T05:17:00.614Z",
   "date": "2026-02-24",
   "count": 20,
   "cards": [
+    {
+      "id": 71421,
+      "title": "Anthropic accuses DeepSeek and other Chinese firms of using Claude to train their AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/883243/anthropic-claude-deepseek-china-ai-distillation",
+      "date": "2026-02-23",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**Anthropic accuses Chinese AI firms, including DeepSeek, of using its Claude model to train their own AI.**",
+        "This practice, known as model distillation, involves using one AI's outputs to teach another.",
+        "The accusation highlights growing concerns over intellectual property and fair use in AI development."
+      ],
+      "badges": {
+        "read_time": 12,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "anthropic",
+        "claude",
+        "deepseek"
+      ]
+    },
+    {
+      "id": 71344,
+      "title": "Hacker used commercial AI to breach 600 firewalls: AWS",
+      "url": "https://www.siliconrepublic.com/enterprise/amazon-aws-commercial-gen-ai-firewall-fortigate-breach",
+      "date": "2026-02-23",
+      "score": 54,
+      "pmo_relevance": "None",
+      "pmo_category": "AI_GENERAL",
+      "tldr": [
+        "**AWS reported a hacker used commercial AI to breach 600 Fortigate firewalls.**",
+        "The incident highlights the growing threat of AI-powered cyberattacks on critical infrastructure.",
+        "This event underscores the need for enhanced cybersecurity measures against sophisticated AI-driven threats."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "cybersecurity",
+        "firewall"
+      ]
+    },
     {
       "id": 71238,
       "title": "Altman: You think AI is wasted energy? Try raising 100 billion humans",
@@ -264,32 +316,6 @@
       ]
     },
     {
-      "id": 68477,
-      "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
-      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
-      "date": "2026-02-18",
-      "score": 53,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Amazon shares real-world lessons on effectively evaluating AI agents and agentic systems.**",
-        "The article details challenges and strategies in developing robust evaluation frameworks for AI agents.",
-        "It provides insights from Amazon's experience in building and deploying complex agentic AI systems."
-      ],
-      "badges": {
-        "read_time": 23,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "evaluation",
-        "agentic systems"
-      ]
-    },
-    {
       "id": 68054,
       "title": "I built an AI secretary that lives in your WhatsApp — and it's not just another chatbot",
       "url": "https://www.indiehackers.com/post/i-built-an-ai-secretary-that-lives-in-your-whatsapp-and-its-not-just-another-chatbot-d9b1bdc8f6",
@@ -495,32 +521,6 @@
         "SmartPack",
         "AI assistants",
         "productivity"
-      ]
-    },
-    {
-      "id": 67092,
-      "title": "Google DeepMind Introduces Aletheia: The AI Agent Moving from Math Competitions to Fully Autonomous Professional Research Discoveries",
-      "url": "https://www.marktechpost.com/2026/02/12/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/",
-      "date": "2026-02-13",
-      "score": 50,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Google DeepMind introduces Aletheia, an AI agent for autonomous professional research discoveries.**",
-        "Aletheia represents a significant advancement from solving math competitions to complex research tasks.",
-        "This AI agent aims to perform fully autonomous research, potentially accelerating scientific breakthroughs."
-      ],
-      "badges": {
-        "read_time": 32,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Google DeepMind",
-        "Aletheia",
-        "AI Agent"
       ]
     }
   ]
