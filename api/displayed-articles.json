@@ -1,6 +1,17 @@
 {
   "latestIntelligence": [
     {
+      "id": 71425,
+      "title": "Build Effective Internal Tooling with Claude Code",
+      "url": "https://towardsdatascience.com/build-effective-internal-tooling-with-claude-code/",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-02-23",
+      "discoveredAt": "2026-02-24 04:11:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 71421,
       "title": "Anthropic accuses DeepSeek and other Chinese firms of using Claude to train their AI",
       "url": "https://www.theverge.com/ai-artificial-intelligence/883243/anthropic-claude-deepseek-china-ai-distillation",
@@ -208,17 +219,6 @@
       "discoveredAt": "2026-02-15 07:29:07",
       "pmbokArea": null,
       "section": "auto"
-    },
-    {
-      "id": 67105,
-      "title": "Launched SmartPack: Persistent AI assistants with one paste",
-      "url": "https://www.indiehackers.com/product/smartpack?post=DlzBh95SLsuBKrmmGGC3",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:04:28",
-      "pmbokArea": null,
-      "section": "auto"
     }
   ],
   "strategicInsights": [
@@ -305,5 +305,5 @@
     "curated": 7,
     "total": 27
   },
-  "generatedAt": "2026-02-24T05:17:00.659Z"
+  "generatedAt": "2026-02-24T20:46:59.065Z"
 }

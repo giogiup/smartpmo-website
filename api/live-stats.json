@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-24T05:17:00.697Z",
+  "generated_at": "2026-02-24T20:46:59.138Z",
   "period": "24h",
-  "discovered": 140,
+  "discovered": 249,
   "analyzed": 31,
-  "insights": 19,
+  "insights": 20,
   "pass_rate": 11.07,
   "avg_score": 30.8,
-  "last_updated": "2026-02-24T05:17:00.697Z"
+  "last_updated": "2026-02-24T20:46:59.138Z"
 }
