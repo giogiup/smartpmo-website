@@ -1,6 +1,28 @@
 {
   "latestIntelligence": [
     {
+      "id": 71421,
+      "title": "Anthropic accuses DeepSeek and other Chinese firms of using Claude to train their AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/883243/anthropic-claude-deepseek-china-ai-distillation",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-23",
+      "discoveredAt": "2026-02-24 04:11:11",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 71344,
+      "title": "Hacker used commercial AI to breach 600 firewalls: AWS",
+      "url": "https://www.siliconrepublic.com/enterprise/amazon-aws-commercial-gen-ai-firewall-fortigate-breach",
+      "summary": "",
+      "score": 54,
+      "publishedDate": "2026-02-23",
+      "discoveredAt": "2026-02-24 04:09:03",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 71238,
       "title": "Altman: You think AI is wasted energy? Try raising 100 billion humans",
       "url": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/sam_altman_ai_efficiency/",
@@ -111,17 +133,6 @@
       "section": "auto"
     },
     {
-      "id": 68477,
-      "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
-      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
-      "summary": "",
-      "score": 53,
-      "publishedDate": "2026-02-18",
-      "discoveredAt": "2026-02-19 11:03:17",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 68216,
       "title": "Milan-based Contents secures €5.9 million for AI workflow platform, sets up Doha hub for Middle East expansion",
       "url": "https://www.eu-startups.com/2026/02/milan-based-contents-secures-e5-9-million-for-ai-workflow-platform-sets-up-doha-hub-for-middle-east-expansion/",
@@ -206,17 +217,6 @@
       "score": 66,
       "publishedDate": "2026-02-13",
       "discoveredAt": "2026-02-13 09:04:28",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67092,
-      "title": "Google DeepMind Introduces Aletheia: The AI Agent Moving from Math Competitions to Fully Autonomous Professional Research Discoveries",
-      "url": "https://www.marktechpost.com/2026/02/12/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/",
-      "summary": "",
-      "score": 50,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 08:59:43",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -305,5 +305,5 @@
     "curated": 7,
     "total": 27
   },
-  "generatedAt": "2026-02-23T19:11:05.793Z"
+  "generatedAt": "2026-02-24T04:20:44.224Z"
 }
