@@ -1,8 +1,86 @@
 {
-  "generated": "2026-02-24T20:46:58.970Z",
-  "date": "2026-02-24",
+  "generated": "2026-02-25T04:29:24.198Z",
+  "date": "2026-02-25",
   "count": 20,
   "cards": [
+    {
+      "id": 72144,
+      "title": "Google adds AI agent to Opal mini-app builder",
+      "url": "https://www.infoworld.com/article/4136919/google-adds-ai-agent-to-opal-mini-app-builder.html",
+      "date": "2026-02-25",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Google has integrated an AI agent into its Opal mini-app builder platform.**",
+        "The AI agent aims to simplify and accelerate the development of custom mini-applications.",
+        "This enhancement could assist users in rapidly prototyping and deploying business tools."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Tools",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Google",
+        "AI agent",
+        "Opal"
+      ]
+    },
+    {
+      "id": 72128,
+      "title": "Anthropic accelerates its Cowork enterprise play",
+      "url": "https://thenewstack.io/anthropic-accelerates-its-cowork-enterprise-play/",
+      "date": "2026-02-24",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Anthropic is accelerating its 'Cowork' initiative to integrate AI into enterprise workflows.**",
+        "The 'Cowork' strategy focuses on deploying Anthropic's advanced AI models for business collaboration and efficiency.",
+        "This enterprise expansion could assist organizations in automating tasks and improving team productivity."
+      ],
+      "badges": {
+        "read_time": 42,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Anthropic",
+        "Cowork",
+        "Enterprise AI"
+      ]
+    },
+    {
+      "id": 71425,
+      "title": "Build Effective Internal Tooling with Claude Code",
+      "url": "https://towardsdatascience.com/build-effective-internal-tooling-with-claude-code/",
+      "date": "2026-02-23",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The article explores using Claude Code to build effective and custom internal software tools.**",
+        "Claude assists in generating code and streamlining the development process for bespoke applications.",
+        "This approach accelerates the creation of tailored solutions, which could assist PMO teams in automating processes or building project-specific utilities."
+      ],
+      "badges": {
+        "read_time": 23,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Claude",
+        "AI",
+        "internal tools"
+      ]
+    },
     {
       "id": 71421,
       "title": "Anthropic accuses DeepSeek and other Chinese firms of using Claude to train their AI",
@@ -368,32 +446,6 @@
       ]
     },
     {
-      "id": 67995,
-      "title": "The A3 Handoff Canvas: Six Questions That Turn AI Delegation Into a Repeatable Workflow",
-      "url": "https://age-of-product.com/a3-handoff-canvas/",
-      "date": "2026-02-15",
-      "score": 71,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The A3 Handoff Canvas provides a structured approach for delegating tasks to AI.**",
-        "It utilizes six key questions to ensure clarity and effectiveness in AI assignments.",
-        "The framework aims to transform AI delegation into a consistent and repeatable workflow."
-      ],
-      "badges": {
-        "read_time": 23,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI delegation",
-        "A3 canvas",
-        "workflow"
-      ]
-    },
-    {
       "id": 67971,
       "title": "How Workers powers our internal maintenance scheduling pipeline",
       "url": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
@@ -420,32 +472,6 @@
       ]
     },
     {
-      "id": 67965,
-      "title": "Introducing Markdown for Agents",
-      "url": "https://blog.cloudflare.com/markdown-for-agents/",
-      "date": "2026-02-15",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Cloudflare introduces Markdown support, enabling agents to format communications for improved clarity and structure.",
-        "This feature allows agents to use bolding, italics, lists, and code blocks for more effective information exchange.",
-        "Enhances internal communication and documentation, which could assist PMO teams in standardizing project updates and knowledge sharing."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Knowledge",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Cloudflare",
-        "Markdown",
-        "communication"
-      ]
-    },
-    {
       "id": 67889,
       "title": "Workflow Automation for Teams: Processes, Tools & Best Practices",
       "url": "https://clickup.com/blog/workflow-automation/",
@@ -469,32 +495,6 @@
         "workflow automation",
         "team productivity",
         "process improvement"
-      ]
-    },
-    {
-      "id": 68031,
-      "title": "How Mid-Size Businesses Can Unlock Productivity with Agentic Automation",
-      "url": "https://www.technosip.com/uncategorized/how-mid-size-businesses-can-unlock-productivity-with-agentic-automation/",
-      "date": "2026-02-15",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Mid-size businesses can unlock significant productivity gains through agentic automation implementation.**",
-        "Agentic automation utilizes AI agents to autonomously perform tasks and achieve business objectives.",
-        "This technology can streamline operations, automate repetitive tasks, and enhance strategic decision-making."
-      ],
-      "badges": {
-        "read_time": 14,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "agentic automation",
-        "productivity",
-        "mid-size businesses"
       ]
     },
     {
