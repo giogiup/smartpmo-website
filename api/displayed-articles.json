@@ -1,6 +1,83 @@
 {
   "latestIntelligence": [
     {
+      "id": 72573,
+      "title": "Anthropic targets core business systems with new Claude plug-ins",
+      "url": "https://www.computerworld.com/article/4137156/anthropic-targets-core-business-systems-with-new-claude-plug-ins-2.html",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:10:42",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72491,
+      "title": "Jira’s latest update allows AI agents and humans to work side by side",
+      "url": "https://techcrunch.com/2026/02/25/jiras-latest-update-allows-ai-agents-and-humans-to-work-side-by-side/",
+      "summary": "",
+      "score": 84,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:09:01",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72384,
+      "title": "Launch HN: TeamOut (YC W22) – AI agent for planning company retreats",
+      "url": "https://app.teamout.com/ai",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:07:19",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72316,
+      "title": "Building intelligent event agents using Amazon Bedrock AgentCore and Amazon Bedrock Knowledge Bases",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases/",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:05:46",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72288,
+      "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
+      "url": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:04:26",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72262,
+      "title": "This AI note-taking startup thinks it’s building the ‘steering wheel’ for chatbots",
+      "url": "https://www.fastcompany.com/91497900/granola-chris-pedregal-interview?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:01:40",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72234,
+      "title": "From agent sprawl to seamless alignment: Introducing agents in Jira",
+      "url": "https://www.atlassian.com/blog/announcements/ai-agents-in-jira",
+      "summary": "",
+      "score": 86,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:00:45",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 72144,
       "title": "Google adds AI agent to Opal mini-app builder",
       "url": "https://www.infoworld.com/article/4136919/google-adds-ai-agent-to-opal-mini-app-builder.html",
@@ -142,83 +219,6 @@
       "discoveredAt": "2026-02-20 04:08:23",
       "pmbokArea": null,
       "section": "auto"
-    },
-    {
-      "id": 69225,
-      "title": "Solink introduces AI Agents designed to act on video and business data in real time",
-      "url": "https://siliconangle.com/2026/02/18/solink-introduces-ai-agents-designed-act-video-business-data-real-time/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-18",
-      "discoveredAt": "2026-02-19 11:12:02",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 69153,
-      "title": "Advance Planning for AI Project Evaluation",
-      "url": "https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-02-18",
-      "discoveredAt": "2026-02-19 11:10:41",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 68216,
-      "title": "Milan-based Contents secures €5.9 million for AI workflow platform, sets up Doha hub for Middle East expansion",
-      "url": "https://www.eu-startups.com/2026/02/milan-based-contents-secures-e5-9-million-for-ai-workflow-platform-sets-up-doha-hub-for-middle-east-expansion/",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-02-16",
-      "discoveredAt": "2026-02-16 14:06:42",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 68054,
-      "title": "I built an AI secretary that lives in your WhatsApp — and it's not just another chatbot",
-      "url": "https://www.indiehackers.com/post/i-built-an-ai-secretary-that-lives-in-your-whatsapp-and-its-not-just-another-chatbot-d9b1bdc8f6",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-16",
-      "discoveredAt": "2026-02-16 13:56:19",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67971,
-      "title": "How Workers powers our internal maintenance scheduling pipeline",
-      "url": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
-      "summary": "",
-      "score": 71,
-      "publishedDate": "2026-02-15",
-      "discoveredAt": "2026-02-15 13:57:03",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67889,
-      "title": "Workflow Automation for Teams: Processes, Tools & Best Practices",
-      "url": "https://clickup.com/blog/workflow-automation/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-15",
-      "discoveredAt": "2026-02-15 07:29:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 67105,
-      "title": "Launched SmartPack: Persistent AI assistants with one paste",
-      "url": "https://www.indiehackers.com/product/smartpack?post=DlzBh95SLsuBKrmmGGC3",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-02-13",
-      "discoveredAt": "2026-02-13 09:04:28",
-      "pmbokArea": null,
-      "section": "auto"
     }
   ],
   "strategicInsights": [
@@ -305,5 +305,5 @@
     "curated": 7,
     "total": 27
   },
-  "generatedAt": "2026-02-25T04:29:24.203Z"
+  "generatedAt": "2026-02-26T04:29:57.143Z"
 }
