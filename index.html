@@ -1372,11 +1372,11 @@ via SmartPMO.ai`;
   });
   </script>
 
-  <!-- EmailOctopus duplicate subscription guard -->
+  <!-- EmailOctopus duplicate subscription guard (v2 - document delegation) -->
   <script>
   (function() {
     'use strict';
-    const STORAGE_KEY = 'smartpmo_subscribed';
+    var STORAGE_KEY = 'smartpmo_subscribed';
 
     function getSubscribed() {
       try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
@@ -1384,60 +1384,118 @@ via SmartPMO.ai`;
     }
 
     function markSubscribed(email, formId) {
-      const data = getSubscribed();
+      var data = getSubscribed();
       if (!data[formId]) data[formId] = [];
       if (!data[formId].includes(email)) data[formId].push(email);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
     }
 
     function isAlreadySubscribed(email, formId) {
-      const data = getSubscribed();
+      var data = getSubscribed();
       return data[formId] && data[formId].includes(email);
     }
 
-    // Wait for EmailOctopus forms to load
-    function initGuard() {
-      const forms = document.querySelectorAll('.emailoctopus-form-wrapper form');
-      if (!forms.length) { setTimeout(initGuard, 500); return; }
+    function showAlreadySubscribed(wrapper) {
+      var mainForm = wrapper.querySelector('.main-form') || wrapper.querySelector('form');
+      if (mainForm) mainForm.style.display = 'none';
+      var successEl = wrapper.querySelector('.emailoctopus-success-message');
+      if (successEl) {
+        successEl.textContent = 'You are already subscribed with this email.';
+        successEl.style.display = 'block';
+        successEl.style.setProperty('color', '#facc15', 'important');
+      }
+    }
 
-      forms.forEach(function(form) {
-        const wrapper = form.closest('.emailoctopus-form-wrapper');
-        const formId = form.action || 'unknown';
-        const successEl = wrapper.querySelector('.emailoctopus-success-message');
-        const errorEl = wrapper.querySelector('.emailoctopus-error-message');
+    // Document-level click intercept on submit buttons (survives DOM rebuilds)
+    document.addEventListener('click', function(e) {
+      var btn = e.target;
+      if (!btn) return;
+      // Match submit buttons inside EmailOctopus forms
+      if (btn.type !== 'submit' || !btn.closest('.emailoctopus-form-wrapper')) return;
 
-        form.addEventListener('submit', function(e) {
-          const emailInput = form.querySelector('input[type="email"]');
-          if (!emailInput) return;
-          const email = emailInput.value.trim().toLowerCase();
-          if (!email) return;
+      var wrapper = btn.closest('.emailoctopus-form-wrapper');
+      var form = wrapper.querySelector('form');
+      if (!form) return;
 
-          if (isAlreadySubscribed(email, formId)) {
-            e.preventDefault();
-            e.stopImmediatePropagation();
-            // Hide form, show already-subscribed message
-            var mainForm = wrapper.querySelector('.main-form');
-            if (mainForm) mainForm.style.display = 'none';
-            if (successEl) {
-              successEl.textContent = 'You are already subscribed with this email.';
-              successEl.style.display = 'block';
-              successEl.style.setProperty('color', '#facc15', 'important'); // yellow for "already subscribed"
+      var emailInput = form.querySelector('input[type="email"]');
+      if (!emailInput) return;
+      var email = emailInput.value.trim().toLowerCase();
+      if (!email) return;
+
+      var formId = form.action || 'unknown';
+
+      if (isAlreadySubscribed(email, formId)) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        showAlreadySubscribed(wrapper);
+        return false;
+      }
+
+      // Not a duplicate — let it through, mark after delay
+      setTimeout(function() { markSubscribed(email, formId); }, 3000);
+    }, true); // capture phase — fires before any other handler
+
+    // Also intercept form submit events (backup)
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (!form || !form.closest('.emailoctopus-form-wrapper')) return;
+
+      var wrapper = form.closest('.emailoctopus-form-wrapper');
+      var emailInput = form.querySelector('input[type="email"]');
+      if (!emailInput) return;
+      var email = emailInput.value.trim().toLowerCase();
+      if (!email) return;
+
+      var formId = form.action || 'unknown';
+
+      if (isAlreadySubscribed(email, formId)) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        showAlreadySubscribed(wrapper);
+        return false;
+      }
+
+      setTimeout(function() { markSubscribed(email, formId); }, 3000);
+    }, true);
+
+    // Watch for EmailOctopus success messages to mark subscriptions
+    // (catches cases where the form submits successfully via AJAX)
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.type === 'attributes' && m.attributeName === 'style') {
+          var el = m.target;
+          if (el.classList && el.classList.contains('emailoctopus-success-message')) {
+            var display = window.getComputedStyle(el).display;
+            if (display !== 'none') {
+              // Success message became visible — form submitted OK
+              var wrapper = el.closest('.emailoctopus-form-wrapper');
+              if (!wrapper) return;
+              var form = wrapper.querySelector('form');
+              var emailInput = wrapper.querySelector('input[type="email"]');
+              if (form && emailInput) {
+                var email = emailInput.value.trim().toLowerCase();
+                var formId = form.action || 'unknown';
+                if (email) markSubscribed(email, formId);
+              }
             }
-            return false;
           }
+        }
+      });
+    });
 
-          // Mark as subscribed after short delay (form submits async)
-          setTimeout(function() {
-            markSubscribed(email, formId);
-          }, 2000);
-        }, true); // capture phase to run before EmailOctopus handler
+    // Start observing after forms load
+    function startObserving() {
+      var successEls = document.querySelectorAll('.emailoctopus-success-message');
+      if (!successEls.length) { setTimeout(startObserving, 500); return; }
+      successEls.forEach(function(el) {
+        observer.observe(el, { attributes: true, attributeFilter: ['style'] });
       });
     }
 
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function() { setTimeout(initGuard, 1000); });
+      document.addEventListener('DOMContentLoaded', function() { setTimeout(startObserving, 1000); });
     } else {
-      setTimeout(initGuard, 1000);
+      setTimeout(startObserving, 1000);
     }
   })();
   </script>
