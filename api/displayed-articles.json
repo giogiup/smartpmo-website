@@ -1,6 +1,94 @@
 {
   "latestIntelligence": [
     {
+      "id": 73268,
+      "title": "ServiceNow debuts Autonomous Workforce, EmployeeWorks automation tools",
+      "url": "https://siliconangle.com/2026/02/26/servicenow-debuts-autonomous-workforce-employeeworks-automation-tools/",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:13:11",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 73223,
+      "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
+      "url": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:11:41",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 73049,
+      "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
+      "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:09:27",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 73055,
+      "title": "Trace raises $3M to solve the AI agent adoption problem in enterprise",
+      "url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:09:27",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72870,
+      "title": "How I Turned Tiago Forte's PARA Method Into an AI-Powered Productivity OS With Claude Code + Obsidian",
+      "url": "https://aimaker.substack.com/p/para-method-tiago-forte-claude-code-obsidian-ai-productivity-os",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:05:52",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72827,
+      "title": "CORPGEN advances AI agents for real work",
+      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:03:19",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72814,
+      "title": "I built an OpenClaw AI agent to do my job for me. The results were surprising—and a little scary",
+      "url": "https://www.fastcompany.com/91495511/i-built-an-openclaw-ai-agent-to-do-my-job-for-me-results-were-surprising-scary?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:01:39",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72724,
+      "title": "Atlassian embeds agents into Jira and embraces MCP for third-party integrations",
+      "url": "https://siliconangle.com/2026/02/25/atlassian-embeds-agents-jira-embraces-mcp-third-party-integrations/",
+      "summary": "",
+      "score": 78,
+      "publishedDate": "2026-02-25",
+      "discoveredAt": "2026-02-26 04:12:53",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 72573,
       "title": "Anthropic targets core business systems with new Claude plug-ins",
       "url": "https://www.computerworld.com/article/4137156/anthropic-targets-core-business-systems-with-new-claude-plug-ins-2.html",
@@ -111,112 +199,24 @@
       "section": "auto"
     },
     {
-      "id": 71421,
-      "title": "Anthropic accuses DeepSeek and other Chinese firms of using Claude to train their AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/883243/anthropic-claude-deepseek-china-ai-distillation",
+      "id": 69225,
+      "title": "Solink introduces AI Agents designed to act on video and business data in real time",
+      "url": "https://siliconangle.com/2026/02/18/solink-introduces-ai-agents-designed-act-video-business-data-real-time/",
       "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-23",
-      "discoveredAt": "2026-02-24 04:11:11",
+      "score": 70,
+      "publishedDate": "2026-02-18",
+      "discoveredAt": "2026-02-19 11:12:02",
       "pmbokArea": null,
       "section": "auto"
     },
     {
-      "id": 71344,
-      "title": "Hacker used commercial AI to breach 600 firewalls: AWS",
-      "url": "https://www.siliconrepublic.com/enterprise/amazon-aws-commercial-gen-ai-firewall-fortigate-breach",
+      "id": 69153,
+      "title": "Advance Planning for AI Project Evaluation",
+      "url": "https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/",
       "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-23",
-      "discoveredAt": "2026-02-24 04:09:03",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 71238,
-      "title": "Altman: You think AI is wasted energy? Try raising 100 billion humans",
-      "url": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/sam_altman_ai_efficiency/",
-      "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-23",
-      "discoveredAt": "2026-02-23 18:55:46",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 71000,
-      "title": "Import AI 446: Nuclear LLMs; China’s big AI benchmark; measurement and AI policy",
-      "url": "https://jack-clark.net/2026/02/23/import-ai-446-nuclear-llms-chinas-big-ai-benchmark-measurement-and-ai-policy/",
-      "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-23",
-      "discoveredAt": "2026-02-23 18:47:52",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 70595,
-      "title": "The Sequence Radar #811: Last Week in AI: OpenAI's Capital Leap, India's Summit, and the Next Frontier of Models",
-      "url": "https://thesequence.substack.com/p/the-sequence-radar-811-last-week",
-      "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-22",
-      "discoveredAt": "2026-02-22 15:03:08",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 70356,
-      "title": "OpenAI's $112 Billion Cash Burn Forecast Reveals the Staggering Cost of Winning the AI Race",
-      "url": "https://www.webpronews.com/openais-112-billion-cash-burn-forecast-reveals-the-staggering-cost-of-winning-the-ai-race/",
-      "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-21",
-      "discoveredAt": "2026-02-21 04:11:43",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 70164,
-      "title": "96% of developers don’t trust AI code: Here’s a step toward the fix",
-      "url": "https://thenewstack.io/agentic-ai-verification-impact/",
-      "summary": "",
-      "score": 53,
-      "publishedDate": "2026-02-20",
-      "discoveredAt": "2026-02-21 04:08:23",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 70158,
-      "title": "India chases 'DeepSeek moment' with homegrown AI",
-      "url": "https://techxplore.com/news/2026-02-india-deepseek-moment-homegrown-ai.html",
-      "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-20",
-      "discoveredAt": "2026-02-21 04:08:13",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 69952,
-      "title": "Look Out, OpenAI: Perplexity Admits AI Adverts Were a Mistake, Is Now Getting Rid of Them",
-      "url": "https://futurism.com/artificial-intelligence/openai-perplexity-admits-ai-adverts-mistake",
-      "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-20",
-      "discoveredAt": "2026-02-21 04:06:31",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 69475,
-      "title": "The Sound of Data: Why Your Voice is the Hardest Problem in AI",
-      "url": "https://hackernoon.com/the-sound-of-data-why-your-voice-is-the-hardest-problem-in-ai?source=rss",
-      "summary": "",
-      "score": 54,
-      "publishedDate": "2026-02-20",
-      "discoveredAt": "2026-02-20 04:08:23",
+      "score": 75,
+      "publishedDate": "2026-02-18",
+      "discoveredAt": "2026-02-19 11:10:41",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -305,5 +305,5 @@
     "curated": 7,
     "total": 27
   },
-  "generatedAt": "2026-02-26T04:29:57.143Z"
+  "generatedAt": "2026-02-27T04:30:07.573Z"
 }

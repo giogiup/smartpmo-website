@@ -1,8 +1,112 @@
 {
-  "generated": "2026-02-26T04:29:56.998Z",
-  "date": "2026-02-26",
+  "generated": "2026-02-27T04:30:06.885Z",
+  "date": "2026-02-27",
   "count": 20,
   "cards": [
+    {
+      "id": 72234,
+      "title": "From agent sprawl to seamless alignment: Introducing agents in Jira",
+      "url": "https://www.atlassian.com/blog/announcements/ai-agents-in-jira",
+      "date": "2026-02-25",
+      "score": 86,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Atlassian introduces AI agents directly within Jira to enhance project management.**",
+        "These agents aim to transform 'agent sprawl' into 'seamless alignment' across workflows.",
+        "The integration seeks to automate tasks and improve coordination for project delivery teams."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Alignment",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "Jira",
+        "Atlassian"
+      ]
+    },
+    {
+      "id": 72491,
+      "title": "Jira’s latest update allows AI agents and humans to work side by side",
+      "url": "https://techcrunch.com/2026/02/25/jiras-latest-update-allows-ai-agents-and-humans-to-work-side-by-side/",
+      "date": "2026-02-25",
+      "score": 84,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Jira's latest update introduces AI agents designed to work collaboratively alongside human users.**",
+        "The new functionality allows AI agents and humans to operate \"side by side\" within the project management platform.",
+        "This integration aims to enhance task execution and streamline workflows within project environments."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Jira",
+        "AI agents",
+        "project management"
+      ]
+    },
+    {
+      "id": 72573,
+      "title": "Anthropic targets core business systems with new Claude plug-ins",
+      "url": "https://www.computerworld.com/article/4137156/anthropic-targets-core-business-systems-with-new-claude-plug-ins-2.html",
+      "date": "2026-02-25",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Anthropic introduces new Claude plug-ins designed for integration with core business systems.**",
+        "These plug-ins aim to enhance functionality and streamline operations within enterprise environments.",
+        "The integration of AI into business systems could assist with various project and operational workflows."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Anthropic",
+        "Claude",
+        "AI plug-ins"
+      ]
+    },
+    {
+      "id": 72316,
+      "title": "Building intelligent event agents using Amazon Bedrock AgentCore and Amazon Bedrock Knowledge Bases",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases/",
+      "date": "2026-02-25",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AWS details building intelligent event agents using Bedrock AgentCore and Knowledge Bases.**",
+        "It leverages Bedrock AgentCore for orchestrating agent workflows and Knowledge Bases for contextual data retrieval.",
+        "The approach enables creating autonomous agents that respond to specific events and process information effectively."
+      ],
+      "badges": {
+        "read_time": 16,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Amazon Bedrock",
+        "AI agents",
+        "event-driven AI"
+      ]
+    },
     {
       "id": 72144,
       "title": "Google adds AI agent to Opal mini-app builder",
@@ -27,6 +131,84 @@
         "Google",
         "AI agent",
         "Opal"
+      ]
+    },
+    {
+      "id": 72288,
+      "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
+      "url": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
+      "date": "2026-02-25",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Perplexity has launched \"Perplexity Computer,\" an agentic AI system bundling rival models into one workflow.**",
+        "The browser-based system creates sub-agents for tasks like web research, document creation, and data processing.",
+        "Users describe desired outcomes, and the system autonomously handles entire workflows, relevant for complex information gathering."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Perplexity",
+        "AI agents",
+        "workflow automation"
+      ]
+    },
+    {
+      "id": 72384,
+      "title": "Launch HN: TeamOut (YC W22) – AI agent for planning company retreats",
+      "url": "https://app.teamout.com/ai",
+      "date": "2026-02-25",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**TeamOutAI is an AI agent designed to instantly plan and book company retreats.**",
+        "It offers instant matching of curated global venues and provides quotes within 24 hours.",
+        "The tool helps find suitable venues and flights for corporate groups based on specific requirements."
+      ],
+      "badges": {
+        "read_time": 1,
+        "pmo_focus": "Enablement",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agent",
+        "event planning",
+        "company retreats"
+      ]
+    },
+    {
+      "id": 72262,
+      "title": "This AI note-taking startup thinks it’s building the ‘steering wheel’ for chatbots",
+      "url": "https://www.fastcompany.com/91497900/granola-chris-pedregal-interview?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+      "date": "2026-02-25",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Granola aims to revolutionize AI interaction with a visual, interactive canvas, moving beyond simple chat interfaces.**",
+        "The platform allows users to drag, drop, and connect elements to refine prompts and gain more control over AI.",
+        "This new interface aims to make AI more useful by providing a 'steering wheel' for more controlled interactions."
+      ],
+      "badges": {
+        "read_time": 3,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Granola",
+        "AI interface",
+        "chatbots"
       ]
     },
     {
@@ -339,188 +521,6 @@
         "AI code",
         "developer trust",
         "agentic AI"
-      ]
-    },
-    {
-      "id": 69153,
-      "title": "Advance Planning for AI Project Evaluation",
-      "url": "https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/",
-      "date": "2026-02-18",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Highlights the necessity of advance planning for effectively evaluating AI projects within a project management context.**",
-        "Discusses key metrics and frameworks for assessing AI project success from inception.",
-        "Emphasizes integrating evaluation strategies early to ensure AI initiatives deliver expected business value."
-      ],
-      "badges": {
-        "read_time": 20,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI projects",
-        "project evaluation",
-        "advance planning"
-      ]
-    },
-    {
-      "id": 69225,
-      "title": "Solink introduces AI Agents designed to act on video and business data in real time",
-      "url": "https://siliconangle.com/2026/02/18/solink-introduces-ai-agents-designed-act-video-business-data-real-time/",
-      "date": "2026-02-18",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Solink unveils new AI Agents capable of real-time analysis and action on video and business data.**",
-        "These agents are designed to process diverse data streams, enabling immediate operational responses.",
-        "The technology aims to enhance operational efficiency and decision-making through automated insights."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Solink",
-        "AI Agents",
-        "real-time data"
-      ]
-    },
-    {
-      "id": 68054,
-      "title": "I built an AI secretary that lives in your WhatsApp — and it's not just another chatbot",
-      "url": "https://www.indiehackers.com/post/i-built-an-ai-secretary-that-lives-in-your-whatsapp-and-its-not-just-another-chatbot-d9b1bdc8f6",
-      "date": "2026-02-16",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**irel is an AI secretary for WhatsApp that automates tasks beyond simple chatbot interactions.**",
-        "It provides features like email auto-triaging, smart reminders, and daily briefs for schedules and priorities.",
-        "The tool enables 'Jobs' for autonomous, recurring delegations, assisting with personal and professional organization."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI assistant",
-        "WhatsApp",
-        "task automation"
-      ]
-    },
-    {
-      "id": 68216,
-      "title": "Milan-based Contents secures €5.9 million for AI workflow platform, sets up Doha hub for Middle East expansion",
-      "url": "https://www.eu-startups.com/2026/02/milan-based-contents-secures-e5-9-million-for-ai-workflow-platform-sets-up-doha-hub-for-middle-east-expansion/",
-      "date": "2026-02-16",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Milan-based Contents secured €5.9 million to advance its AI workflow platform.**",
-        "The company is expanding into the Middle East with a new hub in Doha.",
-        "The investment supports scaling AI-powered solutions, relevant for optimizing various business processes."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "workflow",
-        "funding"
-      ]
-    },
-    {
-      "id": 67971,
-      "title": "How Workers powers our internal maintenance scheduling pipeline",
-      "url": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
-      "date": "2026-02-15",
-      "score": 71,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Cloudflare built an internal maintenance scheduling pipeline powered by Cloudflare Workers.**",
-        "The system automates the scheduling and execution of critical infrastructure maintenance tasks.",
-        "This internal solution enhances reliability and efficiency for Cloudflare's global network."
-      ],
-      "badges": {
-        "read_time": 17,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Cloudflare Workers",
-        "maintenance scheduling",
-        "automation"
-      ]
-    },
-    {
-      "id": 67889,
-      "title": "Workflow Automation for Teams: Processes, Tools & Best Practices",
-      "url": "https://clickup.com/blog/workflow-automation/",
-      "date": "2026-02-15",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The article outlines workflow automation for teams, covering processes, tools, and best practices.**",
-        "It details how automating repetitive tasks can significantly boost team efficiency and communication.",
-        "These automation principles are relevant to project teams seeking to optimize operational workflows and task management."
-      ],
-      "badges": {
-        "read_time": 50,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "workflow automation",
-        "team productivity",
-        "process improvement"
-      ]
-    },
-    {
-      "id": 67105,
-      "title": "Launched SmartPack: Persistent AI assistants with one paste",
-      "url": "https://www.indiehackers.com/product/smartpack?post=DlzBh95SLsuBKrmmGGC3",
-      "date": "2026-02-13",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**SmartPack launches persistent AI assistants that streamline tasks with a single paste action.**",
-        "The tool enhances productivity by automating repetitive tasks and integrating with existing workflows.",
-        "SmartPack could assist with managing project-related tasks more efficiently."
-      ],
-      "badges": {
-        "read_time": 2,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "SmartPack",
-        "AI assistants",
-        "productivity"
       ]
     }
   ]
