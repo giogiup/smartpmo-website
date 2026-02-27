@@ -726,8 +726,10 @@ footer {
   opacity: 0.9 !important;
 }
 
-/* Success/error message styling for dark background */
-.emailoctopus-form-wrapper .emailoctopus-success-message {
+/* Success/error message styling for dark background — high specificity to beat EmailOctopus */
+.emailoctopus-form-wrapper p.emailoctopus-success-message,
+.emailoctopus-form-default p.emailoctopus-success-message,
+p.emailoctopus-success-message {
   color: #4ade80 !important;
   font-size: 1.05rem !important;
   font-weight: 600 !important;
@@ -736,7 +738,9 @@ footer {
   margin-top: 0.5rem !important;
 }
 
-.emailoctopus-form-wrapper .emailoctopus-error-message {
+.emailoctopus-form-wrapper p.emailoctopus-error-message,
+.emailoctopus-form-default p.emailoctopus-error-message,
+p.emailoctopus-error-message {
   color: #f87171 !important;
   font-size: 0.95rem !important;
   text-align: center !important;
