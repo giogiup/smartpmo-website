@@ -711,13 +711,29 @@ footer {
 
 .emailoctopus-form-wrapper input[type="submit"] {
   border-radius: 10px !important;
-  border: none !important;
-  background: linear-gradient(135deg, var(--cyan), var(--purple)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  background: linear-gradient(135deg, #06B6D4, #825AFF) !important;
   color: #fff !important;
   font-weight: 700 !important;
   padding: 1rem 2rem !important;
   cursor: pointer !important;
   width: 100% !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease !important;
+}
+
+.emailoctopus-form-wrapper input[type="submit"]:hover {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.3) !important;
+  opacity: 0.9 !important;
+}
+
+/* Success message styling for dark background */
+.emailoctopus-form-wrapper .emailoctopus-success-message,
+.emailoctopus-form-wrapper [class*="success"] {
+  color: var(--text-primary, #e8f0ff) !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+  padding: 1rem !important;
 }
 
 /* Restore 'Powered by EmailOctopus' attribution styling */
