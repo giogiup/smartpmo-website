@@ -694,8 +694,7 @@ footer {
   padding: 0 !important;
 }
 
-.emailoctopus-form-wrapper h2,
-.emailoctopus-form-wrapper p:first-child {
+.emailoctopus-form-wrapper h2 {
   display: none !important; /* hide EmailOctopus default heading */
 }
 
@@ -727,13 +726,21 @@ footer {
   opacity: 0.9 !important;
 }
 
-/* Success message styling for dark background */
-.emailoctopus-form-wrapper .emailoctopus-success-message,
-.emailoctopus-form-wrapper [class*="success"] {
-  color: var(--text-primary, #e8f0ff) !important;
-  font-size: 1rem !important;
+/* Success/error message styling for dark background */
+.emailoctopus-form-wrapper .emailoctopus-success-message {
+  color: #4ade80 !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
   text-align: center !important;
-  padding: 1rem !important;
+  padding: 1rem 0.5rem !important;
+  margin-top: 0.5rem !important;
+}
+
+.emailoctopus-form-wrapper .emailoctopus-error-message {
+  color: #f87171 !important;
+  font-size: 0.95rem !important;
+  text-align: center !important;
+  padding: 0.5rem !important;
 }
 
 /* Restore 'Powered by EmailOctopus' attribution styling */
