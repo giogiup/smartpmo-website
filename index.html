@@ -1433,8 +1433,9 @@ via SmartPMO.ai`;
         return false;
       }
 
-      // Store pending email — only marked as subscribed when success message appears
-      pendingEmails[formId] = email;
+      // Store pending email and start polling for success confirmation
+      pendingEmails[formId] = { email: email, wrapper: wrapper };
+      pollForSuccess(formId);
     }, true);
 
     // Also intercept form submit events (backup)
@@ -1457,52 +1458,39 @@ via SmartPMO.ai`;
         return false;
       }
 
-      pendingEmails[formId] = email;
+      if (!pendingEmails[formId]) {
+        pendingEmails[formId] = { email: email, wrapper: wrapper };
+        pollForSuccess(formId);
+      }
     }, true);
 
-    // Watch for EmailOctopus success messages to confirm subscriptions
-    // Only marks as subscribed when the success message actually appears
-    var observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(m) {
-        if (m.type !== 'attributes' || m.attributeName !== 'style') return;
-        var el = m.target;
-        if (!el.classList || !el.classList.contains('emailoctopus-success-message')) return;
-        var display = window.getComputedStyle(el).display;
-        if (display === 'none') return;
+    // Poll for success message after form submission
+    // Only marks as subscribed when success message actually appears
+    function pollForSuccess(formId) {
+      var pending = pendingEmails[formId];
+      if (!pending) return;
+      var attempts = 0;
+      var maxAttempts = 30; // 30 seconds max
 
-        // Success message appeared — subscription confirmed
-        var wrapper = el.closest('.emailoctopus-form-wrapper');
-        if (!wrapper) return;
-        var form = wrapper.querySelector('form');
-        if (!form) return;
-        var formId = form.action || 'unknown';
+      var interval = setInterval(function() {
+        attempts++;
+        var wrapper = pending.wrapper;
+        var successEl = wrapper.querySelector('.emailoctopus-success-message');
 
-        // Use pending email (captured before form was hidden) or try input
-        var email = pendingEmails[formId];
-        if (!email) {
-          var emailInput = wrapper.querySelector('input[type="email"]');
-          if (emailInput) email = emailInput.value.trim().toLowerCase();
-        }
-        if (email) {
-          markSubscribed(email, formId);
+        if (successEl && window.getComputedStyle(successEl).display !== 'none' && successEl.textContent.trim().length > 0) {
+          // Success message is visible with content — subscription confirmed
+          markSubscribed(pending.email, formId);
           delete pendingEmails[formId];
+          clearInterval(interval);
+          return;
         }
-      });
-    });
 
-    // Start observing after forms load
-    function startObserving() {
-      var successEls = document.querySelectorAll('.emailoctopus-success-message');
-      if (!successEls.length) { setTimeout(startObserving, 500); return; }
-      successEls.forEach(function(el) {
-        observer.observe(el, { attributes: true, attributeFilter: ['style'] });
-      });
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function() { setTimeout(startObserving, 1000); });
-    } else {
-      setTimeout(startObserving, 1000);
+        if (attempts >= maxAttempts) {
+          // Timed out — don't mark (CAPTCHA blocked, error, etc.)
+          delete pendingEmails[formId];
+          clearInterval(interval);
+        }
+      }, 1000);
     }
   })();
   </script>
