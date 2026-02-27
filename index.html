@@ -1372,6 +1372,76 @@ via SmartPMO.ai`;
   });
   </script>
 
+  <!-- EmailOctopus duplicate subscription guard -->
+  <script>
+  (function() {
+    'use strict';
+    const STORAGE_KEY = 'smartpmo_subscribed';
+
+    function getSubscribed() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); }
+      catch(e) { return {}; }
+    }
+
+    function markSubscribed(email, formId) {
+      const data = getSubscribed();
+      if (!data[formId]) data[formId] = [];
+      if (!data[formId].includes(email)) data[formId].push(email);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function isAlreadySubscribed(email, formId) {
+      const data = getSubscribed();
+      return data[formId] && data[formId].includes(email);
+    }
+
+    // Wait for EmailOctopus forms to load
+    function initGuard() {
+      const forms = document.querySelectorAll('.emailoctopus-form-wrapper form');
+      if (!forms.length) { setTimeout(initGuard, 500); return; }
+
+      forms.forEach(function(form) {
+        const wrapper = form.closest('.emailoctopus-form-wrapper');
+        const formId = form.action || 'unknown';
+        const successEl = wrapper.querySelector('.emailoctopus-success-message');
+        const errorEl = wrapper.querySelector('.emailoctopus-error-message');
+
+        form.addEventListener('submit', function(e) {
+          const emailInput = form.querySelector('input[type="email"]');
+          if (!emailInput) return;
+          const email = emailInput.value.trim().toLowerCase();
+          if (!email) return;
+
+          if (isAlreadySubscribed(email, formId)) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            // Hide form, show already-subscribed message
+            var mainForm = wrapper.querySelector('.main-form');
+            if (mainForm) mainForm.style.display = 'none';
+            if (successEl) {
+              successEl.textContent = 'You are already subscribed with this email.';
+              successEl.style.display = 'block';
+              successEl.style.color = '#facc15'; // yellow for "already subscribed"
+            }
+            return false;
+          }
+
+          // Mark as subscribed after short delay (form submits async)
+          setTimeout(function() {
+            markSubscribed(email, formId);
+          }, 2000);
+        }, true); // capture phase to run before EmailOctopus handler
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() { setTimeout(initGuard, 1000); });
+    } else {
+      setTimeout(initGuard, 1000);
+    }
+  })();
+  </script>
+
 </body>
 </html>
 
