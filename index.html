@@ -1406,11 +1406,13 @@ via SmartPMO.ai`;
       }
     }
 
+    // Track last submitted email per wrapper (for MutationObserver to use)
+    var pendingEmails = {};
+
     // Document-level click intercept on submit buttons (survives DOM rebuilds)
     document.addEventListener('click', function(e) {
       var btn = e.target;
       if (!btn) return;
-      // Match submit buttons inside EmailOctopus forms
       if (btn.type !== 'submit' || !btn.closest('.emailoctopus-form-wrapper')) return;
 
       var wrapper = btn.closest('.emailoctopus-form-wrapper');
@@ -1431,9 +1433,9 @@ via SmartPMO.ai`;
         return false;
       }
 
-      // Not a duplicate — let it through, mark after delay
-      setTimeout(function() { markSubscribed(email, formId); }, 3000);
-    }, true); // capture phase — fires before any other handler
+      // Store pending email — only marked as subscribed when success message appears
+      pendingEmails[formId] = email;
+    }, true);
 
     // Also intercept form submit events (backup)
     document.addEventListener('submit', function(e) {
@@ -1455,30 +1457,35 @@ via SmartPMO.ai`;
         return false;
       }
 
-      setTimeout(function() { markSubscribed(email, formId); }, 3000);
+      pendingEmails[formId] = email;
     }, true);
 
-    // Watch for EmailOctopus success messages to mark subscriptions
-    // (catches cases where the form submits successfully via AJAX)
+    // Watch for EmailOctopus success messages to confirm subscriptions
+    // Only marks as subscribed when the success message actually appears
     var observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(m) {
-        if (m.type === 'attributes' && m.attributeName === 'style') {
-          var el = m.target;
-          if (el.classList && el.classList.contains('emailoctopus-success-message')) {
-            var display = window.getComputedStyle(el).display;
-            if (display !== 'none') {
-              // Success message became visible — form submitted OK
-              var wrapper = el.closest('.emailoctopus-form-wrapper');
-              if (!wrapper) return;
-              var form = wrapper.querySelector('form');
-              var emailInput = wrapper.querySelector('input[type="email"]');
-              if (form && emailInput) {
-                var email = emailInput.value.trim().toLowerCase();
-                var formId = form.action || 'unknown';
-                if (email) markSubscribed(email, formId);
-              }
-            }
-          }
+        if (m.type !== 'attributes' || m.attributeName !== 'style') return;
+        var el = m.target;
+        if (!el.classList || !el.classList.contains('emailoctopus-success-message')) return;
+        var display = window.getComputedStyle(el).display;
+        if (display === 'none') return;
+
+        // Success message appeared — subscription confirmed
+        var wrapper = el.closest('.emailoctopus-form-wrapper');
+        if (!wrapper) return;
+        var form = wrapper.querySelector('form');
+        if (!form) return;
+        var formId = form.action || 'unknown';
+
+        // Use pending email (captured before form was hidden) or try input
+        var email = pendingEmails[formId];
+        if (!email) {
+          var emailInput = wrapper.querySelector('input[type="email"]');
+          if (emailInput) email = emailInput.value.trim().toLowerCase();
+        }
+        if (email) {
+          markSubscribed(email, formId);
+          delete pendingEmails[formId];
         }
       });
     });
