@@ -434,7 +434,8 @@
   margin-bottom: 1.25rem;
 }
 
-.hero-newsletter-form {
+.hero-newsletter-form,
+.hero-report-form {
   max-width: 400px;
   margin: 0 auto;
 }
