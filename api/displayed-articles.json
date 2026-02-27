@@ -23,6 +23,28 @@
       "section": "auto"
     },
     {
+      "id": 73146,
+      "title": "Anthropic buys Vercept, deepening push into AI task automation",
+      "url": "https://www.computerworld.com/article/4137817/anthropic-buys-vercept-deepening-push-into-ai-task-automation.html",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:10:55",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 73128,
+      "title": "ServiceNow Launches Autonomous Workforce",
+      "url": "https://aibusiness.com/agentic-ai/servicenow-launches-autonomous-workforce",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:10:38",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 73049,
       "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
       "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
@@ -45,6 +67,28 @@
       "section": "auto"
     },
     {
+      "id": 72884,
+      "title": "Salesforce's Agentic Work Unit: What you need to know",
+      "url": "https://www.constellationr.com/insights/news/salesforces-agentic-work-unit-what-you-need-know",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:06:49",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72885,
+      "title": "ServiceNow integrates Moveworks, launches Autonomous Workforce, EmployeeWorks",
+      "url": "https://www.constellationr.com/insights/news/servicenow-integrates-moveworks-launches-autonomous-workforce-employeeworks",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:06:49",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 72870,
       "title": "How I Turned Tiago Forte's PARA Method Into an AI-Powered Productivity OS With Claude Code + Obsidian",
       "url": "https://aimaker.substack.com/p/para-method-tiago-forte-claude-code-obsidian-ai-productivity-os",
@@ -52,6 +96,17 @@
       "score": 66,
       "publishedDate": "2026-02-26",
       "discoveredAt": "2026-02-27 04:05:52",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 72837,
+      "title": "IBM integrates Deepgram voice AI into watsonx Orchestrate platform",
+      "url": "https://www.techmonitor.ai/news/ibm-integrates-deepgram-voice-ai-into-watsonx-orchestrate-platform",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:04:36",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -111,17 +166,6 @@
       "section": "auto"
     },
     {
-      "id": 72384,
-      "title": "Launch HN: TeamOut (YC W22) – AI agent for planning company retreats",
-      "url": "https://app.teamout.com/ai",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:07:19",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 72316,
       "title": "Building intelligent event agents using Amazon Bedrock AgentCore and Amazon Bedrock Knowledge Bases",
       "url": "https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases/",
@@ -173,50 +217,6 @@
       "score": 67,
       "publishedDate": "2026-02-25",
       "discoveredAt": "2026-02-25 04:13:58",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72128,
-      "title": "Anthropic accelerates its Cowork enterprise play",
-      "url": "https://thenewstack.io/anthropic-accelerates-its-cowork-enterprise-play/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-24",
-      "discoveredAt": "2026-02-25 04:12:35",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 71425,
-      "title": "Build Effective Internal Tooling with Claude Code",
-      "url": "https://towardsdatascience.com/build-effective-internal-tooling-with-claude-code/",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-02-23",
-      "discoveredAt": "2026-02-24 04:11:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 69225,
-      "title": "Solink introduces AI Agents designed to act on video and business data in real time",
-      "url": "https://siliconangle.com/2026/02/18/solink-introduces-ai-agents-designed-act-video-business-data-real-time/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-18",
-      "discoveredAt": "2026-02-19 11:12:02",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 69153,
-      "title": "Advance Planning for AI Project Evaluation",
-      "url": "https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-02-18",
-      "discoveredAt": "2026-02-19 11:10:41",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -305,5 +305,5 @@
     "curated": 7,
     "total": 27
   },
-  "generatedAt": "2026-02-27T04:30:07.573Z"
+  "generatedAt": "2026-02-27T09:52:02.346Z"
 }

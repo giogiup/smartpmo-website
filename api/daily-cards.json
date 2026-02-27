@@ -1,8 +1,320 @@
 {
-  "generated": "2026-02-27T04:30:06.885Z",
+  "generated": "2026-02-27T09:52:02.335Z",
   "date": "2026-02-27",
   "count": 20,
   "cards": [
+    {
+      "id": 72837,
+      "title": "IBM integrates Deepgram voice AI into watsonx Orchestrate platform",
+      "url": "https://www.techmonitor.ai/news/ibm-integrates-deepgram-voice-ai-into-watsonx-orchestrate-platform",
+      "date": "2026-02-26",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**IBM has integrated Deepgram voice AI into its watsonx Orchestrate platform.**",
+        "This integration enhances automation capabilities through natural language processing and voice commands.",
+        "The platform could enable voice-driven automation for project workflows, task management, and reporting within PMOs."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "IBM",
+        "Deepgram",
+        "watsonx Orchestrate"
+      ]
+    },
+    {
+      "id": 73049,
+      "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
+      "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
+      "date": "2026-02-26",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Read AI introduces an email-based ‘digital twin’ designed to manage schedules and answer questions.**",
+        "This AI assistant integrates with email to autonomously handle meeting coordination and information retrieval.",
+        "The tool aims to reduce administrative burden by automating routine communication for professionals."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Tools",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Read AI",
+        "digital twin",
+        "email assistant"
+      ]
+    },
+    {
+      "id": 73055,
+      "title": "Trace raises $3M to solve the AI agent adoption problem in enterprise",
+      "url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+      "date": "2026-02-26",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Trace secured $3M funding to tackle the significant challenge of AI agent adoption in enterprise.**",
+        "The company aims to streamline the integration and utilization of AI agents within complex business operations.",
+        "This initiative could assist organizations in successfully deploying new AI technologies and managing their impact."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Enablement",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "enterprise adoption",
+        "Trace"
+      ]
+    },
+    {
+      "id": 72827,
+      "title": "CORPGEN advances AI agents for real work",
+      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/",
+      "date": "2026-02-26",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft's CORPGEN initiative is advancing AI agents for practical, real-world applications.**",
+        "The research focuses on enabling AI agents to perform more complex and meaningful tasks.",
+        "This development could assist with enhancing automation and operational efficiency across various functions."
+      ],
+      "badges": {
+        "read_time": 14,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agents",
+        "CORPGEN",
+        "Microsoft Research"
+      ]
+    },
+    {
+      "id": 72814,
+      "title": "I built an OpenClaw AI agent to do my job for me. The results were surprising—and a little scary",
+      "url": "https://www.fastcompany.com/91495511/i-built-an-openclaw-ai-agent-to-do-my-job-for-me-results-were-surprising-scary?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+      "date": "2026-02-26",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**An author built an OpenClaw AI agent to automate his job of writing Fast Company articles.**",
+        "The AI agent's performance in generating compelling stories yielded surprising and somewhat scary results.",
+        "This experiment explores AI's potential for automating creative tasks and its implications for future workforces."
+      ],
+      "badges": {
+        "read_time": 3,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agent",
+        "job automation",
+        "OpenClaw"
+      ]
+    },
+    {
+      "id": 73268,
+      "title": "ServiceNow debuts Autonomous Workforce, EmployeeWorks automation tools",
+      "url": "https://siliconangle.com/2026/02/26/servicenow-debuts-autonomous-workforce-employeeworks-automation-tools/",
+      "date": "2026-02-26",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**ServiceNow launched Autonomous Workforce and EmployeeWorks automation platforms.**",
+        "These new tools aim to enhance productivity and streamline operations for employees.",
+        "The platforms could help automate routine tasks, impacting resource management and project efficiency."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Tools",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "ServiceNow",
+        "automation",
+        "AI"
+      ]
+    },
+    {
+      "id": 73223,
+      "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
+      "url": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
+      "date": "2026-02-26",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft's Copilot Tasks AI autonomously executes actions on its own computer.**",
+        "This AI aims to 'get things done' by interacting directly with the system.",
+        "Its capability for self-directed task completion is relevant to process automation."
+      ],
+      "badges": {
+        "read_time": 13,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Microsoft",
+        "Copilot",
+        "AI"
+      ]
+    },
+    {
+      "id": 73146,
+      "title": "Anthropic buys Vercept, deepening push into AI task automation",
+      "url": "https://www.computerworld.com/article/4137817/anthropic-buys-vercept-deepening-push-into-ai-task-automation.html",
+      "date": "2026-02-26",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Anthropic acquired Vercept to enhance its capabilities in AI-driven task automation.**",
+        "This acquisition signifies Anthropic's strategic expansion into automated workflow solutions.",
+        "The move aims to deepen AI's role in automating complex tasks, relevant to operational efficiency."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Anthropic",
+        "Vercept",
+        "AI automation"
+      ]
+    },
+    {
+      "id": 73128,
+      "title": "ServiceNow Launches Autonomous Workforce",
+      "url": "https://aibusiness.com/agentic-ai/servicenow-launches-autonomous-workforce",
+      "date": "2026-02-26",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**ServiceNow has launched an 'Autonomous Workforce' solution, as reported by AI Business.**",
+        "The article indicates this solution is positioned within the field of agentic AI for business.",
+        "This development could assist organizations in automating various tasks and improving operational efficiency."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Tools",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "ServiceNow",
+        "autonomous workforce",
+        "AI"
+      ]
+    },
+    {
+      "id": 72885,
+      "title": "ServiceNow integrates Moveworks, launches Autonomous Workforce, EmployeeWorks",
+      "url": "https://www.constellationr.com/insights/news/servicenow-integrates-moveworks-launches-autonomous-workforce-employeeworks",
+      "date": "2026-02-26",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**ServiceNow integrates Moveworks AI, launching Autonomous Workforce and EmployeeWorks platforms.**",
+        "The integration enhances employee support, automating IT and HR requests with conversational AI.",
+        "Aims to boost operational efficiency and employee experience, which could assist project team productivity."
+      ],
+      "badges": {
+        "read_time": 12,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "ServiceNow",
+        "Moveworks",
+        "AI automation"
+      ]
+    },
+    {
+      "id": 72870,
+      "title": "How I Turned Tiago Forte's PARA Method Into an AI-Powered Productivity OS With Claude Code + Obsidian",
+      "url": "https://aimaker.substack.com/p/para-method-tiago-forte-claude-code-obsidian-ai-productivity-os",
+      "date": "2026-02-26",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The article details building an AI-powered productivity OS by adapting Tiago Forte's PARA method with Claude Code and Obsidian.**",
+        "This system integrates 5 commands, 6 folders, and an AI Copilot to streamline weekly task management and decision-making.",
+        "It aims to reduce time spent cross-referencing multiple tools, providing clarity on what truly matters each week."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Knowledge",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "Productivity",
+        "PARA Method"
+      ]
+    },
+    {
+      "id": 72884,
+      "title": "Salesforce's Agentic Work Unit: What you need to know",
+      "url": "https://www.constellationr.com/insights/news/salesforces-agentic-work-unit-what-you-need-know",
+      "date": "2026-02-26",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Salesforce introduces the concept of an 'Agentic Work Unit' for autonomous task execution within enterprises.**",
+        "These AI-powered units are designed to automate complex workflows and decision-making processes.",
+        "The technology could assist organizations in streamlining operations and improving efficiency across various functions."
+      ],
+      "badges": {
+        "read_time": 12,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Salesforce",
+        "Agentic AI",
+        "automation"
+      ]
+    },
     {
       "id": 72234,
       "title": "From agent sprawl to seamless alignment: Introducing agents in Jira",
@@ -53,6 +365,32 @@
         "Jira",
         "AI agents",
         "project management"
+      ]
+    },
+    {
+      "id": 72724,
+      "title": "Atlassian embeds agents into Jira and embraces MCP for third-party integrations",
+      "url": "https://siliconangle.com/2026/02/25/atlassian-embeds-agents-jira-embraces-mcp-third-party-integrations/",
+      "date": "2026-02-25",
+      "score": 78,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Atlassian integrates AI agents directly into Jira to automate tasks and enhance project workflows.**",
+        "The company is also adopting a Multi-Cloud Platform (MCP) strategy for seamless third-party integrations.",
+        "These advancements aim to streamline project delivery, improve collaboration, and boost overall team efficiency within Jira."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Atlassian",
+        "Jira",
+        "AI agents"
       ]
     },
     {
@@ -160,32 +498,6 @@
       ]
     },
     {
-      "id": 72384,
-      "title": "Launch HN: TeamOut (YC W22) – AI agent for planning company retreats",
-      "url": "https://app.teamout.com/ai",
-      "date": "2026-02-25",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**TeamOutAI is an AI agent designed to instantly plan and book company retreats.**",
-        "It offers instant matching of curated global venues and provides quotes within 24 hours.",
-        "The tool helps find suitable venues and flights for corporate groups based on specific requirements."
-      ],
-      "badges": {
-        "read_time": 1,
-        "pmo_focus": "Enablement",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agent",
-        "event planning",
-        "company retreats"
-      ]
-    },
-    {
       "id": 72262,
       "title": "This AI note-taking startup thinks it’s building the ‘steering wheel’ for chatbots",
       "url": "https://www.fastcompany.com/91497900/granola-chris-pedregal-interview?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
@@ -209,318 +521,6 @@
         "Granola",
         "AI interface",
         "chatbots"
-      ]
-    },
-    {
-      "id": 72128,
-      "title": "Anthropic accelerates its Cowork enterprise play",
-      "url": "https://thenewstack.io/anthropic-accelerates-its-cowork-enterprise-play/",
-      "date": "2026-02-24",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Anthropic is accelerating its 'Cowork' initiative to integrate AI into enterprise workflows.**",
-        "The 'Cowork' strategy focuses on deploying Anthropic's advanced AI models for business collaboration and efficiency.",
-        "This enterprise expansion could assist organizations in automating tasks and improving team productivity."
-      ],
-      "badges": {
-        "read_time": 42,
-        "pmo_focus": "Enablement",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Anthropic",
-        "Cowork",
-        "Enterprise AI"
-      ]
-    },
-    {
-      "id": 71425,
-      "title": "Build Effective Internal Tooling with Claude Code",
-      "url": "https://towardsdatascience.com/build-effective-internal-tooling-with-claude-code/",
-      "date": "2026-02-23",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The article explores using Claude Code to build effective and custom internal software tools.**",
-        "Claude assists in generating code and streamlining the development process for bespoke applications.",
-        "This approach accelerates the creation of tailored solutions, which could assist PMO teams in automating processes or building project-specific utilities."
-      ],
-      "badges": {
-        "read_time": 23,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Claude",
-        "AI",
-        "internal tools"
-      ]
-    },
-    {
-      "id": 71421,
-      "title": "Anthropic accuses DeepSeek and other Chinese firms of using Claude to train their AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/883243/anthropic-claude-deepseek-china-ai-distillation",
-      "date": "2026-02-23",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Anthropic accuses Chinese AI firms, including DeepSeek, of using its Claude model to train their own AI.**",
-        "This practice, known as model distillation, involves using one AI's outputs to teach another.",
-        "The accusation highlights growing concerns over intellectual property and fair use in AI development."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "anthropic",
-        "claude",
-        "deepseek"
-      ]
-    },
-    {
-      "id": 71344,
-      "title": "Hacker used commercial AI to breach 600 firewalls: AWS",
-      "url": "https://www.siliconrepublic.com/enterprise/amazon-aws-commercial-gen-ai-firewall-fortigate-breach",
-      "date": "2026-02-23",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**AWS reported a hacker used commercial AI to breach 600 Fortigate firewalls.**",
-        "The incident highlights the growing threat of AI-powered cyberattacks on critical infrastructure.",
-        "This event underscores the need for enhanced cybersecurity measures against sophisticated AI-driven threats."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "cybersecurity",
-        "firewall"
-      ]
-    },
-    {
-      "id": 71238,
-      "title": "Altman: You think AI is wasted energy? Try raising 100 billion humans",
-      "url": "https://go.theregister.com/feed/www.theregister.com/2026/02/23/sam_altman_ai_efficiency/",
-      "date": "2026-02-23",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Sam Altman defends AI's energy consumption by comparing it to the vast resources needed for human life.**",
-        "He argues AI's 'wasted energy' is justified considering the resources for human population growth.",
-        "This statement addresses ongoing debates about AI's environmental impact and resource utilization."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Sam Altman",
-        "AI energy",
-        "AI efficiency"
-      ]
-    },
-    {
-      "id": 71000,
-      "title": "Import AI 446: Nuclear LLMs; China’s big AI benchmark; measurement and AI policy",
-      "url": "https://jack-clark.net/2026/02/23/import-ai-446-nuclear-llms-chinas-big-ai-benchmark-measurement-and-ai-policy/",
-      "date": "2026-02-23",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Import AI 446 emphasizes the critical role of AI system measurement for effective policy and governance.**",
-        "AI researcher Jacob Steinhardt advocates investing in tools to measure AI properties and reduce policy compliance costs.",
-        "Accurate measurement, as seen with CO2 monitoring or COVID-19 testing, helps orient strategies and shift incentives."
-      ],
-      "badges": {
-        "read_time": 13,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI measurement",
-        "AI policy",
-        "AI governance"
-      ]
-    },
-    {
-      "id": 70595,
-      "title": "The Sequence Radar #811: Last Week in AI: OpenAI's Capital Leap, India's Summit, and the Next Frontier of Models",
-      "url": "https://thesequence.substack.com/p/the-sequence-radar-811-last-week",
-      "date": "2026-02-22",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**OpenAI's significant capital raise and India's AI summit were key highlights in last week's AI news.**",
-        "The report also touched upon the next frontier of AI models and massive funding rounds.",
-        "Future editions will explore video models as physics engines and the GLM-5 release."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI news",
-        "OpenAI",
-        "India AI"
-      ]
-    },
-    {
-      "id": 70356,
-      "title": "OpenAI's $112 Billion Cash Burn Forecast Reveals the Staggering Cost of Winning the AI Race",
-      "url": "https://www.webpronews.com/openais-112-billion-cash-burn-forecast-reveals-the-staggering-cost-of-winning-the-ai-race/",
-      "date": "2026-02-21",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**OpenAI is projected to burn $112 billion in cash to win the competitive AI race.**",
-        "This forecast reveals the immense financial investment required for AI leadership.",
-        "The substantial expenditure underscores the high stakes in the global AI competition."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "OpenAI",
-        "AI investment",
-        "cash burn"
-      ]
-    },
-    {
-      "id": 70158,
-      "title": "India chases 'DeepSeek moment' with homegrown AI",
-      "url": "https://techxplore.com/news/2026-02-india-deepseek-moment-homegrown-ai.html",
-      "date": "2026-02-20",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**India is actively pursuing a significant breakthrough in its domestic AI development.**",
-        "The nation aims to achieve a 'DeepSeek moment' by developing its own impactful homegrown AI models.",
-        "This strategic initiative focuses on fostering self-reliance and global competitiveness in artificial intelligence."
-      ],
-      "badges": {
-        "read_time": 1,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "India AI",
-        "homegrown AI",
-        "DeepSeek"
-      ]
-    },
-    {
-      "id": 69952,
-      "title": "Look Out, OpenAI: Perplexity Admits AI Adverts Were a Mistake, Is Now Getting Rid of Them",
-      "url": "https://futurism.com/artificial-intelligence/openai-perplexity-admits-ai-adverts-mistake",
-      "date": "2026-02-20",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**Perplexity is removing AI-generated advertisements, acknowledging them as a mistake.**",
-        "The decision impacts AI monetization strategies and user experience in AI search.",
-        "This move positions Perplexity against OpenAI, highlighting different approaches to AI integration."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Perplexity",
-        "AI advertising",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": 69475,
-      "title": "The Sound of Data: Why Your Voice is the Hardest Problem in AI",
-      "url": "https://hackernoon.com/the-sound-of-data-why-your-voice-is-the-hardest-problem-in-ai?source=rss",
-      "date": "2026-02-20",
-      "score": 54,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**The article explains why human voice recognition and understanding represent the hardest problems in AI development.**",
-        "It delves into complexities like diverse accents, emotional context, background noise, and subtle linguistic nuances.",
-        "Overcoming these voice-related hurdles is crucial for advancing natural and intuitive AI interactions and applications."
-      ],
-      "badges": {
-        "read_time": 3,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "voice recognition",
-        "natural language processing"
-      ]
-    },
-    {
-      "id": 70164,
-      "title": "96% of developers don’t trust AI code: Here’s a step toward the fix",
-      "url": "https://thenewstack.io/agentic-ai-verification-impact/",
-      "date": "2026-02-20",
-      "score": 53,
-      "pmo_relevance": "None",
-      "pmo_category": "AI_GENERAL",
-      "tldr": [
-        "**A new report reveals 96% of developers distrust AI-generated code, highlighting a major industry challenge.**",
-        "The article suggests agentic AI verification as a crucial method to build confidence in AI-produced code.",
-        "This approach aims to enhance the reliability and trustworthiness of AI-assisted coding tools for wider adoption."
-      ],
-      "badges": {
-        "read_time": 43,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI code",
-        "developer trust",
-        "agentic AI"
       ]
     }
   ]
