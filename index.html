@@ -113,12 +113,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-v2.css?v=ae59a2b">
-  <link rel="stylesheet" href="hero.css?v=ae59a2b">
-  <link rel="stylesheet" href="header-styles.css?v=ae59a2b">
+  <link rel="stylesheet" href="styles-v2.css?v=0de9fb8">
+  <link rel="stylesheet" href="hero.css?v=0de9fb8">
+  <link rel="stylesheet" href="header-styles.css?v=0de9fb8">
 
-  <link rel="stylesheet" href="section-votes.css?v=ae59a2b">
-  <link rel="stylesheet" href="mobile-fixes.css?v=ae59a2b">
+  <link rel="stylesheet" href="section-votes.css?v=0de9fb8">
+  <link rel="stylesheet" href="mobile-fixes.css?v=0de9fb8">
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -1372,11 +1372,12 @@ via SmartPMO.ai`;
   });
   </script>
 
-  <!-- EmailOctopus duplicate subscription guard (v3 - simple & mobile-proof) -->
+  <!-- EmailOctopus duplicate subscription guard (v4 - observe success, don't race submit) -->
   <script>
   (function() {
     'use strict';
     var KEY = 'smartpmo_subs';
+    var DUPLICATE_MSG = 'You are already subscribed with this email.';
 
     function getSubs() {
       try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { return {}; }
@@ -1406,17 +1407,16 @@ via SmartPMO.ai`;
       if (mf) mf.style.display = 'none';
       var suc = data.wrapper.querySelector('.emailoctopus-success-message');
       if (suc) {
-        suc.textContent = 'You are already subscribed with this email.';
+        suc.textContent = DUPLICATE_MSG;
         suc.style.display = 'block';
         suc.style.setProperty('color', '#facc15', 'important');
       }
     }
 
-    // Intercept ALL clicks — use closest() to find submit button (mobile-safe)
+    // Block known duplicates on click (capture phase, mobile-safe)
     document.addEventListener('click', function(e) {
       var btn = e.target;
       if (!btn) return;
-      // Find the submit button: either the target IS one, or it's inside one
       if (btn.type !== 'submit') btn = btn.closest ? btn.closest('input[type="submit"], button[type="submit"]') : null;
       if (!btn || !btn.closest || !btn.closest('.emailoctopus-form-wrapper')) return;
 
@@ -1429,11 +1429,10 @@ via SmartPMO.ai`;
         blockDuplicate(data);
         return false;
       }
-      // Do NOT saveSub here — submit handler also fires on same click
-      // and would see it as a duplicate. Save only in the submit handler.
+      // Do NOT saveSub here — wait for EmailOctopus success confirmation
     }, true);
 
-    // Backup: intercept form submit event too
+    // Block known duplicates on submit (capture phase, backup)
     document.addEventListener('submit', function(e) {
       var form = e.target;
       if (!form || !form.closest || !form.closest('.emailoctopus-form-wrapper')) return;
@@ -1447,13 +1446,58 @@ via SmartPMO.ai`;
         blockDuplicate(data);
         return false;
       }
-      saveSub(data.email, data.formId);
+      // Do NOT saveSub here — EmailOctopus fires multiple submit events.
+      // Save only when we see the real success message via MutationObserver.
     }, true);
+
+    // Watch for EmailOctopus success messages — save to localStorage only on confirmed success.
+    // EmailOctopus shows .emailoctopus-success-message when its XHR succeeds.
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.type !== 'attributes' && m.type !== 'childList') return;
+        var target = m.target;
+        // Check if a success message just became visible
+        var sucMsg = target.classList && target.classList.contains('emailoctopus-success-message')
+          ? target
+          : (target.querySelector ? target.querySelector('.emailoctopus-success-message') : null);
+        if (!sucMsg) return;
+        // Only act when visible and NOT our duplicate warning
+        var vis = sucMsg.offsetParent !== null || sucMsg.style.display === 'block';
+        if (!vis) return;
+        if (sucMsg.textContent === DUPLICATE_MSG) return;
+        // Find wrapper and extract email + formId
+        var wrapper = sucMsg.closest ? sucMsg.closest('.emailoctopus-form-wrapper') : null;
+        if (!wrapper) return;
+        var form = wrapper.querySelector('form');
+        var inp = wrapper.querySelector('input[type="email"]');
+        if (!form) return;
+        var email = inp ? (inp.value || '').trim().toLowerCase() : '';
+        var formId = form.action || 'form';
+        if (email && !hasSub(email, formId)) {
+          saveSub(email, formId);
+        }
+      });
+    });
+
+    // Observe all form wrappers once they exist
+    function attachObservers() {
+      var wrappers = document.querySelectorAll('.emailoctopus-form-wrapper');
+      wrappers.forEach(function(w) {
+        observer.observe(w, { attributes: true, childList: true, subtree: true });
+      });
+      if (wrappers.length === 0) setTimeout(attachObservers, 1000);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() { setTimeout(attachObservers, 1000); });
+    } else {
+      setTimeout(attachObservers, 1000);
+    }
   })();
   </script>
 
 </body>
 </html>
+
 
 
 
