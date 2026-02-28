@@ -76,7 +76,7 @@ html, body {
   .hero-visual-wrapper {
     overflow-x: hidden !important;
     overflow-y: visible !important;
-    padding: 20px 12px 40px !important;
+    padding: 20px 12px 12px !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
@@ -88,15 +88,15 @@ html, body {
     margin: 0 auto !important;
   }
 
-  /* Hide axis labels on mobile — too cramped, cause overflow */
-  .hero-y-axis,
-  .hero-x-axis {
+  /* Hide y-axis on mobile — extends beyond viewport width */
+  .hero-y-axis {
     display: none !important;
   }
 
-  /* Hero section itself */
+  /* Hero section: clip horizontal only, preserve x-axis below */
   .hero-section {
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
   }
 }
 
@@ -190,7 +190,8 @@ html, body {
 /* ── Hero bands: ensure proper stacking on mobile ── */
 @media (max-width: 767px) {
   .hero-section {
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
   }
 
   .hero-visual-wrapper {

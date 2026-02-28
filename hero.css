@@ -128,9 +128,9 @@
 .hero-visual-wrapper {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 20px 0 60px;
+  padding: 20px 0 16px;
   isolation: isolate;
 }
 
@@ -244,15 +244,12 @@
 }
 
 .hero-x-axis {
-  position: absolute;
-  bottom: -52px;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   gap: 8px;
   justify-content: center;
   white-space: nowrap;
+  margin-top: 12px;
 }
 
 .hero-axis-label {
@@ -588,7 +585,7 @@
   }
 
   .hero-visual-wrapper {
-    padding: 20px 0;
+    padding: 20px 0 12px;
   }
 
   .hero-quadrant-grid {
@@ -632,8 +629,8 @@
   }
 
   .hero-x-axis {
-    bottom: -24px;
     gap: 4px;
+    margin-top: 8px;
   }
 
   .hero-x-axis .hero-axis-label {
@@ -698,8 +695,8 @@
   }
 
   .hero-x-axis {
-    bottom: -22px;
     gap: 3px;
+    margin-top: 6px;
   }
 
   .hero-x-axis .hero-axis-label {
