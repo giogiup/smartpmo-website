@@ -249,7 +249,7 @@
   gap: 8px;
   justify-content: center;
   white-space: nowrap;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .hero-axis-label {
@@ -612,9 +612,9 @@
     margin-bottom: 0.25rem;
   }
 
-  /* Mobile Axis Positioning — tight against grid, no SVG arrows */
+  /* Mobile Axis Positioning — left offset accounts for element width before rotation */
   .hero-y-axis {
-    left: -18px;
+    left: -52px;
     gap: 2px;
   }
 
@@ -695,7 +695,7 @@
   }
 
   .hero-y-axis {
-    left: -16px;
+    left: -48px;
   }
 
   .hero-x-axis {
