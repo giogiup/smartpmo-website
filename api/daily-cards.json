@@ -1,8 +1,60 @@
 {
-  "generated": "2026-02-27T09:52:02.335Z",
-  "date": "2026-02-27",
+  "generated": "2026-02-28T04:28:33.776Z",
+  "date": "2026-02-28",
   "count": 20,
   "cards": [
+    {
+      "id": 73759,
+      "title": "Perplexity’s new Computer agent will run other agents for you",
+      "url": "https://www.computerworld.com/article/4138723/perplexitys-new-computer-agent-will-run-other-agents-for-you.html",
+      "date": "2026-02-27",
+      "score": 72,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Perplexity introduces a new Computer agent that can manage other agents autonomously.**",
+        "The agent is designed to streamline workflows by coordinating multiple AI agents.",
+        "This tool could assist with project management tasks by automating agent interactions."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Perplexity",
+        "AI agents",
+        "automation"
+      ]
+    },
+    {
+      "id": 73249,
+      "title": "How the rise of AI-native software could give SMBs enterprise-level power",
+      "url": "https://www.zdnet.com/article/ai-native-software-and-small-business/",
+      "date": "2026-02-26",
+      "score": 75,
+      "pmo_relevance": "None",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "AI-native software empowers SMBs with tools previously available only to enterprises.",
+        "These solutions leverage AI to streamline operations and enhance decision-making.",
+        "The rise of AI-native software could level the playing field for small businesses."
+      ],
+      "badges": {
+        "read_time": 16,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI-native software",
+        "SMBs",
+        "enterprise-level power"
+      ]
+    },
     {
       "id": 72837,
       "title": "IBM integrates Deepgram voice AI into watsonx Orchestrate platform",
@@ -290,6 +342,32 @@
       ]
     },
     {
+      "id": 73273,
+      "title": "RingCentral: Agentic AI is happening now and it’s adding value",
+      "url": "https://siliconangle.com/2026/02/26/ringcentral-agentic-ai-happening-now-adding-value/",
+      "date": "2026-02-26",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**RingCentral's Agentic AI is currently enhancing value in enterprise communications.**",
+        "The AI technology focuses on improving customer engagement and operational efficiency.",
+        "This development could assist with project management by streamlining communication processes."
+      ],
+      "badges": {
+        "read_time": 13,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "RingCentral",
+        "Agentic AI",
+        "enterprise communications"
+      ]
+    },
+    {
       "id": 72884,
       "title": "Salesforce's Agentic Work Unit: What you need to know",
       "url": "https://www.constellationr.com/insights/news/salesforces-agentic-work-unit-what-you-need-know",
@@ -394,6 +472,32 @@
       ]
     },
     {
+      "id": 72233,
+      "title": "Rovo at Work: AI agents in action",
+      "url": "https://www.atlassian.com/blog/announcements/rovo-ai-agents-at-work",
+      "date": "2026-02-25",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Rovo AI agents enhance workplace productivity through automation and intelligent assistance.**",
+        "These AI agents can streamline workflows and reduce manual tasks for teams.",
+        "Potential applications include automating repetitive tasks and improving team collaboration."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Tools",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Rovo",
+        "AI agents",
+        "automation"
+      ]
+    },
+    {
       "id": 72573,
       "title": "Anthropic targets core business systems with new Claude plug-ins",
       "url": "https://www.computerworld.com/article/4137156/anthropic-targets-core-business-systems-with-new-claude-plug-ins-2.html",
@@ -417,110 +521,6 @@
         "Anthropic",
         "Claude",
         "AI plug-ins"
-      ]
-    },
-    {
-      "id": 72316,
-      "title": "Building intelligent event agents using Amazon Bedrock AgentCore and Amazon Bedrock Knowledge Bases",
-      "url": "https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases/",
-      "date": "2026-02-25",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**AWS details building intelligent event agents using Bedrock AgentCore and Knowledge Bases.**",
-        "It leverages Bedrock AgentCore for orchestrating agent workflows and Knowledge Bases for contextual data retrieval.",
-        "The approach enables creating autonomous agents that respond to specific events and process information effectively."
-      ],
-      "badges": {
-        "read_time": 16,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Amazon Bedrock",
-        "AI agents",
-        "event-driven AI"
-      ]
-    },
-    {
-      "id": 72144,
-      "title": "Google adds AI agent to Opal mini-app builder",
-      "url": "https://www.infoworld.com/article/4136919/google-adds-ai-agent-to-opal-mini-app-builder.html",
-      "date": "2026-02-25",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Google has integrated an AI agent into its Opal mini-app builder platform.**",
-        "The AI agent aims to simplify and accelerate the development of custom mini-applications.",
-        "This enhancement could assist users in rapidly prototyping and deploying business tools."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Google",
-        "AI agent",
-        "Opal"
-      ]
-    },
-    {
-      "id": 72288,
-      "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
-      "url": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
-      "date": "2026-02-25",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Perplexity has launched \"Perplexity Computer,\" an agentic AI system bundling rival models into one workflow.**",
-        "The browser-based system creates sub-agents for tasks like web research, document creation, and data processing.",
-        "Users describe desired outcomes, and the system autonomously handles entire workflows, relevant for complex information gathering."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Perplexity",
-        "AI agents",
-        "workflow automation"
-      ]
-    },
-    {
-      "id": 72262,
-      "title": "This AI note-taking startup thinks it’s building the ‘steering wheel’ for chatbots",
-      "url": "https://www.fastcompany.com/91497900/granola-chris-pedregal-interview?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
-      "date": "2026-02-25",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Granola aims to revolutionize AI interaction with a visual, interactive canvas, moving beyond simple chat interfaces.**",
-        "The platform allows users to drag, drop, and connect elements to refine prompts and gain more control over AI.",
-        "This new interface aims to make AI more useful by providing a 'steering wheel' for more controlled interactions."
-      ],
-      "badges": {
-        "read_time": 3,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Granola",
-        "AI interface",
-        "chatbots"
       ]
     }
   ]

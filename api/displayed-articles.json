@@ -1,6 +1,17 @@
 {
   "latestIntelligence": [
     {
+      "id": 73759,
+      "title": "Perplexity’s new Computer agent will run other agents for you",
+      "url": "https://www.computerworld.com/article/4138723/perplexitys-new-computer-agent-will-run-other-agents-for-you.html",
+      "summary": "",
+      "score": 72,
+      "publishedDate": "2026-02-27",
+      "discoveredAt": "2026-02-28 04:11:42",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 73268,
       "title": "ServiceNow debuts Autonomous Workforce, EmployeeWorks automation tools",
       "url": "https://siliconangle.com/2026/02/26/servicenow-debuts-autonomous-workforce-employeeworks-automation-tools/",
@@ -8,6 +19,28 @@
       "score": 68,
       "publishedDate": "2026-02-26",
       "discoveredAt": "2026-02-27 04:13:11",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 73273,
+      "title": "RingCentral: Agentic AI is happening now and it’s adding value",
+      "url": "https://siliconangle.com/2026/02/26/ringcentral-agentic-ai-happening-now-adding-value/",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:13:11",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 73249,
+      "title": "How the rise of AI-native software could give SMBs enterprise-level power",
+      "url": "https://www.zdnet.com/article/ai-native-software-and-small-business/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-02-26",
+      "discoveredAt": "2026-02-27 04:11:54",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -166,35 +199,13 @@
       "section": "auto"
     },
     {
-      "id": 72316,
-      "title": "Building intelligent event agents using Amazon Bedrock AgentCore and Amazon Bedrock Knowledge Bases",
-      "url": "https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases/",
+      "id": 72233,
+      "title": "Rovo at Work: AI agents in action",
+      "url": "https://www.atlassian.com/blog/announcements/rovo-ai-agents-at-work",
       "summary": "",
-      "score": 68,
+      "score": 70,
       "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:05:46",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72288,
-      "title": "Perplexity Computer bundles rival AI models into one agentic workflow system for $200 a month",
-      "url": "https://the-decoder.com/perplexity-computer-bundles-rival-ai-models-into-one-agentic-workflow-system-for-200-a-month/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:04:26",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72262,
-      "title": "This AI note-taking startup thinks it’s building the ‘steering wheel’ for chatbots",
-      "url": "https://www.fastcompany.com/91497900/granola-chris-pedregal-interview?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:01:40",
+      "discoveredAt": "2026-02-26 04:00:45",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -208,29 +219,18 @@
       "discoveredAt": "2026-02-26 04:00:45",
       "pmbokArea": null,
       "section": "auto"
-    },
-    {
-      "id": 72144,
-      "title": "Google adds AI agent to Opal mini-app builder",
-      "url": "https://www.infoworld.com/article/4136919/google-adds-ai-agent-to-opal-mini-app-builder.html",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-25 04:13:58",
-      "pmbokArea": null,
-      "section": "auto"
     }
   ],
   "strategicInsights": [
     {
-      "id": 4,
-      "title": "2025’s Wildest AI Breakthroughs: Reasoning Models, Coding Agents, and the Pelican That Broke the Internet",
-      "url": "https://simonwillison.net/2025/Dec/31/the-year-in-llms/",
-      "summary": "- Reasoning models + tool use became the defining capability jump of 2025.\n- Coding agents exploded, reshaping software development and burning huge token volumes.\n- Chinese open‑weight models overtook Western labs in several benchmarks.\n- Gemini surged, OpenAI stumbled, and the industry embraced long tasks, image editing, and unexpected memes.",
-      "source": "simonwillison.net",
-      "publishedDate": "2025-12-31",
-      "addedDate": "2026-01-17 17:35:09",
-      "displayOrder": 0,
+      "id": 11,
+      "title": "I use the 'Gravity' prompt with ChatGPT every day — here’s how it finds and fixes weak ideas",
+      "url": "https://www.tomsguide.com/ai/i-use-the-gravity-prompt-with-chatgpt-every-day-heres-how-it-finds-and-fixes-weak-ideas?utm_source=flipboard&utm_content=topic/artificialintelligence",
+      "summary": "• \tProblem: Usual “improve this” prompts make weak ideas feel smarter by polishing language instead of exposing core flaws.\n• \tSolution: The “Gravity” prompt makes ChatGPT act as a hostile critic—poking holes, surfacing blind spots, and stress‑testing assumptions.\n• \tResult: It drags ideas through reality, separating what merely sounds good from what actually holds up, anytime you need it.",
+      "source": null,
+      "publishedDate": "2026-02-12",
+      "addedDate": "2026-02-27 18:43:24",
+      "displayOrder": 1,
       "section": "curated"
     },
     {
@@ -245,14 +245,25 @@
       "section": "curated"
     },
     {
-      "id": 6,
-      "title": "The A.I. Moral Crisis is Here",
-      "url": "https://www.youtube.com/watch?v=UAPRa4BRXFo",
-      "summary": "- The segment covers the resignations of key AI‑safety researchers from OpenAI and Anthropic, who warn that labs are moving too fast without adequate safeguards.\n- Their departures highlight a growing ethical and governance crisis inside major AI companies.\n- Journalist Gideon Lewis‑Kraus discusses his investigation into these resignations and what they reveal about internal tensions.\n- The video frames this moment as a public‑interest issue, urging scrutiny  powerful AI systems development",
-      "source": "MS Now",
-      "publishedDate": "2026-02-16",
-      "addedDate": "2026-02-22 15:38:23",
+      "id": 12,
+      "title": "Experiments Find LLMs Rely on Training Data & Lose Mid-Document Details",
+      "url": "https://www.geeky-gadgets.com/training-data-overrides-input/?utm_source=flipboard&utm_content=GeekyGadgets/magazine/Artificial+Intelligence#google_vignette",
+      "summary": "- LLMs often favor training data over new input, missing novel terms and producing inaccurate analysis when data is unique or unfamiliar.\n- They suffer context decay in long documents, reliably recalling beginnings and endings but losing critical details buried in the middle.\n- Even with RAG, AI can miss nuances or retrieve poorly, creating risks in high‑stakes tasks like legal, medical, or financial analysis",
+      "source": "Geeky-Gadgets",
+      "publishedDate": "2026-02-26",
+      "addedDate": "2026-02-27 18:45:50",
       "displayOrder": 2,
+      "section": "curated"
+    },
+    {
+      "id": 13,
+      "title": "I use this simple repetition trick with ChatGPT when it misses the point — and it works every time",
+      "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/i-use-this-simple-repetition-trick-with-chatgpt-when-it-misses-the-point-and-it-works-every-time?utm_source=flipboard&utm_content=user/tech",
+      "summary": "- Repeating the exact same prompt makes models refine their reasoning, shifting from quick guesses to clearer, more accurate interpretations.\n- Second and third attempts consistently improve structure, precision, and relevance, a behavior confirmed by research on “internal inference” stabilization.\n- This simple repetition trick reliably upgrades troubleshooting, comparisons, and detailed explanations without any special prompt engineering.",
+      "source": "Tech Radar",
+      "publishedDate": "2026-02-25",
+      "addedDate": "2026-02-27 18:48:22",
+      "displayOrder": 3,
       "section": "curated"
     },
     {
@@ -298,12 +309,23 @@
       "addedDate": "2026-02-22 16:10:35",
       "displayOrder": 7,
       "section": "curated"
+    },
+    {
+      "id": 14,
+      "title": "I use the FORGE method with Claude to turn rough ideas into finished work — here's how it works",
+      "url": "https://www.tomsguide.com/ai/i-use-the-forge-method-with-claude-to-turn-rough-ideas-into-finished-work-heres-how-it-works?utm_source=flipboard&utm_content=TomsGuide/magazine/Tom%27s+Guide:+Full+Edition",
+      "summary": "- A five‑step method (Frame, Obstruct, Reconstruct, Generate, Edit) turns AI into a thinking partner, forcing clarity, criticism, and structured reasoning before drafting.\n- You stay in control while AI handles questions, weaknesses, and structure, producing stronger, more authentic work in ~40 minutes.\n- Sequential prompting deepens your thinking, improves arguments, and builds irreplaceable collaboration skills for writing and communication.",
+      "source": "Tom's Guide",
+      "publishedDate": "2026-02-26",
+      "addedDate": "2026-02-27 18:54:26",
+      "displayOrder": 8,
+      "section": "curated"
     }
   ],
   "counts": {
     "auto": 20,
-    "curated": 7,
-    "total": 27
+    "curated": 9,
+    "total": 29
   },
-  "generatedAt": "2026-02-27T09:52:02.346Z"
+  "generatedAt": "2026-02-28T04:28:33.667Z"
 }
