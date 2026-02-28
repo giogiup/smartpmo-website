@@ -612,24 +612,10 @@
     margin-bottom: 0.25rem;
   }
 
-  /* Mobile Axis Positioning — left offset accounts for element width before rotation */
+  /* Mobile Axis — scale the full desktop y-axis down uniformly */
   .hero-y-axis {
-    left: -52px;
-    gap: 2px;
-  }
-
-  .hero-y-axis svg {
-    display: none;
-  }
-
-  .hero-y-axis .hero-axis-label {
-    font-size: 9px;
-    letter-spacing: 0.02em;
-  }
-
-  .hero-y-axis .hero-axis-low,
-  .hero-y-axis .hero-axis-high {
-    font-size: 8px;
+    left: -128px;
+    transform: translateY(-50%) rotate(-90deg) scale(0.65);
   }
 
   .hero-x-axis {
@@ -695,7 +681,8 @@
   }
 
   .hero-y-axis {
-    left: -48px;
+    left: -120px;
+    transform: translateY(-50%) rotate(-90deg) scale(0.55);
   }
 
   .hero-x-axis {
