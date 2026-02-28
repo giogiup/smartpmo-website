@@ -249,7 +249,7 @@
   gap: 8px;
   justify-content: center;
   white-space: nowrap;
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
 .hero-axis-label {
@@ -612,20 +612,24 @@
     margin-bottom: 0.25rem;
   }
 
-  /* Mobile Axis Positioning */
+  /* Mobile Axis Positioning — tight against grid, no SVG arrows */
   .hero-y-axis {
-    left: -85px;
-    gap: 4px;
+    left: -18px;
+    gap: 2px;
+  }
+
+  .hero-y-axis svg {
+    display: none;
   }
 
   .hero-y-axis .hero-axis-label {
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 0.02em;
   }
 
   .hero-y-axis .hero-axis-low,
   .hero-y-axis .hero-axis-high {
-    font-size: 9px;
+    font-size: 8px;
   }
 
   .hero-x-axis {
@@ -691,7 +695,7 @@
   }
 
   .hero-y-axis {
-    left: -80px;
+    left: -16px;
   }
 
   .hero-x-axis {

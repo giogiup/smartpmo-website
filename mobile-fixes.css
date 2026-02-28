@@ -88,12 +88,7 @@ html, body {
     margin: 0 auto !important;
   }
 
-  /* Hide y-axis on mobile — extends beyond viewport width */
-  .hero-y-axis {
-    display: none !important;
-  }
-
-  /* Hero section: clip horizontal only, preserve x-axis below */
+  /* Hero section: clip horizontal only, preserve axes */
   .hero-section {
     overflow-x: hidden !important;
     overflow-y: visible !important;
