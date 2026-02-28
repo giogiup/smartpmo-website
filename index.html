@@ -18,7 +18,7 @@
   <meta property="og:locale" content="en_ZA">
   <meta property="og:title" content="AI for PMO Professionals — Daily Insights | SmartPMO.ai">
   <meta property="og:description" content="SmartPMO.ai scans thousands of articles daily to surface AI news, tools and techniques that apply directly to PMO work. Free weekly newsletter.">
-  <!-- og:image: create a 1200x630 PNG and place at /og-image.png to enable social previews -->
+  <meta property="og:image" content="https://smartpmo.ai/hero-barista-small.jpg">
   <meta property="og:image:alt" content="SmartPMO.ai — AI Insights for PMO Professionals">
 
   <!-- ── Twitter / X Card ── -->
@@ -27,6 +27,7 @@
   <meta name="twitter:creator" content="@SmartPMOai">
   <meta name="twitter:title" content="AI for PMO Professionals — Daily Insights | SmartPMO.ai">
   <meta name="twitter:description" content="SmartPMO.ai scans thousands of articles daily to surface AI insights that apply directly to PMO work.">
+  <meta name="twitter:image" content="https://smartpmo.ai/hero-barista-small.jpg">
   <meta name="twitter:image:alt" content="SmartPMO.ai — AI Insights for PMO Professionals">
 
   <!-- ── Mobile / PWA ── -->
@@ -107,7 +108,10 @@
 
   <!-- Preload hero image for faster LCP -->
   <link rel="preload" as="image" href="hero-barista-small.jpg" imagesrcset="hero-barista-small.jpg 600w, hero-barista.jpg 1200w">
-  
+
+  <!-- Preload Lucide (383KB) — start download before parser reaches script tag -->
+  <link rel="preload" href="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" as="script" crossorigin="anonymous">
+
   <!-- Fonts: Display + Serif for editorial feel -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,7 +123,7 @@
 
   <link rel="stylesheet" href="section-votes.css?v=0de9fb8">
   <link rel="stylesheet" href="mobile-fixes.css?v=0de9fb8">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" integrity="sha384-GzE8qT1LzDfRNjtvLN/dXDLPlJOB3BBom3Twb9/RwHkXCgNl6OU1pBxM9397HWGU" crossorigin="anonymous"></script>
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -579,7 +583,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 SmartPMO.ai — AI-powered insights for PMO professionals</p>
+    <p>© 2026 SmartPMO.ai — AI-powered insights for PMO professionals</p>
   </footer>
 
   <!-- SVG Badge Definitions -->
@@ -625,6 +629,38 @@
   </svg>
 
   <script>
+  // ── CardModule: IIFE-wrapped per design contract §1/§3 ──
+  (function() {
+    'use strict';
+
+    // ── Security: HTML sanitisation utilities ──
+    // Prevents XSS from pipeline data (titles, summaries, URLs)
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function sanitizeUrl(url) {
+      if (!url) return '#';
+      const str = String(url).trim();
+      if (str.startsWith('http://') || str.startsWith('https://')) return str;
+      return '#';
+    }
+
+    // Escape JSON for use in single-quoted HTML attributes (onclick='...')
+    function safeJsonAttr(obj) {
+      return JSON.stringify(obj)
+        .replace(/&/g, '&amp;')
+        .replace(/'/g, '&#39;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
     // PMO Category configuration (3-tier system)
     const PMO_CATEGORY_CONFIG = {
       'PMO_RELATED': {
@@ -776,7 +812,7 @@
 
             <!-- Title: full width, no right padding -->
             <h3 id="card-title-${normalizedCard.id}" class="card-title">
-              <a href="${normalizedCard.url}" target="_blank" rel="noopener">${normalizedCard.title}</a>
+              <a href="${escapeHtml(sanitizeUrl(normalizedCard.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(normalizedCard.title)}</a>
             </h3>
           </div>
 
@@ -784,7 +820,7 @@
           <div class="card-body">
             <!-- TLDR (3 bullets, all plain weight) -->
             <ul class="card-tldr" aria-label="Key takeaways">
-              ${normalizedCard.tldr.map(point => `<li>${point}</li>`).join('')}
+              ${normalizedCard.tldr.map(point => `<li>${escapeHtml(point)}</li>`).join('')}
             </ul>
           </div>
 
@@ -803,29 +839,29 @@
               ${normalizedCard.date ? `<span class="footer-date">${formatCardDate(normalizedCard.date)}</span>` : ''}
             </div>
             <div class="footer-right">
-              <button onclick='shareToLinkedIn(${JSON.stringify({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url, ai_description: normalizedCard.tldr.join(' ')})})' class="shr-icon btn-linkedin" title="Share on LinkedIn">
+              <button onclick='shareToLinkedIn(${safeJsonAttr({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url, ai_description: normalizedCard.tldr.join(' ')})})' class="shr-icon btn-linkedin" title="Share on LinkedIn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </button>
-              <button onclick='shareToTwitter(${JSON.stringify({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url})})' class="shr-icon btn-twitter" title="Share on X">
+              <button onclick='shareToTwitter(${safeJsonAttr({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url})})' class="shr-icon btn-twitter" title="Share on X">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </button>
-              <button onclick='shareViaEmail(${JSON.stringify({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url, ai_description: normalizedCard.tldr.join(' ')})})' class="shr-icon btn-email" title="Share via Email">
+              <button onclick='shareViaEmail(${safeJsonAttr({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url, ai_description: normalizedCard.tldr.join(' ')})})' class="shr-icon btn-email" title="Share via Email">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
               </button>
-              <button onclick='copyLink(${JSON.stringify({id: normalizedCard.id, article_url: normalizedCard.url})}, event)' class="shr-icon btn-copy" title="Copy Link">
+              <button onclick='copyLink(${safeJsonAttr({id: normalizedCard.id, article_url: normalizedCard.url})}, event)' class="shr-icon btn-copy" title="Copy Link">
                 <svg class="icon-copy" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
               </button>
-              <button onclick='shareToWhatsApp(${JSON.stringify({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url, ai_description: normalizedCard.tldr.join(' ')})})' class="shr-icon btn-whatsapp" title="Share on WhatsApp">
+              <button onclick='shareToWhatsApp(${safeJsonAttr({id: normalizedCard.id, title: normalizedCard.title, article_url: normalizedCard.url, ai_description: normalizedCard.tldr.join(' ')})})' class="shr-icon btn-whatsapp" title="Share on WhatsApp">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -936,11 +972,13 @@
       return `
         <div class="${cardClass}">
           <h3 class="card-title">
-            <a href="${article.url}" target="_blank">${article.title}</a>
+            <a href="${escapeHtml(sanitizeUrl(article.url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(article.title)}</a>
           </h3>
-          <div class="card-summary">${article.summary || ''}</div>
+          <ul class="card-tldr" aria-label="Key takeaways">
+            ${(article.summary || '').split('\n').map(l => l.replace(/^[-•*]\s*/, '').trim()).filter(Boolean).map(point => `<li>${escapeHtml(point)}</li>`).join('')}
+          </ul>
           <div class="card-meta">
-            <span class="article-source">${article.source || 'Source Unknown'}</span>
+            <span class="article-source">${escapeHtml(article.source || 'Source Unknown')}</span>
             <span class="article-date">${formattedDate}</span>
             ${article.score ? `<span class="article-score">Score: ${article.score}</span>` : ''}
           </div>
@@ -959,29 +997,29 @@
             </div>
             <div class="footer-divider"></div>
             <div class="footer-share">
-              <button onclick='shareToLinkedIn(${JSON.stringify({id: article.id, title: article.title, article_url: article.url, ai_description: article.summary})})' class="shr-icon btn-linkedin" title="Share on LinkedIn">
+              <button onclick='shareToLinkedIn(${safeJsonAttr({id: article.id, title: article.title, article_url: article.url, ai_description: article.summary})})' class="shr-icon btn-linkedin" title="Share on LinkedIn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </button>
-              <button onclick='shareToTwitter(${JSON.stringify({id: article.id, title: article.title, article_url: article.url})})' class="shr-icon btn-twitter" title="Share on X">
+              <button onclick='shareToTwitter(${safeJsonAttr({id: article.id, title: article.title, article_url: article.url})})' class="shr-icon btn-twitter" title="Share on X">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </button>
-              <button onclick='shareViaEmail(${JSON.stringify({id: article.id, title: article.title, article_url: article.url, ai_description: article.summary})})' class="shr-icon btn-email" title="Share via Email">
+              <button onclick='shareViaEmail(${safeJsonAttr({id: article.id, title: article.title, article_url: article.url, ai_description: article.summary})})' class="shr-icon btn-email" title="Share via Email">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
                 </svg>
               </button>
-              <button onclick='copyLink(${JSON.stringify({id: article.id, article_url: article.url})}, event)' class="shr-icon btn-copy" title="Copy Link">
+              <button onclick='copyLink(${safeJsonAttr({id: article.id, article_url: article.url})}, event)' class="shr-icon btn-copy" title="Copy Link">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                   <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                 </svg>
               </button>
-              <button onclick='shareToWhatsApp(${JSON.stringify({id: article.id, title: article.title, article_url: article.url, ai_description: article.summary})})' class="shr-icon btn-whatsapp" title="Share on WhatsApp">
+              <button onclick='shareToWhatsApp(${safeJsonAttr({id: article.id, title: article.title, article_url: article.url, ai_description: article.summary})})' class="shr-icon btn-whatsapp" title="Share on WhatsApp">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -1141,9 +1179,18 @@ via SmartPMO.ai`;
 
     // ========== END SHARE FUNCTIONS ==========
 
+    // Expose share functions to window (required by inline onclick attributes)
+    window.shareToLinkedIn = shareToLinkedIn;
+    window.shareToTwitter = shareToTwitter;
+    window.shareViaEmail = shareViaEmail;
+    window.copyLink = copyLink;
+    window.shareToWhatsApp = shareToWhatsApp;
+
+    // ── Init ──
     loadDailyCards(); // Latest Intelligence with enriched cards (rich data from daily-cards.json)
     loadCuratedInsights(); // Strategic Insights (curated articles from displayed-articles.json)
 
+  })();
   </script>
 
   <!-- VotesModule — B-04 Voting Buttons (SPEC-B04-VOTING-BUTTONS.md) -->
@@ -1155,11 +1202,19 @@ via SmartPMO.ai`;
     // ── Config ──────────────────────────────────────────────────────────────
     // Production URL will differ — update this constant when deploying the API publicly.
     const API_BASE = 'https://smartpmo-votes.ggpera.workers.dev';
-    const CARD_CONTAINER_ID = 'auto-articles-grid';
+    const GRID_IDS = ['auto-articles-grid', 'curated-articles-grid'];
+
+    // Track which article IDs have already been loaded to prevent duplicate API calls
+    const loadedArticleIds = new Set();
+    let apiHealthy = null; // null = not checked, true/false = result
 
     // ── Helpers ──────────────────────────────────────────────────────────────
     function getVoteBars() {
       return Array.from(document.querySelectorAll('.card-footer-a[data-article-id]'));
+    }
+
+    function getUnloadedVoteBars() {
+      return getVoteBars().filter(bar => !loadedArticleIds.has(bar.dataset.articleId));
     }
 
     // F-3B: No is-disabled — both buttons always clickable; aria-pressed marks current vote
@@ -1196,25 +1251,35 @@ via SmartPMO.ai`;
     }
 
     // ── F-1: Health-check-first approach ─────────────────────────────────────
+    // Called once per grid render — only fetches articles not already loaded (dedup via Set)
     async function loadAllVotes() {
-      const bars = getVoteBars();
+      const bars = getUnloadedVoteBars();
       if (!bars.length) return;
 
-      // Step 1: probe /health with a short timeout
-      try {
-        const healthRes = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(2000) });
-        if (!healthRes.ok) throw new Error(`HTTP ${healthRes.status}`);
-      } catch (err) {
-        // API unreachable — hide ALL bars uniformly
-        console.warn('[VotesModule] API unreachable, hiding all vote bars:', err.message);
+      // Step 1: probe /health (cached after first successful check)
+      if (apiHealthy === null) {
+        try {
+          const healthRes = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(2000) });
+          if (!healthRes.ok) throw new Error(`HTTP ${healthRes.status}`);
+          apiHealthy = true;
+        } catch (err) {
+          apiHealthy = false;
+          console.warn('[VotesModule] API unreachable, hiding all vote bars:', err.message);
+          getVoteBars().forEach(hideVoteBar);
+          return;
+        }
+      }
+
+      if (!apiHealthy) {
         bars.forEach(hideVoteBar);
         return;
       }
 
-      // Step 2: API is up — load each article's votes
+      // Step 2: API is up — load each article's votes (skip already-loaded)
       for (const bar of bars) {
         const articleId = bar.dataset.articleId;
         if (!articleId) continue;
+        loadedArticleIds.add(articleId); // Mark as loaded before fetch to prevent re-entry
         try {
           const res  = await fetch(`${API_BASE}/votes/${articleId}`, { signal: AbortSignal.timeout(4000) });
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -1300,32 +1365,28 @@ via SmartPMO.ai`;
 
     // ── Public API ────────────────────────────────────────────────────────────
     function init() {
-      // Attach delegation to main card grid (and curated grid if present)
-      const grids = ['auto-articles-grid', 'curated-articles-grid']
-        .map(id => document.getElementById(id))
-        .filter(Boolean);
-
+      // Attach delegation to BOTH card grids
+      const grids = GRID_IDS.map(id => document.getElementById(id)).filter(Boolean);
       grids.forEach(attachDelegation);
 
-      // Wait for cards to render before loading vote counts
-      // Cards are rendered async — use MutationObserver to detect first render
-      const mainGrid = document.getElementById(CARD_CONTAINER_ID);
-      if (!mainGrid) return;
+      // Watch BOTH grids for cards to render — each triggers loadAllVotes()
+      // The dedup Set in loadAllVotes() prevents duplicate API calls
+      grids.forEach(grid => {
+        const observer = new MutationObserver((mutations, obs) => {
+          const bars = grid.querySelectorAll('.card-footer-a[data-article-id]');
+          if (bars.length > 0) {
+            obs.disconnect();
+            loadAllVotes();
+          }
+        });
+        observer.observe(grid, { childList: true, subtree: false });
 
-      const observer = new MutationObserver((mutations, obs) => {
-        const bars = mainGrid.querySelectorAll('.card-footer-a[data-article-id]');
-        if (bars.length > 0) {
-          obs.disconnect();
+        // Also try immediately (if cards already rendered by the time init runs)
+        if (grid.querySelectorAll('.card-footer-a[data-article-id]').length > 0) {
+          observer.disconnect();
           loadAllVotes();
         }
       });
-      observer.observe(mainGrid, { childList: true, subtree: false });
-
-      // Also try immediately (if cards already rendered by the time init runs)
-      if (mainGrid.querySelectorAll('.card-footer-a[data-article-id]').length > 0) {
-        observer.disconnect();
-        loadAllVotes();
-      }
     }
 
     function destroy() {
@@ -1376,36 +1437,36 @@ via SmartPMO.ai`;
   <script>
   (function() {
     'use strict';
-    var KEY = 'smartpmo_subs';
-    var DUPLICATE_MSG = 'You are already subscribed with this email.';
+    const KEY = 'smartpmo_subs';
+    const DUPLICATE_MSG = 'You are already subscribed with this email.';
 
     function getSubs() {
       try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { return {}; }
     }
     function saveSub(email, fid) {
-      var d = getSubs(); if (!d[fid]) d[fid] = []; if (d[fid].indexOf(email) < 0) d[fid].push(email);
+      const d = getSubs(); if (!d[fid]) d[fid] = []; if (d[fid].indexOf(email) < 0) d[fid].push(email);
       localStorage.setItem(KEY, JSON.stringify(d));
     }
     function hasSub(email, fid) {
-      var d = getSubs(); return d[fid] && d[fid].indexOf(email) >= 0;
+      const d = getSubs(); return d[fid] && d[fid].indexOf(email) >= 0;
     }
 
     function getFormData(el) {
-      var wrapper = el.closest ? el.closest('.emailoctopus-form-wrapper') : null;
+      const wrapper = el.closest ? el.closest('.emailoctopus-form-wrapper') : null;
       if (!wrapper) return null;
-      var form = wrapper.querySelector('form');
+      const form = wrapper.querySelector('form');
       if (!form) return null;
-      var inp = form.querySelector('input[type="email"]');
+      const inp = form.querySelector('input[type="email"]');
       if (!inp) return null;
-      var email = (inp.value || '').trim().toLowerCase();
+      const email = (inp.value || '').trim().toLowerCase();
       if (!email) return null;
       return { wrapper: wrapper, form: form, email: email, formId: form.action || 'form' };
     }
 
     function blockDuplicate(data) {
-      var mf = data.wrapper.querySelector('.main-form') || data.form;
+      const mf = data.wrapper.querySelector('.main-form') || data.form;
       if (mf) mf.style.display = 'none';
-      var suc = data.wrapper.querySelector('.emailoctopus-success-message');
+      const suc = data.wrapper.querySelector('.emailoctopus-success-message');
       if (suc) {
         suc.textContent = DUPLICATE_MSG;
         suc.style.display = 'block';
@@ -1415,12 +1476,12 @@ via SmartPMO.ai`;
 
     // Block known duplicates on click (capture phase, mobile-safe)
     document.addEventListener('click', function(e) {
-      var btn = e.target;
+      let btn = e.target;
       if (!btn) return;
       if (btn.type !== 'submit') btn = btn.closest ? btn.closest('input[type="submit"], button[type="submit"]') : null;
       if (!btn || !btn.closest || !btn.closest('.emailoctopus-form-wrapper')) return;
 
-      var data = getFormData(btn);
+      const data = getFormData(btn);
       if (!data) return;
 
       if (hasSub(data.email, data.formId)) {
@@ -1434,10 +1495,10 @@ via SmartPMO.ai`;
 
     // Block known duplicates on submit (capture phase, backup)
     document.addEventListener('submit', function(e) {
-      var form = e.target;
+      const form = e.target;
       if (!form || !form.closest || !form.closest('.emailoctopus-form-wrapper')) return;
 
-      var data = getFormData(form);
+      const data = getFormData(form);
       if (!data) return;
 
       if (hasSub(data.email, data.formId)) {
@@ -1452,27 +1513,27 @@ via SmartPMO.ai`;
 
     // Watch for EmailOctopus success messages — save to localStorage only on confirmed success.
     // EmailOctopus shows .emailoctopus-success-message when its XHR succeeds.
-    var observer = new MutationObserver(function(mutations) {
+    const observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(m) {
         if (m.type !== 'attributes' && m.type !== 'childList') return;
-        var target = m.target;
+        const target = m.target;
         // Check if a success message just became visible
-        var sucMsg = target.classList && target.classList.contains('emailoctopus-success-message')
+        const sucMsg = target.classList && target.classList.contains('emailoctopus-success-message')
           ? target
           : (target.querySelector ? target.querySelector('.emailoctopus-success-message') : null);
         if (!sucMsg) return;
         // Only act when visible and NOT our duplicate warning
-        var vis = sucMsg.offsetParent !== null || sucMsg.style.display === 'block';
+        const vis = sucMsg.offsetParent !== null || sucMsg.style.display === 'block';
         if (!vis) return;
         if (sucMsg.textContent === DUPLICATE_MSG) return;
         // Find wrapper and extract email + formId
-        var wrapper = sucMsg.closest ? sucMsg.closest('.emailoctopus-form-wrapper') : null;
+        const wrapper = sucMsg.closest ? sucMsg.closest('.emailoctopus-form-wrapper') : null;
         if (!wrapper) return;
-        var form = wrapper.querySelector('form');
-        var inp = wrapper.querySelector('input[type="email"]');
+        const form = wrapper.querySelector('form');
+        const inp = wrapper.querySelector('input[type="email"]');
         if (!form) return;
-        var email = inp ? (inp.value || '').trim().toLowerCase() : '';
-        var formId = form.action || 'form';
+        const email = inp ? (inp.value || '').trim().toLowerCase() : '';
+        const formId = form.action || 'form';
         if (email && !hasSub(email, formId)) {
           saveSub(email, formId);
         }
@@ -1481,7 +1542,7 @@ via SmartPMO.ai`;
 
     // Observe all form wrappers once they exist
     function attachObservers() {
-      var wrappers = document.querySelectorAll('.emailoctopus-form-wrapper');
+      const wrappers = document.querySelectorAll('.emailoctopus-form-wrapper');
       wrappers.forEach(function(w) {
         observer.observe(w, { attributes: true, childList: true, subtree: true });
       });

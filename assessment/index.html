@@ -42,6 +42,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- Preload critical JS (start download before parser reaches script tag) -->
+  <link rel="preload" href="/js/section-assessment-page.js" as="script">
+
   <!-- Styles -->
   <link rel="stylesheet" href="/header-styles.css">
   <link rel="stylesheet" href="/section-assessment-page.css">
@@ -189,10 +192,10 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 SmartPMO.ai &mdash; AI-powered insights for PMO professionals</p>
+    <p>&copy; 2026 SmartPMO.ai &mdash; AI-powered insights for PMO professionals</p>
   </footer>
 
-  <script src="/js/section-assessment-page.js"></script>
+  <script src="/js/section-assessment-page.js" defer></script>
 
 </body>
 </html>
