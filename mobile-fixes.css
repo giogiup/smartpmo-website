@@ -87,10 +87,9 @@ html, body {
     margin: 0 auto !important;
   }
 
-  /* Hero section: clip horizontal only, preserve axes */
+  /* No overflow clip — html,body handles it */
   .hero-section {
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
+    overflow: visible !important;
   }
 }
 
@@ -184,8 +183,7 @@ html, body {
 /* ── Hero bands: ensure proper stacking on mobile ── */
 @media (max-width: 767px) {
   .hero-section {
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
+    overflow: visible !important;
   }
 
   .hero-visual-wrapper {
