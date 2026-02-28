@@ -1,6 +1,6 @@
 // SmartPMO.ai Service Worker — B-45
-// Cache-first for static assets, network-first for API/JSON
-const CACHE_VERSION = 'smartpmo-v1';
+// Network-first for HTML, cache-first for versioned assets
+const CACHE_VERSION = 'smartpmo-v2';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const API_CACHE = CACHE_VERSION + '-api';
 
@@ -54,7 +54,16 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Static assets (same-origin): cache-first
+  // HTML pages (navigation): network-first so deploys are always fresh
+  if (event.request.mode === 'navigate' ||
+      url.pathname === '/' ||
+      url.pathname.endsWith('.html')) {
+    event.respondWith(networkFirst(event.request, STATIC_CACHE));
+    return;
+  }
+
+  // Static assets (same-origin CSS/JS/images): cache-first
+  // CSS cache-busting via ?v=SHA ensures fresh versions on deploy
   if (url.origin === self.location.origin) {
     event.respondWith(cacheFirst(event.request, STATIC_CACHE));
     return;
