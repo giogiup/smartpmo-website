@@ -614,7 +614,7 @@
 
   /* Mobile Axis — scale the full desktop y-axis down uniformly */
   .hero-y-axis {
-    left: -128px;
+    left: -140px;
     transform: translateY(-50%) rotate(-90deg) scale(0.65);
   }
 
@@ -681,7 +681,7 @@
   }
 
   .hero-y-axis {
-    left: -120px;
+    left: -135px;
     transform: translateY(-50%) rotate(-90deg) scale(0.55);
   }
 
