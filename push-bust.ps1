@@ -15,9 +15,11 @@ $sha = (git rev-parse --short HEAD)
 $html = Get-Content index.html -Raw -Encoding UTF8
 
 $cssFiles = @(
+    'styles-core.css',
     'styles-v2.css',
     'hero.css',
     'header-styles.css',
+    'section-cards.css',
     'section-votes.css',
     'mobile-fixes.css'
 )

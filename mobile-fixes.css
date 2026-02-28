@@ -72,10 +72,11 @@ html, body {
 
 /* ── Hero section: fix Y-axis overflow on mobile ── */
 @media (max-width: 768px) {
-  /* Clip the visual wrapper so axis labels don't escape */
+  /* Clip horizontal overflow only — preserve x-axis below grid */
   .hero-visual-wrapper {
-    overflow: hidden !important;
-    padding: 20px 12px !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    padding: 20px 12px 40px !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
