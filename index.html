@@ -113,12 +113,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-v2.css?v=btn0227">
-  <link rel="stylesheet" href="hero.css?v=btn0227">
-  <link rel="stylesheet" href="header-styles.css?v=btn0227">
+  <link rel="stylesheet" href="styles-v2.css?v=ae59a2b">
+  <link rel="stylesheet" href="hero.css?v=ae59a2b">
+  <link rel="stylesheet" href="header-styles.css?v=ae59a2b">
 
-  <link rel="stylesheet" href="section-votes.css?v=btn0227">
-  <link rel="stylesheet" href="mobile-fixes.css?v=btn0227">
+  <link rel="stylesheet" href="section-votes.css?v=ae59a2b">
+  <link rel="stylesheet" href="mobile-fixes.css?v=ae59a2b">
   <script src="https://unpkg.com/lucide@latest"></script>
   
   <style>
@@ -1429,8 +1429,8 @@ via SmartPMO.ai`;
         blockDuplicate(data);
         return false;
       }
-      // Mark immediately — simple & reliable on all devices
-      saveSub(data.email, data.formId);
+      // Do NOT saveSub here — submit handler also fires on same click
+      // and would see it as a duplicate. Save only in the submit handler.
     }, true);
 
     // Backup: intercept form submit event too
@@ -1454,6 +1454,7 @@ via SmartPMO.ai`;
 
 </body>
 </html>
+
 
 
 
