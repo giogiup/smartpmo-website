@@ -1,8 +1,294 @@
 {
-  "generated": "2026-02-28T04:28:33.776Z",
-  "date": "2026-02-28",
+  "generated": "2026-03-01T08:14:41.343Z",
+  "date": "2026-03-01",
   "count": 20,
   "cards": [
+    {
+      "id": 74253,
+      "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
+      "url": "https://uk.nttdata.com/insights/blog/context-aware-ai-capital-delivery-design-validation",
+      "date": "2026-03-01",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**NTT DATA discusses how context-aware AI significantly enhances capital delivery decisions.**",
+        "The AI system integrates real-time data and contextual understanding for improved design validation.",
+        "This approach aims to optimize large-scale project outcomes by reducing risks and improving efficiency."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "context-aware AI",
+        "capital delivery"
+      ]
+    },
+    {
+      "id": 74211,
+      "title": "Decision Intelligence: The Real Test of AI Maturity in the PMO",
+      "url": "https://www.projectmanagement.com/blog-post/79635/decision-intelligence--the-real-test-of-ai-maturity-in-the-pmo",
+      "date": "2026-03-01",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Decision Intelligence is highlighted as the true test of AI maturity within the PMO.**",
+        "The article likely discusses how PMOs can leverage AI to make more informed and strategic choices.",
+        "It emphasizes moving beyond basic AI applications to achieve superior project and portfolio outcomes."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Decision Intelligence",
+        "AI Maturity",
+        "PMO"
+      ]
+    },
+    {
+      "id": 74614,
+      "title": "OpenClaw Slack Task Integration: AI-Powered Team Task Automation",
+      "url": "https://www.tencentcloud.com/techpedia/139535",
+      "date": "2026-03-01",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**OpenClaw Slack Task Integration offers AI-powered automation to streamline team collaboration and boost productivity.**",
+        "The article details deploying this AI-powered integration on Tencent Cloud Lighthouse for efficient setup.",
+        "This tool enhances communication and workflow efficiency by automating tasks directly within Slack environments."
+      ],
+      "badges": {
+        "read_time": 12,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "OpenClaw",
+        "Slack",
+        "AI"
+      ]
+    },
+    {
+      "id": 74296,
+      "title": "Microsoft OneGov: Affordable AI-Enhanced Productivity | Carahsoft",
+      "url": "https://www.carahsoft.com/blog/microsoft-onegov-agreement-affordable-ai-enhanced-productivity-blog-2026",
+      "date": "2026-03-01",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft OneGov agreement aims to deliver affordable, AI-enhanced productivity solutions.**",
+        "These solutions are specifically designed for public sector entities including government, education, and healthcare.",
+        "The AI enhancements could support improvements in areas like constituent engagement, records management, and smart city initiatives."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Enablement",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Microsoft",
+        "AI",
+        "Government"
+      ]
+    },
+    {
+      "id": 74209,
+      "title": "Consent-First AI Meeting Notes: Scripts, Checklist, and a Simple ...",
+      "url": "https://www.larksuite.com/en_us/blog/content-first-ai-meeting-notes",
+      "date": "2026-03-01",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**This article provides a guide for implementing consent-first AI meeting notes, including scripts and checklists.**",
+        "It offers practical scripts for obtaining consent from meeting participants before using AI note-takers.",
+        "The guide also covers data retention policies and best practices for ethical and compliant AI meeting note usage."
+      ],
+      "badges": {
+        "read_time": 16,
+        "pmo_focus": "Governance",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI meeting notes",
+        "consent",
+        "data privacy"
+      ]
+    },
+    {
+      "id": 74620,
+      "title": "How Agentic AI Is Transforming Business Workflows | FedEx Vietnam",
+      "url": "https://www.fedex.com/en-vn/business-insights/tech-innovation/agentic-ai-workflow-automation.html",
+      "date": "2026-03-01",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Agentic AI is transforming business workflows by automating complex, multi-step processes.**",
+        "These AI agents autonomously plan, execute, and adapt tasks, significantly reducing manual intervention.",
+        "Relevant to streamlining operations like supply chain and customer service for enhanced efficiency."
+      ],
+      "badges": {
+        "read_time": 13,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Agentic AI",
+        "workflow automation",
+        "business transformation"
+      ]
+    },
+    {
+      "id": 74488,
+      "title": "Fonada develops integrated AI and telecom stack for enterprise ...",
+      "url": "https://m.economictimes.com/tech/artificial-intelligence/fonada-develops-integrated-ai-and-telecom-stack-for-enterprise-communication/articleshow/128804888.cms",
+      "date": "2026-03-01",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Fonada develops an integrated AI and telecom stack for enterprise communication.**",
+        "This new stack aims to enhance and streamline communication processes for businesses.",
+        "The solution focuses on improving efficiency and effectiveness in large organizational communications."
+      ],
+      "badges": {
+        "read_time": 18,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Fonada",
+        "AI",
+        "telecom"
+      ]
+    },
+    {
+      "id": 74610,
+      "title": "Perplexity Computer assigns tasks to AI agents - Techzine Global",
+      "url": "https://www.techzine.eu/news/infrastructure/139169/perplexity-computer-assigns-tasks-to-ai-agents/",
+      "date": "2026-03-01",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Perplexity Computer functions as an AI operating system, orchestrating specialized AI agents for task completion.**",
+        "It aims to manage and delegate complex assignments by breaking them down for individual AI agents.",
+        "This approach could enhance project execution by automating task delegation and workflow management."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Perplexity Computer",
+        "AI agents",
+        "AI orchestration"
+      ]
+    },
+    {
+      "id": 74555,
+      "title": "Connect Sendoso to an AI Meeting Notes & Summaries Agent",
+      "url": "https://arahi.ai/ai-agent/sendoso/meeting-notes",
+      "date": "2026-03-01",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Arahi AI integrates with Sendoso to automate meeting notes, summaries, and action item extraction.**",
+        "The AI agent provides automatic transcription, smart summaries, and a searchable archive of past discussions.",
+        "This automation helps Sendoso users cut costs, eliminate manual work, and streamline marketing operations."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Knowledge",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Arahi AI",
+        "Sendoso",
+        "AI automation"
+      ]
+    },
+    {
+      "id": 74350,
+      "title": "Compliance at the Speed of Change: Modernizing GRC for the AI Era",
+      "url": "https://riskonnect.com/content-library/modernizing-compliance-grc-ai-regulations/",
+      "date": "2026-03-01",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The article discusses modernizing Governance, Risk, and Compliance (GRC) strategies to keep pace with the rapid changes of the AI era.**",
+        "It emphasizes leveraging AI to enhance regulatory compliance, risk management, and overall organizational governance processes.",
+        "This approach helps organizations navigate evolving AI regulations and maintain swift compliance, relevant to project governance and adherence."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "GRC",
+        "compliance"
+      ]
+    },
+    {
+      "id": 74161,
+      "title": "AI for EPC - Safety & Project AI - NeoBram",
+      "url": "https://neobram.ai/industries/epc",
+      "date": "2026-03-01",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**NeoBram offers AI solutions for the EPC industry to improve project delivery and safety.**",
+        "AI-powered tools can achieve 20% better on-time delivery and 35% fewer safety incidents.",
+        "Key use cases include project risk prediction, resource optimization, and AI-driven safety monitoring."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "EPC",
+        "Project Performance"
+      ]
+    },
     {
       "id": 73759,
       "title": "Perplexity’s new Computer agent will run other agents for you",
@@ -53,32 +339,6 @@
         "AI-native software",
         "SMBs",
         "enterprise-level power"
-      ]
-    },
-    {
-      "id": 72837,
-      "title": "IBM integrates Deepgram voice AI into watsonx Orchestrate platform",
-      "url": "https://www.techmonitor.ai/news/ibm-integrates-deepgram-voice-ai-into-watsonx-orchestrate-platform",
-      "date": "2026-02-26",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**IBM has integrated Deepgram voice AI into its watsonx Orchestrate platform.**",
-        "This integration enhances automation capabilities through natural language processing and voice commands.",
-        "The platform could enable voice-driven automation for project workflows, task management, and reporting within PMOs."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "IBM",
-        "Deepgram",
-        "watsonx Orchestrate"
       ]
     },
     {
@@ -261,266 +521,6 @@
         "Anthropic",
         "Vercept",
         "AI automation"
-      ]
-    },
-    {
-      "id": 73128,
-      "title": "ServiceNow Launches Autonomous Workforce",
-      "url": "https://aibusiness.com/agentic-ai/servicenow-launches-autonomous-workforce",
-      "date": "2026-02-26",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**ServiceNow has launched an 'Autonomous Workforce' solution, as reported by AI Business.**",
-        "The article indicates this solution is positioned within the field of agentic AI for business.",
-        "This development could assist organizations in automating various tasks and improving operational efficiency."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "ServiceNow",
-        "autonomous workforce",
-        "AI"
-      ]
-    },
-    {
-      "id": 72885,
-      "title": "ServiceNow integrates Moveworks, launches Autonomous Workforce, EmployeeWorks",
-      "url": "https://www.constellationr.com/insights/news/servicenow-integrates-moveworks-launches-autonomous-workforce-employeeworks",
-      "date": "2026-02-26",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**ServiceNow integrates Moveworks AI, launching Autonomous Workforce and EmployeeWorks platforms.**",
-        "The integration enhances employee support, automating IT and HR requests with conversational AI.",
-        "Aims to boost operational efficiency and employee experience, which could assist project team productivity."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "Enablement",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "ServiceNow",
-        "Moveworks",
-        "AI automation"
-      ]
-    },
-    {
-      "id": 72870,
-      "title": "How I Turned Tiago Forte's PARA Method Into an AI-Powered Productivity OS With Claude Code + Obsidian",
-      "url": "https://aimaker.substack.com/p/para-method-tiago-forte-claude-code-obsidian-ai-productivity-os",
-      "date": "2026-02-26",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The article details building an AI-powered productivity OS by adapting Tiago Forte's PARA method with Claude Code and Obsidian.**",
-        "This system integrates 5 commands, 6 folders, and an AI Copilot to streamline weekly task management and decision-making.",
-        "It aims to reduce time spent cross-referencing multiple tools, providing clarity on what truly matters each week."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Knowledge",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "Productivity",
-        "PARA Method"
-      ]
-    },
-    {
-      "id": 73273,
-      "title": "RingCentral: Agentic AI is happening now and it’s adding value",
-      "url": "https://siliconangle.com/2026/02/26/ringcentral-agentic-ai-happening-now-adding-value/",
-      "date": "2026-02-26",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**RingCentral's Agentic AI is currently enhancing value in enterprise communications.**",
-        "The AI technology focuses on improving customer engagement and operational efficiency.",
-        "This development could assist with project management by streamlining communication processes."
-      ],
-      "badges": {
-        "read_time": 13,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "RingCentral",
-        "Agentic AI",
-        "enterprise communications"
-      ]
-    },
-    {
-      "id": 72884,
-      "title": "Salesforce's Agentic Work Unit: What you need to know",
-      "url": "https://www.constellationr.com/insights/news/salesforces-agentic-work-unit-what-you-need-know",
-      "date": "2026-02-26",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Salesforce introduces the concept of an 'Agentic Work Unit' for autonomous task execution within enterprises.**",
-        "These AI-powered units are designed to automate complex workflows and decision-making processes.",
-        "The technology could assist organizations in streamlining operations and improving efficiency across various functions."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Salesforce",
-        "Agentic AI",
-        "automation"
-      ]
-    },
-    {
-      "id": 72234,
-      "title": "From agent sprawl to seamless alignment: Introducing agents in Jira",
-      "url": "https://www.atlassian.com/blog/announcements/ai-agents-in-jira",
-      "date": "2026-02-25",
-      "score": 86,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Atlassian introduces AI agents directly within Jira to enhance project management.**",
-        "These agents aim to transform 'agent sprawl' into 'seamless alignment' across workflows.",
-        "The integration seeks to automate tasks and improve coordination for project delivery teams."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Alignment",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "Jira",
-        "Atlassian"
-      ]
-    },
-    {
-      "id": 72491,
-      "title": "Jira’s latest update allows AI agents and humans to work side by side",
-      "url": "https://techcrunch.com/2026/02/25/jiras-latest-update-allows-ai-agents-and-humans-to-work-side-by-side/",
-      "date": "2026-02-25",
-      "score": 84,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Jira's latest update introduces AI agents designed to work collaboratively alongside human users.**",
-        "The new functionality allows AI agents and humans to operate \"side by side\" within the project management platform.",
-        "This integration aims to enhance task execution and streamline workflows within project environments."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Jira",
-        "AI agents",
-        "project management"
-      ]
-    },
-    {
-      "id": 72724,
-      "title": "Atlassian embeds agents into Jira and embraces MCP for third-party integrations",
-      "url": "https://siliconangle.com/2026/02/25/atlassian-embeds-agents-jira-embraces-mcp-third-party-integrations/",
-      "date": "2026-02-25",
-      "score": 78,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Atlassian integrates AI agents directly into Jira to automate tasks and enhance project workflows.**",
-        "The company is also adopting a Multi-Cloud Platform (MCP) strategy for seamless third-party integrations.",
-        "These advancements aim to streamline project delivery, improve collaboration, and boost overall team efficiency within Jira."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Atlassian",
-        "Jira",
-        "AI agents"
-      ]
-    },
-    {
-      "id": 72233,
-      "title": "Rovo at Work: AI agents in action",
-      "url": "https://www.atlassian.com/blog/announcements/rovo-ai-agents-at-work",
-      "date": "2026-02-25",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Rovo AI agents enhance workplace productivity through automation and intelligent assistance.**",
-        "These AI agents can streamline workflows and reduce manual tasks for teams.",
-        "Potential applications include automating repetitive tasks and improving team collaboration."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Rovo",
-        "AI agents",
-        "automation"
-      ]
-    },
-    {
-      "id": 72573,
-      "title": "Anthropic targets core business systems with new Claude plug-ins",
-      "url": "https://www.computerworld.com/article/4137156/anthropic-targets-core-business-systems-with-new-claude-plug-ins-2.html",
-      "date": "2026-02-25",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Anthropic introduces new Claude plug-ins designed for integration with core business systems.**",
-        "These plug-ins aim to enhance functionality and streamline operations within enterprise environments.",
-        "The integration of AI into business systems could assist with various project and operational workflows."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Anthropic",
-        "Claude",
-        "AI plug-ins"
       ]
     }
   ]

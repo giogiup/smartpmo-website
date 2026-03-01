@@ -1,6 +1,127 @@
 {
   "latestIntelligence": [
     {
+      "id": 74614,
+      "title": "OpenClaw Slack Task Integration: AI-Powered Team Task Automation",
+      "url": "https://www.tencentcloud.com/techpedia/139535",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:52:55",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74620,
+      "title": "How Agentic AI Is Transforming Business Workflows | FedEx Vietnam",
+      "url": "https://www.fedex.com/en-vn/business-insights/tech-innovation/agentic-ai-workflow-automation.html",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:52:55",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74610,
+      "title": "Perplexity Computer assigns tasks to AI agents - Techzine Global",
+      "url": "https://www.techzine.eu/news/infrastructure/139169/perplexity-computer-assigns-tasks-to-ai-agents/",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:52:53",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74555,
+      "title": "Connect Sendoso to an AI Meeting Notes & Summaries Agent",
+      "url": "https://arahi.ai/ai-agent/sendoso/meeting-notes",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:52:34",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74488,
+      "title": "Fonada develops integrated AI and telecom stack for enterprise ...",
+      "url": "https://m.economictimes.com/tech/artificial-intelligence/fonada-develops-integrated-ai-and-telecom-stack-for-enterprise-communication/articleshow/128804888.cms",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:52:17",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74350,
+      "title": "Compliance at the Speed of Change: Modernizing GRC for the AI Era",
+      "url": "https://riskonnect.com/content-library/modernizing-compliance-grc-ai-regulations/",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:51:27",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74296,
+      "title": "Microsoft OneGov: Affordable AI-Enhanced Productivity | Carahsoft",
+      "url": "https://www.carahsoft.com/blog/microsoft-onegov-agreement-affordable-ai-enhanced-productivity-blog-2026",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:51:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74253,
+      "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
+      "url": "https://uk.nttdata.com/insights/blog/context-aware-ai-capital-delivery-design-validation",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:51:01",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74211,
+      "title": "Decision Intelligence: The Real Test of AI Maturity in the PMO",
+      "url": "https://www.projectmanagement.com/blog-post/79635/decision-intelligence--the-real-test-of-ai-maturity-in-the-pmo",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:50:49",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74209,
+      "title": "Consent-First AI Meeting Notes: Scripts, Checklist, and a Simple ...",
+      "url": "https://www.larksuite.com/en_us/blog/content-first-ai-meeting-notes",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:50:47",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74161,
+      "title": "AI for EPC - Safety & Project AI - NeoBram",
+      "url": "https://neobram.ai/industries/epc",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:50:36",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 73759,
       "title": "Perplexity’s new Computer agent will run other agents for you",
       "url": "https://www.computerworld.com/article/4138723/perplexitys-new-computer-agent-will-run-other-agents-for-you.html",
@@ -17,17 +138,6 @@
       "url": "https://siliconangle.com/2026/02/26/servicenow-debuts-autonomous-workforce-employeeworks-automation-tools/",
       "summary": "",
       "score": 68,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:13:11",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 73273,
-      "title": "RingCentral: Agentic AI is happening now and it’s adding value",
-      "url": "https://siliconangle.com/2026/02/26/ringcentral-agentic-ai-happening-now-adding-value/",
-      "summary": "",
-      "score": 65,
       "publishedDate": "2026-02-26",
       "discoveredAt": "2026-02-27 04:13:11",
       "pmbokArea": null,
@@ -67,17 +177,6 @@
       "section": "auto"
     },
     {
-      "id": 73128,
-      "title": "ServiceNow Launches Autonomous Workforce",
-      "url": "https://aibusiness.com/agentic-ai/servicenow-launches-autonomous-workforce",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:10:38",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 73049,
       "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
       "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
@@ -100,50 +199,6 @@
       "section": "auto"
     },
     {
-      "id": 72884,
-      "title": "Salesforce's Agentic Work Unit: What you need to know",
-      "url": "https://www.constellationr.com/insights/news/salesforces-agentic-work-unit-what-you-need-know",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:06:49",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72885,
-      "title": "ServiceNow integrates Moveworks, launches Autonomous Workforce, EmployeeWorks",
-      "url": "https://www.constellationr.com/insights/news/servicenow-integrates-moveworks-launches-autonomous-workforce-employeeworks",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:06:49",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72870,
-      "title": "How I Turned Tiago Forte's PARA Method Into an AI-Powered Productivity OS With Claude Code + Obsidian",
-      "url": "https://aimaker.substack.com/p/para-method-tiago-forte-claude-code-obsidian-ai-productivity-os",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:05:52",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72837,
-      "title": "IBM integrates Deepgram voice AI into watsonx Orchestrate platform",
-      "url": "https://www.techmonitor.ai/news/ibm-integrates-deepgram-voice-ai-into-watsonx-orchestrate-platform",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:04:36",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 72827,
       "title": "CORPGEN advances AI agents for real work",
       "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/",
@@ -162,61 +217,6 @@
       "score": 70,
       "publishedDate": "2026-02-26",
       "discoveredAt": "2026-02-27 04:01:39",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72724,
-      "title": "Atlassian embeds agents into Jira and embraces MCP for third-party integrations",
-      "url": "https://siliconangle.com/2026/02/25/atlassian-embeds-agents-jira-embraces-mcp-third-party-integrations/",
-      "summary": "",
-      "score": 78,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:12:53",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72573,
-      "title": "Anthropic targets core business systems with new Claude plug-ins",
-      "url": "https://www.computerworld.com/article/4137156/anthropic-targets-core-business-systems-with-new-claude-plug-ins-2.html",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:10:42",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72491,
-      "title": "Jira’s latest update allows AI agents and humans to work side by side",
-      "url": "https://techcrunch.com/2026/02/25/jiras-latest-update-allows-ai-agents-and-humans-to-work-side-by-side/",
-      "summary": "",
-      "score": 84,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:09:01",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72233,
-      "title": "Rovo at Work: AI agents in action",
-      "url": "https://www.atlassian.com/blog/announcements/rovo-ai-agents-at-work",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:00:45",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72234,
-      "title": "From agent sprawl to seamless alignment: Introducing agents in Jira",
-      "url": "https://www.atlassian.com/blog/announcements/ai-agents-in-jira",
-      "summary": "",
-      "score": 86,
-      "publishedDate": "2026-02-25",
-      "discoveredAt": "2026-02-26 04:00:45",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-02-28T04:28:33.667Z"
+  "generatedAt": "2026-03-01T08:14:41.250Z"
 }
