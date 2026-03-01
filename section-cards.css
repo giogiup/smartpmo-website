@@ -729,25 +729,6 @@
   color: white;
 }
 
-/* Instagram - gradient #E1306C / #F77737 / #FCAF45 */
-.shr-icon.btn-instagram {
-  border-color: rgba(225, 48, 108, 0.3);
-}
-.shr-icon.btn-instagram svg {
-  color: rgba(225, 48, 108, 0.6);
-  fill: rgba(225, 48, 108, 0.6);
-}
-.shr-icon.btn-instagram:hover {
-  background: linear-gradient(135deg, #F77737, #E1306C, #C13584);
-  border-color: #E1306C;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(225, 48, 108, 0.3);
-}
-.shr-icon.btn-instagram:hover svg {
-  color: white;
-  fill: white;
-}
-
 .shr-icon.success {
   background: rgba(16, 185, 129, 0.15);
   border-color: rgba(16, 185, 129, 0.3);
