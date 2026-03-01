@@ -735,6 +735,7 @@
 }
 .shr-icon.btn-instagram svg {
   color: rgba(225, 48, 108, 0.6);
+  fill: rgba(225, 48, 108, 0.6);
 }
 .shr-icon.btn-instagram:hover {
   background: linear-gradient(135deg, #F77737, #E1306C, #C13584);
@@ -744,6 +745,7 @@
 }
 .shr-icon.btn-instagram:hover svg {
   color: white;
+  fill: white;
 }
 
 .shr-icon.success {
