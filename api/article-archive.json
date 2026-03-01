@@ -1,0 +1,470 @@
+{
+  "articles": [
+    {
+      "id": 74253,
+      "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
+      "url": "https://uk.nttdata.com/insights/blog/context-aware-ai-capital-delivery-design-validation",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**NTT DATA discusses how context-aware AI significantly enhances capital delivery decisions.**",
+        "The AI system integrates real-time data and contextual understanding for improved design validation.",
+        "This approach aims to optimize large-scale project outcomes by reducing risks and improving efficiency."
+      ],
+      "read_time": "8 min",
+      "source_domain": "uk.nttdata.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74211,
+      "title": "Decision Intelligence: The Real Test of AI Maturity in the PMO",
+      "url": "https://www.projectmanagement.com/blog-post/79635/decision-intelligence--the-real-test-of-ai-maturity-in-the-pmo",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Decision Intelligence is highlighted as the true test of AI maturity within the PMO.**",
+        "The article likely discusses how PMOs can leverage AI to make more informed and strategic choices.",
+        "It emphasizes moving beyond basic AI applications to achieve superior project and portfolio outcomes."
+      ],
+      "read_time": "9 min",
+      "source_domain": "projectmanagement.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74614,
+      "title": "OpenClaw Slack Task Integration: AI-Powered Team Task Automation",
+      "url": "https://www.tencentcloud.com/techpedia/139535",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**OpenClaw Slack Task Integration offers AI-powered automation to streamline team collaboration and boost productivity.**",
+        "The article details deploying this AI-powered integration on Tencent Cloud Lighthouse for efficient setup.",
+        "This tool enhances communication and workflow efficiency by automating tasks directly within Slack environments."
+      ],
+      "read_time": "12 min",
+      "source_domain": "tencentcloud.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74296,
+      "title": "Microsoft OneGov: Affordable AI-Enhanced Productivity | Carahsoft",
+      "url": "https://www.carahsoft.com/blog/microsoft-onegov-agreement-affordable-ai-enhanced-productivity-blog-2026",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft OneGov agreement aims to deliver affordable, AI-enhanced productivity solutions.**",
+        "These solutions are specifically designed for public sector entities including government, education, and healthcare.",
+        "The AI enhancements could support improvements in areas like constituent engagement, records management, and smart city initiatives."
+      ],
+      "read_time": "7 min",
+      "source_domain": "carahsoft.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74209,
+      "title": "Consent-First AI Meeting Notes: Scripts, Checklist, and a Simple ...",
+      "url": "https://www.larksuite.com/en_us/blog/content-first-ai-meeting-notes",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**This article provides a guide for implementing consent-first AI meeting notes, including scripts and checklists.**",
+        "It offers practical scripts for obtaining consent from meeting participants before using AI note-takers.",
+        "The guide also covers data retention policies and best practices for ethical and compliant AI meeting note usage."
+      ],
+      "read_time": "16 min",
+      "source_domain": "larksuite.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74620,
+      "title": "How Agentic AI Is Transforming Business Workflows | FedEx Vietnam",
+      "url": "https://www.fedex.com/en-vn/business-insights/tech-innovation/agentic-ai-workflow-automation.html",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Agentic AI is transforming business workflows by automating complex, multi-step processes.**",
+        "These AI agents autonomously plan, execute, and adapt tasks, significantly reducing manual intervention.",
+        "Relevant to streamlining operations like supply chain and customer service for enhanced efficiency."
+      ],
+      "read_time": "13 min",
+      "source_domain": "fedex.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74488,
+      "title": "Fonada develops integrated AI and telecom stack for enterprise ...",
+      "url": "https://m.economictimes.com/tech/artificial-intelligence/fonada-develops-integrated-ai-and-telecom-stack-for-enterprise-communication/articleshow/128804888.cms",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Fonada develops an integrated AI and telecom stack for enterprise communication.**",
+        "This new stack aims to enhance and streamline communication processes for businesses.",
+        "The solution focuses on improving efficiency and effectiveness in large organizational communications."
+      ],
+      "read_time": "18 min",
+      "source_domain": "m.economictimes.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74610,
+      "title": "Perplexity Computer assigns tasks to AI agents - Techzine Global",
+      "url": "https://www.techzine.eu/news/infrastructure/139169/perplexity-computer-assigns-tasks-to-ai-agents/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Perplexity Computer functions as an AI operating system, orchestrating specialized AI agents for task completion.**",
+        "It aims to manage and delegate complex assignments by breaking them down for individual AI agents.",
+        "This approach could enhance project execution by automating task delegation and workflow management."
+      ],
+      "read_time": "8 min",
+      "source_domain": "techzine.eu",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74555,
+      "title": "Connect Sendoso to an AI Meeting Notes & Summaries Agent",
+      "url": "https://arahi.ai/ai-agent/sendoso/meeting-notes",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Arahi AI integrates with Sendoso to automate meeting notes, summaries, and action item extraction.**",
+        "The AI agent provides automatic transcription, smart summaries, and a searchable archive of past discussions.",
+        "This automation helps Sendoso users cut costs, eliminate manual work, and streamline marketing operations."
+      ],
+      "read_time": "5 min",
+      "source_domain": "arahi.ai",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74350,
+      "title": "Compliance at the Speed of Change: Modernizing GRC for the AI Era",
+      "url": "https://riskonnect.com/content-library/modernizing-compliance-grc-ai-regulations/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The article discusses modernizing Governance, Risk, and Compliance (GRC) strategies to keep pace with the rapid changes of the AI era.**",
+        "It emphasizes leveraging AI to enhance regulatory compliance, risk management, and overall organizational governance processes.",
+        "This approach helps organizations navigate evolving AI regulations and maintain swift compliance, relevant to project governance and adherence."
+      ],
+      "read_time": "8 min",
+      "source_domain": "riskonnect.com",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 74161,
+      "title": "AI for EPC - Safety & Project AI - NeoBram",
+      "url": "https://neobram.ai/industries/epc",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**NeoBram offers AI solutions for the EPC industry to improve project delivery and safety.**",
+        "AI-powered tools can achieve 20% better on-time delivery and 35% fewer safety incidents.",
+        "Key use cases include project risk prediction, resource optimization, and AI-driven safety monitoring."
+      ],
+      "read_time": "8 min",
+      "source_domain": "neobram.ai",
+      "published_date": "2026-03-01",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 73759,
+      "title": "Perplexity’s new Computer agent will run other agents for you",
+      "url": "https://www.computerworld.com/article/4138723/perplexitys-new-computer-agent-will-run-other-agents-for-you.html",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Perplexity introduces a new Computer agent that can manage other agents autonomously.**",
+        "The agent is designed to streamline workflows by coordinating multiple AI agents.",
+        "This tool could assist with project management tasks by automating agent interactions."
+      ],
+      "read_time": "8 min",
+      "source_domain": "computerworld.com",
+      "published_date": "2026-02-27",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 73249,
+      "title": "How the rise of AI-native software could give SMBs enterprise-level power",
+      "url": "https://www.zdnet.com/article/ai-native-software-and-small-business/",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "AI-native software empowers SMBs with tools previously available only to enterprises.",
+        "These solutions leverage AI to streamline operations and enhance decision-making.",
+        "The rise of AI-native software could level the playing field for small businesses."
+      ],
+      "read_time": "16 min",
+      "source_domain": "zdnet.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 73049,
+      "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
+      "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Read AI introduces an email-based ‘digital twin’ designed to manage schedules and answer questions.**",
+        "This AI assistant integrates with email to autonomously handle meeting coordination and information retrieval.",
+        "The tool aims to reduce administrative burden by automating routine communication for professionals."
+      ],
+      "read_time": "7 min",
+      "source_domain": "techcrunch.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 73055,
+      "title": "Trace raises $3M to solve the AI agent adoption problem in enterprise",
+      "url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Trace secured $3M funding to tackle the significant challenge of AI agent adoption in enterprise.**",
+        "The company aims to streamline the integration and utilization of AI agents within complex business operations.",
+        "This initiative could assist organizations in successfully deploying new AI technologies and managing their impact."
+      ],
+      "read_time": "6 min",
+      "source_domain": "techcrunch.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 72827,
+      "title": "CORPGEN advances AI agents for real work",
+      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft's CORPGEN initiative is advancing AI agents for practical, real-world applications.**",
+        "The research focuses on enabling AI agents to perform more complex and meaningful tasks.",
+        "This development could assist with enhancing automation and operational efficiency across various functions."
+      ],
+      "read_time": "14 min",
+      "source_domain": "microsoft.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 72814,
+      "title": "I built an OpenClaw AI agent to do my job for me. The results were surprising—and a little scary",
+      "url": "https://www.fastcompany.com/91495511/i-built-an-openclaw-ai-agent-to-do-my-job-for-me-results-were-surprising-scary?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**An author built an OpenClaw AI agent to automate his job of writing Fast Company articles.**",
+        "The AI agent's performance in generating compelling stories yielded surprising and somewhat scary results.",
+        "This experiment explores AI's potential for automating creative tasks and its implications for future workforces."
+      ],
+      "read_time": "3 min",
+      "source_domain": "fastcompany.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 73268,
+      "title": "ServiceNow debuts Autonomous Workforce, EmployeeWorks automation tools",
+      "url": "https://siliconangle.com/2026/02/26/servicenow-debuts-autonomous-workforce-employeeworks-automation-tools/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**ServiceNow launched Autonomous Workforce and EmployeeWorks automation platforms.**",
+        "These new tools aim to enhance productivity and streamline operations for employees.",
+        "The platforms could help automate routine tasks, impacting resource management and project efficiency."
+      ],
+      "read_time": "8 min",
+      "source_domain": "siliconangle.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 73223,
+      "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
+      "url": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft's Copilot Tasks AI autonomously executes actions on its own computer.**",
+        "This AI aims to 'get things done' by interacting directly with the system.",
+        "Its capability for self-directed task completion is relevant to process automation."
+      ],
+      "read_time": "13 min",
+      "source_domain": "theverge.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": 73146,
+      "title": "Anthropic buys Vercept, deepening push into AI task automation",
+      "url": "https://www.computerworld.com/article/4137817/anthropic-buys-vercept-deepening-push-into-ai-task-automation.html",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Anthropic acquired Vercept to enhance its capabilities in AI-driven task automation.**",
+        "This acquisition signifies Anthropic's strategic expansion into automated workflow solutions.",
+        "The move aims to deepen AI's role in automating complex tasks, relevant to operational efficiency."
+      ],
+      "read_time": "9 min",
+      "source_domain": "computerworld.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "auto"
+    },
+    {
+      "id": "curated-11",
+      "title": "I use the 'Gravity' prompt with ChatGPT every day — here’s how it finds and fixes weak ideas",
+      "url": "https://www.tomsguide.com/ai/i-use-the-gravity-prompt-with-chatgpt-every-day-heres-how-it-finds-and-fixes-weak-ideas?utm_source=flipboard&utm_content=topic/artificialintelligence",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "• \tProblem: Usual “improve this” prompts make weak ideas feel smarter by polishing language instead of exposing core flaws.",
+        "• \tSolution: The “Gravity” prompt makes ChatGPT act as a hostile critic—poking holes, surfacing blind spots, and stress‑testing assumptions.",
+        "• \tResult: It drags ideas through reality, separating what merely sounds good from what actually holds up, anytime you need it."
+      ],
+      "read_time": "5 min",
+      "source_domain": "tomsguide.com",
+      "published_date": "2026-02-12",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-5",
+      "title": "New Superpowers Plugin Guides Claude Code AI : Brainstorm, Planning & Executing a Tested Builds",
+      "url": "https://www.geeky-gadgets.com/superpowers-claude-code-plugin/?utm_source=flipboard&utm_content=topic/software",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- The Superpowers plugin gives Claude Code a structured workflow centered on planning, TDD, and precision.",
+        "- It uses parallel sub‑agents to speed execution and reduce developer effort.",
+        "- Automated Git commits and Red‑Green testing maintain clean history and reliable code."
+      ],
+      "read_time": "5 min",
+      "source_domain": "geeky-gadgets.com",
+      "published_date": "2026-02-16",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-12",
+      "title": "Experiments Find LLMs Rely on Training Data & Lose Mid-Document Details",
+      "url": "https://www.geeky-gadgets.com/training-data-overrides-input/?utm_source=flipboard&utm_content=GeekyGadgets/magazine/Artificial+Intelligence#google_vignette",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- LLMs often favor training data over new input, missing novel terms and producing inaccurate analysis when data is unique or unfamiliar.",
+        "- They suffer context decay in long documents, reliably recalling beginnings and endings but losing critical details buried in the middle.",
+        "- Even with RAG, AI can miss nuances or retrieve poorly, creating risks in high‑stakes tasks like legal, medical, or financial analysis"
+      ],
+      "read_time": "5 min",
+      "source_domain": "geeky-gadgets.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-13",
+      "title": "I use this simple repetition trick with ChatGPT when it misses the point — and it works every time",
+      "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/i-use-this-simple-repetition-trick-with-chatgpt-when-it-misses-the-point-and-it-works-every-time?utm_source=flipboard&utm_content=user/tech",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- Repeating the exact same prompt makes models refine their reasoning, shifting from quick guesses to clearer, more accurate interpretations.",
+        "- Second and third attempts consistently improve structure, precision, and relevance, a behavior confirmed by research on “internal inference” stabilization.",
+        "- This simple repetition trick reliably upgrades troubleshooting, comparisons, and detailed explanations without any special prompt engineering."
+      ],
+      "read_time": "5 min",
+      "source_domain": "techradar.com",
+      "published_date": "2026-02-25",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-7",
+      "title": "The visibility mirage: Why AI pilots keep stalling between ambition and impact",
+      "url": "https://www.techradar.com/pro/the-visibility-mirage-why-ai-pilots-keep-stalling-between-ambition-and-impact?utm_source=flipboard&utm_content=topic/business",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- AI pilots stall due to integration complexity, system sprawl, and late governance, which slow progress once work moves beyond early prototypes.",
+        "- Leaders see milestones while practitioners face daily friction, creating a visibility gap that hides execution issues until they escalate.",
+        "- Success requires early ownership, integration planning, shared visibility, and funding so pilots can scale into reliable production systems."
+      ],
+      "read_time": "5 min",
+      "source_domain": "techradar.com",
+      "published_date": "2026-02-15",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-8",
+      "title": "AI models that simulate internal debate dramatically improve accuracy on complex tasks",
+      "url": "https://venturebeat.com/orchestration/ai-models-that-simulate-internal-debate-dramatically-improve-accuracy-on?utm_source=flipboard&utm_content=topic/artificialintelligence",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- Google’s study shows top reasoning models improve accuracy by simulating internal debates among diverse “personas,” a process they call society of thought.",
+        "- These autonomous multi‑voice checks—verification, dissent, backtracking—boost performance more than long monologues or sanitized training data.",
+        "- Enterprises can enhance reasoning by prompting conflicting roles, using debate‑rich training data, and exposing internal dissent for trust and auditing."
+      ],
+      "read_time": "5 min",
+      "source_domain": "venturebeat.com",
+      "published_date": "2026-01-30",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-9",
+      "title": "How to Build a Self-Organizing Agent Memory System for Long-Term AI Reasoning ",
+      "url": "https://www.marktechpost.com/2026/02/14/how-to-build-a-self-organizing-agent-memory-system-for-long-term-ai-reasoning/?utm_source=flipboard&utm_content=Marktechpost/magazine/AI+Dev+News",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- The tutorial builds a self‑organizing agent memory system that converts interactions into structured knowledge units, separating reasoning from memory extraction, compression, and organization.",
+        "- Using SQLite, scenes, summaries, and symbolic retrieval, the system maintains long‑term context without relying solely on opaque vector search.",
+        "- A memory manager and worker agent collaborate so the agent recalls relevant scenes, updates memory, and supports stable long‑horizon reasoning."
+      ],
+      "read_time": "5 min",
+      "source_domain": "marktechpost.com",
+      "published_date": "2026-02-14",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-10",
+      "title": "WTF is Markdown for AI agents? ",
+      "url": "https://digiday.com/media/wtf-is-markdown-for-ai-agents/?utm_campaign=digidaydis&utm_medium=rss&utm_source=flipboard",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- AI agents prefer markdown over HTML because it removes layout noise, reduces token cost, and delivers clean, structured content that models can parse efficiently.",
+        "- Cloudflare and others now auto‑convert HTML to markdown so agents can access text‑only versions, improving accuracy, reducing hallucinations, and lowering compute waste for AI crawlers.",
+        "- Markdown (and LLM.txt) helps brands ensure clearer facts in AI answers, though direct financial benefit for publishers remains uncertain"
+      ],
+      "read_time": "5 min",
+      "source_domain": "digiday.com",
+      "published_date": "2026-02-16",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    },
+    {
+      "id": "curated-14",
+      "title": "I use the FORGE method with Claude to turn rough ideas into finished work — here's how it works",
+      "url": "https://www.tomsguide.com/ai/i-use-the-forge-method-with-claude-to-turn-rough-ideas-into-finished-work-heres-how-it-works?utm_source=flipboard&utm_content=TomsGuide/magazine/Tom%27s+Guide:+Full+Edition",
+      "pmo_category": "CURATED",
+      "tldr": [
+        "- A five‑step method (Frame, Obstruct, Reconstruct, Generate, Edit) turns AI into a thinking partner, forcing clarity, criticism, and structured reasoning before drafting.",
+        "- You stay in control while AI handles questions, weaknesses, and structure, producing stronger, more authentic work in ~40 minutes.",
+        "- Sequential prompting deepens your thinking, improves arguments, and builds irreplaceable collaboration skills for writing and communication."
+      ],
+      "read_time": "5 min",
+      "source_domain": "tomsguide.com",
+      "published_date": "2026-02-26",
+      "archived_at": "2026-03-01",
+      "section": "curated"
+    }
+  ],
+  "last_updated": "2026-03-01T13:57:41.920Z",
+  "total": 29
+}

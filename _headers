@@ -10,3 +10,6 @@
 
 /api/*
   Cache-Control: public, max-age=3600
+
+/r/*
+  Cache-Control: public, max-age=86400
