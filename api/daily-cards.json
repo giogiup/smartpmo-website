@@ -1,8 +1,138 @@
 {
-  "generated": "2026-03-01T08:14:41.343Z",
-  "date": "2026-03-01",
+  "generated": "2026-03-02T14:20:05.615Z",
+  "date": "2026-03-02",
   "count": 20,
   "cards": [
+    {
+      "id": 75555,
+      "title": "AI is helping revolutionise risk management | KPMG NZ",
+      "url": "https://kpmg.com/nz/en/insights/risk-management/ai-revolutionising-risk-management.html",
+      "date": "2026-03-02",
+      "score": 69,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**KPMG NZ highlights how AI is revolutionizing risk management practices across various sectors.**",
+        "AI enhances capabilities for identifying, assessing, and mitigating complex risks more effectively.",
+        "This approach allows organizations to move from reactive to predictive risk strategies."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "risk management",
+        "KPMG"
+      ]
+    },
+    {
+      "id": 74849,
+      "title": "Claude AI vs Claude Code vs Claude Cowork: Which Is the Right Tool for Your Workflow Automation?",
+      "url": "https://aitoolsclub.com/claude-ai-vs-claude-code-vs-claude-cowork-which-is-the-right-tool-for-your-workflow-automation/",
+      "date": "2026-03-02",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Claude AI, Claude Code, and Claude Cowork offer distinct features for workflow automation.**",
+        "Claude AI assists with repetitive tasks, while Claude Code focuses on coding efficiency.",
+        "Claude Cowork enhances collaboration, making it suitable for diverse work environments."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Claude AI",
+        "workflow automation",
+        "Anthropic AI"
+      ]
+    },
+    {
+      "id": 75396,
+      "title": "How to use AI browsers to maximize your productivity",
+      "url": "https://mashable.com/article/ai-browsers-features",
+      "date": "2026-03-02",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI browsers integrate generative AI features to significantly boost user productivity during web tasks.**",
+        "These browsers offer capabilities like instant summaries, content generation, and intelligent search within the browsing experience.",
+        "Utilizing AI browsers can streamline research, accelerate content creation, and improve information synthesis for professionals."
+      ],
+      "badges": {
+        "read_time": 15,
+        "pmo_focus": "Tools",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI browsers",
+        "productivity",
+        "generative AI"
+      ]
+    },
+    {
+      "id": 75374,
+      "title": "20 Best MCP Servers for Developers: Building Autonomous Agentic Workflows",
+      "url": "https://blog.n8n.io/best-mcp-servers/",
+      "date": "2026-03-02",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**This guide identifies and categorizes 20 top Model Context Protocol (MCP) servers for developers.**",
+        "It demonstrates orchestrating these MCP servers with n8n to build reliable, autonomous agentic workflows in production.",
+        "The aim is to transform temporary AI interactions into persistent, automated systems for production-grade AI deployment."
+      ],
+      "badges": {
+        "read_time": 20,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "MCP servers",
+        "AI workflows",
+        "autonomous agents"
+      ]
+    },
+    {
+      "id": 74495,
+      "title": "Artificial Intelligence - ProjectManagement.com",
+      "url": "https://www.projectmanagement.com/topics/artificial-intelligence/",
+      "date": "2026-03-01",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**The article discusses the integration of AI technologies in project management practices.**",
+        "AI tools are enhancing project delivery and governance through automation and data analysis.",
+        "Use cases include predictive analytics for project outcomes and resource allocation."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "automation"
+      ]
+    },
     {
       "id": 74253,
       "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
@@ -79,6 +209,32 @@
         "OpenClaw",
         "Slack",
         "AI"
+      ]
+    },
+    {
+      "id": 75154,
+      "title": "5 Best Sonix Alternatives for AI Meeting Notes [2026] - HappyScribe",
+      "url": "https://www.happyscribe.com/blog/sonix-alternatives-for-ai-meeting-notes",
+      "date": "2026-03-01",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**HappyScribe lists top alternatives to Sonix for AI meeting notes.**",
+        "These tools provide features like instant notes, summaries, and transcription services.",
+        "They could assist with enhancing meeting documentation and action item tracking."
+      ],
+      "badges": {
+        "read_time": 27,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI meeting notes",
+        "Sonix alternatives",
+        "HappyScribe"
       ]
     },
     {
@@ -316,32 +472,6 @@
       ]
     },
     {
-      "id": 73249,
-      "title": "How the rise of AI-native software could give SMBs enterprise-level power",
-      "url": "https://www.zdnet.com/article/ai-native-software-and-small-business/",
-      "date": "2026-02-26",
-      "score": 75,
-      "pmo_relevance": "None",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "AI-native software empowers SMBs with tools previously available only to enterprises.",
-        "These solutions leverage AI to streamline operations and enhance decision-making.",
-        "The rise of AI-native software could level the playing field for small businesses."
-      ],
-      "badges": {
-        "read_time": 16,
-        "pmo_focus": "General",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI-native software",
-        "SMBs",
-        "enterprise-level power"
-      ]
-    },
-    {
       "id": 73049,
       "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
       "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
@@ -391,136 +521,6 @@
         "AI agents",
         "enterprise adoption",
         "Trace"
-      ]
-    },
-    {
-      "id": 72827,
-      "title": "CORPGEN advances AI agents for real work",
-      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/",
-      "date": "2026-02-26",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Microsoft's CORPGEN initiative is advancing AI agents for practical, real-world applications.**",
-        "The research focuses on enabling AI agents to perform more complex and meaningful tasks.",
-        "This development could assist with enhancing automation and operational efficiency across various functions."
-      ],
-      "badges": {
-        "read_time": 14,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "CORPGEN",
-        "Microsoft Research"
-      ]
-    },
-    {
-      "id": 72814,
-      "title": "I built an OpenClaw AI agent to do my job for me. The results were surprising—and a little scary",
-      "url": "https://www.fastcompany.com/91495511/i-built-an-openclaw-ai-agent-to-do-my-job-for-me-results-were-surprising-scary?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
-      "date": "2026-02-26",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**An author built an OpenClaw AI agent to automate his job of writing Fast Company articles.**",
-        "The AI agent's performance in generating compelling stories yielded surprising and somewhat scary results.",
-        "This experiment explores AI's potential for automating creative tasks and its implications for future workforces."
-      ],
-      "badges": {
-        "read_time": 3,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agent",
-        "job automation",
-        "OpenClaw"
-      ]
-    },
-    {
-      "id": 73268,
-      "title": "ServiceNow debuts Autonomous Workforce, EmployeeWorks automation tools",
-      "url": "https://siliconangle.com/2026/02/26/servicenow-debuts-autonomous-workforce-employeeworks-automation-tools/",
-      "date": "2026-02-26",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**ServiceNow launched Autonomous Workforce and EmployeeWorks automation platforms.**",
-        "These new tools aim to enhance productivity and streamline operations for employees.",
-        "The platforms could help automate routine tasks, impacting resource management and project efficiency."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "ServiceNow",
-        "automation",
-        "AI"
-      ]
-    },
-    {
-      "id": 73223,
-      "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
-      "url": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
-      "date": "2026-02-26",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Microsoft's Copilot Tasks AI autonomously executes actions on its own computer.**",
-        "This AI aims to 'get things done' by interacting directly with the system.",
-        "Its capability for self-directed task completion is relevant to process automation."
-      ],
-      "badges": {
-        "read_time": 13,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Microsoft",
-        "Copilot",
-        "AI"
-      ]
-    },
-    {
-      "id": 73146,
-      "title": "Anthropic buys Vercept, deepening push into AI task automation",
-      "url": "https://www.computerworld.com/article/4137817/anthropic-buys-vercept-deepening-push-into-ai-task-automation.html",
-      "date": "2026-02-26",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Anthropic acquired Vercept to enhance its capabilities in AI-driven task automation.**",
-        "This acquisition signifies Anthropic's strategic expansion into automated workflow solutions.",
-        "The move aims to deepen AI's role in automating complex tasks, relevant to operational efficiency."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Anthropic",
-        "Vercept",
-        "AI automation"
       ]
     }
   ]

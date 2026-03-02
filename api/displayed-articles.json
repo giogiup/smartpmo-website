@@ -1,6 +1,61 @@
 {
   "latestIntelligence": [
     {
+      "id": 75555,
+      "title": "AI is helping revolutionise risk management | KPMG NZ",
+      "url": "https://kpmg.com/nz/en/insights/risk-management/ai-revolutionising-risk-management.html",
+      "summary": "",
+      "score": 69,
+      "publishedDate": "2026-03-02",
+      "discoveredAt": "2026-03-02 14:03:50",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 75396,
+      "title": "How to use AI browsers to maximize your productivity",
+      "url": "https://mashable.com/article/ai-browsers-features",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-02",
+      "discoveredAt": "2026-03-02 14:00:28",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 75374,
+      "title": "20 Best MCP Servers for Developers: Building Autonomous Agentic Workflows",
+      "url": "https://blog.n8n.io/best-mcp-servers/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-02",
+      "discoveredAt": "2026-03-02 13:59:31",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74849,
+      "title": "Claude AI vs Claude Code vs Claude Cowork: Which Is the Right Tool for Your Workflow Automation?",
+      "url": "https://aitoolsclub.com/claude-ai-vs-claude-code-vs-claude-cowork-which-is-the-right-tool-for-your-workflow-automation/",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-03-02",
+      "discoveredAt": "2026-03-02 04:14:03",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 75154,
+      "title": "5 Best Sonix Alternatives for AI Meeting Notes [2026] - HappyScribe",
+      "url": "https://www.happyscribe.com/blog/sonix-alternatives-for-ai-meeting-notes",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-02 04:15:58",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 74614,
       "title": "OpenClaw Slack Task Integration: AI-Powered Team Task Automation",
       "url": "https://www.tencentcloud.com/techpedia/139535",
@@ -41,6 +96,17 @@
       "score": 65,
       "publishedDate": "2026-03-01",
       "discoveredAt": "2026-03-01 07:52:34",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 74495,
+      "title": "Artificial Intelligence - ProjectManagement.com",
+      "url": "https://www.projectmanagement.com/topics/artificial-intelligence/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-01",
+      "discoveredAt": "2026-03-01 07:52:19",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -133,50 +199,6 @@
       "section": "auto"
     },
     {
-      "id": 73268,
-      "title": "ServiceNow debuts Autonomous Workforce, EmployeeWorks automation tools",
-      "url": "https://siliconangle.com/2026/02/26/servicenow-debuts-autonomous-workforce-employeeworks-automation-tools/",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:13:11",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 73249,
-      "title": "How the rise of AI-native software could give SMBs enterprise-level power",
-      "url": "https://www.zdnet.com/article/ai-native-software-and-small-business/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:11:54",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 73223,
-      "title": "Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done",
-      "url": "https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:11:41",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 73146,
-      "title": "Anthropic buys Vercept, deepening push into AI task automation",
-      "url": "https://www.computerworld.com/article/4137817/anthropic-buys-vercept-deepening-push-into-ai-task-automation.html",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:10:55",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 73049,
       "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
       "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
@@ -195,28 +217,6 @@
       "score": 70,
       "publishedDate": "2026-02-26",
       "discoveredAt": "2026-02-27 04:09:27",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72827,
-      "title": "CORPGEN advances AI agents for real work",
-      "url": "https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:03:19",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 72814,
-      "title": "I built an OpenClaw AI agent to do my job for me. The results were surprising—and a little scary",
-      "url": "https://www.fastcompany.com/91495511/i-built-an-openclaw-ai-agent-to-do-my-job-for-me-results-were-surprising-scary?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:01:39",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-01T08:14:41.250Z"
+  "generatedAt": "2026-03-02T14:20:05.620Z"
 }
