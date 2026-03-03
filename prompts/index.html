@@ -413,6 +413,30 @@
       margin-bottom: 0.5rem;
     }
 
+    .prompts-area-icon,
+    .prompts-technique-icon,
+    .prompts-tab-icon {
+      display: inline-block;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+    .prompts-area-icon {
+      width: 14px;
+      height: 14px;
+      margin-right: 3px;
+      vertical-align: -1px;
+    }
+    .prompts-technique-icon {
+      width: 16px;
+      height: 16px;
+    }
+    .prompts-tab-icon {
+      width: 18px;
+      height: 18px;
+      vertical-align: -3px;
+      margin-right: 4px;
+    }
+
     .prompts-technique-badge {
       font-size: 0.85rem;
       cursor: help;
@@ -909,14 +933,14 @@
       <!-- Tab Bar -->
       <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
         <button class="prompts-tab is-disabled" role="tab" aria-selected="false" aria-disabled="true" tabindex="-1">
-          <span>🔨 Forge</span>
+          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2l3 5h-2l3 5H5l3-5H6z"/><rect x="8.5" y="12" width="3" height="6" rx="0.5"/></svg> Forge</span>
           <span class="prompts-tab-badge">Coming Soon</span>
         </button>
         <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret">
-          <span>👔 Pr&ecirc;t-&agrave;-Porter</span>
+          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h10l-1 5H6z"/><rect x="5" y="8" width="10" height="10" rx="1"/><line x1="10" y1="3" x2="10" y2="8"/><path d="M8 3c0-1 .9-1.5 2-1.5s2 .5 2 1.5"/></svg> Pr&ecirc;t-&agrave;-Porter</span>
         </button>
         <button class="prompts-tab is-disabled" role="tab" aria-selected="false" aria-disabled="true" tabindex="-1">
-          <span>⛓️ Chains</span>
+          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="10" rx="3.5" ry="5" transform="rotate(-30 6 10)"/><ellipse cx="14" cy="10" rx="3.5" ry="5" transform="rotate(30 14 10)"/></svg> Chains</span>
           <span class="prompts-tab-badge">Coming Soon</span>
         </button>
       </div>
@@ -984,6 +1008,41 @@
     window.addEventListener('resize', () => {
       if (window.innerWidth > 768) HeaderMenu.close();
     });
+
+    /* ============================================
+       SVG ICON REGISTRY — SmartPMO-themed icons
+       Stroke-based line art matching hero icon style
+       ============================================ */
+    const ICONS = {
+      areas: {
+        integration: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="7.5" cy="10" rx="4" ry="5"/><ellipse cx="12.5" cy="10" rx="4" ry="5"/></svg>',
+        scope: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="3.5"/><circle cx="10" cy="10" r="0.8" fill="#8B5CF6"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="10" y1="16" x2="10" y2="19"/><line x1="1" y1="10" x2="4" y2="10"/><line x1="16" y1="10" x2="19" y2="10"/></svg>',
+        schedule: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#4C78FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="14" rx="2"/><line x1="2" y1="8" x2="18" y2="8"/><line x1="6" y1="2" x2="6" y2="6"/><line x1="14" y1="2" x2="14" y2="6"/><circle cx="7" cy="12" r="0.8" fill="#4C78FF"/><circle cx="10" cy="12" r="0.8" fill="#4C78FF"/><circle cx="13" cy="12" r="0.8" fill="#4C78FF"/><circle cx="7" cy="15" r="0.8" fill="#4C78FF"/><circle cx="10" cy="15" r="0.8" fill="#4C78FF"/></svg>',
+        cost: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M10 4.5v11"/><path d="M7.5 7.5C7.5 6.5 8.5 5.8 10 5.8s2.5.7 2.5 1.7c0 1.5-2.5 1.2-2.5 2.7"/><path d="M7.5 12.5c0 1 1 1.7 2.5 1.7s2.5-.7 2.5-1.7"/></svg>',
+        quality: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2l2.5 1.5v3L10 8 7.5 6.5v-3z"/><path d="M7.5 6.5L4 8.5v4L10 17l6-4.5v-4L12.5 6.5"/><polyline points="7 10.5 9.5 13 14 8"/></svg>',
+        resource: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="6" r="2.5"/><path d="M2.5 15c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5"/><circle cx="14" cy="7" r="2"/><path d="M12.5 15c0-2 1.5-3.5 3.5-3.5s2.5 1 2.5 3.5"/></svg>',
+        communications: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="9" rx="2"/><path d="M5 15l-1 3 3-2h3"/><path d="M14 7h2.5a1.5 1.5 0 011.5 1.5v5a1.5 1.5 0 01-1.5 1.5H15l-2 2v-2h-1"/></svg>',
+        risk: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#ff6b6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2L1.5 17h17z"/><line x1="10" y1="7.5" x2="10" y2="12"/><circle cx="10" cy="14.5" r="0.6" fill="#ff6b6b"/></svg>',
+        procurement: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="12" height="16" rx="1.5"/><path d="M8 2v-0.5a2 2 0 014 0V2"/><line x1="7" y1="7" x2="13" y2="7"/><line x1="7" y1="10" x2="13" y2="10"/><line x1="7" y1="13" x2="11" y2="13"/></svg>',
+        stakeholder: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c1-2 2-3 3.5-4.5"/><path d="M16 13c-1-2-2-3-3.5-4.5"/><path d="M7.5 8.5c.5-.3 1.5-1 2.5-1s2 .7 2.5 1"/><path d="M3 14.5c1 .5 2.5 1.5 4 2l1.5-1.5h3L13 16.5c1.5-.5 3-1.5 4-2"/><circle cx="5.5" cy="6" r="2"/><circle cx="14.5" cy="6" r="2"/></svg>',
+        agile: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#00F5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5a6.5 6.5 0 01.5 9"/><polyline points="17 11 15 12.5 13.5 10.5"/><path d="M5.5 16.5a6.5 6.5 0 01-.5-9"/><polyline points="3 9 5 7.5 6.5 9.5"/></svg>'
+      },
+      techniques: {
+        grounding: '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2L3 6v5c0 4 3 6.5 7 8 4-1.5 7-4 7-8V6z"/></svg>',
+        'role-boundary': '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="6" r="3"/><path d="M5 17c0-2.8 2.2-5 5-5s5 2.2 5 5"/><line x1="17" y1="3" x2="17" y2="17" stroke-dasharray="2 2"/></svg>',
+        'chain-of-thought': '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="10" r="2.5"/><circle cx="15" cy="10" r="2.5"/><path d="M7.5 9c1-1.5 3-2 5-1"/><path d="M7.5 11c1 1.5 3 2 5 1"/></svg>',
+        'structured-output': '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="5" x2="17" y2="5"/><line x1="3" y1="10" x2="14" y2="10"/><line x1="3" y1="15" x2="11" y2="15"/><circle cx="1.5" cy="5" r="0.6" fill="currentColor"/><circle cx="1.5" cy="10" r="0.6" fill="currentColor"/><circle cx="1.5" cy="15" r="0.6" fill="currentColor"/></svg>',
+        uncertainty: '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M7.5 7.5c0-1.5 1.2-2.5 2.5-2.5s2.5 1 2.5 2.5c0 1.5-1.5 1.8-2.5 2.5v1"/><circle cx="10" cy="14.5" r="0.6" fill="currentColor"/></svg>',
+        'self-verification': '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><polyline points="6.5 10 9 12.5 14 7.5"/></svg>',
+        'negative-constraints': '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><line x1="4.3" y1="4.3" x2="15.7" y2="15.7"/></svg>',
+        'confidence-scoring': '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="12" width="3" height="5" rx="0.5" fill="currentColor" opacity="0.3"/><rect x="8.5" y="8" width="3" height="9" rx="0.5" fill="currentColor" opacity="0.5"/><rect x="14" y="4" width="3" height="13" rx="0.5" fill="currentColor" opacity="0.7"/></svg>'
+      },
+      tabs: {
+        forge: '<svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2l3 5h-2l3 5H5l3-5H6z"/><rect x="8.5" y="12" width="3" height="6" rx="0.5"/></svg>',
+        pret: '<svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h10l-1 5H6z"/><rect x="5" y="8" width="10" height="10" rx="1"/><line x1="10" y1="3" x2="10" y2="8"/><path d="M8 3c0-1 .9-1.5 2-1.5s2 .5 2 1.5"/></svg>',
+        chains: '<svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="10" rx="3.5" ry="5" transform="rotate(-30 6 10)"/><ellipse cx="14" cy="10" rx="3.5" ry="5" transform="rotate(30 14 10)"/></svg>'
+      }
+    };
 
     /* ============================================
        PROMPTS MODULE — Main orchestrator
@@ -1104,7 +1163,7 @@
             const tech = promptsData.techniques[t];
             if (!tech) return '';
             return '<span class="prompts-technique-badge" title="' + escapeAttr(tech.name) + '">' +
-              tech.badge +
+              (ICONS.techniques[t] || tech.badge) +
               '<span class="prompts-technique-tooltip">' + escapeHtml(tech.name + ': ' + tech.description) + '</span>' +
             '</span>';
           }).join('');
@@ -1144,7 +1203,7 @@
                 '<span class="prompts-card-expand-icon" aria-hidden="true">&#9660;</span>' +
               '</div>' +
               '<div class="prompts-card-meta">' +
-                '<span class="prompts-area-badge">' + area.icon + ' ' + escapeHtml(area.name) + '</span>' +
+                '<span class="prompts-area-badge">' + (ICONS.areas[p.knowledgeArea] || area.icon) + ' ' + escapeHtml(area.name) + '</span>' +
                 '<span class="prompts-difficulty-badge is-' + p.difficulty + '">' + escapeHtml(p.difficulty) + '</span>' +
               '</div>' +
               '<div class="prompts-card-techniques">' + techBadges + '</div>' +
