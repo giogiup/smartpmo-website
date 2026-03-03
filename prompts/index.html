@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Prêt-à-Porter — AI Prompts for PMO Professionals | SmartPMO.ai</title>
+  <meta name="description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. 20+ ready-to-use prompts across all PMBOK Knowledge Areas. Free, no login required.">
+  <meta name="keywords" content="PMO prompts, AI prompts for project management, PMBOK, project charter generator, risk register, WBS generator, stakeholder management, agile retrospective">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prompt Prêt-à-Porter — AI Prompts for PMO Professionals">
+  <meta property="og:description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.">
+  <meta property="og:url" content="https://smartpmo.ai/prompts">
+  <meta property="og:site_name" content="SmartPMO.ai">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prompt Prêt-à-Porter — AI Prompts for PMO Professionals">
+  <meta name="twitter:description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://smartpmo.ai/prompts">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://smartpmo.ai/prompts#collection",
+    "name": "Prompt Prêt-à-Porter — AI Prompts for PMO Professionals",
+    "description": "Expert-crafted, hallucination-proof AI prompts across all PMBOK Knowledge Areas. Free, model-agnostic, ready to use.",
+    "url": "https://smartpmo.ai/prompts",
+    "isPartOf": { "@id": "https://smartpmo.ai/#website" },
+    "publisher": { "@id": "https://smartpmo.ai/#organization" },
+    "inLanguage": "en",
+    "about": {
+      "@type": "Thing",
+      "name": "AI Prompt Engineering for Project Management"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Shared header styles -->
+  <link rel="stylesheet" href="../header-styles.css">
+
+  <style>
+    /* ============================================
+       PROMPTS PAGE — All styles scoped to .prompts-page
+       Website Design Contract §1.1, §2.2, §2.4
+       ============================================ */
+
+    /* === RESET & BASE === */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cyan-primary: #06B6D4;
+      --gold-accent: #F59E0B;
+      --bg: #050505;
+      --panel: rgba(30, 35, 45, 0.75);
+      --text-primary: #e8f0ff;
+      --text-muted: #b0c4de;
+      --badge-bg: rgba(255, 255, 255, 0.05);
+      --badge-border: rgba(255, 255, 255, 0.1);
+      --glass-border: rgba(255, 255, 255, 0.06);
+      --max-width: 1200px;
+      --transition-fast: 0.15s ease;
+      --transition-base: 0.2s ease;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Skip link — Website Design Contract §7 */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      background: var(--cyan-primary);
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      z-index: 10000;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 0 0 8px 0;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* Focus indicators — §2.7 */
+    :focus-visible {
+      outline: 2px solid var(--cyan-primary);
+      outline-offset: 2px;
+    }
+
+    /* Reduced motion — §2.7 */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* === PAGE WRAPPER === */
+    .prompts-page {
+      padding-top: 70px; /* Fixed header height */
+      min-height: 100vh;
+    }
+
+    /* === HERO SECTION === */
+    .prompts-hero {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    .prompts-hero-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, var(--cyan-primary), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .prompts-hero-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto 1rem;
+      font-weight: 400;
+    }
+
+    .prompts-hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .prompts-hero-stat {
+      text-align: center;
+    }
+
+    .prompts-hero-stat-number {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--cyan-primary);
+      display: block;
+    }
+
+    .prompts-hero-stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* === TAB BAR === */
+    .prompts-tabs {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .prompts-tab {
+      padding: 0.75rem 1.5rem;
+      min-height: 48px;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: color var(--transition-fast), border-color var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .prompts-tab:hover:not(.is-disabled) {
+      color: var(--text-primary);
+    }
+
+    .prompts-tab.is-active {
+      color: var(--cyan-primary);
+      border-bottom-color: var(--cyan-primary);
+    }
+
+    .prompts-tab.is-disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .prompts-tab-badge {
+      font-size: 0.65rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* === FILTER BAR === */
+    .prompts-filters {
+      max-width: var(--max-width);
+      margin: 1.5rem auto 0;
+      padding: 0 1rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .prompts-filter-select,
+    .prompts-filter-search {
+      min-height: 44px;
+      padding: 0.5rem 0.85rem;
+      background: rgba(20, 30, 45, 0.9);
+      border: 1px solid var(--badge-border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.85rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .prompts-filter-select:focus,
+    .prompts-filter-search:focus {
+      border-color: var(--cyan-primary);
+    }
+
+    .prompts-filter-select {
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23b0c4de' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      padding-right: 2rem;
+    }
+
+    .prompts-filter-select option {
+      background: #1a1f2e;
+      color: var(--text-primary);
+    }
+
+    .prompts-filter-search {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .prompts-filter-search::placeholder {
+      color: rgba(176, 196, 222, 0.5);
+    }
+
+    .prompts-filter-count {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-left: auto;
+      white-space: nowrap;
+    }
+
+    /* === PROMPTS GRID === */
+    .prompts-grid {
+      max-width: var(--max-width);
+      margin: 1.5rem auto 3rem;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .prompts-empty {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      grid-column: 1 / -1;
+    }
+
+    /* === PROMPT CARD === */
+    .prompts-card {
+      background: rgba(20, 30, 45, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .prompts-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(6, 182, 212, 0.12);
+    }
+
+    .prompts-card.is-expanded {
+      border-color: rgba(6, 182, 212, 0.3);
+      box-shadow: 0 8px 30px rgba(6, 182, 212, 0.15);
+    }
+
+    .prompts-card.is-hidden {
+      display: none;
+    }
+
+    /* Card header (always visible) */
+    .prompts-card-header {
+      padding: 1.25rem;
+      cursor: pointer;
+    }
+
+    .prompts-card-title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .prompts-card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--text-primary);
+    }
+
+    .prompts-card-expand-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      transition: transform var(--transition-base);
+      font-size: 0.8rem;
+    }
+
+    .prompts-card.is-expanded .prompts-card-expand-icon {
+      transform: rotate(180deg);
+    }
+
+    .prompts-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .prompts-area-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      background: rgba(6, 182, 212, 0.12);
+      color: var(--cyan-primary);
+      border: 1px solid rgba(6, 182, 212, 0.2);
+    }
+
+    .prompts-difficulty-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .prompts-difficulty-badge.is-beginner {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .prompts-difficulty-badge.is-intermediate {
+      background: rgba(245, 158, 11, 0.12);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.2);
+    }
+
+    .prompts-difficulty-badge.is-advanced {
+      background: rgba(239, 68, 68, 0.12);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+
+    .prompts-card-techniques {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .prompts-technique-badge {
+      font-size: 0.85rem;
+      cursor: help;
+      position: relative;
+      padding: 0.15rem;
+      border-radius: 4px;
+      transition: background var(--transition-fast);
+    }
+
+    .prompts-technique-badge:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .prompts-technique-tooltip {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1a1f2e;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+      color: var(--text-primary);
+      white-space: nowrap;
+      z-index: 100;
+      pointer-events: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .prompts-technique-badge:hover .prompts-technique-tooltip {
+      display: block;
+    }
+
+    .prompts-card-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Card body (expandable) */
+    .prompts-card-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .prompts-card.is-expanded .prompts-card-body {
+      max-height: 3000px;
+    }
+
+    .prompts-card-body-inner {
+      padding: 0 1.25rem 1.25rem;
+      border-top: 1px solid var(--glass-border);
+    }
+
+    /* Form fields */
+    .prompts-card-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      padding-top: 1rem;
+    }
+
+    .prompts-field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .prompts-field-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .prompts-field-input,
+    .prompts-field-textarea,
+    .prompts-field-select {
+      width: 100%;
+      padding: 0.6rem 0.85rem;
+      background: rgba(10, 15, 25, 0.8);
+      border: 1px solid var(--badge-border);
+      border-radius: 6px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.85rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .prompts-field-input:focus,
+    .prompts-field-textarea:focus,
+    .prompts-field-select:focus {
+      border-color: var(--cyan-primary);
+    }
+
+    .prompts-field-textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .prompts-field-input::placeholder,
+    .prompts-field-textarea::placeholder {
+      color: rgba(176, 196, 222, 0.4);
+    }
+
+    .prompts-field-select {
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23b0c4de' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      padding-right: 2rem;
+    }
+
+    .prompts-field-select option {
+      background: #1a1f2e;
+      color: var(--text-primary);
+    }
+
+    /* Prompt preview */
+    .prompts-card-preview {
+      margin-top: 1rem;
+    }
+
+    .prompts-preview-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--cyan-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .prompts-preview-text {
+      background: rgba(5, 10, 20, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.78rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .prompts-preview-text .prompts-field-highlight {
+      color: var(--cyan-primary);
+      font-weight: 600;
+    }
+
+    /* Card actions */
+    .prompts-card-actions {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .prompts-copy-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-height: 48px;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, var(--cyan-primary), #0891b2);
+      border: none;
+      border-radius: 8px;
+      color: #000;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity var(--transition-fast), transform var(--transition-fast);
+      width: 100%;
+    }
+
+    .prompts-copy-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .prompts-copy-btn:active {
+      transform: translateY(0);
+    }
+
+    .prompts-copy-btn.is-copied {
+      background: #10b981;
+    }
+
+    /* Model launcher row */
+    .prompts-launcher-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .prompts-launcher-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      width: 100%;
+      margin-bottom: 0.15rem;
+    }
+
+    .prompts-model-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      min-height: 36px;
+      padding: 0.35rem 0.65rem;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.72rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .prompts-model-btn:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Card footer (votes) */
+    .prompts-card-footer {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      border-top: 1px solid var(--glass-border);
+    }
+
+    .prompts-vote-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      min-height: 40px;
+      min-width: 52px;
+      padding: 0 0.65rem;
+      border: 1px solid var(--badge-border);
+      border-radius: 6px;
+      background: var(--badge-bg);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: border-color var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+      font-family: inherit;
+    }
+
+    .prompts-vote-btn:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .prompts-vote-btn[aria-pressed="true"] {
+      border-color: var(--cyan-primary);
+      background: rgba(6, 182, 212, 0.12);
+      color: var(--cyan-primary);
+    }
+
+    .prompts-vote-icon {
+      font-size: 1rem;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .prompts-vote-count {
+      font-size: 0.75rem;
+      font-weight: 600;
+      min-width: 1ch;
+    }
+
+    .prompts-card-share-link {
+      margin-left: auto;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      opacity: 0.6;
+      transition: opacity var(--transition-fast);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: inherit;
+    }
+
+    .prompts-card-share-link:hover {
+      opacity: 1;
+      color: var(--cyan-primary);
+    }
+
+    /* === TOAST === */
+    .prompts-toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #10b981;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      z-index: 9999;
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      pointer-events: none;
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    }
+
+    .prompts-toast.is-visible {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* === FOOTER === */
+    .prompts-footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-top: 1px solid var(--glass-border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    /* === RESPONSIVE — Mobile-first (§2.5) === */
+    @media (min-width: 768px) {
+      .prompts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .prompts-filters {
+        flex-wrap: nowrap;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .prompts-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .prompts-hero {
+        padding: 4rem 1rem 2.5rem;
+      }
+    }
+
+    /* Mobile touch targets — §5.2 */
+    @media (max-width: 767px) {
+      .prompts-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .prompts-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .prompts-filters {
+        flex-direction: column;
+      }
+
+      .prompts-filter-select,
+      .prompts-filter-search {
+        width: 100%;
+      }
+
+      .prompts-filter-count {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .prompts-model-btn {
+        min-height: 40px;
+        padding: 0.4rem 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header — reused from site (§1.1 module independence) -->
+  <header class="site-header" id="site-header">
+    <div class="site-header-inner">
+      <a href="/" class="site-header-brand" aria-label="SmartPMO.ai Home">
+        <svg class="site-header-logo" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="5" y="5" width="42" height="42" rx="8" fill="#4C78FF" opacity="0.9"/>
+          <rect x="53" y="5" width="42" height="42" rx="8" fill="#00D4FF" opacity="0.9"/>
+          <rect x="5" y="53" width="42" height="42" rx="8" fill="#00F5FF" opacity="0.7"/>
+          <rect x="53" y="53" width="42" height="42" rx="8" fill="#825AFF" opacity="0.8"/>
+          <path d="M30 25 L30 42 M22 33 L38 33" stroke="white" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="74" cy="26" r="10" stroke="white" stroke-width="3.5" fill="none"/>
+          <path d="M20 74 L26 80 L38 68" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M64 70 L84 70 M64 78 L78 78" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <span class="site-header-brand-text">SmartPMO<span style="color: var(--cyan-primary, #06B6D4)">.ai</span></span>
+      </a>
+
+      <nav class="site-header-nav" aria-label="Main navigation">
+        <a href="/#latest-intelligence" class="site-header-nav-link">Latest Intelligence</a>
+        <a href="/#strategic-insights" class="site-header-nav-link">Strategic Insights</a>
+        <a href="/#blog" class="site-header-nav-link">Blog</a>
+        <a href="/prompts" class="site-header-nav-link" aria-current="page" style="color: var(--cyan-primary, #06B6D4);">Prompts</a>
+        <a href="/about" class="site-header-nav-link">About</a>
+        <a href="/assessment" class="site-header-cta-button">
+          <span>Take Assessment</span>
+          <span>&rarr;</span>
+        </a>
+      </nav>
+
+      <button class="site-header-mobile-toggle" id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="site-header-mobile-menu" id="siteHeaderMobileMenu" role="dialog" aria-label="Mobile navigation">
+    <div class="site-header-mobile-header">
+      <span class="site-header-brand-text">SmartPMO<span style="color: var(--cyan-primary, #06B6D4)">.ai</span></span>
+      <button class="site-header-mobile-close" id="mobileMenuClose" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="site-header-mobile-nav" aria-label="Mobile navigation">
+      <a href="/#latest-intelligence" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Latest Intelligence</a>
+      <a href="/#strategic-insights" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Strategic Insights</a>
+      <a href="/#blog" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Blog</a>
+      <a href="/prompts" class="site-header-mobile-nav-link" style="color: var(--cyan-primary, #06B6D4);">Prompts</a>
+      <a href="/about" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">About</a>
+      <a href="/assessment" class="site-header-mobile-cta" onclick="HeaderMenu.close()">Take Assessment &rarr;</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="prompts-page">
+    <main id="main-content">
+
+      <!-- Hero -->
+      <section class="prompts-hero" aria-labelledby="prompts-title">
+        <h1 class="prompts-hero-title" id="prompts-title">Prompt Pr&ecirc;t-&agrave;-Porter</h1>
+        <p class="prompts-hero-subtitle">Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.</p>
+        <div class="prompts-hero-stats" aria-label="Prompt library statistics">
+          <div class="prompts-hero-stat">
+            <span class="prompts-hero-stat-number" id="promptCount">22</span>
+            <span class="prompts-hero-stat-label">Prompts</span>
+          </div>
+          <div class="prompts-hero-stat">
+            <span class="prompts-hero-stat-number">11</span>
+            <span class="prompts-hero-stat-label">PMBOK Areas</span>
+          </div>
+          <div class="prompts-hero-stat">
+            <span class="prompts-hero-stat-number">8</span>
+            <span class="prompts-hero-stat-label">Anti-Hallucination Techniques</span>
+          </div>
+          <div class="prompts-hero-stat">
+            <span class="prompts-hero-stat-number">10</span>
+            <span class="prompts-hero-stat-label">AI Models Supported</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tab Bar -->
+      <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
+        <button class="prompts-tab is-disabled" role="tab" aria-selected="false" aria-disabled="true" tabindex="-1">
+          <span>🔨 Forge</span>
+          <span class="prompts-tab-badge">Coming Soon</span>
+        </button>
+        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret">
+          <span>👔 Pr&ecirc;t-&agrave;-Porter</span>
+        </button>
+        <button class="prompts-tab is-disabled" role="tab" aria-selected="false" aria-disabled="true" tabindex="-1">
+          <span>⛓️ Chains</span>
+          <span class="prompts-tab-badge">Coming Soon</span>
+        </button>
+      </div>
+
+      <!-- Filters -->
+      <div class="prompts-filters" role="search" aria-label="Filter prompts">
+        <select class="prompts-filter-select" id="filterArea" aria-label="Filter by Knowledge Area">
+          <option value="all">All Knowledge Areas</option>
+        </select>
+
+        <select class="prompts-filter-select" id="filterDifficulty" aria-label="Filter by Difficulty">
+          <option value="all">All Difficulties</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+
+        <input type="search" class="prompts-filter-search" id="filterSearch" placeholder="Search prompts..." aria-label="Search prompts">
+
+        <select class="prompts-filter-select" id="filterSort" aria-label="Sort prompts">
+          <option value="default">Sort: Default</option>
+          <option value="popular">Sort: Most Popular</option>
+          <option value="az">Sort: A-Z</option>
+        </select>
+
+        <span class="prompts-filter-count" id="filterCount" aria-live="polite"></span>
+      </div>
+
+      <!-- Prompts Grid -->
+      <div class="prompts-grid" id="promptsGrid" aria-label="Prompt cards">
+        <!-- Cards rendered by JS -->
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="prompts-footer">
+      <p>&copy; 2026 SmartPMO.ai &mdash; AI-powered insights for PMO professionals</p>
+    </footer>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="prompts-toast" id="promptsToast" role="status" aria-live="polite"></div>
+
+  <script>
+    /* ============================================
+       HEADER MENU — Minimal mobile toggle
+       Website Design Contract §3.1 (IIFE pattern)
+       ============================================ */
+    const HeaderMenu = (() => {
+      'use strict';
+
+      const toggle = document.getElementById('mobileMenuToggle');
+      const closeBtn = document.getElementById('mobileMenuClose');
+      const menu = document.getElementById('siteHeaderMobileMenu');
+
+      function open() {
+        if (!menu) return;
+        menu.classList.add('is-open');
+        if (toggle) toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        if (!menu) return;
+        menu.classList.remove('is-open');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      if (toggle) toggle.addEventListener('click', open);
+      if (closeBtn) closeBtn.addEventListener('click', close);
+
+      return { open, close };
+    })();
+
+    /* ============================================
+       PROMPTS MODULE — Main orchestrator
+       Website Design Contract §3.1 (IIFE), §3.2 (const/let), §3.3 (cached queries, delegation)
+       ============================================ */
+    const PromptsModule = (() => {
+      'use strict';
+
+      // Private state
+      let promptsData = null;
+      let filteredPrompts = [];
+      const voteCounts = {};
+
+      // Cached DOM refs — §3.3
+      const grid = document.getElementById('promptsGrid');
+      const filterArea = document.getElementById('filterArea');
+      const filterDifficulty = document.getElementById('filterDifficulty');
+      const filterSearch = document.getElementById('filterSearch');
+      const filterSort = document.getElementById('filterSort');
+      const filterCount = document.getElementById('filterCount');
+      const toast = document.getElementById('promptsToast');
+
+      // AI Model launchers — Spec §4
+      const AI_MODELS = [
+        { name: 'ChatGPT', url: 'https://chatgpt.com/' },
+        { name: 'Claude', url: 'https://claude.ai/new' },
+        { name: 'Gemini', url: 'https://gemini.google.com/app' },
+        { name: 'Copilot', url: 'https://copilot.microsoft.com/' },
+        { name: 'Perplexity', url: 'https://www.perplexity.ai/' },
+        { name: 'DeepSeek', url: 'https://chat.deepseek.com/' },
+        { name: 'Qwen', url: 'https://chat.qwen.ai/' },
+        { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
+        { name: 'HuggingChat', url: 'https://huggingface.co/chat/' },
+        { name: 'Grok', url: 'https://grok.com/' }
+      ];
+
+      // ── Data loading ──
+      async function loadData() {
+        try {
+          const res = await fetch('data/prompts.json');
+          if (!res.ok) throw new Error('Failed to load prompts data');
+          promptsData = await res.json();
+          populateFilters();
+          filteredPrompts = [...promptsData.prompts];
+          renderCards();
+          handleHash();
+        } catch (err) {
+          console.error('PromptsModule: Failed to load data', err);
+          if (grid) grid.innerHTML = '<div class="prompts-empty">Failed to load prompts. Please refresh the page.</div>';
+        }
+      }
+
+      // ── Filter population ──
+      function populateFilters() {
+        if (!filterArea || !promptsData) return;
+        promptsData.knowledgeAreas.forEach(area => {
+          const opt = document.createElement('option');
+          opt.value = area.id;
+          opt.textContent = area.icon + ' ' + area.name;
+          filterArea.appendChild(opt);
+        });
+      }
+
+      // ── Filtering ──
+      function applyFilters() {
+        if (!promptsData) return;
+
+        const area = filterArea ? filterArea.value : 'all';
+        const difficulty = filterDifficulty ? filterDifficulty.value : 'all';
+        const search = filterSearch ? filterSearch.value.toLowerCase().trim() : '';
+        const sort = filterSort ? filterSort.value : 'default';
+
+        filteredPrompts = promptsData.prompts.filter(p => {
+          if (area !== 'all' && p.knowledgeArea !== area) return false;
+          if (difficulty !== 'all' && p.difficulty !== difficulty) return false;
+          if (search && !p.title.toLowerCase().includes(search) && !p.description.toLowerCase().includes(search)) return false;
+          return true;
+        });
+
+        if (sort === 'popular') {
+          filteredPrompts.sort((a, b) => {
+            const aVotes = (voteCounts[a.id] || { up: 0 }).up - (voteCounts[a.id] || { down: 0 }).down;
+            const bVotes = (voteCounts[b.id] || { up: 0 }).up - (voteCounts[b.id] || { down: 0 }).down;
+            return bVotes - aVotes;
+          });
+        } else if (sort === 'az') {
+          filteredPrompts.sort((a, b) => a.title.localeCompare(b.title));
+        }
+
+        renderCards();
+        updateCount();
+      }
+
+      function updateCount() {
+        if (!filterCount || !promptsData) return;
+        const total = promptsData.prompts.length;
+        const shown = filteredPrompts.length;
+        filterCount.textContent = shown === total ? total + ' prompts' : shown + ' of ' + total + ' prompts';
+      }
+
+      // ── Card rendering ──
+      function renderCards() {
+        if (!grid) return;
+
+        if (filteredPrompts.length === 0) {
+          grid.innerHTML = '<div class="prompts-empty">No prompts match your filters. Try broadening your search.</div>';
+          return;
+        }
+
+        const areaMap = {};
+        if (promptsData) {
+          promptsData.knowledgeAreas.forEach(a => { areaMap[a.id] = a; });
+        }
+
+        grid.innerHTML = filteredPrompts.map(p => {
+          const area = areaMap[p.knowledgeArea] || { name: p.knowledgeArea, icon: '' };
+          const techBadges = (p.techniques || []).map(t => {
+            const tech = promptsData.techniques[t];
+            if (!tech) return '';
+            return '<span class="prompts-technique-badge" title="' + escapeAttr(tech.name) + '">' +
+              tech.badge +
+              '<span class="prompts-technique-tooltip">' + escapeHtml(tech.name + ': ' + tech.description) + '</span>' +
+            '</span>';
+          }).join('');
+
+          const fieldsHtml = (p.fields || []).map(f => {
+            if (f.type === 'textarea') {
+              return '<div class="prompts-field-group">' +
+                '<label class="prompts-field-label" for="field-' + p.id + '-' + f.id + '">' + escapeHtml(f.label) + '</label>' +
+                '<textarea class="prompts-field-textarea" id="field-' + p.id + '-' + f.id + '" data-prompt-id="' + p.id + '" data-field-id="' + f.id + '" placeholder="' + escapeAttr(f.placeholder || '') + '"></textarea>' +
+              '</div>';
+            } else if (f.type === 'select') {
+              const opts = (f.options || []).map(o => '<option value="' + escapeAttr(o) + '">' + escapeHtml(o) + '</option>').join('');
+              return '<div class="prompts-field-group">' +
+                '<label class="prompts-field-label" for="field-' + p.id + '-' + f.id + '">' + escapeHtml(f.label) + '</label>' +
+                '<select class="prompts-field-select" id="field-' + p.id + '-' + f.id + '" data-prompt-id="' + p.id + '" data-field-id="' + f.id + '">' +
+                '<option value="">Select...</option>' + opts +
+                '</select>' +
+              '</div>';
+            } else {
+              return '<div class="prompts-field-group">' +
+                '<label class="prompts-field-label" for="field-' + p.id + '-' + f.id + '">' + escapeHtml(f.label) + '</label>' +
+                '<input type="text" class="prompts-field-input" id="field-' + p.id + '-' + f.id + '" data-prompt-id="' + p.id + '" data-field-id="' + f.id + '" placeholder="' + escapeAttr(f.placeholder || '') + '">' +
+              '</div>';
+            }
+          }).join('');
+
+          const launcherBtns = AI_MODELS.map(m =>
+            '<a class="prompts-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-launcher="' + escapeAttr(m.name) + '" data-prompt-id="' + p.id + '">' + escapeHtml(m.name) + '</a>'
+          ).join('');
+
+          const vc = voteCounts[p.id] || { up: 0, down: 0 };
+
+          return '<article class="prompts-card" id="prompt-' + p.id + '" data-prompt-id="' + p.id + '" data-area="' + p.knowledgeArea + '" data-difficulty="' + p.difficulty + '">' +
+            '<div class="prompts-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-' + p.id + '">' +
+              '<div class="prompts-card-title-row">' +
+                '<h2 class="prompts-card-title">' + escapeHtml(p.title) + '</h2>' +
+                '<span class="prompts-card-expand-icon" aria-hidden="true">&#9660;</span>' +
+              '</div>' +
+              '<div class="prompts-card-meta">' +
+                '<span class="prompts-area-badge">' + area.icon + ' ' + escapeHtml(area.name) + '</span>' +
+                '<span class="prompts-difficulty-badge is-' + p.difficulty + '">' + escapeHtml(p.difficulty) + '</span>' +
+              '</div>' +
+              '<div class="prompts-card-techniques">' + techBadges + '</div>' +
+              '<p class="prompts-card-desc">' + escapeHtml(p.description) + '</p>' +
+            '</div>' +
+            '<div class="prompts-card-body" id="body-' + p.id + '">' +
+              '<div class="prompts-card-body-inner">' +
+                '<div class="prompts-card-fields">' + fieldsHtml + '</div>' +
+                '<div class="prompts-card-preview">' +
+                  '<div class="prompts-preview-label">Live Prompt Preview</div>' +
+                  '<div class="prompts-preview-text" id="preview-' + p.id + '">' + escapeHtml(p.template) + '</div>' +
+                '</div>' +
+                '<div class="prompts-card-actions">' +
+                  '<button class="prompts-copy-btn" data-copy-prompt="' + p.id + '" aria-label="Copy prompt to clipboard">' +
+                    '<span>📋</span> Copy Prompt' +
+                  '</button>' +
+                  '<div class="prompts-launcher-row">' +
+                    '<span class="prompts-launcher-label">Open in AI tool (copies prompt first):</span>' +
+                    launcherBtns +
+                  '</div>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="prompts-card-footer" data-vote-id="prompt-' + p.id + '">' +
+              '<button class="prompts-vote-btn prompts-vote-btn--up" aria-label="Useful" aria-pressed="false">' +
+                '<span class="prompts-vote-icon">👍</span>' +
+                '<span class="prompts-vote-count prompts-vote-count--up">' + vc.up + '</span>' +
+              '</button>' +
+              '<button class="prompts-vote-btn prompts-vote-btn--down" aria-label="Not useful" aria-pressed="false">' +
+                '<span class="prompts-vote-icon">👎</span>' +
+                '<span class="prompts-vote-count prompts-vote-count--down">' + vc.down + '</span>' +
+              '</button>' +
+              '<button class="prompts-card-share-link" data-share-prompt="' + p.id + '" aria-label="Copy link to this prompt" title="Copy shareable link">#</button>' +
+            '</div>' +
+          '</article>';
+        }).join('');
+      }
+
+      // ── Template engine ──
+      function assemblePrompt(promptId) {
+        const p = promptsData.prompts.find(x => x.id === promptId);
+        if (!p) return '';
+        let text = p.template;
+        (p.fields || []).forEach(f => {
+          const el = document.getElementById('field-' + promptId + '-' + f.id);
+          const val = el ? el.value.trim() : '';
+          // Replace all instances of {fieldId} with user value or placeholder marker
+          const placeholder = val || '[' + f.label + ']';
+          text = text.split('{' + f.id + '}').join(placeholder);
+        });
+        return text;
+      }
+
+      function updatePreview(promptId) {
+        const previewEl = document.getElementById('preview-' + promptId);
+        if (!previewEl) return;
+        const assembled = assemblePrompt(promptId);
+        previewEl.textContent = assembled;
+      }
+
+      // ── Expand / Collapse ──
+      function toggleCard(promptId) {
+        const card = document.getElementById('prompt-' + promptId);
+        if (!card) return;
+        const header = card.querySelector('.prompts-card-header');
+        const isExpanded = card.classList.toggle('is-expanded');
+        if (header) header.setAttribute('aria-expanded', String(isExpanded));
+        if (isExpanded) {
+          updatePreview(promptId);
+          // Update URL hash for shareable links
+          history.replaceState(null, '', '#' + promptId);
+        }
+      }
+
+      // ── Hash navigation ──
+      function handleHash() {
+        const hash = window.location.hash.replace('#', '');
+        if (!hash) return;
+        const card = document.getElementById('prompt-' + hash);
+        if (card && !card.classList.contains('is-expanded')) {
+          toggleCard(hash);
+          setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+        }
+      }
+
+      // ── Copy to clipboard ──
+      async function copyPrompt(promptId) {
+        const text = assemblePrompt(promptId);
+        try {
+          await navigator.clipboard.writeText(text);
+          showToast('Prompt copied to clipboard!');
+          const btn = document.querySelector('[data-copy-prompt="' + promptId + '"]');
+          if (btn) {
+            btn.classList.add('is-copied');
+            btn.innerHTML = '<span>✅</span> Copied!';
+            setTimeout(() => {
+              btn.classList.remove('is-copied');
+              btn.innerHTML = '<span>📋</span> Copy Prompt';
+            }, 2000);
+          }
+        } catch (err) {
+          // Fallback for older browsers
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast('Prompt copied to clipboard!');
+        }
+      }
+
+      // ── Model launcher ──
+      async function launchModel(promptId, modelName) {
+        const text = assemblePrompt(promptId);
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch (err) {
+          // Fallback
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }
+        showToast('Prompt copied! Opening ' + modelName + '...');
+      }
+
+      // ── Share link ──
+      async function sharePromptLink(promptId) {
+        const url = window.location.origin + '/prompts#' + promptId;
+        try {
+          await navigator.clipboard.writeText(url);
+          showToast('Link copied: ' + url);
+        } catch (err) {
+          showToast('Link: ' + url);
+        }
+      }
+
+      // ── Toast ──
+      function showToast(message) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add('is-visible');
+        setTimeout(() => toast.classList.remove('is-visible'), 3000);
+      }
+
+      // ── Utility ──
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      function escapeAttr(str) {
+        return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+
+      // ── Event delegation — §3.3 ──
+      function attachEvents() {
+        // Card expand/collapse
+        if (grid) {
+          grid.addEventListener('click', (e) => {
+            // Header click → toggle
+            const header = e.target.closest('.prompts-card-header');
+            if (header) {
+              const card = header.closest('.prompts-card');
+              if (card) toggleCard(card.dataset.promptId);
+              return;
+            }
+
+            // Copy button
+            const copyBtn = e.target.closest('[data-copy-prompt]');
+            if (copyBtn) {
+              copyPrompt(copyBtn.dataset.copyPrompt);
+              return;
+            }
+
+            // Model launcher
+            const launcherBtn = e.target.closest('[data-launcher]');
+            if (launcherBtn) {
+              launchModel(launcherBtn.dataset.promptId, launcherBtn.dataset.launcher);
+              // Don't prevent default — let the link open
+              return;
+            }
+
+            // Share link
+            const shareBtn = e.target.closest('[data-share-prompt]');
+            if (shareBtn) {
+              e.preventDefault();
+              sharePromptLink(shareBtn.dataset.sharePrompt);
+              return;
+            }
+          });
+
+          // Keyboard: Enter/Space to expand card header
+          grid.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              const header = e.target.closest('.prompts-card-header');
+              if (header) {
+                e.preventDefault();
+                const card = header.closest('.prompts-card');
+                if (card) toggleCard(card.dataset.promptId);
+              }
+            }
+          });
+
+          // Live preview updates on field input
+          grid.addEventListener('input', (e) => {
+            const field = e.target.closest('[data-prompt-id]');
+            if (field && (field.classList.contains('prompts-field-input') || field.classList.contains('prompts-field-textarea') || field.classList.contains('prompts-field-select'))) {
+              updatePreview(field.dataset.promptId);
+            }
+          });
+
+          // Also update on select change
+          grid.addEventListener('change', (e) => {
+            const field = e.target.closest('[data-prompt-id]');
+            if (field && field.classList.contains('prompts-field-select')) {
+              updatePreview(field.dataset.promptId);
+            }
+          });
+        }
+
+        // Filters
+        if (filterArea) filterArea.addEventListener('change', applyFilters);
+        if (filterDifficulty) filterDifficulty.addEventListener('change', applyFilters);
+        if (filterSearch) filterSearch.addEventListener('input', applyFilters);
+        if (filterSort) filterSort.addEventListener('change', applyFilters);
+
+        // Hash change
+        window.addEventListener('hashchange', handleHash);
+      }
+
+      // ── Public API ──
+      return {
+        init() {
+          attachEvents();
+          loadData();
+        },
+        getVoteCounts() { return voteCounts; },
+        setVoteCounts(id, up, down) { voteCounts[id] = { up, down }; }
+      };
+    })();
+
+    /* ============================================
+       VOTES MODULE — Reuses B-04 Cloudflare Worker pattern
+       Engine Design Contract §2.2 (error handling), §4.2 (graceful degradation)
+       ============================================ */
+    const PromptsVotesModule = (() => {
+      'use strict';
+
+      const API_BASE = 'https://smartpmo-votes.ggpera.workers.dev';
+      const grid = document.getElementById('promptsGrid');
+      const loadedIds = new Set();
+      let apiHealthy = null;
+
+      function getVoteBars() {
+        if (!grid) return [];
+        return Array.from(grid.querySelectorAll('.prompts-card-footer[data-vote-id]'));
+      }
+
+      async function loadAllVotes() {
+        const bars = getVoteBars().filter(b => !loadedIds.has(b.dataset.voteId));
+        if (!bars.length) return;
+
+        // Health check (cached)
+        if (apiHealthy === null) {
+          try {
+            const res = await fetch(API_BASE + '/health', { signal: AbortSignal.timeout(2000) });
+            apiHealthy = res.ok;
+          } catch (err) {
+            apiHealthy = false;
+            return; // Votes silently disabled — §4.2 graceful degradation
+          }
+        }
+
+        if (!apiHealthy) return;
+
+        for (const bar of bars) {
+          const voteId = bar.dataset.voteId;
+          loadedIds.add(voteId);
+          try {
+            const res = await fetch(API_BASE + '/votes/' + encodeURIComponent(voteId), { signal: AbortSignal.timeout(4000) });
+            if (!res.ok) continue;
+            const data = await res.json();
+            applyVoteState(bar, data.userVote, data.upvotes || 0, data.downvotes || 0);
+          } catch (err) {
+            // Silent failure per §4.2
+          }
+        }
+      }
+
+      function applyVoteState(bar, userVote, upCount, downCount) {
+        const upBtn = bar.querySelector('.prompts-vote-btn--up');
+        const downBtn = bar.querySelector('.prompts-vote-btn--down');
+        if (upBtn) {
+          upBtn.setAttribute('aria-pressed', userVote === 'up' ? 'true' : 'false');
+          const countEl = upBtn.querySelector('.prompts-vote-count--up');
+          if (countEl) countEl.textContent = upCount;
+        }
+        if (downBtn) {
+          downBtn.setAttribute('aria-pressed', userVote === 'down' ? 'true' : 'false');
+          const countEl = downBtn.querySelector('.prompts-vote-count--down');
+          if (countEl) countEl.textContent = downCount;
+        }
+        // Update PromptsModule vote counts for sorting
+        const promptId = bar.dataset.voteId.replace('prompt-', '');
+        PromptsModule.setVoteCounts(promptId, upCount, downCount);
+      }
+
+      async function handleVoteClick(bar, btn) {
+        if (!apiHealthy) return;
+
+        const voteId = bar.dataset.voteId;
+        const vote = btn.classList.contains('prompts-vote-btn--up') ? 'up' : 'down';
+
+        // Store previous state for rollback
+        const upBtn = bar.querySelector('.prompts-vote-btn--up');
+        const downBtn = bar.querySelector('.prompts-vote-btn--down');
+        const prevUpCount = upBtn ? upBtn.querySelector('.prompts-vote-count--up').textContent : '0';
+        const prevDownCount = downBtn ? downBtn.querySelector('.prompts-vote-count--down').textContent : '0';
+        const prevUpPressed = upBtn ? upBtn.getAttribute('aria-pressed') : 'false';
+        const prevDownPressed = downBtn ? downBtn.getAttribute('aria-pressed') : 'false';
+
+        // Optimistic update
+        if (vote === 'up') {
+          if (upBtn) {
+            upBtn.setAttribute('aria-pressed', 'true');
+            const c = upBtn.querySelector('.prompts-vote-count--up');
+            if (c) c.textContent = parseInt(prevUpCount, 10) + 1;
+          }
+          if (downBtn) downBtn.setAttribute('aria-pressed', 'false');
+        } else {
+          if (downBtn) {
+            downBtn.setAttribute('aria-pressed', 'true');
+            const c = downBtn.querySelector('.prompts-vote-count--down');
+            if (c) c.textContent = parseInt(prevDownCount, 10) + 1;
+          }
+          if (upBtn) upBtn.setAttribute('aria-pressed', 'false');
+        }
+
+        try {
+          const articleIdNum = voteId.startsWith('prompt-') ? voteId : 'prompt-' + voteId;
+          const res = await fetch(API_BASE + '/vote', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ article_id: articleIdNum, vote: vote }),
+            signal: AbortSignal.timeout(6000)
+          });
+          const data = await res.json();
+          if (res.status === 200 || res.status === 409) {
+            applyVoteState(bar, data.userVote, data.upvotes || 0, data.downvotes || 0);
+          } else {
+            // Rollback
+            rollback();
+          }
+        } catch (err) {
+          rollback();
+        }
+
+        function rollback() {
+          if (upBtn) {
+            upBtn.setAttribute('aria-pressed', prevUpPressed);
+            const c = upBtn.querySelector('.prompts-vote-count--up');
+            if (c) c.textContent = prevUpCount;
+          }
+          if (downBtn) {
+            downBtn.setAttribute('aria-pressed', prevDownPressed);
+            const c = downBtn.querySelector('.prompts-vote-count--down');
+            if (c) c.textContent = prevDownCount;
+          }
+        }
+      }
+
+      function attachDelegation() {
+        if (!grid) return;
+        grid.addEventListener('click', (e) => {
+          const btn = e.target.closest('.prompts-vote-btn');
+          if (!btn) return;
+          const bar = btn.closest('.prompts-card-footer');
+          if (!bar) return;
+          handleVoteClick(bar, btn);
+        });
+      }
+
+      return {
+        init() {
+          attachDelegation();
+          // Watch for cards to be rendered, then load votes
+          if (grid) {
+            const observer = new MutationObserver((mutations, obs) => {
+              if (grid.querySelectorAll('.prompts-card-footer[data-vote-id]').length > 0) {
+                obs.disconnect();
+                loadAllVotes();
+              }
+            });
+            observer.observe(grid, { childList: true, subtree: true });
+          }
+        }
+      };
+    })();
+
+    /* ============================================
+       INITIALIZATION
+       ============================================ */
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        PromptsModule.init();
+        PromptsVotesModule.init();
+      });
+    } else {
+      PromptsModule.init();
+      PromptsVotesModule.init();
+    }
+  </script>
+</body>
+</html>

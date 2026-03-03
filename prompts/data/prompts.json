@@ -1,0 +1,369 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-03-02",
+  "knowledgeAreas": [
+    { "id": "integration", "name": "Integration Management", "icon": "🔗" },
+    { "id": "scope", "name": "Scope Management", "icon": "🎯" },
+    { "id": "schedule", "name": "Schedule Management", "icon": "📅" },
+    { "id": "cost", "name": "Cost Management", "icon": "💰" },
+    { "id": "quality", "name": "Quality Management", "icon": "✅" },
+    { "id": "resource", "name": "Resource Management", "icon": "👥" },
+    { "id": "communications", "name": "Communications Management", "icon": "📢" },
+    { "id": "risk", "name": "Risk Management", "icon": "⚠️" },
+    { "id": "procurement", "name": "Procurement Management", "icon": "📋" },
+    { "id": "stakeholder", "name": "Stakeholder Management", "icon": "🤝" },
+    { "id": "agile", "name": "Agile & Hybrid", "icon": "🔄" }
+  ],
+  "techniques": {
+    "grounding": { "name": "Grounding Constraints", "badge": "🛡️", "description": "Limits AI to only use the information you provide, preventing fabrication" },
+    "role-boundary": { "name": "Role + Domain Boundary", "badge": "👤", "description": "Sets a specific expert persona and keeps responses within PM domain" },
+    "chain-of-thought": { "name": "Chain-of-Thought", "badge": "🔗", "description": "Forces step-by-step reasoning for more accurate, logical outputs" },
+    "structured-output": { "name": "Structured Output", "badge": "📏", "description": "Specifies exact output format (tables, headers) to reduce drift" },
+    "uncertainty": { "name": "Uncertainty Acknowledgment", "badge": "❓", "description": "Instructs AI to flag gaps rather than guess or fabricate" },
+    "self-verification": { "name": "Self-Verification", "badge": "✅", "description": "AI reviews its own output and flags unsupported claims" },
+    "negative-constraints": { "name": "Negative Constraints", "badge": "🚫", "description": "Explicitly tells AI what NOT to do — no invented stats, no speculation" },
+    "confidence-scoring": { "name": "Confidence Scoring", "badge": "📊", "description": "AI rates its confidence level for each recommendation" }
+  },
+  "prompts": [
+    {
+      "id": "project-charter-generator",
+      "title": "Project Charter Generator",
+      "knowledgeArea": "integration",
+      "difficulty": "beginner",
+      "techniques": ["grounding", "role-boundary", "structured-output", "uncertainty"],
+      "description": "Generate a structured project charter from basic project information",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. ERP System Migration" },
+        { "id": "projectSponsor", "label": "Project Sponsor", "type": "text", "placeholder": "e.g. VP of Operations" },
+        { "id": "businessCase", "label": "Business Case / Problem Statement", "type": "textarea", "placeholder": "Why does this project exist? What problem does it solve?" },
+        { "id": "objectives", "label": "Key Objectives", "type": "textarea", "placeholder": "List 2-5 measurable objectives" },
+        { "id": "constraints", "label": "Known Constraints", "type": "textarea", "placeholder": "Budget, timeline, regulatory, resource constraints" },
+        { "id": "methodology", "label": "Methodology", "type": "select", "options": ["Waterfall", "Agile", "Hybrid", "PRINCE2", "SAFe"] }
+      ],
+      "template": "You are a senior PMO advisor with extensive experience drafting project charters across multiple industries.\n\nUsing ONLY the information provided below, draft a project charter. Do NOT invent stakeholders, budget figures, dates, or details I have not shared.\n\n**PROJECT NAME:** {projectName}\n**SPONSOR:** {projectSponsor}\n**METHODOLOGY:** {methodology}\n\n**BUSINESS CASE:**\n{businessCase}\n\n**KEY OBJECTIVES:**\n{objectives}\n\n**KNOWN CONSTRAINTS:**\n{constraints}\n\nStructure the charter with these sections:\n1. **Project Purpose & Justification** (2-3 sentences based on the business case)\n2. **Measurable Objectives** (restate as SMART goals where possible)\n3. **High-Level Requirements** (inferred from objectives — flag any assumptions)\n4. **High-Level Risks** (based on constraints and project type)\n5. **Summary Milestone Schedule** (generic phases appropriate to {methodology})\n6. **Stakeholder List** (only include sponsor; note \"Additional stakeholders TBD\")\n7. **Success Criteria** (measurable, tied to objectives)\n\nIMPORTANT:\n- If information is insufficient for any section, write \"[TO BE DETERMINED — requires input on X]\" rather than guessing\n- Do NOT fabricate budget figures, dates, or resource counts unless I provided them\n- Stay within project management domain — no legal or financial advice"
+    },
+    {
+      "id": "lessons-learned-synthesiser",
+      "title": "Lessons Learned Synthesiser",
+      "knowledgeArea": "integration",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "chain-of-thought", "structured-output", "self-verification"],
+      "description": "Synthesise raw lessons learned inputs into categorised, actionable insights",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. CRM Platform Rollout" },
+        { "id": "projectPhase", "label": "Project Phase", "type": "select", "options": ["Initiation", "Planning", "Execution", "Monitoring & Control", "Closing", "Full Lifecycle"] },
+        { "id": "rawLessons", "label": "Raw Lessons Learned (paste team feedback)", "type": "textarea", "placeholder": "Paste unstructured feedback, survey results, retro notes, or team comments here..." },
+        { "id": "audienceLevel", "label": "Target Audience", "type": "select", "options": ["Executive Summary", "PMO Leadership", "Project Team", "Organisational Knowledge Base"] }
+      ],
+      "template": "You are a senior PMO knowledge management specialist. Your task is to synthesise raw, unstructured lessons learned into a professional, categorised report.\n\nUse ONLY the feedback provided below. Do not add lessons that are not supported by the input.\n\n**PROJECT:** {projectName}\n**PHASE:** {projectPhase}\n**AUDIENCE:** {audienceLevel}\n\n**RAW LESSONS LEARNED INPUT:**\n{rawLessons}\n\nThink through this step by step:\n1. First, read all inputs and identify recurring themes\n2. Group related lessons into categories (Process, People, Technology, Communication, Risk, Other)\n3. For each lesson, determine: What went well? What went poorly? What should change?\n4. Formulate actionable recommendations tied to each lesson\n\nPresent your output in this format:\n\n**EXECUTIVE SUMMARY** (3-5 sentences, tailored to {audienceLevel})\n\n**CATEGORISED LESSONS:**\n| # | Category | Lesson | Impact (High/Med/Low) | Recommendation | Applicable Phase |\n\n**TOP 3 PRIORITY ACTIONS** (most impactful changes for future projects)\n\n**REVIEW NOTE:** After completing your analysis, review each recommendation. Flag any that are not directly supported by the raw input provided. Mark these as \"[INFERRED — verify with team]\"."
+    },
+    {
+      "id": "wbs-generator",
+      "title": "WBS Generator from Requirements",
+      "knowledgeArea": "scope",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "role-boundary", "structured-output", "chain-of-thought", "uncertainty"],
+      "description": "Generate a Work Breakdown Structure from project requirements",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Mobile App Development" },
+        { "id": "requirements", "label": "Project Requirements", "type": "textarea", "placeholder": "List your project requirements, deliverables, or scope statement..." },
+        { "id": "wbsLevels", "label": "WBS Depth", "type": "select", "options": ["2 levels (phases + deliverables)", "3 levels (phases + deliverables + work packages)", "4 levels (full decomposition)"] },
+        { "id": "methodology", "label": "Methodology", "type": "select", "options": ["Waterfall", "Agile", "Hybrid", "PRINCE2"] }
+      ],
+      "template": "You are a senior project planner with deep expertise in scope decomposition and WBS creation.\n\nUsing ONLY the requirements provided below, create a Work Breakdown Structure. Do NOT add scope items, features, or deliverables that are not directly implied by the requirements.\n\n**PROJECT:** {projectName}\n**METHODOLOGY:** {methodology}\n**REQUESTED DEPTH:** {wbsLevels}\n\n**REQUIREMENTS:**\n{requirements}\n\nThink through this step by step:\n1. Identify the major deliverables from the requirements\n2. Group deliverables into logical phases appropriate for {methodology}\n3. Decompose each deliverable to the requested depth level\n4. Assign a WBS numbering scheme (1.0, 1.1, 1.1.1, etc.)\n\nPresent the WBS as an indented, numbered hierarchy:\n```\n1.0 [Phase Name]\n  1.1 [Deliverable]\n    1.1.1 [Work Package]\n    1.1.2 [Work Package]\n  1.2 [Deliverable]\n2.0 [Phase Name]\n  ...\n```\n\nAfter the WBS, include:\n- **Assumptions Made:** List any assumptions you made during decomposition\n- **Scope Gaps:** Requirements that are too vague to decompose — flag what clarification is needed\n- **Excluded Items:** Anything explicitly NOT included based on the requirements\n\nDo NOT invent requirements. If the input is too vague for a section, write \"[NEEDS CLARIFICATION: specify X]\"."
+    },
+    {
+      "id": "scope-creep-detector",
+      "title": "Scope Creep Detector",
+      "knowledgeArea": "scope",
+      "difficulty": "advanced",
+      "techniques": ["grounding", "chain-of-thought", "self-verification", "negative-constraints", "confidence-scoring"],
+      "description": "Analyse change requests and meeting notes to identify scope creep patterns",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Data Warehouse Modernisation" },
+        { "id": "originalScope", "label": "Original Scope Statement / Baseline", "type": "textarea", "placeholder": "Paste the approved scope statement or key deliverables list..." },
+        { "id": "changeRequests", "label": "Change Requests / Meeting Notes / Emails", "type": "textarea", "placeholder": "Paste recent change requests, meeting minutes, stakeholder emails, or any requests for additional work..." }
+      ],
+      "template": "You are a senior PMO scope management expert specialising in scope creep identification and change control.\n\nAnalyse the following change requests and communications against the original approved scope. Identify any items that constitute scope creep (work not in the baseline that has been added without formal change control).\n\n**PROJECT:** {projectName}\n\n**ORIGINAL APPROVED SCOPE:**\n{originalScope}\n\n**RECENT CHANGE REQUESTS / COMMUNICATIONS:**\n{changeRequests}\n\nThink through this step by step:\n1. Parse each request or communication for implied or explicit additions to scope\n2. Compare each against the original scope baseline\n3. Classify each as: Within Scope | Scope Change (needs formal CR) | Scope Creep (undocumented addition) | Ambiguous\n4. Assess the cumulative impact\n\nPresent your analysis:\n\n**SCOPE CREEP ANALYSIS:**\n| # | Item | Source | Classification | Impact (H/M/L) | Recommendation |\n\n**PATTERN ANALYSIS:**\n- Who is requesting the most changes?\n- Are changes clustered in a specific area?\n- What is the cumulative impact on timeline/budget?\n\n**RECOMMENDED ACTIONS:**\n1. [Specific action items]\n\n**CONFIDENCE ASSESSMENT:**\nFor each item classified, rate your confidence (High/Medium/Low) and explain why. Items marked LOW require human review.\n\nDo NOT assume any change is approved — flag everything against the baseline.\nDo NOT invent statistics about cost or schedule impact unless I provided specific figures.\nDo NOT speculate beyond what the provided documents state."
+    },
+    {
+      "id": "critical-path-narrative",
+      "title": "Critical Path Narrative Builder",
+      "knowledgeArea": "schedule",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "role-boundary", "chain-of-thought", "structured-output"],
+      "description": "Transform schedule data into a clear critical path narrative for stakeholders",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Office Relocation Programme" },
+        { "id": "milestones", "label": "Key Milestones & Dates", "type": "textarea", "placeholder": "List milestones with target dates, e.g.:\n- Design Complete: 15 Mar\n- Build Start: 1 Apr\n- UAT: 15 May" },
+        { "id": "dependencies", "label": "Key Dependencies", "type": "textarea", "placeholder": "List dependencies between tasks, e.g.:\n- UAT cannot start until build complete\n- Go-live requires sign-off from legal" },
+        { "id": "audience", "label": "Target Audience", "type": "select", "options": ["Executive / Steering Committee", "Project Team", "Client / External Stakeholders"] }
+      ],
+      "template": "You are a senior project scheduler with expertise in critical path analysis and stakeholder communication.\n\nUsing ONLY the milestones and dependencies provided, construct a critical path narrative. Do NOT invent tasks, dates, or dependencies I have not shared.\n\n**PROJECT:** {projectName}\n**AUDIENCE:** {audience}\n\n**MILESTONES:**\n{milestones}\n\n**DEPENDENCIES:**\n{dependencies}\n\nThink through this step by step:\n1. Map out the sequence of milestones based on the dependencies\n2. Identify which path has the longest duration (the critical path)\n3. Flag tasks with zero float (no room for delay)\n4. Identify key decision points and handoffs\n\nPresent your output:\n\n**CRITICAL PATH NARRATIVE** (written for {audience}):\nA clear, plain-language description of the critical path — what must happen, in what order, and why each step matters.\n\n**CRITICAL PATH SEQUENCE:**\n[Task A] → [Task B] → [Task C] → ... → [Project Complete]\n\n**KEY RISKS TO SCHEDULE:**\n| Risk | Affected Milestone | Impact if Delayed | Mitigation |\n\n**FLOAT ANALYSIS:**\nTasks with float (can slip without affecting end date): [list]\nTasks with zero float (critical): [list]\n\nIf date information is insufficient to calculate actual float, state this clearly rather than guessing."
+    },
+    {
+      "id": "milestone-dependency-mapper",
+      "title": "Milestone Dependency Mapper",
+      "knowledgeArea": "schedule",
+      "difficulty": "beginner",
+      "techniques": ["grounding", "structured-output", "uncertainty", "role-boundary"],
+      "description": "Map dependencies between milestones from unstructured project information",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. System Integration Project" },
+        { "id": "milestones", "label": "Milestones / Tasks", "type": "textarea", "placeholder": "List all milestones or major tasks (one per line)" },
+        { "id": "context", "label": "Project Context", "type": "textarea", "placeholder": "Any additional context about task relationships, team structure, or constraints" }
+      ],
+      "template": "You are a project scheduling specialist. Your task is to identify and map dependencies between the milestones provided.\n\nUse ONLY the milestones and context I provide. Do NOT add milestones that are not listed.\n\n**PROJECT:** {projectName}\n\n**MILESTONES:**\n{milestones}\n\n**ADDITIONAL CONTEXT:**\n{context}\n\nPresent your analysis:\n\n**DEPENDENCY MAP:**\n| Milestone | Depends On (Predecessors) | Type (FS/SS/FF/SF) | Rationale |\n\n**DEPENDENCY DIAGRAM** (text-based):\nUse arrows to show the flow: Task A → Task B → Task C\nShow parallel paths on separate lines\n\n**POTENTIAL ISSUES:**\n- Circular dependencies (if any)\n- Missing predecessors\n- Bottleneck tasks (many dependents)\n\n**ASSUMPTIONS:**\nList any dependency assumptions you made. If a relationship is unclear from the inputs, mark it as \"[ASSUMED — verify with team]\" rather than stating it as fact."
+    },
+    {
+      "id": "budget-variance-explainer",
+      "title": "Budget Variance Explainer",
+      "knowledgeArea": "cost",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "structured-output", "chain-of-thought", "negative-constraints", "uncertainty"],
+      "description": "Analyse budget variances and generate a clear explanation for stakeholders",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Infrastructure Upgrade" },
+        { "id": "budgetData", "label": "Budget vs Actual Data", "type": "textarea", "placeholder": "Paste budget line items with planned vs actual, e.g.:\n- Hardware: Budget $50K, Actual $62K\n- Consulting: Budget $100K, Actual $85K" },
+        { "id": "period", "label": "Reporting Period", "type": "text", "placeholder": "e.g. Q1 2026, January 2026, Sprint 5" },
+        { "id": "audience", "label": "Target Audience", "type": "select", "options": ["Executive / Finance", "Steering Committee", "Project Team", "Client"] }
+      ],
+      "template": "You are a senior PMO cost management specialist. Analyse the budget variance data provided and generate a clear, professional variance report.\n\nUse ONLY the budget data I provide. Do NOT invent figures, percentages, or financial projections.\n\n**PROJECT:** {projectName}\n**PERIOD:** {period}\n**AUDIENCE:** {audience}\n\n**BUDGET DATA:**\n{budgetData}\n\nThink through this step by step:\n1. Calculate the variance for each line item (actual - budget)\n2. Calculate percentage variance for each\n3. Identify the top 3 variances by absolute value\n4. Determine if variances are favourable or unfavourable\n5. Suggest likely root causes based on the project context\n\nPresent your output:\n\n**VARIANCE SUMMARY** (tailored for {audience}):\n| Line Item | Budget | Actual | Variance ($) | Variance (%) | Status |\n\n**TOP VARIANCES EXPLAINED:**\nFor each major variance, provide:\n- What happened (based on available data)\n- Likely root cause (flag as \"[LIKELY — confirm with team]\")\n- Impact on overall budget\n- Recommended action\n\n**FORECAST IMPACT:**\nBased on current trends, flag any concerns for future periods.\n\nDo NOT fabricate industry benchmarks or comparison data.\nDo NOT provide financial advice.\nIf data is insufficient to explain a variance, state \"[INSUFFICIENT DATA — investigate X]\"."
+    },
+    {
+      "id": "earned-value-interpreter",
+      "title": "Earned Value Interpreter",
+      "knowledgeArea": "cost",
+      "difficulty": "advanced",
+      "techniques": ["grounding", "role-boundary", "chain-of-thought", "structured-output", "confidence-scoring"],
+      "description": "Interpret EVM metrics and translate them into plain-language project health assessment",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Digital Transformation Programme" },
+        { "id": "pv", "label": "Planned Value (PV / BCWS)", "type": "text", "placeholder": "e.g. $500,000" },
+        { "id": "ev", "label": "Earned Value (EV / BCWP)", "type": "text", "placeholder": "e.g. $420,000" },
+        { "id": "ac", "label": "Actual Cost (AC / ACWP)", "type": "text", "placeholder": "e.g. $480,000" },
+        { "id": "bac", "label": "Budget at Completion (BAC)", "type": "text", "placeholder": "e.g. $1,200,000" },
+        { "id": "percentComplete", "label": "% Complete (as reported)", "type": "text", "placeholder": "e.g. 40%" }
+      ],
+      "template": "You are a senior PMO earned value management (EVM) expert. Interpret the following EVM data and provide a plain-language assessment of project health.\n\nUse ONLY the figures provided. Calculate derived metrics mathematically — do NOT estimate or round inappropriately.\n\n**PROJECT:** {projectName}\n**PLANNED VALUE (PV):** {pv}\n**EARNED VALUE (EV):** {ev}\n**ACTUAL COST (AC):** {ac}\n**BUDGET AT COMPLETION (BAC):** {bac}\n**REPORTED % COMPLETE:** {percentComplete}\n\nThink through this step by step:\n1. Calculate: CPI = EV / AC\n2. Calculate: SPI = EV / PV\n3. Calculate: CV = EV - AC (Cost Variance)\n4. Calculate: SV = EV - PV (Schedule Variance)\n5. Calculate: EAC = BAC / CPI (Estimate at Completion)\n6. Calculate: ETC = EAC - AC (Estimate to Complete)\n7. Calculate: TCPI = (BAC - EV) / (BAC - AC)\n8. Interpret each metric\n\nPresent your output:\n\n**EVM DASHBOARD:**\n| Metric | Value | Interpretation |\n| CPI | [calculated] | [over/under budget] |\n| SPI | [calculated] | [ahead/behind schedule] |\n| CV | [calculated] | [favourable/unfavourable] |\n| SV | [calculated] | [favourable/unfavourable] |\n| EAC | [calculated] | [projected total cost] |\n| ETC | [calculated] | [remaining budget needed] |\n| TCPI | [calculated] | [required efficiency to finish on budget] |\n\n**PLAIN-LANGUAGE HEALTH ASSESSMENT:**\nA 3-5 sentence summary suitable for executives, explaining what the numbers mean for the project.\n\n**RED FLAGS:**\nAny metrics that indicate serious concern (CPI < 0.9, SPI < 0.85, etc.)\n\n**RECOMMENDATIONS:**\nSpecific actions based on the EVM data.\n\n**CONFIDENCE:** Rate your confidence in the forecast (High/Medium/Low) based on data completeness. If any input seems inconsistent (e.g., % complete doesn't align with EV/BAC ratio), flag it."
+    },
+    {
+      "id": "quality-audit-checklist",
+      "title": "Quality Audit Checklist Builder",
+      "knowledgeArea": "quality",
+      "difficulty": "beginner",
+      "techniques": ["role-boundary", "structured-output", "grounding", "uncertainty"],
+      "description": "Generate a tailored quality audit checklist for your project type",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Software Release v3.0" },
+        { "id": "projectType", "label": "Project Type", "type": "select", "options": ["Software Development", "Infrastructure", "Business Process Change", "Construction", "Product Launch", "Organisational Change", "Other"] },
+        { "id": "qualityStandards", "label": "Applicable Standards (optional)", "type": "textarea", "placeholder": "e.g. ISO 9001, CMMI Level 3, internal QA policy..." },
+        { "id": "auditScope", "label": "Audit Scope", "type": "select", "options": ["Full Project Audit", "Phase Gate Review", "Deliverable Quality Check", "Process Compliance Audit"] }
+      ],
+      "template": "You are a senior PMO quality management specialist. Generate a quality audit checklist appropriate for the project type and audit scope specified.\n\nStay within project management quality assurance domain. Do NOT provide regulatory, legal, or compliance advice.\n\n**PROJECT:** {projectName}\n**PROJECT TYPE:** {projectType}\n**AUDIT SCOPE:** {auditScope}\n**APPLICABLE STANDARDS:** {qualityStandards}\n\nPresent the checklist:\n\n**QUALITY AUDIT CHECKLIST — {projectName}**\n\n| # | Category | Audit Item | Evidence Required | Status (Pass/Fail/N/A) | Notes |\n\nOrganise into categories:\n1. **Documentation Quality** (charter, plans, requirements)\n2. **Process Compliance** (methodology adherence, change control)\n3. **Deliverable Quality** (acceptance criteria, testing, reviews)\n4. **Stakeholder Management** (communications, approvals, sign-offs)\n5. **Risk & Issue Management** (risk register, issue log, escalations)\n\n**AUDIT SUMMARY TEMPLATE:**\n- Overall Rating: [Green/Amber/Red]\n- Critical Findings: [count]\n- Observations: [count]\n- Recommendations: [list]\n\nIf the quality standards field is empty, use general PMO best practices. Note which items are specific to the standard vs. general best practice."
+    },
+    {
+      "id": "process-improvement-identifier",
+      "title": "Process Improvement Identifier",
+      "knowledgeArea": "quality",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "chain-of-thought", "structured-output", "self-verification", "confidence-scoring"],
+      "description": "Identify process improvement opportunities from project or operational data",
+      "fields": [
+        { "id": "processName", "label": "Process Name", "type": "text", "placeholder": "e.g. Change Request Approval Process" },
+        { "id": "currentProcess", "label": "Current Process Description", "type": "textarea", "placeholder": "Describe the current process steps, participants, tools, and pain points..." },
+        { "id": "painPoints", "label": "Known Pain Points / Complaints", "type": "textarea", "placeholder": "What issues have been reported? Where are the bottlenecks?" },
+        { "id": "metrics", "label": "Current Metrics (if available)", "type": "textarea", "placeholder": "e.g. Average cycle time: 14 days, Rework rate: 25%, Approval bottleneck at VP level" }
+      ],
+      "template": "You are a senior PMO process improvement specialist with expertise in Lean, Six Sigma, and continuous improvement methodologies.\n\nAnalyse the following process information and identify improvement opportunities. Base your analysis ONLY on the information provided.\n\n**PROCESS:** {processName}\n\n**CURRENT PROCESS:**\n{currentProcess}\n\n**KNOWN PAIN POINTS:**\n{painPoints}\n\n**CURRENT METRICS:**\n{metrics}\n\nThink through this step by step:\n1. Map the process as described (identify inputs, steps, outputs, handoffs)\n2. Identify waste categories (Lean: waiting, overprocessing, defects, motion, etc.)\n3. Pinpoint bottlenecks and root causes\n4. Propose specific improvements with expected impact\n\nPresent your analysis:\n\n**PROCESS MAP SUMMARY:**\nStep-by-step flow as described → identify handoff points and decision gates\n\n**WASTE IDENTIFICATION:**\n| # | Waste Type | Where Found | Impact | Evidence |\n\n**IMPROVEMENT OPPORTUNITIES:**\n| # | Opportunity | Current State | Proposed State | Expected Impact | Effort (H/M/L) | Confidence |\n\n**PRIORITY MATRIX:**\nQuick Wins (high impact, low effort): [...]\nStrategic Improvements (high impact, high effort): [...]\nFill-Ins (low impact, low effort): [...]\nAvoid (low impact, high effort): [...]\n\n**SELF-CHECK:** Review each improvement recommendation. Flag any that are not directly supported by the pain points or metrics provided — mark these as \"[SUGGESTED — validate with data]\".\n\nFor each recommendation, rate your confidence (High/Medium/Low) based on how well the provided data supports it."
+    },
+    {
+      "id": "raci-matrix-generator",
+      "title": "RACI Matrix Generator",
+      "knowledgeArea": "resource",
+      "difficulty": "beginner",
+      "techniques": ["grounding", "structured-output", "role-boundary", "uncertainty"],
+      "description": "Generate a RACI responsibility matrix from project roles and deliverables",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Cloud Migration" },
+        { "id": "deliverables", "label": "Key Deliverables / Activities", "type": "textarea", "placeholder": "List the main deliverables or activities (one per line)" },
+        { "id": "roles", "label": "Project Roles", "type": "textarea", "placeholder": "List the roles involved (one per line), e.g.:\n- Project Manager\n- Business Analyst\n- Developer Lead\n- Sponsor" },
+        { "id": "methodology", "label": "Methodology", "type": "select", "options": ["Waterfall", "Agile", "Hybrid", "PRINCE2", "SAFe"] }
+      ],
+      "template": "You are a senior PMO resource management specialist. Generate a RACI matrix based on the deliverables and roles provided.\n\nUse ONLY the roles and deliverables I list. Do NOT add roles or deliverables that are not specified.\n\n**PROJECT:** {projectName}\n**METHODOLOGY:** {methodology}\n\n**DELIVERABLES/ACTIVITIES:**\n{deliverables}\n\n**ROLES:**\n{roles}\n\nPresent the RACI matrix:\n\n| Deliverable/Activity | [Role 1] | [Role 2] | [Role 3] | ... |\n|---|---|---|---|---|\n| [Activity 1] | R | A | C | I |\n| [Activity 2] | C | R | A | - |\n\n**Legend:**\n- **R** = Responsible (does the work)\n- **A** = Accountable (approves/owns — exactly ONE per row)\n- **C** = Consulted (provides input)\n- **I** = Informed (kept updated)\n\n**RACI VALIDATION CHECKS:**\n- Every row has exactly one A\n- Every row has at least one R\n- No role is overloaded (too many Rs)\n- Flag any gaps or ambiguities\n\n**ASSUMPTIONS:**\nList any assumptions about role responsibilities. If a role's involvement in an activity is unclear, mark it as \"[?]\" and note what clarification is needed."
+    },
+    {
+      "id": "resource-conflict-resolver",
+      "title": "Resource Conflict Resolver",
+      "knowledgeArea": "resource",
+      "difficulty": "advanced",
+      "techniques": ["grounding", "chain-of-thought", "structured-output", "negative-constraints", "confidence-scoring"],
+      "description": "Analyse resource allocation conflicts and propose resolution strategies",
+      "fields": [
+        { "id": "context", "label": "Organisation / Portfolio Context", "type": "textarea", "placeholder": "Describe the organisational context — how many projects, shared resource pool, reporting structure..." },
+        { "id": "conflicts", "label": "Resource Conflicts", "type": "textarea", "placeholder": "Describe the specific conflicts, e.g.:\n- John (Senior Dev) allocated 100% to Project A and 60% to Project B\n- QA team has 3 projects needing testing in the same sprint" },
+        { "id": "priorities", "label": "Project Priority Information", "type": "textarea", "placeholder": "Any priority rankings, strategic alignment info, or executive directives about project importance" },
+        { "id": "constraints", "label": "Constraints", "type": "textarea", "placeholder": "Budget for contractors, hiring freeze, skills that can't be substituted, deadline constraints..." }
+      ],
+      "template": "You are a senior PMO resource management expert specialising in portfolio-level resource optimisation.\n\nAnalyse the following resource conflicts and propose resolution strategies. Use ONLY the information provided.\n\n**CONTEXT:**\n{context}\n\n**RESOURCE CONFLICTS:**\n{conflicts}\n\n**PRIORITY INFORMATION:**\n{priorities}\n\n**CONSTRAINTS:**\n{constraints}\n\nThink through this step by step:\n1. Map each conflict: who is over-allocated, by how much, on which projects\n2. Assess priority of competing projects based on provided information\n3. Identify resolution options (reallocation, phasing, substitution, outsourcing)\n4. Evaluate each option against constraints\n5. Recommend the best resolution for each conflict\n\n**CONFLICT ANALYSIS:**\n| # | Resource | Conflict | Over-allocation % | Projects Affected |\n\n**RESOLUTION OPTIONS:**\nFor each conflict, present 2-3 options:\n| Option | Description | Impact on Project A | Impact on Project B | Feasibility | Confidence |\n\n**RECOMMENDED RESOLUTION:**\nFor each conflict, recommend the best option with rationale.\n\n**ESCALATION ITEMS:**\nDecisions that require executive/portfolio board input.\n\nDo NOT assume budget availability for contractors unless stated.\nDo NOT recommend hiring unless constraints allow it.\nRate confidence (High/Medium/Low) for each recommendation based on completeness of priority and constraint information."
+    },
+    {
+      "id": "stakeholder-update-drafter",
+      "title": "Stakeholder Communication Update",
+      "knowledgeArea": "communications",
+      "difficulty": "beginner",
+      "techniques": ["grounding", "structured-output", "role-boundary", "uncertainty"],
+      "description": "Draft a professional project status update tailored to your audience",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Website Redesign" },
+        { "id": "audience", "label": "Target Audience", "type": "select", "options": ["Executive / C-Suite", "Steering Committee", "Project Team", "Client / External"] },
+        { "id": "status", "label": "Overall Project Status", "type": "select", "options": ["Green (On Track)", "Amber (At Risk)", "Red (Off Track)"] },
+        { "id": "accomplishments", "label": "Key Accomplishments This Period", "type": "textarea", "placeholder": "What was completed or achieved since last update?" },
+        { "id": "risksIssues", "label": "Current Risks or Issues", "type": "textarea", "placeholder": "Any active risks, blockers, or issues?" },
+        { "id": "nextSteps", "label": "Planned Next Steps", "type": "textarea", "placeholder": "What's coming up in the next period?" }
+      ],
+      "template": "You are a senior project communications specialist. Draft a clear, professional project status update.\n\nUse ONLY the information I provide below. Do not add fictional accomplishments, fabricated metrics, or assumed details.\n\n**PROJECT:** {projectName}\n**AUDIENCE:** {audience}\n**OVERALL STATUS:** {status}\n\n**KEY ACCOMPLISHMENTS THIS PERIOD:**\n{accomplishments}\n\n**CURRENT RISKS OR ISSUES:**\n{risksIssues}\n\n**PLANNED NEXT STEPS:**\n{nextSteps}\n\nINSTRUCTIONS:\n1. Draft the update appropriate for the {audience} audience level:\n   - Executive / C-Suite: 3-5 sentences, focus on business impact and decisions needed\n   - Steering Committee: 1 page max, include RAG status, key metrics, escalations\n   - Project Team: Detailed, include action items and owners\n   - Client / External: Professional, positive framing, focus on deliverables and timeline\n\n2. Structure the update with these sections:\n   - **Status Summary** (1-2 sentences with overall RAG)\n   - **Accomplishments** (bullet points)\n   - **Risks & Issues** (with severity and mitigation)\n   - **Next Steps** (with dates if provided, otherwise state \"dates TBC\")\n   - **Decisions Required** (only if clearly implied by the inputs)\n\n3. If I haven't provided enough detail for a section, write \"[PENDING — add detail about X]\" rather than inventing content.\n4. Do not cite statistics, benchmarks, or industry comparisons unless I provide them.\n5. Maintain a professional, factual tone. No marketing language or hyperbole."
+    },
+    {
+      "id": "status-report-generator",
+      "title": "Status Report Generator",
+      "knowledgeArea": "communications",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "structured-output", "chain-of-thought", "negative-constraints", "self-verification"],
+      "description": "Generate a comprehensive project status report from raw project data",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Enterprise Platform Migration" },
+        { "id": "period", "label": "Reporting Period", "type": "text", "placeholder": "e.g. Week ending 28 Feb 2026" },
+        { "id": "rawData", "label": "Raw Status Data", "type": "textarea", "placeholder": "Paste any raw data: task lists, JIRA exports, email summaries, meeting notes, metrics, KPIs..." },
+        { "id": "previousStatus", "label": "Previous Period Status (optional)", "type": "textarea", "placeholder": "Paste previous report or key metrics for comparison" },
+        { "id": "format", "label": "Report Format", "type": "select", "options": ["Executive Dashboard (1 page)", "Full Status Report (detailed)", "RAG Summary Only"] }
+      ],
+      "template": "You are a senior PMO reporting specialist. Transform the raw project data into a professional status report.\n\nUse ONLY the data provided. Do NOT fabricate metrics, progress percentages, or completion data.\n\n**PROJECT:** {projectName}\n**PERIOD:** {period}\n**FORMAT:** {format}\n\n**RAW STATUS DATA:**\n{rawData}\n\n**PREVIOUS PERIOD STATUS:**\n{previousStatus}\n\nThink through this step by step:\n1. Extract key metrics from the raw data\n2. Identify what changed since last period (if previous status provided)\n3. Determine overall health (Green/Amber/Red) based on evidence\n4. Organise into the requested format\n\nGenerate the {format}:\n\n**PROJECT STATUS REPORT — {period}**\n\n**Overall Health: [RAG]** (justify with specific data points)\n\n**Key Metrics:**\n| Metric | Current | Previous | Trend |\n\n**Progress Summary:**\n- Completed this period: [...]\n- In Progress: [...]\n- Blocked: [...]\n\n**Risks & Issues:**\n| # | Description | Severity | Owner | Mitigation | Status |\n\n**Decisions Needed:**\n[Only if implied by data]\n\n**Next Period Focus:**\n[Based on current state]\n\n**SELF-CHECK:** Review the report. Flag any metric or status claim not directly supported by the raw data. Mark as \"[ESTIMATED — verify]\".\n\nDo NOT invent completion percentages.\nDo NOT add risks not mentioned in the data.\nDo NOT fabricate trend comparisons if no previous data provided."
+    },
+    {
+      "id": "risk-register-builder",
+      "title": "Risk Register Builder",
+      "knowledgeArea": "risk",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "chain-of-thought", "structured-output", "uncertainty", "confidence-scoring"],
+      "description": "Generate a structured risk register from project context",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Cloud Migration Programme" },
+        { "id": "projectDesc", "label": "Project Description", "type": "textarea", "placeholder": "Describe the project scope, objectives, and key deliverables..." },
+        { "id": "industry", "label": "Industry", "type": "select", "options": ["IT / Technology", "Banking / Finance", "Construction", "Healthcare", "Manufacturing", "Government", "Consulting", "Retail", "Other"] },
+        { "id": "methodology", "label": "Methodology", "type": "select", "options": ["Waterfall", "Agile", "Hybrid", "PRINCE2", "SAFe"] },
+        { "id": "knownRisks", "label": "Known Risks (optional)", "type": "textarea", "placeholder": "Any risks already identified by the team..." }
+      ],
+      "template": "You are a senior PMO risk management specialist with 15+ years of experience in {industry} projects.\n\nBuild a risk register for the following project. Use ONLY the information I provide — do not invent or assume details I haven't shared.\n\n**PROJECT:** {projectName}\n**DESCRIPTION:** {projectDesc}\n**METHODOLOGY:** {methodology}\n**INDUSTRY:** {industry}\n**KNOWN RISKS:** {knownRisks}\n\nThink through this step by step:\n1. First, identify risk categories relevant to this project type and industry\n2. For each category, identify 3-5 specific risks based on the project description\n3. For each risk, assess probability (1-5) and impact (1-5)\n4. Propose a response strategy (Avoid, Transfer, Mitigate, Accept)\n\nPresent as a table:\n| ID | Risk Category | Risk Description | Probability (1-5) | Impact (1-5) | Risk Score | Response Strategy | Owner (suggest role, not name) |\n\n**RISK MATRIX SUMMARY:**\n- Critical (score 15-25): [count]\n- High (score 10-14): [count]\n- Medium (score 5-9): [count]\n- Low (score 1-4): [count]\n\n**TOP 3 RISKS** requiring immediate attention.\n\nIMPORTANT:\n- Do NOT fabricate statistics or cite studies unless I provide them\n- If information is insufficient to assess a risk accurately, mark confidence as LOW and state what additional information would help\n- Stay within project management domain\n- Rate your overall confidence in this risk register (High/Medium/Low) and explain what would improve it"
+    },
+    {
+      "id": "risk-response-generator",
+      "title": "Risk Response Strategy Generator",
+      "knowledgeArea": "risk",
+      "difficulty": "advanced",
+      "techniques": ["grounding", "chain-of-thought", "self-verification", "negative-constraints", "confidence-scoring"],
+      "description": "Generate detailed response strategies for identified project risks",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. ERP Implementation" },
+        { "id": "risks", "label": "Risk Descriptions", "type": "textarea", "placeholder": "List the risks that need response strategies (one per line or paste risk register)..." },
+        { "id": "budget", "label": "Risk Budget / Contingency Available", "type": "text", "placeholder": "e.g. $50K contingency, 2-week schedule buffer, or 'Not specified'" },
+        { "id": "riskAppetite", "label": "Organisation Risk Appetite", "type": "select", "options": ["Conservative (avoid all possible risks)", "Moderate (accept calculated risks)", "Aggressive (high tolerance for uncertainty)"] }
+      ],
+      "template": "You are a senior PMO risk management expert. Develop detailed response strategies for each identified risk.\n\nUse ONLY the risks and constraints provided. Do NOT add new risks not listed.\n\n**PROJECT:** {projectName}\n**RISK BUDGET:** {budget}\n**RISK APPETITE:** {riskAppetite}\n\n**RISKS:**\n{risks}\n\nThink through this step by step:\n1. For each risk, evaluate the four standard response strategies\n2. Recommend the best strategy based on risk appetite and available budget\n3. Define specific action steps for each response\n4. Identify residual risk after response implementation\n\nFor EACH risk, provide:\n\n**RISK: [Name]**\n| Strategy Option | Description | Cost/Effort | Residual Risk | Recommended? |\n| Avoid | [specific action] | [estimate] | [what remains] | [Yes/No] |\n| Transfer | [specific action] | [estimate] | [what remains] | [Yes/No] |\n| Mitigate | [specific action] | [estimate] | [what remains] | [Yes/No] |\n| Accept | [rationale] | [monitoring cost] | [full risk] | [Yes/No] |\n\n**RECOMMENDED:** [Strategy] — [Rationale based on risk appetite]\n**ACTION ITEMS:** Numbered list of specific steps\n**TRIGGER:** What event/metric signals this risk is materialising?\n**OWNER:** Suggested role (not name)\n**CONFIDENCE:** High/Medium/Low — how well-supported is this recommendation?\n\n**SELF-CHECK:** Review each recommendation. Flag any strategy that requires budget not available or assumptions about organisational capabilities.\n\nDo NOT invent cost estimates — use relative terms (Low/Medium/High) unless I provided specific figures.\nDo NOT guarantee risk elimination — always acknowledge residual risk."
+    },
+    {
+      "id": "vendor-evaluation-builder",
+      "title": "Vendor Evaluation Criteria Builder",
+      "knowledgeArea": "procurement",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "role-boundary", "structured-output", "chain-of-thought", "uncertainty"],
+      "description": "Build weighted vendor evaluation criteria for procurement decisions",
+      "fields": [
+        { "id": "procurementItem", "label": "What Are You Procuring?", "type": "text", "placeholder": "e.g. Project Management Software, Consulting Services, Cloud Hosting" },
+        { "id": "requirements", "label": "Key Requirements", "type": "textarea", "placeholder": "List your must-haves and nice-to-haves..." },
+        { "id": "budget", "label": "Budget Range (optional)", "type": "text", "placeholder": "e.g. $50K-$100K annual, or 'Not disclosed'" },
+        { "id": "decisionMakers", "label": "Evaluation Panel Roles", "type": "textarea", "placeholder": "Who will evaluate? e.g. PMO Director, IT Manager, Finance, End Users" },
+        { "id": "timeline", "label": "Decision Timeline", "type": "text", "placeholder": "e.g. 4 weeks, by end of Q1" }
+      ],
+      "template": "You are a senior PMO procurement specialist. Build a weighted vendor evaluation framework based on the procurement requirements provided.\n\nStay within project management procurement domain. Do NOT provide legal or contractual advice.\n\n**PROCURING:** {procurementItem}\n**BUDGET:** {budget}\n**TIMELINE:** {timeline}\n\n**REQUIREMENTS:**\n{requirements}\n\n**EVALUATION PANEL:**\n{decisionMakers}\n\nThink through this step by step:\n1. Categorise requirements into evaluation criteria groups\n2. Assign weights based on requirement priority (must-have vs nice-to-have)\n3. Create a scoring rubric for each criterion\n4. Design the evaluation process\n\n**EVALUATION CRITERIA:**\n| # | Category | Criterion | Weight (%) | Scoring Rubric (1-5) |\n| 1 | Technical | [criterion] | [%] | 1=Does not meet, 3=Partially meets, 5=Fully meets and exceeds |\n\nCategories should include:\n- Technical Capability\n- Cost / Commercial\n- Experience / Track Record\n- Support / Service Level\n- Implementation / Transition\n- Strategic Fit\n\n**SCORING TEMPLATE:**\n| Vendor | [Criterion 1] (w%) | [Criterion 2] (w%) | ... | Weighted Total |\n\n**EVALUATION PROCESS:**\n1. [Step-by-step evaluation process]\n2. [Scoring sessions]\n3. [Decision mechanism]\n\n**ASSUMPTIONS:** Flag any assumptions about requirements that need confirmation.\nIf requirements are vague, note what additional detail would improve the criteria."
+    },
+    {
+      "id": "sow-drafter",
+      "title": "Statement of Work (SOW) Drafter",
+      "knowledgeArea": "procurement",
+      "difficulty": "advanced",
+      "techniques": ["grounding", "role-boundary", "structured-output", "negative-constraints", "uncertainty"],
+      "description": "Draft a professional Statement of Work from project requirements",
+      "fields": [
+        { "id": "projectName", "label": "Project / Engagement Name", "type": "text", "placeholder": "e.g. Data Analytics Platform Implementation" },
+        { "id": "vendorType", "label": "Vendor / Service Type", "type": "text", "placeholder": "e.g. Systems Integrator, Consulting Firm, SaaS Provider" },
+        { "id": "scopeDesc", "label": "Scope Description", "type": "textarea", "placeholder": "Describe what the vendor needs to deliver..." },
+        { "id": "deliverables", "label": "Expected Deliverables", "type": "textarea", "placeholder": "List all expected outputs, documents, systems, or services..." },
+        { "id": "duration", "label": "Expected Duration", "type": "text", "placeholder": "e.g. 6 months, 12 sprints, Phase 1: 3 months" },
+        { "id": "constraints", "label": "Key Constraints / Requirements", "type": "textarea", "placeholder": "Security requirements, compliance needs, working hours, location, technology stack..." }
+      ],
+      "template": "You are a senior PMO procurement specialist with extensive SOW drafting experience. Draft a Statement of Work based on the information provided.\n\nUse ONLY the information I provide. Do NOT add scope items, deliverables, or terms not mentioned.\n\n**PROJECT:** {projectName}\n**VENDOR TYPE:** {vendorType}\n**DURATION:** {duration}\n\n**SCOPE:**\n{scopeDesc}\n\n**DELIVERABLES:**\n{deliverables}\n\n**CONSTRAINTS:**\n{constraints}\n\nDraft the SOW with these sections:\n\n1. **Purpose & Background** (based on project description)\n2. **Scope of Work** (detailed, based on scope description)\n3. **Deliverables & Acceptance Criteria**\n   | # | Deliverable | Description | Acceptance Criteria | Due |\n4. **Timeline & Milestones** (based on duration)\n5. **Roles & Responsibilities** (Client vs Vendor)\n6. **Assumptions & Dependencies**\n7. **Out of Scope** (explicitly state boundaries)\n8. **Quality Requirements** (based on constraints)\n9. **Reporting & Governance** (status meetings, escalation)\n10. **Change Control** (process for scope changes)\n\nIMPORTANT:\n- Do NOT include commercial terms, pricing, or payment schedules (that's the contract, not the SOW)\n- Do NOT include legal clauses or liability terms\n- Flag sections where \"[REQUIRES CLIENT INPUT]\" if information is insufficient\n- This is a DRAFT requiring legal and procurement review before use"
+    },
+    {
+      "id": "stakeholder-mapping-assistant",
+      "title": "Stakeholder Mapping Assistant",
+      "knowledgeArea": "stakeholder",
+      "difficulty": "beginner",
+      "techniques": ["grounding", "structured-output", "role-boundary", "chain-of-thought"],
+      "description": "Map stakeholders by influence, interest, and engagement strategy",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Digital Transformation Initiative" },
+        { "id": "stakeholders", "label": "Stakeholder List", "type": "textarea", "placeholder": "List stakeholders with any known info, e.g.:\n- CFO — budget approver, sceptical about ROI\n- IT Director — supportive, technical owner\n- End users (200 staff) — resistant to change" },
+        { "id": "projectContext", "label": "Project Context", "type": "textarea", "placeholder": "Brief project description and any political dynamics..." }
+      ],
+      "template": "You are a senior PMO stakeholder management specialist. Map the following stakeholders using the Power/Interest grid and develop engagement strategies.\n\nUse ONLY the stakeholders listed. Do NOT add stakeholders I haven't mentioned.\n\n**PROJECT:** {projectName}\n\n**STAKEHOLDERS:**\n{stakeholders}\n\n**PROJECT CONTEXT:**\n{projectContext}\n\nThink through this step by step:\n1. Assess each stakeholder's power/influence level (High/Low)\n2. Assess each stakeholder's interest/involvement level (High/Low)\n3. Place them in the Power/Interest quadrant\n4. Determine engagement strategy based on quadrant\n\n**STAKEHOLDER MAP:**\n| Stakeholder | Power | Interest | Quadrant | Current Attitude | Desired Attitude | Engagement Strategy |\n\n**POWER/INTEREST GRID:**\n```\n         HIGH POWER\n    Manage Closely | Keep Satisfied\n    ─────────────────────────────\n    Keep Informed  | Monitor\n         LOW POWER\n    HIGH INTEREST    LOW INTEREST\n```\n\n**ENGAGEMENT PLAN:**\nFor each key stakeholder:\n- Communication frequency\n- Communication method\n- Key messages\n- Who should engage them\n\n**RISKS:**\nStakeholder-related risks (resistance, disengagement, competing priorities).\n\nIf stakeholder information is limited, note what additional context would improve the mapping."
+    },
+    {
+      "id": "engagement-strategy-builder",
+      "title": "Stakeholder Engagement Strategy",
+      "knowledgeArea": "stakeholder",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "chain-of-thought", "structured-output", "self-verification", "confidence-scoring"],
+      "description": "Build a detailed engagement strategy for complex stakeholder situations",
+      "fields": [
+        { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Organisational Restructure" },
+        { "id": "situation", "label": "Current Situation", "type": "textarea", "placeholder": "Describe the stakeholder challenge you're facing..." },
+        { "id": "keyStakeholders", "label": "Key Stakeholders & Their Positions", "type": "textarea", "placeholder": "List the stakeholders involved, their current stance, and any known concerns..." },
+        { "id": "desiredOutcome", "label": "Desired Outcome", "type": "textarea", "placeholder": "What stakeholder behaviour or decision are you trying to achieve?" },
+        { "id": "constraints", "label": "Political / Organisational Constraints", "type": "textarea", "placeholder": "Any sensitivities, power dynamics, or constraints on how you can engage..." }
+      ],
+      "template": "You are a senior PMO stakeholder engagement strategist. Develop a detailed engagement strategy for the situation described.\n\nBase your strategy ONLY on the information provided. Do NOT assume stakeholder positions or motivations beyond what is stated.\n\n**PROJECT:** {projectName}\n\n**SITUATION:**\n{situation}\n\n**KEY STAKEHOLDERS:**\n{keyStakeholders}\n\n**DESIRED OUTCOME:**\n{desiredOutcome}\n\n**CONSTRAINTS:**\n{constraints}\n\nThink through this step by step:\n1. Analyse each stakeholder's current position and likely motivations\n2. Identify alignment and conflict between stakeholders\n3. Determine the influence pathways (who influences whom)\n4. Design engagement tactics for each stakeholder\n5. Sequence the engagement (who to engage first)\n\n**STAKEHOLDER ANALYSIS:**\n| Stakeholder | Current Position | Likely Motivation | Risk if Unmanaged | Priority |\n\n**INFLUENCE MAP:**\nWho influences whom? Draw the relationships.\n\n**ENGAGEMENT STRATEGY:**\nFor each stakeholder:\n- **Objective:** What you need from them\n- **Approach:** How to engage (1:1, group, formal, informal)\n- **Key Messages:** What resonates with their motivations\n- **Timing:** When to engage (sequence matters)\n- **Success Indicator:** How you'll know it's working\n\n**RISK MITIGATION:**\nWhat if a key stakeholder remains opposed?\n\n**SELF-CHECK:** Review each engagement recommendation. Flag any that rely on assumed motivations rather than stated positions — mark as \"[ASSUMPTION — validate before acting]\".\n\nConfidence rating for each recommendation (High/Medium/Low) based on information completeness."
+    },
+    {
+      "id": "sprint-retro-facilitator",
+      "title": "Sprint Retrospective Facilitator",
+      "knowledgeArea": "agile",
+      "difficulty": "beginner",
+      "techniques": ["grounding", "structured-output", "role-boundary", "chain-of-thought"],
+      "description": "Facilitate a structured sprint retrospective and generate action items",
+      "fields": [
+        { "id": "teamName", "label": "Team Name", "type": "text", "placeholder": "e.g. Platform Team Alpha" },
+        { "id": "sprintNumber", "label": "Sprint Number / Name", "type": "text", "placeholder": "e.g. Sprint 14, PI 3.2" },
+        { "id": "sprintGoal", "label": "Sprint Goal", "type": "textarea", "placeholder": "What was the sprint goal? Was it achieved?" },
+        { "id": "feedback", "label": "Team Feedback", "type": "textarea", "placeholder": "Paste raw team feedback — what went well, what didn't, concerns, suggestions..." },
+        { "id": "previousActions", "label": "Previous Retro Action Items (optional)", "type": "textarea", "placeholder": "What actions were agreed last retro? Were they completed?" }
+      ],
+      "template": "You are an experienced Agile coach facilitating a sprint retrospective. Synthesise the team feedback into a structured retrospective report with clear action items.\n\nUse ONLY the feedback provided. Do NOT add observations the team didn't make.\n\n**TEAM:** {teamName}\n**SPRINT:** {sprintNumber}\n**SPRINT GOAL:** {sprintGoal}\n\n**TEAM FEEDBACK:**\n{feedback}\n\n**PREVIOUS ACTION ITEMS:**\n{previousActions}\n\nThink through this step by step:\n1. Categorise feedback into themes\n2. Identify patterns (recurring issues, improving areas)\n3. Prioritise by team impact\n4. Formulate SMART action items\n\n**RETROSPECTIVE REPORT:**\n\n**Sprint Goal Achievement:** [Met / Partially Met / Not Met] — based on provided info\n\n**What Went Well:**\n| Theme | Feedback Points | Team Sentiment |\n\n**What Needs Improvement:**\n| Theme | Feedback Points | Impact | Suggested Action |\n\n**Previous Actions Follow-up:**\n| Action | Status | Notes |\n\n**NEW ACTION ITEMS:**\n| # | Action | Owner (role) | Due | Success Measure |\n\nLimit to 3-5 action items maximum (focus on highest impact).\n\n**TEAM HEALTH INDICATORS:**\n- Morale: [High/Medium/Low based on feedback tone]\n- Collaboration: [observations from feedback]\n- Confidence: [team's confidence for next sprint]\n\nIf feedback is sparse, note which areas need more input from the team."
+    },
+    {
+      "id": "user-story-refiner",
+      "title": "User Story Refiner",
+      "knowledgeArea": "agile",
+      "difficulty": "intermediate",
+      "techniques": ["grounding", "structured-output", "self-verification", "negative-constraints", "chain-of-thought"],
+      "description": "Refine draft user stories with acceptance criteria and INVEST validation",
+      "fields": [
+        { "id": "draftStories", "label": "Draft User Stories", "type": "textarea", "placeholder": "Paste your draft user stories (one per line or grouped). They can be rough — that's the point of refinement." },
+        { "id": "productContext", "label": "Product / Feature Context", "type": "textarea", "placeholder": "Brief description of the product and the feature area these stories belong to..." },
+        { "id": "userPersonas", "label": "User Personas (optional)", "type": "textarea", "placeholder": "Who are the users? e.g. Admin User, End Customer, API Consumer" },
+        { "id": "sprintCapacity", "label": "Sprint Capacity", "type": "select", "options": ["1-week sprints", "2-week sprints", "3-week sprints", "Not applicable"] }
+      ],
+      "template": "You are a senior Agile coach and product owner advisor. Refine the following draft user stories into well-structured, estimable stories with acceptance criteria.\n\nWork ONLY with the stories provided. Do NOT add new features or stories not implied by the drafts.\n\n**PRODUCT CONTEXT:**\n{productContext}\n\n**USER PERSONAS:**\n{userPersonas}\n\n**SPRINT CAPACITY:** {sprintCapacity}\n\n**DRAFT STORIES:**\n{draftStories}\n\nFor EACH draft story, provide:\n\n**REFINED STORY:**\nAs a [specific persona], I want [specific action], so that [measurable value].\n\n**ACCEPTANCE CRITERIA:**\n- Given [context], when [action], then [expected result]\n- Given [context], when [action], then [expected result]\n- (3-6 criteria per story)\n\n**INVEST CHECK:**\n| Criterion | Pass/Fail | Notes |\n| Independent | | |\n| Negotiable | | |\n| Valuable | | |\n| Estimable | | |\n| Small (fits in sprint) | | |\n| Testable | | |\n\n**STORY POINTS SUGGESTION:** [S/M/L relative sizing]\n\n**NOTES:**\n- Dependencies or blockers\n- Questions for Product Owner\n- Suggested split if story is too large\n\n**SELF-CHECK:** Review each refined story. Flag any acceptance criteria that assume functionality not described in the original draft — mark as \"[ADDED — confirm with PO]\".\n\nDo NOT add gold-plating features.\nDo NOT assume technical implementation details unless specified."
+    }
+  ]
+}
