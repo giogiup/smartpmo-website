@@ -1,6 +1,149 @@
 {
   "latestIntelligence": [
     {
+      "id": 77961,
+      "title": "How AI Improves Global Team Collaboration: 6 Use Cases ... - Deel",
+      "url": "https://www.deel.com/blog/how-ai-improves-global-team-collaboration/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 19:23:35",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 77722,
+      "title": "Moltbook Monitoring by YouScan: Track AI Agent Conversations",
+      "url": "https://youscan.io/moltbook-monitoring/",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 17:59:28",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 77691,
+      "title": "Navigating AI in Project Management: A Comparison with Racing ...",
+      "url": "https://www.projectmanagement.com/blog-post/79644/navigating-ai-in-project-management--a-comparison-with-racing-co-pilots-and-driverless-cars-",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 17:59:10",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 77040,
+      "title": "AgentCost – Track, control, and optimize your AI spending (MIT)",
+      "url": "https://news.ycombinator.com/item?id=47235683",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 04:15:36",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76968,
+      "title": "Project Tracking Software - Tail AI",
+      "url": "https://tailapp.ai/products/project-tracking",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 04:15:05",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76925,
+      "title": "Project Reporting & Analytics - Tail AI",
+      "url": "https://tailapp.ai/products/reporting-analytics",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 04:14:50",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76890,
+      "title": "Federal Technology Lifecycle Management Adopts AI & Automation",
+      "url": "https://fedtechmagazine.com/article/2026/03/federal-technology-lifecycle-management-adopts-ai-and-automation-perfcon?amp",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 04:14:39",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76872,
+      "title": "AI in Construction: Tools and Use Cases | Microsoft Copilot",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-in-construction",
+      "summary": "",
+      "score": 69,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 04:14:33",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76846,
+      "title": "Insights from the Latest Global Study on the AI-Powered Project ...",
+      "url": "https://www.projectmanagement.com/videos/1158611/insights-from-the-latest-global-study-on-the-ai-powered-project-management",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 04:14:23",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76850,
+      "title": "AI Project Portfolio Management in 2026: What PMO Leaders Must ...",
+      "url": "https://corasystems.com/blog/ai-pmo-leaders-guide-2026",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-04",
+      "discoveredAt": "2026-03-04 04:14:23",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76911,
+      "title": "Asana Posts 9% Revenue Growth, But Is Its AI Project Management ...",
+      "url": "https://www.uctoday.com/project-management/asana-posts-9-revenue-growth-but-is-its-ai-project-management-platform-the-real-story/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-03",
+      "discoveredAt": "2026-03-04 04:14:45",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76347,
+      "title": "In Pursuit of Agentic AI Workspace",
+      "url": "https://aimaker.substack.com/p/in-pursuit-of-agentic-ai-workspace-ai-workflow-automation-claude-code-obsidian-notion",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-03",
+      "discoveredAt": "2026-03-04 04:05:46",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 76281,
+      "title": "How Power Automate Helps Analysts Send Alert Emails Faster and How AI Builder Takes It to the Next Level",
+      "url": "https://dzone.com/articles/how-power-automate-helps-analysts-send-alert-emails",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-03",
+      "discoveredAt": "2026-03-04 04:01:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 75555,
       "title": "AI is helping revolutionise risk management | KPMG NZ",
       "url": "https://kpmg.com/nz/en/insights/risk-management/ai-revolutionising-risk-management.html",
@@ -67,83 +210,6 @@
       "section": "auto"
     },
     {
-      "id": 74620,
-      "title": "How Agentic AI Is Transforming Business Workflows | FedEx Vietnam",
-      "url": "https://www.fedex.com/en-vn/business-insights/tech-innovation/agentic-ai-workflow-automation.html",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:52:55",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74610,
-      "title": "Perplexity Computer assigns tasks to AI agents - Techzine Global",
-      "url": "https://www.techzine.eu/news/infrastructure/139169/perplexity-computer-assigns-tasks-to-ai-agents/",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:52:53",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74555,
-      "title": "Connect Sendoso to an AI Meeting Notes & Summaries Agent",
-      "url": "https://arahi.ai/ai-agent/sendoso/meeting-notes",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:52:34",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74495,
-      "title": "Artificial Intelligence - ProjectManagement.com",
-      "url": "https://www.projectmanagement.com/topics/artificial-intelligence/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:52:19",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74488,
-      "title": "Fonada develops integrated AI and telecom stack for enterprise ...",
-      "url": "https://m.economictimes.com/tech/artificial-intelligence/fonada-develops-integrated-ai-and-telecom-stack-for-enterprise-communication/articleshow/128804888.cms",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:52:17",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74350,
-      "title": "Compliance at the Speed of Change: Modernizing GRC for the AI Era",
-      "url": "https://riskonnect.com/content-library/modernizing-compliance-grc-ai-regulations/",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:51:27",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74296,
-      "title": "Microsoft OneGov: Affordable AI-Enhanced Productivity | Carahsoft",
-      "url": "https://www.carahsoft.com/blog/microsoft-onegov-agreement-affordable-ai-enhanced-productivity-blog-2026",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:51:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 74253,
       "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
       "url": "https://uk.nttdata.com/insights/blog/context-aware-ai-capital-delivery-design-validation",
@@ -151,72 +217,6 @@
       "score": 75,
       "publishedDate": "2026-03-01",
       "discoveredAt": "2026-03-01 07:51:01",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74211,
-      "title": "Decision Intelligence: The Real Test of AI Maturity in the PMO",
-      "url": "https://www.projectmanagement.com/blog-post/79635/decision-intelligence--the-real-test-of-ai-maturity-in-the-pmo",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:50:49",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74209,
-      "title": "Consent-First AI Meeting Notes: Scripts, Checklist, and a Simple ...",
-      "url": "https://www.larksuite.com/en_us/blog/content-first-ai-meeting-notes",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:50:47",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74161,
-      "title": "AI for EPC - Safety & Project AI - NeoBram",
-      "url": "https://neobram.ai/industries/epc",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:50:36",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 73759,
-      "title": "Perplexity’s new Computer agent will run other agents for you",
-      "url": "https://www.computerworld.com/article/4138723/perplexitys-new-computer-agent-will-run-other-agents-for-you.html",
-      "summary": "",
-      "score": 72,
-      "publishedDate": "2026-02-27",
-      "discoveredAt": "2026-02-28 04:11:42",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 73049,
-      "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
-      "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:09:27",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 73055,
-      "title": "Trace raises $3M to solve the AI agent adoption problem in enterprise",
-      "url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-02-26",
-      "discoveredAt": "2026-02-27 04:09:27",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-04T18:03:11.700Z"
+  "generatedAt": "2026-03-04T19:51:18.153Z"
 }

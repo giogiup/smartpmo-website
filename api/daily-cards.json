@@ -1,8 +1,346 @@
 {
-  "generated": "2026-03-04T18:03:11.696Z",
+  "generated": "2026-03-04T19:51:18.144Z",
   "date": "2026-03-04",
   "count": 20,
   "cards": [
+    {
+      "id": 77691,
+      "title": "Navigating AI in Project Management: A Comparison with Racing ...",
+      "url": "https://www.projectmanagement.com/blog-post/79644/navigating-ai-in-project-management--a-comparison-with-racing-co-pilots-and-driverless-cars-",
+      "date": "2026-03-04",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**The article explores integrating AI into project management, drawing parallels with racing co-pilots and driverless cars.**",
+        "It discusses different levels of AI autonomy and their implications for project managers.",
+        "The piece likely examines how AI can augment human capabilities in project delivery and decision-making."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "automation"
+      ]
+    },
+    {
+      "id": 76968,
+      "title": "Project Tracking Software - Tail AI",
+      "url": "https://tailapp.ai/products/project-tracking",
+      "date": "2026-03-04",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Tail AI offers intelligent project tracking software with real-time progress monitoring and portfolio-wide visibility.**",
+        "The platform provides detailed project summaries, task breakdowns, built-in time tracking, and budget monitoring.",
+        "It helps teams organize projects, track profitability, and ensure on-time, on-budget delivery through collaboration tools."
+      ],
+      "badges": {
+        "read_time": 2,
+        "pmo_focus": "Portfolio",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "project tracking",
+        "portfolio management",
+        "budget monitoring"
+      ]
+    },
+    {
+      "id": 76925,
+      "title": "Project Reporting & Analytics - Tail AI",
+      "url": "https://tailapp.ai/products/reporting-analytics",
+      "date": "2026-03-04",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Tail AI offers data-driven reporting and analytics for transforming project data into actionable insights.**",
+        "Key features include project completion charts, team velocity tracking, and real-time dashboards.",
+        "It enables client reporting, accurate resource planning, and data-backed team performance reviews."
+      ],
+      "badges": {
+        "read_time": 2,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "project reporting",
+        "project analytics",
+        "resource planning"
+      ]
+    },
+    {
+      "id": 76846,
+      "title": "Insights from the Latest Global Study on the AI-Powered Project ...",
+      "url": "https://www.projectmanagement.com/videos/1158611/insights-from-the-latest-global-study-on-the-ai-powered-project-management",
+      "date": "2026-03-04",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Presents insights from a global study on the impact and application of AI in project management.**",
+        "Examines how artificial intelligence is transforming traditional project management practices and methodologies.",
+        "Covers key trends and findings regarding AI's role in enhancing project delivery and decision-making."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "General",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "project management",
+        "global study"
+      ]
+    },
+    {
+      "id": 76850,
+      "title": "AI Project Portfolio Management in 2026: What PMO Leaders Must ...",
+      "url": "https://corasystems.com/blog/ai-pmo-leaders-guide-2026",
+      "date": "2026-03-04",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Gartner's \"Predicts 2026\" report outlines five key actions for PMO leaders to embrace AI in portfolio management.**",
+        "Data readiness, financial discipline, and appropriate AI skills are essential for PMOs to derive real value from AI.",
+        "Low confidence in data governance (14% of IT leaders) presents a significant challenge for PMOs adopting AI."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Portfolio",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "PMO",
+        "Portfolio Management"
+      ]
+    },
+    {
+      "id": 76872,
+      "title": "AI in Construction: Tools and Use Cases | Microsoft Copilot",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-in-construction",
+      "date": "2026-03-04",
+      "score": 69,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft Copilot explores AI tools and use cases specifically for the construction industry.**",
+        "It details how AI can enhance efficiency and decision-making across construction projects.",
+        "The article discusses applications relevant to project planning, execution, and operational intelligence."
+      ],
+      "badges": {
+        "read_time": 12,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "construction",
+        "Microsoft Copilot"
+      ]
+    },
+    {
+      "id": 77722,
+      "title": "Moltbook Monitoring by YouScan: Track AI Agent Conversations",
+      "url": "https://youscan.io/moltbook-monitoring/",
+      "date": "2026-03-04",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**YouScan's Moltbook monitoring tracks AI bot conversations to detect brand reputation threats and security risks.**",
+        "It identifies negative brand mentions, fake product claims, prompt injection attempts, and crypto scam schemes.",
+        "The service helps organizations protect brand safety and conduct security research, relevant for proactive risk identification."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI monitoring",
+        "brand safety",
+        "security research"
+      ]
+    },
+    {
+      "id": 77961,
+      "title": "How AI Improves Global Team Collaboration: 6 Use Cases ... - Deel",
+      "url": "https://www.deel.com/blog/how-ai-improves-global-team-collaboration/",
+      "date": "2026-03-04",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI is transforming global team collaboration by addressing challenges like time zones and language barriers.",
+        "Specific AI tools include real-time translation, AI scheduling assistants, and meeting automation.",
+        "These AI applications enhance communication and knowledge sharing for distributed global teams."
+      ],
+      "badges": {
+        "read_time": 15,
+        "pmo_focus": "Knowledge",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "Global Teams",
+        "Collaboration"
+      ]
+    },
+    {
+      "id": 77040,
+      "title": "AgentCost – Track, control, and optimize your AI spending (MIT)",
+      "url": "https://news.ycombinator.com/item?id=47235683",
+      "date": "2026-03-04",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AgentCost helps organizations track, control, and optimize spending on AI agents and large language models.**",
+        "It offers a real-time dashboard, cost forecasting, and model optimization for 42 AI models.",
+        "The tool addresses managing actual AI agent costs at scale, relevant for project budgeting and resource allocation."
+      ],
+      "badges": {
+        "read_time": 2,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI cost management",
+        "LLM optimization",
+        "AI governance"
+      ]
+    },
+    {
+      "id": 76890,
+      "title": "Federal Technology Lifecycle Management Adopts AI & Automation",
+      "url": "https://fedtechmagazine.com/article/2026/03/federal-technology-lifecycle-management-adopts-ai-and-automation-perfcon?amp",
+      "date": "2026-03-04",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Federal agencies are leveraging AI and automation to enhance technology lifecycle management.**",
+        "These technologies support the management of hardware, software, and networks amid staff reductions.",
+        "AI capabilities could transform how government serves its customers and improve operational efficiency."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Resources",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "automation",
+        "technology lifecycle management"
+      ]
+    },
+    {
+      "id": 76911,
+      "title": "Asana Posts 9% Revenue Growth, But Is Its AI Project Management ...",
+      "url": "https://www.uctoday.com/project-management/asana-posts-9-revenue-growth-but-is-its-ai-project-management-platform-the-real-story/",
+      "date": "2026-03-03",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Asana reports 9% revenue growth, with the article questioning its AI project management platform's significance.**",
+        "The piece explores whether Asana's AI capabilities are the primary driver of its current market narrative.",
+        "Discussion centers on the impact and future potential of AI within project management tools like Asana."
+      ],
+      "badges": {
+        "read_time": 8,
+        "pmo_focus": "Tools",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Asana",
+        "AI",
+        "project management"
+      ]
+    },
+    {
+      "id": 76281,
+      "title": "How Power Automate Helps Analysts Send Alert Emails Faster and How AI Builder Takes It to the Next Level",
+      "url": "https://dzone.com/articles/how-power-automate-helps-analysts-send-alert-emails",
+      "date": "2026-03-03",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Power Automate enables analysts to rapidly automate the sending of critical alert emails based on data insights.**",
+        "AI Builder integrates advanced AI models like sentiment analysis and prediction to enhance alert triggers and data processing.",
+        "This combined approach helps analysts detect anomalies and communicate urgent information more efficiently, relevant for project oversight."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Power Automate",
+        "AI Builder",
+        "automation"
+      ]
+    },
+    {
+      "id": 76347,
+      "title": "In Pursuit of Agentic AI Workspace",
+      "url": "https://aimaker.substack.com/p/in-pursuit-of-agentic-ai-workspace-ai-workflow-automation-claude-code-obsidian-notion",
+      "date": "2026-03-03",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The article discusses integrating AI into daily workflows for enhanced productivity.**",
+        "Utilizes tools like Claude and Notion for seamless task management.",
+        "Highlights personal experiences and benefits of an agentic AI workspace."
+      ],
+      "badges": {
+        "read_time": 17,
+        "pmo_focus": "Tools",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI workspace",
+        "workflow automation",
+        "Claude"
+      ]
+    },
     {
       "id": 75555,
       "title": "AI is helping revolutionise risk management | KPMG NZ",
@@ -108,32 +446,6 @@
       ]
     },
     {
-      "id": 74495,
-      "title": "Artificial Intelligence - ProjectManagement.com",
-      "url": "https://www.projectmanagement.com/topics/artificial-intelligence/",
-      "date": "2026-03-01",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**The article discusses the integration of AI technologies in project management practices.**",
-        "AI tools are enhancing project delivery and governance through automation and data analysis.",
-        "Use cases include predictive analytics for project outcomes and resource allocation."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project management",
-        "automation"
-      ]
-    },
-    {
       "id": 74253,
       "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
       "url": "https://uk.nttdata.com/insights/blog/context-aware-ai-capital-delivery-design-validation",
@@ -157,32 +469,6 @@
         "AI",
         "context-aware AI",
         "capital delivery"
-      ]
-    },
-    {
-      "id": 74211,
-      "title": "Decision Intelligence: The Real Test of AI Maturity in the PMO",
-      "url": "https://www.projectmanagement.com/blog-post/79635/decision-intelligence--the-real-test-of-ai-maturity-in-the-pmo",
-      "date": "2026-03-01",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Decision Intelligence is highlighted as the true test of AI maturity within the PMO.**",
-        "The article likely discusses how PMOs can leverage AI to make more informed and strategic choices.",
-        "It emphasizes moving beyond basic AI applications to achieve superior project and portfolio outcomes."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Decision Intelligence",
-        "AI Maturity",
-        "PMO"
       ]
     },
     {
@@ -235,292 +521,6 @@
         "AI meeting notes",
         "Sonix alternatives",
         "HappyScribe"
-      ]
-    },
-    {
-      "id": 74296,
-      "title": "Microsoft OneGov: Affordable AI-Enhanced Productivity | Carahsoft",
-      "url": "https://www.carahsoft.com/blog/microsoft-onegov-agreement-affordable-ai-enhanced-productivity-blog-2026",
-      "date": "2026-03-01",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Microsoft OneGov agreement aims to deliver affordable, AI-enhanced productivity solutions.**",
-        "These solutions are specifically designed for public sector entities including government, education, and healthcare.",
-        "The AI enhancements could support improvements in areas like constituent engagement, records management, and smart city initiatives."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Enablement",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Microsoft",
-        "AI",
-        "Government"
-      ]
-    },
-    {
-      "id": 74209,
-      "title": "Consent-First AI Meeting Notes: Scripts, Checklist, and a Simple ...",
-      "url": "https://www.larksuite.com/en_us/blog/content-first-ai-meeting-notes",
-      "date": "2026-03-01",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**This article provides a guide for implementing consent-first AI meeting notes, including scripts and checklists.**",
-        "It offers practical scripts for obtaining consent from meeting participants before using AI note-takers.",
-        "The guide also covers data retention policies and best practices for ethical and compliant AI meeting note usage."
-      ],
-      "badges": {
-        "read_time": 16,
-        "pmo_focus": "Governance",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI meeting notes",
-        "consent",
-        "data privacy"
-      ]
-    },
-    {
-      "id": 74620,
-      "title": "How Agentic AI Is Transforming Business Workflows | FedEx Vietnam",
-      "url": "https://www.fedex.com/en-vn/business-insights/tech-innovation/agentic-ai-workflow-automation.html",
-      "date": "2026-03-01",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Agentic AI is transforming business workflows by automating complex, multi-step processes.**",
-        "These AI agents autonomously plan, execute, and adapt tasks, significantly reducing manual intervention.",
-        "Relevant to streamlining operations like supply chain and customer service for enhanced efficiency."
-      ],
-      "badges": {
-        "read_time": 13,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Agentic AI",
-        "workflow automation",
-        "business transformation"
-      ]
-    },
-    {
-      "id": 74488,
-      "title": "Fonada develops integrated AI and telecom stack for enterprise ...",
-      "url": "https://m.economictimes.com/tech/artificial-intelligence/fonada-develops-integrated-ai-and-telecom-stack-for-enterprise-communication/articleshow/128804888.cms",
-      "date": "2026-03-01",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Fonada develops an integrated AI and telecom stack for enterprise communication.**",
-        "This new stack aims to enhance and streamline communication processes for businesses.",
-        "The solution focuses on improving efficiency and effectiveness in large organizational communications."
-      ],
-      "badges": {
-        "read_time": 18,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Fonada",
-        "AI",
-        "telecom"
-      ]
-    },
-    {
-      "id": 74610,
-      "title": "Perplexity Computer assigns tasks to AI agents - Techzine Global",
-      "url": "https://www.techzine.eu/news/infrastructure/139169/perplexity-computer-assigns-tasks-to-ai-agents/",
-      "date": "2026-03-01",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Perplexity Computer functions as an AI operating system, orchestrating specialized AI agents for task completion.**",
-        "It aims to manage and delegate complex assignments by breaking them down for individual AI agents.",
-        "This approach could enhance project execution by automating task delegation and workflow management."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Perplexity Computer",
-        "AI agents",
-        "AI orchestration"
-      ]
-    },
-    {
-      "id": 74555,
-      "title": "Connect Sendoso to an AI Meeting Notes & Summaries Agent",
-      "url": "https://arahi.ai/ai-agent/sendoso/meeting-notes",
-      "date": "2026-03-01",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Arahi AI integrates with Sendoso to automate meeting notes, summaries, and action item extraction.**",
-        "The AI agent provides automatic transcription, smart summaries, and a searchable archive of past discussions.",
-        "This automation helps Sendoso users cut costs, eliminate manual work, and streamline marketing operations."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "Knowledge",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Arahi AI",
-        "Sendoso",
-        "AI automation"
-      ]
-    },
-    {
-      "id": 74350,
-      "title": "Compliance at the Speed of Change: Modernizing GRC for the AI Era",
-      "url": "https://riskonnect.com/content-library/modernizing-compliance-grc-ai-regulations/",
-      "date": "2026-03-01",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The article discusses modernizing Governance, Risk, and Compliance (GRC) strategies to keep pace with the rapid changes of the AI era.**",
-        "It emphasizes leveraging AI to enhance regulatory compliance, risk management, and overall organizational governance processes.",
-        "This approach helps organizations navigate evolving AI regulations and maintain swift compliance, relevant to project governance and adherence."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "GRC",
-        "compliance"
-      ]
-    },
-    {
-      "id": 74161,
-      "title": "AI for EPC - Safety & Project AI - NeoBram",
-      "url": "https://neobram.ai/industries/epc",
-      "date": "2026-03-01",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**NeoBram offers AI solutions for the EPC industry to improve project delivery and safety.**",
-        "AI-powered tools can achieve 20% better on-time delivery and 35% fewer safety incidents.",
-        "Key use cases include project risk prediction, resource optimization, and AI-driven safety monitoring."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "EPC",
-        "Project Performance"
-      ]
-    },
-    {
-      "id": 73759,
-      "title": "Perplexity’s new Computer agent will run other agents for you",
-      "url": "https://www.computerworld.com/article/4138723/perplexitys-new-computer-agent-will-run-other-agents-for-you.html",
-      "date": "2026-02-27",
-      "score": 72,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Perplexity introduces a new Computer agent that can manage other agents autonomously.**",
-        "The agent is designed to streamline workflows by coordinating multiple AI agents.",
-        "This tool could assist with project management tasks by automating agent interactions."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Perplexity",
-        "AI agents",
-        "automation"
-      ]
-    },
-    {
-      "id": 73049,
-      "title": "Read AI launches an email-based ‘digital twin’ to help you with schedules and answers",
-      "url": "https://techcrunch.com/2026/02/26/read-ai-launches-an-email-based-digital-twin-to-help-you-with-schedules-and-answers/",
-      "date": "2026-02-26",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Read AI introduces an email-based ‘digital twin’ designed to manage schedules and answer questions.**",
-        "This AI assistant integrates with email to autonomously handle meeting coordination and information retrieval.",
-        "The tool aims to reduce administrative burden by automating routine communication for professionals."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Read AI",
-        "digital twin",
-        "email assistant"
-      ]
-    },
-    {
-      "id": 73055,
-      "title": "Trace raises $3M to solve the AI agent adoption problem in enterprise",
-      "url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
-      "date": "2026-02-26",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Trace secured $3M funding to tackle the significant challenge of AI agent adoption in enterprise.**",
-        "The company aims to streamline the integration and utilization of AI agents within complex business operations.",
-        "This initiative could assist organizations in successfully deploying new AI technologies and managing their impact."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Enablement",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "enterprise adoption",
-        "Trace"
       ]
     }
   ]
