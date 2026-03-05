@@ -603,5 +603,351 @@
       ],
       "template": "You are a senior Agile coach and product owner advisor. Refine the following draft user stories into well-structured, estimable stories with acceptance criteria.\n\nWork ONLY with the stories provided. Do NOT add new features or stories not implied by the drafts.\n\n**PRODUCT CONTEXT:**\n{productContext}\n\n**USER PERSONAS:**\n{userPersonas}\n\n**SPRINT CAPACITY:** {sprintCapacity}\n\n**DRAFT STORIES:**\n{draftStories}\n\nFor EACH draft story, provide:\n\n**REFINED STORY:**\nAs a [specific persona], I want [specific action], so that [measurable value].\n\n**ACCEPTANCE CRITERIA:**\n- Given [context], when [action], then [expected result]\n- Given [context], when [action], then [expected result]\n- (3-6 criteria per story)\n\n**INVEST CHECK:**\n| Criterion | Pass/Fail | Notes |\n| Independent | | |\n| Negotiable | | |\n| Valuable | | |\n| Estimable | | |\n| Small (fits in sprint) | | |\n| Testable | | |\n\n**STORY POINTS SUGGESTION:** [S/M/L relative sizing]\n\n**NOTES:**\n- Dependencies or blockers\n- Questions for Product Owner\n- Suggested split if story is too large\n\n**SELF-CHECK:** Review each refined story. Flag any acceptance criteria that assume functionality not described in the original draft — mark as \"[ADDED — confirm with PO]\".\n\nDo NOT add gold-plating features.\nDo NOT assume technical implementation details unless specified."
     }
+  ],
+  "chains": [
+    {
+      "id": "full-risk-assessment",
+      "title": "Full Risk Assessment Workflow",
+      "description": "End-to-end risk management process — from gathering project context to producing a board-ready risk register. Each step builds on the previous output, creating a verification cascade.",
+      "knowledgeAreas": ["risk", "integration"],
+      "estimatedTime": "30-45 min",
+      "difficulty": "intermediate",
+      "icon": "⚠️",
+      "steps": [
+        {
+          "id": "risk-context",
+          "title": "Context Gathering",
+          "instruction": "Start by giving the AI deep context about your project. The richer the context here, the more relevant every downstream step will be.",
+          "fields": [
+            { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. ERP Migration Phase 2" },
+            { "id": "projectDesc", "label": "Project Description", "type": "textarea", "placeholder": "What is the project delivering? Key milestones, timeline, budget range..." },
+            { "id": "industry", "label": "Industry", "type": "text", "placeholder": "e.g. Financial Services, Healthcare, Construction" },
+            { "id": "methodology", "label": "Methodology", "type": "select", "options": ["Waterfall", "Agile (Scrum)", "Agile (Kanban)", "Hybrid", "PRINCE2", "SAFe"] },
+            { "id": "teamSize", "label": "Team Size", "type": "text", "placeholder": "e.g. 25 people across 4 workstreams" }
+          ],
+          "template": "You are a senior PMO risk management specialist with 15+ years of experience in {industry} projects.\n\nI am about to take you through a multi-step risk assessment process. In this first step, I need you to analyse the project context I provide and identify the key risk dimensions we should focus on.\n\n**PROJECT:** {projectName}\n**DESCRIPTION:** {projectDesc}\n**METHODOLOGY:** {methodology}\n**TEAM SIZE:** {teamSize}\n\nBased on this context, provide:\n1. A summary of the project's risk profile (High/Medium/Low complexity)\n2. The top 5 risk categories most relevant to this project type and industry\n3. Any immediate red flags you notice from the description\n4. What additional context would improve the risk assessment (list as questions)\n\nIMPORTANT: Base your analysis ONLY on the information provided. Do NOT invent project details I haven't shared. If something is unclear, say so."
+        },
+        {
+          "id": "risk-identify",
+          "title": "Risk Identification",
+          "instruction": "Paste the AI's context analysis from Step 1. Now we'll systematically identify specific risks across each category.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "knownRisks", "label": "Known Risks (optional)", "type": "textarea", "placeholder": "Any risks you already know about? e.g. Key vendor contract expires in Q3, lead architect is leaving..." }
+          ],
+          "template": "Continuing our risk assessment. Here is the context analysis from the previous step:\n\n---\n{previousOutput}\n---\n\n{knownRisks}\n\nNow perform a structured risk identification. For EACH risk category identified in the previous step, brainstorm 3-5 specific risks. Use this format:\n\n**CATEGORY: [Name]**\n| # | Risk Description | Trigger Event | Affected Areas |\n|---|---|---|---|\n| 1 | ... | ... | ... |\n\nRules:\n- Stay specific to THIS project — no generic textbook risks unless they genuinely apply\n- Each risk must describe a specific event, not a vague concern\n- If I provided known risks, include them and expand on them\n- Flag any risks that are interdependent (Risk A triggers Risk B)\n- Do NOT fabricate statistics or probability numbers yet — that comes in the next step"
+        },
+        {
+          "id": "risk-analyse",
+          "title": "Qualitative Analysis",
+          "instruction": "Paste the risk identification output. Now we'll score each risk for probability and impact.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "riskAppetite", "label": "Organisation Risk Appetite", "type": "select", "options": ["Conservative (risk-averse)", "Moderate (balanced)", "Aggressive (risk-tolerant)"] }
+          ],
+          "template": "Continuing our risk assessment. Here are the identified risks from the previous step:\n\n---\n{previousOutput}\n---\n\n**RISK APPETITE:** {riskAppetite}\n\nNow perform a qualitative risk analysis. For EVERY risk identified above, assess:\n\n| Risk # | Risk Description | Probability (1-5) | Impact (1-5) | Risk Score (P×I) | Priority (Critical/High/Medium/Low) |\n|---|---|---|---|---|---|\n\nScoring Guide:\n- Probability: 1=Rare, 2=Unlikely, 3=Possible, 4=Likely, 5=Almost Certain\n- Impact: 1=Negligible, 2=Minor, 3=Moderate, 4=Major, 5=Severe\n- Priority: Critical (≥20), High (15-19), Medium (8-14), Low (≤7)\n\nAfter the table, provide:\n1. **Heat Map Summary:** How many risks in each priority band?\n2. **Top 5 Risks:** The highest-scoring risks with a one-line explanation of why each is severe\n3. **Risk Interdependencies:** Which risks could cascade if they materialise?\n\nIMPORTANT: Your probability scores must be justified by the project context, not arbitrary. If you lack information to score accurately, mark confidence as LOW and explain what's missing."
+        },
+        {
+          "id": "risk-respond",
+          "title": "Response Planning",
+          "instruction": "Paste the qualitative analysis. Now we'll create response strategies for the highest-priority risks.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "budget", "label": "Risk Response Budget", "type": "text", "placeholder": "e.g. 10% of project budget, or $50K contingency reserve" }
+          ],
+          "template": "Continuing our risk assessment. Here is the qualitative analysis:\n\n---\n{previousOutput}\n---\n\n**RISK RESPONSE BUDGET:** {budget}\n\nFor every risk scored HIGH or CRITICAL in the previous step, create a response plan:\n\n**RISK: [Description]** (Score: X)\n- **Strategy:** [Avoid / Transfer / Mitigate / Accept]\n- **Response Actions:** [Specific actions to implement the strategy]\n- **Owner:** [Suggested role — do NOT name specific people]\n- **Trigger:** [What event signals this risk is materialising?]\n- **Contingency:** [If the risk occurs despite mitigation, what's the fallback?]\n- **Estimated Cost:** [Cost of the response action, if applicable]\n- **Residual Risk Level:** [After response, what's the remaining risk level?]\n\nFor MEDIUM risks, provide a brief one-line response strategy.\nFor LOW risks, note as \"Accept and Monitor.\"\n\nEnd with:\n- **Total estimated response cost** vs. available budget\n- **Gaps:** Any critical risks where the budget is insufficient\n- Do NOT invent cost figures — provide ranges and flag where estimates need validation"
+        },
+        {
+          "id": "risk-register",
+          "title": "Risk Register Output",
+          "instruction": "Paste the response plans. This final step compiles everything into a formal risk register ready for stakeholders.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "audience", "label": "Target Audience", "type": "select", "options": ["Steering Committee / Board", "Project Team", "PMO Internal", "Client / Sponsor"] }
+          ],
+          "template": "Compile the entire risk assessment into a formal risk register document. Here is the response planning output:\n\n---\n{previousOutput}\n---\n\n**TARGET AUDIENCE:** {audience}\n\nProduce a complete, formatted Risk Register with these sections:\n\n**1. EXECUTIVE SUMMARY** (3-5 sentences for {audience})\n- Total risks identified, breakdown by priority\n- Top 3 risks requiring immediate attention\n- Overall project risk profile assessment\n\n**2. RISK REGISTER TABLE**\n| ID | Category | Risk Description | Probability | Impact | Score | Priority | Strategy | Response Actions | Owner | Status |\n|---|---|---|---|---|---|---|---|---|---|---|\n(Include ALL risks from the assessment)\n\n**3. RISK HEAT MAP** (text-based)\nShow the distribution of risks across the probability/impact matrix.\n\n**4. KEY DECISIONS REQUIRED**\nList any risks that need leadership decisions (budget approval, scope changes, etc.)\n\n**5. MONITORING PLAN**\n- Review frequency recommendation\n- Key risk indicators (KRIs) to watch\n- Escalation thresholds\n\n**SELF-CHECK:** Review the entire register. Flag any recommendation that is NOT directly supported by the project context provided in Step 1. Mark as \"[REQUIRES VALIDATION]\".\n\nDo NOT add risks that weren't identified in the earlier steps.\nDo NOT fabricate statistics or external benchmarks."
+        }
+      ]
+    },
+    {
+      "id": "project-kickoff",
+      "title": "Project Kickoff Package",
+      "description": "Generate a complete kickoff package — from stakeholder mapping through charter, comms plan, RACI, and deck outline. Everything a PM needs to launch a project with confidence.",
+      "knowledgeAreas": ["integration", "stakeholder", "communications"],
+      "estimatedTime": "35-50 min",
+      "difficulty": "intermediate",
+      "icon": "🚀",
+      "steps": [
+        {
+          "id": "kickoff-stakeholders",
+          "title": "Stakeholder Mapping",
+          "instruction": "Start with the people. Identifying and classifying stakeholders first ensures every subsequent document is grounded in real organisational dynamics.",
+          "fields": [
+            { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Customer Portal Redesign" },
+            { "id": "projectScope", "label": "Project Scope (brief)", "type": "textarea", "placeholder": "What is the project delivering? High-level scope, timeline, and key deliverables..." },
+            { "id": "orgContext", "label": "Organisation Context", "type": "textarea", "placeholder": "Organisation type, size, culture. Any political dynamics, recent changes, or relevant history..." },
+            { "id": "knownStakeholders", "label": "Known Stakeholders", "type": "textarea", "placeholder": "List anyone you already know is involved — names/roles, their expected involvement..." }
+          ],
+          "template": "You are a senior project management consultant preparing a project kickoff package.\n\n**PROJECT:** {projectName}\n**SCOPE:** {projectScope}\n**ORGANISATION:** {orgContext}\n**KNOWN STAKEHOLDERS:** {knownStakeholders}\n\nCreate a comprehensive stakeholder map:\n\n**1. STAKEHOLDER REGISTER**\n| # | Role/Title | Interest Level (H/M/L) | Influence Level (H/M/L) | Engagement Strategy | Key Concerns |\n|---|---|---|---|---|---|\n\n**2. POWER/INTEREST GRID**\nClassify each stakeholder into: Manage Closely (High Power, High Interest), Keep Satisfied (High Power, Low Interest), Keep Informed (Low Power, High Interest), Monitor (Low Power, Low Interest)\n\n**3. KEY RELATIONSHIPS**\n- Who are the decision-makers?\n- Who are potential blockers?\n- Who are your champions?\n- Any known conflicts or alliances?\n\n**4. GAPS**\n- Roles that should be represented but aren't listed\n- Questions to validate this mapping\n\nBase this ONLY on the information I've provided. Flag any assumptions you're making."
+        },
+        {
+          "id": "kickoff-charter",
+          "title": "Charter Draft",
+          "instruction": "Paste the stakeholder map. The charter formalises what the project is, who's involved, and the boundaries.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "budget", "label": "Budget Range", "type": "text", "placeholder": "e.g. $200K-$300K, or TBD" },
+            { "id": "timeline", "label": "Expected Timeline", "type": "text", "placeholder": "e.g. 6 months, Q2-Q4 2026" },
+            { "id": "sponsor", "label": "Project Sponsor", "type": "text", "placeholder": "Name and title of the sponsor" }
+          ],
+          "template": "Using the stakeholder analysis from the previous step, draft a project charter.\n\nStakeholder Analysis:\n---\n{previousOutput}\n---\n\n**BUDGET:** {budget}\n**TIMELINE:** {timeline}\n**SPONSOR:** {sponsor}\n\nDraft a Project Charter with these sections:\n\n1. **Project Title and Authorisation**\n2. **Business Case / Problem Statement** (based on the scope provided)\n3. **Project Objectives** (SMART format)\n4. **Scope Statement** (In-scope / Out-of-scope)\n5. **Key Deliverables** (with estimated delivery dates)\n6. **Milestones and Timeline**\n7. **Budget Summary**\n8. **Stakeholder Summary** (reference the mapping from Step 1)\n9. **Assumptions, Constraints, and Dependencies**\n10. **Risks** (top 3-5 initial risks based on available information)\n11. **Success Criteria** (measurable criteria for project completion)\n12. **Approval** (signature block for sponsor)\n\nKeep language concise and executive-appropriate.\nDo NOT fabricate specific dates, costs, or metrics — use placeholders like [TBD] where information is missing.\nFlag any sections where you need more input from the PM."
+        },
+        {
+          "id": "kickoff-comms",
+          "title": "Communication Plan",
+          "instruction": "Paste the charter. The comms plan ensures the right people get the right information at the right time.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "commsPrefs", "label": "Communication Preferences", "type": "textarea", "placeholder": "Any preferences? e.g. 'Sponsor prefers weekly email updates', 'Team uses Slack', 'Steering committee meets monthly'" }
+          ],
+          "template": "Using the project charter and stakeholder analysis from previous steps, create a communication plan.\n\nProject Charter:\n---\n{previousOutput}\n---\n\n**COMMUNICATION PREFERENCES:** {commsPrefs}\n\nCreate a Communication Management Plan:\n\n**1. COMMUNICATION MATRIX**\n| Audience | Information Need | Method | Frequency | Owner | Format |\n|---|---|---|---|---|---|\n\n**2. MEETING SCHEDULE**\n| Meeting | Purpose | Attendees | Frequency | Duration | Agenda Template |\n|---|---|---|---|---|---|\n\n**3. ESCALATION PATH**\n- Level 1: Team Lead → PM (within 24h)\n- Level 2: PM → Sponsor (within 48h)\n- Level 3: Sponsor → Steering Committee (next scheduled meeting or emergency session)\n\n**4. STATUS REPORTING**\n- Report template outline (sections to include)\n- RAG status definitions for this project\n- Distribution list\n\n**5. KEY MESSAGES**\n- Project elevator pitch (2-3 sentences)\n- FAQ for common stakeholder questions\n\nTailor the plan to the specific stakeholders identified in Step 1.\nDo NOT over-engineer — match communication intensity to project size and complexity."
+        },
+        {
+          "id": "kickoff-raci",
+          "title": "RACI Matrix",
+          "instruction": "Paste the comms plan. The RACI clarifies who does what, preventing confusion and duplicated effort.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "keyActivities", "label": "Key Activities / Deliverables", "type": "textarea", "placeholder": "List the main activities or deliverables. e.g. Requirements gathering, Design, Testing, Go-Live, Training..." }
+          ],
+          "template": "Using all previous context (stakeholders, charter, comms plan), build a RACI matrix.\n\nPrevious output:\n---\n{previousOutput}\n---\n\n**KEY ACTIVITIES:** {keyActivities}\n\nCreate a RACI Matrix:\n\n**RACI DEFINITIONS:**\n- **R** = Responsible (does the work)\n- **A** = Accountable (final decision-maker — only ONE per activity)\n- **C** = Consulted (provides input before decision)\n- **I** = Informed (notified after decision)\n\n**RACI TABLE**\n| Activity / Deliverable | Sponsor | PM | [Role 1] | [Role 2] | [Role 3] | ... |\n|---|---|---|---|---|---|---|\n(Use the roles from the stakeholder map, not generic titles)\n\n**VALIDATION CHECKS:**\n1. Every row has exactly ONE \"A\"\n2. No role has too many \"R\" assignments (workload balance)\n3. Key decision-makers are \"A\" or \"C\" on critical activities\n4. No orphaned activities (every row has at least one R and one A)\n\n**GAPS / QUESTIONS:**\n- Activities where role assignment is ambiguous\n- Roles that seem over- or under-utilised\n\nBase the RACI on the SPECIFIC roles and stakeholders identified, not generic project roles."
+        },
+        {
+          "id": "kickoff-deck",
+          "title": "Kickoff Deck Outline",
+          "instruction": "Paste the RACI. This final step produces a structured kickoff presentation that ties everything together.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "deckStyle", "label": "Presentation Style", "type": "select", "options": ["Formal (board-level)", "Professional (management)", "Casual (team kickoff)", "Workshop (interactive)"] }
+          ],
+          "template": "Using all outputs from the previous steps (stakeholder map, charter, comms plan, RACI), create a kickoff presentation outline.\n\nPrevious outputs:\n---\n{previousOutput}\n---\n\n**PRESENTATION STYLE:** {deckStyle}\n\nCreate a Kickoff Deck Outline:\n\n**SLIDE-BY-SLIDE OUTLINE:**\n\n| Slide # | Title | Key Content | Speaker Notes | Duration |\n|---|---|---|---|---|\n| 1 | Welcome & Agenda | ... | ... | 2 min |\n| 2 | ... | ... | ... | ... |\n\nThe deck should cover:\n1. Welcome and introductions\n2. Project background and business case\n3. Vision and objectives\n4. Scope (in/out)\n5. Timeline and key milestones\n6. Team structure and RACI highlights\n7. Communication plan summary\n8. Initial risks and assumptions\n9. Immediate next steps and actions\n10. Q&A\n\n**PREPARATION CHECKLIST:**\n- [ ] Items to prepare before the kickoff meeting\n- [ ] Pre-reads to distribute\n- [ ] Logistics to arrange\n\n**POST-KICKOFF ACTIONS:**\n- Immediate follow-ups within 24-48h\n- Materials to distribute\n- First milestone to track\n\nTailor the tone and depth to the {deckStyle} style.\nKeep speaker notes practical — what to SAY, not what to show.\nDo NOT include content that wasn't established in previous steps."
+        }
+      ]
+    },
+    {
+      "id": "scope-validation",
+      "title": "Scope Validation Workflow",
+      "description": "From raw requirements through WBS generation, scope baseline, and change control criteria. Ensures nothing falls through the cracks and scope creep has clear boundaries.",
+      "knowledgeAreas": ["scope", "integration"],
+      "estimatedTime": "25-40 min",
+      "difficulty": "intermediate",
+      "icon": "🎯",
+      "steps": [
+        {
+          "id": "scope-requirements",
+          "title": "Requirements Analysis",
+          "instruction": "Start by dumping everything you know about the requirements. The AI will structure and classify them.",
+          "fields": [
+            { "id": "projectName", "label": "Project Name", "type": "text", "placeholder": "e.g. Mobile App v2.0" },
+            { "id": "rawRequirements", "label": "Raw Requirements", "type": "textarea", "placeholder": "Paste all requirements you have — meeting notes, emails, stakeholder asks. They can be messy and unstructured." },
+            { "id": "projectType", "label": "Project Type", "type": "select", "options": ["Software / IT", "Infrastructure", "Business Transformation", "Product Launch", "Regulatory / Compliance", "Organisational Change"] },
+            { "id": "constraints", "label": "Known Constraints", "type": "textarea", "placeholder": "e.g. Fixed deadline, limited budget, specific technology, regulatory requirements..." }
+          ],
+          "template": "You are a senior business analyst and scope management specialist.\n\n**PROJECT:** {projectName}\n**PROJECT TYPE:** {projectType}\n**KNOWN CONSTRAINTS:** {constraints}\n\n**RAW REQUIREMENTS:**\n{rawRequirements}\n\nAnalyse and structure these requirements:\n\n**1. REQUIREMENT CLASSIFICATION**\n| # | Requirement | Type (Functional/Non-Functional/Constraint) | Priority (MoSCoW) | Source/Stakeholder | Clarity (Clear/Ambiguous/Incomplete) |\n|---|---|---|---|---|---|\n\n**2. GAPS AND AMBIGUITIES**\n- Requirements that are too vague to implement\n- Missing information (questions to ask stakeholders)\n- Conflicting requirements\n\n**3. INITIAL SCOPE BOUNDARIES**\n- What appears to be IN scope based on these requirements\n- What should probably be OUT of scope (flag for confirmation)\n- Dependencies on external systems/teams\n\n**4. ASSUMPTIONS LOG**\n- Assumptions you're making to interpret the requirements\n- Each must be validated with stakeholders\n\nWork ONLY with the requirements I've provided. Do NOT add requirements I haven't mentioned.\nFlag any requirement where MoSCoW prioritisation needs stakeholder input."
+        },
+        {
+          "id": "scope-wbs",
+          "title": "WBS Generation",
+          "instruction": "Paste the requirements analysis. Now we'll break the scope into a Work Breakdown Structure.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "wbsLevels", "label": "WBS Depth", "type": "select", "options": ["3 levels (high-level)", "4 levels (detailed)", "5 levels (granular)"] }
+          ],
+          "template": "Using the structured requirements from the previous step, generate a Work Breakdown Structure.\n\nRequirements Analysis:\n---\n{previousOutput}\n---\n\n**WBS DEPTH:** {wbsLevels}\n\nCreate a WBS following the deliverable-oriented decomposition principle:\n\n**WBS STRUCTURE** (use numbering: 1.0, 1.1, 1.1.1, etc.)\n\n1.0 [Project Name]\n  1.1 [Phase/Deliverable]\n    1.1.1 [Work Package]\n      ...\n\n**WBS DICTIONARY** (for each work package at the lowest level):\n| WBS # | Work Package | Description | Deliverable | Acceptance Criteria | Estimated Effort |\n|---|---|---|---|---|---|\n\n**VALIDATION:**\n- 100% Rule: Does the WBS capture ALL requirements from Step 1?\n- Are work packages small enough to estimate and assign?\n- Are there any orphaned requirements not covered in the WBS?\n\nInclude a project management phase (planning, monitoring, closure) in the WBS.\nDo NOT add scope beyond what was identified in the requirements analysis.\nMark effort estimates as [REQUIRES TEAM INPUT] — do not fabricate numbers."
+        },
+        {
+          "id": "scope-baseline",
+          "title": "Scope Baseline",
+          "instruction": "Paste the WBS. Now we'll formalise the scope baseline — the agreed boundary of what's in and what's out.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "approver", "label": "Scope Approver", "type": "text", "placeholder": "Who signs off on scope? e.g. Project Sponsor, Steering Committee" }
+          ],
+          "template": "Using the WBS from the previous step, create a formal scope baseline document.\n\nWBS Output:\n---\n{previousOutput}\n---\n\n**SCOPE APPROVER:** {approver}\n\nCreate a Scope Baseline Document:\n\n**1. SCOPE STATEMENT**\n- Project purpose and justification\n- Product scope description\n- Project deliverables (reference WBS)\n- Project boundaries (explicit IN/OUT)\n\n**2. IN-SCOPE / OUT-OF-SCOPE TABLE**\n| Item | In Scope | Out of Scope | Notes |\n|---|---|---|---|\n\n**3. ACCEPTANCE CRITERIA**\nFor each major deliverable, define:\n- What \"done\" looks like\n- How acceptance will be verified\n- Who accepts\n\n**4. ASSUMPTIONS AND CONSTRAINTS**\n- Consolidated from requirements analysis\n- Any new assumptions from WBS decomposition\n\n**5. SCOPE BASELINE APPROVAL**\n- Approval authority: {approver}\n- Baseline date: [TBD]\n- Change process reference: See Step 4\n\nThis document becomes the SINGLE SOURCE OF TRUTH for what the project will deliver.\nDo NOT include content not covered in the WBS.\nFlag any areas where scope is ambiguous and needs stakeholder clarification."
+        },
+        {
+          "id": "scope-change-control",
+          "title": "Change Control Criteria",
+          "instruction": "Paste the scope baseline. The final step creates the change control process that protects the baseline.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "changeAuthority", "label": "Change Authority", "type": "select", "options": ["PM only (minor changes)", "Change Control Board", "Steering Committee", "Sponsor approval"] }
+          ],
+          "template": "Using the scope baseline from the previous step, create a change control process.\n\nScope Baseline:\n---\n{previousOutput}\n---\n\n**CHANGE AUTHORITY:** {changeAuthority}\n\nCreate a Scope Change Control Process:\n\n**1. CHANGE REQUEST TEMPLATE**\n| Field | Description |\n|---|---|\n| CR Number | Auto-generated |\n| Requested By | |\n| Date | |\n| Description of Change | |\n| Justification | |\n| Impact on Scope | |\n| Impact on Schedule | |\n| Impact on Budget | |\n| Impact on Quality | |\n| Impact on Risk | |\n| Recommendation | Approve / Reject / Defer |\n\n**2. CHANGE CLASSIFICATION**\n| Category | Authority | SLA |\n|---|---|---|\n| Minor (no cost/schedule impact) | PM | 2 business days |\n| Moderate (< 5% impact) | {changeAuthority} | 5 business days |\n| Major (> 5% impact or scope boundary change) | Steering Committee | Next meeting |\n| Emergency | Sponsor | 24 hours |\n\n**3. CHANGE CONTROL WORKFLOW**\nSubmit → Log → Assess Impact → Classify → Route to Authority → Decision → Update Baseline → Communicate\n\n**4. SCOPE CREEP INDICATORS**\n- Warning signs that scope is expanding without formal change requests\n- Metrics to track (e.g. CR volume, baseline vs. actual deliverables)\n\n**5. CHANGE LOG TEMPLATE**\n| CR # | Date | Description | Impact | Decision | Updated Baseline? |\n|---|---|---|---|---|---|\n\nTailor the process formality to the project size and methodology.\nDo NOT over-engineer for small projects — right-size the governance."
+        }
+      ]
+    },
+    {
+      "id": "sprint-health-check",
+      "title": "Sprint Health Check",
+      "description": "A complete agile health check — from velocity analysis through impediment classification, retrospective facilitation, and actionable improvement planning. Perfect for Scrum Masters and Agile PMOs.",
+      "knowledgeAreas": ["agile", "quality"],
+      "estimatedTime": "20-30 min",
+      "difficulty": "beginner",
+      "icon": "🔄",
+      "steps": [
+        {
+          "id": "sprint-velocity",
+          "title": "Velocity Analysis",
+          "instruction": "Start by sharing your sprint metrics. Even rough numbers help the AI spot trends and anomalies.",
+          "fields": [
+            { "id": "teamName", "label": "Team Name", "type": "text", "placeholder": "e.g. Team Phoenix" },
+            { "id": "sprintNumber", "label": "Sprint Number", "type": "text", "placeholder": "e.g. Sprint 14" },
+            { "id": "sprintData", "label": "Sprint Data (last 3-5 sprints)", "type": "textarea", "placeholder": "For each sprint: planned points, completed points, carried over. e.g.\nSprint 11: Planned 34, Done 28, Carry 6\nSprint 12: Planned 30, Done 32, Carry 0\nSprint 13: Planned 35, Done 22, Carry 13" },
+            { "id": "sprintLength", "label": "Sprint Length", "type": "select", "options": ["1 week", "2 weeks", "3 weeks", "4 weeks"] },
+            { "id": "teamChanges", "label": "Team Changes (optional)", "type": "textarea", "placeholder": "Any team changes during this period? e.g. New dev joined Sprint 12, QA on leave Sprint 13..." }
+          ],
+          "template": "You are an experienced Agile Coach analysing sprint performance data.\n\n**TEAM:** {teamName}\n**CURRENT SPRINT:** {sprintNumber}\n**SPRINT LENGTH:** {sprintLength}\n**TEAM CHANGES:** {teamChanges}\n\n**SPRINT DATA:**\n{sprintData}\n\nAnalyse the velocity data:\n\n**1. VELOCITY METRICS**\n- Average velocity (last 3-5 sprints)\n- Velocity trend (improving / stable / declining)\n- Variance and predictability score\n- Commitment accuracy (planned vs. delivered %)\n\n**2. TREND ANALYSIS**\n- Is the team improving, plateauing, or declining?\n- Correlation with team changes (if any)\n- Sprint-over-sprint comparison\n\n**3. PLANNING RECOMMENDATIONS**\n- Suggested story point target for next sprint\n- Confidence range (optimistic / realistic / conservative)\n\n**4. RED FLAGS**\n- Any concerning patterns?\n- Carry-over trends\n- Velocity volatility\n\nWork ONLY with the data provided. Do NOT assume team composition or project context beyond what I've shared.\nIf the data is insufficient for reliable analysis, say so."
+        },
+        {
+          "id": "sprint-impediments",
+          "title": "Impediment Classification",
+          "instruction": "Paste the velocity analysis. Now list your known impediments and blockers for structured classification.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "impediments", "label": "Current Impediments & Blockers", "type": "textarea", "placeholder": "List everything slowing the team down. e.g.\n- Waiting on API access from Platform team (3 days)\n- Flaky test environment\n- Too many meetings on Wednesdays\n- Unclear acceptance criteria from PO" }
+          ],
+          "template": "Continuing the sprint health check. Here's the velocity analysis:\n\n---\n{previousOutput}\n---\n\n**IMPEDIMENTS:**\n{impediments}\n\nClassify and analyse these impediments:\n\n**1. IMPEDIMENT REGISTER**\n| # | Impediment | Category | Severity (H/M/L) | Duration | Resolution Owner | Actionable by Team? |\n|---|---|---|---|---|---|---|\n\n**Categories:** Technical, Process, People, External Dependency, Tooling, Organisational\n\n**2. ROOT CAUSE ANALYSIS**\nFor each HIGH severity impediment:\n- Surface problem\n- Contributing factors\n- Root cause (use 5-Whys thinking)\n\n**3. CORRELATION WITH VELOCITY**\n- Which impediments are most likely causing the velocity patterns from Step 1?\n- Estimated velocity impact if top impediments were resolved\n\n**4. RESOLUTION PRIORITY**\n| Priority | Impediment | Quick Win? | Effort to Resolve | Expected Impact |\n|---|---|---|---|---|\n\nFocus on what the TEAM can control vs. what needs escalation.\nDo NOT suggest organisational changes beyond the team's authority without flagging them as escalations."
+        },
+        {
+          "id": "sprint-retro",
+          "title": "Retrospective Facilitation",
+          "instruction": "Paste the impediment analysis. Now we'll design a focused retrospective that addresses the real issues.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "retroFormat", "label": "Retrospective Format", "type": "select", "options": ["Start/Stop/Continue", "4Ls (Liked, Learned, Lacked, Longed For)", "Sailboat (Wind, Anchor, Rocks, Island)", "Mad/Sad/Glad", "Custom (data-driven)"] }
+          ],
+          "template": "Using the velocity analysis and impediment classification, design a focused retrospective.\n\nPrevious analysis:\n---\n{previousOutput}\n---\n\n**FORMAT:** {retroFormat}\n\nDesign a Retrospective Session:\n\n**1. SESSION PLAN** (60 minutes)\n| Time | Activity | Purpose | Facilitation Notes |\n|---|---|---|---|\n| 0-5 min | ... | ... | ... |\n| ... | ... | ... | ... |\n\n**2. DATA-DRIVEN TALKING POINTS**\nBased on the velocity and impediment data, seed the discussion with:\n- 3 specific observations to share (facts, not opinions)\n- 2 questions to spark discussion about the trends\n- 1 hypothesis about the root cause to test with the team\n\n**3. FOCUSED DISCUSSION AREAS**\nBased on the analysis, the retrospective should focus on:\n- [Top theme from impediment analysis]\n- [Second theme]\n- [Optional: positive trend to reinforce]\n\n**4. ACTION ITEM TEMPLATE**\n| Action | Owner | Due | Success Measure | Follow-up |\n|---|---|---|---|---|\n\nRules for good retro actions:\n- Maximum 3 actions (more = none get done)\n- Each must have a single owner\n- Each must be achievable within the next sprint\n- Each must have a measurable outcome\n\n**5. SAFETY CHECK**\n- Suggested safety check question before starting\n- How to handle low safety scores\n\nKeep the retro focused on the DATA from Steps 1-2, not general feelings.\nDo NOT make the session longer than 60 minutes."
+        },
+        {
+          "id": "sprint-improvement",
+          "title": "Improvement Action Plan",
+          "instruction": "Paste the retrospective design. The final step creates a concrete improvement plan with tracking mechanisms.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "improvementHorizon", "label": "Improvement Horizon", "type": "select", "options": ["Next sprint only", "Next 2-3 sprints", "Quarterly improvement cycle"] }
+          ],
+          "template": "Using all previous sprint health check data, create an improvement action plan.\n\nPrevious outputs:\n---\n{previousOutput}\n---\n\n**IMPROVEMENT HORIZON:** {improvementHorizon}\n\nCreate a Sprint Improvement Plan:\n\n**1. IMPROVEMENT BACKLOG** (prioritised)\n| # | Improvement | Category | Impact (H/M/L) | Effort (H/M/L) | Sprint Target | Owner |\n|---|---|---|---|---|---|---|\n\n**2. QUICK WINS** (implement this sprint)\n- Action items that can be done immediately\n- Expected impact on next sprint's velocity\n\n**3. MEDIUM-TERM IMPROVEMENTS** (2-3 sprints)\n- Process changes requiring experimentation\n- How to measure if the improvement is working\n\n**4. ESCALATIONS** (need management support)\n- Items the team cannot resolve alone\n- Specific ask for each escalation\n- Impact if not resolved\n\n**5. TRACKING DASHBOARD**\n| Metric | Current | Target | Measure At |\n|---|---|---|---|\n| Velocity | [from Step 1] | [target] | End of Sprint {next} |\n| Commitment Accuracy | [from Step 1] | [target] | End of Sprint {next} |\n| Open Impediments | [from Step 2] | [target] | Weekly |\n| Action Completion Rate | N/A | 100% | End of Sprint {next} |\n\n**6. REVIEW CADENCE**\n- When to review this improvement plan\n- What triggers a pivot in approach\n- Success criteria for closing items\n\nKeep the plan realistic — the team should spend no more than 10% of sprint capacity on improvements.\nDo NOT suggest improvements unrelated to the data from Steps 1-3."
+        }
+      ]
+    },
+    {
+      "id": "vendor-selection",
+      "title": "Vendor Selection Pipeline",
+      "description": "Structured vendor evaluation from requirements gathering through evaluation criteria, scoring matrix, and recommendation memo. Ensures objective, defensible procurement decisions.",
+      "knowledgeAreas": ["procurement", "stakeholder"],
+      "estimatedTime": "25-35 min",
+      "difficulty": "advanced",
+      "icon": "📋",
+      "steps": [
+        {
+          "id": "vendor-requirements",
+          "title": "Requirements Gathering",
+          "instruction": "Define what you need from a vendor. Be specific about must-haves vs. nice-to-haves — this drives everything downstream.",
+          "fields": [
+            { "id": "procurementTitle", "label": "Procurement Title", "type": "text", "placeholder": "e.g. Project Management Tool Selection" },
+            { "id": "businessNeed", "label": "Business Need", "type": "textarea", "placeholder": "Why are you procuring this? What problem does it solve? What does success look like?" },
+            { "id": "requirements", "label": "Known Requirements", "type": "textarea", "placeholder": "List everything you need. e.g.\n- Must support 500+ users\n- SSO integration\n- Under $50K/year\n- On-premise option\n- Gantt chart capability" },
+            { "id": "existingVendors", "label": "Existing Vendors (optional)", "type": "textarea", "placeholder": "Any vendors already on the shortlist? e.g. Jira, Monday.com, MS Project, Smartsheet" }
+          ],
+          "template": "You are a senior procurement and vendor management specialist.\n\n**PROCUREMENT:** {procurementTitle}\n**BUSINESS NEED:** {businessNeed}\n**KNOWN REQUIREMENTS:** {requirements}\n**EXISTING SHORTLIST:** {existingVendors}\n\nStructure the requirements for vendor evaluation:\n\n**1. REQUIREMENT CLASSIFICATION**\n| # | Requirement | Category (Functional/Technical/Commercial/Compliance) | Priority (Must-Have/Should-Have/Nice-to-Have) | Measurable Criteria |\n|---|---|---|---|---|\n\n**2. MINIMUM VIABLE REQUIREMENTS**\n- Non-negotiable requirements that disqualify vendors if unmet\n- These become pass/fail gates in evaluation\n\n**3. DIFFERENTIATORS**\n- Requirements that separate good vendors from great vendors\n- These become scored criteria\n\n**4. QUESTIONS FOR VENDORS**\n- Discovery questions to include in RFI/RFP\n- Demo scenarios to request\n\n**5. GAPS IN REQUIREMENTS**\n- What's missing? Common requirements for this type of procurement that aren't listed\n- Questions to ask stakeholders before finalising\n\nBase analysis ONLY on provided requirements. Flag any assumptions.\nDo NOT recommend specific vendors at this stage."
+        },
+        {
+          "id": "vendor-criteria",
+          "title": "Evaluation Criteria",
+          "instruction": "Paste the structured requirements. Now we'll build a weighted evaluation framework.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "weightingApproach", "label": "Weighting Approach", "type": "select", "options": ["Equal weights", "Business-priority weighted", "Technical-priority weighted", "Cost-priority weighted"] }
+          ],
+          "template": "Using the structured requirements, build a vendor evaluation framework.\n\nRequirements Analysis:\n---\n{previousOutput}\n---\n\n**WEIGHTING APPROACH:** {weightingApproach}\n\nCreate an Evaluation Framework:\n\n**1. EVALUATION CRITERIA TABLE**\n| # | Criterion | Category | Weight (%) | Scoring Scale (1-5) | Scoring Guide |\n|---|---|---|---|---|---|\n(Weights must total 100%)\n\n**Scoring Guide per criterion:**\n- 5 = Exceeds requirements\n- 4 = Fully meets requirements\n- 3 = Partially meets requirements\n- 2 = Significant gaps\n- 1 = Does not meet requirement\n\n**2. PASS/FAIL GATES** (from Must-Have requirements)\n| Gate | Pass Criteria | Verification Method |\n|---|---|---|\n\n**3. EVALUATION PROCESS**\n- Step 1: Pass/fail gate screening\n- Step 2: Written proposal scoring\n- Step 3: Demo/POC evaluation\n- Step 4: Reference checks\n- Step 5: Commercial negotiation\n\n**4. EVALUATION TEAM**\n- Suggested evaluator roles and their focus areas\n- How to handle scoring disagreements\n- Consensus methodology\n\nEnsure weights reflect the {weightingApproach} approach.\nDo NOT pre-score any vendors — the framework must be vendor-neutral."
+        },
+        {
+          "id": "vendor-scoring",
+          "title": "Scoring Matrix",
+          "instruction": "Paste the evaluation criteria. If you have vendor responses or demo notes, include them. Otherwise the AI will create the scoring template.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "vendorData", "label": "Vendor Responses / Demo Notes", "type": "textarea", "placeholder": "Paste any vendor proposal summaries, demo notes, or feature comparison data you have. If you don't have this yet, leave blank and we'll create the template." }
+          ],
+          "template": "Using the evaluation framework, create a vendor scoring matrix.\n\nEvaluation Framework:\n---\n{previousOutput}\n---\n\n**VENDOR DATA:** {vendorData}\n\nCreate a Scoring Matrix:\n\n**1. GATE CHECK** (pass/fail)\n| Vendor | Gate 1 | Gate 2 | Gate 3 | ... | Result |\n|---|---|---|---|---|---|\n(If no vendor data provided, create template with placeholder rows)\n\n**2. WEIGHTED SCORING MATRIX**\n| Criterion | Weight | Vendor A Score | Vendor A Weighted | Vendor B Score | Vendor B Weighted | ... |\n|---|---|---|---|---|---|---|\n| ... | ...% | /5 | | /5 | | |\n| **TOTAL** | **100%** | | **[Total]** | | **[Total]** | |\n\n**3. SCORING INSTRUCTIONS**\nFor each criterion, provide:\n- What evidence to look for in proposals\n- What to observe during demos\n- Red flags that warrant low scores\n\n**4. SENSITIVITY ANALYSIS**\nIf weights were adjusted ±10%, would the ranking change? Identify criteria where small weight changes flip the result.\n\nIf vendor data was provided, score each vendor with justification.\nIf no vendor data, provide the empty template with detailed scoring instructions.\nDo NOT fabricate vendor capabilities or scores."
+        },
+        {
+          "id": "vendor-recommendation",
+          "title": "Recommendation Memo",
+          "instruction": "Paste the scoring matrix. The final step produces a decision-ready recommendation for leadership.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "decisionMaker", "label": "Decision Maker", "type": "text", "placeholder": "e.g. CIO, Procurement Board, Steering Committee" }
+          ],
+          "template": "Using all previous analysis, draft a vendor recommendation memo.\n\nScoring Matrix:\n---\n{previousOutput}\n---\n\n**DECISION MAKER:** {decisionMaker}\n\nDraft a Vendor Recommendation Memo:\n\n**TO:** {decisionMaker}\n**FROM:** [PM/Procurement Lead]\n**RE:** Vendor Recommendation — [Procurement Title]\n**DATE:** [Date]\n\n**1. EXECUTIVE SUMMARY** (3-5 sentences)\n- What was evaluated and why\n- How many vendors assessed\n- Recommendation\n\n**2. EVALUATION PROCESS SUMMARY**\n- Methodology used\n- Evaluation team composition\n- Timeline of evaluation\n\n**3. RESULTS SUMMARY**\n| Rank | Vendor | Total Score | Strengths | Risks |\n|---|---|---|---|---|\n\n**4. RECOMMENDATION**\n- Recommended vendor and rationale\n- Key differentiators vs. runner-up\n- Risks of the recommended vendor and mitigations\n\n**5. COMMERCIAL SUMMARY**\n- Pricing comparison (if available)\n- TCO considerations\n- Contract terms to negotiate\n\n**6. IMPLEMENTATION CONSIDERATIONS**\n- Transition/onboarding timeline\n- Resource requirements\n- Dependencies\n\n**7. DECISION REQUESTED**\n- Approve recommendation\n- Request additional evaluation\n- Approve with conditions\n\n**SELF-CHECK:** Every recommendation must trace back to scored criteria. Flag any subjective preference as \"[EVALUATOR JUDGMENT]\" rather than objective scoring.\nDo NOT recommend a vendor without data to support the recommendation."
+        }
+      ]
+    },
+    {
+      "id": "pmo-maturity",
+      "title": "PMO Maturity Diagnostic",
+      "description": "Assess your PMO's current maturity, identify gaps, build an improvement roadmap, and create a business case for PMO investment. The strategic planning chain for PMO leaders.",
+      "knowledgeAreas": ["integration", "quality"],
+      "estimatedTime": "30-45 min",
+      "difficulty": "advanced",
+      "icon": "📊",
+      "steps": [
+        {
+          "id": "maturity-assessment",
+          "title": "Current State Assessment",
+          "instruction": "Be honest about where your PMO is today. The more candid you are, the more useful the gap analysis will be.",
+          "fields": [
+            { "id": "pmoType", "label": "PMO Type", "type": "select", "options": ["Supportive (consultative, templates)", "Controlling (compliance, standards)", "Directive (manages projects directly)", "Centre of Excellence", "Hybrid / Evolving"] },
+            { "id": "pmoAge", "label": "PMO Age", "type": "select", "options": ["< 1 year", "1-2 years", "3-5 years", "5+ years"] },
+            { "id": "teamSize", "label": "PMO Team Size", "type": "text", "placeholder": "e.g. 3 people, or 1 PMO Manager + 12 PMs" },
+            { "id": "currentCapabilities", "label": "Current Capabilities", "type": "textarea", "placeholder": "What does your PMO currently do well? What services do you provide? e.g.\n- Project reporting\n- Resource allocation\n- PM methodology\n- Portfolio prioritisation\n- Benefits tracking" },
+            { "id": "painPoints", "label": "Pain Points", "type": "textarea", "placeholder": "What's not working? Where do you struggle? e.g.\n- No standard methodology\n- Poor stakeholder perception\n- Projects consistently overrun\n- Can't demonstrate value" }
+          ],
+          "template": "You are a senior PMO maturity assessment specialist with experience across the P3M3, OPM3, and Gartner PMO maturity models.\n\n**PMO TYPE:** {pmoType}\n**PMO AGE:** {pmoAge}\n**TEAM SIZE:** {teamSize}\n\n**CURRENT CAPABILITIES:**\n{currentCapabilities}\n\n**PAIN POINTS:**\n{painPoints}\n\nConduct a PMO maturity assessment:\n\n**1. MATURITY SCORING** (using a 5-level model)\n| Capability Area | Current Level (1-5) | Evidence | Target Level |\n|---|---|---|---|\n| Governance & Standards | | | |\n| Resource Management | | | |\n| Portfolio Management | | | |\n| Benefits Realisation | | | |\n| Stakeholder Management | | | |\n| Risk Management | | | |\n| Knowledge Management | | | |\n| Continuous Improvement | | | |\n\n**Levels:** 1=Ad Hoc, 2=Planned, 3=Managed, 4=Integrated, 5=Optimised\n\n**2. OVERALL MATURITY PROFILE**\n- Current maturity level (overall)\n- Strongest areas\n- Weakest areas\n- Comparison to typical PMO at this age/type\n\n**3. STAKEHOLDER PERCEPTION**\n- Based on the pain points, how is the PMO likely perceived?\n- Risk of PMO being defunded/restructured?\n\nBase scoring ONLY on the information provided. Do NOT inflate scores.\nIf information is insufficient to score an area, mark as [INSUFFICIENT DATA]."
+        },
+        {
+          "id": "maturity-gaps",
+          "title": "Gap Analysis",
+          "instruction": "Paste the maturity assessment. Now we'll analyse the gaps between current and target state.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "orgPriority", "label": "Organisation's Top Priority", "type": "select", "options": ["Cost reduction", "Delivery speed", "Quality improvement", "Strategic alignment", "Innovation", "Compliance / Risk reduction"] }
+          ],
+          "template": "Using the maturity assessment, perform a detailed gap analysis.\n\nMaturity Assessment:\n---\n{previousOutput}\n---\n\n**ORGANISATION PRIORITY:** {orgPriority}\n\nGap Analysis:\n\n**1. GAP REGISTER**\n| Capability | Current (1-5) | Target (1-5) | Gap | Impact on {orgPriority} | Priority |\n|---|---|---|---|---|---|\n\n**2. ROOT CAUSE ANALYSIS** (for top 3 gaps)\nFor each:\n- What's causing the gap?\n- Is it people, process, technology, or culture?\n- What has been tried before? (if inferable)\n- What would closing this gap enable?\n\n**3. DEPENDENCIES MAP**\n- Which gaps need to be closed before others can be addressed?\n- Sequential vs. parallel improvements\n\n**4. QUICK WIN OPPORTUNITIES**\n- Gaps that can be partially closed with minimal effort\n- \"Low-hanging fruit\" that demonstrates immediate PMO value\n\n**5. RISK ASSESSMENT**\n- Risks of NOT closing priority gaps\n- Impact on stakeholder perception\n- Timeline risk (how urgent is action?)\n\nAlign gap priorities with {orgPriority}.\nDo NOT suggest closing all gaps simultaneously — PMO improvement must be phased."
+        },
+        {
+          "id": "maturity-roadmap",
+          "title": "Improvement Roadmap",
+          "instruction": "Paste the gap analysis. Now we'll build a phased roadmap with realistic milestones.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "roadmapHorizon", "label": "Roadmap Horizon", "type": "select", "options": ["6 months", "12 months", "18 months", "24 months"] },
+            { "id": "budget", "label": "Improvement Budget", "type": "text", "placeholder": "e.g. $50K, or No additional budget, or TBD" }
+          ],
+          "template": "Using the gap analysis, create a phased improvement roadmap.\n\nGap Analysis:\n---\n{previousOutput}\n---\n\n**HORIZON:** {roadmapHorizon}\n**BUDGET:** {budget}\n\nCreate a PMO Improvement Roadmap:\n\n**1. PHASED PLAN**\n\n**Phase 1: Foundation (Months 1-3)**\n| Initiative | Gap Addressed | Deliverable | Resource Need | Success Metric |\n|---|---|---|---|---|\n\n**Phase 2: Build (Months 4-6)**\n| Initiative | Gap Addressed | Deliverable | Resource Need | Success Metric |\n|---|---|---|---|---|\n\n**Phase 3: Mature (Months 7+)**\n| Initiative | Gap Addressed | Deliverable | Resource Need | Success Metric |\n|---|---|---|---|---|\n\n**2. IMPLEMENTATION TIMELINE** (visual)\nMonth 1: [Initiative A] [Initiative B]\nMonth 2: [Initiative A continues] [Initiative C]\n...\n\n**3. RESOURCE PLAN**\n- People needed (existing team vs. new hires vs. external)\n- Skills gaps in current team\n- Training requirements\n\n**4. RISK TO IMPROVEMENT PLAN**\n| Risk | Mitigation |\n|---|---|\n| Competing priorities | |\n| Budget constraints | |\n| Resistance to change | |\n| Key person dependency | |\n\n**5. MILESTONE CHECKPOINTS**\n| Milestone | Target Date | Success Criteria | Decision Point |\n|---|---|---|---|\n\nKeep the roadmap realistic given the budget and team size.\nDo NOT propose hiring or spending beyond the stated budget without flagging it."
+        },
+        {
+          "id": "maturity-business-case",
+          "title": "Business Case for PMO Investment",
+          "instruction": "Paste the roadmap. The final step creates a compelling business case to secure funding and executive support.",
+          "usePreviousOutput": true,
+          "fields": [
+            { "id": "audience", "label": "Business Case Audience", "type": "select", "options": ["C-Suite / Executive Team", "Board of Directors", "Finance / CFO", "IT Leadership", "Operational Leadership"] }
+          ],
+          "template": "Using the complete maturity assessment, gap analysis, and roadmap, draft a business case.\n\nImprovement Roadmap:\n---\n{previousOutput}\n---\n\n**AUDIENCE:** {audience}\n\nDraft a Business Case for PMO Investment:\n\n**1. EXECUTIVE SUMMARY** (1 paragraph, tailored to {audience})\n\n**2. CURRENT STATE**\n- PMO maturity level and key gaps (summary from Step 1)\n- Impact on the organisation (cost of inaction)\n\n**3. PROPOSED INVESTMENT**\n| Item | Cost | Timeline | Expected Return |\n|---|---|---|---|\n(From the roadmap phases)\n\n**4. BENEFITS ANALYSIS**\n| Benefit | Type (Tangible/Intangible) | Estimated Value | Realisation Timeline |\n|---|---|---|---|\n- Improved project delivery rates\n- Reduced cost overruns\n- Better resource utilisation\n- Enhanced decision-making\n- Reduced risk exposure\n\n**5. ROI PROJECTION**\n- Investment required (total)\n- Expected benefits (annual)\n- Payback period\n- **Note:** Flag estimates as [REQUIRES VALIDATION] where hard data isn't available\n\n**6. RISKS OF NOT INVESTING**\n- What happens if the PMO stays at current maturity?\n- Competitive/market implications\n- Stakeholder confidence trajectory\n\n**7. RECOMMENDATION**\n- Specific ask (budget, headcount, timeline)\n- Phased approach option (start small, prove value, expand)\n- Decision timeline\n\n**APPENDICES:**\n- A: Full maturity assessment scores\n- B: Detailed gap register\n- C: Implementation roadmap\n\nTailor language to {audience} — CFO wants numbers, CEO wants strategy, Board wants risk.\nDo NOT fabricate ROI numbers — provide frameworks and flag where real data is needed.\nMark all financial projections as [ESTIMATE — VALIDATE WITH FINANCE]."
+        }
+      ]
+    }
   ]
 }

@@ -1071,6 +1071,500 @@
       color: var(--text-primary);
     }
 
+    /* === CHAINS PANEL (Tier 3) === */
+    .chains-panel {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+      display: none;
+    }
+
+    .chains-panel.is-active { display: block; }
+
+    .chains-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .chains-intro-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .chains-intro-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* Chain selector grid */
+    .chains-selector {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .chains-selector-card {
+      background: var(--panel);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 1.15rem;
+      cursor: pointer;
+      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .chains-selector-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(245, 158, 11, 0.3);
+      box-shadow: 0 8px 24px rgba(245, 158, 11, 0.08);
+    }
+
+    .chains-selector-card.is-active {
+      border-color: var(--gold-accent);
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+    }
+
+    .chains-selector-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .chains-selector-icon {
+      font-size: 1.15rem;
+    }
+
+    .chains-selector-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .chains-selector-desc {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .chains-selector-meta {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .chains-meta-badge {
+      font-size: 0.65rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--badge-border);
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .chains-meta-badge.is-gold {
+      background: rgba(245, 158, 11, 0.08);
+      border-color: rgba(245, 158, 11, 0.25);
+      color: var(--gold-accent);
+    }
+
+    /* Chain workspace */
+    .chains-workspace {
+      max-width: 900px;
+      margin: 0 auto;
+      display: none;
+    }
+
+    .chains-workspace.is-active { display: block; }
+
+    .chains-workspace-header {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .chains-workspace-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .chains-workspace-title span {
+      color: var(--gold-accent);
+    }
+
+    .chains-workspace-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .chains-workspace-badges {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    /* Step progress bar */
+    .chains-progress {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 2rem;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
+    }
+
+    .chains-progress-step {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex-shrink: 0;
+    }
+
+    .chains-progress-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 2px solid var(--glass-border);
+      background: var(--panel);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      position: relative;
+    }
+
+    .chains-progress-dot:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+
+    .chains-progress-dot.is-active {
+      border-color: var(--gold-accent);
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--gold-accent);
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+    }
+
+    .chains-progress-dot.is-complete {
+      border-color: #10B981;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10B981;
+    }
+
+    .chains-progress-line {
+      width: 40px;
+      height: 2px;
+      background: var(--glass-border);
+      flex-shrink: 0;
+    }
+
+    .chains-progress-line.is-complete {
+      background: #10B981;
+    }
+
+    /* Step content */
+    .chains-step {
+      margin-bottom: 1.5rem;
+    }
+
+    .chains-step-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .chains-step-number {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--gold-accent);
+      font-size: 0.85rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .chains-step-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .chains-step-instruction {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    /* Previous output paste area */
+    .chains-previous-output {
+      margin-bottom: 1.25rem;
+      background: rgba(16, 185, 129, 0.04);
+      border: 1px dashed rgba(16, 185, 129, 0.25);
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .chains-previous-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #10B981;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .chains-previous-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.75rem;
+      background: rgba(10, 15, 25, 0.8);
+      border: 1px solid rgba(16, 185, 129, 0.15);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      resize: vertical;
+      transition: border-color var(--transition-fast);
+    }
+
+    .chains-previous-textarea:focus {
+      border-color: #10B981;
+      outline: none;
+    }
+
+    .chains-previous-textarea::placeholder {
+      color: rgba(16, 185, 129, 0.35);
+    }
+
+    /* Step fields — reuse forge section styles with chains-specific prefix */
+    .chains-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .chains-field-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .chains-field-input,
+    .chains-field-textarea,
+    .chains-field-select {
+      padding: 0.65rem 0.75rem;
+      background: rgba(10, 15, 25, 0.8);
+      border: 1px solid var(--badge-border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.85rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .chains-field-input:focus,
+    .chains-field-textarea:focus,
+    .chains-field-select:focus {
+      border-color: var(--gold-accent);
+      outline: none;
+    }
+
+    .chains-field-textarea {
+      min-height: 80px;
+      line-height: 1.5;
+      resize: vertical;
+    }
+
+    .chains-field-select {
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23b0c4de' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      padding-right: 2rem;
+    }
+
+    .chains-field-select option {
+      background: #1a1f2e;
+      color: var(--text-primary);
+    }
+
+    .chains-field-input::placeholder,
+    .chains-field-textarea::placeholder {
+      color: rgba(176, 196, 222, 0.4);
+    }
+
+    /* Chains preview — gold-tinted variant of forge preview */
+    .chains-preview {
+      margin-top: 1.5rem;
+      background: rgba(10, 15, 25, 0.9);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .chains-preview-label {
+      padding: 0.6rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold-accent);
+      background: rgba(245, 158, 11, 0.05);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .chains-preview-text {
+      padding: 1rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 400px;
+      overflow-y: auto;
+      line-height: 1.6;
+    }
+
+    /* Chains actions — reuse forge pattern with gold accent */
+    .chains-actions {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .chains-actions-row {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .chains-copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.25rem;
+      background: linear-gradient(135deg, var(--gold-accent), #D97706);
+      color: #000;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .chains-copy-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+    }
+
+    .chains-copy-btn.is-copied {
+      background: #10B981;
+    }
+
+    .chains-next-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.25rem;
+      background: transparent;
+      color: var(--gold-accent);
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: 1px solid var(--gold-accent);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background var(--transition-fast), color var(--transition-fast);
+    }
+
+    .chains-next-btn:hover {
+      background: rgba(245, 158, 11, 0.1);
+    }
+
+    .chains-prev-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.25rem;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid var(--glass-border);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: border-color var(--transition-fast), color var(--transition-fast);
+    }
+
+    .chains-prev-btn:hover {
+      border-color: var(--text-muted);
+      color: var(--text-primary);
+    }
+
+    .chains-launcher-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .chains-launcher-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-right: 0.25rem;
+    }
+
+    .chains-model-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.6rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--badge-border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.72rem;
+      text-decoration: none;
+      transition: border-color var(--transition-fast), color var(--transition-fast);
+    }
+
+    .chains-model-btn:hover {
+      border-color: var(--gold-accent);
+      color: var(--text-primary);
+    }
+
     /* === RESPONSIVE — Mobile-first (§2.5) === */
     @media (min-width: 768px) {
       .prompts-grid {
@@ -1125,6 +1619,27 @@
 
       .forge-selector {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      .chains-selector {
+        grid-template-columns: 1fr;
+      }
+
+      .chains-progress-line {
+        width: 20px;
+      }
+
+      .chains-progress-dot {
+        width: 30px;
+        height: 30px;
+        font-size: 0.72rem;
+      }
+
+      .chains-copy-btn,
+      .chains-next-btn,
+      .chains-prev-btn {
+        width: 100%;
+        justify-content: center;
       }
 
       .forge-section {
@@ -1254,9 +1769,8 @@
         <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret">
           <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h10l-1 5H6z"/><rect x="5" y="8" width="10" height="10" rx="1"/><line x1="10" y1="3" x2="10" y2="8"/><path d="M8 3c0-1 .9-1.5 2-1.5s2 .5 2 1.5"/></svg> Pr&ecirc;t-&agrave;-Porter</span>
         </button>
-        <button class="prompts-tab is-disabled" role="tab" aria-selected="false" aria-disabled="true" tabindex="-1">
+        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains">
           <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="10" rx="3.5" ry="5" transform="rotate(-30 6 10)"/><ellipse cx="14" cy="10" rx="3.5" ry="5" transform="rotate(30 14 10)"/></svg> Chains</span>
-          <span class="prompts-tab-badge">Coming Soon</span>
         </button>
       </div>
 
@@ -1271,6 +1785,20 @@
         </div>
         <div class="forge-workspace" id="forgeWorkspace">
           <!-- Rendered by ForgeModule on framework select -->
+        </div>
+      </div>
+
+      <!-- Chains Panel (Tier 3) -->
+      <div class="chains-panel" id="chainsPanel">
+        <div class="chains-intro">
+          <h2 class="chains-intro-title">Multi-Step Prompt Workflows</h2>
+          <p class="chains-intro-desc">Complete AI workflows for complex PMO scenarios. Each chain is 3-6 connected prompts that build on each other &mdash; paste each output as context for the next step.</p>
+        </div>
+        <div class="chains-selector" id="chainsSelector">
+          <!-- Rendered by ChainsModule -->
+        </div>
+        <div class="chains-workspace" id="chainsWorkspace">
+          <!-- Rendered by ChainsModule on chain select -->
         </div>
       </div>
 
@@ -2192,6 +2720,359 @@
     })();
 
     /* ============================================
+       CHAINS MODULE — Multi-step prompt workflows (Tier 3)
+       Website Design Contract §3.1 (IIFE), §3.3 (delegation)
+       ============================================ */
+    const ChainsModule = (() => {
+      'use strict';
+
+      let chainsData = null;
+      let activeChain = null;
+      let activeStepIndex = 0;
+
+      const selector = document.getElementById('chainsSelector');
+      const workspace = document.getElementById('chainsWorkspace');
+      const toast = document.getElementById('promptsToast');
+
+      const AI_MODELS = [
+        { name: 'ChatGPT', url: 'https://chatgpt.com/' },
+        { name: 'Claude', url: 'https://claude.ai/new' },
+        { name: 'Gemini', url: 'https://gemini.google.com/app' },
+        { name: 'Copilot', url: 'https://copilot.microsoft.com/' },
+        { name: 'Perplexity', url: 'https://www.perplexity.ai/' },
+        { name: 'DeepSeek', url: 'https://chat.deepseek.com/' },
+        { name: 'Qwen', url: 'https://chat.qwen.ai/' },
+        { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
+        { name: 'HuggingChat', url: 'https://huggingface.co/chat/' },
+        { name: 'Grok', url: 'https://grok.com/' }
+      ];
+
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      function escapeAttr(str) {
+        return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+
+      // ── Load chains from shared data ──
+      async function loadData() {
+        try {
+          const res = await fetch('data/prompts.json');
+          if (!res.ok) throw new Error('Failed to load prompts data');
+          const data = await res.json();
+          chainsData = data.chains || [];
+          renderSelector();
+        } catch (err) {
+          console.error('ChainsModule: Failed to load data', err);
+        }
+      }
+
+      // ── Render chain selector cards ──
+      function renderSelector() {
+        if (!selector || !chainsData) return;
+
+        selector.innerHTML = chainsData.map(chain =>
+          '<div class="chains-selector-card" data-chain="' + chain.id + '" role="button" tabindex="0">' +
+            '<div class="chains-selector-header">' +
+              '<span class="chains-selector-icon">' + chain.icon + '</span>' +
+              '<span class="chains-selector-title">' + escapeHtml(chain.title) + '</span>' +
+            '</div>' +
+            '<div class="chains-selector-desc">' + escapeHtml(chain.description) + '</div>' +
+            '<div class="chains-selector-meta">' +
+              '<span class="chains-meta-badge is-gold">' + chain.steps.length + ' steps</span>' +
+              '<span class="chains-meta-badge">' + escapeHtml(chain.estimatedTime) + '</span>' +
+              '<span class="chains-meta-badge">' + escapeHtml(chain.difficulty) + '</span>' +
+            '</div>' +
+          '</div>'
+        ).join('');
+      }
+
+      // ── Select a chain and render workspace ──
+      function selectChain(id) {
+        const chain = chainsData.find(c => c.id === id);
+        if (!chain) return;
+
+        activeChain = chain;
+        activeStepIndex = 0;
+
+        if (selector) {
+          selector.querySelectorAll('.chains-selector-card').forEach(card => {
+            card.classList.toggle('is-active', card.dataset.chain === id);
+          });
+        }
+
+        renderWorkspace();
+      }
+
+      // ── Render the workspace for the active chain & step ──
+      function renderWorkspace() {
+        if (!workspace || !activeChain) return;
+
+        const chain = activeChain;
+        const step = chain.steps[activeStepIndex];
+
+        // Progress bar
+        const progressHtml = chain.steps.map((s, i) => {
+          const dotClass = i === activeStepIndex ? 'is-active' : (i < activeStepIndex ? 'is-complete' : '');
+          const lineClass = i < activeStepIndex ? 'is-complete' : '';
+          let html = '<div class="chains-progress-step">';
+          html += '<div class="chains-progress-dot ' + dotClass + '" data-step-index="' + i + '" title="' + escapeAttr(s.title) + '">' + (i < activeStepIndex ? '&#10003;' : (i + 1)) + '</div>';
+          if (i < chain.steps.length - 1) {
+            html += '<div class="chains-progress-line ' + lineClass + '"></div>';
+          }
+          html += '</div>';
+          return html;
+        }).join('');
+
+        // Previous output textarea (for steps after step 1)
+        let previousOutputHtml = '';
+        if (step.usePreviousOutput) {
+          previousOutputHtml =
+            '<div class="chains-previous-output">' +
+              '<div class="chains-previous-label">&#x1F4CB; Paste output from Step ' + activeStepIndex + ' here</div>' +
+              '<textarea class="chains-previous-textarea" data-chains-previous="true" placeholder="Paste the AI\'s response from the previous step here..."></textarea>' +
+            '</div>';
+        }
+
+        // Step fields
+        const fieldsHtml = step.fields.map(f => {
+          let inputHtml = '';
+          if (f.type === 'text') {
+            inputHtml = '<input class="chains-field-input" type="text" data-chains-field="' + f.id + '" placeholder="' + escapeAttr(f.placeholder || '') + '">';
+          } else if (f.type === 'textarea') {
+            inputHtml = '<textarea class="chains-field-textarea" data-chains-field="' + f.id + '" placeholder="' + escapeAttr(f.placeholder || '') + '"></textarea>';
+          } else if (f.type === 'select') {
+            const opts = f.options.map(o => '<option value="' + escapeAttr(o) + '">' + escapeHtml(o) + '</option>').join('');
+            inputHtml = '<select class="chains-field-select" data-chains-field="' + f.id + '">' + opts + '</select>';
+          }
+          return '<div class="chains-field">' +
+            '<label class="chains-field-label">' + escapeHtml(f.label) + '</label>' +
+            inputHtml +
+          '</div>';
+        }).join('');
+
+        // Launcher buttons
+        const launcherBtns = AI_MODELS.map(m =>
+          '<a class="chains-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-chains-launcher="' + escapeAttr(m.name) + '">' + escapeHtml(m.name) + '</a>'
+        ).join('');
+
+        // Navigation buttons
+        let navHtml = '<div class="chains-actions-row">';
+        if (activeStepIndex > 0) {
+          navHtml += '<button class="chains-prev-btn" data-chains-nav="prev">&#8592; Step ' + activeStepIndex + '</button>';
+        }
+        navHtml += '<button class="chains-copy-btn" id="chainsCopyBtn"><span>&#x1F4CB;</span> Copy This Step\'s Prompt</button>';
+        if (activeStepIndex < chain.steps.length - 1) {
+          navHtml += '<button class="chains-next-btn" data-chains-nav="next">Step ' + (activeStepIndex + 2) + ' &#8594;</button>';
+        }
+        navHtml += '</div>';
+
+        workspace.innerHTML =
+          '<div class="chains-workspace-header">' +
+            '<div class="chains-workspace-title"><span>' + escapeHtml(chain.icon) + ' ' + escapeHtml(chain.title) + '</span></div>' +
+            '<div class="chains-workspace-desc">' + escapeHtml(chain.description) + '</div>' +
+            '<div class="chains-workspace-badges">' +
+              chain.knowledgeAreas.map(ka => '<span class="chains-meta-badge">' + escapeHtml(ka) + '</span>').join('') +
+            '</div>' +
+          '</div>' +
+          '<div class="chains-progress">' + progressHtml + '</div>' +
+          '<div class="chains-step">' +
+            '<div class="chains-step-header">' +
+              '<div class="chains-step-number">' + (activeStepIndex + 1) + '</div>' +
+              '<div class="chains-step-title">' + escapeHtml(step.title) + '</div>' +
+            '</div>' +
+            '<div class="chains-step-instruction">' + escapeHtml(step.instruction) + '</div>' +
+            previousOutputHtml +
+            fieldsHtml +
+          '</div>' +
+          '<div class="chains-preview">' +
+            '<div class="chains-preview-label">Step ' + (activeStepIndex + 1) + ' Prompt Preview</div>' +
+            '<div class="chains-preview-text" id="chainsPreviewText"></div>' +
+          '</div>' +
+          '<div class="chains-actions">' +
+            navHtml +
+            '<div class="chains-launcher-row">' +
+              '<span class="chains-launcher-label">Open in AI tool (copies prompt first):</span>' +
+              launcherBtns +
+            '</div>' +
+          '</div>';
+
+        workspace.classList.add('is-active');
+        updatePreview();
+      }
+
+      // ── Assemble prompt for current step ──
+      function assemblePrompt() {
+        if (!activeChain) return '';
+        const step = activeChain.steps[activeStepIndex];
+        let text = step.template;
+
+        // Replace {previousOutput} if present
+        if (step.usePreviousOutput) {
+          const prevEl = workspace.querySelector('[data-chains-previous]');
+          const prevVal = prevEl ? prevEl.value.trim() : '';
+          text = text.split('{previousOutput}').join(prevVal || '[Paste AI output from previous step]');
+        }
+
+        // Replace field placeholders
+        step.fields.forEach(f => {
+          const el = workspace.querySelector('[data-chains-field="' + f.id + '"]');
+          const val = el ? (el.value || '').trim() : '';
+          const placeholder = val || '[' + f.label + ']';
+          text = text.split('{' + f.id + '}').join(placeholder);
+        });
+
+        return text;
+      }
+
+      // ── Update live preview ──
+      function updatePreview() {
+        const previewEl = document.getElementById('chainsPreviewText');
+        if (!previewEl) return;
+        previewEl.textContent = assemblePrompt();
+      }
+
+      // ── Copy prompt ──
+      async function copyChainPrompt() {
+        const text = assemblePrompt();
+        const btn = document.getElementById('chainsCopyBtn');
+        try {
+          await navigator.clipboard.writeText(text);
+          showToast('Step ' + (activeStepIndex + 1) + ' prompt copied!');
+        } catch (err) {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast('Step ' + (activeStepIndex + 1) + ' prompt copied!');
+        }
+        if (btn) {
+          btn.classList.add('is-copied');
+          btn.innerHTML = '<span>&#10003;</span> Copied!';
+          setTimeout(() => {
+            btn.classList.remove('is-copied');
+            btn.innerHTML = '<span>&#x1F4CB;</span> Copy This Step\'s Prompt';
+          }, 2000);
+        }
+      }
+
+      // ── Model launcher ──
+      async function launchModel(modelName) {
+        const text = assemblePrompt();
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch (err) {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }
+        showToast('Step ' + (activeStepIndex + 1) + ' prompt copied! Opening ' + modelName + '...');
+      }
+
+      // ── Navigate steps ──
+      function goToStep(index) {
+        if (!activeChain || index < 0 || index >= activeChain.steps.length) return;
+        activeStepIndex = index;
+        renderWorkspace();
+        // Scroll workspace into view
+        if (workspace) workspace.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      // ── Toast ──
+      function showToast(message) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add('is-visible');
+        setTimeout(() => toast.classList.remove('is-visible'), 3000);
+      }
+
+      // ── Event delegation ──
+      function attachEvents() {
+        const chainsPanel = document.getElementById('chainsPanel');
+        if (!chainsPanel) return;
+
+        chainsPanel.addEventListener('click', (e) => {
+          // Chain selector card click
+          const card = e.target.closest('.chains-selector-card');
+          if (card) {
+            selectChain(card.dataset.chain);
+            return;
+          }
+
+          // Progress dot click
+          const dot = e.target.closest('.chains-progress-dot');
+          if (dot && dot.dataset.stepIndex !== undefined) {
+            goToStep(parseInt(dot.dataset.stepIndex, 10));
+            return;
+          }
+
+          // Navigation buttons
+          const navBtn = e.target.closest('[data-chains-nav]');
+          if (navBtn) {
+            if (navBtn.dataset.chainsNav === 'next') goToStep(activeStepIndex + 1);
+            if (navBtn.dataset.chainsNav === 'prev') goToStep(activeStepIndex - 1);
+            return;
+          }
+
+          // Copy button
+          const copyBtn = e.target.closest('.chains-copy-btn');
+          if (copyBtn) {
+            copyChainPrompt();
+            return;
+          }
+
+          // Model launcher
+          const launcherBtn = e.target.closest('[data-chains-launcher]');
+          if (launcherBtn) {
+            launchModel(launcherBtn.dataset.chainsLauncher);
+            return;
+          }
+        });
+
+        // Keyboard: Enter/Space on selector cards and progress dots
+        chainsPanel.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            const card = e.target.closest('.chains-selector-card');
+            if (card) {
+              e.preventDefault();
+              selectChain(card.dataset.chain);
+              return;
+            }
+            const dot = e.target.closest('.chains-progress-dot');
+            if (dot && dot.dataset.stepIndex !== undefined) {
+              e.preventDefault();
+              goToStep(parseInt(dot.dataset.stepIndex, 10));
+            }
+          }
+        });
+
+        // Live preview on input
+        chainsPanel.addEventListener('input', (e) => {
+          if (e.target.dataset.chainsField || e.target.dataset.chainsPrevious) {
+            updatePreview();
+          }
+        });
+      }
+
+      return {
+        init() {
+          attachEvents();
+          loadData();
+        }
+      };
+    })();
+
+    /* ============================================
        TAB SWITCHING — Forge / Prêt-à-Porter / Chains
        ============================================ */
     const TabSwitcher = (() => {
@@ -2199,11 +3080,13 @@
 
       const tabs = {
         forge: document.getElementById('tab-forge'),
-        pret: document.getElementById('tab-pret')
+        pret: document.getElementById('tab-pret'),
+        chains: document.getElementById('tab-chains')
       };
 
       const panels = {
         forge: document.getElementById('forgePanel'),
+        chains: document.getElementById('chainsPanel'),
         filters: document.getElementById('promptsFilters'),
         grid: document.getElementById('promptsGrid')
       };
@@ -2222,25 +3105,28 @@
           tabs[tabName].setAttribute('aria-selected', 'true');
         }
 
-        // Show/hide panels
+        // Hide all panels first
+        if (panels.forge) panels.forge.classList.remove('is-active');
+        if (panels.chains) panels.chains.classList.remove('is-active');
+        if (panels.filters) panels.filters.style.display = 'none';
+        if (panels.grid) panels.grid.style.display = 'none';
+
+        // Show the active panel
         if (tabName === 'forge') {
           if (panels.forge) panels.forge.classList.add('is-active');
-          if (panels.filters) panels.filters.style.display = 'none';
-          if (panels.grid) panels.grid.style.display = 'none';
+        } else if (tabName === 'chains') {
+          if (panels.chains) panels.chains.classList.add('is-active');
         } else {
-          if (panels.forge) panels.forge.classList.remove('is-active');
+          // pret-a-porter: show filters + grid
           if (panels.filters) panels.filters.style.display = '';
           if (panels.grid) panels.grid.style.display = '';
         }
       }
 
       function init() {
-        if (tabs.forge) {
-          tabs.forge.addEventListener('click', () => switchTo('forge'));
-        }
-        if (tabs.pret) {
-          tabs.pret.addEventListener('click', () => switchTo('pret'));
-        }
+        if (tabs.forge) tabs.forge.addEventListener('click', () => switchTo('forge'));
+        if (tabs.pret) tabs.pret.addEventListener('click', () => switchTo('pret'));
+        if (tabs.chains) tabs.chains.addEventListener('click', () => switchTo('chains'));
       }
 
       return { init };
@@ -2254,12 +3140,14 @@
         PromptsModule.init();
         PromptsVotesModule.init();
         ForgeModule.init();
+        ChainsModule.init();
         TabSwitcher.init();
       });
     } else {
       PromptsModule.init();
       PromptsVotesModule.init();
       ForgeModule.init();
+      ChainsModule.init();
       TabSwitcher.init();
     }
   </script>
