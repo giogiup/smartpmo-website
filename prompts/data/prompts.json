@@ -24,6 +24,244 @@
     "negative-constraints": { "name": "Negative Constraints", "badge": "🚫", "description": "Explicitly tells AI what NOT to do — no invented stats, no speculation" },
     "confidence-scoring": { "name": "Confidence Scoring", "badge": "📊", "description": "AI rates its confidence level for each recommendation" }
   },
+  "frameworks": [
+    {
+      "id": "craft",
+      "name": "CRAFT",
+      "fullName": "Context, Role, Action, Format, Tone",
+      "bestFor": "General PMO tasks",
+      "technique": "Structured decomposition",
+      "description": "The all-purpose framework. Break any PMO task into 5 clear sections that guide the AI to deliver exactly what you need.",
+      "sections": [
+        {
+          "id": "context",
+          "letter": "C",
+          "label": "Context",
+          "type": "textarea",
+          "placeholder": "e.g. We are midway through a 12-month ERP migration. The project is currently 3 weeks behind schedule with budget at 78% consumed...",
+          "help": "Ground the AI in YOUR reality. Without context, you get generic textbook answers that don't fit your situation."
+        },
+        {
+          "id": "role",
+          "letter": "R",
+          "label": "Role",
+          "type": "textarea",
+          "placeholder": "e.g. You are a senior PMO advisor with 15 years of experience in enterprise IT transformations...",
+          "help": "Setting a persona activates domain-specific language and reasoning patterns. The AI responds differently as a 'PMO advisor' vs a 'general assistant'."
+        },
+        {
+          "id": "action",
+          "letter": "A",
+          "label": "Action",
+          "type": "textarea",
+          "placeholder": "e.g. Draft a change impact assessment covering schedule, budget, resource, and stakeholder dimensions...",
+          "help": "Be specific about what you want delivered. 'Help me with risk' is vague. 'Build a risk register with probability and impact ratings' is actionable."
+        },
+        {
+          "id": "format",
+          "letter": "F",
+          "label": "Format",
+          "type": "textarea",
+          "placeholder": "e.g. Present as a table with columns: Area | Current State | Impact | Severity (H/M/L) | Mitigation Action...",
+          "help": "Structured output reduces hallucination. When you specify tables, headers, and sections, the AI is forced to be precise rather than rambling."
+        },
+        {
+          "id": "tone",
+          "letter": "T",
+          "label": "Tone",
+          "type": "textarea",
+          "placeholder": "e.g. Executive-level, concise, data-driven. Avoid jargon. Suitable for a steering committee presentation...",
+          "help": "Controls the register. A board paper needs different language than a team standup note. Specify your audience."
+        }
+      ],
+      "template": "CONTEXT:\n{context}\n\nROLE:\n{role}\n\nACTION:\n{action}\n\nFORMAT:\n{format}\n\nTONE:\n{tone}"
+    },
+    {
+      "id": "grounded",
+      "name": "GROUNDED",
+      "fullName": "Goal, Role, Output, Uncertainty, Negatives, Data, Evidence, Deliverable",
+      "bestFor": "High-stakes decisions (risk, cost, procurement)",
+      "technique": "Anti-hallucination focused",
+      "description": "The maximum-safety framework. 8 sections that systematically eliminate AI hallucination for decisions that carry real consequences.",
+      "sections": [
+        {
+          "id": "goal",
+          "letter": "G",
+          "label": "Goal",
+          "type": "textarea",
+          "placeholder": "e.g. Determine whether to proceed with Vendor A or Vendor B for our cloud migration, based on cost, risk, and capability fit...",
+          "help": "A clear goal prevents scope creep in the AI's response. Without it, the AI tries to be helpful in every direction."
+        },
+        {
+          "id": "role",
+          "letter": "R",
+          "label": "Role",
+          "type": "textarea",
+          "placeholder": "e.g. You are a procurement specialist advising a PMO on vendor selection for critical infrastructure...",
+          "help": "Domain-specific personas produce domain-specific reasoning. A 'procurement specialist' will consider contract terms a 'general advisor' would miss."
+        },
+        {
+          "id": "output",
+          "letter": "O",
+          "label": "Output",
+          "type": "textarea",
+          "placeholder": "e.g. A comparative analysis table with weighted scoring, followed by a recommendation paragraph with explicit reasoning...",
+          "help": "Defining exact output shape forces the AI to organise its thinking. No output spec = stream of consciousness."
+        },
+        {
+          "id": "uncertainty",
+          "letter": "U",
+          "label": "Uncertainty",
+          "type": "textarea",
+          "placeholder": "e.g. If you lack information to score a criterion, mark it as 'INSUFFICIENT DATA' rather than estimating. Flag all assumptions explicitly...",
+          "help": "This is the anti-hallucination core. AI models will confidently fabricate data rather than admit ignorance — unless you explicitly instruct otherwise."
+        },
+        {
+          "id": "negatives",
+          "letter": "N",
+          "label": "Negatives",
+          "type": "textarea",
+          "placeholder": "e.g. Do NOT invent cost figures, SLA percentages, or market share data. Do NOT recommend a vendor without stating your confidence level...",
+          "help": "Negative constraints are surprisingly powerful. Telling the AI what NOT to do is often more effective than telling it what to do."
+        },
+        {
+          "id": "data",
+          "letter": "D",
+          "label": "Data",
+          "type": "textarea",
+          "placeholder": "e.g. Vendor A: $2.1M/3yr, 99.9% SLA, SOC2 certified. Vendor B: $1.8M/3yr, 99.5% SLA, ISO 27001...",
+          "help": "Feed the AI real data. The more specific data you provide, the less the AI needs to guess. Data-in = quality-out."
+        },
+        {
+          "id": "evidence",
+          "letter": "E",
+          "label": "Evidence",
+          "type": "textarea",
+          "placeholder": "e.g. For each recommendation, cite which specific data point supports it. If no data supports a claim, state that explicitly...",
+          "help": "Forces the AI to show its working. Prevents unsupported claims from sneaking into high-stakes recommendations."
+        },
+        {
+          "id": "deliverable",
+          "letter": "D",
+          "label": "Deliverable",
+          "type": "textarea",
+          "placeholder": "e.g. Final output must include: (1) Weighted comparison table, (2) Risk summary per vendor, (3) Recommendation with confidence rating (High/Medium/Low)...",
+          "help": "The final checkpoint. Specifying the exact deliverable structure ensures nothing critical is omitted from the output."
+        }
+      ],
+      "template": "GOAL:\n{goal}\n\nROLE:\n{role}\n\nOUTPUT FORMAT:\n{output}\n\nUNCERTAINTY RULES:\n{uncertainty}\n\nNEGATIVE CONSTRAINTS:\n{negatives}\n\nDATA PROVIDED:\n{data}\n\nEVIDENCE REQUIREMENTS:\n{evidence}\n\nDELIVERABLE SPECIFICATION:\n{deliverable}"
+    },
+    {
+      "id": "chain",
+      "name": "CHAIN",
+      "fullName": "Chunk, Hypothesise, Analyse, Iterate, Narrow",
+      "bestFor": "Complex analysis (lessons learned, root cause, portfolio review)",
+      "technique": "Chain-of-thought reasoning",
+      "description": "The deep-thinking framework. Forces the AI to break complex problems into steps rather than jumping to conclusions.",
+      "sections": [
+        {
+          "id": "chunk",
+          "letter": "C",
+          "label": "Chunk",
+          "type": "textarea",
+          "placeholder": "e.g. Break down our project portfolio of 12 active projects into logical groupings: by business unit, by budget tier (>$1M, $500K-$1M, <$500K), and by health status...",
+          "help": "Complex problems become tractable when decomposed. Chunking forces the AI to organise before analysing, preventing superficial answers."
+        },
+        {
+          "id": "hypothesise",
+          "letter": "H",
+          "label": "Hypothesise",
+          "type": "textarea",
+          "placeholder": "e.g. For each grouping, hypothesise what patterns might explain current performance. Consider: resource contention, dependency chains, governance overhead...",
+          "help": "Hypotheses create a structured investigation path. The AI tests ideas rather than narrating observations — a huge quality difference."
+        },
+        {
+          "id": "analyse",
+          "letter": "A",
+          "label": "Analyse",
+          "type": "textarea",
+          "placeholder": "e.g. Test each hypothesis against the data provided. For each, state whether the evidence supports, contradicts, or is inconclusive. Show your reasoning...",
+          "help": "This is where chain-of-thought shines. Step-by-step analysis catches errors that a single-pass response would miss."
+        },
+        {
+          "id": "iterate",
+          "letter": "I",
+          "label": "Iterate",
+          "type": "textarea",
+          "placeholder": "e.g. Based on initial analysis, identify any new questions or patterns that emerge. Are there second-order effects? Cross-project dependencies?...",
+          "help": "First-pass analysis rarely catches everything. Explicit iteration instructions prevent the AI from stopping at surface-level findings."
+        },
+        {
+          "id": "narrow",
+          "letter": "N",
+          "label": "Narrow",
+          "type": "textarea",
+          "placeholder": "e.g. Synthesise findings into the top 3-5 actionable recommendations. Prioritise by impact and feasibility. Each recommendation must reference specific evidence...",
+          "help": "Without narrowing, analysis expands forever. This section forces convergence on actionable outputs — what the PMO actually needs."
+        }
+      ],
+      "template": "STEP 1 — CHUNK:\n{chunk}\n\nSTEP 2 — HYPOTHESISE:\n{hypothesise}\n\nSTEP 3 — ANALYSE:\n{analyse}\n\nSTEP 4 — ITERATE:\n{iterate}\n\nSTEP 5 — NARROW:\n{narrow}"
+    },
+    {
+      "id": "verify",
+      "name": "VERIFY",
+      "fullName": "Vision, Evidence, Reason, Identify gaps, Format, Your review",
+      "bestFor": "Fact-critical outputs (reports, audits, compliance)",
+      "technique": "Self-verification loop",
+      "description": "The trust-but-verify framework. Built for outputs that will be reviewed by auditors, regulators, or executives who will check your facts.",
+      "sections": [
+        {
+          "id": "vision",
+          "letter": "V",
+          "label": "Vision",
+          "type": "textarea",
+          "placeholder": "e.g. Produce a quarterly PMO performance report for the executive steering committee covering Q1 2026 programme health...",
+          "help": "Start with the end state. What does the finished, verified output look like? This anchors the entire generation process."
+        },
+        {
+          "id": "evidence",
+          "letter": "E",
+          "label": "Evidence",
+          "type": "textarea",
+          "placeholder": "e.g. Use ONLY these data sources: Project status reports (attached), Budget tracker (Q1 actuals), Risk register (current version)...",
+          "help": "Explicitly listing evidence sources prevents the AI from inventing data. If it's not in your evidence list, the AI shouldn't use it."
+        },
+        {
+          "id": "reason",
+          "letter": "R",
+          "label": "Reason",
+          "type": "textarea",
+          "placeholder": "e.g. For each finding or recommendation, explain the logical chain: what data led to what conclusion. An auditor should be able to trace every claim back to a source...",
+          "help": "Reasoning chains make outputs auditable. Every claim should trace back to specific evidence — if it can't, it shouldn't be in the report."
+        },
+        {
+          "id": "identify",
+          "letter": "I",
+          "label": "Identify Gaps",
+          "type": "textarea",
+          "placeholder": "e.g. After completing the report, list any sections where data was insufficient. For each gap, state what additional information would be needed...",
+          "help": "Gap identification is what separates professional reports from AI-generated fluff. Acknowledging limitations builds trust with stakeholders."
+        },
+        {
+          "id": "format",
+          "letter": "F",
+          "label": "Format",
+          "type": "textarea",
+          "placeholder": "e.g. Structure as: Executive Summary (1 page), Programme Health Dashboard (table), Risk Overview, Financial Summary, Recommendations...",
+          "help": "Audit-grade documents follow strict formatting. Specifying section structure ensures completeness and professional presentation."
+        },
+        {
+          "id": "yourReview",
+          "letter": "Y",
+          "label": "Your Review",
+          "type": "textarea",
+          "placeholder": "e.g. After completing the report, perform a self-review: (1) Flag any claims not supported by the evidence provided, (2) Rate confidence per section (H/M/L), (3) List assumptions made...",
+          "help": "The self-verification loop. The AI reviews its own output and flags problems before you see them. Catches errors that would otherwise reach stakeholders."
+        }
+      ],
+      "template": "VISION:\n{vision}\n\nEVIDENCE SOURCES:\n{evidence}\n\nREASONING REQUIREMENTS:\n{reason}\n\nGAP IDENTIFICATION:\n{identify}\n\nOUTPUT FORMAT:\n{format}\n\nSELF-REVIEW INSTRUCTIONS:\n{yourReview}"
+    }
+  ],
   "prompts": [
     {
       "id": "project-charter-generator",

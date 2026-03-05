@@ -775,6 +775,302 @@
       font-size: 0.8rem;
     }
 
+    /* === FORGE TIER — Framework builder === */
+    .forge-panel {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+      display: none;
+    }
+
+    .forge-panel.is-active { display: block; }
+
+    .forge-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .forge-intro-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .forge-intro-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Framework selector cards */
+    .forge-selector {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .forge-selector-card {
+      background: var(--panel);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 1rem;
+      cursor: pointer;
+      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+      text-align: center;
+    }
+
+    .forge-selector-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(6, 182, 212, 0.3);
+      box-shadow: 0 8px 24px rgba(6, 182, 212, 0.08);
+    }
+
+    .forge-selector-card.is-active {
+      border-color: var(--cyan-primary);
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+    }
+
+    .forge-selector-name {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--cyan-primary);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .forge-selector-full {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    .forge-selector-bestfor {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      font-style: italic;
+    }
+
+    /* Framework workspace */
+    .forge-workspace {
+      max-width: 900px;
+      margin: 0 auto;
+      display: none;
+    }
+
+    .forge-workspace.is-active { display: block; }
+
+    .forge-workspace-header {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .forge-workspace-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .forge-workspace-title span {
+      color: var(--cyan-primary);
+    }
+
+    .forge-workspace-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .forge-workspace-technique {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #a78bfa;
+      background: rgba(167, 139, 250, 0.1);
+      border: 1px solid rgba(167, 139, 250, 0.2);
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    /* Section cards */
+    .forge-section {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      background: var(--panel);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .forge-section:focus-within {
+      border-color: rgba(6, 182, 212, 0.3);
+    }
+
+    .forge-section-letter {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(6, 182, 212, 0.15);
+      color: var(--cyan-primary);
+      font-size: 1.1rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .forge-section-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .forge-section-label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .forge-section-help {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    .forge-section-input {
+      width: 100%;
+      min-height: 80px;
+      padding: 0.75rem;
+      background: rgba(10, 15, 25, 0.8);
+      border: 1px solid var(--badge-border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      resize: vertical;
+      transition: border-color var(--transition-fast);
+    }
+
+    .forge-section-input:focus {
+      border-color: var(--cyan-primary);
+      outline: none;
+    }
+
+    .forge-section-input::placeholder {
+      color: rgba(176, 196, 222, 0.4);
+    }
+
+    /* Preview panel */
+    .forge-preview {
+      margin-top: 1.5rem;
+      background: rgba(10, 15, 25, 0.9);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .forge-preview-label {
+      padding: 0.6rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--cyan-primary);
+      background: rgba(6, 182, 212, 0.05);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .forge-preview-text {
+      padding: 1rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 400px;
+      overflow-y: auto;
+      line-height: 1.6;
+    }
+
+    /* Actions bar */
+    .forge-actions {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .forge-copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.25rem;
+      background: linear-gradient(135deg, var(--cyan-primary), #825AFF);
+      color: #000;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      align-self: flex-start;
+    }
+
+    .forge-copy-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(6, 182, 212, 0.3);
+    }
+
+    .forge-copy-btn.is-copied {
+      background: #10B981;
+    }
+
+    .forge-launcher-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .forge-launcher-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-right: 0.25rem;
+    }
+
+    .forge-model-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.6rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--badge-border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.72rem;
+      text-decoration: none;
+      transition: border-color var(--transition-fast), color var(--transition-fast);
+    }
+
+    .forge-model-btn:hover {
+      border-color: var(--cyan-primary);
+      color: var(--text-primary);
+    }
+
     /* === RESPONSIVE — Mobile-first (§2.5) === */
     @media (min-width: 768px) {
       .prompts-grid {
@@ -825,6 +1121,26 @@
       .prompts-model-btn {
         min-height: 40px;
         padding: 0.4rem 0.6rem;
+      }
+
+      .forge-selector {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .forge-section {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .forge-section-letter {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+      }
+
+      .forge-copy-btn {
+        width: 100%;
+        justify-content: center;
       }
     }
   </style>
@@ -932,9 +1248,8 @@
 
       <!-- Tab Bar -->
       <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
-        <button class="prompts-tab is-disabled" role="tab" aria-selected="false" aria-disabled="true" tabindex="-1">
+        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge">
           <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2l3 5h-2l3 5H5l3-5H6z"/><rect x="8.5" y="12" width="3" height="6" rx="0.5"/></svg> Forge</span>
-          <span class="prompts-tab-badge">Coming Soon</span>
         </button>
         <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret">
           <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h10l-1 5H6z"/><rect x="5" y="8" width="10" height="10" rx="1"/><line x1="10" y1="3" x2="10" y2="8"/><path d="M8 3c0-1 .9-1.5 2-1.5s2 .5 2 1.5"/></svg> Pr&ecirc;t-&agrave;-Porter</span>
@@ -945,8 +1260,22 @@
         </button>
       </div>
 
+      <!-- Forge Panel (Tier 1) -->
+      <div class="forge-panel" id="forgePanel">
+        <div class="forge-intro">
+          <h2 class="forge-intro-title">Build Your Own Prompt</h2>
+          <p class="forge-intro-desc">Choose a framework below. Each teaches you a structured approach to prompt engineering &mdash; fill in the sections, and watch your prompt assemble in real time.</p>
+        </div>
+        <div class="forge-selector" id="forgeSelector">
+          <!-- Rendered by ForgeModule -->
+        </div>
+        <div class="forge-workspace" id="forgeWorkspace">
+          <!-- Rendered by ForgeModule on framework select -->
+        </div>
+      </div>
+
       <!-- Filters -->
-      <div class="prompts-filters" role="search" aria-label="Filter prompts">
+      <div class="prompts-filters" id="promptsFilters" role="search" aria-label="Filter prompts">
         <select class="prompts-filter-select" id="filterArea" aria-label="Filter by Knowledge Area">
           <option value="all">All Knowledge Areas</option>
         </select>
@@ -1611,16 +1940,327 @@
     })();
 
     /* ============================================
+       FORGE MODULE — Framework prompt builder (Tier 1)
+       Website Design Contract §3.1 (IIFE), §3.3 (delegation)
+       ============================================ */
+    const ForgeModule = (() => {
+      'use strict';
+
+      let frameworksData = null;
+      let activeFramework = null;
+
+      const selector = document.getElementById('forgeSelector');
+      const workspace = document.getElementById('forgeWorkspace');
+      const toast = document.getElementById('promptsToast');
+
+      // Reuse AI_MODELS from PromptsModule scope — duplicate here for encapsulation
+      const AI_MODELS = [
+        { name: 'ChatGPT', url: 'https://chatgpt.com/' },
+        { name: 'Claude', url: 'https://claude.ai/new' },
+        { name: 'Gemini', url: 'https://gemini.google.com/app' },
+        { name: 'Copilot', url: 'https://copilot.microsoft.com/' },
+        { name: 'Perplexity', url: 'https://www.perplexity.ai/' },
+        { name: 'DeepSeek', url: 'https://chat.deepseek.com/' },
+        { name: 'Qwen', url: 'https://chat.qwen.ai/' },
+        { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
+        { name: 'HuggingChat', url: 'https://huggingface.co/chat/' },
+        { name: 'Grok', url: 'https://grok.com/' }
+      ];
+
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      function escapeAttr(str) {
+        return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+
+      // ── Load frameworks from shared data ──
+      async function loadData() {
+        try {
+          const res = await fetch('data/prompts.json');
+          if (!res.ok) throw new Error('Failed to load prompts data');
+          const data = await res.json();
+          frameworksData = data.frameworks || [];
+          renderSelector();
+        } catch (err) {
+          console.error('ForgeModule: Failed to load data', err);
+        }
+      }
+
+      // ── Render framework selector cards ──
+      function renderSelector() {
+        if (!selector || !frameworksData) return;
+
+        selector.innerHTML = frameworksData.map(fw =>
+          '<div class="forge-selector-card" data-framework="' + fw.id + '" role="button" tabindex="0">' +
+            '<div class="forge-selector-name">' + escapeHtml(fw.name) + '</div>' +
+            '<div class="forge-selector-full">' + escapeHtml(fw.fullName) + '</div>' +
+            '<div class="forge-selector-bestfor">' + escapeHtml(fw.bestFor) + '</div>' +
+          '</div>'
+        ).join('');
+      }
+
+      // ── Select a framework and render workspace ──
+      function selectFramework(id) {
+        const fw = frameworksData.find(f => f.id === id);
+        if (!fw) return;
+
+        activeFramework = fw;
+
+        // Update selector active state
+        if (selector) {
+          selector.querySelectorAll('.forge-selector-card').forEach(card => {
+            card.classList.toggle('is-active', card.dataset.framework === id);
+          });
+        }
+
+        renderWorkspace(fw);
+      }
+
+      // ── Render the workspace for a selected framework ──
+      function renderWorkspace(fw) {
+        if (!workspace) return;
+
+        const sectionsHtml = fw.sections.map(s =>
+          '<div class="forge-section">' +
+            '<div class="forge-section-letter">' + escapeHtml(s.letter) + '</div>' +
+            '<div class="forge-section-content">' +
+              '<div class="forge-section-label">' + escapeHtml(s.label) + '</div>' +
+              '<div class="forge-section-help">' + escapeHtml(s.help) + '</div>' +
+              '<textarea class="forge-section-input" data-forge-section="' + s.id + '" placeholder="' + escapeAttr(s.placeholder || '') + '"></textarea>' +
+            '</div>' +
+          '</div>'
+        ).join('');
+
+        const launcherBtns = AI_MODELS.map(m =>
+          '<a class="forge-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-forge-launcher="' + escapeAttr(m.name) + '">' + escapeHtml(m.name) + '</a>'
+        ).join('');
+
+        workspace.innerHTML =
+          '<div class="forge-workspace-header">' +
+            '<div class="forge-workspace-title"><span>' + escapeHtml(fw.name) + '</span> Framework</div>' +
+            '<div class="forge-workspace-desc">' + escapeHtml(fw.description) + '</div>' +
+            '<span class="forge-workspace-technique">' + escapeHtml(fw.technique) + '</span>' +
+          '</div>' +
+          sectionsHtml +
+          '<div class="forge-preview">' +
+            '<div class="forge-preview-label">Live Prompt Preview</div>' +
+            '<div class="forge-preview-text" id="forgePreviewText">' + escapeHtml(fw.template) + '</div>' +
+          '</div>' +
+          '<div class="forge-actions">' +
+            '<button class="forge-copy-btn" id="forgeCopyBtn">' +
+              '<span>📋</span> Copy Prompt' +
+            '</button>' +
+            '<div class="forge-launcher-row">' +
+              '<span class="forge-launcher-label">Open in AI tool (copies prompt first):</span>' +
+              launcherBtns +
+            '</div>' +
+          '</div>';
+
+        workspace.classList.add('is-active');
+        updatePreview();
+      }
+
+      // ── Assemble prompt from section inputs ──
+      function assemblePrompt() {
+        if (!activeFramework) return '';
+        let text = activeFramework.template;
+        activeFramework.sections.forEach(s => {
+          const el = workspace.querySelector('[data-forge-section="' + s.id + '"]');
+          const val = el ? el.value.trim() : '';
+          const placeholder = val || '[' + s.label + ']';
+          text = text.split('{' + s.id + '}').join(placeholder);
+        });
+        return text;
+      }
+
+      // ── Update live preview ──
+      function updatePreview() {
+        const previewEl = document.getElementById('forgePreviewText');
+        if (!previewEl) return;
+        previewEl.textContent = assemblePrompt();
+      }
+
+      // ── Copy prompt to clipboard ──
+      async function copyForgePrompt() {
+        const text = assemblePrompt();
+        const btn = document.getElementById('forgeCopyBtn');
+        try {
+          await navigator.clipboard.writeText(text);
+          showToast('Prompt copied to clipboard!');
+        } catch (err) {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast('Prompt copied to clipboard!');
+        }
+        if (btn) {
+          btn.classList.add('is-copied');
+          btn.innerHTML = '<span>✅</span> Copied!';
+          setTimeout(() => {
+            btn.classList.remove('is-copied');
+            btn.innerHTML = '<span>📋</span> Copy Prompt';
+          }, 2000);
+        }
+      }
+
+      // ── Model launcher ──
+      async function launchModel(modelName) {
+        const text = assemblePrompt();
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch (err) {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }
+        showToast('Prompt copied! Opening ' + modelName + '...');
+      }
+
+      // ── Toast ──
+      function showToast(message) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add('is-visible');
+        setTimeout(() => toast.classList.remove('is-visible'), 3000);
+      }
+
+      // ── Event delegation ──
+      function attachEvents() {
+        const forgePanel = document.getElementById('forgePanel');
+        if (!forgePanel) return;
+
+        forgePanel.addEventListener('click', (e) => {
+          // Framework selector card click
+          const card = e.target.closest('.forge-selector-card');
+          if (card) {
+            selectFramework(card.dataset.framework);
+            return;
+          }
+
+          // Copy button
+          const copyBtn = e.target.closest('.forge-copy-btn');
+          if (copyBtn) {
+            copyForgePrompt();
+            return;
+          }
+
+          // Model launcher
+          const launcherBtn = e.target.closest('[data-forge-launcher]');
+          if (launcherBtn) {
+            launchModel(launcherBtn.dataset.forgeLauncher);
+            return;
+          }
+        });
+
+        // Keyboard: Enter/Space on selector cards
+        forgePanel.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            const card = e.target.closest('.forge-selector-card');
+            if (card) {
+              e.preventDefault();
+              selectFramework(card.dataset.framework);
+            }
+          }
+        });
+
+        // Live preview on input
+        forgePanel.addEventListener('input', (e) => {
+          if (e.target.classList.contains('forge-section-input')) {
+            updatePreview();
+          }
+        });
+      }
+
+      return {
+        init() {
+          attachEvents();
+          loadData();
+        }
+      };
+    })();
+
+    /* ============================================
+       TAB SWITCHING — Forge / Prêt-à-Porter / Chains
+       ============================================ */
+    const TabSwitcher = (() => {
+      'use strict';
+
+      const tabs = {
+        forge: document.getElementById('tab-forge'),
+        pret: document.getElementById('tab-pret')
+      };
+
+      const panels = {
+        forge: document.getElementById('forgePanel'),
+        filters: document.getElementById('promptsFilters'),
+        grid: document.getElementById('promptsGrid')
+      };
+
+      function switchTo(tabName) {
+        // Update tab active states
+        Object.values(tabs).forEach(tab => {
+          if (tab) {
+            tab.classList.remove('is-active');
+            tab.setAttribute('aria-selected', 'false');
+          }
+        });
+
+        if (tabs[tabName]) {
+          tabs[tabName].classList.add('is-active');
+          tabs[tabName].setAttribute('aria-selected', 'true');
+        }
+
+        // Show/hide panels
+        if (tabName === 'forge') {
+          if (panels.forge) panels.forge.classList.add('is-active');
+          if (panels.filters) panels.filters.style.display = 'none';
+          if (panels.grid) panels.grid.style.display = 'none';
+        } else {
+          if (panels.forge) panels.forge.classList.remove('is-active');
+          if (panels.filters) panels.filters.style.display = '';
+          if (panels.grid) panels.grid.style.display = '';
+        }
+      }
+
+      function init() {
+        if (tabs.forge) {
+          tabs.forge.addEventListener('click', () => switchTo('forge'));
+        }
+        if (tabs.pret) {
+          tabs.pret.addEventListener('click', () => switchTo('pret'));
+        }
+      }
+
+      return { init };
+    })();
+
+    /* ============================================
        INITIALIZATION
        ============================================ */
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', () => {
         PromptsModule.init();
         PromptsVotesModule.init();
+        ForgeModule.init();
+        TabSwitcher.init();
       });
     } else {
       PromptsModule.init();
       PromptsVotesModule.init();
+      ForgeModule.init();
+      TabSwitcher.init();
     }
   </script>
 </body>
