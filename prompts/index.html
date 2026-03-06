@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prompt Prêt-à-Porter — AI Prompts for PMO Professionals | SmartPMO.ai</title>
+  <title>PMO Prompt Hub — AI Prompts for PMO Professionals | SmartPMO.ai</title>
   <meta name="description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. 20+ ready-to-use prompts across all PMBOK Knowledge Areas. Free, no login required.">
   <meta name="keywords" content="PMO prompts, AI prompts for project management, PMBOK, project charter generator, risk register, WBS generator, stakeholder management, agile retrospective">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Prompt Prêt-à-Porter — AI Prompts for PMO Professionals">
+  <meta property="og:title" content="PMO Prompt Hub — AI Prompts for PMO Professionals">
   <meta property="og:description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.">
   <meta property="og:url" content="https://smartpmo.ai/prompts">
   <meta property="og:site_name" content="SmartPMO.ai">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Prompt Prêt-à-Porter — AI Prompts for PMO Professionals">
+  <meta name="twitter:title" content="PMO Prompt Hub — AI Prompts for PMO Professionals">
   <meta name="twitter:description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.">
 
   <!-- Canonical -->
@@ -28,7 +28,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://smartpmo.ai/prompts#collection",
-    "name": "Prompt Prêt-à-Porter — AI Prompts for PMO Professionals",
+    "name": "PMO Prompt Hub — AI Prompts for PMO Professionals",
     "description": "Expert-crafted, hallucination-proof AI prompts across all PMBOK Knowledge Areas. Free, model-agnostic, ready to use.",
     "url": "https://smartpmo.ai/prompts",
     "isPartOf": { "@id": "https://smartpmo.ai/#website" },
@@ -120,7 +120,7 @@
     .prompts-hero {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 3rem 1rem 2rem;
+      padding: 1.5rem 1rem 1rem;
       text-align: center;
     }
 
@@ -224,10 +224,19 @@
     }
 
     /* === FILTER BAR === */
+    .prompts-filter-sticky-wrap {
+      position: sticky;
+      top: 70px;
+      z-index: 50;
+      background: rgba(5, 5, 5, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--glass-border);
+    }
     .prompts-filters {
       max-width: var(--max-width);
-      margin: 1.5rem auto 0;
-      padding: 0 1rem;
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
       display: flex;
       gap: 0.75rem;
       flex-wrap: wrap;
@@ -279,8 +288,9 @@
     .prompts-filter-count {
       font-size: 0.8rem;
       color: var(--text-muted);
-      margin-left: auto;
       white-space: nowrap;
+      width: 100%;
+      text-align: left;
     }
 
     /* === PROMPTS GRID === */
@@ -478,6 +488,11 @@
       line-height: 1.5;
     }
 
+    /* Fix #15: Card tap highlight */
+    .prompts-card-header:active {
+      background: rgba(6, 182, 212, 0.06);
+    }
+
     /* Card body (expandable) */
     .prompts-card-body {
       max-height: 0;
@@ -576,7 +591,7 @@
     .prompts-preview-text {
       background: rgba(5, 10, 20, 0.9);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 8px;
+      border-radius: 8px 8px 0 0;
       padding: 1rem;
       font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
       font-size: 0.78rem;
@@ -584,8 +599,13 @@
       color: var(--text-muted);
       white-space: pre-wrap;
       word-break: break-word;
-      max-height: 400px;
-      overflow-y: auto;
+      max-height: 150px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .prompts-preview-text.is-expanded {
+      max-height: none;
+      border-radius: 8px 8px 0 0;
     }
 
     .prompts-preview-text .prompts-field-highlight {
@@ -1571,8 +1591,9 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .prompts-filters {
-        flex-wrap: nowrap;
+      /* Fix #1: Expanded card breaks out of 2-col grid */
+      .prompts-card.is-expanded {
+        grid-column: 1 / -1;
       }
     }
 
@@ -1582,7 +1603,7 @@
       }
 
       .prompts-hero {
-        padding: 4rem 1rem 2.5rem;
+        padding: 2rem 1rem 1.5rem;
       }
     }
 
@@ -1657,6 +1678,269 @@
         width: 100%;
         justify-content: center;
       }
+    }
+    /* === FIX #1: 2-PANEL DESKTOP LAYOUT ON EXPANDED CARD === */
+    @media (min-width: 1024px) {
+      .prompts-card.is-expanded {
+        grid-column: 1 / -1;
+      }
+      .prompts-card.is-expanded .prompts-card-body-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1.5rem;
+        padding-top: 1rem;
+      }
+      .prompts-card.is-expanded .prompts-card-fields {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .prompts-card.is-expanded .prompts-card-preview {
+        grid-column: 2;
+        grid-row: 1;
+        position: sticky;
+        top: 80px;
+        align-self: start;
+        margin-top: 0;
+      }
+      .prompts-card.is-expanded .prompts-card-actions {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+    }
+
+    /* === FIX #2: TECHNIQUE BADGE LABELS === */
+    .prompts-technique-label {
+      display: none;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-left: 2px;
+    }
+    .prompts-card.is-expanded .prompts-technique-label {
+      display: inline;
+    }
+    .prompts-card.is-expanded .prompts-technique-badge {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid var(--badge-border);
+    }
+
+    /* === FIX #2B: TECHNIQUE LEGEND === */
+    .prompts-legend-bar {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1rem;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .prompts-legend-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.78rem;
+      cursor: pointer;
+      padding: 0.5rem 0;
+      transition: color var(--transition-fast);
+    }
+    .prompts-legend-toggle:hover { color: var(--text-primary); }
+    .prompts-legend-toggle-icon {
+      font-size: 0.65rem;
+      transition: transform var(--transition-base);
+      margin-left: 0.25rem;
+    }
+    .prompts-legend-toggle.is-open .prompts-legend-toggle-icon { transform: rotate(90deg); }
+    .prompts-legend-grid {
+      display: none;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.5rem;
+      padding: 0.75rem 0 1rem;
+    }
+    .prompts-legend-grid.is-open { display: grid; }
+    .prompts-legend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+    }
+    .prompts-legend-item-icon { flex-shrink: 0; padding-top: 1px; }
+    .prompts-legend-item-name { font-weight: 600; color: var(--text-primary); }
+    .prompts-legend-item-desc { color: var(--text-muted); font-size: 0.7rem; }
+
+    /* === FIX #4: COLLAPSIBLE PREVIEW === */
+    .prompts-preview-wrapper { position: relative; }
+    .prompts-preview-fade {
+      position: absolute;
+      bottom: 28px;
+      left: 0; right: 0;
+      height: 40px;
+      background: linear-gradient(transparent, rgba(5, 10, 20, 0.95));
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .prompts-preview-text.is-expanded + .prompts-preview-fade { opacity: 0; }
+    .prompts-preview-toggle {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      background: rgba(5, 10, 20, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      color: var(--cyan-primary);
+      font-family: inherit;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      min-height: 36px;
+      transition: background var(--transition-fast);
+    }
+    .prompts-preview-toggle:hover { background: rgba(6, 182, 212, 0.08); }
+
+    /* === FIX #6: SHARE ROW === */
+    .prompts-share-row {
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+      margin-left: auto;
+    }
+    .prompts-share-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid transparent;
+      background: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 6px;
+      transition: color var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .prompts-share-btn:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--badge-border);
+    }
+
+    /* === FIX #8: MODEL LAUNCHER BRAND COLORS === */
+    .prompts-model-btn[data-launcher="ChatGPT"]:hover { border-color: rgba(16, 163, 127, 0.6); color: #10a37f; }
+    .prompts-model-btn[data-launcher="Claude"]:hover { border-color: rgba(212, 165, 116, 0.6); color: #d4a574; }
+    .prompts-model-btn[data-launcher="Gemini"]:hover { border-color: rgba(66, 133, 244, 0.6); color: #4285f4; }
+    .prompts-model-btn[data-launcher="Copilot"]:hover { border-color: rgba(0, 120, 212, 0.6); color: #0078d4; }
+    .prompts-model-btn[data-launcher="Perplexity"]:hover { border-color: rgba(32, 128, 141, 0.6); color: #20808d; }
+    .prompts-model-btn[data-launcher="DeepSeek"]:hover { border-color: rgba(77, 107, 254, 0.6); color: #4d6bfe; }
+    .prompts-model-btn[data-launcher="Qwen"]:hover { border-color: rgba(98, 54, 255, 0.6); color: #6236ff; }
+    .prompts-model-btn[data-launcher="Mistral"]:hover { border-color: rgba(255, 112, 0, 0.6); color: #ff7000; }
+    .prompts-model-btn[data-launcher="HuggingChat"]:hover { border-color: rgba(255, 189, 69, 0.6); color: #ffbd45; }
+    .prompts-model-btn[data-launcher="Grok"]:hover { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
+
+    /* === FIX #9: SECTION HEADERS BY KNOWLEDGE AREA === */
+    .prompts-section-header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 0 0.5rem;
+      margin-top: 0.5rem;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .prompts-section-header:first-child { margin-top: 0; }
+    .prompts-section-header-icon { display: flex; align-items: center; }
+    .prompts-section-header-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .prompts-section-header-count {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+
+    /* === FIX #13: BACK-TO-TOP === */
+    .prompts-back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 1.5rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--cyan-primary);
+      color: #000;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9998;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+      box-shadow: 0 4px 16px rgba(6, 182, 212, 0.35);
+    }
+    .prompts-back-to-top.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .prompts-back-to-top:hover { opacity: 0.85; }
+
+    /* === FIX #17: COLLAPSIBLE FILTER BAR ON MOBILE === */
+    .prompts-filter-toggle {
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 44px;
+      padding: 0.5rem 0.85rem;
+      background: rgba(20, 30, 45, 0.9);
+      border: 1px solid var(--badge-border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: border-color var(--transition-fast);
+    }
+    .prompts-filter-toggle:hover { border-color: var(--cyan-primary); }
+    .prompts-filter-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background: var(--cyan-primary);
+      color: #000;
+      font-size: 0.65rem;
+      font-weight: 700;
+      margin-left: auto;
+      padding: 0 4px;
+    }
+    .prompts-filters-inner {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      .prompts-filter-toggle { display: flex; }
+      .prompts-filters-inner { display: none; flex-direction: column; padding-top: 0.5rem; }
+      .prompts-filters-inner.is-open { display: flex; }
+    }
+    @media (min-width: 768px) {
+      .prompts-filter-toggle { display: none !important; }
+      .prompts-filters-inner { display: flex !important; flex-direction: row; }
     }
   </style>
 </head>
@@ -1739,7 +2023,7 @@
 
       <!-- Hero -->
       <section class="prompts-hero" aria-labelledby="prompts-title">
-        <h1 class="prompts-hero-title" id="prompts-title">Prompt Pr&ecirc;t-&agrave;-Porter</h1>
+        <h1 class="prompts-hero-title" id="prompts-title">PMO Prompt Hub</h1>
         <p class="prompts-hero-subtitle">Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.</p>
         <div class="prompts-hero-stats" aria-label="Prompt library statistics">
           <div class="prompts-hero-stat">
@@ -1767,12 +2051,15 @@
           <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2l3 5h-2l3 5H5l3-5H6z"/><rect x="8.5" y="12" width="3" height="6" rx="0.5"/></svg> Forge</span>
         </button>
         <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret">
-          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h10l-1 5H6z"/><rect x="5" y="8" width="10" height="10" rx="1"/><line x1="10" y1="3" x2="10" y2="8"/><path d="M8 3c0-1 .9-1.5 2-1.5s2 .5 2 1.5"/></svg> Pr&ecirc;t-&agrave;-Porter</span>
+          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h10l-1 5H6z"/><rect x="5" y="8" width="10" height="10" rx="1"/><line x1="10" y1="3" x2="10" y2="8"/><path d="M8 3c0-1 .9-1.5 2-1.5s2 .5 2 1.5"/></svg> Ready to Use</span>
         </button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains">
           <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="10" rx="3.5" ry="5" transform="rotate(-30 6 10)"/><ellipse cx="14" cy="10" rx="3.5" ry="5" transform="rotate(30 14 10)"/></svg> Chains</span>
         </button>
       </div>
+
+      <!-- Technique Legend (Fix #2B) -->
+      <div class="prompts-legend-bar" id="promptsLegendBar"></div>
 
       <!-- Forge Panel (Tier 1) -->
       <div class="forge-panel" id="forgePanel">
@@ -1802,28 +2089,36 @@
         </div>
       </div>
 
-      <!-- Filters -->
-      <div class="prompts-filters" id="promptsFilters" role="search" aria-label="Filter prompts">
-        <select class="prompts-filter-select" id="filterArea" aria-label="Filter by Knowledge Area">
-          <option value="all">All Knowledge Areas</option>
-        </select>
+      <!-- Filters (Fix #10 sticky wrap, Fix #17 mobile collapsible, Fix #14 count) -->
+      <div class="prompts-filter-sticky-wrap" id="promptsFilterWrap">
+        <div class="prompts-filters" id="promptsFilters" role="search" aria-label="Filter prompts">
+          <button class="prompts-filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filtersInner">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><line x1="2" y1="4" x2="14" y2="4"/><line x1="4" y1="8" x2="12" y2="8"/><line x1="6" y1="12" x2="10" y2="12"/></svg>
+            Filter &amp; Search
+            <span class="prompts-filter-badge" id="filterActiveBadge" style="display:none">0</span>
+          </button>
+          <div class="prompts-filters-inner" id="filtersInner">
+            <select class="prompts-filter-select" id="filterArea" aria-label="Filter by Knowledge Area">
+              <option value="all">All Knowledge Areas</option>
+            </select>
 
-        <select class="prompts-filter-select" id="filterDifficulty" aria-label="Filter by Difficulty">
-          <option value="all">All Difficulties</option>
-          <option value="beginner">Beginner</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="advanced">Advanced</option>
-        </select>
+            <select class="prompts-filter-select" id="filterDifficulty" aria-label="Filter by Difficulty">
+              <option value="all">All Difficulties</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
 
-        <input type="search" class="prompts-filter-search" id="filterSearch" placeholder="Search prompts..." aria-label="Search prompts">
+            <input type="search" class="prompts-filter-search" id="filterSearch" placeholder="Search prompts..." aria-label="Search prompts">
 
-        <select class="prompts-filter-select" id="filterSort" aria-label="Sort prompts">
-          <option value="default">Sort: Default</option>
-          <option value="popular">Sort: Most Popular</option>
-          <option value="az">Sort: A-Z</option>
-        </select>
-
-        <span class="prompts-filter-count" id="filterCount" aria-live="polite"></span>
+            <select class="prompts-filter-select" id="filterSort" aria-label="Sort prompts">
+              <option value="default">Sort: Default</option>
+              <option value="popular">Sort: Most Popular</option>
+              <option value="az">Sort: A-Z</option>
+            </select>
+          </div>
+          <span class="prompts-filter-count" id="filterCount" aria-live="polite"></span>
+        </div>
       </div>
 
       <!-- Prompts Grid -->
@@ -1838,6 +2133,11 @@
       <p>&copy; 2026 SmartPMO.ai &mdash; AI-powered insights for PMO professionals</p>
     </footer>
   </div>
+
+  <!-- Back-to-top button (Fix #13) -->
+  <button class="prompts-back-to-top" id="promptsBackToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 12 9 7 14 12"/></svg>
+  </button>
 
   <!-- Toast notification -->
   <div class="prompts-toast" id="promptsToast" role="status" aria-live="polite"></div>
@@ -1943,8 +2243,10 @@
           if (!res.ok) throw new Error('Failed to load prompts data');
           promptsData = await res.json();
           populateFilters();
+          renderLegend();
           filteredPrompts = [...promptsData.prompts];
           renderCards();
+          updateCount();
           handleHash();
         } catch (err) {
           console.error('PromptsModule: Failed to load data', err);
@@ -1961,6 +2263,42 @@
           opt.textContent = area.icon + ' ' + area.name;
           filterArea.appendChild(opt);
         });
+      }
+
+      // ── Fix #2B: Technique legend ──
+      function renderLegend() {
+        const legendBar = document.getElementById('promptsLegendBar');
+        if (!legendBar || !promptsData || !promptsData.techniques) return;
+
+        const legendItems = Object.entries(promptsData.techniques).map(([key, tech]) =>
+          '<div class="prompts-legend-item">' +
+            '<span class="prompts-legend-item-icon">' + (ICONS.techniques[key] || tech.badge || '') + '</span>' +
+            '<div>' +
+              '<div class="prompts-legend-item-name">' + escapeHtml(tech.name) + '</div>' +
+              '<div class="prompts-legend-item-desc">' + escapeHtml(tech.description || '') + '</div>' +
+            '</div>' +
+          '</div>'
+        ).join('');
+
+        legendBar.innerHTML =
+          '<button class="prompts-legend-toggle" id="legendToggle" aria-expanded="false">' +
+            '&#9658; What do the technique badges mean?' +
+            '<span class="prompts-legend-toggle-icon">&#9658;</span>' +
+          '</button>' +
+          '<div class="prompts-legend-grid" id="legendGrid" aria-hidden="true">' +
+            legendItems +
+          '</div>';
+
+        const toggle = document.getElementById('legendToggle');
+        const legendGrid = document.getElementById('legendGrid');
+        if (toggle && legendGrid) {
+          toggle.addEventListener('click', () => {
+            const isOpen = legendGrid.classList.toggle('is-open');
+            toggle.classList.toggle('is-open', isOpen);
+            toggle.setAttribute('aria-expanded', String(isOpen));
+            legendGrid.setAttribute('aria-hidden', String(!isOpen));
+          });
+        }
       }
 
       // ── Filtering ──
@@ -2001,6 +2339,15 @@
       }
 
       // ── Card rendering ──
+      // SVG icons for copy button (Fix #7) and share row (Fix #6)
+      const COPY_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="1" width="9" height="11" rx="2"/><path d="M3 5H2a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1v-2"/></svg>';
+      const CHECK_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2 8 6 12 14 4"/></svg>';
+      const SHARE_LINKEDIN = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>';
+      const SHARE_X = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.739l7.738-8.835L1.99 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
+      const SHARE_EMAIL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>';
+      const SHARE_WA = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>';
+      const SHARE_LINK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>';
+
       function renderCards() {
         if (!grid) return;
 
@@ -2014,13 +2361,37 @@
           promptsData.knowledgeAreas.forEach(a => { areaMap[a.id] = a; });
         }
 
-        grid.innerHTML = filteredPrompts.map(p => {
-          const area = areaMap[p.knowledgeArea] || { name: p.knowledgeArea, icon: '' };
+        // Fix #9: Detect if default unfiltered view (show section headers)
+        const area = filterArea ? filterArea.value : 'all';
+        const difficulty = filterDifficulty ? filterDifficulty.value : 'all';
+        const search = filterSearch ? filterSearch.value.trim() : '';
+        const sort = filterSort ? filterSort.value : 'default';
+        const isDefaultView = area === 'all' && difficulty === 'all' && search === '' && sort === 'default';
+
+        let html = '';
+        let lastAreaId = null;
+
+        filteredPrompts.forEach(p => {
+          const areaObj = areaMap[p.knowledgeArea] || { name: p.knowledgeArea, icon: '', id: p.knowledgeArea };
+
+          // Fix #9: Section headers in default view
+          if (isDefaultView && p.knowledgeArea !== lastAreaId) {
+            lastAreaId = p.knowledgeArea;
+            const areaCount = filteredPrompts.filter(x => x.knowledgeArea === p.knowledgeArea).length;
+            html += '<div class="prompts-section-header" aria-label="' + escapeAttr(areaObj.name) + ' knowledge area">' +
+              '<span class="prompts-section-header-icon" aria-hidden="true">' + (ICONS.areas[p.knowledgeArea] || '') + '</span>' +
+              '<span class="prompts-section-header-name">' + escapeHtml(areaObj.name) + '</span>' +
+              '<span class="prompts-section-header-count">' + areaCount + ' prompt' + (areaCount !== 1 ? 's' : '') + '</span>' +
+            '</div>';
+          }
+
+          // Fix #2: Technique badges with label spans
           const techBadges = (p.techniques || []).map(t => {
             const tech = promptsData.techniques[t];
             if (!tech) return '';
             return '<span class="prompts-technique-badge" title="' + escapeAttr(tech.name) + '">' +
               (ICONS.techniques[t] || tech.badge) +
+              '<span class="prompts-technique-label">' + escapeHtml(tech.name) + '</span>' +
               '<span class="prompts-technique-tooltip">' + escapeHtml(tech.name + ': ' + tech.description) + '</span>' +
             '</span>';
           }).join('');
@@ -2053,50 +2424,68 @@
 
           const vc = voteCounts[p.id] || { up: 0, down: 0 };
 
-          return '<article class="prompts-card" id="prompt-' + p.id + '" data-prompt-id="' + p.id + '" data-area="' + p.knowledgeArea + '" data-difficulty="' + p.difficulty + '">' +
-            '<div class="prompts-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-' + p.id + '">' +
-              '<div class="prompts-card-title-row">' +
-                '<h2 class="prompts-card-title">' + escapeHtml(p.title) + '</h2>' +
-                '<span class="prompts-card-expand-icon" aria-hidden="true">&#9660;</span>' +
-              '</div>' +
-              '<div class="prompts-card-meta">' +
-                '<span class="prompts-area-badge">' + (ICONS.areas[p.knowledgeArea] || area.icon) + ' ' + escapeHtml(area.name) + '</span>' +
-                '<span class="prompts-difficulty-badge is-' + p.difficulty + '">' + escapeHtml(p.difficulty) + '</span>' +
-              '</div>' +
-              '<div class="prompts-card-techniques">' + techBadges + '</div>' +
-              '<p class="prompts-card-desc">' + escapeHtml(p.description) + '</p>' +
-            '</div>' +
-            '<div class="prompts-card-body" id="body-' + p.id + '">' +
-              '<div class="prompts-card-body-inner">' +
-                '<div class="prompts-card-fields">' + fieldsHtml + '</div>' +
-                '<div class="prompts-card-preview">' +
-                  '<div class="prompts-preview-label">Live Prompt Preview</div>' +
-                  '<div class="prompts-preview-text" id="preview-' + p.id + '">' + escapeHtml(p.template) + '</div>' +
+          // Fix #6: Share URLs
+          const shareUrl = 'https://smartpmo.ai/prompts#' + p.id;
+          const shareTitle = encodeURIComponent('PMO Prompt: ' + p.title + ' | SmartPMO.ai');
+          const shareUrlEnc = encodeURIComponent(shareUrl);
+
+          html +=
+            '<article class="prompts-card" id="prompt-' + p.id + '" data-prompt-id="' + p.id + '" data-area="' + p.knowledgeArea + '" data-difficulty="' + p.difficulty + '">' +
+              '<div class="prompts-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-' + p.id + '">' +
+                '<div class="prompts-card-title-row">' +
+                  '<h2 class="prompts-card-title">' + escapeHtml(p.title) + '</h2>' +
+                  '<span class="prompts-card-expand-icon" aria-hidden="true">&#9660;</span>' +
                 '</div>' +
-                '<div class="prompts-card-actions">' +
-                  '<button class="prompts-copy-btn" data-copy-prompt="' + p.id + '" aria-label="Copy prompt to clipboard">' +
-                    '<span>📋</span> Copy Prompt' +
-                  '</button>' +
-                  '<div class="prompts-launcher-row">' +
-                    '<span class="prompts-launcher-label">Open in AI tool (copies prompt first):</span>' +
-                    launcherBtns +
+                '<div class="prompts-card-meta">' +
+                  '<span class="prompts-area-badge">' + (ICONS.areas[p.knowledgeArea] || areaObj.icon) + ' ' + escapeHtml(areaObj.name) + '</span>' +
+                  '<span class="prompts-difficulty-badge is-' + p.difficulty + '">' + escapeHtml(p.difficulty) + '</span>' +
+                '</div>' +
+                '<div class="prompts-card-techniques">' + techBadges + '</div>' +
+                '<p class="prompts-card-desc">' + escapeHtml(p.description) + '</p>' +
+              '</div>' +
+              '<div class="prompts-card-body" id="body-' + p.id + '">' +
+                '<div class="prompts-card-body-inner">' +
+                  '<div class="prompts-card-fields">' + fieldsHtml + '</div>' +
+                  '<div class="prompts-card-preview">' +
+                    '<div class="prompts-preview-label">Live Prompt Preview</div>' +
+                    '<div class="prompts-preview-wrapper">' +
+                      '<div class="prompts-preview-text" id="preview-' + p.id + '">' + escapeHtml(p.template) + '</div>' +
+                      '<div class="prompts-preview-fade" aria-hidden="true"></div>' +
+                      '<button class="prompts-preview-toggle" data-preview-toggle="' + p.id + '">Show full preview &#9660;</button>' +
+                    '</div>' +
+                  '</div>' +
+                  '<div class="prompts-card-actions">' +
+                    '<button class="prompts-copy-btn" data-copy-prompt="' + p.id + '" aria-label="Copy prompt to clipboard">' +
+                      COPY_SVG + ' Copy Prompt' +
+                    '</button>' +
+                    '<div class="prompts-launcher-row">' +
+                      '<span class="prompts-launcher-label">Open in AI tool (copies prompt first):</span>' +
+                      launcherBtns +
+                    '</div>' +
                   '</div>' +
                 '</div>' +
               '</div>' +
-            '</div>' +
-            '<div class="prompts-card-footer" data-vote-id="prompt-' + p.id + '">' +
-              '<button class="prompts-vote-btn prompts-vote-btn--up" aria-label="Useful" aria-pressed="false">' +
-                '<span class="prompts-vote-icon">👍</span>' +
-                '<span class="prompts-vote-count prompts-vote-count--up">' + vc.up + '</span>' +
-              '</button>' +
-              '<button class="prompts-vote-btn prompts-vote-btn--down" aria-label="Not useful" aria-pressed="false">' +
-                '<span class="prompts-vote-icon">👎</span>' +
-                '<span class="prompts-vote-count prompts-vote-count--down">' + vc.down + '</span>' +
-              '</button>' +
-              '<button class="prompts-card-share-link" data-share-prompt="' + p.id + '" aria-label="Copy link to this prompt" title="Copy shareable link">#</button>' +
-            '</div>' +
-          '</article>';
-        }).join('');
+              '<div class="prompts-card-footer" data-vote-id="prompt-' + p.id + '">' +
+                '<button class="prompts-vote-btn prompts-vote-btn--up" aria-label="Useful" aria-pressed="false">' +
+                  '<span class="prompts-vote-icon">&#128077;</span>' +
+                  '<span class="prompts-vote-count prompts-vote-count--up">' + vc.up + '</span>' +
+                '</button>' +
+                '<button class="prompts-vote-btn prompts-vote-btn--down" aria-label="Not useful" aria-pressed="false">' +
+                  '<span class="prompts-vote-icon">&#128078;</span>' +
+                  '<span class="prompts-vote-count prompts-vote-count--down">' + vc.down + '</span>' +
+                '</button>' +
+                '<div class="prompts-share-row">' +
+                  '<a class="prompts-share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=' + shareUrlEnc + '" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" title="Share on LinkedIn">' + SHARE_LINKEDIN + '</a>' +
+                  '<a class="prompts-share-btn" href="https://twitter.com/intent/tweet?text=' + shareTitle + '&url=' + shareUrlEnc + '" target="_blank" rel="noopener noreferrer" aria-label="Share on X" title="Share on X">' + SHARE_X + '</a>' +
+                  '<a class="prompts-share-btn" href="mailto:?subject=' + shareTitle + '&body=' + shareUrlEnc + '" aria-label="Share by email" title="Share by email">' + SHARE_EMAIL + '</a>' +
+                  '<a class="prompts-share-btn" href="https://wa.me/?text=' + shareTitle + '%20' + shareUrlEnc + '" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp" title="Share on WhatsApp">' + SHARE_WA + '</a>' +
+                  '<button class="prompts-share-btn" data-share-prompt="' + p.id + '" aria-label="Copy link to this prompt" title="Copy link">' + SHARE_LINK + '</button>' +
+                '</div>' +
+              '</div>' +
+            '</article>';
+        });
+
+        grid.innerHTML = html;
       }
 
       // ── Template engine ──
@@ -2125,13 +2514,22 @@
       function toggleCard(promptId) {
         const card = document.getElementById('prompt-' + promptId);
         if (!card) return;
+
+        // Fix #1: Collapse any other expanded card first
+        const currentlyExpanded = grid.querySelector('.prompts-card.is-expanded');
+        if (currentlyExpanded && currentlyExpanded !== card) {
+          currentlyExpanded.classList.remove('is-expanded');
+          const prevHeader = currentlyExpanded.querySelector('.prompts-card-header');
+          if (prevHeader) prevHeader.setAttribute('aria-expanded', 'false');
+        }
+
         const header = card.querySelector('.prompts-card-header');
         const isExpanded = card.classList.toggle('is-expanded');
         if (header) header.setAttribute('aria-expanded', String(isExpanded));
         if (isExpanded) {
           updatePreview(promptId);
-          // Update URL hash for shareable links
           history.replaceState(null, '', '#' + promptId);
+          setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
         }
       }
 
@@ -2149,28 +2547,29 @@
       // ── Copy to clipboard ──
       async function copyPrompt(promptId) {
         const text = assemblePrompt(promptId);
-        try {
-          await navigator.clipboard.writeText(text);
-          showToast('Prompt copied to clipboard!');
-          const btn = document.querySelector('[data-copy-prompt="' + promptId + '"]');
-          if (btn) {
-            btn.classList.add('is-copied');
-            btn.innerHTML = '<span>✅</span> Copied!';
-            setTimeout(() => {
-              btn.classList.remove('is-copied');
-              btn.innerHTML = '<span>📋</span> Copy Prompt';
-            }, 2000);
+        const btn = document.querySelector('[data-copy-prompt="' + promptId + '"]');
+        const doCopy = async () => {
+          try {
+            await navigator.clipboard.writeText(text);
+          } catch (err) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.cssText = 'position:fixed;left:-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
           }
-        } catch (err) {
-          // Fallback for older browsers
-          const ta = document.createElement('textarea');
-          ta.value = text;
-          ta.style.cssText = 'position:fixed;left:-9999px';
-          document.body.appendChild(ta);
-          ta.select();
-          document.execCommand('copy');
-          document.body.removeChild(ta);
-          showToast('Prompt copied to clipboard!');
+        };
+        await doCopy();
+        showToast('Prompt copied to clipboard!');
+        if (btn) {
+          btn.classList.add('is-copied');
+          btn.innerHTML = CHECK_SVG + ' Copied!';
+          setTimeout(() => {
+            btn.classList.remove('is-copied');
+            btn.innerHTML = COPY_SVG + ' Copy Prompt';
+          }, 2000);
         }
       }
 
@@ -2259,8 +2658,30 @@
             }
           });
 
-          // Keyboard: Enter/Space to expand card header
+          // Fix #4: Preview toggle
+          grid.addEventListener('click', (e) => {
+            const toggleBtn = e.target.closest('[data-preview-toggle]');
+            if (toggleBtn) {
+              const id = toggleBtn.dataset.previewToggle;
+              const previewText = document.getElementById('preview-' + id);
+              if (previewText) {
+                const expanded = previewText.classList.toggle('is-expanded');
+                toggleBtn.textContent = expanded ? 'Collapse preview \u25B2' : 'Show full preview \u25BC';
+              }
+            }
+          });
+
+          // Keyboard: Enter/Space to expand card header; Fix #16: Ctrl+C on focused expanded card
           grid.addEventListener('keydown', (e) => {
+            // Fix #16: Ctrl+C / Cmd+C when expanded card has focus and no text selected
+            if ((e.ctrlKey || e.metaKey) && e.key === 'c' && window.getSelection().toString() === '') {
+              const expandedCard = grid.querySelector('.prompts-card.is-expanded');
+              if (expandedCard && expandedCard.contains(document.activeElement)) {
+                copyPrompt(expandedCard.dataset.promptId);
+                e.preventDefault();
+                return;
+              }
+            }
             if (e.key === 'Enter' || e.key === ' ') {
               const header = e.target.closest('.prompts-card-header');
               if (header) {
@@ -3087,7 +3508,7 @@
       const panels = {
         forge: document.getElementById('forgePanel'),
         chains: document.getElementById('chainsPanel'),
-        filters: document.getElementById('promptsFilters'),
+        filters: document.getElementById('promptsFilterWrap'),
         grid: document.getElementById('promptsGrid')
       };
 
@@ -3133,6 +3554,78 @@
     })();
 
     /* ============================================
+       BACK-TO-TOP MODULE — Fix #13
+       ============================================ */
+    const BackToTopModule = (() => {
+      'use strict';
+      const btn = document.getElementById('promptsBackToTop');
+      const hero = document.querySelector('.prompts-hero');
+
+      return {
+        init() {
+          if (!btn) return;
+          btn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+          if (hero) {
+            const observer = new IntersectionObserver((entries) => {
+              btn.classList.toggle('is-visible', !entries[0].isIntersecting);
+            }, { threshold: 0 });
+            observer.observe(hero);
+          } else {
+            window.addEventListener('scroll', () => {
+              btn.classList.toggle('is-visible', window.scrollY > 300);
+            }, { passive: true });
+          }
+        }
+      };
+    })();
+
+    /* ============================================
+       FILTER TOGGLE MODULE — Fix #17
+       ============================================ */
+    const FilterToggleModule = (() => {
+      'use strict';
+      const toggle = document.getElementById('filterToggle');
+      const inner = document.getElementById('filtersInner');
+      const badge = document.getElementById('filterActiveBadge');
+
+      function countActive() {
+        let count = 0;
+        const fa = document.getElementById('filterArea');
+        const fd = document.getElementById('filterDifficulty');
+        const fs = document.getElementById('filterSearch');
+        if (fa && fa.value !== 'all') count++;
+        if (fd && fd.value !== 'all') count++;
+        if (fs && fs.value.trim()) count++;
+        return count;
+      }
+
+      function updateBadge() {
+        if (!badge) return;
+        const count = countActive();
+        badge.style.display = count > 0 ? 'inline-flex' : 'none';
+        badge.textContent = count;
+      }
+
+      return {
+        init() {
+          if (!toggle || !inner) return;
+          toggle.addEventListener('click', () => {
+            const isOpen = inner.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+          });
+          ['filterArea', 'filterDifficulty', 'filterSearch'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+              el.addEventListener(el.tagName === 'INPUT' ? 'input' : 'change', updateBadge);
+            }
+          });
+        }
+      };
+    })();
+
+    /* ============================================
        INITIALIZATION
        ============================================ */
     if (document.readyState === 'loading') {
@@ -3142,6 +3635,8 @@
         ForgeModule.init();
         ChainsModule.init();
         TabSwitcher.init();
+        BackToTopModule.init();
+        FilterToggleModule.init();
       });
     } else {
       PromptsModule.init();
@@ -3149,6 +3644,8 @@
       ForgeModule.init();
       ChainsModule.init();
       TabSwitcher.init();
+      BackToTopModule.init();
+      FilterToggleModule.init();
     }
   </script>
 </body>
