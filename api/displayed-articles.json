@@ -1,6 +1,138 @@
 {
   "latestIntelligence": [
     {
+      "id": 78929,
+      "title": "Best AI Automation Software [2026 Comparison] | SS&C Blue Prism",
+      "url": "https://www.blueprism.com/guides/what-is-automation-software/best/",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:17:07",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78873,
+      "title": "3 Practical Ways I Use AI to Work Faster - The Karcher Group",
+      "url": "https://www.tkg.com/insights/learn/3-practical-ways-i-use-ai-to-work-faster",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:16:50",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78735,
+      "title": "How AI Enhances Business Analysis Without Replacing ... - IIBA",
+      "url": "https://www.iiba.org/business-analysis-blogs/how-ai-enhances-business-analysis-without-replacing-professional-judgment/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:16:01",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78726,
+      "title": "Google's Canvas AI Project-Planning Tool Is Now Available ... - CNET",
+      "url": "https://www.cnet.com/news/google-searchs-canvas-ai-tool-is-now-available-to-everyone-in-the-us/",
+      "summary": "",
+      "score": 69,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:15:59",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78675,
+      "title": "Construction AI Launches First AI-Native Project Management ...",
+      "url": "https://markets.businessinsider.com/news/stocks/construction-ai-launches-first-ai-native-project-management-platform-for-uk-construction-smes-to-address-170bn-industry-s-technology-gap-1035896383",
+      "summary": "",
+      "score": 78,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:15:47",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78633,
+      "title": "SharePoint Introduces Agentic AI Building and Governance Tools",
+      "url": "https://thejournal.com/articles/2026/03/04/sharepoint-introduces-agentic-ai-building-and-governance-tools.aspx",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:15:37",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78589,
+      "title": "The PMO Playbook for AI Strategy That Actually Delivers",
+      "url": "https://valueops.broadcom.com/blog/the-pmo-playbook-for-ai-strategy-that-actually-delivers",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:15:25",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78574,
+      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
+      "url": "https://www.sap.com/documents/2026/02/e8608b42-417f-0010-bca6-c68f7e60039b.html",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:15:20",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78576,
+      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
+      "url": "https://www.sap.com/documents/2026/02/fc748b42-417f-0010-bca6-c68f7e60039b.html",
+      "summary": "",
+      "score": 82,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-06 04:15:20",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78474,
+      "title": "Closing the AI execution gap: Dialpad releases production-ready AI agents",
+      "url": "https://siliconangle.com/2026/03/05/closing-ai-execution-gap-dialpad-releases-production-ready-ai-agents/",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-05",
+      "discoveredAt": "2026-03-06 04:14:22",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78027,
+      "title": "Building GitHub for Product Management: How Momental Uses AI to Find Merge Conflicts in Strategy",
+      "url": "https://www.producttalk.org/building-github-for-product-management-how-momental-uses-ai-to-find-merge-conflicts-in-strategy/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-05",
+      "discoveredAt": "2026-03-06 04:03:38",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 77989,
+      "title": "How a product manager conducts 30+ customer interviews per month with AI",
+      "url": "https://www.atlassian.com/blog/artificial-intelligence/customer-insights-rovo-agent",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-05",
+      "discoveredAt": "2026-03-06 04:00:39",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 77961,
       "title": "How AI Improves Global Team Collaboration: 6 Use Cases ... - Deel",
       "url": "https://www.deel.com/blog/how-ai-improves-global-team-collaboration/",
@@ -23,13 +155,13 @@
       "section": "auto"
     },
     {
-      "id": 77691,
-      "title": "Navigating AI in Project Management: A Comparison with Racing ...",
-      "url": "https://www.projectmanagement.com/blog-post/79644/navigating-ai-in-project-management--a-comparison-with-racing-co-pilots-and-driverless-cars-",
+      "id": 77709,
+      "title": "Microsoft Marks SharePoint's 25th Anniversary With New AI-Driven ...",
+      "url": "https://rcpmag.com/articles/2026/03/03/microsoft-marks-sharepoints-25th-anniversary.aspx",
       "summary": "",
-      "score": 75,
+      "score": 67,
       "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 17:59:10",
+      "discoveredAt": "2026-03-04 17:59:22",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -67,17 +199,6 @@
       "section": "auto"
     },
     {
-      "id": 76890,
-      "title": "Federal Technology Lifecycle Management Adopts AI & Automation",
-      "url": "https://fedtechmagazine.com/article/2026/03/federal-technology-lifecycle-management-adopts-ai-and-automation-perfcon?amp",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 04:14:39",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 76872,
       "title": "AI in Construction: Tools and Use Cases | Microsoft Copilot",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-in-construction",
@@ -96,127 +217,6 @@
       "score": 75,
       "publishedDate": "2026-03-04",
       "discoveredAt": "2026-03-04 04:14:23",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76850,
-      "title": "AI Project Portfolio Management in 2026: What PMO Leaders Must ...",
-      "url": "https://corasystems.com/blog/ai-pmo-leaders-guide-2026",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 04:14:23",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76911,
-      "title": "Asana Posts 9% Revenue Growth, But Is Its AI Project Management ...",
-      "url": "https://www.uctoday.com/project-management/asana-posts-9-revenue-growth-but-is-its-ai-project-management-platform-the-real-story/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-03",
-      "discoveredAt": "2026-03-04 04:14:45",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76347,
-      "title": "In Pursuit of Agentic AI Workspace",
-      "url": "https://aimaker.substack.com/p/in-pursuit-of-agentic-ai-workspace-ai-workflow-automation-claude-code-obsidian-notion",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-03",
-      "discoveredAt": "2026-03-04 04:05:46",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76281,
-      "title": "How Power Automate Helps Analysts Send Alert Emails Faster and How AI Builder Takes It to the Next Level",
-      "url": "https://dzone.com/articles/how-power-automate-helps-analysts-send-alert-emails",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-03-03",
-      "discoveredAt": "2026-03-04 04:01:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 75555,
-      "title": "AI is helping revolutionise risk management | KPMG NZ",
-      "url": "https://kpmg.com/nz/en/insights/risk-management/ai-revolutionising-risk-management.html",
-      "summary": "",
-      "score": 69,
-      "publishedDate": "2026-03-02",
-      "discoveredAt": "2026-03-02 14:03:50",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 75396,
-      "title": "How to use AI browsers to maximize your productivity",
-      "url": "https://mashable.com/article/ai-browsers-features",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-02",
-      "discoveredAt": "2026-03-02 14:00:28",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 75374,
-      "title": "20 Best MCP Servers for Developers: Building Autonomous Agentic Workflows",
-      "url": "https://blog.n8n.io/best-mcp-servers/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-02",
-      "discoveredAt": "2026-03-02 13:59:31",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74849,
-      "title": "Claude AI vs Claude Code vs Claude Cowork: Which Is the Right Tool for Your Workflow Automation?",
-      "url": "https://aitoolsclub.com/claude-ai-vs-claude-code-vs-claude-cowork-which-is-the-right-tool-for-your-workflow-automation/",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-03-02",
-      "discoveredAt": "2026-03-02 04:14:03",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 75154,
-      "title": "5 Best Sonix Alternatives for AI Meeting Notes [2026] - HappyScribe",
-      "url": "https://www.happyscribe.com/blog/sonix-alternatives-for-ai-meeting-notes",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-02 04:15:58",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74614,
-      "title": "OpenClaw Slack Task Integration: AI-Powered Team Task Automation",
-      "url": "https://www.tencentcloud.com/techpedia/139535",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:52:55",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 74253,
-      "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
-      "url": "https://uk.nttdata.com/insights/blog/context-aware-ai-capital-delivery-design-validation",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-01",
-      "discoveredAt": "2026-03-01 07:51:01",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-04T19:51:18.153Z"
+  "generatedAt": "2026-03-06T04:38:02.970Z"
 }

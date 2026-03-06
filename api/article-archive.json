@@ -463,8 +463,328 @@
       "published_date": "2026-02-26",
       "archived_at": "2026-03-01",
       "section": "curated"
+    },
+    {
+      "id": 78576,
+      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
+      "url": "https://www.sap.com/documents/2026/02/fc748b42-417f-0010-bca6-c68f7e60039b.html",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**SAP's Conversational AI, Joule for Consultants, aims to accelerate SAP project delivery.**",
+        "The AI solution is presented as an infographic detailing value, benefits, and proof points.",
+        "It specifically targets accelerating SAP project delivery by up to 14%."
+      ],
+      "read_time": "1 min",
+      "source_domain": "sap.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78675,
+      "title": "Construction AI Launches First AI-Native Project Management ...",
+      "url": "https://markets.businessinsider.com/news/stocks/construction-ai-launches-first-ai-native-project-management-platform-for-uk-construction-smes-to-address-170bn-industry-s-technology-gap-1035896383",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Construction AI launched the first AI-native project management platform for UK construction SMEs.**",
+        "The platform aims to address a significant £170bn technology gap within the UK construction industry.",
+        "It is specifically designed to support small and medium-sized enterprises with project delivery."
+      ],
+      "read_time": "7 min",
+      "source_domain": "markets.businessinsider.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78589,
+      "title": "The PMO Playbook for AI Strategy That Actually Delivers",
+      "url": "https://valueops.broadcom.com/blog/the-pmo-playbook-for-ai-strategy-that-actually-delivers",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**The article presents a PMO playbook designed to guide the development of effective AI strategies.**",
+        "It emphasizes how PMOs can ensure AI initiatives deliver tangible value and strategic outcomes.",
+        "The playbook likely integrates AI into strategic portfolio management and execution processes."
+      ],
+      "read_time": "6 min",
+      "source_domain": "valueops.broadcom.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78574,
+      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
+      "url": "https://www.sap.com/documents/2026/02/e8608b42-417f-0010-bca6-c68f7e60039b.html",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**SAP's Conversational AI, Joule for Consultants, accelerates project delivery by up to 14%.**",
+        "The infographic details the value proposition, benefits, and proof points of Joule for Consultants.",
+        "This AI tool is designed to enhance efficiency and speed in SAP project implementation for customers."
+      ],
+      "read_time": "1 min",
+      "source_domain": "sap.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78726,
+      "title": "Google's Canvas AI Project-Planning Tool Is Now Available ... - CNET",
+      "url": "https://www.cnet.com/news/google-searchs-canvas-ai-tool-is-now-available-to-everyone-in-the-us/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Google's Canvas AI, a new project-planning tool, is now available to all users in the US.**",
+        "This AI-powered tool provides capabilities for organizing and managing project-related tasks.",
+        "Its availability could assist project managers and teams in enhancing their planning workflows."
+      ],
+      "read_time": "23 min",
+      "source_domain": "cnet.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78929,
+      "title": "Best AI Automation Software [2026 Comparison] | SS&C Blue Prism",
+      "url": "https://www.blueprism.com/guides/what-is-automation-software/best/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "The article compares leading AI automation software for 2026, featuring SS&C Blue Prism's solutions.",
+        "It highlights methodologies like the Enterprise Operating Model for successful AI technology deployment.",
+        "The software offers automation across various business functions, including finance, HR, and supply chain operations."
+      ],
+      "read_time": "28 min",
+      "source_domain": "blueprism.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78633,
+      "title": "SharePoint Introduces Agentic AI Building and Governance Tools",
+      "url": "https://thejournal.com/articles/2026/03/04/sharepoint-introduces-agentic-ai-building-and-governance-tools.aspx",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**SharePoint introduces new agentic AI tools for building and governance.**",
+        "These tools aim to streamline the creation and oversight of AI capabilities within SharePoint environments.",
+        "The governance features could assist organizations in managing AI deployments and compliance."
+      ],
+      "read_time": "9 min",
+      "source_domain": "thejournal.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78873,
+      "title": "3 Practical Ways I Use AI to Work Faster - The Karcher Group",
+      "url": "https://www.tkg.com/insights/learn/3-practical-ways-i-use-ai-to-work-faster",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The Karcher Group details practical applications of AI, including Apple Intelligence and ChatGPT, to boost daily work efficiency.**",
+        "The author emphasizes using AI for research, analysis, and repeatable tasks, not for creative development.",
+        "This strategy aims to accelerate work processes by leveraging AI for routine and data-intensive activities."
+      ],
+      "read_time": "6 min",
+      "source_domain": "tkg.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78735,
+      "title": "How AI Enhances Business Analysis Without Replacing ... - IIBA",
+      "url": "https://www.iiba.org/business-analysis-blogs/how-ai-enhances-business-analysis-without-replacing-professional-judgment/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI tools are enhancing business analysis by augmenting, not replacing, human judgment.**",
+        "AI can automate data collection and analysis, providing deeper insights for decision-making.",
+        "These AI enhancements could assist project teams in better understanding requirements and scope."
+      ],
+      "read_time": "1 min",
+      "source_domain": "iiba.org",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78027,
+      "title": "Building GitHub for Product Management: How Momental Uses AI to Find Merge Conflicts in Strategy",
+      "url": "https://www.producttalk.org/building-github-for-product-management-how-momental-uses-ai-to-find-merge-conflicts-in-strategy/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Momental uses AI to find 'merge conflicts' in product strategy across organizational data.**",
+        "AI agents ingest documents, transcripts, and recordings to map goals, decisions, and activities.",
+        "It surfaces misalignments between product teams, like conflicting priorities, for human resolution."
+      ],
+      "read_time": "5 min",
+      "source_domain": "producttalk.org",
+      "published_date": "2026-03-05",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 77989,
+      "title": "How a product manager conducts 30+ customer interviews per month with AI",
+      "url": "https://www.atlassian.com/blog/artificial-intelligence/customer-insights-rovo-agent",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Product managers leverage AI to conduct over 30 customer interviews monthly, significantly boosting insight gathering.**",
+        "The Rovo Agent AI automates interview scheduling, execution, and analysis, streamlining the entire feedback process.",
+        "This approach allows product teams to rapidly validate ideas and make data-driven decisions based on extensive customer feedback."
+      ],
+      "read_time": "10 min",
+      "source_domain": "atlassian.com",
+      "published_date": "2026-03-05",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 78474,
+      "title": "Closing the AI execution gap: Dialpad releases production-ready AI agents",
+      "url": "https://siliconangle.com/2026/03/05/closing-ai-execution-gap-dialpad-releases-production-ready-ai-agents/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Dialpad released production-ready AI agents to bridge the gap in AI implementation for businesses.**",
+        "These new AI agents are designed for practical, real-world deployment in enterprise environments.",
+        "The initiative aims to make advanced AI capabilities more actionable and accessible for various operations."
+      ],
+      "read_time": "12 min",
+      "source_domain": "siliconangle.com",
+      "published_date": "2026-03-05",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 76968,
+      "title": "Project Tracking Software - Tail AI",
+      "url": "https://tailapp.ai/products/project-tracking",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Tail AI offers intelligent project tracking software with real-time progress monitoring and portfolio-wide visibility.**",
+        "The platform provides detailed project summaries, task breakdowns, built-in time tracking, and budget monitoring.",
+        "It helps teams organize projects, track profitability, and ensure on-time, on-budget delivery through collaboration tools."
+      ],
+      "read_time": "2 min",
+      "source_domain": "tailapp.ai",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 76925,
+      "title": "Project Reporting & Analytics - Tail AI",
+      "url": "https://tailapp.ai/products/reporting-analytics",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Tail AI offers data-driven reporting and analytics for transforming project data into actionable insights.**",
+        "Key features include project completion charts, team velocity tracking, and real-time dashboards.",
+        "It enables client reporting, accurate resource planning, and data-backed team performance reviews."
+      ],
+      "read_time": "2 min",
+      "source_domain": "tailapp.ai",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 76846,
+      "title": "Insights from the Latest Global Study on the AI-Powered Project ...",
+      "url": "https://www.projectmanagement.com/videos/1158611/insights-from-the-latest-global-study-on-the-ai-powered-project-management",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Presents insights from a global study on the impact and application of AI in project management.**",
+        "Examines how artificial intelligence is transforming traditional project management practices and methodologies.",
+        "Covers key trends and findings regarding AI's role in enhancing project delivery and decision-making."
+      ],
+      "read_time": "7 min",
+      "source_domain": "projectmanagement.com",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 76872,
+      "title": "AI in Construction: Tools and Use Cases | Microsoft Copilot",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-in-construction",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft Copilot explores AI tools and use cases specifically for the construction industry.**",
+        "It details how AI can enhance efficiency and decision-making across construction projects.",
+        "The article discusses applications relevant to project planning, execution, and operational intelligence."
+      ],
+      "read_time": "12 min",
+      "source_domain": "microsoft.com",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 77722,
+      "title": "Moltbook Monitoring by YouScan: Track AI Agent Conversations",
+      "url": "https://youscan.io/moltbook-monitoring/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**YouScan's Moltbook monitoring tracks AI bot conversations to detect brand reputation threats and security risks.**",
+        "It identifies negative brand mentions, fake product claims, prompt injection attempts, and crypto scam schemes.",
+        "The service helps organizations protect brand safety and conduct security research, relevant for proactive risk identification."
+      ],
+      "read_time": "6 min",
+      "source_domain": "youscan.io",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 77709,
+      "title": "Microsoft Marks SharePoint's 25th Anniversary With New AI-Driven ...",
+      "url": "https://rcpmag.com/articles/2026/03/03/microsoft-marks-sharepoints-25th-anniversary.aspx",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft introduces new AI-driven features to SharePoint, marking its 25th anniversary.**",
+        "The updates aim to enhance content management, search, and collaboration functionalities within the platform.",
+        "These AI capabilities could streamline information access and team coordination for project-related work."
+      ],
+      "read_time": "11 min",
+      "source_domain": "rcpmag.com",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 77961,
+      "title": "How AI Improves Global Team Collaboration: 6 Use Cases ... - Deel",
+      "url": "https://www.deel.com/blog/how-ai-improves-global-team-collaboration/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI is transforming global team collaboration by addressing challenges like time zones and language barriers.",
+        "Specific AI tools include real-time translation, AI scheduling assistants, and meeting automation.",
+        "These AI applications enhance communication and knowledge sharing for distributed global teams."
+      ],
+      "read_time": "15 min",
+      "source_domain": "deel.com",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
+    },
+    {
+      "id": 77040,
+      "title": "AgentCost – Track, control, and optimize your AI spending (MIT)",
+      "url": "https://news.ycombinator.com/item?id=47235683",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AgentCost helps organizations track, control, and optimize spending on AI agents and large language models.**",
+        "It offers a real-time dashboard, cost forecasting, and model optimization for 42 AI models.",
+        "The tool addresses managing actual AI agent costs at scale, relevant for project budgeting and resource allocation."
+      ],
+      "read_time": "2 min",
+      "source_domain": "news.ycombinator.com",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-06",
+      "section": "auto"
     }
   ],
-  "last_updated": "2026-03-01T13:57:41.920Z",
-  "total": 29
+  "last_updated": "2026-03-06T04:38:03.084Z",
+  "total": 49
 }

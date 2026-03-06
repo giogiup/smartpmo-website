@@ -1,24 +1,50 @@
 {
-  "generated": "2026-03-04T19:51:18.144Z",
-  "date": "2026-03-04",
+  "generated": "2026-03-06T04:38:03.003Z",
+  "date": "2026-03-06",
   "count": 20,
   "cards": [
     {
-      "id": 77691,
-      "title": "Navigating AI in Project Management: A Comparison with Racing ...",
-      "url": "https://www.projectmanagement.com/blog-post/79644/navigating-ai-in-project-management--a-comparison-with-racing-co-pilots-and-driverless-cars-",
-      "date": "2026-03-04",
-      "score": 75,
+      "id": 78576,
+      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
+      "url": "https://www.sap.com/documents/2026/02/fc748b42-417f-0010-bca6-c68f7e60039b.html",
+      "date": "2026-03-06",
+      "score": 82,
       "pmo_relevance": "Direct",
       "pmo_category": "PMO_RELATED",
       "tldr": [
-        "**The article explores integrating AI into project management, drawing parallels with racing co-pilots and driverless cars.**",
-        "It discusses different levels of AI autonomy and their implications for project managers.",
-        "The piece likely examines how AI can augment human capabilities in project delivery and decision-making."
+        "**SAP's Conversational AI, Joule for Consultants, aims to accelerate SAP project delivery.**",
+        "The AI solution is presented as an infographic detailing value, benefits, and proof points.",
+        "It specifically targets accelerating SAP project delivery by up to 14%."
       ],
       "badges": {
-        "read_time": 11,
-        "pmo_focus": "Enablement",
+        "read_time": 1,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "SAP",
+        "Conversational AI",
+        "Joule for Consultants"
+      ]
+    },
+    {
+      "id": 78675,
+      "title": "Construction AI Launches First AI-Native Project Management ...",
+      "url": "https://markets.businessinsider.com/news/stocks/construction-ai-launches-first-ai-native-project-management-platform-for-uk-construction-smes-to-address-170bn-industry-s-technology-gap-1035896383",
+      "date": "2026-03-06",
+      "score": 78,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Construction AI launched the first AI-native project management platform for UK construction SMEs.**",
+        "The platform aims to address a significant £170bn technology gap within the UK construction industry.",
+        "It is specifically designed to support small and medium-sized enterprises with project delivery."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Tools",
         "value_type": "Strategic Tool",
         "implementation": "Medium",
         "price": "Free"
@@ -26,7 +52,267 @@
       "keywords": [
         "AI",
         "project management",
-        "automation"
+        "construction"
+      ]
+    },
+    {
+      "id": 78589,
+      "title": "The PMO Playbook for AI Strategy That Actually Delivers",
+      "url": "https://valueops.broadcom.com/blog/the-pmo-playbook-for-ai-strategy-that-actually-delivers",
+      "date": "2026-03-06",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**The article presents a PMO playbook designed to guide the development of effective AI strategies.**",
+        "It emphasizes how PMOs can ensure AI initiatives deliver tangible value and strategic outcomes.",
+        "The playbook likely integrates AI into strategic portfolio management and execution processes."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Alignment",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "PMO",
+        "AI Strategy",
+        "Strategic Portfolio Management"
+      ]
+    },
+    {
+      "id": 78574,
+      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
+      "url": "https://www.sap.com/documents/2026/02/e8608b42-417f-0010-bca6-c68f7e60039b.html",
+      "date": "2026-03-06",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**SAP's Conversational AI, Joule for Consultants, accelerates project delivery by up to 14%.**",
+        "The infographic details the value proposition, benefits, and proof points of Joule for Consultants.",
+        "This AI tool is designed to enhance efficiency and speed in SAP project implementation for customers."
+      ],
+      "badges": {
+        "read_time": 1,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "SAP",
+        "Conversational AI",
+        "Project Delivery"
+      ]
+    },
+    {
+      "id": 78726,
+      "title": "Google's Canvas AI Project-Planning Tool Is Now Available ... - CNET",
+      "url": "https://www.cnet.com/news/google-searchs-canvas-ai-tool-is-now-available-to-everyone-in-the-us/",
+      "date": "2026-03-06",
+      "score": 69,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Google's Canvas AI, a new project-planning tool, is now available to all users in the US.**",
+        "This AI-powered tool provides capabilities for organizing and managing project-related tasks.",
+        "Its availability could assist project managers and teams in enhancing their planning workflows."
+      ],
+      "badges": {
+        "read_time": 23,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Google Canvas AI",
+        "project planning",
+        "AI tools"
+      ]
+    },
+    {
+      "id": 78929,
+      "title": "Best AI Automation Software [2026 Comparison] | SS&C Blue Prism",
+      "url": "https://www.blueprism.com/guides/what-is-automation-software/best/",
+      "date": "2026-03-06",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "The article compares leading AI automation software for 2026, featuring SS&C Blue Prism's solutions.",
+        "It highlights methodologies like the Enterprise Operating Model for successful AI technology deployment.",
+        "The software offers automation across various business functions, including finance, HR, and supply chain operations."
+      ],
+      "badges": {
+        "read_time": 28,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI automation",
+        "RPA",
+        "enterprise software"
+      ]
+    },
+    {
+      "id": 78633,
+      "title": "SharePoint Introduces Agentic AI Building and Governance Tools",
+      "url": "https://thejournal.com/articles/2026/03/04/sharepoint-introduces-agentic-ai-building-and-governance-tools.aspx",
+      "date": "2026-03-06",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**SharePoint introduces new agentic AI tools for building and governance.**",
+        "These tools aim to streamline the creation and oversight of AI capabilities within SharePoint environments.",
+        "The governance features could assist organizations in managing AI deployments and compliance."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "SharePoint",
+        "Agentic AI",
+        "AI governance"
+      ]
+    },
+    {
+      "id": 78873,
+      "title": "3 Practical Ways I Use AI to Work Faster - The Karcher Group",
+      "url": "https://www.tkg.com/insights/learn/3-practical-ways-i-use-ai-to-work-faster",
+      "date": "2026-03-06",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The Karcher Group details practical applications of AI, including Apple Intelligence and ChatGPT, to boost daily work efficiency.**",
+        "The author emphasizes using AI for research, analysis, and repeatable tasks, not for creative development.",
+        "This strategy aims to accelerate work processes by leveraging AI for routine and data-intensive activities."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Tools",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "productivity",
+        "efficiency"
+      ]
+    },
+    {
+      "id": 78735,
+      "title": "How AI Enhances Business Analysis Without Replacing ... - IIBA",
+      "url": "https://www.iiba.org/business-analysis-blogs/how-ai-enhances-business-analysis-without-replacing-professional-judgment/",
+      "date": "2026-03-06",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI tools are enhancing business analysis by augmenting, not replacing, human judgment.**",
+        "AI can automate data collection and analysis, providing deeper insights for decision-making.",
+        "These AI enhancements could assist project teams in better understanding requirements and scope."
+      ],
+      "badges": {
+        "read_time": 1,
+        "pmo_focus": "Knowledge",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "Business Analysis",
+        "Augmentation"
+      ]
+    },
+    {
+      "id": 78027,
+      "title": "Building GitHub for Product Management: How Momental Uses AI to Find Merge Conflicts in Strategy",
+      "url": "https://www.producttalk.org/building-github-for-product-management-how-momental-uses-ai-to-find-merge-conflicts-in-strategy/",
+      "date": "2026-03-05",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Momental uses AI to find 'merge conflicts' in product strategy across organizational data.**",
+        "AI agents ingest documents, transcripts, and recordings to map goals, decisions, and activities.",
+        "It surfaces misalignments between product teams, like conflicting priorities, for human resolution."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Alignment",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "product management",
+        "strategy alignment"
+      ]
+    },
+    {
+      "id": 77989,
+      "title": "How a product manager conducts 30+ customer interviews per month with AI",
+      "url": "https://www.atlassian.com/blog/artificial-intelligence/customer-insights-rovo-agent",
+      "date": "2026-03-05",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Product managers leverage AI to conduct over 30 customer interviews monthly, significantly boosting insight gathering.**",
+        "The Rovo Agent AI automates interview scheduling, execution, and analysis, streamlining the entire feedback process.",
+        "This approach allows product teams to rapidly validate ideas and make data-driven decisions based on extensive customer feedback."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Stakeholders",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "customer interviews",
+        "product management"
+      ]
+    },
+    {
+      "id": 78474,
+      "title": "Closing the AI execution gap: Dialpad releases production-ready AI agents",
+      "url": "https://siliconangle.com/2026/03/05/closing-ai-execution-gap-dialpad-releases-production-ready-ai-agents/",
+      "date": "2026-03-05",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Dialpad released production-ready AI agents to bridge the gap in AI implementation for businesses.**",
+        "These new AI agents are designed for practical, real-world deployment in enterprise environments.",
+        "The initiative aims to make advanced AI capabilities more actionable and accessible for various operations."
+      ],
+      "badges": {
+        "read_time": 12,
+        "pmo_focus": "Enablement",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Dialpad",
+        "AI agents",
+        "AI execution"
       ]
     },
     {
@@ -108,32 +394,6 @@
       ]
     },
     {
-      "id": 76850,
-      "title": "AI Project Portfolio Management in 2026: What PMO Leaders Must ...",
-      "url": "https://corasystems.com/blog/ai-pmo-leaders-guide-2026",
-      "date": "2026-03-04",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Gartner's \"Predicts 2026\" report outlines five key actions for PMO leaders to embrace AI in portfolio management.**",
-        "Data readiness, financial discipline, and appropriate AI skills are essential for PMOs to derive real value from AI.",
-        "Low confidence in data governance (14% of IT leaders) presents a significant challenge for PMOs adopting AI."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Portfolio",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "PMO",
-        "Portfolio Management"
-      ]
-    },
-    {
       "id": 76872,
       "title": "AI in Construction: Tools and Use Cases | Microsoft Copilot",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-in-construction",
@@ -186,6 +446,32 @@
       ]
     },
     {
+      "id": 77709,
+      "title": "Microsoft Marks SharePoint's 25th Anniversary With New AI-Driven ...",
+      "url": "https://rcpmag.com/articles/2026/03/03/microsoft-marks-sharepoints-25th-anniversary.aspx",
+      "date": "2026-03-04",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft introduces new AI-driven features to SharePoint, marking its 25th anniversary.**",
+        "The updates aim to enhance content management, search, and collaboration functionalities within the platform.",
+        "These AI capabilities could streamline information access and team coordination for project-related work."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Knowledge",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Microsoft",
+        "SharePoint",
+        "AI"
+      ]
+    },
+    {
       "id": 77961,
       "title": "How AI Improves Global Team Collaboration: 6 Use Cases ... - Deel",
       "url": "https://www.deel.com/blog/how-ai-improves-global-team-collaboration/",
@@ -235,292 +521,6 @@
         "AI cost management",
         "LLM optimization",
         "AI governance"
-      ]
-    },
-    {
-      "id": 76890,
-      "title": "Federal Technology Lifecycle Management Adopts AI & Automation",
-      "url": "https://fedtechmagazine.com/article/2026/03/federal-technology-lifecycle-management-adopts-ai-and-automation-perfcon?amp",
-      "date": "2026-03-04",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Federal agencies are leveraging AI and automation to enhance technology lifecycle management.**",
-        "These technologies support the management of hardware, software, and networks amid staff reductions.",
-        "AI capabilities could transform how government serves its customers and improve operational efficiency."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Resources",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "automation",
-        "technology lifecycle management"
-      ]
-    },
-    {
-      "id": 76911,
-      "title": "Asana Posts 9% Revenue Growth, But Is Its AI Project Management ...",
-      "url": "https://www.uctoday.com/project-management/asana-posts-9-revenue-growth-but-is-its-ai-project-management-platform-the-real-story/",
-      "date": "2026-03-03",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Asana reports 9% revenue growth, with the article questioning its AI project management platform's significance.**",
-        "The piece explores whether Asana's AI capabilities are the primary driver of its current market narrative.",
-        "Discussion centers on the impact and future potential of AI within project management tools like Asana."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Asana",
-        "AI",
-        "project management"
-      ]
-    },
-    {
-      "id": 76281,
-      "title": "How Power Automate Helps Analysts Send Alert Emails Faster and How AI Builder Takes It to the Next Level",
-      "url": "https://dzone.com/articles/how-power-automate-helps-analysts-send-alert-emails",
-      "date": "2026-03-03",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Power Automate enables analysts to rapidly automate the sending of critical alert emails based on data insights.**",
-        "AI Builder integrates advanced AI models like sentiment analysis and prediction to enhance alert triggers and data processing.",
-        "This combined approach helps analysts detect anomalies and communicate urgent information more efficiently, relevant for project oversight."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Power Automate",
-        "AI Builder",
-        "automation"
-      ]
-    },
-    {
-      "id": 76347,
-      "title": "In Pursuit of Agentic AI Workspace",
-      "url": "https://aimaker.substack.com/p/in-pursuit-of-agentic-ai-workspace-ai-workflow-automation-claude-code-obsidian-notion",
-      "date": "2026-03-03",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The article discusses integrating AI into daily workflows for enhanced productivity.**",
-        "Utilizes tools like Claude and Notion for seamless task management.",
-        "Highlights personal experiences and benefits of an agentic AI workspace."
-      ],
-      "badges": {
-        "read_time": 17,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI workspace",
-        "workflow automation",
-        "Claude"
-      ]
-    },
-    {
-      "id": 75555,
-      "title": "AI is helping revolutionise risk management | KPMG NZ",
-      "url": "https://kpmg.com/nz/en/insights/risk-management/ai-revolutionising-risk-management.html",
-      "date": "2026-03-02",
-      "score": 69,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**KPMG NZ highlights how AI is revolutionizing risk management practices across various sectors.**",
-        "AI enhances capabilities for identifying, assessing, and mitigating complex risks more effectively.",
-        "This approach allows organizations to move from reactive to predictive risk strategies."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "risk management",
-        "KPMG"
-      ]
-    },
-    {
-      "id": 74849,
-      "title": "Claude AI vs Claude Code vs Claude Cowork: Which Is the Right Tool for Your Workflow Automation?",
-      "url": "https://aitoolsclub.com/claude-ai-vs-claude-code-vs-claude-cowork-which-is-the-right-tool-for-your-workflow-automation/",
-      "date": "2026-03-02",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Claude AI, Claude Code, and Claude Cowork offer distinct features for workflow automation.**",
-        "Claude AI assists with repetitive tasks, while Claude Code focuses on coding efficiency.",
-        "Claude Cowork enhances collaboration, making it suitable for diverse work environments."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Claude AI",
-        "workflow automation",
-        "Anthropic AI"
-      ]
-    },
-    {
-      "id": 75396,
-      "title": "How to use AI browsers to maximize your productivity",
-      "url": "https://mashable.com/article/ai-browsers-features",
-      "date": "2026-03-02",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**AI browsers integrate generative AI features to significantly boost user productivity during web tasks.**",
-        "These browsers offer capabilities like instant summaries, content generation, and intelligent search within the browsing experience.",
-        "Utilizing AI browsers can streamline research, accelerate content creation, and improve information synthesis for professionals."
-      ],
-      "badges": {
-        "read_time": 15,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI browsers",
-        "productivity",
-        "generative AI"
-      ]
-    },
-    {
-      "id": 75374,
-      "title": "20 Best MCP Servers for Developers: Building Autonomous Agentic Workflows",
-      "url": "https://blog.n8n.io/best-mcp-servers/",
-      "date": "2026-03-02",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**This guide identifies and categorizes 20 top Model Context Protocol (MCP) servers for developers.**",
-        "It demonstrates orchestrating these MCP servers with n8n to build reliable, autonomous agentic workflows in production.",
-        "The aim is to transform temporary AI interactions into persistent, automated systems for production-grade AI deployment."
-      ],
-      "badges": {
-        "read_time": 20,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "MCP servers",
-        "AI workflows",
-        "autonomous agents"
-      ]
-    },
-    {
-      "id": 74253,
-      "title": "Context-Aware AI for Capital Delivery Decisions - NTT DATA",
-      "url": "https://uk.nttdata.com/insights/blog/context-aware-ai-capital-delivery-design-validation",
-      "date": "2026-03-01",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**NTT DATA discusses how context-aware AI significantly enhances capital delivery decisions.**",
-        "The AI system integrates real-time data and contextual understanding for improved design validation.",
-        "This approach aims to optimize large-scale project outcomes by reducing risks and improving efficiency."
-      ],
-      "badges": {
-        "read_time": 8,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "context-aware AI",
-        "capital delivery"
-      ]
-    },
-    {
-      "id": 74614,
-      "title": "OpenClaw Slack Task Integration: AI-Powered Team Task Automation",
-      "url": "https://www.tencentcloud.com/techpedia/139535",
-      "date": "2026-03-01",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**OpenClaw Slack Task Integration offers AI-powered automation to streamline team collaboration and boost productivity.**",
-        "The article details deploying this AI-powered integration on Tencent Cloud Lighthouse for efficient setup.",
-        "This tool enhances communication and workflow efficiency by automating tasks directly within Slack environments."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "OpenClaw",
-        "Slack",
-        "AI"
-      ]
-    },
-    {
-      "id": 75154,
-      "title": "5 Best Sonix Alternatives for AI Meeting Notes [2026] - HappyScribe",
-      "url": "https://www.happyscribe.com/blog/sonix-alternatives-for-ai-meeting-notes",
-      "date": "2026-03-01",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**HappyScribe lists top alternatives to Sonix for AI meeting notes.**",
-        "These tools provide features like instant notes, summaries, and transcription services.",
-        "They could assist with enhancing meeting documentation and action item tracking."
-      ],
-      "badges": {
-        "read_time": 27,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI meeting notes",
-        "Sonix alternatives",
-        "HappyScribe"
       ]
     }
   ]
