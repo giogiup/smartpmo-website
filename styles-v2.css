@@ -289,6 +289,16 @@ body::before {
   border-top: 1px solid var(--glass-border);
   font-size: 0.9rem;
 }
+.site-footer-disclaimer {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  opacity: 0.6;
+}
+.site-footer-disclaimer a {
+  color: #06B6D4;
+  text-decoration: none;
+}
+.site-footer-disclaimer a:hover { text-decoration: underline; }
 
 /* Demo Banner - DELETED */
 

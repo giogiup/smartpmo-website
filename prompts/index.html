@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PMO Prompt Hub — AI Prompts for PMO Professionals | SmartPMO.ai</title>
+  <title>SmartPMO Prompts — AI Prompts for PMO Professionals | SmartPMO.ai</title>
   <meta name="description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. 20+ ready-to-use prompts across all PMBOK Knowledge Areas. Free, no login required.">
   <meta name="keywords" content="PMO prompts, AI prompts for project management, PMBOK, project charter generator, risk register, WBS generator, stakeholder management, agile retrospective">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="PMO Prompt Hub — AI Prompts for PMO Professionals">
+  <meta property="og:title" content="SmartPMO Prompts — AI Prompts for PMO Professionals">
   <meta property="og:description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.">
   <meta property="og:url" content="https://smartpmo.ai/prompts">
   <meta property="og:site_name" content="SmartPMO.ai">
+  <meta property="og:image" content="https://smartpmo.ai/prompts/og-smartpmo-prompts.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PMO Prompt Hub — AI Prompts for PMO Professionals">
+  <meta name="twitter:title" content="SmartPMO Prompts — AI Prompts for PMO Professionals">
   <meta name="twitter:description" content="Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.">
+  <meta name="twitter:image" content="https://smartpmo.ai/prompts/og-smartpmo-prompts.png">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://smartpmo.ai/prompts">
@@ -28,7 +32,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://smartpmo.ai/prompts#collection",
-    "name": "PMO Prompt Hub — AI Prompts for PMO Professionals",
+    "name": "SmartPMO Prompts — AI Prompts for PMO Professionals",
     "description": "Expert-crafted, hallucination-proof AI prompts across all PMBOK Knowledge Areas. Free, model-agnostic, ready to use.",
     "url": "https://smartpmo.ai/prompts",
     "isPartOf": { "@id": "https://smartpmo.ai/#website" },
@@ -148,9 +152,16 @@
       font-size: clamp(0.85rem, 2vw, 1rem);
       color: var(--text-muted);
       font-weight: 400;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .prompts-hero-privacy {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      margin-top: 0.35rem;
+      line-height: 1.4;
     }
 
     .prompts-hero-share {
@@ -171,6 +182,49 @@
       color: var(--text-primary);
       border-color: var(--cyan-primary);
       background: rgba(6, 182, 212, 0.08);
+    }
+
+    /* Share dropdown panel */
+    .prompts-hero-share-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .prompts-share-panel {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: rgba(20, 28, 40, 0.97);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 0.5rem;
+      z-index: 200;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      flex-direction: row;
+      gap: 0.25rem;
+    }
+    .prompts-share-panel.is-open { display: flex; }
+
+    .prompts-share-panel-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      background: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      text-decoration: none;
+      transition: color var(--transition-fast), background var(--transition-fast);
+    }
+    .prompts-share-panel-btn:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.1);
     }
 
     /* === TAB BAR — Glassmorphic pills (SPEC-B21-REDESIGN) === */
@@ -314,6 +368,13 @@
       white-space: nowrap;
       width: 100%;
       text-align: left;
+      display: none;
+    }
+
+    .prompts-tab-count {
+      font-weight: 400;
+      opacity: 0.7;
+      font-size: 0.8em;
     }
 
     /* === PROMPTS GRID === */
@@ -2022,7 +2083,7 @@
         <a href="/#latest-intelligence" class="site-header-nav-link">Latest Intelligence</a>
         <a href="/#strategic-insights" class="site-header-nav-link">Strategic Insights</a>
         <a href="/#blog" class="site-header-nav-link">Blog</a>
-        <a href="/prompts" class="site-header-nav-link">Prompts</a>
+        <a href="/prompts" class="site-header-nav-link">SmartPMO Prompts</a>
         <a href="/about" class="site-header-nav-link">About</a>
         <a href="/assessment" class="site-header-cta-button">
           <span>Take Assessment</span>
@@ -2046,7 +2107,7 @@
       <a href="/#latest-intelligence" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Latest Intelligence</a>
       <a href="/#strategic-insights" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Strategic Insights</a>
       <a href="/#blog" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Blog</a>
-      <a href="/prompts" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">Prompts</a>
+      <a href="/prompts" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">SmartPMO Prompts</a>
       <a href="/about" class="site-header-mobile-nav-link" onclick="HeaderMenu.close()">About</a>
       <a href="/assessment" class="site-header-mobile-cta" onclick="HeaderMenu.close()">
         <span>Take Assessment</span>
@@ -2063,20 +2124,40 @@
       <section class="prompts-hero" aria-labelledby="prompts-title">
         <div class="prompts-hero-inner">
           <div class="prompts-hero-text">
-            <h1 class="prompts-hero-title" id="prompts-title">PMO Prompt Hub</h1>
-            <p class="prompts-hero-subtitle">Fill in your details &rarr; Copy &rarr; Paste into any AI.</p>
+            <h1 class="prompts-hero-title" id="prompts-title">SmartPMO Prompts</h1>
+            <p class="prompts-hero-subtitle">Fill in your details &middot; Copy &middot; Paste into any AI tool</p>
+            <p class="prompts-hero-privacy"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-1px;margin-right:4px;opacity:0.6"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>SmartPMO Prompts does not capture, store, or retain any information you enter. All data stays in your browser.</p>
           </div>
-          <button class="prompts-hero-share" id="heroShareBtn" aria-label="Copy page link" title="Copy link to this page">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
-          </button>
+          <div class="prompts-hero-share-wrap">
+            <button class="prompts-hero-share" id="heroShareBtn" aria-label="Share this page" title="Share" aria-expanded="false" aria-controls="heroSharePanel">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </button>
+            <div class="prompts-share-panel" id="heroSharePanel">
+              <a class="prompts-share-panel-btn" id="shareLinkedIn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" title="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a class="prompts-share-panel-btn" id="shareX" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on X" title="X (Twitter)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.739l7.738-8.835L1.99 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="prompts-share-panel-btn" id="shareEmail" href="#" aria-label="Share via Email" title="Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+              </a>
+              <a class="prompts-share-panel-btn" id="shareWhatsApp" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp" title="WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+              </a>
+              <button class="prompts-share-panel-btn" id="shareCopyLink" aria-label="Copy link" title="Copy Link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Tab Bar -->
       <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
-        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge" data-tab="forge">Forge</button>
-        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret" data-tab="pret">Ready to Use</button>
-        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains" data-tab="chains">Chains</button>
+        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge" data-tab="forge">Forge <span class="prompts-tab-count" id="tabCountForge"></span></button>
+        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret" data-tab="pret">Ready to Use <span class="prompts-tab-count" id="tabCountPret"></span></button>
+        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains" data-tab="chains">Chains <span class="prompts-tab-count" id="tabCountChains"></span></button>
       </div>
 
       <!-- Technique Legend (Fix #2B) -->
@@ -2131,7 +2212,6 @@
               <option value="az">Sort: A-Z</option>
             </select>
           </div>
-          <span class="prompts-filter-count" id="filterCount" aria-live="polite"></span>
         </div>
       </div>
 
@@ -2145,6 +2225,7 @@
     <!-- Footer -->
     <footer class="prompts-footer">
       <p>&copy; 2026 SmartPMO.ai &mdash; AI-powered insights for PMO professionals</p>
+      <p style="font-size:0.7rem;margin-top:0.5rem;opacity:0.6">AI can make mistakes. Always verify outputs. <a href="/blog/ai-limitations" style="color:#06B6D4;text-decoration:none">AI Limitations &rarr;</a></p>
     </footer>
   </div>
 
@@ -2232,7 +2313,7 @@
       const filterArea = document.getElementById('filterArea');
       const filterSearch = document.getElementById('filterSearch');
       const filterSort = document.getElementById('filterSort');
-      const filterCount = document.getElementById('filterCount');
+      const tabCountPret = document.getElementById('tabCountPret');
       const toast = document.getElementById('promptsToast');
 
       // AI Model launchers — 9 models (SPEC-B21-REDESIGN: HuggingChat removed)
@@ -2341,10 +2422,14 @@
       }
 
       function updateCount() {
-        if (!filterCount || !promptsData) return;
-        const total = promptsData.prompts.length;
+        if (!tabCountPret || !promptsData) return;
         const shown = filteredPrompts.length;
-        filterCount.textContent = shown === total ? total + ' prompts' : shown + ' of ' + total + ' prompts';
+        tabCountPret.textContent = '(' + shown + ')';
+        // Set Forge and Chains tab counts (static from data)
+        const tabCountForge = document.getElementById('tabCountForge');
+        const tabCountChains = document.getElementById('tabCountChains');
+        if (tabCountForge && promptsData.frameworks) tabCountForge.textContent = '(' + promptsData.frameworks.length + ')';
+        if (tabCountChains && promptsData.chains) tabCountChains.textContent = '(' + promptsData.chains.length + ')';
       }
 
       // ── Card rendering ──
@@ -2487,7 +2572,15 @@
         if (isExpanded) {
           updatePreview(promptId);
           history.replaceState(null, '', '#' + promptId);
-          setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+          setTimeout(() => {
+            const headerHeight = 60;
+            const filterHeight = 50;
+            const cardTop = card.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+              top: cardTop - headerHeight - filterHeight - 10,
+              behavior: 'smooth'
+            });
+          }, 150);
         }
       }
 
@@ -2498,7 +2591,6 @@
         const card = document.getElementById('prompt-' + hash);
         if (card && !card.classList.contains('is-expanded')) {
           toggleCard(hash);
-          setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
         }
       }
 
@@ -2672,23 +2764,56 @@
         if (filterSearch) filterSearch.addEventListener('input', applyFilters);
         if (filterSort) filterSort.addEventListener('change', applyFilters);
 
-        // Hero share button — copy page URL
+        // Hero share panel — social sharing
         const heroShareBtn = document.getElementById('heroShareBtn');
-        if (heroShareBtn) {
-          heroShareBtn.addEventListener('click', async () => {
-            const url = 'https://smartpmo.ai/prompts';
-            try {
-              await navigator.clipboard.writeText(url);
-            } catch (err) {
-              const ta = document.createElement('textarea');
-              ta.value = url;
-              ta.style.cssText = 'position:fixed;left:-9999px';
-              document.body.appendChild(ta);
-              ta.select();
-              document.execCommand('copy');
-              document.body.removeChild(ta);
-            }
-            showToast('Link copied!');
+        const heroSharePanel = document.getElementById('heroSharePanel');
+        if (heroShareBtn && heroSharePanel) {
+          const shareUrl = encodeURIComponent('https://smartpmo.ai/prompts');
+          const shareTitle = encodeURIComponent('SmartPMO Prompts \u2014 AI Prompts for PMO Professionals');
+          const shareBody = encodeURIComponent('Free, expert-crafted AI prompts for PMO professionals. Anti-hallucination techniques built in. Works with any AI tool. Check it out:');
+
+          // Set share URLs
+          const linkedIn = document.getElementById('shareLinkedIn');
+          const shareX = document.getElementById('shareX');
+          const shareEmail = document.getElementById('shareEmail');
+          const shareWA = document.getElementById('shareWhatsApp');
+          const shareCopy = document.getElementById('shareCopyLink');
+
+          if (linkedIn) linkedIn.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + shareUrl;
+          if (shareX) shareX.href = 'https://twitter.com/intent/tweet?text=' + shareTitle + '&url=' + shareUrl;
+          if (shareEmail) shareEmail.href = 'mailto:?subject=' + shareTitle + '&body=' + shareBody + ' ' + shareUrl;
+          if (shareWA) shareWA.href = 'https://api.whatsapp.com/send?text=' + shareBody + ' https://smartpmo.ai/prompts';
+
+          // Toggle panel
+          heroShareBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = heroSharePanel.classList.toggle('is-open');
+            heroShareBtn.setAttribute('aria-expanded', String(isOpen));
+          });
+
+          // Copy link button
+          if (shareCopy) {
+            shareCopy.addEventListener('click', async () => {
+              try { await navigator.clipboard.writeText('https://smartpmo.ai/prompts'); }
+              catch (err) {
+                const ta = document.createElement('textarea');
+                ta.value = 'https://smartpmo.ai/prompts';
+                ta.style.cssText = 'position:fixed;left:-9999px';
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+              }
+              heroSharePanel.classList.remove('is-open');
+              heroShareBtn.setAttribute('aria-expanded', 'false');
+              showToast('Link copied!');
+            });
+          }
+
+          // Close panel on outside click
+          document.addEventListener('click', () => {
+            heroSharePanel.classList.remove('is-open');
+            heroShareBtn.setAttribute('aria-expanded', 'false');
           });
         }
 
@@ -3381,8 +3506,14 @@
         if (!activeChain || index < 0 || index >= activeChain.steps.length) return;
         activeStepIndex = index;
         renderWorkspace();
-        // Scroll workspace into view
-        if (workspace) workspace.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Scroll workspace into view with offset for fixed header
+        if (workspace) {
+          setTimeout(() => {
+            const headerHeight = 60;
+            const wsTop = workspace.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: wsTop - headerHeight - 10, behavior: 'smooth' });
+          }, 100);
+        }
       }
 
       // ── Toast ──

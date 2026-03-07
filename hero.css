@@ -123,6 +123,22 @@
   box-shadow: 0 8px 30px rgba(0, 229, 255, 0.35);
 }
 
+/* AI Disclaimer */
+.hero-ai-disclaimer {
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  color: #8b9cc0;
+  line-height: 1.6;
+  max-width: 500px;
+  opacity: 0.8;
+}
+.hero-ai-disclaimer-link {
+  color: #06B6D4;
+  text-decoration: none;
+  font-weight: 500;
+}
+.hero-ai-disclaimer-link:hover { text-decoration: underline; }
+
 /* ==================== QUADRANT GRID ==================== */
 
 .hero-visual-wrapper {
