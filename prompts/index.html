@@ -593,6 +593,7 @@
     .smartai-model-btn {
       display: inline-flex;
       align-items: center;
+      gap: 0.35rem;
       padding: 0.35rem 0.6rem;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--badge-border);
@@ -1518,6 +1519,7 @@
     .forge-model-btn {
       display: inline-flex;
       align-items: center;
+      gap: 0.35rem;
       padding: 0.35rem 0.6rem;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--badge-border);
@@ -1561,6 +1563,47 @@
       color: var(--text-muted);
       max-width: 650px;
       margin: 0 auto;
+    }
+
+    .chains-value-blurb {
+      margin-top: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: rgba(245, 158, 11, 0.06);
+      border: 1px solid rgba(245, 158, 11, 0.18);
+      border-radius: 8px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .chains-value-blurb strong {
+      color: var(--gold-accent);
+    }
+
+    .chains-selector-example {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.35;
+      margin-top: 0.3rem;
+      opacity: 0.8;
+    }
+
+    .chains-selector-areas {
+      display: flex;
+      gap: 0.35rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 0.35rem;
+    }
+
+    .chains-selector-areas svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
     }
 
     /* Chain selector grid */
@@ -2012,6 +2055,7 @@
     .chains-model-btn {
       display: inline-flex;
       align-items: center;
+      gap: 0.35rem;
       padding: 0.35rem 0.6rem;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--badge-border);
@@ -2563,11 +2607,11 @@
               </button>
               <div class="smartai-launcher-row" id="smartaiLaunchers">
                 <span class="smartai-launcher-label">Open in:</span>
-                <button class="smartai-model-btn" data-model="chatgpt" aria-label="Open in ChatGPT">ChatGPT</button>
-                <button class="smartai-model-btn" data-model="claude" aria-label="Open in Claude">Claude</button>
-                <button class="smartai-model-btn" data-model="gemini" aria-label="Open in Gemini">Gemini</button>
-                <button class="smartai-model-btn" data-model="copilot" aria-label="Open in Copilot">Copilot</button>
-                <button class="smartai-model-btn" data-model="perplexity" aria-label="Open in Perplexity">Perplexity</button>
+                <button class="smartai-model-btn" data-model="chatgpt" aria-label="Open in ChatGPT"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#10a37f" stroke-width="1.2"/><path d="M5 8.5l2.2-3.5h1.6l2.2 3.5-2.2 3.5H7.2z" stroke="#10a37f" stroke-width="1.2" stroke-linejoin="round"/></svg> ChatGPT</button>
+                <button class="smartai-model-btn" data-model="claude" aria-label="Open in Claude"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" fill="#d4a574"/><line x1="8" y1="1.5" x2="8" y2="4" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="12" x2="8" y2="14.5" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="1.5" y1="8" x2="4" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="12" y1="8" x2="14.5" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/></svg> Claude</button>
+                <button class="smartai-model-btn" data-model="gemini" aria-label="Open in Gemini"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 5.2L15 8l-5.2 1.8L8 15l-1.8-5.2L1 8l5.2-1.8z" stroke="#4285f4" stroke-width="1.2" stroke-linejoin="round"/></svg> Gemini</button>
+                <button class="smartai-model-btn" data-model="copilot" aria-label="Open in Copilot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 10c0-3 2.2-5.5 5-5.5s5 2.5 5 5.5" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/><path d="M3 10c0 1.8 1 3 2.5 3s2.5-1.2 2.5-3" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/><path d="M8 10c0 1.8 1 3 2.5 3s2.5-1.2 2.5-3" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/></svg> Copilot</button>
+                <button class="smartai-model-btn" data-model="perplexity" aria-label="Open in Perplexity"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#20808d" stroke-width="1.2"/><circle cx="8" cy="8" r="1.5" fill="#20808d"/><line x1="8" y1="2" x2="8" y2="5.5" stroke="#20808d" stroke-width="1.2" stroke-linecap="round"/></svg> Perplexity</button>
               </div>
             </div>
           </div>
@@ -2593,6 +2637,9 @@
         <div class="chains-intro">
           <h2 class="chains-intro-title">Multi-Step Prompt Workflows</h2>
           <p class="chains-intro-desc">Complete AI workflows for complex PMO scenarios. Each chain is 3-6 connected prompts that build on each other &mdash; paste each output as context for the next step.</p>
+          <div class="chains-value-blurb">
+            <strong>Why multi-step prompts?</strong> AI produces better results when you break complex work into focused steps. Each step validates the previous one, keeps context tight, and lets you course-correct before moving forward. One massive prompt = one chance to get it right. A chain = multiple chances to refine.
+          </div>
         </div>
         <div class="chains-selector" id="chainsSelector">
           <!-- Rendered by ChainsModule -->
@@ -2673,22 +2720,37 @@
     });
 
     /* ============================================
-       SVG ICON REGISTRY — SmartPMO-themed icons
-       Stroke-based line art matching hero icon style
+       MODEL LOGO REGISTRY — Simplified brand marks at 16px (B-61)
+       ============================================ */
+    const MODEL_LOGOS = {
+      ChatGPT: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#10a37f" stroke-width="1.2"/><path d="M5 8.5l2.2-3.5h1.6l2.2 3.5-2.2 3.5H7.2z" stroke="#10a37f" stroke-width="1.2" stroke-linejoin="round"/></svg>',
+      Claude: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" fill="#d4a574"/><line x1="8" y1="1.5" x2="8" y2="4" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="12" x2="8" y2="14.5" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="1.5" y1="8" x2="4" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="12" y1="8" x2="14.5" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="3.4" y1="3.4" x2="5.2" y2="5.2" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="10.8" y1="10.8" x2="12.6" y2="12.6" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="3.4" y1="12.6" x2="5.2" y2="10.8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="10.8" y1="5.2" x2="12.6" y2="3.4" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/></svg>',
+      Gemini: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 5.2L15 8l-5.2 1.8L8 15l-1.8-5.2L1 8l5.2-1.8z" stroke="#4285f4" stroke-width="1.2" stroke-linejoin="round"/></svg>',
+      Copilot: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 10c0-3 2.2-5.5 5-5.5s5 2.5 5 5.5" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/><path d="M3 10c0 1.8 1 3 2.5 3s2.5-1.2 2.5-3" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/><path d="M8 10c0 1.8 1 3 2.5 3s2.5-1.2 2.5-3" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/></svg>',
+      Perplexity: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#20808d" stroke-width="1.2"/><circle cx="8" cy="8" r="1.5" fill="#20808d"/><line x1="8" y1="2" x2="8" y2="5.5" stroke="#20808d" stroke-width="1.2" stroke-linecap="round"/></svg>',
+      DeepSeek: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 11c2-4 4-6 5-6.5s3 .5 4 2c1 2 0 4-2 5s-5 .5-7-.5" stroke="#4d6bfe" stroke-width="1.3" stroke-linecap="round"/></svg>',
+      Qwen: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#6236ff" stroke-width="1.2"/><path d="M5.5 8c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5" stroke="#6236ff" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="10.5" x2="8" y2="12" stroke="#6236ff" stroke-width="1.5" stroke-linecap="round"/></svg>',
+      Mistral: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="3" y="3" width="2.5" height="10" rx="0.5" fill="#ff7000" opacity="0.5"/><rect x="6.75" y="3" width="2.5" height="10" rx="0.5" fill="#ff7000" opacity="0.7"/><rect x="10.5" y="3" width="2.5" height="10" rx="0.5" fill="#ff7000" opacity="0.9"/></svg>',
+      Grok: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="3" y1="3" x2="13" y2="13" stroke="#888" stroke-width="1.5" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></svg>'
+    };
+
+    /* ============================================
+       SVG ICON REGISTRY — SmartPMO diamond-sparkle themed (B-61)
+       Stroke-based line art with diamond motif at top
        ============================================ */
     const ICONS = {
       areas: {
-        integration: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="7.5" cy="10" rx="4" ry="5"/><ellipse cx="12.5" cy="10" rx="4" ry="5"/></svg>',
-        scope: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="3.5"/><circle cx="10" cy="10" r="0.8" fill="#8B5CF6"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="10" y1="16" x2="10" y2="19"/><line x1="1" y1="10" x2="4" y2="10"/><line x1="16" y1="10" x2="19" y2="10"/></svg>',
-        schedule: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#4C78FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="16" height="14" rx="2"/><line x1="2" y1="8" x2="18" y2="8"/><line x1="6" y1="2" x2="6" y2="6"/><line x1="14" y1="2" x2="14" y2="6"/><circle cx="7" cy="12" r="0.8" fill="#4C78FF"/><circle cx="10" cy="12" r="0.8" fill="#4C78FF"/><circle cx="13" cy="12" r="0.8" fill="#4C78FF"/><circle cx="7" cy="15" r="0.8" fill="#4C78FF"/><circle cx="10" cy="15" r="0.8" fill="#4C78FF"/></svg>',
-        cost: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M10 4.5v11"/><path d="M7.5 7.5C7.5 6.5 8.5 5.8 10 5.8s2.5.7 2.5 1.7c0 1.5-2.5 1.2-2.5 2.7"/><path d="M7.5 12.5c0 1 1 1.7 2.5 1.7s2.5-.7 2.5-1.7"/></svg>',
-        quality: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2l2.5 1.5v3L10 8 7.5 6.5v-3z"/><path d="M7.5 6.5L4 8.5v4L10 17l6-4.5v-4L12.5 6.5"/><polyline points="7 10.5 9.5 13 14 8"/></svg>',
-        resource: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="6" r="2.5"/><path d="M2.5 15c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5"/><circle cx="14" cy="7" r="2"/><path d="M12.5 15c0-2 1.5-3.5 3.5-3.5s2.5 1 2.5 3.5"/></svg>',
-        communications: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="9" rx="2"/><path d="M5 15l-1 3 3-2h3"/><path d="M14 7h2.5a1.5 1.5 0 011.5 1.5v5a1.5 1.5 0 01-1.5 1.5H15l-2 2v-2h-1"/></svg>',
-        risk: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#ff6b6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2L1.5 17h17z"/><line x1="10" y1="7.5" x2="10" y2="12"/><circle cx="10" cy="14.5" r="0.6" fill="#ff6b6b"/></svg>',
-        procurement: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="12" height="16" rx="1.5"/><path d="M8 2v-0.5a2 2 0 014 0V2"/><line x1="7" y1="7" x2="13" y2="7"/><line x1="7" y1="10" x2="13" y2="10"/><line x1="7" y1="13" x2="11" y2="13"/></svg>',
-        stakeholder: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c1-2 2-3 3.5-4.5"/><path d="M16 13c-1-2-2-3-3.5-4.5"/><path d="M7.5 8.5c.5-.3 1.5-1 2.5-1s2 .7 2.5 1"/><path d="M3 14.5c1 .5 2.5 1.5 4 2l1.5-1.5h3L13 16.5c1.5-.5 3-1.5 4-2"/><circle cx="5.5" cy="6" r="2"/><circle cx="14.5" cy="6" r="2"/></svg>',
-        agile: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#00F5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5a6.5 6.5 0 01.5 9"/><polyline points="17 11 15 12.5 13.5 10.5"/><path d="M5.5 16.5a6.5 6.5 0 01-.5-9"/><polyline points="3 9 5 7.5 6.5 9.5"/></svg>'
+        integration: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2l3 3-3 3-3-3z"/><path d="M10 12l3 3-3 3-3-3z"/><line x1="10" y1="8" x2="10" y2="12"/><line x1="5" y1="7" x2="3" y2="10"/><line x1="15" y1="7" x2="17" y2="10"/></svg>',
+        scope: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2l2 4-2 2-2-2z"/><circle cx="10" cy="10" r="7"/><line x1="10" y1="3" x2="10" y2="6"/><line x1="3" y1="10" x2="6" y2="10"/><line x1="14" y1="10" x2="17" y2="10"/><line x1="10" y1="14" x2="10" y2="17"/></svg>',
+        schedule: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#4C78FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2l2 2-2 2-2-2z"/><circle cx="10" cy="11" r="7"/><line x1="10" y1="9" x2="10" y2="12"/><line x1="10" y1="12" x2="13" y2="13"/></svg>',
+        cost: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1l2.5 3-2.5 3-2.5-3z"/><line x1="10" y1="7" x2="10" y2="18"/><path d="M7 9.5c0-1.2 1.3-2 3-2s3 .8 3 2-1.3 2-3 2"/><path d="M7 13.5c0 1.2 1.3 2 3 2s3-.8 3-2"/></svg>',
+        quality: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2l2 2-2 2-2-2z"/><path d="M4 9l6 8 6-8z"/><polyline points="7.5 12 9.5 14 13 10"/></svg>',
+        resource: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1l1.5 1.5-1.5 1.5-1.5-1.5z"/><circle cx="7" cy="8" r="2.5"/><circle cx="13" cy="8" r="2.5"/><path d="M2.5 16c0-2.5 2-4.5 4.5-4.5"/><path d="M17.5 16c0-2.5-2-4.5-4.5-4.5"/><path d="M7 11.5c1 .8 2 1 3 1s2-.2 3-1"/></svg>',
+        communications: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#0EA5E9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1l2 2-2 2-2-2z"/><path d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M3 8l7 5 7-5"/></svg>',
+        risk: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1l3 3-3 3-3-3z"/><path d="M10 9l7 9H3z"/><line x1="10" y1="12" x2="10" y2="15"/><circle cx="10" cy="16.5" r="0.5" fill="#EF4444"/></svg>',
+        procurement: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1l2 2-2 2-2-2z"/><rect x="4" y="6" width="12" height="12" rx="1.5"/><line x1="7" y1="10" x2="13" y2="10"/><line x1="7" y1="13" x2="11" y2="13"/></svg>',
+        stakeholder: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#FBBF24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 1l2 2-2 2-2-2z"/><circle cx="6" cy="9" r="2"/><circle cx="14" cy="9" r="2"/><path d="M3 16c0-2 1.5-3.5 3-3.5"/><path d="M17 16c0-2-1.5-3.5-3-3.5"/><path d="M9 16c0-2.5-1-3.5-2-3.5"/><path d="M11 16c0-2.5 1-3.5 2-3.5"/></svg>',
+        agile: '<svg class="prompts-area-icon" viewBox="0 0 20 20" fill="none" stroke="#00F5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3l1.5 1.5-1.5 1.5-1.5-1.5z"/><circle cx="10" cy="11" r="6"/><path d="M7 8.5a6 6 0 019 5"/><polyline points="16.5 12 16 13.5 14.5 13"/></svg>'
       },
       techniques: {
         grounding: '<svg class="prompts-technique-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2L3 6v5c0 4 3 6.5 7 8 4-1.5 7-4 7-8V6z"/></svg>',
@@ -2901,7 +2963,7 @@
           }).join('');
 
           const launcherBtns = AI_MODELS.map(m =>
-            '<a class="prompts-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-launcher="' + escapeAttr(m.name) + '" data-prompt-id="' + p.id + '">' + escapeHtml(m.name) + '</a>'
+            '<a class="prompts-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-launcher="' + escapeAttr(m.name) + '" data-prompt-id="' + p.id + '">' + (MODEL_LOGOS[m.name] || '') + ' ' + escapeHtml(m.name) + '</a>'
           ).join('');
 
           html +=
@@ -3507,7 +3569,7 @@
         ).join('');
 
         const launcherBtns = AI_MODELS.map(m =>
-          '<a class="forge-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-forge-launcher="' + escapeAttr(m.name) + '">' + escapeHtml(m.name) + '</a>'
+          '<a class="forge-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-forge-launcher="' + escapeAttr(m.name) + '">' + (MODEL_LOGOS[m.name] || '') + ' ' + escapeHtml(m.name) + '</a>'
         ).join('');
 
         workspace.innerHTML =
@@ -3717,20 +3779,26 @@
       function renderSelector() {
         if (!selector || !chainsData) return;
 
-        selector.innerHTML = chainsData.map(chain =>
-          '<div class="chains-selector-card" data-chain="' + chain.id + '" role="button" tabindex="0">' +
+        selector.innerHTML = chainsData.map(chain => {
+          var kaIcons = (chain.knowledgeAreas || []).map(function(ka) {
+            return (ICONS.areas[ka] || '') + '<span style="font-size:0.65rem;color:var(--text-muted)">' + escapeHtml(ka.charAt(0).toUpperCase() + ka.slice(1)) + '</span>';
+          }).join('');
+          var exampleHtml = chain.example ? '<div class="chains-selector-example"><strong>Example:</strong> ' + escapeHtml(chain.example) + '</div>' : '';
+          return '<div class="chains-selector-card" data-chain="' + chain.id + '" role="button" tabindex="0">' +
             '<div class="chains-selector-header">' +
               '<span class="chains-selector-icon">' + chain.icon + '</span>' +
               '<span class="chains-selector-title">' + escapeHtml(chain.title) + '</span>' +
             '</div>' +
             '<div class="chains-selector-desc">' + escapeHtml(chain.description) + '</div>' +
+            exampleHtml +
+            '<div class="chains-selector-areas">' + kaIcons + '</div>' +
             '<div class="chains-selector-meta">' +
               '<span class="chains-meta-badge is-gold">' + chain.steps.length + ' steps</span>' +
               '<span class="chains-meta-badge">' + escapeHtml(chain.estimatedTime) + '</span>' +
               '<span class="chains-meta-badge">' + escapeHtml(chain.difficulty) + '</span>' +
             '</div>' +
-          '</div>'
-        ).join('');
+          '</div>';
+        }).join('');
       }
 
       // ── Select a chain and render workspace ──
@@ -3799,7 +3867,7 @@
 
         // Launcher buttons
         const launcherBtns = AI_MODELS.map(m =>
-          '<a class="chains-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-chains-launcher="' + escapeAttr(m.name) + '">' + escapeHtml(m.name) + '</a>'
+          '<a class="chains-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-chains-launcher="' + escapeAttr(m.name) + '">' + (MODEL_LOGOS[m.name] || '') + ' ' + escapeHtml(m.name) + '</a>'
         ).join('');
 
         // Navigation buttons
@@ -3818,7 +3886,7 @@
             '<div class="chains-workspace-title"><span>' + escapeHtml(chain.icon) + ' ' + escapeHtml(chain.title) + '</span></div>' +
             '<div class="chains-workspace-desc">' + escapeHtml(chain.description) + '</div>' +
             '<div class="chains-workspace-badges">' +
-              chain.knowledgeAreas.map(ka => '<span class="chains-meta-badge">' + escapeHtml(ka) + '</span>').join('') +
+              chain.knowledgeAreas.map(function(ka) { return '<span class="chains-meta-badge">' + (ICONS.areas[ka] ? '<span style="display:inline-flex;width:14px;height:14px;vertical-align:middle;margin-right:3px">' + ICONS.areas[ka] + '</span>' : '') + escapeHtml(ka.charAt(0).toUpperCase() + ka.slice(1)) + '</span>'; }).join('') +
             '</div>' +
           '</div>' +
           '<div class="chains-progress">' + progressHtml + '</div>' +
