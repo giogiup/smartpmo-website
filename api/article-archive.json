@@ -783,8 +783,136 @@
       "published_date": "2026-03-04",
       "archived_at": "2026-03-06",
       "section": "auto"
+    },
+    {
+      "id": 79632,
+      "title": "AI Data Analytics: Enhance Your Data Analysis | Microsoft AI",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-for-data-analysis",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "AI data analytics significantly enhances the speed and depth of organizational data analysis.",
+        "Microsoft AI tools offer capabilities for uncovering hidden patterns and generating actionable insights.",
+        "Enhanced data analysis could improve project forecasting, risk identification, and resource optimization."
+      ],
+      "read_time": "18 min",
+      "source_domain": "microsoft.com",
+      "published_date": "2026-03-07",
+      "archived_at": "2026-03-07",
+      "section": "auto"
+    },
+    {
+      "id": 79590,
+      "title": "The MSP Guide to Using AI-Powered Risk Management to Scale ...",
+      "url": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**MSPs can leverage AI-powered risk management to enhance cybersecurity posture and achieve operational scaling.**",
+        "AI tools help identify, assess, and mitigate potential threats and vulnerabilities within IT environments.",
+        "Implementing AI in risk management enables MSPs to improve service delivery and client protection."
+      ],
+      "read_time": "10 min",
+      "source_domain": "thehackernews.com",
+      "published_date": "2026-03-07",
+      "archived_at": "2026-03-07",
+      "section": "auto"
+    },
+    {
+      "id": 79709,
+      "title": "The AI Maturity Curve for Knowledge Management - Atlassian",
+      "url": "https://www.atlassian.com/webinars/business/the-ai-maturity-curve-for-knowledge-management",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Atlassian explores the AI Maturity Curve for optimizing knowledge management within organizations.**",
+        "Atlassian's Rovo powers AI apps by leveraging team knowledge across products like Jira and Confluence.",
+        "AI integration aims to enhance teamwork, optimize strategy, and accelerate service delivery across various functions."
+      ],
+      "read_time": "9 min",
+      "source_domain": "atlassian.com",
+      "published_date": "2026-03-07",
+      "archived_at": "2026-03-07",
+      "section": "auto"
+    },
+    {
+      "id": 79529,
+      "title": "The Rise of AI in Construction Estimating - Kamai",
+      "url": "https://www.kamai.io/blog/the-rise-of-ai-in-construction-estimating",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI is revolutionizing construction estimating, enhancing takeoff accuracy and significantly reducing manual effort.**",
+        "AI platforms like Kamai automate measurements, extract structured data from blueprints, and provide insights.",
+        "This enables contractors to bid faster and smarter, making confident, data-driven decisions on projects."
+      ],
+      "read_time": "13 min",
+      "source_domain": "kamai.io",
+      "published_date": "2026-03-07",
+      "archived_at": "2026-03-07",
+      "section": "auto"
+    },
+    {
+      "id": 78951,
+      "title": "Architecting a Rovo AI Teammate: From AI ‘Magic’ to Production-Ready Forge Code",
+      "url": "https://www.atlassian.com/blog/it-teams/architecting-a-rovo-ai-teammate-from-ai-magic-to-production-ready-forge-code",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Atlassian details architecting Rovo, an AI teammate, from concept to production-ready Forge code.**",
+        "It describes transforming AI 'magic' into robust, deployable applications within existing systems.",
+        "The integration of AI teammates into IT workflows aims to enhance team productivity and efficiency."
+      ],
+      "read_time": "13 min",
+      "source_domain": "atlassian.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-07",
+      "section": "auto"
+    },
+    {
+      "id": 78952,
+      "title": "Behind the Demo: How Cross‑functional Partnerships Turned AI “Golden Prompts” into Real Customer Value",
+      "url": "https://www.atlassian.com/blog/artificial-intelligence/golden-prompts",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Atlassian developed 'golden prompts' for AI through cross-functional partnerships to deliver real customer value.**",
+        "Collaboration across product, engineering, design, marketing, sales, and support teams was crucial.",
+        "This approach ensures AI solutions are deeply integrated and aligned with diverse business and customer needs."
+      ],
+      "read_time": "16 min",
+      "source_domain": "atlassian.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-07",
+      "section": "auto"
+    },
+    {
+      "id": 78963,
+      "title": "Reducing Daily PM Overhead With a Chat-Based AI Agent",
+      "url": "https://dzone.com/articles/reducing-pm-overhead-chat-based-ai-agent",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "A chat-based AI agent is explored as a solution for reducing daily project management overhead.",
+        "The agent aims to streamline routine tasks and administrative burdens for project managers.",
+        "This technology could enable project managers to focus more on strategic project activities."
+      ],
+      "read_time": "13 min",
+      "source_domain": "dzone.com",
+      "published_date": "2026-03-06",
+      "archived_at": "2026-03-07",
+      "section": "auto"
+    },
+    {
+      "id": 76876,
+      "title": "Microsoft's SharePoint Turns 25, Rolls Out Agentic AI Building and ...",
+      "url": "https://redmondmag.com/articles/2026/03/03/microsoft-turns-25-on-sharepoint.aspx",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Microsoft SharePoint celebrates 25 years, rolling out new 'Agentic AI Building' features.**",
+        "These AI capabilities are designed to enhance content management and collaborative project environments.",
+        "The integration aims to streamline project workflows and improve information governance for PMO teams."
+      ],
+      "read_time": "10 min",
+      "source_domain": "redmondmag.com",
+      "published_date": "2026-03-04",
+      "archived_at": "2026-03-07",
+      "section": "auto"
     }
   ],
-  "last_updated": "2026-03-06T04:38:03.084Z",
-  "total": 49
+  "last_updated": "2026-03-07T04:39:20.544Z",
+  "total": 57
 }

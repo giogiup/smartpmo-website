@@ -1,6 +1,83 @@
 {
   "latestIntelligence": [
     {
+      "id": 79709,
+      "title": "The AI Maturity Curve for Knowledge Management - Atlassian",
+      "url": "https://www.atlassian.com/webinars/business/the-ai-maturity-curve-for-knowledge-management",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-07",
+      "discoveredAt": "2026-03-07 04:16:45",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 79632,
+      "title": "AI Data Analytics: Enhance Your Data Analysis | Microsoft AI",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-for-data-analysis",
+      "summary": "",
+      "score": 69,
+      "publishedDate": "2026-03-07",
+      "discoveredAt": "2026-03-07 04:16:13",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 79590,
+      "title": "The MSP Guide to Using AI-Powered Risk Management to Scale ...",
+      "url": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-03-07",
+      "discoveredAt": "2026-03-07 04:15:56",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 79529,
+      "title": "The Rise of AI in Construction Estimating - Kamai",
+      "url": "https://www.kamai.io/blog/the-rise-of-ai-in-construction-estimating",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-07",
+      "discoveredAt": "2026-03-07 04:15:37",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78963,
+      "title": "Reducing Daily PM Overhead With a Chat-Based AI Agent",
+      "url": "https://dzone.com/articles/reducing-pm-overhead-chat-based-ai-agent",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-07 04:01:22",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78951,
+      "title": "Architecting a Rovo AI Teammate: From AI ‘Magic’ to Production-Ready Forge Code",
+      "url": "https://www.atlassian.com/blog/it-teams/architecting-a-rovo-ai-teammate-from-ai-magic-to-production-ready-forge-code",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-07 04:00:49",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 78952,
+      "title": "Behind the Demo: How Cross‑functional Partnerships Turned AI “Golden Prompts” into Real Customer Value",
+      "url": "https://www.atlassian.com/blog/artificial-intelligence/golden-prompts",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-06",
+      "discoveredAt": "2026-03-07 04:00:49",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 78929,
       "title": "Best AI Automation Software [2026 Comparison] | SS&C Blue Prism",
       "url": "https://www.blueprism.com/guides/what-is-automation-software/best/",
@@ -133,90 +210,13 @@
       "section": "auto"
     },
     {
-      "id": 77961,
-      "title": "How AI Improves Global Team Collaboration: 6 Use Cases ... - Deel",
-      "url": "https://www.deel.com/blog/how-ai-improves-global-team-collaboration/",
+      "id": 76876,
+      "title": "Microsoft's SharePoint Turns 25, Rolls Out Agentic AI Building and ...",
+      "url": "https://redmondmag.com/articles/2026/03/03/microsoft-turns-25-on-sharepoint.aspx",
       "summary": "",
-      "score": 66,
+      "score": 85,
       "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 19:23:35",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 77722,
-      "title": "Moltbook Monitoring by YouScan: Track AI Agent Conversations",
-      "url": "https://youscan.io/moltbook-monitoring/",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 17:59:28",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 77709,
-      "title": "Microsoft Marks SharePoint's 25th Anniversary With New AI-Driven ...",
-      "url": "https://rcpmag.com/articles/2026/03/03/microsoft-marks-sharepoints-25th-anniversary.aspx",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 17:59:22",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 77040,
-      "title": "AgentCost – Track, control, and optimize your AI spending (MIT)",
-      "url": "https://news.ycombinator.com/item?id=47235683",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 04:15:36",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76968,
-      "title": "Project Tracking Software - Tail AI",
-      "url": "https://tailapp.ai/products/project-tracking",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 04:15:05",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76925,
-      "title": "Project Reporting & Analytics - Tail AI",
-      "url": "https://tailapp.ai/products/reporting-analytics",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 04:14:50",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76872,
-      "title": "AI in Construction: Tools and Use Cases | Microsoft Copilot",
-      "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-in-construction",
-      "summary": "",
-      "score": 69,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 04:14:33",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 76846,
-      "title": "Insights from the Latest Global Study on the AI-Powered Project ...",
-      "url": "https://www.projectmanagement.com/videos/1158611/insights-from-the-latest-global-study-on-the-ai-powered-project-management",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-04",
-      "discoveredAt": "2026-03-04 04:14:23",
+      "discoveredAt": "2026-03-04 04:14:35",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-06T04:38:02.970Z"
+  "generatedAt": "2026-03-07T04:39:20.377Z"
 }
