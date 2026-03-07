@@ -120,16 +120,24 @@
     .prompts-hero {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 1.5rem 1rem 1rem;
-      text-align: center;
+      padding: 1.25rem 1rem 0.75rem;
     }
 
+    .prompts-hero-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .prompts-hero-text { flex: 1; min-width: 0; }
+
     .prompts-hero-title {
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
       font-weight: 800;
       letter-spacing: -0.03em;
       line-height: 1.15;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.3rem;
       background: linear-gradient(135deg, var(--cyan-primary), #a78bfa);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -137,90 +145,105 @@
     }
 
     .prompts-hero-subtitle {
-      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      font-size: clamp(0.85rem, 2vw, 1rem);
       color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto 1rem;
       font-weight: 400;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .prompts-hero-stats {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-
-    .prompts-hero-stat {
-      text-align: center;
-    }
-
-    .prompts-hero-stat-number {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--cyan-primary);
-      display: block;
-    }
-
-    .prompts-hero-stat-label {
-      font-size: 0.8rem;
+    .prompts-hero-share {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid var(--badge-border);
+      background: none;
       color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+    }
+    .prompts-hero-share:hover {
+      color: var(--text-primary);
+      border-color: var(--cyan-primary);
+      background: rgba(6, 182, 212, 0.08);
     }
 
-    /* === TAB BAR === */
+    /* === TAB BAR — Glassmorphic pills (SPEC-B21-REDESIGN) === */
     .prompts-tabs {
+      display: flex;
+      gap: 0.35rem;
+      padding: 0.5rem 1rem;
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 0 1rem;
-      display: flex;
-      gap: 0.5rem;
-      border-bottom: 1px solid var(--glass-border);
     }
 
     .prompts-tab {
-      padding: 0.75rem 1.5rem;
-      min-height: 48px;
-      border: none;
-      background: none;
-      color: var(--text-muted);
-      font-family: inherit;
-      font-size: 0.95rem;
+      flex: 1;
+      text-align: center;
+      padding: 0.5rem 0.5rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
       font-weight: 600;
       cursor: pointer;
-      border-bottom: 2px solid transparent;
-      transition: color var(--transition-fast), border-color var(--transition-fast);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      white-space: nowrap;
+      min-height: 40px;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      font-family: inherit;
+      border: 1px solid transparent;
     }
 
-    .prompts-tab:hover:not(.is-disabled) {
+    /* Forge — purple */
+    .prompts-tab[data-tab="forge"] {
+      background: rgba(130, 90, 255, 0.08);
+      border-color: rgba(130, 90, 255, 0.15);
+      color: var(--text-muted);
+    }
+    .prompts-tab[data-tab="forge"].is-active {
+      background: rgba(130, 90, 255, 0.2);
+      border-color: rgba(130, 90, 255, 0.35);
+      color: #a78bfa;
+    }
+    .prompts-tab[data-tab="forge"]:hover:not(.is-active) {
+      background: rgba(130, 90, 255, 0.12);
       color: var(--text-primary);
     }
 
-    .prompts-tab.is-active {
-      color: var(--cyan-primary);
-      border-bottom-color: var(--cyan-primary);
-    }
-
-    .prompts-tab.is-disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-    }
-
-    .prompts-tab-badge {
-      font-size: 0.65rem;
-      padding: 0.15rem 0.4rem;
-      border-radius: 4px;
-      background: rgba(255, 255, 255, 0.08);
+    /* Ready to Use — cyan */
+    .prompts-tab[data-tab="pret"] {
+      background: rgba(6, 182, 212, 0.08);
+      border-color: rgba(6, 182, 212, 0.15);
       color: var(--text-muted);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+    }
+    .prompts-tab[data-tab="pret"].is-active {
+      background: rgba(6, 182, 212, 0.2);
+      border-color: rgba(6, 182, 212, 0.35);
+      color: #06B6D4;
+    }
+    .prompts-tab[data-tab="pret"]:hover:not(.is-active) {
+      background: rgba(6, 182, 212, 0.12);
+      color: var(--text-primary);
+    }
+
+    /* Chains — gold */
+    .prompts-tab[data-tab="chains"] {
+      background: rgba(245, 158, 11, 0.08);
+      border-color: rgba(245, 158, 11, 0.15);
+      color: var(--text-muted);
+    }
+    .prompts-tab[data-tab="chains"].is-active {
+      background: rgba(245, 158, 11, 0.2);
+      border-color: rgba(245, 158, 11, 0.35);
+      color: #fbbf24;
+    }
+    .prompts-tab[data-tab="chains"]:hover:not(.is-active) {
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--text-primary);
     }
 
     /* === FILTER BAR === */
@@ -1601,23 +1624,12 @@
       .prompts-grid {
         grid-template-columns: repeat(3, 1fr);
       }
-
-      .prompts-hero {
-        padding: 2rem 1rem 1.5rem;
-      }
+      /* Hero keeps compact padding at all sizes */
     }
 
     /* Mobile touch targets — §5.2 */
     @media (max-width: 767px) {
-      .prompts-tabs {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-
-      .prompts-tabs::-webkit-scrollbar {
-        display: none;
-      }
+      /* No tab overflow needed — pills are flex:1 and always visible */
 
       .prompts-filters {
         flex-direction: column;
@@ -1636,6 +1648,18 @@
       .prompts-model-btn {
         min-height: 40px;
         padding: 0.4rem 0.6rem;
+      }
+
+      /* REDESIGN: 3×3 mobile grid for launcher */
+      .prompts-launcher-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.35rem;
+      }
+      .prompts-launcher-row .prompts-launcher-label { display: none; }
+      .prompts-model-btn {
+        justify-content: center;
+        min-height: 40px;
       }
 
       .forge-selector {
@@ -1829,17 +1853,31 @@
       border-color: var(--badge-border);
     }
 
-    /* === FIX #8: MODEL LAUNCHER BRAND COLORS === */
-    .prompts-model-btn[data-launcher="ChatGPT"]:hover { border-color: rgba(16, 163, 127, 0.6); color: #10a37f; }
-    .prompts-model-btn[data-launcher="Claude"]:hover { border-color: rgba(212, 165, 116, 0.6); color: #d4a574; }
-    .prompts-model-btn[data-launcher="Gemini"]:hover { border-color: rgba(66, 133, 244, 0.6); color: #4285f4; }
-    .prompts-model-btn[data-launcher="Copilot"]:hover { border-color: rgba(0, 120, 212, 0.6); color: #0078d4; }
-    .prompts-model-btn[data-launcher="Perplexity"]:hover { border-color: rgba(32, 128, 141, 0.6); color: #20808d; }
-    .prompts-model-btn[data-launcher="DeepSeek"]:hover { border-color: rgba(77, 107, 254, 0.6); color: #4d6bfe; }
-    .prompts-model-btn[data-launcher="Qwen"]:hover { border-color: rgba(98, 54, 255, 0.6); color: #6236ff; }
-    .prompts-model-btn[data-launcher="Mistral"]:hover { border-color: rgba(255, 112, 0, 0.6); color: #ff7000; }
-    .prompts-model-btn[data-launcher="HuggingChat"]:hover { border-color: rgba(255, 189, 69, 0.6); color: #ffbd45; }
-    .prompts-model-btn[data-launcher="Grok"]:hover { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
+    /* === REDESIGN: Hide collapsed card clutter === */
+    .prompts-card-meta { display: none; }
+    .prompts-card-techniques { display: none; }
+    .prompts-card-footer { display: none; }
+    .prompts-legend-bar { display: none; }
+
+    /* === REDESIGN: Technique text (expanded only) === */
+    .prompts-card-techniques-text {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--glass-border);
+    }
+
+    /* === REDESIGN: Model launcher — permanent brand left-borders === */
+    .prompts-model-btn[data-launcher="ChatGPT"] { border-left: 3px solid #10a37f; }
+    .prompts-model-btn[data-launcher="Claude"] { border-left: 3px solid #d4a574; }
+    .prompts-model-btn[data-launcher="Gemini"] { border-left: 3px solid #4285f4; }
+    .prompts-model-btn[data-launcher="Copilot"] { border-left: 3px solid #0078d4; }
+    .prompts-model-btn[data-launcher="Perplexity"] { border-left: 3px solid #20808d; }
+    .prompts-model-btn[data-launcher="DeepSeek"] { border-left: 3px solid #4d6bfe; }
+    .prompts-model-btn[data-launcher="Qwen"] { border-left: 3px solid #6236ff; }
+    .prompts-model-btn[data-launcher="Mistral"] { border-left: 3px solid #ff7000; }
+    .prompts-model-btn[data-launcher="Grok"] { border-left: 3px solid #888; }
 
     /* === FIX #9: SECTION HEADERS BY KNOWLEDGE AREA === */
     .prompts-section-header {
@@ -2023,39 +2061,22 @@
 
       <!-- Hero -->
       <section class="prompts-hero" aria-labelledby="prompts-title">
-        <h1 class="prompts-hero-title" id="prompts-title">PMO Prompt Hub</h1>
-        <p class="prompts-hero-subtitle">Expert-crafted, hallucination-proof AI prompts for PMO professionals. Ready to use in any AI tool.</p>
-        <div class="prompts-hero-stats" aria-label="Prompt library statistics">
-          <div class="prompts-hero-stat">
-            <span class="prompts-hero-stat-number" id="promptCount">22</span>
-            <span class="prompts-hero-stat-label">Prompts</span>
+        <div class="prompts-hero-inner">
+          <div class="prompts-hero-text">
+            <h1 class="prompts-hero-title" id="prompts-title">PMO Prompt Hub</h1>
+            <p class="prompts-hero-subtitle">Fill in your details &rarr; Copy &rarr; Paste into any AI.</p>
           </div>
-          <div class="prompts-hero-stat">
-            <span class="prompts-hero-stat-number">11</span>
-            <span class="prompts-hero-stat-label">PMBOK Areas</span>
-          </div>
-          <div class="prompts-hero-stat">
-            <span class="prompts-hero-stat-number">8</span>
-            <span class="prompts-hero-stat-label">Anti-Hallucination Techniques</span>
-          </div>
-          <div class="prompts-hero-stat">
-            <span class="prompts-hero-stat-number">10</span>
-            <span class="prompts-hero-stat-label">AI Models Supported</span>
-          </div>
+          <button class="prompts-hero-share" id="heroShareBtn" aria-label="Copy page link" title="Copy link to this page">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+          </button>
         </div>
       </section>
 
       <!-- Tab Bar -->
       <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
-        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge">
-          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2l3 5h-2l3 5H5l3-5H6z"/><rect x="8.5" y="12" width="3" height="6" rx="0.5"/></svg> Forge</span>
-        </button>
-        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret">
-          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h10l-1 5H6z"/><rect x="5" y="8" width="10" height="10" rx="1"/><line x1="10" y1="3" x2="10" y2="8"/><path d="M8 3c0-1 .9-1.5 2-1.5s2 .5 2 1.5"/></svg> Ready to Use</span>
-        </button>
-        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains">
-          <span><svg class="prompts-tab-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="6" cy="10" rx="3.5" ry="5" transform="rotate(-30 6 10)"/><ellipse cx="14" cy="10" rx="3.5" ry="5" transform="rotate(30 14 10)"/></svg> Chains</span>
-        </button>
+        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge" data-tab="forge">Forge</button>
+        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret" data-tab="pret">Ready to Use</button>
+        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains" data-tab="chains">Chains</button>
       </div>
 
       <!-- Technique Legend (Fix #2B) -->
@@ -2102,14 +2123,7 @@
               <option value="all">All Knowledge Areas</option>
             </select>
 
-            <select class="prompts-filter-select" id="filterDifficulty" aria-label="Filter by Difficulty">
-              <option value="all">All Difficulties</option>
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
-            </select>
-
-            <input type="search" class="prompts-filter-search" id="filterSearch" placeholder="Search prompts..." aria-label="Search prompts">
+<input type="search" class="prompts-filter-search" id="filterSearch" placeholder="Search prompts..." aria-label="Search prompts">
 
             <select class="prompts-filter-select" id="filterSort" aria-label="Sort prompts">
               <option value="default">Sort: Default</option>
@@ -2216,13 +2230,12 @@
       // Cached DOM refs — §3.3
       const grid = document.getElementById('promptsGrid');
       const filterArea = document.getElementById('filterArea');
-      const filterDifficulty = document.getElementById('filterDifficulty');
       const filterSearch = document.getElementById('filterSearch');
       const filterSort = document.getElementById('filterSort');
       const filterCount = document.getElementById('filterCount');
       const toast = document.getElementById('promptsToast');
 
-      // AI Model launchers — Spec §4
+      // AI Model launchers — 9 models (SPEC-B21-REDESIGN: HuggingChat removed)
       const AI_MODELS = [
         { name: 'ChatGPT', url: 'https://chatgpt.com/' },
         { name: 'Claude', url: 'https://claude.ai/new' },
@@ -2232,7 +2245,6 @@
         { name: 'DeepSeek', url: 'https://chat.deepseek.com/' },
         { name: 'Qwen', url: 'https://chat.qwen.ai/' },
         { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
-        { name: 'HuggingChat', url: 'https://huggingface.co/chat/' },
         { name: 'Grok', url: 'https://grok.com/' }
       ];
 
@@ -2243,7 +2255,6 @@
           if (!res.ok) throw new Error('Failed to load prompts data');
           promptsData = await res.json();
           populateFilters();
-          renderLegend();
           filteredPrompts = [...promptsData.prompts];
           renderCards();
           updateCount();
@@ -2306,13 +2317,11 @@
         if (!promptsData) return;
 
         const area = filterArea ? filterArea.value : 'all';
-        const difficulty = filterDifficulty ? filterDifficulty.value : 'all';
         const search = filterSearch ? filterSearch.value.toLowerCase().trim() : '';
         const sort = filterSort ? filterSort.value : 'default';
 
         filteredPrompts = promptsData.prompts.filter(p => {
           if (area !== 'all' && p.knowledgeArea !== area) return false;
-          if (difficulty !== 'all' && p.difficulty !== difficulty) return false;
           if (search && !p.title.toLowerCase().includes(search) && !p.description.toLowerCase().includes(search)) return false;
           return true;
         });
@@ -2361,40 +2370,17 @@
           promptsData.knowledgeAreas.forEach(a => { areaMap[a.id] = a; });
         }
 
-        // Fix #9: Detect if default unfiltered view (show section headers)
-        const area = filterArea ? filterArea.value : 'all';
-        const difficulty = filterDifficulty ? filterDifficulty.value : 'all';
-        const search = filterSearch ? filterSearch.value.trim() : '';
-        const sort = filterSort ? filterSort.value : 'default';
-        const isDefaultView = area === 'all' && difficulty === 'all' && search === '' && sort === 'default';
-
+        // REDESIGN: simple view — no section headers, no difficulty
         let html = '';
-        let lastAreaId = null;
 
         filteredPrompts.forEach(p => {
           const areaObj = areaMap[p.knowledgeArea] || { name: p.knowledgeArea, icon: '', id: p.knowledgeArea };
 
-          // Fix #9: Section headers in default view
-          if (isDefaultView && p.knowledgeArea !== lastAreaId) {
-            lastAreaId = p.knowledgeArea;
-            const areaCount = filteredPrompts.filter(x => x.knowledgeArea === p.knowledgeArea).length;
-            html += '<div class="prompts-section-header" aria-label="' + escapeAttr(areaObj.name) + ' knowledge area">' +
-              '<span class="prompts-section-header-icon" aria-hidden="true">' + (ICONS.areas[p.knowledgeArea] || '') + '</span>' +
-              '<span class="prompts-section-header-name">' + escapeHtml(areaObj.name) + '</span>' +
-              '<span class="prompts-section-header-count">' + areaCount + ' prompt' + (areaCount !== 1 ? 's' : '') + '</span>' +
-            '</div>';
-          }
-
-          // Fix #2: Technique badges with label spans
-          const techBadges = (p.techniques || []).map(t => {
-            const tech = promptsData.techniques[t];
-            if (!tech) return '';
-            return '<span class="prompts-technique-badge" title="' + escapeAttr(tech.name) + '">' +
-              (ICONS.techniques[t] || tech.badge) +
-              '<span class="prompts-technique-label">' + escapeHtml(tech.name) + '</span>' +
-              '<span class="prompts-technique-tooltip">' + escapeHtml(tech.name + ': ' + tech.description) + '</span>' +
-            '</span>';
-          }).join('');
+          // Technique names as plain text (shown in expanded body)
+          const techNames = (p.techniques || []).map(t => {
+            const tech = promptsData.techniques ? promptsData.techniques[t] : null;
+            return tech ? tech.name : t;
+          }).join(' · ');
 
           const fieldsHtml = (p.fields || []).map(f => {
             if (f.type === 'textarea') {
@@ -2422,25 +2408,13 @@
             '<a class="prompts-model-btn" href="' + m.url + '" target="_blank" rel="noopener noreferrer" data-launcher="' + escapeAttr(m.name) + '" data-prompt-id="' + p.id + '">' + escapeHtml(m.name) + '</a>'
           ).join('');
 
-          const vc = voteCounts[p.id] || { up: 0, down: 0 };
-
-          // Fix #6: Share URLs
-          const shareUrl = 'https://smartpmo.ai/prompts#' + p.id;
-          const shareTitle = encodeURIComponent('PMO Prompt: ' + p.title + ' | SmartPMO.ai');
-          const shareUrlEnc = encodeURIComponent(shareUrl);
-
           html +=
-            '<article class="prompts-card" id="prompt-' + p.id + '" data-prompt-id="' + p.id + '" data-area="' + p.knowledgeArea + '" data-difficulty="' + p.difficulty + '">' +
+            '<article class="prompts-card" id="prompt-' + p.id + '" data-prompt-id="' + p.id + '" data-area="' + p.knowledgeArea + '">' +
               '<div class="prompts-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-' + p.id + '">' +
                 '<div class="prompts-card-title-row">' +
                   '<h2 class="prompts-card-title">' + escapeHtml(p.title) + '</h2>' +
                   '<span class="prompts-card-expand-icon" aria-hidden="true">&#9660;</span>' +
                 '</div>' +
-                '<div class="prompts-card-meta">' +
-                  '<span class="prompts-area-badge">' + (ICONS.areas[p.knowledgeArea] || areaObj.icon) + ' ' + escapeHtml(areaObj.name) + '</span>' +
-                  '<span class="prompts-difficulty-badge is-' + p.difficulty + '">' + escapeHtml(p.difficulty) + '</span>' +
-                '</div>' +
-                '<div class="prompts-card-techniques">' + techBadges + '</div>' +
                 '<p class="prompts-card-desc">' + escapeHtml(p.description) + '</p>' +
               '</div>' +
               '<div class="prompts-card-body" id="body-' + p.id + '">' +
@@ -2448,6 +2422,7 @@
                   '<div class="prompts-card-fields">' + fieldsHtml + '</div>' +
                   '<div class="prompts-card-preview">' +
                     '<div class="prompts-preview-label">Live Prompt Preview</div>' +
+                    (techNames ? '<p class="prompts-card-techniques-text">Techniques: ' + escapeHtml(techNames) + '</p>' : '') +
                     '<div class="prompts-preview-wrapper">' +
                       '<div class="prompts-preview-text" id="preview-' + p.id + '">' + escapeHtml(p.template) + '</div>' +
                       '<div class="prompts-preview-fade" aria-hidden="true"></div>' +
@@ -2463,23 +2438,6 @@
                       launcherBtns +
                     '</div>' +
                   '</div>' +
-                '</div>' +
-              '</div>' +
-              '<div class="prompts-card-footer" data-vote-id="prompt-' + p.id + '">' +
-                '<button class="prompts-vote-btn prompts-vote-btn--up" aria-label="Useful" aria-pressed="false">' +
-                  '<span class="prompts-vote-icon">&#128077;</span>' +
-                  '<span class="prompts-vote-count prompts-vote-count--up">' + vc.up + '</span>' +
-                '</button>' +
-                '<button class="prompts-vote-btn prompts-vote-btn--down" aria-label="Not useful" aria-pressed="false">' +
-                  '<span class="prompts-vote-icon">&#128078;</span>' +
-                  '<span class="prompts-vote-count prompts-vote-count--down">' + vc.down + '</span>' +
-                '</button>' +
-                '<div class="prompts-share-row">' +
-                  '<a class="prompts-share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=' + shareUrlEnc + '" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" title="Share on LinkedIn">' + SHARE_LINKEDIN + '</a>' +
-                  '<a class="prompts-share-btn" href="https://twitter.com/intent/tweet?text=' + shareTitle + '&url=' + shareUrlEnc + '" target="_blank" rel="noopener noreferrer" aria-label="Share on X" title="Share on X">' + SHARE_X + '</a>' +
-                  '<a class="prompts-share-btn" href="mailto:?subject=' + shareTitle + '&body=' + shareUrlEnc + '" aria-label="Share by email" title="Share by email">' + SHARE_EMAIL + '</a>' +
-                  '<a class="prompts-share-btn" href="https://wa.me/?text=' + shareTitle + '%20' + shareUrlEnc + '" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp" title="Share on WhatsApp">' + SHARE_WA + '</a>' +
-                  '<button class="prompts-share-btn" data-share-prompt="' + p.id + '" aria-label="Copy link to this prompt" title="Copy link">' + SHARE_LINK + '</button>' +
                 '</div>' +
               '</div>' +
             '</article>';
@@ -2711,9 +2669,28 @@
 
         // Filters
         if (filterArea) filterArea.addEventListener('change', applyFilters);
-        if (filterDifficulty) filterDifficulty.addEventListener('change', applyFilters);
         if (filterSearch) filterSearch.addEventListener('input', applyFilters);
         if (filterSort) filterSort.addEventListener('change', applyFilters);
+
+        // Hero share button — copy page URL
+        const heroShareBtn = document.getElementById('heroShareBtn');
+        if (heroShareBtn) {
+          heroShareBtn.addEventListener('click', async () => {
+            const url = 'https://smartpmo.ai/prompts';
+            try {
+              await navigator.clipboard.writeText(url);
+            } catch (err) {
+              const ta = document.createElement('textarea');
+              ta.value = url;
+              ta.style.cssText = 'position:fixed;left:-9999px';
+              document.body.appendChild(ta);
+              ta.select();
+              document.execCommand('copy');
+              document.body.removeChild(ta);
+            }
+            showToast('Link copied!');
+          });
+        }
 
         // Hash change
         window.addEventListener('hashchange', handleHash);
@@ -2902,7 +2879,7 @@
       const workspace = document.getElementById('forgeWorkspace');
       const toast = document.getElementById('promptsToast');
 
-      // Reuse AI_MODELS from PromptsModule scope — duplicate here for encapsulation
+      // 9 models (SPEC-B21-REDESIGN: HuggingChat removed)
       const AI_MODELS = [
         { name: 'ChatGPT', url: 'https://chatgpt.com/' },
         { name: 'Claude', url: 'https://claude.ai/new' },
@@ -2912,7 +2889,6 @@
         { name: 'DeepSeek', url: 'https://chat.deepseek.com/' },
         { name: 'Qwen', url: 'https://chat.qwen.ai/' },
         { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
-        { name: 'HuggingChat', url: 'https://huggingface.co/chat/' },
         { name: 'Grok', url: 'https://grok.com/' }
       ];
 
@@ -3155,6 +3131,7 @@
       const workspace = document.getElementById('chainsWorkspace');
       const toast = document.getElementById('promptsToast');
 
+      // 9 models (SPEC-B21-REDESIGN: HuggingChat removed)
       const AI_MODELS = [
         { name: 'ChatGPT', url: 'https://chatgpt.com/' },
         { name: 'Claude', url: 'https://claude.ai/new' },
@@ -3164,7 +3141,6 @@
         { name: 'DeepSeek', url: 'https://chat.deepseek.com/' },
         { name: 'Qwen', url: 'https://chat.qwen.ai/' },
         { name: 'Mistral', url: 'https://chat.mistral.ai/chat' },
-        { name: 'HuggingChat', url: 'https://huggingface.co/chat/' },
         { name: 'Grok', url: 'https://grok.com/' }
       ];
 
@@ -3593,10 +3569,8 @@
       function countActive() {
         let count = 0;
         const fa = document.getElementById('filterArea');
-        const fd = document.getElementById('filterDifficulty');
         const fs = document.getElementById('filterSearch');
         if (fa && fa.value !== 'all') count++;
-        if (fd && fd.value !== 'all') count++;
         if (fs && fs.value.trim()) count++;
         return count;
       }
@@ -3615,7 +3589,7 @@
             const isOpen = inner.classList.toggle('is-open');
             toggle.setAttribute('aria-expanded', String(isOpen));
           });
-          ['filterArea', 'filterDifficulty', 'filterSearch'].forEach(id => {
+          ['filterArea', 'filterSearch'].forEach(id => {
             const el = document.getElementById(id);
             if (el) {
               el.addEventListener(el.tagName === 'INPUT' ? 'input' : 'change', updateBadge);
