@@ -263,6 +263,22 @@
       border: 1px solid transparent;
     }
 
+    /* smart^AI — gradient cyan-to-purple */
+    .prompts-tab[data-tab="smartai"] {
+      background: rgba(6, 182, 212, 0.06);
+      border: 1px solid rgba(130, 90, 255, 0.15);
+      color: var(--text-muted);
+    }
+    .prompts-tab[data-tab="smartai"].is-active {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(130, 90, 255, 0.15));
+      border-color: rgba(6, 182, 212, 0.35);
+      color: var(--cyan-primary);
+    }
+    .prompts-tab[data-tab="smartai"]:hover:not(.is-active) {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.08), rgba(130, 90, 255, 0.08));
+      color: var(--text-primary);
+    }
+
     /* Forge — purple */
     .prompts-tab[data-tab="forge"] {
       background: rgba(130, 90, 255, 0.08);
@@ -309,6 +325,338 @@
     .prompts-tab[data-tab="chains"]:hover:not(.is-active) {
       background: rgba(245, 158, 11, 0.12);
       color: var(--text-primary);
+    }
+
+    /* === SMART^AI PANEL === */
+    .smartai-panel {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+      display: none;
+    }
+    .smartai-panel.is-active { display: block; }
+
+    .smartai-intro {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .smartai-intro-title {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .smartai-intro-title sup {
+      font-size: 0.6em;
+      color: var(--cyan-primary);
+    }
+    .smartai-intro-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .smartai-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* Text area */
+    .smartai-input-wrap {
+      margin-bottom: 0.25rem;
+    }
+    .smartai-input-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .smartai-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.85rem 1rem;
+      background: rgba(20, 30, 45, 0.8);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      resize: vertical;
+      transition: border-color var(--transition-base);
+    }
+    .smartai-textarea:focus {
+      outline: none;
+      border-color: var(--cyan-primary);
+    }
+    .smartai-textarea::placeholder {
+      color: var(--text-muted);
+      opacity: 0.6;
+    }
+    .smartai-privacy {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* Checkbox categories */
+    .smartai-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .smartai-category {
+      background: var(--panel);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .smartai-category-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.65rem 1rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      background: none;
+      border: none;
+      width: 100%;
+      font-family: inherit;
+      transition: color var(--transition-fast);
+    }
+    .smartai-category-header:hover {
+      color: var(--cyan-primary);
+    }
+    .smartai-category-chevron {
+      font-size: 0.65rem;
+      transition: transform var(--transition-base);
+      color: var(--text-muted);
+    }
+    .smartai-category.is-open .smartai-category-chevron {
+      transform: rotate(90deg);
+    }
+    .smartai-category-count {
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-left: 0.35rem;
+    }
+    .smartai-category-body {
+      display: none;
+      padding: 0 1rem 0.75rem;
+    }
+    .smartai-category.is-open .smartai-category-body {
+      display: block;
+    }
+    .smartai-check-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+    }
+    .smartai-check-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      padding: 0.35rem 0.25rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 4px;
+      transition: color var(--transition-fast);
+    }
+    .smartai-check-label:hover {
+      color: var(--text-primary);
+    }
+    .smartai-check-label input[type="checkbox"] {
+      accent-color: var(--cyan-primary);
+      margin-top: 2px;
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+    }
+    .smartai-check-url {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+
+    /* Preview pane */
+    .smartai-preview-wrap {
+      position: relative;
+    }
+    .smartai-preview-label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--cyan-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+    .smartai-preview-label::after {
+      content: '';
+      flex: 1;
+      border-top: 1px solid var(--glass-border);
+    }
+    .smartai-preview-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan-primary);
+      animation: smartai-pulse 2s ease-in-out infinite;
+    }
+    @keyframes smartai-pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    .smartai-preview-text {
+      background: rgba(20, 30, 45, 0.8);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      font-size: 0.82rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      white-space: pre-wrap;
+      min-height: 120px;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+    .smartai-preview-text .smartai-hl {
+      color: var(--cyan-primary);
+      font-weight: 600;
+    }
+    .smartai-preview-placeholder {
+      color: var(--text-muted);
+      opacity: 0.5;
+      font-style: italic;
+    }
+
+    /* Actions */
+    .smartai-actions {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .smartai-copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.25rem;
+      background: linear-gradient(135deg, var(--cyan-primary), #825AFF);
+      color: #000;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      align-self: flex-start;
+      min-height: 48px;
+    }
+    .smartai-copy-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(6, 182, 212, 0.3);
+    }
+    .smartai-copy-btn.is-copied {
+      background: #10B981;
+    }
+    .smartai-copy-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+    .smartai-launcher-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      align-items: center;
+    }
+    .smartai-launcher-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-right: 0.25rem;
+    }
+    .smartai-model-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.6rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--badge-border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 0.72rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color var(--transition-fast), color var(--transition-fast);
+      min-height: 48px;
+    }
+    .smartai-model-btn:hover {
+      border-color: var(--cyan-primary);
+      color: var(--text-primary);
+    }
+
+    /* Desktop 2-col: checkboxes left, preview right (sticky) */
+    @media (min-width: 1024px) {
+      .smartai-layout {
+        flex-direction: row;
+      }
+      .smartai-left {
+        flex: 1;
+        min-width: 0;
+      }
+      .smartai-right {
+        width: 420px;
+        flex-shrink: 0;
+        position: sticky;
+        top: 80px;
+        align-self: flex-start;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+      }
+      .smartai-check-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+      .smartai-copy-btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .smartai-launcher-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.35rem;
+      }
+      .smartai-launcher-row .smartai-launcher-label { display: none; }
+      .smartai-model-btn {
+        justify-content: center;
+        min-height: 40px;
+      }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .smartai-preview-dot {
+        animation: none;
+        opacity: 1;
+      }
     }
 
     /* === FILTER BAR === */
@@ -2166,13 +2514,65 @@
 
       <!-- Tab Bar -->
       <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
+        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-smartai" data-tab="smartai">smart<sup>AI</sup></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge" data-tab="forge">Forge <span class="prompts-tab-count" id="tabCountForge"></span></button>
-        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-pret" data-tab="pret">Ready to Use <span class="prompts-tab-count" id="tabCountPret"></span></button>
+        <button class="prompts-tab" role="tab" aria-selected="false" id="tab-pret" data-tab="pret">Ready to Use <span class="prompts-tab-count" id="tabCountPret"></span></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains" data-tab="chains">Chains <span class="prompts-tab-count" id="tabCountChains"></span></button>
       </div>
 
       <!-- Technique Legend (Fix #2B) -->
       <div class="prompts-legend-bar" id="promptsLegendBar"></div>
+
+      <!-- smart^AI Panel (B-60) -->
+      <div class="smartai-panel is-active" id="smartaiPanel" aria-labelledby="smartai-heading">
+        <div class="smartai-intro">
+          <h2 class="smartai-intro-title" id="smartai-heading">smart<sup>AI</sup> &mdash; Use AI to Build Your Prompt</h2>
+          <p class="smartai-intro-desc">Describe your problem, tick the boxes that matter, and we'll assemble a meta-prompt. Paste it into any AI &mdash; it tells the AI to build the best possible prompt for you.</p>
+        </div>
+
+        <div class="smartai-layout">
+          <div class="smartai-left">
+            <!-- User input -->
+            <div class="smartai-input-wrap">
+              <label class="smartai-input-label" for="smartaiText">Describe what you need help with:</label>
+              <textarea class="smartai-textarea" id="smartaiText" placeholder="e.g. &quot;Help me unpack a troubled project and write a recovery charter for stakeholders&quot;" rows="4"></textarea>
+              <p class="smartai-privacy" aria-live="polite">&#128274; Nothing you type here is sent anywhere. Everything stays in your browser until you copy and paste it yourself.</p>
+            </div>
+
+            <!-- Checkbox categories -->
+            <p class="smartai-input-label" style="margin-bottom:0.5rem">Ground your prompt with trusted sources:</p>
+            <div class="smartai-categories" id="smartaiCategories">
+              <!-- Rendered by SmartAIModule -->
+            </div>
+          </div>
+
+          <div class="smartai-right">
+            <!-- Live preview -->
+            <div class="smartai-preview-wrap">
+              <div class="smartai-preview-label"><span class="smartai-preview-dot"></span> Live Preview</div>
+              <div class="smartai-preview-text" id="smartaiPreview" aria-live="polite">
+                <span class="smartai-preview-placeholder">Start typing above and tick some boxes to see your meta-prompt assemble here&hellip;</span>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="smartai-actions">
+              <button class="smartai-copy-btn" id="smartaiCopyBtn" disabled aria-label="Copy meta-prompt to clipboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                Copy Meta-Prompt
+              </button>
+              <div class="smartai-launcher-row" id="smartaiLaunchers">
+                <span class="smartai-launcher-label">Open in:</span>
+                <button class="smartai-model-btn" data-model="chatgpt" aria-label="Open in ChatGPT">ChatGPT</button>
+                <button class="smartai-model-btn" data-model="claude" aria-label="Open in Claude">Claude</button>
+                <button class="smartai-model-btn" data-model="gemini" aria-label="Open in Gemini">Gemini</button>
+                <button class="smartai-model-btn" data-model="copilot" aria-label="Open in Copilot">Copilot</button>
+                <button class="smartai-model-btn" data-model="perplexity" aria-label="Open in Perplexity">Perplexity</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Forge Panel (Tier 1) -->
       <div class="forge-panel" id="forgePanel">
@@ -3622,18 +4022,373 @@
     })();
 
     /* ============================================
-       TAB SWITCHING — Forge / Prêt-à-Porter / Chains
+       SMART^AI MODULE — Meta-Prompt Builder (B-60)
+       Website Design Contract §3.1 (IIFE), §3.2 (const/let), §3.3 (cached queries, delegation)
+       ============================================ */
+    const SmartAIModule = (() => {
+      'use strict';
+
+      // Cached DOM refs
+      const panel = document.getElementById('smartaiPanel');
+      const textarea = document.getElementById('smartaiText');
+      const categoriesEl = document.getElementById('smartaiCategories');
+      const previewEl = document.getElementById('smartaiPreview');
+      const copyBtn = document.getElementById('smartaiCopyBtn');
+      const launchersEl = document.getElementById('smartaiLaunchers');
+
+      // Category data
+      const CATEGORIES = [
+        {
+          id: 'knowledge',
+          title: 'PMBOK Knowledge Areas',
+          items: [
+            { label: 'Integration Management' },
+            { label: 'Scope Management' },
+            { label: 'Schedule Management' },
+            { label: 'Cost Management' },
+            { label: 'Quality Management' },
+            { label: 'Resource Management' },
+            { label: 'Communications Management' },
+            { label: 'Risk Management' },
+            { label: 'Procurement Management' },
+            { label: 'Stakeholder Management' },
+            { label: 'Agile & Hybrid' }
+          ]
+        },
+        {
+          id: 'grounding',
+          title: 'Grounding & Constraints',
+          items: [
+            { label: 'Search the web for current best practices' },
+            { label: 'Cite all sources with URLs' },
+            { label: 'Use only information I provide (no external)' },
+            { label: 'Include step-by-step reasoning' },
+            { label: 'Flag any assumptions or uncertainties' },
+            { label: 'Provide confidence ratings per recommendation' },
+            { label: 'Include a verification checklist' },
+            { label: 'Suggest what additional information would improve the output' }
+          ]
+        },
+        {
+          id: 'agile',
+          title: 'Agile Frameworks & Sources',
+          items: [
+            { label: 'SAFe (Scaled Agile Framework)', url: 'scaledagile.com' },
+            { label: 'Scrum.org', url: 'scrum.org' },
+            { label: 'Agile Alliance', url: 'agilealliance.org' },
+            { label: 'Scrum Alliance', url: 'scrumalliance.org' },
+            { label: 'LeSS (Large-Scale Scrum)', url: 'less.works' },
+            { label: 'Kanban University', url: 'kanban.university' },
+            { label: 'ICAgile', url: 'icagile.com' },
+            { label: 'Disciplined Agile', url: 'disciplinedagileconsortium.org' },
+            { label: 'Agile Business Consortium', url: 'agilebusiness.org' },
+            { label: 'Spotify Model (Henrik Kniberg\'s documentation)' }
+          ]
+        },
+        {
+          id: 'pmo',
+          title: 'PMO & Project Management Sources',
+          items: [
+            { label: 'PMI (Project Management Institute)', url: 'pmi.org' },
+            { label: 'PRINCE2 / AXELOS', url: 'axelos.com' },
+            { label: 'IPMA (International Project Management Association)', url: 'ipma.world' },
+            { label: 'APM (Association for Project Management)', url: 'apm.org.uk' },
+            { label: 'ISO 21502 (Project Management Standard)' },
+            { label: 'PMO Global Alliance', url: 'pmoga.world' },
+            { label: 'Gartner PPM Research', url: 'gartner.com' },
+            { label: 'PMI\'s Pulse of the Profession reports' },
+            { label: 'PMBOK Guide (specify edition: 6th or 7th)' },
+            { label: 'PM World Journal', url: 'pmworldjournal.com' }
+          ]
+        },
+        {
+          id: 'ai',
+          title: 'AI Companies & Research',
+          items: [
+            { label: 'OpenAI', url: 'openai.com' },
+            { label: 'Anthropic', url: 'anthropic.com' },
+            { label: 'Google DeepMind', url: 'deepmind.google' },
+            { label: 'Microsoft Research', url: 'microsoft.com/research' },
+            { label: 'Meta AI', url: 'ai.meta.com' },
+            { label: 'AWS Machine Learning', url: 'aws.amazon.com/ai' },
+            { label: 'Hugging Face Research', url: 'huggingface.co' },
+            { label: 'Stability AI', url: 'stability.ai' },
+            { label: 'Mistral AI', url: 'mistral.ai' },
+            { label: 'NVIDIA AI Research', url: 'nvidia.com/research' }
+          ]
+        },
+        {
+          id: 'research',
+          title: 'Research & Advisory Firms',
+          items: [
+            { label: 'Gartner', url: 'gartner.com' },
+            { label: 'Forrester', url: 'forrester.com' },
+            { label: 'McKinsey & Company', url: 'mckinsey.com' },
+            { label: 'Deloitte Insights', url: 'deloitte.com/insights' },
+            { label: 'BCG (Boston Consulting Group)', url: 'bcg.com' },
+            { label: 'Bain & Company', url: 'bain.com' },
+            { label: 'PwC Strategy&', url: 'strategyand.pwc.com' },
+            { label: 'Accenture Research', url: 'accenture.com' },
+            { label: 'KPMG Insights', url: 'kpmg.com' },
+            { label: 'EY (Ernst & Young)', url: 'ey.com' },
+            { label: 'Harvard Business Review', url: 'hbr.org' },
+            { label: 'MIT Sloan Management Review', url: 'sloanreview.mit.edu' },
+            { label: 'Stanford Graduate School of Business', url: 'gsb.stanford.edu' },
+            { label: 'Wharton School (UPenn)', url: 'wharton.upenn.edu' },
+            { label: 'World Economic Forum', url: 'weforum.org' },
+            { label: 'IEEE', url: 'ieee.org' },
+            { label: 'ACM (Association for Computing Machinery)', url: 'acm.org' },
+            { label: 'OECD', url: 'oecd.org' },
+            { label: 'Brookings Institution', url: 'brookings.edu' },
+            { label: 'RAND Corporation', url: 'rand.org' }
+          ]
+        }
+      ];
+
+      // Section labels for the assembled prompt
+      const SECTION_LABELS = {
+        knowledge: 'PMBOK Knowledge Areas to focus on',
+        grounding: 'Grounding requirements',
+        agile: 'Draw expertise from these Agile frameworks',
+        pmo: 'Reference these PMO/PM authorities',
+        ai: 'Include insights from these AI research sources',
+        research: 'Ground in research from'
+      };
+
+      // Model launcher URLs
+      const MODEL_URLS = {
+        chatgpt: 'https://chatgpt.com/',
+        claude: 'https://claude.ai/new',
+        gemini: 'https://gemini.google.com/',
+        copilot: 'https://copilot.microsoft.com/',
+        perplexity: 'https://www.perplexity.ai/'
+      };
+
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      // Render checkbox categories
+      function renderCategories() {
+        if (!categoriesEl) return;
+        categoriesEl.innerHTML = CATEGORIES.map(cat => {
+          const checkboxes = cat.items.map((item, i) => {
+            const urlHtml = item.url ? ' <span class="smartai-check-url">' + escapeHtml(item.url) + '</span>' : '';
+            return '<label class="smartai-check-label">' +
+              '<input type="checkbox" data-cat="' + cat.id + '" data-idx="' + i + '">' +
+              '<span>' + escapeHtml(item.label) + urlHtml + '</span>' +
+            '</label>';
+          }).join('');
+
+          return '<div class="smartai-category" data-category="' + cat.id + '">' +
+            '<button class="smartai-category-header" type="button" aria-expanded="false">' +
+              '<span>' + escapeHtml(cat.title) + ' <span class="smartai-category-count">(' + cat.items.length + ')</span></span>' +
+              '<span class="smartai-category-chevron">&#x25B6;</span>' +
+            '</button>' +
+            '<div class="smartai-category-body">' +
+              '<div class="smartai-check-grid">' + checkboxes + '</div>' +
+            '</div>' +
+          '</div>';
+        }).join('');
+      }
+
+      // Get all checked items grouped by category
+      function getCheckedItems() {
+        const result = {};
+        if (!categoriesEl) return result;
+
+        CATEGORIES.forEach(cat => {
+          const checked = [];
+          const checkboxes = categoriesEl.querySelectorAll('input[data-cat="' + cat.id + '"]:checked');
+          checkboxes.forEach(cb => {
+            const idx = parseInt(cb.dataset.idx, 10);
+            const item = cat.items[idx];
+            if (item) {
+              checked.push(item.url ? item.label + ' \u2014 ' + item.url : item.label);
+            }
+          });
+          if (checked.length > 0) {
+            result[cat.id] = checked;
+          }
+        });
+        return result;
+      }
+
+      // Assemble the meta-prompt
+      function assemblePrompt() {
+        const userText = textarea ? textarea.value.trim() : '';
+        const checked = getCheckedItems();
+        const hasChecks = Object.keys(checked).length > 0;
+
+        if (!userText && !hasChecks) return '';
+
+        let prompt = 'Help me create a powerful, expert-level prompt to solve this:\n\n';
+        prompt += '"' + (userText || '[describe your problem here]') + '"\n\n';
+        prompt += 'When building this prompt, incorporate the following:\n';
+
+        Object.keys(checked).forEach(catId => {
+          const label = SECTION_LABELS[catId] || catId;
+          prompt += '\n**' + label + ':**\n';
+          checked[catId].forEach(item => {
+            prompt += '- ' + item + '\n';
+          });
+        });
+
+        prompt += '\nThe prompt you create should:\n';
+        prompt += '1. Be immediately usable \u2014 I will paste it directly into an AI tool\n';
+        prompt += '2. Include a clear role/persona for the AI to adopt\n';
+        prompt += '3. Specify the exact output format and structure expected\n';
+        prompt += '4. Include anti-hallucination safeguards (grounding constraints, uncertainty flags)\n';
+        prompt += '5. Be detailed enough to produce expert-quality output on the first attempt\n\n';
+        prompt += 'Do NOT answer my question directly. Instead, create the PROMPT that I should use to get the best possible answer.';
+
+        return prompt;
+      }
+
+      // Update live preview
+      function updatePreview() {
+        if (!previewEl) return;
+        const prompt = assemblePrompt();
+        if (!prompt) {
+          previewEl.innerHTML = '<span class="smartai-preview-placeholder">Start typing above and tick some boxes to see your meta-prompt assemble here&hellip;</span>';
+          if (copyBtn) copyBtn.disabled = true;
+          return;
+        }
+
+        // Highlight structure keywords
+        let html = escapeHtml(prompt);
+        html = html.replace(/\*\*([^*]+)\*\*/g, '<span class="smartai-hl">$1</span>');
+        previewEl.innerHTML = html;
+        if (copyBtn) copyBtn.disabled = false;
+      }
+
+      // Copy to clipboard
+      async function copyPrompt() {
+        const text = assemblePrompt();
+        if (!text) return;
+        try {
+          await navigator.clipboard.writeText(text);
+        } catch (err) {
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        }
+        if (copyBtn) {
+          copyBtn.classList.add('is-copied');
+          const origHTML = copyBtn.innerHTML;
+          copyBtn.innerHTML = '<span>&#10003;</span> Copied!';
+          setTimeout(() => {
+            copyBtn.classList.remove('is-copied');
+            copyBtn.innerHTML = origHTML;
+          }, 2000);
+        }
+      }
+
+      // Launch model in new tab (copies first)
+      async function launchModel(modelName) {
+        const text = assemblePrompt();
+        if (text) {
+          try {
+            await navigator.clipboard.writeText(text);
+          } catch (err) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.cssText = 'position:fixed;left:-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+          }
+        }
+        const url = MODEL_URLS[modelName];
+        if (url) window.open(url, '_blank', 'noopener');
+      }
+
+      // Event delegation
+      function attachEvents() {
+        if (!panel) return;
+
+        // Category accordion toggle
+        panel.addEventListener('click', (e) => {
+          const header = e.target.closest('.smartai-category-header');
+          if (header) {
+            const cat = header.closest('.smartai-category');
+            if (cat) {
+              const isOpen = cat.classList.toggle('is-open');
+              header.setAttribute('aria-expanded', String(isOpen));
+            }
+            return;
+          }
+
+          // Copy button
+          if (e.target.closest('.smartai-copy-btn')) {
+            copyPrompt();
+            return;
+          }
+
+          // Model launcher
+          const modelBtn = e.target.closest('.smartai-model-btn');
+          if (modelBtn) {
+            launchModel(modelBtn.dataset.model);
+            return;
+          }
+        });
+
+        // Live preview on text input
+        if (textarea) {
+          textarea.addEventListener('input', updatePreview);
+        }
+
+        // Live preview on checkbox change
+        panel.addEventListener('change', (e) => {
+          if (e.target.type === 'checkbox') {
+            updatePreview();
+          }
+        });
+
+        // Keyboard: Enter/Space on category headers
+        panel.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            const header = e.target.closest('.smartai-category-header');
+            if (header) {
+              e.preventDefault();
+              header.click();
+            }
+          }
+        });
+      }
+
+      return {
+        init() {
+          if (!panel) return;
+          renderCategories();
+          attachEvents();
+          updatePreview();
+        }
+      };
+    })();
+
+    /* ============================================
+       TAB SWITCHING — smart^AI / Forge / Prêt-à-Porter / Chains
        ============================================ */
     const TabSwitcher = (() => {
       'use strict';
 
       const tabs = {
+        smartai: document.getElementById('tab-smartai'),
         forge: document.getElementById('tab-forge'),
         pret: document.getElementById('tab-pret'),
         chains: document.getElementById('tab-chains')
       };
 
       const panels = {
+        smartai: document.getElementById('smartaiPanel'),
         forge: document.getElementById('forgePanel'),
         chains: document.getElementById('chainsPanel'),
         filters: document.getElementById('promptsFilterWrap'),
@@ -3655,13 +4410,16 @@
         }
 
         // Hide all panels first
+        if (panels.smartai) panels.smartai.classList.remove('is-active');
         if (panels.forge) panels.forge.classList.remove('is-active');
         if (panels.chains) panels.chains.classList.remove('is-active');
         if (panels.filters) panels.filters.style.display = 'none';
         if (panels.grid) panels.grid.style.display = 'none';
 
         // Show the active panel
-        if (tabName === 'forge') {
+        if (tabName === 'smartai') {
+          if (panels.smartai) panels.smartai.classList.add('is-active');
+        } else if (tabName === 'forge') {
           if (panels.forge) panels.forge.classList.add('is-active');
         } else if (tabName === 'chains') {
           if (panels.chains) panels.chains.classList.add('is-active');
@@ -3673,9 +4431,14 @@
       }
 
       function init() {
+        if (tabs.smartai) tabs.smartai.addEventListener('click', () => switchTo('smartai'));
         if (tabs.forge) tabs.forge.addEventListener('click', () => switchTo('forge'));
         if (tabs.pret) tabs.pret.addEventListener('click', () => switchTo('pret'));
         if (tabs.chains) tabs.chains.addEventListener('click', () => switchTo('chains'));
+
+        // smart^AI is default active — hide pret panels on load
+        if (panels.filters) panels.filters.style.display = 'none';
+        if (panels.grid) panels.grid.style.display = 'none';
       }
 
       return { init };
@@ -3756,6 +4519,7 @@
        ============================================ */
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', () => {
+        SmartAIModule.init();
         PromptsModule.init();
         PromptsVotesModule.init();
         ForgeModule.init();
@@ -3765,6 +4529,7 @@
         FilterToggleModule.init();
       });
     } else {
+      SmartAIModule.init();
       PromptsModule.init();
       PromptsVotesModule.init();
       ForgeModule.init();
