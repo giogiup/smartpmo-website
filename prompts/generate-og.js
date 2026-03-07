@@ -96,9 +96,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${
         fill="#b0c4de">AI Prompts for PMO Professionals</text>
 
   <!-- Bottom tagline -->
-  <text x="600" y="510" text-anchor="middle"
-        font-family="${FONT}" font-size="18" font-weight="400"
-        fill="#6b7280">Free · Expert-crafted · Anti-hallucination techniques built in</text>
+  <text x="600" y="520" text-anchor="middle"
+        font-family="${FONT}" font-size="36" font-weight="400"
+        fill="#9ca3af">Free · Expert-crafted · Anti-hallucination techniques built in</text>
 </svg>`;
 
 async function generate() {
