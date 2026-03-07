@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SmartPMO Prompts — AI Prompts for PMO Professionals | SmartPMO.ai</title>
-  <meta name="description" content="Free, expert-crafted AI prompts for PMO professionals. Anti-hallucination techniques built in. 20+ ready-to-use prompts across all PMBOK Knowledge Areas. No login required.">
+  <meta name="description" content="Free AI prompts designed specifically for project management professionals. Anti-hallucination techniques built into every prompt. Works with ChatGPT, Claude, Gemini, and more.">
   <meta name="keywords" content="PMO prompts, AI prompts for project management, PMBOK, project charter generator, risk register, WBS generator, stakeholder management, agile retrospective">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="SmartPMO Prompts — AI Prompts for PMO Professionals">
-  <meta property="og:description" content="Free, expert-crafted AI prompts for PMO professionals. Anti-hallucination techniques built in. Works with any AI tool.">
+  <meta property="og:description" content="Free AI prompts designed specifically for project management professionals. Anti-hallucination techniques built into every prompt. Works with ChatGPT, Claude, Gemini, and more.">
   <meta property="og:url" content="https://smartpmo.ai/prompts">
   <meta property="og:site_name" content="SmartPMO.ai">
   <meta property="og:image" content="https://smartpmo.ai/prompts/og-smartpmo-prompts.png">
@@ -20,7 +20,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SmartPMO Prompts — AI Prompts for PMO Professionals">
-  <meta name="twitter:description" content="Free, expert-crafted AI prompts for PMO professionals. Anti-hallucination techniques built in. Works with any AI tool.">
+  <meta name="twitter:description" content="Free AI prompts designed specifically for project management professionals. Anti-hallucination techniques built into every prompt. Works with ChatGPT, Claude, Gemini, and more.">
   <meta name="twitter:image" content="https://smartpmo.ai/prompts/og-smartpmo-prompts.png">
 
   <!-- Canonical -->
@@ -2780,8 +2780,10 @@
         const heroSharePanel = document.getElementById('heroSharePanel');
         if (heroShareBtn && heroSharePanel) {
           const shareUrl = encodeURIComponent('https://smartpmo.ai/prompts');
-          const shareTitle = encodeURIComponent('SmartPMO Prompts \u2014 AI Prompts for PMO Professionals');
+          const shareTitle = encodeURIComponent('You need to see this \u2014 AI prompts built for PMO professionals');
           const shareBody = encodeURIComponent('Free, expert-crafted AI prompts for PMO professionals. Anti-hallucination techniques built in. Works with any AI tool. Check it out:');
+          const emailSubject = encodeURIComponent('You need to see this \u2014 AI prompts built for PMO professionals');
+          const emailBody = encodeURIComponent('I found something genuinely useful \u2014 SmartPMO Prompts has free, ready-to-use AI prompts specifically designed for project management work. They\u2019ve built anti-hallucination techniques into every prompt so you get reliable outputs, and they work with ChatGPT, Claude, Gemini, or any AI tool.\n\nCheck it out: https://smartpmo.ai/prompts');
 
           // Set share URLs
           const linkedIn = document.getElementById('shareLinkedIn');
@@ -2797,7 +2799,7 @@
             window.open('https://twitter.com/intent/tweet?text=' + shareTitle + '&url=' + shareUrl, 'Twitter', 'width=600,height=600');
           });
           if (shareEmail) shareEmail.addEventListener('click', () => {
-            window.location.href = 'mailto:?subject=' + shareTitle + '&body=' + shareBody + ' ' + shareUrl;
+            window.location.href = 'mailto:?subject=' + emailSubject + '&body=' + emailBody;
           });
           if (shareWA) shareWA.addEventListener('click', () => {
             window.open('https://api.whatsapp.com/send?text=' + shareBody + ' https://smartpmo.ai/prompts', '_blank');
