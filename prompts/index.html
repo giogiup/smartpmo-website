@@ -7,6 +7,10 @@
   <meta name="description" content="Free AI prompts designed specifically for project management professionals. Anti-hallucination techniques built into every prompt. Works with ChatGPT, Claude, Gemini, and more.">
   <meta name="keywords" content="PMO prompts, AI prompts for project management, PMBOK, project charter generator, risk register, WBS generator, stakeholder management, agile retrospective">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="SmartPMO Prompts — AI Prompts for PMO Professionals">
@@ -448,6 +452,22 @@
       font-weight: 400;
       color: var(--text-muted);
       margin-left: 0.35rem;
+    }
+    .smartai-select-all {
+      font-size: 0.7rem;
+      color: var(--cyan-primary);
+      background: none;
+      border: 1px solid rgba(6, 182, 212, 0.2);
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      cursor: pointer;
+      min-height: 28px;
+      font-family: inherit;
+      font-weight: 600;
+      margin-left: auto;
+    }
+    .smartai-select-all:hover {
+      background: rgba(6, 182, 212, 0.08);
     }
     .smartai-category-body {
       display: none;
@@ -2333,15 +2353,7 @@
     }
 
     /* === REDESIGN: Model launcher — permanent brand left-borders === */
-    .prompts-model-btn[data-launcher="ChatGPT"] { border-left: 3px solid #10a37f; }
-    .prompts-model-btn[data-launcher="Claude"] { border-left: 3px solid #d4a574; }
-    .prompts-model-btn[data-launcher="Gemini"] { border-left: 3px solid #4285f4; }
-    .prompts-model-btn[data-launcher="Copilot"] { border-left: 3px solid #0078d4; }
-    .prompts-model-btn[data-launcher="Perplexity"] { border-left: 3px solid #20808d; }
-    .prompts-model-btn[data-launcher="DeepSeek"] { border-left: 3px solid #4d6bfe; }
-    .prompts-model-btn[data-launcher="Qwen"] { border-left: 3px solid #6236ff; }
-    .prompts-model-btn[data-launcher="Mistral"] { border-left: 3px solid #ff7000; }
-    .prompts-model-btn[data-launcher="Grok"] { border-left: 3px solid #888; }
+    /* Border-left removed (B-69 Fix 2) — logos provide brand identity now */
 
     /* === FIX #9: SECTION HEADERS BY KNOWLEDGE AREA === */
     .prompts-section-header {
@@ -2558,7 +2570,7 @@
 
       <!-- Tab Bar -->
       <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
-        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-smartai" data-tab="smartai">smart<sup>AI</sup></button>
+        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-smartai" data-tab="smartai">smart<sup style="color:var(--cyan-primary);font-size:0.65em">AI</sup></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge" data-tab="forge">Forge <span class="prompts-tab-count" id="tabCountForge"></span></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-pret" data-tab="pret">Ready to Use <span class="prompts-tab-count" id="tabCountPret"></span></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains" data-tab="chains">Chains <span class="prompts-tab-count" id="tabCountChains"></span></button>
@@ -2607,11 +2619,7 @@
               </button>
               <div class="smartai-launcher-row" id="smartaiLaunchers">
                 <span class="smartai-launcher-label">Open in:</span>
-                <button class="smartai-model-btn" data-model="chatgpt" aria-label="Open in ChatGPT"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#10a37f" stroke-width="1.2"/><path d="M5 8.5l2.2-3.5h1.6l2.2 3.5-2.2 3.5H7.2z" stroke="#10a37f" stroke-width="1.2" stroke-linejoin="round"/></svg> ChatGPT</button>
-                <button class="smartai-model-btn" data-model="claude" aria-label="Open in Claude"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" fill="#d4a574"/><line x1="8" y1="1.5" x2="8" y2="4" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="12" x2="8" y2="14.5" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="1.5" y1="8" x2="4" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="12" y1="8" x2="14.5" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/></svg> Claude</button>
-                <button class="smartai-model-btn" data-model="gemini" aria-label="Open in Gemini"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 5.2L15 8l-5.2 1.8L8 15l-1.8-5.2L1 8l5.2-1.8z" stroke="#4285f4" stroke-width="1.2" stroke-linejoin="round"/></svg> Gemini</button>
-                <button class="smartai-model-btn" data-model="copilot" aria-label="Open in Copilot"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 10c0-3 2.2-5.5 5-5.5s5 2.5 5 5.5" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/><path d="M3 10c0 1.8 1 3 2.5 3s2.5-1.2 2.5-3" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/><path d="M8 10c0 1.8 1 3 2.5 3s2.5-1.2 2.5-3" stroke="#0078d4" stroke-width="1.3" stroke-linecap="round"/></svg> Copilot</button>
-                <button class="smartai-model-btn" data-model="perplexity" aria-label="Open in Perplexity"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#20808d" stroke-width="1.2"/><circle cx="8" cy="8" r="1.5" fill="#20808d"/><line x1="8" y1="2" x2="8" y2="5.5" stroke="#20808d" stroke-width="1.2" stroke-linecap="round"/></svg> Perplexity</button>
+                <!-- Rendered by SmartAIModule.init() using MODEL_LOGOS -->
               </div>
             </div>
           </div>
@@ -2722,6 +2730,9 @@
     /* ============================================
        MODEL LOGO REGISTRY — Simplified brand marks at 16px (B-61)
        ============================================ */
+    // Shared copy icon SVG — used by all modules (B-69 Fix 5)
+    const COPY_ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>';
+
     const MODEL_LOGOS = {
       ChatGPT: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#10a37f" stroke-width="1.2"/><path d="M5 8.5l2.2-3.5h1.6l2.2 3.5-2.2 3.5H7.2z" stroke="#10a37f" stroke-width="1.2" stroke-linejoin="round"/></svg>',
       Claude: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" fill="#d4a574"/><line x1="8" y1="1.5" x2="8" y2="4" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="8" y1="12" x2="8" y2="14.5" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="1.5" y1="8" x2="4" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="12" y1="8" x2="14.5" y2="8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="3.4" y1="3.4" x2="5.2" y2="5.2" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="10.8" y1="10.8" x2="12.6" y2="12.6" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="3.4" y1="12.6" x2="5.2" y2="10.8" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/><line x1="10.8" y1="5.2" x2="12.6" y2="3.4" stroke="#d4a574" stroke-width="1.2" stroke-linecap="round"/></svg>',
@@ -2907,7 +2918,7 @@
 
       // ── Card rendering ──
       // SVG icons for copy button (Fix #7) and share row (Fix #6)
-      const COPY_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="1" width="9" height="11" rx="2"/><path d="M3 5H2a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1v-2"/></svg>';
+      const COPY_SVG = COPY_ICON; // Use shared constant (B-69 Fix 5)
       const CHECK_SVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2 8 6 12 14 4"/></svg>';
       const SHARE_LINKEDIN = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>';
       const SHARE_X = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.739l7.738-8.835L1.99 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>';
@@ -3585,7 +3596,7 @@
           '</div>' +
           '<div class="forge-actions">' +
             '<button class="forge-copy-btn" id="forgeCopyBtn">' +
-              '<span>📋</span> Copy Prompt' +
+              COPY_ICON + ' Copy Prompt' +
             '</button>' +
             '<div class="forge-launcher-row">' +
               '<span class="forge-launcher-label">Open in AI tool (copies prompt first):</span>' +
@@ -3639,7 +3650,7 @@
           btn.innerHTML = '<span>✅</span> Copied!';
           setTimeout(() => {
             btn.classList.remove('is-copied');
-            btn.innerHTML = '<span>📋</span> Copy Prompt';
+            btn.innerHTML = COPY_ICON + ' Copy Prompt';
           }, 2000);
         }
       }
@@ -3786,7 +3797,7 @@
           var exampleHtml = chain.example ? '<div class="chains-selector-example"><strong>Example:</strong> ' + escapeHtml(chain.example) + '</div>' : '';
           return '<div class="chains-selector-card" data-chain="' + chain.id + '" role="button" tabindex="0">' +
             '<div class="chains-selector-header">' +
-              '<span class="chains-selector-icon">' + chain.icon + '</span>' +
+              '<span class="chains-selector-icon">' + (chain.knowledgeAreas && chain.knowledgeAreas[0] && ICONS.areas[chain.knowledgeAreas[0]] ? '<span style="display:inline-flex;width:20px;height:20px">' + ICONS.areas[chain.knowledgeAreas[0]] + '</span>' : chain.icon) + '</span>' +
               '<span class="chains-selector-title">' + escapeHtml(chain.title) + '</span>' +
             '</div>' +
             '<div class="chains-selector-desc">' + escapeHtml(chain.description) + '</div>' +
@@ -3875,7 +3886,7 @@
         if (activeStepIndex > 0) {
           navHtml += '<button class="chains-prev-btn" data-chains-nav="prev">&#8592; Step ' + activeStepIndex + '</button>';
         }
-        navHtml += '<button class="chains-copy-btn" id="chainsCopyBtn"><span>&#x1F4CB;</span> Copy This Step\'s Prompt</button>';
+        navHtml += '<button class="chains-copy-btn" id="chainsCopyBtn">' + COPY_ICON + ' Copy This Step\'s Prompt</button>';
         if (activeStepIndex < chain.steps.length - 1) {
           navHtml += '<button class="chains-next-btn" data-chains-nav="next">Step ' + (activeStepIndex + 2) + ' &#8594;</button>';
         }
@@ -3883,7 +3894,7 @@
 
         workspace.innerHTML =
           '<div class="chains-workspace-header">' +
-            '<div class="chains-workspace-title"><span>' + escapeHtml(chain.icon) + ' ' + escapeHtml(chain.title) + '</span></div>' +
+            '<div class="chains-workspace-title"><span>' + (chain.knowledgeAreas && chain.knowledgeAreas[0] && ICONS.areas[chain.knowledgeAreas[0]] ? '<span style="display:inline-flex;width:20px;height:20px;vertical-align:middle;margin-right:4px">' + ICONS.areas[chain.knowledgeAreas[0]] + '</span>' : escapeHtml(chain.icon) + ' ') + escapeHtml(chain.title) + '</span></div>' +
             '<div class="chains-workspace-desc">' + escapeHtml(chain.description) + '</div>' +
             '<div class="chains-workspace-badges">' +
               chain.knowledgeAreas.map(function(ka) { return '<span class="chains-meta-badge">' + (ICONS.areas[ka] ? '<span style="display:inline-flex;width:14px;height:14px;vertical-align:middle;margin-right:3px">' + ICONS.areas[ka] + '</span>' : '') + escapeHtml(ka.charAt(0).toUpperCase() + ka.slice(1)) + '</span>'; }).join('') +
@@ -3968,7 +3979,7 @@
           btn.innerHTML = '<span>&#10003;</span> Copied!';
           setTimeout(() => {
             btn.classList.remove('is-copied');
-            btn.innerHTML = '<span>&#x1F4CB;</span> Copy This Step\'s Prompt';
+            btn.innerHTML = COPY_ICON + ' Copy This Step\'s Prompt';
           }, 2000);
         }
       }
@@ -4223,14 +4234,31 @@
         research: 'Ground in research from'
       };
 
-      // Model launcher URLs
+      // Model launcher URLs — all 9 models (consistent with PromptsModule/ForgeModule/ChainsModule)
       const MODEL_URLS = {
         chatgpt: 'https://chatgpt.com/',
         claude: 'https://claude.ai/new',
-        gemini: 'https://gemini.google.com/',
+        gemini: 'https://gemini.google.com/app',
         copilot: 'https://copilot.microsoft.com/',
-        perplexity: 'https://www.perplexity.ai/'
+        perplexity: 'https://www.perplexity.ai/',
+        deepseek: 'https://chat.deepseek.com/',
+        qwen: 'https://chat.qwen.ai/',
+        mistral: 'https://chat.mistral.ai/chat',
+        grok: 'https://grok.com/'
       };
+
+      // Model display names for button rendering
+      const MODEL_NAMES = [
+        { key: 'chatgpt', name: 'ChatGPT' },
+        { key: 'claude', name: 'Claude' },
+        { key: 'gemini', name: 'Gemini' },
+        { key: 'copilot', name: 'Copilot' },
+        { key: 'perplexity', name: 'Perplexity' },
+        { key: 'deepseek', name: 'DeepSeek' },
+        { key: 'qwen', name: 'Qwen' },
+        { key: 'mistral', name: 'Mistral' },
+        { key: 'grok', name: 'Grok' }
+      ];
 
       function escapeHtml(str) {
         const div = document.createElement('div');
@@ -4253,6 +4281,7 @@
           return '<div class="smartai-category" data-category="' + cat.id + '">' +
             '<button class="smartai-category-header" type="button" aria-expanded="false">' +
               '<span>' + escapeHtml(cat.title) + ' <span class="smartai-category-count">(' + cat.items.length + ')</span></span>' +
+              '<span class="smartai-select-all" data-section="' + cat.id + '">Select All</span>' +
               '<span class="smartai-category-chevron">&#x25B6;</span>' +
             '</button>' +
             '<div class="smartai-category-body">' +
@@ -4382,8 +4411,24 @@
       function attachEvents() {
         if (!panel) return;
 
-        // Category accordion toggle
+        // Category accordion toggle + Select All
         panel.addEventListener('click', (e) => {
+          // Select All / Deselect All button
+          const selectAllBtn = e.target.closest('.smartai-select-all');
+          if (selectAllBtn) {
+            e.stopPropagation();
+            const sectionId = selectAllBtn.dataset.section;
+            const catDiv = selectAllBtn.closest('.smartai-category');
+            if (catDiv) {
+              const checkboxes = catDiv.querySelectorAll('input[type="checkbox"]');
+              const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+              checkboxes.forEach(cb => { cb.checked = !allChecked; });
+              selectAllBtn.textContent = allChecked ? 'Select All' : 'Deselect All';
+              updatePreview();
+            }
+            return;
+          }
+
           const header = e.target.closest('.smartai-category-header');
           if (header) {
             const cat = header.closest('.smartai-category');
@@ -4413,10 +4458,18 @@
           textarea.addEventListener('input', updatePreview);
         }
 
-        // Live preview on checkbox change
+        // Live preview on checkbox change + update Select All text
         panel.addEventListener('change', (e) => {
           if (e.target.type === 'checkbox') {
             updatePreview();
+            const catDiv = e.target.closest('.smartai-category');
+            if (catDiv) {
+              const checkboxes = catDiv.querySelectorAll('input[type="checkbox"]');
+              const btn = catDiv.querySelector('.smartai-select-all');
+              if (btn) {
+                btn.textContent = Array.from(checkboxes).every(cb => cb.checked) ? 'Deselect All' : 'Select All';
+              }
+            }
           }
         });
 
@@ -4432,10 +4485,20 @@
         });
       }
 
+      function renderLaunchers() {
+        if (!launchersEl) return;
+        var label = launchersEl.querySelector('.smartai-launcher-label');
+        var labelHtml = label ? label.outerHTML : '<span class="smartai-launcher-label">Open in:</span>';
+        launchersEl.innerHTML = labelHtml + MODEL_NAMES.map(function(m) {
+          return '<button class="smartai-model-btn" data-model="' + m.key + '" aria-label="Open in ' + m.name + '">' + (MODEL_LOGOS[m.name] || '') + ' ' + m.name + '</button>';
+        }).join('');
+      }
+
       return {
         init() {
           if (!panel) return;
           renderCategories();
+          renderLaunchers();
           attachEvents();
           updatePreview();
         }
