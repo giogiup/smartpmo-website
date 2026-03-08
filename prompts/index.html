@@ -273,10 +273,17 @@
       border: 1px solid rgba(130, 90, 255, 0.15);
       color: var(--text-muted);
     }
+    .prompts-tab .smartai-sup {
+      color: var(--cyan-primary);
+      font-size: 0.65em;
+    }
     .prompts-tab[data-tab="smartai"].is-active {
       background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(130, 90, 255, 0.15));
       border-color: rgba(6, 182, 212, 0.35);
       color: var(--cyan-primary);
+    }
+    .prompts-tab[data-tab="smartai"].is-active .smartai-sup {
+      color: #ffffff;
     }
     .prompts-tab[data-tab="smartai"]:hover:not(.is-active) {
       background: linear-gradient(135deg, rgba(6, 182, 212, 0.08), rgba(130, 90, 255, 0.08));
@@ -2570,7 +2577,7 @@
 
       <!-- Tab Bar -->
       <div class="prompts-tabs" role="tablist" aria-label="Prompt tiers">
-        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-smartai" data-tab="smartai">smart<sup style="color:var(--cyan-primary);font-size:0.65em">AI</sup></button>
+        <button class="prompts-tab is-active" role="tab" aria-selected="true" id="tab-smartai" data-tab="smartai">smart<sup class="smartai-sup">AI</sup></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-forge" data-tab="forge">Forge <span class="prompts-tab-count" id="tabCountForge"></span></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-pret" data-tab="pret">Ready to Use <span class="prompts-tab-count" id="tabCountPret"></span></button>
         <button class="prompts-tab" role="tab" aria-selected="false" id="tab-chains" data-tab="chains">Chains <span class="prompts-tab-count" id="tabCountChains"></span></button>
