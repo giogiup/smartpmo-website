@@ -117,13 +117,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-core.css?v=ada364e">
-  <link rel="stylesheet" href="styles-v2.css?v=ada364e">
-  <link rel="stylesheet" href="hero.css?v=ada364e">
-  <link rel="stylesheet" href="header-styles.css?v=ada364e">
-  <link rel="stylesheet" href="section-cards.css?v=ada364e">
-  <link rel="stylesheet" href="section-votes.css?v=ada364e">
-  <link rel="stylesheet" href="mobile-fixes.css?v=ada364e">
+  <link rel="stylesheet" href="styles-core.css?v=83f6814">
+  <link rel="stylesheet" href="styles-v2.css?v=83f6814">
+  <link rel="stylesheet" href="hero.css?v=83f6814">
+  <link rel="stylesheet" href="header-styles.css?v=83f6814">
+  <link rel="stylesheet" href="section-cards.css?v=83f6814">
+  <link rel="stylesheet" href="section-votes.css?v=83f6814">
+  <link rel="stylesheet" href="mobile-fixes.css?v=83f6814">
   <script src="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" integrity="sha384-GzE8qT1LzDfRNjtvLN/dXDLPlJOB3BBom3Twb9/RwHkXCgNl6OU1pBxM9397HWGU" crossorigin="anonymous"></script>
   
   <style>
@@ -973,13 +973,14 @@
           <ul class="card-tldr" aria-label="Key takeaways">
             ${(article.summary || '').split('\n').map(l => l.replace(/^[-•*]\s*/, '').trim()).filter(Boolean).map(point => `<li>${escapeHtml(point)}</li>`).join('')}
           </ul>
+          ${type === 'auto' ? `
           <div class="card-meta">
             <span class="article-source">${escapeHtml(article.source || 'Source Unknown')}</span>
             <span class="article-date">${formattedDate}</span>
             ${article.score ? `<span class="article-score">Score: ${article.score}</span>` : ''}
-          </div>
+          </div>` : ''}
 
-          <!-- Unified Footer: votes LEFT + divider + share RIGHT -->
+          <!-- Unified Footer: votes LEFT + divider + date + share RIGHT -->
           <div class="card-footer-a" data-article-id="${article.id}">
             <div class="footer-votes">
               <button class="vote-btn vote-btn--up" aria-label="Useful" aria-pressed="false">
@@ -992,6 +993,7 @@
               </button>
             </div>
             <div class="footer-divider"></div>
+            ${type === 'curated' && formattedDate ? `<span class="footer-date">${formattedDate}</span>` : ''}
             <div class="footer-share">
               <button data-share-action="linkedin" data-share-payload='${safeJsonAttr({id: 'curated-' + article.id, title: article.title, article_url: article.url, ai_description: article.summary})}' class="shr-icon btn-linkedin" title="Share on LinkedIn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -1593,6 +1595,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 

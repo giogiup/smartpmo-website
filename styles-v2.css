@@ -87,6 +87,7 @@ body::before {
   padding: 0 1rem 4rem;
   box-sizing: border-box;
   width: 100%;
+  scroll-margin-top: 80px;
 }
 
 .section-title {
