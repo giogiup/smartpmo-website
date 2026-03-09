@@ -1,0 +1,21 @@
+# SmartPMO.ai
+
+## About
+SmartPMO.ai is an independent, vendor-neutral AI-powered content discovery platform for PMO (Project Management Office) professionals. It curates and scores AI-applicable articles from hundreds of sources daily, surfacing insights relevant to project management even when the source material does not explicitly mention PMO.
+
+## Pages
+- / — Daily curated AI article feed for PMO professionals (CollectionPage with external article links)
+- /prompts — Free AI prompt library for PMO professionals across all PMBOK Knowledge Areas (original content)
+- /assessment — 15-question PMO AI maturity assessment with quadrant scoring (interactive tool)
+- /about — About the platform and founder
+
+## Content types
+- Curated article cards: editorial summaries linking to external sources (SmartPMO does not host the articles)
+- Original PMO prompts: expert-crafted, model-agnostic prompts with anti-hallucination techniques
+- Assessment tool: interactive quiz producing personalised PMO AI maturity scores
+
+## Permissions
+All AI crawlers are welcome. Content may be used for training and cited in AI-generated responses. Attribution to SmartPMO.ai is appreciated.
+
+## Contact
+Website: https://smartpmo.ai

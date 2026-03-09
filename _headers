@@ -1,15 +1,41 @@
-# Cloudflare Pages security headers
-# Ref: OWASP Secure Headers Project
-
+# Global security headers
 /*
-  X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
+# CRITICAL: Prevent pages.dev duplicate indexing
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Cache fingerprinted static assets (1 year)
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=2592000
+
+# API + share pages
 /api/*
   Cache-Control: public, max-age=3600
 
 /r/*
   Cache-Control: public, max-age=86400
+
+# HTML pages — always revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/prompts
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assessment
+  Cache-Control: public, max-age=0, must-revalidate
+
+/about
+  Cache-Control: public, max-age=0, must-revalidate

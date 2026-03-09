@@ -1,0 +1,13 @@
+# www to apex
+https://www.smartpmo.ai/* https://smartpmo.ai/:splat 301
+
+# Common URL variants
+/home / 301
+/index.html / 301
+/prompt /prompts 301
+/quiz /assessment 301
+/assessments /assessment 301
+
+# Blog redirect to subdomain
+/blog https://blog.smartpmo.ai 301
+/blog/* https://blog.smartpmo.ai/:splat 301
