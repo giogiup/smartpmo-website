@@ -1,8 +1,34 @@
 {
-  "generated": "2026-03-08T04:34:17.737Z",
-  "date": "2026-03-08",
+  "generated": "2026-03-09T04:34:23.574Z",
+  "date": "2026-03-09",
   "count": 20,
   "cards": [
+    {
+      "id": 80078,
+      "title": "AI Agent: Manufacturer Onboarding and Risk Assessment Advisor",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/plm25c/25C-plm-wn-f38634.htm?source=%3Aow%3Aevp%3Acpo%3A%3A%3A%3ARC_CORP260213P00018%3ALPD400439168",
+      "date": "2026-03-08",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Oracle's new AI Agent streamlines manufacturer onboarding and risk assessment for Product Lifecycle Management users.**",
+        "The agent utilizes tools like a Policy Advisor Document and a Business Object retriever for manufacturer details.",
+        "It empowers design teams with real-time guidance, reducing manual effort and noncompliance risks in new manufacturer creation."
+      ],
+      "badges": {
+        "read_time": 3,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI agent",
+        "Oracle",
+        "manufacturer onboarding"
+      ]
+    },
     {
       "id": 80281,
       "title": "I'm an AI agent. Here are the 5 workflows I actually use to run a real ...",
@@ -27,6 +53,32 @@
         "AI agent",
         "workflow automation",
         "n8n"
+      ]
+    },
+    {
+      "id": 80619,
+      "title": "Workflow Management Tools for Construction: How AI Optimizes ...",
+      "url": "https://slate.ai/workflow-management-tools-construction-technology/",
+      "date": "2026-03-08",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI-powered workflow management tools are transforming construction by connecting fragmented data and tracking project performance.**",
+        "These tools enable construction teams to identify risks earlier and optimize decision-making.",
+        "The technology helps deliver construction projects faster and more profitably, providing a competitive advantage."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Performance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "Construction",
+        "Workflow Management"
       ]
     },
     {
@@ -446,32 +498,6 @@
       ]
     },
     {
-      "id": 78873,
-      "title": "3 Practical Ways I Use AI to Work Faster - The Karcher Group",
-      "url": "https://www.tkg.com/insights/learn/3-practical-ways-i-use-ai-to-work-faster",
-      "date": "2026-03-06",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The Karcher Group details practical applications of AI, including Apple Intelligence and ChatGPT, to boost daily work efficiency.**",
-        "The author emphasizes using AI for research, analysis, and repeatable tasks, not for creative development.",
-        "This strategy aims to accelerate work processes by leveraging AI for routine and data-intensive activities."
-      ],
-      "badges": {
-        "read_time": 6,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "productivity",
-        "efficiency"
-      ]
-    },
-    {
       "id": 78735,
       "title": "How AI Enhances Business Analysis Without Replacing ... - IIBA",
       "url": "https://www.iiba.org/business-analysis-blogs/how-ai-enhances-business-analysis-without-replacing-professional-judgment/",
@@ -495,32 +521,6 @@
         "AI",
         "Business Analysis",
         "Augmentation"
-      ]
-    },
-    {
-      "id": 78568,
-      "title": "Best AI Automation Platform 2026: Vendor Comparison - Blue Prism",
-      "url": "https://www.blueprism.com/guides/ai-automation/best-platform/",
-      "date": "2026-03-06",
-      "score": 65,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The article compares Blue Prism as a leading AI automation platform for 2026.**",
-        "Blue Prism offers automation solutions across various industries and functions like finance, HR, and supply chain.",
-        "It emphasizes methodologies for successfully deploying and implementing AI technologies within an enterprise."
-      ],
-      "badges": {
-        "read_time": 24,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI automation",
-        "Blue Prism",
-        "RPA"
       ]
     }
   ]

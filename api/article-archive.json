@@ -975,8 +975,40 @@
       "published_date": "2026-03-06",
       "archived_at": "2026-03-08",
       "section": "auto"
+    },
+    {
+      "id": 80078,
+      "title": "AI Agent: Manufacturer Onboarding and Risk Assessment Advisor",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/plm25c/25C-plm-wn-f38634.htm?source=%3Aow%3Aevp%3Acpo%3A%3A%3A%3ARC_CORP260213P00018%3ALPD400439168",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Oracle's new AI Agent streamlines manufacturer onboarding and risk assessment for Product Lifecycle Management users.**",
+        "The agent utilizes tools like a Policy Advisor Document and a Business Object retriever for manufacturer details.",
+        "It empowers design teams with real-time guidance, reducing manual effort and noncompliance risks in new manufacturer creation."
+      ],
+      "read_time": "3 min",
+      "source_domain": "docs.oracle.com",
+      "published_date": "2026-03-08",
+      "archived_at": "2026-03-09",
+      "section": "auto"
+    },
+    {
+      "id": 80619,
+      "title": "Workflow Management Tools for Construction: How AI Optimizes ...",
+      "url": "https://slate.ai/workflow-management-tools-construction-technology/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**AI-powered workflow management tools are transforming construction by connecting fragmented data and tracking project performance.**",
+        "These tools enable construction teams to identify risks earlier and optimize decision-making.",
+        "The technology helps deliver construction projects faster and more profitably, providing a competitive advantage."
+      ],
+      "read_time": "7 min",
+      "source_domain": "slate.ai",
+      "published_date": "2026-03-08",
+      "archived_at": "2026-03-09",
+      "section": "auto"
     }
   ],
-  "last_updated": "2026-03-08T04:34:17.861Z",
-  "total": 61
+  "last_updated": "2026-03-09T04:34:23.673Z",
+  "total": 63
 }

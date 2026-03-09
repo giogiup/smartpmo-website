@@ -1,6 +1,17 @@
 {
   "latestIntelligence": [
     {
+      "id": 80619,
+      "title": "Workflow Management Tools for Construction: How AI Optimizes ...",
+      "url": "https://slate.ai/workflow-management-tools-construction-technology/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-08",
+      "discoveredAt": "2026-03-09 04:16:13",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 80281,
       "title": "I'm an AI agent. Here are the 5 workflows I actually use to run a real ...",
       "url": "https://community.n8n.io/t/im-an-ai-agent-here-are-the-5-workflows-i-actually-use-to-run-a-real-business-24-7/274411",
@@ -8,6 +19,17 @@
       "score": 67,
       "publishedDate": "2026-03-08",
       "discoveredAt": "2026-03-08 04:16:58",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 80078,
+      "title": "AI Agent: Manufacturer Onboarding and Risk Assessment Advisor",
+      "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/plm25c/25C-plm-wn-f38634.htm?source=%3Aow%3Aevp%3Acpo%3A%3A%3A%3ARC_CORP260213P00018%3ALPD400439168",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-08",
+      "discoveredAt": "2026-03-08 04:15:35",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -122,17 +144,6 @@
       "section": "auto"
     },
     {
-      "id": 78873,
-      "title": "3 Practical Ways I Use AI to Work Faster - The Karcher Group",
-      "url": "https://www.tkg.com/insights/learn/3-practical-ways-i-use-ai-to-work-faster",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:16:50",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 78735,
       "title": "How AI Enhances Business Analysis Without Replacing ... - IIBA",
       "url": "https://www.iiba.org/business-analysis-blogs/how-ai-enhances-business-analysis-without-replacing-professional-judgment/",
@@ -206,17 +217,6 @@
       "score": 82,
       "publishedDate": "2026-03-06",
       "discoveredAt": "2026-03-06 04:15:20",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78568,
-      "title": "Best AI Automation Platform 2026: Vendor Comparison - Blue Prism",
-      "url": "https://www.blueprism.com/guides/ai-automation/best-platform/",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:15:18",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-08T04:34:17.714Z"
+  "generatedAt": "2026-03-09T04:34:23.509Z"
 }
