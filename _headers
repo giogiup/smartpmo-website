@@ -7,7 +7,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 # CRITICAL: Prevent pages.dev duplicate indexing
-https://:project.pages.dev/*
+https://smartpmo-website.pages.dev/*
   X-Robots-Tag: noindex
 
 # Cache fingerprinted static assets (1 year)
