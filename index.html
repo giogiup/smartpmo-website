@@ -111,20 +111,17 @@
 
   <!-- Preload Lucide (383KB) — start download before parser reaches script tag -->
   <link rel="preload" href="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" as="script" crossorigin="anonymous">
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
-  <!-- Fonts: Display + Serif for editorial feel -->
+  <!-- Fonts: Inter only (Spectral removed — unused) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles-core.css?v=f2b3dd3">
-  <link rel="stylesheet" href="styles-v2.css?v=f2b3dd3">
-  <link rel="stylesheet" href="hero.css?v=f2b3dd3">
-  <link rel="stylesheet" href="header-styles.css?v=f2b3dd3">
-  <link rel="stylesheet" href="section-cards.css?v=f2b3dd3">
-  <link rel="stylesheet" href="section-votes.css?v=f2b3dd3">
-  <link rel="stylesheet" href="mobile-fixes.css?v=f2b3dd3">
-  <script src="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" integrity="sha384-GzE8qT1LzDfRNjtvLN/dXDLPlJOB3BBom3Twb9/RwHkXCgNl6OU1pBxM9397HWGU" crossorigin="anonymous"></script>
+  <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
+  <link rel="stylesheet" href="smartpmo-bundle.css?v=ecd3578">
+  <!-- B-75: defer unblocks parser — Lucide inits after DOM parse, before DOMContentLoaded -->
+  <script defer src="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" integrity="sha384-GzE8qT1LzDfRNjtvLN/dXDLPlJOB3BBom3Twb9/RwHkXCgNl6OU1pBxM9397HWGU" crossorigin="anonymous"></script>
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -580,7 +577,47 @@
       <i data-lucide="star"></i> Strategic Insights
       <span class="section-subtitle">Curated by PMO Experts</span>
     </h2>
-    <div class="insights-grid" id="curated-articles-grid"></div>
+    <!-- Skeleton loaders (replaced by JS on load) -->
+    <div id="curated-skeleton-loaders" class="insights-grid" aria-hidden="true">
+      <div class="skeleton-card">
+        <div class="skeleton-title"></div>
+        <div class="skeleton-tldr">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+        <div class="skeleton-badges">
+          <div class="skeleton-badge"></div>
+          <div class="skeleton-badge"></div>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-title"></div>
+        <div class="skeleton-tldr">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+        <div class="skeleton-badges">
+          <div class="skeleton-badge"></div>
+          <div class="skeleton-badge"></div>
+        </div>
+      </div>
+      <div class="skeleton-card">
+        <div class="skeleton-title"></div>
+        <div class="skeleton-tldr">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+        <div class="skeleton-badges">
+          <div class="skeleton-badge"></div>
+          <div class="skeleton-badge"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Real curated cards (hidden until loaded) -->
+    <div class="insights-grid" id="curated-articles-grid" style="display:none;"></div>
   </section>
 
   <!-- Footer -->
@@ -956,7 +993,12 @@
 
     // Render Strategic Insights section (curated)
     function renderCuratedSection(articles) {
+      const skeletonEl = document.getElementById('curated-skeleton-loaders');
       const grid = document.getElementById('curated-articles-grid');
+
+      // Hide skeleton loaders
+      if (skeletonEl) skeletonEl.style.display = 'none';
+      grid.style.display = 'grid';
 
       if (articles.length === 0) {
         grid.innerHTML = '<p class="no-articles">No curated articles yet.</p>';
@@ -1602,6 +1644,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 
