@@ -153,6 +153,7 @@
 .hero-quadrant-grid {
   width: 400px;
   height: 400px;
+  min-height: 360px; /* Reserve space before JS renders — prevents CLS */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -607,6 +608,7 @@
   .hero-quadrant-grid {
     width: 320px;
     height: 320px;
+    min-height: 240px; /* Mobile CLS reserve */
   }
 
   .hero-quad {
