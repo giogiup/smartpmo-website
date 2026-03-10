@@ -1,6 +1,105 @@
 {
   "latestIntelligence": [
     {
+      "id": 81760,
+      "title": "Introducing AI Teammates: your new AI-powered helpers in ...",
+      "url": "https://www.teamwork.com/blog/ai-teammates/",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-10 04:19:45",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81531,
+      "title": "Show HN: VS Code Agent Kanban: Task Management for the AI ...",
+      "url": "https://news.ycombinator.com/item?id=47307169",
+      "summary": "",
+      "score": 65,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-10 04:18:25",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81454,
+      "title": "Brainstorming with AI Tools - ProjectManagement.com",
+      "url": "https://www.projectmanagement.com/videos/942881/brainstorming-with-ai-tools",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-10 04:18:02",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81701,
+      "title": "Top 5 Sembly AI Alternatives for AI Meeting Notes [2026]",
+      "url": "https://www.happyscribe.com/blog/sembly-ai-alternatives-for-ai-meeting-notes",
+      "summary": "",
+      "score": 68,
+      "publishedDate": "2026-03-09",
+      "discoveredAt": "2026-03-10 04:19:25",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81652,
+      "title": "Guided Lab: Project Management Application with Lovable AI",
+      "url": "https://imagine.jhu.edu/classes/guided-lab-project-management-application-with-lovable-ai/",
+      "summary": "",
+      "score": 78,
+      "publishedDate": "2026-03-09",
+      "discoveredAt": "2026-03-10 04:19:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81224,
+      "title": "Microsoft wants you to ‘hire’ its AI agents",
+      "url": "https://www.computerworld.com/article/4141904/microsoft-wants-you-to-hire-its-ai-agents.html",
+      "summary": "",
+      "score": 78,
+      "publishedDate": "2026-03-09",
+      "discoveredAt": "2026-03-10 04:14:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81203,
+      "title": "Microsoft Recommits to AI Agents With New Copilot Features",
+      "url": "https://aibusiness.com/agentic-ai/microsoft-recommits-to-ai-agents",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-09",
+      "discoveredAt": "2026-03-10 04:13:52",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81198,
+      "title": "Production AI Playbook: Human Oversight",
+      "url": "https://blog.n8n.io/production-ai-playbook-human-oversight/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-09",
+      "discoveredAt": "2026-03-10 04:13:50",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 80906,
+      "title": "Microsoft brings Anthropic's Claude Cowork into Copilot to run tasks across Outlook, Teams, and Excel",
+      "url": "https://the-decoder.com/microsoft-brings-anthropics-claude-cowork-into-copilot-to-run-tasks-across-outlook-teams-and-excel/",
+      "summary": "",
+      "score": 69,
+      "publishedDate": "2026-03-09",
+      "discoveredAt": "2026-03-10 04:05:12",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 80619,
       "title": "Workflow Management Tools for Construction: How AI Optimizes ...",
       "url": "https://slate.ai/workflow-management-tools-construction-technology/",
@@ -89,24 +188,13 @@
       "section": "auto"
     },
     {
-      "id": 79022,
-      "title": "Scaling intelligent automation without breaking live workflows",
-      "url": "https://www.artificialintelligence-news.com/news/scaling-intelligent-automation-without-breaking-live-workflows/",
+      "id": 79482,
+      "title": "Enterprise Workflow Automation with Snowflake Intelligence",
+      "url": "https://www.snowflake.com/en/webinars/virtual-hands-on-lab/enterprise-workflow-automation-with-snowflake-intelligence-2026-03-05/?utm_campaign=39413822-Snowflake%20Hands-On%20Labs%20-%20Feb-Mar%202026&utm_content=371748533&utm_medium=social&utm_source=linkedin&hss_channel=lcp-3607865",
       "summary": "",
       "score": 66,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-07 04:06:55",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78963,
-      "title": "Reducing Daily PM Overhead With a Chat-Based AI Agent",
-      "url": "https://dzone.com/articles/reducing-pm-overhead-chat-based-ai-agent",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-07 04:01:22",
+      "publishedDate": "2026-03-07",
+      "discoveredAt": "2026-03-07 04:15:20",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -118,94 +206,6 @@
       "score": 70,
       "publishedDate": "2026-03-06",
       "discoveredAt": "2026-03-07 04:00:49",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78952,
-      "title": "Behind the Demo: How Cross‑functional Partnerships Turned AI “Golden Prompts” into Real Customer Value",
-      "url": "https://www.atlassian.com/blog/artificial-intelligence/golden-prompts",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-07 04:00:49",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78929,
-      "title": "Best AI Automation Software [2026 Comparison] | SS&C Blue Prism",
-      "url": "https://www.blueprism.com/guides/what-is-automation-software/best/",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:17:07",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78735,
-      "title": "How AI Enhances Business Analysis Without Replacing ... - IIBA",
-      "url": "https://www.iiba.org/business-analysis-blogs/how-ai-enhances-business-analysis-without-replacing-professional-judgment/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:16:01",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78726,
-      "title": "Google's Canvas AI Project-Planning Tool Is Now Available ... - CNET",
-      "url": "https://www.cnet.com/news/google-searchs-canvas-ai-tool-is-now-available-to-everyone-in-the-us/",
-      "summary": "",
-      "score": 69,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:15:59",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78675,
-      "title": "Construction AI Launches First AI-Native Project Management ...",
-      "url": "https://markets.businessinsider.com/news/stocks/construction-ai-launches-first-ai-native-project-management-platform-for-uk-construction-smes-to-address-170bn-industry-s-technology-gap-1035896383",
-      "summary": "",
-      "score": 78,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:15:47",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78633,
-      "title": "SharePoint Introduces Agentic AI Building and Governance Tools",
-      "url": "https://thejournal.com/articles/2026/03/04/sharepoint-introduces-agentic-ai-building-and-governance-tools.aspx",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:15:37",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78589,
-      "title": "The PMO Playbook for AI Strategy That Actually Delivers",
-      "url": "https://valueops.broadcom.com/blog/the-pmo-playbook-for-ai-strategy-that-actually-delivers",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:15:25",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78574,
-      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
-      "url": "https://www.sap.com/documents/2026/02/e8608b42-417f-0010-bca6-c68f7e60039b.html",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:15:20",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-09T04:34:23.509Z"
+  "generatedAt": "2026-03-10T04:55:47.020Z"
 }
