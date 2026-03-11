@@ -1,6 +1,105 @@
 {
   "latestIntelligence": [
     {
+      "id": 82651,
+      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
+      "url": "https://www.cmswire.com/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-11",
+      "discoveredAt": "2026-03-11 04:17:22",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 82593,
+      "title": "AIUC-1 certification: the next chapter in trusted agentic automation",
+      "url": "https://www.uipath.com/blog/product-and-updates/aiuc-1-certification-next-chapter-trusted-agentic-automation",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-11",
+      "discoveredAt": "2026-03-11 04:17:00",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 82418,
+      "title": "How an Engineering Firm Cut Project Estimation Time with AI",
+      "url": "https://www.alphabold.com/engineering-firm-ai-wbs-project-estimation-automation/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-11 04:15:52",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 82293,
+      "title": "Zoom introduces agentic AI capabilities to drive productivity and action at work",
+      "url": "https://siliconangle.com/2026/03/10/zoom-introduces-agentic-ai-capabilities-drive-productivity-action-work/",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-11 04:14:32",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 82271,
+      "title": "The Prosci AI Integration Framework",
+      "url": "https://www.prosci.com/blog/the-prosci-ai-integration-framework",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-11 04:14:20",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 82254,
+      "title": "Enterprise AI agents are multiplying fast, and Microsoft wants full control of them",
+      "url": "https://www.zdnet.com/article/microsoft-introduces-agent-365/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-11 04:13:05",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81814,
+      "title": "Microsoft and Anthropic partner to advance Copilot AI agents",
+      "url": "https://www.techmonitor.ai/news/microsoft-and-anthropic-partner-to-advance-copilot-ai-agents",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-11 04:04:36",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81784,
+      "title": "Google’s Gemini AI wants to do the busywork in Docs and Sheets",
+      "url": "https://www.fastcompany.com/91505505/google-gemini-ai-busywork-docs-and-sheets?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-11 04:01:51",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81774,
+      "title": "Shifting Bottleneck: How AI Is Reshaping the Software Development Lifecycle",
+      "url": "https://dzone.com/articles/shifting-bottleneck-how-ai-is-reshaping-the-sdlc",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-11 04:01:25",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 81760,
       "title": "Introducing AI Teammates: your new AI-powered helpers in ...",
       "url": "https://www.teamwork.com/blog/ai-teammates/",
@@ -30,6 +129,28 @@
       "score": 67,
       "publishedDate": "2026-03-10",
       "discoveredAt": "2026-03-10 04:18:02",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 81450,
+      "title": "AI Agents for Risk Advisory | V7 Solutions",
+      "url": "https://www.v7labs.com/vertical/risk-advisory",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-10",
+      "discoveredAt": "2026-03-10 04:18:00",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 82461,
+      "title": "Best AI Project Management Tools for Small Business in 2026",
+      "url": "https://smartbizmetrics.com/ai-project-management-tools-small-business/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-09",
+      "discoveredAt": "2026-03-11 04:16:05",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -96,127 +217,6 @@
       "score": 69,
       "publishedDate": "2026-03-09",
       "discoveredAt": "2026-03-10 04:05:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 80619,
-      "title": "Workflow Management Tools for Construction: How AI Optimizes ...",
-      "url": "https://slate.ai/workflow-management-tools-construction-technology/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-08",
-      "discoveredAt": "2026-03-09 04:16:13",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 80281,
-      "title": "I'm an AI agent. Here are the 5 workflows I actually use to run a real ...",
-      "url": "https://community.n8n.io/t/im-an-ai-agent-here-are-the-5-workflows-i-actually-use-to-run-a-real-business-24-7/274411",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-08",
-      "discoveredAt": "2026-03-08 04:16:58",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 80078,
-      "title": "AI Agent: Manufacturer Onboarding and Risk Assessment Advisor",
-      "url": "https://docs.oracle.com/en/cloud/saas/readiness/scm/25c/plm25c/25C-plm-wn-f38634.htm?source=%3Aow%3Aevp%3Acpo%3A%3A%3A%3ARC_CORP260213P00018%3ALPD400439168",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-08",
-      "discoveredAt": "2026-03-08 04:15:35",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 80026,
-      "title": "Features — ChatPRD | AI Product Manager Platform",
-      "url": "https://www.chatprd.ai/product/features",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-08",
-      "discoveredAt": "2026-03-08 04:15:18",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 79709,
-      "title": "The AI Maturity Curve for Knowledge Management - Atlassian",
-      "url": "https://www.atlassian.com/webinars/business/the-ai-maturity-curve-for-knowledge-management",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-07",
-      "discoveredAt": "2026-03-07 04:16:45",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 79632,
-      "title": "AI Data Analytics: Enhance Your Data Analysis | Microsoft AI",
-      "url": "https://www.microsoft.com/en-us/microsoft-copilot/copilot-101/ai-for-data-analysis",
-      "summary": "",
-      "score": 69,
-      "publishedDate": "2026-03-07",
-      "discoveredAt": "2026-03-07 04:16:13",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 79590,
-      "title": "The MSP Guide to Using AI-Powered Risk Management to Scale ...",
-      "url": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-03-07",
-      "discoveredAt": "2026-03-07 04:15:56",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 79529,
-      "title": "The Rise of AI in Construction Estimating - Kamai",
-      "url": "https://www.kamai.io/blog/the-rise-of-ai-in-construction-estimating",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-07",
-      "discoveredAt": "2026-03-07 04:15:37",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 79482,
-      "title": "Enterprise Workflow Automation with Snowflake Intelligence",
-      "url": "https://www.snowflake.com/en/webinars/virtual-hands-on-lab/enterprise-workflow-automation-with-snowflake-intelligence-2026-03-05/?utm_campaign=39413822-Snowflake%20Hands-On%20Labs%20-%20Feb-Mar%202026&utm_content=371748533&utm_medium=social&utm_source=linkedin&hss_channel=lcp-3607865",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-07",
-      "discoveredAt": "2026-03-07 04:15:20",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78951,
-      "title": "Architecting a Rovo AI Teammate: From AI ‘Magic’ to Production-Ready Forge Code",
-      "url": "https://www.atlassian.com/blog/it-teams/architecting-a-rovo-ai-teammate-from-ai-magic-to-production-ready-forge-code",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-07 04:00:49",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 78576,
-      "title": "Conversational AI that accelerates SAP project delivery up to 14 ...",
-      "url": "https://www.sap.com/documents/2026/02/fc748b42-417f-0010-bca6-c68f7e60039b.html",
-      "summary": "",
-      "score": 82,
-      "publishedDate": "2026-03-06",
-      "discoveredAt": "2026-03-06 04:15:20",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-10T04:55:47.020Z"
+  "generatedAt": "2026-03-11T04:44:04.432Z"
 }

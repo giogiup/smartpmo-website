@@ -1167,8 +1167,184 @@
       "published_date": "2026-03-07",
       "archived_at": "2026-03-10",
       "section": "auto"
+    },
+    {
+      "id": 82651,
+      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
+      "url": "https://www.cmswire.com/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Zoom is expanding its Agentic AI platform to include new workflow orchestration capabilities.**",
+        "This expansion focuses on integrating AI agents to manage and automate complex operational workflows.",
+        "The development aims to enhance automation and efficiency across various business processes."
+      ],
+      "read_time": "17 min",
+      "source_domain": "cmswire.com",
+      "published_date": "2026-03-11",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 82593,
+      "title": "AIUC-1 certification: the next chapter in trusted agentic automation",
+      "url": "https://www.uipath.com/blog/product-and-updates/aiuc-1-certification-next-chapter-trusted-agentic-automation",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**UiPath announces the AIUC-1 certification for trusted agentic automation.**",
+        "This certification aims to establish standards for reliable and autonomous AI agents.",
+        "It signifies a new phase in the development and deployment of AI-powered automation."
+      ],
+      "read_time": "11 min",
+      "source_domain": "uipath.com",
+      "published_date": "2026-03-11",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 82418,
+      "title": "How an Engineering Firm Cut Project Estimation Time with AI",
+      "url": "https://www.alphabold.com/engineering-firm-ai-wbs-project-estimation-automation/",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**An engineering firm significantly reduced project estimation time by implementing AI solutions.**",
+        "The article details how AI automates Work Breakdown Structure (WBS) creation for faster, more accurate estimates.",
+        "This approach helps project managers improve planning efficiency and enhance bid competitiveness for new projects."
+      ],
+      "read_time": "12 min",
+      "source_domain": "alphabold.com",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 82271,
+      "title": "The Prosci AI Integration Framework",
+      "url": "https://www.prosci.com/blog/the-prosci-ai-integration-framework",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Prosci's new AI Integration Framework provides a structured approach for managing AI-driven organizational change.**",
+        "The framework guides leaders and teams through the complexities of integrating artificial intelligence into business processes.",
+        "It helps organizations, including PMOs, effectively navigate the people-side of AI adoption to maximize value."
+      ],
+      "read_time": "15 min",
+      "source_domain": "prosci.com",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 81814,
+      "title": "Microsoft and Anthropic partner to advance Copilot AI agents",
+      "url": "https://www.techmonitor.ai/news/microsoft-and-anthropic-partner-to-advance-copilot-ai-agents",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Microsoft and Anthropic collaborate to enhance Copilot AI agents for project management tasks.**",
+        "The partnership aims to integrate advanced AI models into Copilot, improving its capabilities for complex project workflows.",
+        "These enhanced AI agents are expected to assist PMOs in areas like planning, reporting, and decision-making."
+      ],
+      "read_time": "11 min",
+      "source_domain": "techmonitor.ai",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 81774,
+      "title": "Shifting Bottleneck: How AI Is Reshaping the Software Development Lifecycle",
+      "url": "https://dzone.com/articles/shifting-bottleneck-how-ai-is-reshaping-the-sdlc",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**AI is fundamentally reshaping the Software Development Lifecycle by identifying and shifting traditional bottlenecks.**",
+        "AI tools enhance various SDLC phases, from requirements to deployment, improving overall project velocity and quality.",
+        "This transformation enables PMOs to achieve more predictable project outcomes and optimize resource allocation."
+      ],
+      "read_time": "18 min",
+      "source_domain": "dzone.com",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 82293,
+      "title": "Zoom introduces agentic AI capabilities to drive productivity and action at work",
+      "url": "https://siliconangle.com/2026/03/10/zoom-introduces-agentic-ai-capabilities-drive-productivity-action-work/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Zoom introduces new agentic AI capabilities aimed at boosting workplace productivity.**",
+        "These AI features are designed to drive action and streamline various work processes.",
+        "The technology could assist teams in automating routine tasks and improving overall operational efficiency."
+      ],
+      "read_time": "10 min",
+      "source_domain": "siliconangle.com",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 81784,
+      "title": "Google’s Gemini AI wants to do the busywork in Docs and Sheets",
+      "url": "https://www.fastcompany.com/91505505/google-gemini-ai-busywork-docs-and-sheets?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Google's Gemini AI introduces new features to automate busywork in Docs, Sheets, and Slides.**",
+        "Gemini can generate documents from existing files and analyze spreadsheets using plain-language prompts.",
+        "These AI capabilities aim to eliminate drudgery in creating and updating documents, relevant to administrative tasks."
+      ],
+      "read_time": "4 min",
+      "source_domain": "fastcompany.com",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 82254,
+      "title": "Enterprise AI agents are multiplying fast, and Microsoft wants full control of them",
+      "url": "https://www.zdnet.com/article/microsoft-introduces-agent-365/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Microsoft introduces \"Agent 365\" to manage the proliferation of enterprise AI agents.**",
+        "The initiative aims to provide comprehensive control over rapidly multiplying AI agents within organizations.",
+        "This development is relevant to organizations seeking to govern and integrate new AI technologies effectively."
+      ],
+      "read_time": "18 min",
+      "source_domain": "zdnet.com",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 81450,
+      "title": "AI Agents for Risk Advisory | V7 Solutions",
+      "url": "https://www.v7labs.com/vertical/risk-advisory",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**V7 Solutions introduces AI agents designed to automate and accelerate risk advisory processes.**",
+        "These agents extract, structure, and analyze exposure data from policies, claims, and regulatory documents.",
+        "The platform aims to reduce manual risk review time, improve decision-making, and enhance traceability."
+      ],
+      "read_time": "19 min",
+      "source_domain": "v7labs.com",
+      "published_date": "2026-03-10",
+      "archived_at": "2026-03-11",
+      "section": "auto"
+    },
+    {
+      "id": 82461,
+      "title": "Best AI Project Management Tools for Small Business in 2026",
+      "url": "https://smartbizmetrics.com/ai-project-management-tools-small-business/",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**This guide identifies the best AI project management tools for small businesses in 2026.**",
+        "These tools provide features such as automatic task creation from meeting notes and AI-generated project timelines.",
+        "They help small teams achieve structure, visibility, and automation in project planning and delivery."
+      ],
+      "read_time": "9 min",
+      "source_domain": "smartbizmetrics.com",
+      "published_date": "2026-03-09",
+      "archived_at": "2026-03-11",
+      "section": "auto"
     }
   ],
-  "last_updated": "2026-03-10T04:55:47.347Z",
-  "total": 73
+  "last_updated": "2026-03-11T04:44:04.575Z",
+  "total": 84
 }
