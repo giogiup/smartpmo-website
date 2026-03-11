@@ -225,7 +225,7 @@ body::before {
   white-space: nowrap;
 }
 
-.badge i {
+.badge svg {
   width: 14px;
   height: 14px;
   flex-shrink: 0;
@@ -1836,7 +1836,7 @@ p.emailoctopus-error-message {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.pmo-relevance-badge i {
+.pmo-relevance-badge svg {
   width: 14px;
   height: 14px;
   flex-shrink: 0;
@@ -2081,7 +2081,7 @@ p.emailoctopus-error-message {
   transition: all 0.2s ease;
 }
 
-.badge i {
+.badge svg {
   width: 14px;
   height: 14px;
 }

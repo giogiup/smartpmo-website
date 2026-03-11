@@ -109,9 +109,7 @@
   <!-- Preload hero image for faster LCP -->
   <link rel="preload" as="image" href="hero-barista-small.jpg" imagesrcset="hero-barista-small.jpg 600w, hero-barista.jpg 1200w">
 
-  <!-- Preload Lucide (383KB) — start download before parser reaches script tag -->
-  <link rel="preload" href="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" as="script" crossorigin="anonymous">
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <!-- B-76: Lucide removed — 8 icons inlined as SVG (saves 383KB + unpkg.com round-trip) -->
 
   <!-- Fonts: Inter only (Spectral removed — unused) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,9 +117,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
-  <link rel="stylesheet" href="smartpmo-bundle.css?v=ecd3578">
-  <!-- B-75: defer unblocks parser — Lucide inits after DOM parse, before DOMContentLoaded -->
-  <script defer src="https://unpkg.com/lucide@0.575.0/dist/umd/lucide.min.js" integrity="sha384-GzE8qT1LzDfRNjtvLN/dXDLPlJOB3BBom3Twb9/RwHkXCgNl6OU1pBxM9397HWGU" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="smartpmo-bundle.css?v=dbbc51e">
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -276,6 +272,7 @@
     </nav>
   </div>
 
+  <main>
   <!-- HERO SECTION - LAYOUT B (Stacked Narrative) -->
   <section class="hero-section" id="main-content">
 
@@ -470,11 +467,10 @@
             </g>
           </svg>
         </div>
-        <h3 class="hero-band-3-title">Weekly Top 20</h3>
+        <h2 class="hero-band-3-title">Weekly Top 20</h3>
         <p class="hero-band-3-desc">The best AI-for-PMO articles of the week, delivered free every Friday.</p>
         <div class="hero-newsletter-form">
-          <!-- EmailOctopus Embedded Form -->
-          <script async src="https://eocampaign1.com/form/73a90686-a1f9-11f0-9b87-6727ec6b3f72.js" data-form="73a90686-a1f9-11f0-9b87-6727ec6b3f72"></script>
+          <!-- EmailOctopus Embedded Form — lazy-loaded by IntersectionObserver (B-76) -->
           <!-- Turnstile CAPTCHA — uncomment when site key is ready (B-74)
           <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
           <div class="cf-turnstile" data-sitekey="REPLACE_WITH_SITE_KEY"></div>
@@ -504,12 +500,11 @@
             </g>
           </svg>
         </div>
-        <h3 class="hero-band-3-title">Quarterly Report</h3>
+        <h2 class="hero-band-3-title">Quarterly Report</h3>
         <p class="hero-band-3-desc"><em>AI Maturity in PMOs: The Global Reality Check</em> &mdash; our deep-dive into how PMOs worldwide are adopting AI.</p>
         <div class="hero-report-status">Q4 2025 Report Available</div>
         <div class="hero-report-form">
-          <!-- EmailOctopus Embedded Form — Quarterly Report list (e1762b56-10a5-11f1-b919-db8cfaf6c928) -->
-          <script async src="https://eocampaign1.com/form/57242e28-10e4-11f1-a1d8-1b4d501b40b6.js" data-form="57242e28-10e4-11f1-a1d8-1b4d501b40b6"></script>
+          <!-- EmailOctopus Embedded Form — Quarterly Report — lazy-loaded by IntersectionObserver (B-76) -->
           <!-- Turnstile CAPTCHA — uncomment when site key is ready (B-74)
           <div class="cf-turnstile" data-sitekey="REPLACE_WITH_SITE_KEY"></div>
           -->
@@ -523,7 +518,7 @@
   <!-- Section 1: Latest Intelligence (Auto) -->
   <section class="insights-section" id="latest-intelligence">
     <h2 class="section-title section-title--auto">
-      <i data-lucide="zap"></i> Latest Intelligence
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Latest Intelligence
       <span class="section-subtitle">AI-Discovered PMO Insights</span>
     </h2>
 
@@ -574,7 +569,7 @@
   <!-- Section 2: Strategic Insights (Curated) -->
   <section class="insights-section" id="strategic-insights">
     <h2 class="section-title section-title--curated">
-      <i data-lucide="star"></i> Strategic Insights
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Strategic Insights
       <span class="section-subtitle">Curated by PMO Experts</span>
     </h2>
     <!-- Skeleton loaders (replaced by JS on load) -->
@@ -619,6 +614,8 @@
     <!-- Real curated cards (hidden until loaded) -->
     <div class="insights-grid" id="curated-articles-grid" style="display:none;"></div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -700,6 +697,18 @@
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
     }
+
+    // B-76: Inline SVG icons (replaces Lucide CDN — saves 383KB)
+    const ICON_SVG = {
+      'check-circle': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
+      'lightbulb': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>',
+      'info': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>',
+      'zap': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+      'clock': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+      'dollar-sign': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+      'layout-dashboard': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>',
+      'star': '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>'
+    };
 
     // PMO Category configuration (3-tier system)
     const PMO_CATEGORY_CONFIG = {
@@ -839,14 +848,14 @@
             <!-- Badge Row: category + read-time + dynamic badge (inline, not absolute) -->
             <div class="card-badge-row">
               <div class="pmo-relevance-badge ${badgeConfig.class}" title="${badgeConfig.tooltip}">
-                <i data-lucide="${badgeConfig.icon}"></i>
+                ${ICON_SVG[badgeConfig.icon] || ''}
                 <span>${badgeConfig.label}</span>
               </div>
               <span class="badge badge-time">
-                <i data-lucide="clock"></i> ${normalizedCard.badges.read_time} min
+                ${ICON_SVG['clock']} ${normalizedCard.badges.read_time} min
               </span>
               <span class="badge ${dynamicBadge.class}">
-                <i data-lucide="${dynamicBadge.icon}"></i> ${dynamicBadge.value}
+                ${ICON_SVG[dynamicBadge.icon] || ''} ${dynamicBadge.value}
               </span>
             </div>
 
@@ -912,7 +921,7 @@
       `;
       }).join('');
 
-      lucide.createIcons();
+      // B-76: lucide.createIcons() removed — icons are inline SVGs
     }
 
     // Fetch real data from API - Daily Cards (Latest Intelligence - enriched)
@@ -988,7 +997,7 @@
       }
 
       grid.innerHTML = articles.map(article => createArticleCard(article, 'auto')).join('');
-      lucide.createIcons();
+      // B-76: lucide.createIcons() removed — icons are inline SVGs
     }
 
     // Render Strategic Insights section (curated)
@@ -1006,7 +1015,7 @@
       }
 
       grid.innerHTML = articles.map(article => createArticleCard(article, 'curated')).join('');
-      lucide.createIcons();
+      // B-76: lucide.createIcons() removed — icons are inline SVGs
     }
 
     // Create article card HTML
@@ -1349,20 +1358,29 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
         return;
       }
 
-      // Step 2: API is up — load each article's votes (skip already-loaded)
+      // Step 2: API is up — B-76: single batch request for all article IDs
+      const idBarMap = {};
       for (const bar of bars) {
         const articleId = bar.dataset.articleId;
         if (!articleId) continue;
-        loadedArticleIds.add(articleId); // Mark as loaded before fetch to prevent re-entry
-        try {
-          const res  = await fetch(`${API_BASE}/votes/${articleId}`, { signal: AbortSignal.timeout(4000) });
-          if (!res.ok) throw new Error(`HTTP ${res.status}`);
-          const data = await res.json();
-          applyVoteState(bar, data.userVote, data.upvotes, data.downvotes);
-        } catch (err) {
-          // Individual failure — leave bar visible at 0/0, do not break loop
-          console.warn(`[VotesModule] Could not load votes for article ${articleId}:`, err.message);
+        loadedArticleIds.add(articleId);
+        idBarMap[articleId] = bar;
+      }
+
+      const ids = Object.keys(idBarMap);
+      if (!ids.length) return;
+
+      try {
+        const res = await fetch(`${API_BASE}/votes/batch?ids=${ids.join(',')}`, { signal: AbortSignal.timeout(6000) });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        for (const [articleId, votes] of Object.entries(data.votes || {})) {
+          const bar = idBarMap[articleId];
+          if (bar) applyVoteState(bar, votes.userVote, votes.upvotes, votes.downvotes);
         }
+      } catch (err) {
+        console.warn('[VotesModule] Batch votes request failed:', err.message);
+        // Leave all bars visible at 0/0
       }
     }
 
@@ -1479,7 +1497,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
   </script>
 
   <!-- PMO AI Assessment - Modular Hero -->
-  <script src="hero-assessment.js"></script>
+  <script defer src="hero-assessment.js"></script>
 
   <!-- Header Menu JavaScript -->
   <script>
@@ -1505,6 +1523,50 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
   window.addEventListener('resize', () => {
     if (window.innerWidth > 768) HeaderMenu.close();
   });
+  </script>
+
+  <!-- B-76: Lazy-load EmailOctopus forms via IntersectionObserver -->
+  <script>
+  (function() {
+    'use strict';
+    var FORMS = [
+      { id: '73a90686-a1f9-11f0-9b87-6727ec6b3f72', wrapper: '.hero-newsletter-form' },
+      { id: '57242e28-10e4-11f1-a1d8-1b4d501b40b6', wrapper: '.hero-report-form' }
+    ];
+    var loaded = false;
+
+    function loadForms() {
+      if (loaded) return;
+      loaded = true;
+      FORMS.forEach(function(f) {
+        var container = document.querySelector(f.wrapper);
+        if (!container) return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://eocampaign1.com/form/' + f.id + '.js';
+        s.dataset.form = f.id;
+        container.appendChild(s);
+      });
+    }
+
+    if ('IntersectionObserver' in window) {
+      var targets = document.querySelectorAll('.hero-newsletter-form, .hero-report-form');
+      if (targets.length === 0) return;
+      var observer = new IntersectionObserver(function(entries) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) {
+            loadForms();
+            observer.disconnect();
+            return;
+          }
+        }
+      }, { rootMargin: '200px' });
+      targets.forEach(function(t) { observer.observe(t); });
+    } else {
+      // Fallback: load after 3s for browsers without IntersectionObserver
+      setTimeout(loadForms, 3000);
+    }
+  })();
   </script>
 
   <!-- EmailOctopus duplicate subscription guard (v4 - observe success, don't race submit) -->
@@ -1644,6 +1706,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 
