@@ -1,6 +1,94 @@
 {
   "latestIntelligence": [
     {
+      "id": 83558,
+      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
+      "url": "https://www.reworked.co/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-12",
+      "discoveredAt": "2026-03-12 04:17:22",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 83513,
+      "title": "The AI Maturity Curve for Knowledge Management - Atlassian",
+      "url": "https://www.atlassian.com/it/webinars/business/the-ai-maturity-curve-for-knowledge-management",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-12",
+      "discoveredAt": "2026-03-12 04:16:54",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 83415,
+      "title": "Configure AI Models - TechDocs",
+      "url": "https://techdocs.broadcom.com/us/en/ca-enterprise-software/business-management/clarity-project-and-portfolio-management-ppm-on-premise/16-4-1/using-clarity-vaia--ai-/configure-ai-models.html",
+      "summary": "",
+      "score": 78,
+      "publishedDate": "2026-03-12",
+      "discoveredAt": "2026-03-12 04:16:14",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 83307,
+      "title": "Stage One and the bridge from AI investment to real value - APM",
+      "url": "https://www.apm.org.uk/blog/the-transformation-of-project-delivery-stage-one-and-the-bridge-from-ai-investment-to-real-value/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-12",
+      "discoveredAt": "2026-03-12 04:15:32",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 83301,
+      "title": "Mastering Workflow Automation – AI Agents and Efficiency",
+      "url": "https://www.ficpa.org/cpe/590330kak:mastering-workflow-automation-ai-agents-and-efficiency",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-12",
+      "discoveredAt": "2026-03-12 04:15:30",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 83221,
+      "title": "Scaling AI agents in production — how HCLTech and Google Cloud are driving enterprise adoption",
+      "url": "https://siliconangle.com/2026/03/11/google-cloud-hcl-technologies-agentic-journey-googlecloudaiagentsinaction/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-11",
+      "discoveredAt": "2026-03-12 04:14:32",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 83074,
+      "title": "Zoom expands agentic AI platform to automate enterprise workflows",
+      "url": "https://www.computerworld.com/article/4143555/zoom-expands-agentic-ai-platform-to-automate-enterprise-workflows.html",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-11",
+      "discoveredAt": "2026-03-12 04:12:11",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 82821,
+      "title": "5 Essential Claude Cowork Tips & Tricks for Clear Workflow Planning",
+      "url": "https://www.geeky-gadgets.com/essential-claude-cowork-tips/",
+      "summary": "",
+      "score": 66,
+      "publishedDate": "2026-03-11",
+      "discoveredAt": "2026-03-12 04:08:28",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 82651,
       "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
       "url": "https://www.cmswire.com/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
@@ -111,17 +199,6 @@
       "section": "auto"
     },
     {
-      "id": 81531,
-      "title": "Show HN: VS Code Agent Kanban: Task Management for the AI ...",
-      "url": "https://news.ycombinator.com/item?id=47307169",
-      "summary": "",
-      "score": 65,
-      "publishedDate": "2026-03-10",
-      "discoveredAt": "2026-03-10 04:18:25",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 81454,
       "title": "Brainstorming with AI Tools - ProjectManagement.com",
       "url": "https://www.projectmanagement.com/videos/942881/brainstorming-with-ai-tools",
@@ -140,83 +217,6 @@
       "score": 66,
       "publishedDate": "2026-03-10",
       "discoveredAt": "2026-03-10 04:18:00",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 82461,
-      "title": "Best AI Project Management Tools for Small Business in 2026",
-      "url": "https://smartbizmetrics.com/ai-project-management-tools-small-business/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-09",
-      "discoveredAt": "2026-03-11 04:16:05",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 81701,
-      "title": "Top 5 Sembly AI Alternatives for AI Meeting Notes [2026]",
-      "url": "https://www.happyscribe.com/blog/sembly-ai-alternatives-for-ai-meeting-notes",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-03-09",
-      "discoveredAt": "2026-03-10 04:19:25",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 81652,
-      "title": "Guided Lab: Project Management Application with Lovable AI",
-      "url": "https://imagine.jhu.edu/classes/guided-lab-project-management-application-with-lovable-ai/",
-      "summary": "",
-      "score": 78,
-      "publishedDate": "2026-03-09",
-      "discoveredAt": "2026-03-10 04:19:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 81224,
-      "title": "Microsoft wants you to ‘hire’ its AI agents",
-      "url": "https://www.computerworld.com/article/4141904/microsoft-wants-you-to-hire-its-ai-agents.html",
-      "summary": "",
-      "score": 78,
-      "publishedDate": "2026-03-09",
-      "discoveredAt": "2026-03-10 04:14:12",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 81203,
-      "title": "Microsoft Recommits to AI Agents With New Copilot Features",
-      "url": "https://aibusiness.com/agentic-ai/microsoft-recommits-to-ai-agents",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-09",
-      "discoveredAt": "2026-03-10 04:13:52",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 81198,
-      "title": "Production AI Playbook: Human Oversight",
-      "url": "https://blog.n8n.io/production-ai-playbook-human-oversight/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-09",
-      "discoveredAt": "2026-03-10 04:13:50",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 80906,
-      "title": "Microsoft brings Anthropic's Claude Cowork into Copilot to run tasks across Outlook, Teams, and Excel",
-      "url": "https://the-decoder.com/microsoft-brings-anthropics-claude-cowork-into-copilot-to-run-tasks-across-outlook-teams-and-excel/",
-      "summary": "",
-      "score": 69,
-      "publishedDate": "2026-03-09",
-      "discoveredAt": "2026-03-10 04:05:12",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-11T04:44:04.432Z"
+  "generatedAt": "2026-03-12T04:38:55.220Z"
 }

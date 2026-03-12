@@ -1343,8 +1343,136 @@
       "published_date": "2026-03-09",
       "archived_at": "2026-03-11",
       "section": "auto"
+    },
+    {
+      "id": 83415,
+      "title": "Configure AI Models - TechDocs",
+      "url": "https://techdocs.broadcom.com/us/en/ca-enterprise-software/business-management/clarity-project-and-portfolio-management-ppm-on-premise/16-4-1/using-clarity-vaia--ai-/configure-ai-models.html",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Broadcom Clarity PPM provides documentation for configuring its integrated AI models.**",
+        "Users can set up AI models within the Clarity Vaia platform for project and portfolio management.",
+        "These AI capabilities are part of Broadcom's on-premise Clarity Project and Portfolio Management solution."
+      ],
+      "read_time": "40 min",
+      "source_domain": "techdocs.broadcom.com",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-12",
+      "section": "auto"
+    },
+    {
+      "id": 83307,
+      "title": "Stage One and the bridge from AI investment to real value - APM",
+      "url": "https://www.apm.org.uk/blog/the-transformation-of-project-delivery-stage-one-and-the-bridge-from-ai-investment-to-real-value/",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**The article outlines Stage One for transforming project delivery, focusing on bridging AI investment to real value.**",
+        "It emphasizes the critical steps needed to translate AI capabilities into tangible benefits for projects.",
+        "The discussion provides a framework for organizations to strategically adopt AI in project environments."
+      ],
+      "read_time": "10 min",
+      "source_domain": "apm.org.uk",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-12",
+      "section": "auto"
+    },
+    {
+      "id": 83513,
+      "title": "The AI Maturity Curve for Knowledge Management - Atlassian",
+      "url": "https://www.atlassian.com/it/webinars/business/the-ai-maturity-curve-for-knowledge-management",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Atlassian outlines an AI maturity curve for optimizing knowledge management practices.**",
+        "Their Rovo platform provides AI-powered apps leveraging team knowledge for enhanced collaboration.",
+        "This framework offers insights that could assist PMOs in improving project information accessibility."
+      ],
+      "read_time": "10 min",
+      "source_domain": "atlassian.com",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-12",
+      "section": "auto"
+    },
+    {
+      "id": 83558,
+      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
+      "url": "https://www.reworked.co/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Zoom is expanding its Agentic AI platform to include advanced workflow orchestration capabilities.**",
+        "This enhancement aims to automate and streamline complex business processes using intelligent AI agents.",
+        "The platform could assist organizations in enhancing operational efficiency and managing various workflows."
+      ],
+      "read_time": "17 min",
+      "source_domain": "reworked.co",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-12",
+      "section": "auto"
+    },
+    {
+      "id": 83301,
+      "title": "Mastering Workflow Automation – AI Agents and Efficiency",
+      "url": "https://www.ficpa.org/cpe/590330kak:mastering-workflow-automation-ai-agents-and-efficiency",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**This article outlines a CPE course on mastering workflow automation using AI agents for enhanced efficiency.**",
+        "The course is presented by the Florida Institute of CPAs, featuring an expert in technology and accounting.",
+        "It focuses on leveraging AI to streamline business processes, relevant for improving operational performance."
+      ],
+      "read_time": "5 min",
+      "source_domain": "ficpa.org",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-12",
+      "section": "auto"
+    },
+    {
+      "id": 83221,
+      "title": "Scaling AI agents in production — how HCLTech and Google Cloud are driving enterprise adoption",
+      "url": "https://siliconangle.com/2026/03/11/google-cloud-hcl-technologies-agentic-journey-googlecloudaiagentsinaction/",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**HCLTech and Google Cloud partner to scale AI agents, driving enterprise adoption and impacting project delivery.**",
+        "The collaboration focuses on integrating advanced AI agent capabilities into production environments for businesses.",
+        "This initiative supports enterprises in leveraging AI agents for improved operational efficiency and strategic initiatives."
+      ],
+      "read_time": "12 min",
+      "source_domain": "siliconangle.com",
+      "published_date": "2026-03-11",
+      "archived_at": "2026-03-12",
+      "section": "auto"
+    },
+    {
+      "id": 83074,
+      "title": "Zoom expands agentic AI platform to automate enterprise workflows",
+      "url": "https://www.computerworld.com/article/4143555/zoom-expands-agentic-ai-platform-to-automate-enterprise-workflows.html",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Zoom is expanding its agentic AI platform to automate enterprise workflows.",
+        "The platform aims to streamline complex, multi-step business processes within organizations.",
+        "This development could assist with improving operational efficiency and process execution."
+      ],
+      "read_time": "9 min",
+      "source_domain": "computerworld.com",
+      "published_date": "2026-03-11",
+      "archived_at": "2026-03-12",
+      "section": "auto"
+    },
+    {
+      "id": 82821,
+      "title": "5 Essential Claude Cowork Tips & Tricks for Clear Workflow Planning",
+      "url": "https://www.geeky-gadgets.com/essential-claude-cowork-tips/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Claude Cowork offers capabilities for enhancing collaboration and organization through structured workflow planning.**",
+        "Users can define audience, tone, and rules in Claude MD files, leveraging a 'context builder' skill for consistency.",
+        "The platform helps map out workflows with a 'diagram skill' and automates tasks, connecting with apps like Google Calendar and Slack."
+      ],
+      "read_time": "10 min",
+      "source_domain": "geeky-gadgets.com",
+      "published_date": "2026-03-11",
+      "archived_at": "2026-03-12",
+      "section": "auto"
     }
   ],
-  "last_updated": "2026-03-11T04:44:04.575Z",
-  "total": 84
+  "last_updated": "2026-03-12T04:38:55.744Z",
+  "total": 92
 }
