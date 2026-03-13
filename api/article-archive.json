@@ -1471,8 +1471,152 @@
       "published_date": "2026-03-11",
       "archived_at": "2026-03-12",
       "section": "auto"
+    },
+    {
+      "id": 84230,
+      "title": "AI project governance checklist. - Protecht",
+      "url": "https://www.protechtgroup.com/en-us/guides/ai-project-governance-checklist/?utm_source=protechtgroup.com&utm_medium=referral",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Protecht offers an AI project governance checklist for structured self-assessment of AI projects.**",
+        "It helps organizations identify hidden AI risks and strengthen governance for AI deployments.",
+        "The checklist aims to improve operational resilience and accountability in AI project implementation."
+      ],
+      "read_time": "7 min",
+      "source_domain": "protechtgroup.com",
+      "published_date": "2026-03-13",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 84256,
+      "title": "AI TPRM Explained: Benefits, Use Cases, and the Future - viso trust",
+      "url": "https://visotrust.com/resources/ai-tprm/",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**AI-powered Third-Party Risk Management (TPRM) enhances vendor risk management with speed and intelligence.**",
+        "The platform offers instant AI risk assessments, continuous monitoring, and automated vendor communications.",
+        "It helps organizations achieve continuous audit and compliance readiness by streamlining vendor oversight."
+      ],
+      "read_time": "10 min",
+      "source_domain": "visotrust.com",
+      "published_date": "2026-03-13",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 84388,
+      "title": "From Grammar Checker to AI Productivity Platform - SoftwarePlaza",
+      "url": "https://www.softwareplaza.com/it-magazine/from-grammar-checker-to-ai-productivity-platform:-how-grammarly-is-redefining-enterprise-communication/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Grammarly transforms from a grammar checker into an AI productivity platform.**",
+        "It is redefining enterprise communication through advanced AI capabilities.",
+        "This evolution positions Grammarly as a key tool for enhancing organizational writing efficiency."
+      ],
+      "read_time": "19 min",
+      "source_domain": "softwareplaza.com",
+      "published_date": "2026-03-13",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 84470,
+      "title": "Zoom expands agentic AI platform to automate workflows across ...",
+      "url": "https://www.crnasia.com/india/news/2026/zoom-expands-agentic-ai-platform-to-automate-workflows-across-collaboration-and-cx",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Zoom expands its agentic AI platform to automate workflows across collaboration and customer experience products.**",
+        "New capabilities include custom AI agents, workflow orchestration, and AI Companion expansion across Zoom products.",
+        "Organizations can automate tasks and trigger workflows from interactions, potentially assisting with project follow-ups."
+      ],
+      "read_time": "4 min",
+      "source_domain": "crnasia.com",
+      "published_date": "2026-03-13",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 84461,
+      "title": "Morgen vs Motion: AI Daily Planner Comparison",
+      "url": "https://www.morgen.so/motion-vs-morgen",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Morgen and Motion are AI-powered daily planners designed to automatically generate schedules in your calendar.",
+        "Morgen offers features like AI planning, task management, calendar automation, and team workflows.",
+        "These tools aim to optimize individual and team daily schedules by integrating tasks and calendar events."
+      ],
+      "read_time": "9 min",
+      "source_domain": "morgen.so",
+      "published_date": "2026-03-13",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 84044,
+      "title": "This AI Tool Builds Polished Presentations in Seconds",
+      "url": "https://www.techrepublic.com/article/powerpresent-ai-lifetime-subscription/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**PowerPresent AI is an AI tool designed to create polished presentations rapidly.**",
+        "The article promotes a lifetime subscription offer for PowerPresent AI, highlighting its efficiency.",
+        "It aims to streamline the creation of professional-looking slides for various business communication needs."
+      ],
+      "read_time": "10 min",
+      "source_domain": "techrepublic.com",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 83878,
+      "title": "Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder",
+      "url": "https://techcrunch.com/2026/03/12/gumloop-lands-50m-from-benchmark-to-turn-every-employee-into-an-ai-agent-builder/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Gumloop raised $50M from Benchmark to enable every employee to build AI agents.",
+        "The company aims to democratize AI agent creation, making it accessible across the enterprise.",
+        "This approach could foster widespread automation and custom AI solution development within organizations."
+      ],
+      "read_time": "7 min",
+      "source_domain": "techcrunch.com",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 83841,
+      "title": "Atlassian to cut 10pc of its workforce and embrace AI",
+      "url": "https://www.siliconrepublic.com/business/atlassian-cut-10pc-workforce-embrace-ai-layoffs-software-jobs",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Atlassian is cutting 10% of its workforce as it strategically shifts to embrace AI technologies.**",
+        "This move by a major software vendor signals a broader industry trend towards AI integration and automation.",
+        "The focus on AI will likely influence future enhancements in Atlassian's project management and collaboration tools."
+      ],
+      "read_time": "11 min",
+      "source_domain": "siliconrepublic.com",
+      "published_date": "2026-03-12",
+      "archived_at": "2026-03-13",
+      "section": "auto"
+    },
+    {
+      "id": 84478,
+      "title": "How ServiceNow AI Agents Are Transforming Enterprise Workflows",
+      "url": "https://www.winklix.com/blog/how-servicenow-ai-agents-are-transforming-enterprise-workflows-in-2026/",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**ServiceNow AI agents are transforming enterprise workflows by autonomously participating in and completing meaningful work.**",
+        "The platform combines AI, workflow automation, enterprise data, and governance, with an Orchestrator coordinating agents.",
+        "Agents manage complex processes across IT, HR, finance, and operations, relevant to cross-functional project coordination."
+      ],
+      "read_time": "16 min",
+      "source_domain": "winklix.com",
+      "published_date": "2026-03-11",
+      "archived_at": "2026-03-13",
+      "section": "auto"
     }
   ],
-  "last_updated": "2026-03-12T04:38:55.744Z",
-  "total": 92
+  "last_updated": "2026-03-13T04:40:16.144Z",
+  "total": 101
 }

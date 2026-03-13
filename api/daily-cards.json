@@ -1,8 +1,138 @@
 {
-  "generated": "2026-03-12T04:38:55.375Z",
-  "date": "2026-03-12",
+  "generated": "2026-03-13T04:40:16.008Z",
+  "date": "2026-03-13",
   "count": 20,
   "cards": [
+    {
+      "id": 84230,
+      "title": "AI project governance checklist. - Protecht",
+      "url": "https://www.protechtgroup.com/en-us/guides/ai-project-governance-checklist/?utm_source=protechtgroup.com&utm_medium=referral",
+      "date": "2026-03-13",
+      "score": 77,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**Protecht offers an AI project governance checklist for structured self-assessment of AI projects.**",
+        "It helps organizations identify hidden AI risks and strengthen governance for AI deployments.",
+        "The checklist aims to improve operational resilience and accountability in AI project implementation."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI governance",
+        "project governance",
+        "risk management"
+      ]
+    },
+    {
+      "id": 84256,
+      "title": "AI TPRM Explained: Benefits, Use Cases, and the Future - viso trust",
+      "url": "https://visotrust.com/resources/ai-tprm/",
+      "date": "2026-03-13",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**AI-powered Third-Party Risk Management (TPRM) enhances vendor risk management with speed and intelligence.**",
+        "The platform offers instant AI risk assessments, continuous monitoring, and automated vendor communications.",
+        "It helps organizations achieve continuous audit and compliance readiness by streamlining vendor oversight."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "TPRM",
+        "Vendor Risk Management"
+      ]
+    },
+    {
+      "id": 84388,
+      "title": "From Grammar Checker to AI Productivity Platform - SoftwarePlaza",
+      "url": "https://www.softwareplaza.com/it-magazine/from-grammar-checker-to-ai-productivity-platform:-how-grammarly-is-redefining-enterprise-communication/",
+      "date": "2026-03-13",
+      "score": 74,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Grammarly transforms from a grammar checker into an AI productivity platform.**",
+        "It is redefining enterprise communication through advanced AI capabilities.",
+        "This evolution positions Grammarly as a key tool for enhancing organizational writing efficiency."
+      ],
+      "badges": {
+        "read_time": 19,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Grammarly",
+        "AI productivity",
+        "enterprise communication"
+      ]
+    },
+    {
+      "id": 84470,
+      "title": "Zoom expands agentic AI platform to automate workflows across ...",
+      "url": "https://www.crnasia.com/india/news/2026/zoom-expands-agentic-ai-platform-to-automate-workflows-across-collaboration-and-cx",
+      "date": "2026-03-13",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Zoom expands its agentic AI platform to automate workflows across collaboration and customer experience products.**",
+        "New capabilities include custom AI agents, workflow orchestration, and AI Companion expansion across Zoom products.",
+        "Organizations can automate tasks and trigger workflows from interactions, potentially assisting with project follow-ups."
+      ],
+      "badges": {
+        "read_time": 4,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Zoom",
+        "AI",
+        "workflow automation"
+      ]
+    },
+    {
+      "id": 84461,
+      "title": "Morgen vs Motion: AI Daily Planner Comparison",
+      "url": "https://www.morgen.so/motion-vs-morgen",
+      "date": "2026-03-13",
+      "score": 65,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Morgen and Motion are AI-powered daily planners designed to automatically generate schedules in your calendar.",
+        "Morgen offers features like AI planning, task management, calendar automation, and team workflows.",
+        "These tools aim to optimize individual and team daily schedules by integrating tasks and calendar events."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI planning",
+        "daily scheduling",
+        "task management"
+      ]
+    },
     {
       "id": 83415,
       "title": "Configure AI Models - TechDocs",
@@ -56,6 +186,58 @@
       ]
     },
     {
+      "id": 84044,
+      "title": "This AI Tool Builds Polished Presentations in Seconds",
+      "url": "https://www.techrepublic.com/article/powerpresent-ai-lifetime-subscription/",
+      "date": "2026-03-12",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**PowerPresent AI is an AI tool designed to create polished presentations rapidly.**",
+        "The article promotes a lifetime subscription offer for PowerPresent AI, highlighting its efficiency.",
+        "It aims to streamline the creation of professional-looking slides for various business communication needs."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Stakeholders",
+        "value_type": "Quick Win",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "presentations",
+        "automation"
+      ]
+    },
+    {
+      "id": 83878,
+      "title": "Gumloop lands $50M from Benchmark to turn every employee into an AI agent builder",
+      "url": "https://techcrunch.com/2026/03/12/gumloop-lands-50m-from-benchmark-to-turn-every-employee-into-an-ai-agent-builder/",
+      "date": "2026-03-12",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "Gumloop raised $50M from Benchmark to enable every employee to build AI agents.",
+        "The company aims to democratize AI agent creation, making it accessible across the enterprise.",
+        "This approach could foster widespread automation and custom AI solution development within organizations."
+      ],
+      "badges": {
+        "read_time": 7,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Gumloop",
+        "AI agents",
+        "employee enablement"
+      ]
+    },
+    {
       "id": 83513,
       "title": "The AI Maturity Curve for Knowledge Management - Atlassian",
       "url": "https://www.atlassian.com/it/webinars/business/the-ai-maturity-curve-for-knowledge-management",
@@ -79,6 +261,32 @@
         "AI",
         "Knowledge Management",
         "Atlassian"
+      ]
+    },
+    {
+      "id": 83841,
+      "title": "Atlassian to cut 10pc of its workforce and embrace AI",
+      "url": "https://www.siliconrepublic.com/business/atlassian-cut-10pc-workforce-embrace-ai-layoffs-software-jobs",
+      "date": "2026-03-12",
+      "score": 68,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Atlassian is cutting 10% of its workforce as it strategically shifts to embrace AI technologies.**",
+        "This move by a major software vendor signals a broader industry trend towards AI integration and automation.",
+        "The focus on AI will likely influence future enhancements in Atlassian's project management and collaboration tools."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Tools",
+        "value_type": "Industry News",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Atlassian",
+        "AI",
+        "layoffs"
       ]
     },
     {
@@ -212,6 +420,32 @@
       ]
     },
     {
+      "id": 84478,
+      "title": "How ServiceNow AI Agents Are Transforming Enterprise Workflows",
+      "url": "https://www.winklix.com/blog/how-servicenow-ai-agents-are-transforming-enterprise-workflows-in-2026/",
+      "date": "2026-03-11",
+      "score": 66,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**ServiceNow AI agents are transforming enterprise workflows by autonomously participating in and completing meaningful work.**",
+        "The platform combines AI, workflow automation, enterprise data, and governance, with an Orchestrator coordinating agents.",
+        "Agents manage complex processes across IT, HR, finance, and operations, relevant to cross-functional project coordination."
+      ],
+      "badges": {
+        "read_time": 16,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "ServiceNow",
+        "AI agents",
+        "workflow automation"
+      ]
+    },
+    {
       "id": 82821,
       "title": "5 Essential Claude Cowork Tips & Tricks for Clear Workflow Planning",
       "url": "https://www.geeky-gadgets.com/essential-claude-cowork-tips/",
@@ -264,110 +498,6 @@
       ]
     },
     {
-      "id": 82418,
-      "title": "How an Engineering Firm Cut Project Estimation Time with AI",
-      "url": "https://www.alphabold.com/engineering-firm-ai-wbs-project-estimation-automation/",
-      "date": "2026-03-10",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**An engineering firm significantly reduced project estimation time by implementing AI solutions.**",
-        "The article details how AI automates Work Breakdown Structure (WBS) creation for faster, more accurate estimates.",
-        "This approach helps project managers improve planning efficiency and enhance bid competitiveness for new projects."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project estimation",
-        "WBS"
-      ]
-    },
-    {
-      "id": 82271,
-      "title": "The Prosci AI Integration Framework",
-      "url": "https://www.prosci.com/blog/the-prosci-ai-integration-framework",
-      "date": "2026-03-10",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Prosci's new AI Integration Framework provides a structured approach for managing AI-driven organizational change.**",
-        "The framework guides leaders and teams through the complexities of integrating artificial intelligence into business processes.",
-        "It helps organizations, including PMOs, effectively navigate the people-side of AI adoption to maximize value."
-      ],
-      "badges": {
-        "read_time": 15,
-        "pmo_focus": "Enablement",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI integration",
-        "change management",
-        "Prosci"
-      ]
-    },
-    {
-      "id": 81814,
-      "title": "Microsoft and Anthropic partner to advance Copilot AI agents",
-      "url": "https://www.techmonitor.ai/news/microsoft-and-anthropic-partner-to-advance-copilot-ai-agents",
-      "date": "2026-03-10",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Microsoft and Anthropic collaborate to enhance Copilot AI agents for project management tasks.**",
-        "The partnership aims to integrate advanced AI models into Copilot, improving its capabilities for complex project workflows.",
-        "These enhanced AI agents are expected to assist PMOs in areas like planning, reporting, and decision-making."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Microsoft",
-        "Anthropic",
-        "Copilot"
-      ]
-    },
-    {
-      "id": 81774,
-      "title": "Shifting Bottleneck: How AI Is Reshaping the Software Development Lifecycle",
-      "url": "https://dzone.com/articles/shifting-bottleneck-how-ai-is-reshaping-the-sdlc",
-      "date": "2026-03-10",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**AI is fundamentally reshaping the Software Development Lifecycle by identifying and shifting traditional bottlenecks.**",
-        "AI tools enhance various SDLC phases, from requirements to deployment, improving overall project velocity and quality.",
-        "This transformation enables PMOs to achieve more predictable project outcomes and optimize resource allocation."
-      ],
-      "badges": {
-        "read_time": 18,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "SDLC",
-        "Project Management"
-      ]
-    },
-    {
       "id": 82293,
       "title": "Zoom introduces agentic AI capabilities to drive productivity and action at work",
       "url": "https://siliconangle.com/2026/03/10/zoom-introduces-agentic-ai-capabilities-drive-productivity-action-work/",
@@ -391,136 +521,6 @@
         "Zoom",
         "agentic AI",
         "productivity"
-      ]
-    },
-    {
-      "id": 81784,
-      "title": "Google’s Gemini AI wants to do the busywork in Docs and Sheets",
-      "url": "https://www.fastcompany.com/91505505/google-gemini-ai-busywork-docs-and-sheets?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss",
-      "date": "2026-03-10",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Google's Gemini AI introduces new features to automate busywork in Docs, Sheets, and Slides.**",
-        "Gemini can generate documents from existing files and analyze spreadsheets using plain-language prompts.",
-        "These AI capabilities aim to eliminate drudgery in creating and updating documents, relevant to administrative tasks."
-      ],
-      "badges": {
-        "read_time": 4,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Google Gemini",
-        "AI",
-        "Workspace"
-      ]
-    },
-    {
-      "id": 81760,
-      "title": "Introducing AI Teammates: your new AI-powered helpers in ...",
-      "url": "https://www.teamwork.com/blog/ai-teammates/",
-      "date": "2026-03-10",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Teamwork.com introduces \"AI Teammates\" and \"TeamworkAI\" to enhance project management capabilities.**",
-        "These new AI-powered helpers are designed to deliver faster, sharper client projects within the platform.",
-        "The AI features, like \"Summarize with AI\", could assist with project documentation and communication."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI Teammates",
-        "project management",
-        "TeamworkAI"
-      ]
-    },
-    {
-      "id": 81454,
-      "title": "Brainstorming with AI Tools - ProjectManagement.com",
-      "url": "https://www.projectmanagement.com/videos/942881/brainstorming-with-ai-tools",
-      "date": "2026-03-10",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**The article explores methods for effective brainstorming using various AI-powered tools.**",
-        "It likely details how AI can assist in generating diverse ideas and solutions.",
-        "This approach is relevant to project teams seeking innovative ideation techniques."
-      ],
-      "badges": {
-        "read_time": 7,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "brainstorming",
-        "AI tools",
-        "ideation"
-      ]
-    },
-    {
-      "id": 82254,
-      "title": "Enterprise AI agents are multiplying fast, and Microsoft wants full control of them",
-      "url": "https://www.zdnet.com/article/microsoft-introduces-agent-365/",
-      "date": "2026-03-10",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Microsoft introduces \"Agent 365\" to manage the proliferation of enterprise AI agents.**",
-        "The initiative aims to provide comprehensive control over rapidly multiplying AI agents within organizations.",
-        "This development is relevant to organizations seeking to govern and integrate new AI technologies effectively."
-      ],
-      "badges": {
-        "read_time": 18,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Microsoft",
-        "AI agents",
-        "enterprise AI"
-      ]
-    },
-    {
-      "id": 81450,
-      "title": "AI Agents for Risk Advisory | V7 Solutions",
-      "url": "https://www.v7labs.com/vertical/risk-advisory",
-      "date": "2026-03-10",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**V7 Solutions introduces AI agents designed to automate and accelerate risk advisory processes.**",
-        "These agents extract, structure, and analyze exposure data from policies, claims, and regulatory documents.",
-        "The platform aims to reduce manual risk review time, improve decision-making, and enhance traceability."
-      ],
-      "badges": {
-        "read_time": 19,
-        "pmo_focus": "Governance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "risk advisory",
-        "compliance"
       ]
     }
   ]
