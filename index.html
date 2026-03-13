@@ -117,7 +117,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
-  <link rel="stylesheet" href="smartpmo-bundle.css?v=db18537">
+  <link rel="stylesheet" href="smartpmo-bundle.css?v=138f33a">
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -516,7 +516,7 @@
   </section>
 
   <!-- Section 1: Latest Intelligence (Auto) -->
-  <section class="insights-section" id="latest-intelligence">
+  <section class="insights-section" id="latest-intelligence" style="scroll-margin-top:80px">
     <h2 class="section-title section-title--auto">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Latest Intelligence
       <span class="section-subtitle">AI-Discovered PMO Insights</span>
@@ -973,6 +973,12 @@
 
         renderAutoSection(data.latestIntelligence);
         renderCuratedSection(data.strategicInsights);
+
+        // Scroll to hash target after cards render (handles cross-origin navigation)
+        if (window.location.hash) {
+          const target = document.querySelector(window.location.hash);
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        }
       } catch (error) {
         console.error('Error loading articles:', error);
         alert('Failed to load insights. Please refresh.');
@@ -1707,6 +1713,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 
