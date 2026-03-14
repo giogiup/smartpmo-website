@@ -114,11 +114,9 @@
   <!-- Fonts: Inter only (Spectral removed — unused) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- B-78: Non-render-blocking font load (was rel="stylesheet") -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"></noscript>
-  <!-- B-78: Preconnect to EmailOctopus gallery CDN (PSI flagged, 90ms LCP savings) -->
-  <link rel="preconnect" href="https://gallery.eo.page" crossorigin>
+  <!-- B-78a: Non-render-blocking font load with display=optional (no late LCP repaint on mobile) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=optional"></noscript>
 
   <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
   <link rel="stylesheet" href="smartpmo-bundle.css?v=cc3a537">
