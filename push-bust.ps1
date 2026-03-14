@@ -33,6 +33,15 @@ foreach ($css in $cssFiles) {
 $bundle | Set-Content smartpmo-bundle.css -Encoding UTF8
 Write-Host "CSS bundle created: smartpmo-bundle.css ($($cssFiles.Count) files)"
 
+# ── B-78: Minify CSS bundle ──
+Write-Host "Minifying smartpmo-bundle.css..."
+npx --yes csso-cli smartpmo-bundle.css --output smartpmo-bundle.css
+if ($LASTEXITCODE -eq 0) {
+    Write-Host "CSS minified successfully"
+} else {
+    Write-Warning "CSS minification failed - deploying unminified bundle"
+}
+
 # ── Cache-bust the bundle in index.html ──
 $html = Get-Content index.html -Raw -Encoding UTF8
 $html = $html -replace 'href="[^"]*smartpmo-bundle\.css[^"]*"', ('href="smartpmo-bundle.css?v=' + $sha + '"')

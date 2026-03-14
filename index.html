@@ -114,10 +114,14 @@
   <!-- Fonts: Inter only (Spectral removed — unused) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- B-78: Non-render-blocking font load (was rel="stylesheet") -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"></noscript>
+  <!-- B-78: Preconnect to EmailOctopus gallery CDN (PSI flagged, 90ms LCP savings) -->
+  <link rel="preconnect" href="https://gallery.eo.page" crossorigin>
 
   <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
-  <link rel="stylesheet" href="smartpmo-bundle.css?v=a130f1b">
+  <link rel="stylesheet" href="smartpmo-bundle.css?v=cc3a537">
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -955,7 +959,7 @@
       const cardsEl = document.getElementById('auto-articles-grid');
 
       try {
-        const response = await fetch('./api/daily-cards.json?t=' + Date.now());
+        const response = await fetch('./api/daily-cards.json');
         if (!response.ok) throw new Error('Failed to load cards');
         const data = await response.json();
 
@@ -976,7 +980,7 @@
     // Fetch curated insights (Strategic Insights section)
     async function loadCuratedInsights() {
       try {
-        const response = await fetch('./api/displayed-articles.json?t=' + Date.now());
+        const response = await fetch('./api/displayed-articles.json');
         if (!response.ok) throw new Error('Failed to load curated insights');
         const data = await response.json();
         console.log(`Loaded ${data.strategicInsights?.length || 0} curated insights`);
@@ -986,28 +990,8 @@
       }
     }
 
-    // Load dual-section articles (Latest Intelligence + Strategic Insights)
-    async function loadDisplayedArticles() {
-      try {
-        const response = await fetch('./api/displayed-articles.json?t=' + Date.now());
-        if (!response.ok) throw new Error('Failed to load articles');
-        const data = await response.json();
-
-        console.log(`Loaded ${data.counts.auto} auto + ${data.counts.curated} curated articles`);
-
-        renderAutoSection(data.latestIntelligence);
-        renderCuratedSection(data.strategicInsights);
-
-        // Scroll to hash target after cards render (handles cross-origin navigation)
-        if (window.location.hash) {
-          const target = document.querySelector(window.location.hash);
-          if (target) target.scrollIntoView({ behavior: 'smooth' });
-        }
-      } catch (error) {
-        console.error('Error loading articles:', error);
-        alert('Failed to load insights. Please refresh.');
-      }
-    }
+    // B-78: Dead loadDisplayedArticles() removed — was never called from init.
+    // Hash-scroll logic moved to post-init polling below.
 
     // Render Latest Intelligence section (auto)
     function renderAutoSection(articles) {
@@ -1304,6 +1288,21 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
     loadDailyCards(); // Latest Intelligence with enriched cards (rich data from daily-cards.json)
     loadCuratedInsights(); // Strategic Insights (curated articles from displayed-articles.json)
 
+    // B-78: Post-render hash-scroll (fixes blog→main cross-origin navigation)
+    if (window.location.hash) {
+      var hashAttempts = 0;
+      var hashInterval = setInterval(function() {
+        hashAttempts++;
+        var target = document.querySelector(window.location.hash);
+        if (target) {
+          clearInterval(hashInterval);
+          target.scrollIntoView({ behavior: 'smooth' });
+        } else if (hashAttempts >= 20) { // 20 × 500ms = 10s max
+          clearInterval(hashInterval);
+        }
+      }, 500);
+    }
+
   })();
   </script>
 
@@ -1370,18 +1369,10 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
       const bars = getUnloadedVoteBars();
       if (!bars.length) return;
 
-      // Step 1: probe /health (cached after first successful check)
+      // B-78: Skip /health probe — go straight to /votes/batch.
+      // If API is down, batch call will fail and we hide vote bars.
       if (apiHealthy === null) {
-        try {
-          const healthRes = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(2000) });
-          if (!healthRes.ok) throw new Error(`HTTP ${healthRes.status}`);
-          apiHealthy = true;
-        } catch (err) {
-          apiHealthy = false;
-          console.warn('[VotesModule] API unreachable, hiding all vote bars:', err.message);
-          getVoteBars().forEach(hideVoteBar);
-          return;
-        }
+        apiHealthy = true; // Optimistic — batch call will reveal if API is down
       }
 
       if (!apiHealthy) {
@@ -1411,7 +1402,8 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
         }
       } catch (err) {
         console.warn('[VotesModule] Batch votes request failed:', err.message);
-        // Leave all bars visible at 0/0
+        apiHealthy = false; // B-78: Mark API down so subsequent calls skip
+        bars.forEach(hideVoteBar);
       }
     }
 
@@ -1617,7 +1609,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
   });
   </script>
 
-  <!-- B-76: Lazy-load EmailOctopus forms via IntersectionObserver -->
+  <!-- B-78: Lazy-load EmailOctopus forms via interaction-trigger (was IntersectionObserver rootMargin:200px) -->
   <script>
   (function() {
     'use strict';
@@ -1644,15 +1636,35 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
     if ('IntersectionObserver' in window) {
       var targets = document.querySelectorAll('.hero-newsletter-form, .hero-report-form');
       if (targets.length === 0) return;
+
+      // Phase 1: Wait until section is actually visible (rootMargin: 0px, not 200px)
       var observer = new IntersectionObserver(function(entries) {
         for (var i = 0; i < entries.length; i++) {
           if (entries[i].isIntersecting) {
-            loadForms();
             observer.disconnect();
+            // Phase 2: Load on first user interaction with the section
+            var interactionEvents = ['mouseover', 'touchstart', 'focusin'];
+            function onInteraction() {
+              loadForms();
+              interactionEvents.forEach(function(evt) {
+                targets.forEach(function(t) { t.removeEventListener(evt, onInteraction); });
+              });
+              clearTimeout(safetyTimer);
+            }
+            interactionEvents.forEach(function(evt) {
+              targets.forEach(function(t) { t.addEventListener(evt, onInteraction, { once: false, passive: true }); });
+            });
+            // Phase 3: 8-second safety net for scroll-and-wait users
+            var safetyTimer = setTimeout(function() {
+              loadForms();
+              interactionEvents.forEach(function(evt) {
+                targets.forEach(function(t) { t.removeEventListener(evt, onInteraction); });
+              });
+            }, 8000);
             return;
           }
         }
-      }, { rootMargin: '200px' });
+      }, { rootMargin: '0px' });
       targets.forEach(function(t) { observer.observe(t); });
     } else {
       // Fallback: load after 3s for browsers without IntersectionObserver
@@ -1798,6 +1810,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 

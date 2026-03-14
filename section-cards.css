@@ -572,9 +572,10 @@
    SKELETON LOADERS (Shimmer animation)
    ============================================================================ */
 
+/* B-78: GPU-composited shimmer using transform instead of background-position */
 @keyframes shimmer {
-  0% { background-position: -1000px 0; }
-  100% { background-position: 1000px 0; }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .skeleton-card {
@@ -590,15 +591,29 @@
 .skeleton-title,
 .skeleton-line,
 .skeleton-badge {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-title::after,
+.skeleton-line::after,
+.skeleton-badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.03) 25%,
-    rgba(255, 255, 255, 0.06) 50%,
-    rgba(255, 255, 255, 0.03) 75%
+    transparent 25%,
+    rgba(255, 255, 255, 0.04) 50%,
+    transparent 75%
   );
-  background-size: 1000px 100%;
   animation: shimmer 2s infinite;
-  border-radius: 4px;
+  will-change: transform;
 }
 
 .skeleton-title {

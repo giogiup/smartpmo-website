@@ -25,14 +25,14 @@ https://smartpmo-website.pages.dev/*
 /*.woff2
   Cache-Control: public, max-age=31536000, immutable
 
-# JSON data feeds — 5 minute cache
-/daily-cards.json
+# JSON data feeds — 5 minute cache (B-78: fixed paths — files are under /api/)
+/api/daily-cards.json
   Cache-Control: public, max-age=300
 
-/displayed-articles.json
+/api/displayed-articles.json
   Cache-Control: public, max-age=300
 
-/live-stats.json
+/api/live-stats.json
   Cache-Control: public, max-age=300
 
 # HTML pages — always revalidate
