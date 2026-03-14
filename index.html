@@ -119,7 +119,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=optional"></noscript>
 
   <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
-  <link rel="stylesheet" href="smartpmo-bundle.css?v=ab7bdc6">
+  <link rel="stylesheet" href="smartpmo-bundle.css?v=d5628ad">
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -1644,25 +1644,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
         for (var i = 0; i < entries.length; i++) {
           if (entries[i].isIntersecting) {
             observer.disconnect();
-            // Phase 2: Load on first user interaction with the section
-            var interactionEvents = ['mouseover', 'touchstart', 'focusin'];
-            function onInteraction() {
-              loadForms();
-              interactionEvents.forEach(function(evt) {
-                targets.forEach(function(t) { t.removeEventListener(evt, onInteraction); });
-              });
-              clearTimeout(safetyTimer);
-            }
-            interactionEvents.forEach(function(evt) {
-              targets.forEach(function(t) { t.addEventListener(evt, onInteraction, { once: false, passive: true }); });
-            });
-            // Phase 3: 8-second safety net for scroll-and-wait users
-            var safetyTimer = setTimeout(function() {
-              loadForms();
-              interactionEvents.forEach(function(evt) {
-                targets.forEach(function(t) { t.removeEventListener(evt, onInteraction); });
-              });
-            }, 8000);
+            loadForms();
             return;
           }
         }
@@ -1812,6 +1794,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 
