@@ -1,6 +1,127 @@
 {
   "latestIntelligence": [
     {
+      "id": 85294,
+      "title": "Voice AI Integrations: Automating Enterprise Workflows with AI Agents",
+      "url": "https://telnyx.com/resources/voice-ai-integrations-automating-enterprise-workflows-with-real-time-ai-agents",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-16",
+      "discoveredAt": "2026-03-14 04:16:00",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 85218,
+      "title": "Sustainable Retail Planning with AI - Impact Analytics",
+      "url": "https://www.impactanalytics.ai/sustainability",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-14",
+      "discoveredAt": "2026-03-14 04:15:31",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 85188,
+      "title": "When the Software Thinks for Itself: AI and Change Management",
+      "url": "https://www.operative.com/resources/when-the-software-thinks-for-itself-ai-and-change-management/",
+      "summary": "",
+      "score": 67,
+      "publishedDate": "2026-03-14",
+      "discoveredAt": "2026-03-14 04:15:24",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 85085,
+      "title": "AI project management platform launched for SME contractors",
+      "url": "https://www.constructionenquirer.com/2026/03/13/ai-project-management-platform-launched-for-sme-contractors/",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-14",
+      "discoveredAt": "2026-03-14 04:14:41",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 85041,
+      "title": "I Let AI Write to My Database (With Guardrails) - DEV Community",
+      "url": "https://dev.to/anchildress1/i-let-ai-write-to-my-database-with-guardrails-473o",
+      "summary": "",
+      "score": 71,
+      "publishedDate": "2026-03-14",
+      "discoveredAt": "2026-03-14 04:14:25",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 85043,
+      "title": "Building Query Expert MCP: Using RAG to Build an Analytics Agent ...",
+      "url": "https://www.databricks.com/dataaisummit/session/building-query-expert-mcp-using-rag-build-analytics-agent-goes-beyond",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-14",
+      "discoveredAt": "2026-03-14 04:14:25",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 85020,
+      "title": "Can AI help project managers learn how software actually gets built?",
+      "url": "https://www.projectmanagement.com/discussion-topic/236273/can-ai-help-project-managers-learn-how-software-actually-gets-built-",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-14",
+      "discoveredAt": "2026-03-14 04:14:19",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 84991,
+      "title": "AI+ Project Management Office Practitioner™ Certification",
+      "url": "https://www.netcomlearning.com/certifications/ai-project-management-office-practitionertm",
+      "summary": "",
+      "score": 75,
+      "publishedDate": "2026-03-14",
+      "discoveredAt": "2026-03-14 04:14:09",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 85087,
+      "title": "Best AI Tools for Project Management in 2026: Reviews & Comparison",
+      "url": "https://coursiv.io/blog/best-ai-tools-for-project-management-2026/",
+      "summary": "",
+      "score": 78,
+      "publishedDate": "2026-03-13",
+      "discoveredAt": "2026-03-14 04:14:41",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 84801,
+      "title": "7 Best Project Planning Tools for Teams of All Sizes",
+      "url": "https://toggl.com/blog/project-planning-tools",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-13",
+      "discoveredAt": "2026-03-14 04:10:13",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 84591,
+      "title": "Claude Code 2 Automation Expands with Loops, Schedules, and 100+ Workflows",
+      "url": "https://www.geeky-gadgets.com/claude-code-automation-workflows/",
+      "summary": "",
+      "score": 69,
+      "publishedDate": "2026-03-13",
+      "discoveredAt": "2026-03-14 04:07:57",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
       "id": 84470,
       "title": "Zoom expands agentic AI platform to automate workflows across ...",
       "url": "https://www.crnasia.com/india/news/2026/zoom-expands-agentic-ai-platform-to-automate-workflows-across-collaboration-and-cx",
@@ -30,6 +151,17 @@
       "score": 74,
       "publishedDate": "2026-03-13",
       "discoveredAt": "2026-03-13 04:17:00",
+      "pmbokArea": null,
+      "section": "auto"
+    },
+    {
+      "id": 84294,
+      "title": "Risk assessment project in AI Risk and Compliance - ServiceNow",
+      "url": "https://www.servicenow.com/docs/r/governance-risk-compliance/ai-risk-management/risk-assessment-project-airc.html?contentId=75VOfsIbRQxYb2dshXzRmw",
+      "summary": "",
+      "score": 70,
+      "publishedDate": "2026-03-13",
+      "discoveredAt": "2026-03-13 04:16:21",
       "pmbokArea": null,
       "section": "auto"
     },
@@ -78,28 +210,6 @@
       "section": "auto"
     },
     {
-      "id": 83841,
-      "title": "Atlassian to cut 10pc of its workforce and embrace AI",
-      "url": "https://www.siliconrepublic.com/business/atlassian-cut-10pc-workforce-embrace-ai-layoffs-software-jobs",
-      "summary": "",
-      "score": 68,
-      "publishedDate": "2026-03-12",
-      "discoveredAt": "2026-03-13 04:10:23",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 83558,
-      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
-      "url": "https://www.reworked.co/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-12",
-      "discoveredAt": "2026-03-12 04:17:22",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
       "id": 83513,
       "title": "The AI Maturity Curve for Knowledge Management - Atlassian",
       "url": "https://www.atlassian.com/it/webinars/business/the-ai-maturity-curve-for-knowledge-management",
@@ -107,116 +217,6 @@
       "score": 70,
       "publishedDate": "2026-03-12",
       "discoveredAt": "2026-03-12 04:16:54",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 83415,
-      "title": "Configure AI Models - TechDocs",
-      "url": "https://techdocs.broadcom.com/us/en/ca-enterprise-software/business-management/clarity-project-and-portfolio-management-ppm-on-premise/16-4-1/using-clarity-vaia--ai-/configure-ai-models.html",
-      "summary": "",
-      "score": 78,
-      "publishedDate": "2026-03-12",
-      "discoveredAt": "2026-03-12 04:16:14",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 83307,
-      "title": "Stage One and the bridge from AI investment to real value - APM",
-      "url": "https://www.apm.org.uk/blog/the-transformation-of-project-delivery-stage-one-and-the-bridge-from-ai-investment-to-real-value/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-12",
-      "discoveredAt": "2026-03-12 04:15:32",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 83301,
-      "title": "Mastering Workflow Automation – AI Agents and Efficiency",
-      "url": "https://www.ficpa.org/cpe/590330kak:mastering-workflow-automation-ai-agents-and-efficiency",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-12",
-      "discoveredAt": "2026-03-12 04:15:30",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 84478,
-      "title": "How ServiceNow AI Agents Are Transforming Enterprise Workflows",
-      "url": "https://www.winklix.com/blog/how-servicenow-ai-agents-are-transforming-enterprise-workflows-in-2026/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-11",
-      "discoveredAt": "2026-03-13 04:17:32",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 83221,
-      "title": "Scaling AI agents in production — how HCLTech and Google Cloud are driving enterprise adoption",
-      "url": "https://siliconangle.com/2026/03/11/google-cloud-hcl-technologies-agentic-journey-googlecloudaiagentsinaction/",
-      "summary": "",
-      "score": 75,
-      "publishedDate": "2026-03-11",
-      "discoveredAt": "2026-03-12 04:14:32",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 83074,
-      "title": "Zoom expands agentic AI platform to automate enterprise workflows",
-      "url": "https://www.computerworld.com/article/4143555/zoom-expands-agentic-ai-platform-to-automate-enterprise-workflows.html",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-03-11",
-      "discoveredAt": "2026-03-12 04:12:11",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 82821,
-      "title": "5 Essential Claude Cowork Tips & Tricks for Clear Workflow Planning",
-      "url": "https://www.geeky-gadgets.com/essential-claude-cowork-tips/",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-11",
-      "discoveredAt": "2026-03-12 04:08:28",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 82651,
-      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
-      "url": "https://www.cmswire.com/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
-      "summary": "",
-      "score": 67,
-      "publishedDate": "2026-03-11",
-      "discoveredAt": "2026-03-11 04:17:22",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 82593,
-      "title": "AIUC-1 certification: the next chapter in trusted agentic automation",
-      "url": "https://www.uipath.com/blog/product-and-updates/aiuc-1-certification-next-chapter-trusted-agentic-automation",
-      "summary": "",
-      "score": 66,
-      "publishedDate": "2026-03-11",
-      "discoveredAt": "2026-03-11 04:17:00",
-      "pmbokArea": null,
-      "section": "auto"
-    },
-    {
-      "id": 82293,
-      "title": "Zoom introduces agentic AI capabilities to drive productivity and action at work",
-      "url": "https://siliconangle.com/2026/03/10/zoom-introduces-agentic-ai-capabilities-drive-productivity-action-work/",
-      "summary": "",
-      "score": 70,
-      "publishedDate": "2026-03-10",
-      "discoveredAt": "2026-03-11 04:14:32",
       "pmbokArea": null,
       "section": "auto"
     }
@@ -327,5 +327,5 @@
     "curated": 9,
     "total": 29
   },
-  "generatedAt": "2026-03-13T04:40:15.969Z"
+  "generatedAt": "2026-03-14T04:50:57.184Z"
 }

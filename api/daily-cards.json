@@ -1,8 +1,242 @@
 {
-  "generated": "2026-03-13T04:40:16.008Z",
-  "date": "2026-03-13",
+  "generated": "2026-03-14T04:50:57.202Z",
+  "date": "2026-03-14",
   "count": 20,
   "cards": [
+    {
+      "id": 85294,
+      "title": "Voice AI Integrations: Automating Enterprise Workflows with AI Agents",
+      "url": "https://telnyx.com/resources/voice-ai-integrations-automating-enterprise-workflows-with-real-time-ai-agents",
+      "date": "2026-03-16",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Telnyx offers Voice AI integrations to automate enterprise workflows using real-time AI agents.**",
+        "The platform provides various communication APIs including Voice AI, Speech-to-Text, and Text-to-Speech.",
+        "These integrations are designed for sectors like contact centers, finance, and logistics to enhance operational efficiency."
+      ],
+      "badges": {
+        "read_time": 6,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Voice AI",
+        "AI Agents",
+        "Enterprise Automation"
+      ]
+    },
+    {
+      "id": 85085,
+      "title": "AI project management platform launched for SME contractors",
+      "url": "https://www.constructionenquirer.com/2026/03/13/ai-project-management-platform-launched-for-sme-contractors/",
+      "date": "2026-03-14",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**An AI project management platform has been launched specifically for small and medium-sized enterprise (SME) contractors.**",
+        "This new platform aims to integrate artificial intelligence into project workflows for construction firms.",
+        "It targets improving efficiency and project delivery for smaller companies in the construction industry."
+      ],
+      "badges": {
+        "read_time": 14,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI project management",
+        "SME contractors",
+        "construction tech"
+      ]
+    },
+    {
+      "id": 85020,
+      "title": "Can AI help project managers learn how software actually gets built?",
+      "url": "https://www.projectmanagement.com/discussion-topic/236273/can-ai-help-project-managers-learn-how-software-actually-gets-built-",
+      "date": "2026-03-14",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**The article initiates a discussion on AI's potential to help project managers understand software development.**",
+        "It explores how artificial intelligence could bridge knowledge gaps for project managers in technical project contexts.",
+        "The discussion aims to identify practical applications of AI for enhancing project managers' technical comprehension."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Knowledge",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "Project Management",
+        "Software Development"
+      ]
+    },
+    {
+      "id": 84991,
+      "title": "AI+ Project Management Office Practitioner™ Certification",
+      "url": "https://www.netcomlearning.com/certifications/ai-project-management-office-practitionertm",
+      "date": "2026-03-14",
+      "score": 75,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**NetCom Learning offers an AI+ Project Management Office Practitioner™ Certification to enhance PMO decision-making.**",
+        "The certification covers AI applications in predictive planning, resource management, and proactive risk management for PMOs.",
+        "It assesses understanding of AI in PMO governance, portfolio management, and enterprise project reporting frameworks."
+      ],
+      "badges": {
+        "read_time": 2,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "PMO",
+        "Certification"
+      ]
+    },
+    {
+      "id": 85041,
+      "title": "I Let AI Write to My Database (With Guardrails) - DEV Community",
+      "url": "https://dev.to/anchildress1/i-let-ai-write-to-my-database-with-guardrails-473o",
+      "date": "2026-03-14",
+      "score": 71,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "An article details building an AI workflow for ChatGPT to write structured data to a Supabase database.",
+        "The Supascribe system incorporates human-in-the-loop review and guardrails for data integrity and control.",
+        "This demonstrates a controlled AI data generation approach, relevant to automated documentation or data entry."
+      ],
+      "badges": {
+        "read_time": 9,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "Database",
+        "ChatGPT"
+      ]
+    },
+    {
+      "id": 85043,
+      "title": "Building Query Expert MCP: Using RAG to Build an Analytics Agent ...",
+      "url": "https://www.databricks.com/dataaisummit/session/building-query-expert-mcp-using-rag-build-analytics-agent-goes-beyond",
+      "date": "2026-03-14",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Block's Query Expert MCP uses RAG to build an analytics agent for self-serve insights.**",
+        "It automates documentation for 11,000+ tables and categorizes 1M SQL query patterns.",
+        "The agent captures institutional data knowledge and domain expertise for a 12,000-person organization."
+      ],
+      "badges": {
+        "read_time": 5,
+        "pmo_focus": "Knowledge",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "RAG",
+        "analytics agent",
+        "Databricks"
+      ]
+    },
+    {
+      "id": 85218,
+      "title": "Sustainable Retail Planning with AI - Impact Analytics",
+      "url": "https://www.impactanalytics.ai/sustainability",
+      "date": "2026-03-14",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Impact Analytics offers AI-powered decision intelligence for sustainable retail planning and performance.**",
+        "Solutions include ForecastSmart for demand planning and InventorySmart for optimizing inventory across SKUs.",
+        "These AI tools help retailers maximize space efficiency and improve overall operational sustainability."
+      ],
+      "badges": {
+        "read_time": 10,
+        "pmo_focus": "Resources",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "Retail",
+        "Sustainability"
+      ]
+    },
+    {
+      "id": 85188,
+      "title": "When the Software Thinks for Itself: AI and Change Management",
+      "url": "https://www.operative.com/resources/when-the-software-thinks-for-itself-ai-and-change-management/",
+      "date": "2026-03-14",
+      "score": 67,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "The article highlights the necessity of robust change management strategies for successful AI software adoption.",
+        "It discusses how AI is transforming workflows and the challenges of integrating new intelligent systems.",
+        "Effective change management ensures user buy-in and maximizes the operational benefits of AI automation."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Enablement",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI",
+        "change management",
+        "software adoption"
+      ]
+    },
+    {
+      "id": 85087,
+      "title": "Best AI Tools for Project Management in 2026: Reviews & Comparison",
+      "url": "https://coursiv.io/blog/best-ai-tools-for-project-management-2026/",
+      "date": "2026-03-13",
+      "score": 78,
+      "pmo_relevance": "Direct",
+      "pmo_category": "PMO_RELATED",
+      "tldr": [
+        "**The article reviews and compares leading AI tools for project management in 2026, focusing on scheduling, automation, and team fit.**",
+        "It details features of tools like Motion (smart scheduling) and Asana (AI goal and project setup, task summaries).",
+        "The comparison helps project managers select tools that prevent team overload and unify tasks for improved project delivery."
+      ],
+      "badges": {
+        "read_time": 14,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "AI tools",
+        "project management",
+        "scheduling"
+      ]
+    },
     {
       "id": 84230,
       "title": "AI project governance checklist. - Protecht",
@@ -82,6 +316,84 @@
       ]
     },
     {
+      "id": 84801,
+      "title": "7 Best Project Planning Tools for Teams of All Sizes",
+      "url": "https://toggl.com/blog/project-planning-tools",
+      "date": "2026-03-13",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**The article identifies and reviews the 7 best project planning tools for teams of all sizes.**",
+        "It covers tools that assist with managing time, work, growth, and hiring within project environments.",
+        "The guide helps teams select suitable software for efficient project planning and execution."
+      ],
+      "badges": {
+        "read_time": 23,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "project planning",
+        "project management tools",
+        "team management"
+      ]
+    },
+    {
+      "id": 84294,
+      "title": "Risk assessment project in AI Risk and Compliance - ServiceNow",
+      "url": "https://www.servicenow.com/docs/r/governance-risk-compliance/ai-risk-management/risk-assessment-project-airc.html?contentId=75VOfsIbRQxYb2dshXzRmw",
+      "date": "2026-03-13",
+      "score": 70,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**ServiceNow details a project for AI risk assessment and compliance management.**",
+        "The article focuses on establishing governance for AI-driven systems.",
+        "This approach could assist organizations in managing AI project risks effectively."
+      ],
+      "badges": {
+        "read_time": 1,
+        "pmo_focus": "Governance",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "ServiceNow",
+        "AI risk",
+        "compliance"
+      ]
+    },
+    {
+      "id": 84591,
+      "title": "Claude Code 2 Automation Expands with Loops, Schedules, and 100+ Workflows",
+      "url": "https://www.geeky-gadgets.com/claude-code-automation-workflows/",
+      "date": "2026-03-13",
+      "score": 69,
+      "pmo_relevance": "Inferred",
+      "pmo_category": "PMO_POTENTIAL",
+      "tldr": [
+        "**Claude Code 2 introduces enhanced automation with loops, schedules, and over 100 pre-built workflows.**",
+        "The new `/loop command` enables automating repetitive tasks within a session, featuring a three-day expiration safeguard.",
+        "Users can schedule tasks for recurring workflows and integrate with platforms like Google for data processing."
+      ],
+      "badges": {
+        "read_time": 11,
+        "pmo_focus": "Tools",
+        "value_type": "Strategic Tool",
+        "implementation": "Medium",
+        "price": "Free"
+      },
+      "keywords": [
+        "Claude Code 2",
+        "automation",
+        "workflows"
+      ]
+    },
+    {
       "id": 84470,
       "title": "Zoom expands agentic AI platform to automate workflows across ...",
       "url": "https://www.crnasia.com/india/news/2026/zoom-expands-agentic-ai-platform-to-automate-workflows-across-collaboration-and-cx",
@@ -131,58 +443,6 @@
         "AI planning",
         "daily scheduling",
         "task management"
-      ]
-    },
-    {
-      "id": 83415,
-      "title": "Configure AI Models - TechDocs",
-      "url": "https://techdocs.broadcom.com/us/en/ca-enterprise-software/business-management/clarity-project-and-portfolio-management-ppm-on-premise/16-4-1/using-clarity-vaia--ai-/configure-ai-models.html",
-      "date": "2026-03-12",
-      "score": 78,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**Broadcom Clarity PPM provides documentation for configuring its integrated AI models.**",
-        "Users can set up AI models within the Clarity Vaia platform for project and portfolio management.",
-        "These AI capabilities are part of Broadcom's on-premise Clarity Project and Portfolio Management solution."
-      ],
-      "badges": {
-        "read_time": 40,
-        "pmo_focus": "Portfolio",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Clarity PPM",
-        "AI configuration",
-        "Broadcom Vaia"
-      ]
-    },
-    {
-      "id": 83307,
-      "title": "Stage One and the bridge from AI investment to real value - APM",
-      "url": "https://www.apm.org.uk/blog/the-transformation-of-project-delivery-stage-one-and-the-bridge-from-ai-investment-to-real-value/",
-      "date": "2026-03-12",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**The article outlines Stage One for transforming project delivery, focusing on bridging AI investment to real value.**",
-        "It emphasizes the critical steps needed to translate AI capabilities into tangible benefits for projects.",
-        "The discussion provides a framework for organizations to strategically adopt AI in project environments."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Performance",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "project delivery",
-        "value realization"
       ]
     },
     {
@@ -261,266 +521,6 @@
         "AI",
         "Knowledge Management",
         "Atlassian"
-      ]
-    },
-    {
-      "id": 83841,
-      "title": "Atlassian to cut 10pc of its workforce and embrace AI",
-      "url": "https://www.siliconrepublic.com/business/atlassian-cut-10pc-workforce-embrace-ai-layoffs-software-jobs",
-      "date": "2026-03-12",
-      "score": 68,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Atlassian is cutting 10% of its workforce as it strategically shifts to embrace AI technologies.**",
-        "This move by a major software vendor signals a broader industry trend towards AI integration and automation.",
-        "The focus on AI will likely influence future enhancements in Atlassian's project management and collaboration tools."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Atlassian",
-        "AI",
-        "layoffs"
-      ]
-    },
-    {
-      "id": 83558,
-      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
-      "url": "https://www.reworked.co/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
-      "date": "2026-03-12",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Zoom is expanding its Agentic AI platform to include advanced workflow orchestration capabilities.**",
-        "This enhancement aims to automate and streamline complex business processes using intelligent AI agents.",
-        "The platform could assist organizations in enhancing operational efficiency and managing various workflows."
-      ],
-      "badges": {
-        "read_time": 17,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Zoom",
-        "AI",
-        "Agentic AI"
-      ]
-    },
-    {
-      "id": 83301,
-      "title": "Mastering Workflow Automation – AI Agents and Efficiency",
-      "url": "https://www.ficpa.org/cpe/590330kak:mastering-workflow-automation-ai-agents-and-efficiency",
-      "date": "2026-03-12",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**This article outlines a CPE course on mastering workflow automation using AI agents for enhanced efficiency.**",
-        "The course is presented by the Florida Institute of CPAs, featuring an expert in technology and accounting.",
-        "It focuses on leveraging AI to streamline business processes, relevant for improving operational performance."
-      ],
-      "badges": {
-        "read_time": 5,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "workflow automation",
-        "efficiency"
-      ]
-    },
-    {
-      "id": 83221,
-      "title": "Scaling AI agents in production — how HCLTech and Google Cloud are driving enterprise adoption",
-      "url": "https://siliconangle.com/2026/03/11/google-cloud-hcl-technologies-agentic-journey-googlecloudaiagentsinaction/",
-      "date": "2026-03-11",
-      "score": 75,
-      "pmo_relevance": "Direct",
-      "pmo_category": "PMO_RELATED",
-      "tldr": [
-        "**HCLTech and Google Cloud partner to scale AI agents, driving enterprise adoption and impacting project delivery.**",
-        "The collaboration focuses on integrating advanced AI agent capabilities into production environments for businesses.",
-        "This initiative supports enterprises in leveraging AI agents for improved operational efficiency and strategic initiatives."
-      ],
-      "badges": {
-        "read_time": 12,
-        "pmo_focus": "Enablement",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI agents",
-        "HCLTech",
-        "Google Cloud"
-      ]
-    },
-    {
-      "id": 83074,
-      "title": "Zoom expands agentic AI platform to automate enterprise workflows",
-      "url": "https://www.computerworld.com/article/4143555/zoom-expands-agentic-ai-platform-to-automate-enterprise-workflows.html",
-      "date": "2026-03-11",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "Zoom is expanding its agentic AI platform to automate enterprise workflows.",
-        "The platform aims to streamline complex, multi-step business processes within organizations.",
-        "This development could assist with improving operational efficiency and process execution."
-      ],
-      "badges": {
-        "read_time": 9,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Zoom",
-        "agentic AI",
-        "workflow automation"
-      ]
-    },
-    {
-      "id": 82651,
-      "title": "Zoom Expands Agentic AI Platform With Workflow Orchestration",
-      "url": "https://www.cmswire.com/digital-workplace/zoom-expands-agentic-ai-platform-with-workflow-orchestration/",
-      "date": "2026-03-11",
-      "score": 67,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Zoom is expanding its Agentic AI platform to include new workflow orchestration capabilities.**",
-        "This expansion focuses on integrating AI agents to manage and automate complex operational workflows.",
-        "The development aims to enhance automation and efficiency across various business processes."
-      ],
-      "badges": {
-        "read_time": 17,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Zoom",
-        "AI",
-        "Agentic AI"
-      ]
-    },
-    {
-      "id": 84478,
-      "title": "How ServiceNow AI Agents Are Transforming Enterprise Workflows",
-      "url": "https://www.winklix.com/blog/how-servicenow-ai-agents-are-transforming-enterprise-workflows-in-2026/",
-      "date": "2026-03-11",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**ServiceNow AI agents are transforming enterprise workflows by autonomously participating in and completing meaningful work.**",
-        "The platform combines AI, workflow automation, enterprise data, and governance, with an Orchestrator coordinating agents.",
-        "Agents manage complex processes across IT, HR, finance, and operations, relevant to cross-functional project coordination."
-      ],
-      "badges": {
-        "read_time": 16,
-        "pmo_focus": "Tools",
-        "value_type": "Strategic Tool",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "ServiceNow",
-        "AI agents",
-        "workflow automation"
-      ]
-    },
-    {
-      "id": 82821,
-      "title": "5 Essential Claude Cowork Tips & Tricks for Clear Workflow Planning",
-      "url": "https://www.geeky-gadgets.com/essential-claude-cowork-tips/",
-      "date": "2026-03-11",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Claude Cowork offers capabilities for enhancing collaboration and organization through structured workflow planning.**",
-        "Users can define audience, tone, and rules in Claude MD files, leveraging a 'context builder' skill for consistency.",
-        "The platform helps map out workflows with a 'diagram skill' and automates tasks, connecting with apps like Google Calendar and Slack."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Tools",
-        "value_type": "Quick Win",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Claude Cowork",
-        "workflow planning",
-        "AI collaboration"
-      ]
-    },
-    {
-      "id": 82593,
-      "title": "AIUC-1 certification: the next chapter in trusted agentic automation",
-      "url": "https://www.uipath.com/blog/product-and-updates/aiuc-1-certification-next-chapter-trusted-agentic-automation",
-      "date": "2026-03-11",
-      "score": 66,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**UiPath announces the AIUC-1 certification for trusted agentic automation.**",
-        "This certification aims to establish standards for reliable and autonomous AI agents.",
-        "It signifies a new phase in the development and deployment of AI-powered automation."
-      ],
-      "badges": {
-        "read_time": 11,
-        "pmo_focus": "Governance",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "AI",
-        "automation",
-        "certification"
-      ]
-    },
-    {
-      "id": 82293,
-      "title": "Zoom introduces agentic AI capabilities to drive productivity and action at work",
-      "url": "https://siliconangle.com/2026/03/10/zoom-introduces-agentic-ai-capabilities-drive-productivity-action-work/",
-      "date": "2026-03-10",
-      "score": 70,
-      "pmo_relevance": "Inferred",
-      "pmo_category": "PMO_POTENTIAL",
-      "tldr": [
-        "**Zoom introduces new agentic AI capabilities aimed at boosting workplace productivity.**",
-        "These AI features are designed to drive action and streamline various work processes.",
-        "The technology could assist teams in automating routine tasks and improving overall operational efficiency."
-      ],
-      "badges": {
-        "read_time": 10,
-        "pmo_focus": "Tools",
-        "value_type": "Industry News",
-        "implementation": "Medium",
-        "price": "Free"
-      },
-      "keywords": [
-        "Zoom",
-        "agentic AI",
-        "productivity"
       ]
     }
   ]
