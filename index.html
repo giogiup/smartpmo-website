@@ -119,7 +119,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=optional"></noscript>
 
   <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
-  <link rel="stylesheet" href="smartpmo-bundle.css?v=ffa0625">
+  <link rel="stylesheet" href="smartpmo-bundle.css?v=ab7bdc6">
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -1283,23 +1283,19 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
     });
 
     // ── Init ──
-    loadDailyCards(); // Latest Intelligence with enriched cards (rich data from daily-cards.json)
-    loadCuratedInsights(); // Strategic Insights (curated articles from displayed-articles.json)
-
-    // B-78: Post-render hash-scroll (fixes blog→main cross-origin navigation)
-    if (window.location.hash) {
-      var hashAttempts = 0;
-      var hashInterval = setInterval(function() {
-        hashAttempts++;
-        var target = document.querySelector(window.location.hash);
-        if (target) {
-          clearInterval(hashInterval);
-          target.scrollIntoView({ behavior: 'smooth' });
-        } else if (hashAttempts >= 20) { // 20 × 500ms = 10s max
-          clearInterval(hashInterval);
-        }
-      }, 500);
-    }
+    Promise.all([
+      loadDailyCards(),        // Latest Intelligence (daily-cards.json)
+      loadCuratedInsights()    // Strategic Insights (displayed-articles.json)
+    ]).then(function() {
+      // B-78: Post-render hash-scroll (fixes blog→main cross-origin navigation)
+      // Must run AFTER both sections render so scroll targets are at final position
+      if (window.location.hash) {
+        requestAnimationFrame(function() {
+          var target = document.querySelector(window.location.hash);
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
 
   })();
   </script>
@@ -1816,6 +1812,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 
