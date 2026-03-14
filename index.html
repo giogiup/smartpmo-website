@@ -517,10 +517,22 @@
 
   <!-- Section 1: Latest Intelligence (Auto) -->
   <section class="insights-section" id="latest-intelligence" style="scroll-margin-top:80px">
-    <h2 class="section-title section-title--auto">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Latest Intelligence
-      <span class="section-subtitle">AI-Discovered PMO Insights</span>
-    </h2>
+    <div class="section-heading-row section-heading-row--auto">
+      <h2 class="section-title section-title--auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Latest Intelligence
+        <span class="section-subtitle">AI-Discovered PMO Insights</span>
+      </h2>
+      <button class="open-all-btn" data-target-grid="auto-articles-grid"
+              aria-label="Open all Latest Intelligence articles in new tabs">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        Open all
+      </button>
+    </div>
 
     <!-- Skeleton Loaders (shown during fetch) -->
     <div id="skeleton-loaders" class="insights-grid" aria-hidden="true">
@@ -569,10 +581,22 @@
   <div id="strategic-insights" style="scroll-margin-top:80px"></div>
   <!-- Section 2: Strategic Insights (Curated) -->
   <section class="insights-section">
-    <h2 class="section-title section-title--curated">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Strategic Insights
-      <span class="section-subtitle">Curated by PMO Experts</span>
-    </h2>
+    <div class="section-heading-row section-heading-row--curated">
+      <h2 class="section-title section-title--curated">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Strategic Insights
+        <span class="section-subtitle">Curated by PMO Experts</span>
+      </h2>
+      <button class="open-all-btn" data-target-grid="curated-articles-grid"
+              aria-label="Open all Strategic Insights articles in new tabs">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        Open all
+      </button>
+    </div>
     <!-- Skeleton loaders (replaced by JS on load) -->
     <div id="curated-skeleton-loaders" class="insights-grid" aria-hidden="true">
       <div class="skeleton-card">
@@ -1501,6 +1525,67 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
   } else {
     VotesModule.init();
   }
+  </script>
+
+  <!-- OpenAllModule — B-77 Open All Articles (SPEC-B77-OPEN-ALL-ARTICLES.md) -->
+  <!-- CONTRACT §3.1: IIFE module pattern, no global leakage -->
+  <script>
+  const OpenAllModule = (() => {
+    'use strict';
+
+    function getArticleUrls(gridId) {
+      const grid = document.getElementById(gridId);
+      if (!grid) return [];
+      const links = grid.querySelectorAll('.card-title a');
+      const urls = [];
+      const seen = new Set();
+      links.forEach(a => {
+        const href = a.href;
+        if (href && !seen.has(href)) {
+          seen.add(href);
+          urls.push(href);
+        }
+      });
+      return urls;
+    }
+
+    function openAll(gridId, buttonEl) {
+      const urls = getArticleUrls(gridId);
+      if (urls.length === 0) return;
+
+      let blocked = 0;
+      urls.forEach(url => {
+        const win = window.open(url, '_blank');
+        if (!win || win.closed) blocked++;
+      });
+
+      if (blocked > 0) {
+        const msg = document.createElement('div');
+        msg.className = 'open-all-notice';
+        msg.setAttribute('role', 'alert');
+        msg.textContent = `Your browser blocked ${blocked} tab(s). Allow popups for smartpmo.ai to use this feature.`;
+        buttonEl.parentElement.appendChild(msg);
+        setTimeout(() => msg.remove(), 6000);
+      }
+    }
+
+    function init() {
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.open-all-btn');
+        if (!btn) return;
+        const gridId = btn.dataset.targetGrid;
+        if (gridId) openAll(gridId, btn);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+
+    return { init };
+  })();
   </script>
 
   <!-- PMO AI Assessment - Modular Hero -->

@@ -48,6 +48,18 @@ html, body {
   }
 }
 
+/* ── Open All button: responsive (B-77) ── */
+@media (max-width: 767px) {
+  .section-heading-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .open-all-btn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+
 /* ── Section title: wrap subtitle on narrow screens ── */
 .section-title--auto,
 .section-title--curated {

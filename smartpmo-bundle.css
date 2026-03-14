@@ -1,4 +1,4 @@
-﻿/* === styles-core.css === */
+/* === styles-core.css === */
 /* ================================ */
 /* CORE STYLES                      */
 /* Accessibility + Performance      */
@@ -76,9 +76,8 @@
   content-visibility: auto;
   contain-intrinsic-size: 0 500px;
 }
-
 /* === styles-v2.css === */
-/* SmartPMO.ai - Redesigned Stylesheet */
+﻿/* SmartPMO.ai - Redesigned Stylesheet */
 
 html {
   scroll-padding-top: 70px;
@@ -713,7 +712,6 @@ p.emailoctopus-error-message {
 /* [DEAD CODE REMOVED: Old quiz, old hero restructure, progressive reveal quiz —
    1,689 lines deleted. All replaced by /assessment page (section-assessment-page.css)
    and hero.css Layout B. No classes from removed sections referenced in any HTML.] */
-
 /* === hero.css === */
 /* ==================== HERO SECTION - LAYOUT B (Stacked Narrative) ==================== */
 /* Version: 4.1 - Layout B + Fix 49 visual polish */
@@ -1431,7 +1429,6 @@ p.emailoctopus-error-message {
 }
 
 /* ==================== END HERO SECTION STYLES ==================== */
-
 /* === header-styles.css === */
 /* ==================== HEADER COMPONENT - SCOPED STYLES ==================== */
 /* Version: 1.0 - Based on COMPLETE_DESIGN_SPEC_v4.md */
@@ -1644,12 +1641,76 @@ p.emailoctopus-error-message {
     font-size: 16px;
   }
 }
-
 /* === section-cards.css === */
 /* ============================================
    DUAL-SECTION ARTICLE DISPLAY
    Latest Intelligence (Auto) + Strategic Insights (Curated)
    ============================================ */
+
+/* ── Open All heading row ── */
+.section-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.open-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: none;
+  color: #000;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 44px; /* touch target */
+  transition: opacity 0.2s ease;
+}
+
+/* Section-matched solid fills */
+.section-heading-row--curated .open-all-btn {
+  background: #f59e0b;
+}
+
+.section-heading-row--auto .open-all-btn {
+  background: #0ea5e9;
+}
+
+.open-all-btn:hover {
+  opacity: 0.85;
+}
+
+.open-all-btn:focus-visible {
+  outline: 2px solid var(--cyan-primary, #00D4FF);
+  outline-offset: 2px;
+}
+
+.open-all-btn svg {
+  flex-shrink: 0;
+  stroke-width: 2.5;
+}
+
+/* ── Popup blocker notice ── */
+.open-all-notice {
+  font-size: 0.75rem;
+  color: #facc15;
+  margin-top: 0.4rem;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .open-all-notice { animation: none; }
+}
 
 /* Section Title Differentiation */
 .section-title--auto {
@@ -2425,7 +2486,6 @@ p.emailoctopus-error-message {
     padding: 10px 8px;
   }
 }
-
 /* === section-votes.css === */
 /*
  * section-votes.css — Vote button styles for SmartPMO.ai article cards
@@ -2508,7 +2568,6 @@ p.emailoctopus-error-message {
 .vote-bar.vote-bar--hidden {
   display: none;
 }
-
 /* === mobile-fixes.css === */
 /*
  * mobile-fixes.css — Loaded LAST, overrides all other CSS for mobile layout
@@ -2557,6 +2616,18 @@ html, body {
   .insights-grid {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 1.5rem !important;
+  }
+}
+
+/* ── Open All button: responsive (B-77) ── */
+@media (max-width: 767px) {
+  .section-heading-row {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .open-all-btn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
   }
 }
 
@@ -2736,5 +2807,3 @@ html, body {
     text-overflow: unset !important;
   }
 }
-
-

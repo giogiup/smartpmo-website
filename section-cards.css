@@ -3,6 +3,71 @@
    Latest Intelligence (Auto) + Strategic Insights (Curated)
    ============================================ */
 
+/* ── Open All heading row ── */
+.section-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.open-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: none;
+  color: #000;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 44px; /* touch target */
+  transition: opacity 0.2s ease;
+}
+
+/* Section-matched solid fills */
+.section-heading-row--curated .open-all-btn {
+  background: #f59e0b;
+}
+
+.section-heading-row--auto .open-all-btn {
+  background: #0ea5e9;
+}
+
+.open-all-btn:hover {
+  opacity: 0.85;
+}
+
+.open-all-btn:focus-visible {
+  outline: 2px solid var(--cyan-primary, #00D4FF);
+  outline-offset: 2px;
+}
+
+.open-all-btn svg {
+  flex-shrink: 0;
+  stroke-width: 2.5;
+}
+
+/* ── Popup blocker notice ── */
+.open-all-notice {
+  font-size: 0.75rem;
+  color: #facc15;
+  margin-top: 0.4rem;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .open-all-notice { animation: none; }
+}
+
 /* Section Title Differentiation */
 .section-title--auto {
   color: #0ea5e9;
