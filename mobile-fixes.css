@@ -236,3 +236,25 @@ html, body {
     text-overflow: unset !important;
   }
 }
+
+/* ── BUG-024: Compact mobile menu — don't fill entire screen ── */
+@media (max-width: 768px) {
+  .site-header-mobile-menu {
+    bottom: auto !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
+    padding: 1rem 1.5rem 1.5rem !important;
+  }
+  .site-header-mobile-nav {
+    gap: 0.25rem !important;
+  }
+  .site-header-mobile-nav-link {
+    font-size: 16px !important;
+    padding: 0.75rem 1rem !important;
+  }
+  .site-header-mobile-cta {
+    font-size: 16px !important;
+    padding: 0.75rem 1.25rem !important;
+    margin-top: 0.5rem !important;
+  }
+}

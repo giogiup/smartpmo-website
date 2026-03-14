@@ -119,7 +119,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=optional"></noscript>
 
   <!-- B-75: Single CSS bundle (7 files concatenated at deploy time) -->
-  <link rel="stylesheet" href="smartpmo-bundle.css?v=cc3a537">
+  <link rel="stylesheet" href="smartpmo-bundle.css?v=3250cd6">
   
   <style>
     /* Critical CSS for above-the-fold (inline for instant first paint) */
@@ -450,7 +450,7 @@
     <div class="hero-band-3">
 
       <!-- Left: Newsletter -->
-      <div class="hero-band-3-newsletter" id="weekly-top-20">
+      <div class="hero-band-3-newsletter" id="weekly-top-20" style="scroll-margin-top:130px">
         <div class="hero-band-3-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
             <!-- Envelope body -->
@@ -518,7 +518,7 @@
   </section>
 
   <!-- Section 1: Latest Intelligence (Auto) -->
-  <section class="insights-section" id="latest-intelligence" style="scroll-margin-top:80px">
+  <section class="insights-section" id="latest-intelligence" style="scroll-margin-top:130px">
     <div class="section-heading-row section-heading-row--auto">
       <h2 class="section-title section-title--auto">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Latest Intelligence
@@ -580,7 +580,7 @@
     <div class="insights-grid" id="auto-articles-grid" style="display:none;"></div>
   </section>
 
-  <div id="strategic-insights" style="scroll-margin-top:80px"></div>
+  <div id="strategic-insights" style="scroll-margin-top:130px"></div>
   <!-- Section 2: Strategic Insights (Curated) -->
   <section class="insights-section">
     <div class="section-heading-row section-heading-row--curated">
@@ -1631,6 +1631,14 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
       });
     }
 
+    // BUG-027: If user navigated directly to newsletter section, load forms
+    // immediately (cross-origin navigation from blog "Subscribe →" links).
+    var hash = window.location.hash;
+    if (hash === '#weekly-top-20' || hash === '#newsletter') {
+      loadForms();
+      return;
+    }
+
     if ('IntersectionObserver' in window) {
       var targets = document.querySelectorAll('.hero-newsletter-form, .hero-report-form');
       if (targets.length === 0) return;
@@ -1808,6 +1816,7 @@ Discover more AI insights for PMO: ${SMARTPMO_URL}`;
 
 </body>
 </html>
+
 
 
 
